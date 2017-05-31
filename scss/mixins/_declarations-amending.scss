@@ -12,9 +12,7 @@
 @mixin declarations-amending($declarations, $amended: false) {
     @each $property, $value in $declarations {
         @if $amended {
-            @if nth($value, 1) != nth($value, length($value)) {
-                #{$property}: #{nth($value, length($value))};
-            }
+            #{$property}: #{nth($value, length($value))};
         }
         @else {
             #{$property}: #{nth($value, 1)};
