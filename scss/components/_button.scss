@@ -309,6 +309,13 @@ $button-cover-transition: all 300ms ease !default;
     // Style guide: Components.Button.Icon
     &__icon {
         display: inline-block;
+
+        @at-root {
+            img#{$this}__icon,
+            svg#{$this}__icon {
+                vertical-align: sub;
+            }
+        }
     }
 
     @each $size, $declarations in $button-sizes {

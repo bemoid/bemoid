@@ -22,6 +22,8 @@ mark {
 a {
   color: #4d5e68;
   text-decoration: underline; }
+  a:hover {
+    color: #38444b; }
 
 html {
   box-sizing: border-box;
@@ -1042,6 +1044,7 @@ h6 {
   border: 1px solid transparent;
   transition: border 0.2s ease, color 0.2s ease, background 0.2s ease, box-shadow 0.3s ease; }
   .button:hover, .button:focus, .button:active {
+    color: #171C1F;
     background-color: #b8c6d2;
     box-shadow: 0 0.3125rem 0.25rem -0.1875rem rgba(0, 0, 0, 0.1); }
   .button__cover {
@@ -1064,6 +1067,8 @@ h6 {
     transition: all 300ms ease; }
   .button__icon {
     display: inline-block; }
+    img.button__icon, svg.button__icon {
+      vertical-align: sub; }
   .button--xsmall {
     font-size: 0.75em; }
   .button--small {
@@ -1076,6 +1081,7 @@ h6 {
     color: #fff;
     background-color: #fff; }
     .button--white:hover, .button--white:focus, .button--white:active {
+      color: #fff;
       background-color: #6c3fce; }
       .button--white:hover .button__cover, .button--white:focus .button__cover, .button--white:active .button__cover {
         color: #fff; }
@@ -1085,6 +1091,7 @@ h6 {
     color: #fff;
     background-color: #171C1F; }
     .button--black:hover, .button--black:focus, .button--black:active {
+      color: #fff;
       background-color: #010202; }
       .button--black:hover .button__cover, .button--black:focus .button__cover, .button--black:active .button__cover {
         color: #fff; }
@@ -1094,6 +1101,7 @@ h6 {
     color: #fff;
     background-color: #6c3fce; }
     .button--primary:hover, .button--primary:focus, .button--primary:active {
+      color: #fff;
       background-color: #552cae; }
       .button--primary:hover .button__cover, .button--primary:focus .button__cover, .button--primary:active .button__cover {
         color: #fff; }
@@ -1103,6 +1111,7 @@ h6 {
     color: #fff;
     background-color: #543793; }
     .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
+      color: #fff;
       background-color: #3f296e; }
       .button--secondary:hover .button__cover, .button--secondary:focus .button__cover, .button--secondary:active .button__cover {
         color: #fff; }
@@ -1112,6 +1121,7 @@ h6 {
     color: #fff;
     background-color: #FF861D; }
     .button--complementary:hover, .button--complementary:focus, .button--complementary:active {
+      color: #fff;
       background-color: #e96c00; }
       .button--complementary:hover .button__cover, .button--complementary:focus .button__cover, .button--complementary:active .button__cover {
         color: #fff; }
@@ -1121,6 +1131,7 @@ h6 {
     color: #fff;
     background-color: #26c65e; }
     .button--success:hover, .button--success:focus, .button--success:active {
+      color: #fff;
       background-color: #1e9b4a; }
       .button--success:hover .button__cover, .button--success:focus .button__cover, .button--success:active .button__cover {
         color: #fff; }
@@ -1130,6 +1141,7 @@ h6 {
     color: #171C1F;
     background-color: #ffde66; }
     .button--warning:hover, .button--warning:focus, .button--warning:active {
+      color: #171C1F;
       background-color: #ffd333; }
       .button--warning:hover .button__cover, .button--warning:focus .button__cover, .button--warning:active .button__cover {
         color: #171C1F; }
@@ -1139,6 +1151,7 @@ h6 {
     color: #fff;
     background-color: #3273dc; }
     .button--info:hover, .button--info:focus, .button--info:active {
+      color: #fff;
       background-color: #205bbb; }
       .button--info:hover .button__cover, .button--info:focus .button__cover, .button--info:active .button__cover {
         color: #fff; }
@@ -1148,6 +1161,7 @@ h6 {
     color: #fff;
     background-color: #ec3953; }
     .button--error:hover, .button--error:focus, .button--error:active {
+      color: #fff;
       background-color: #dd1532; }
       .button--error:hover .button__cover, .button--error:focus .button__cover, .button--error:active .button__cover {
         color: #fff; }
@@ -1160,11 +1174,13 @@ h6 {
     border-style: solid;
     background-color: transparent; }
     .button--hollow:hover, .button--hollow:focus, .button--hollow:active {
+      color: #171C1F;
       border-color: #b8c6d2; }
     .button--hollow.button--white {
       color: #fff;
       border-color: #fff; }
       .button--hollow.button--white:hover, .button--hollow.button--white:focus, .button--hollow.button--white:active {
+        color: #fff;
         border-color: #6c3fce; }
         .button--hollow.button--white:hover .button__cover, .button--hollow.button--white:focus .button__cover, .button--hollow.button--white:active .button__cover {
           color: #fff; }
