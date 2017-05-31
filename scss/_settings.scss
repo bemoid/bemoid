@@ -77,6 +77,11 @@ $link-color: $font-color !default;
 /// @type {Keyword}
 $link-decoration: underline !default;
 
+/// Text color of anchors on hover.
+///
+/// @type {Color}
+$link-hover-color: darken($font-color, 10%) !default;
+
 /// Collection of breakpoints.
 ///
 /// @type {Map}
