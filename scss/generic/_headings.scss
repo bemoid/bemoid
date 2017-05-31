@@ -3,6 +3,7 @@
 ////
 
 /// The default font family.
+///
 /// @link http://type-scale.com/
 /// @type {Map}
 /// @prop {Map} xsmall
@@ -26,17 +27,25 @@ $headings: (
     ),
 ) !default;
 
-/// Container margins settings.
+/// Font family of headings.
+///
+/// @type {Keyword|Values}
+$headings-font-family: inherit !default;
+
+/// Text color of headings.
+///
 /// @type {Color}
 $headings-color: get-color(black) !default;
 
-/// Base line height determines the basic unit of vertical rhythm.
+/// Line height of headings.
+///
 /// @type {Number|Value}
-$font-line-height: 1.25 !default;
+$headings-line-height: 1.25 !default;
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
     color: $headings-color;
-    line-height: $font-line-height;
+    line-height: $headings-line-height;
 }
 
 @each $breakpoint, $heading in $headings {
