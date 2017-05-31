@@ -1,0 +1,425 @@
+////
+/// @group Button
+/// @define button
+////
+
+/// Collection of button variants.
+///
+/// @type {Map}
+/// @prop {Map} white
+/// @prop {Map} black
+/// @prop {Map} primary
+/// @prop {Map} secondary
+/// @prop {Map} complementary
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$button-variants: (
+    neutral: (
+        'color': get-color(black),
+        'background-color': get-color(light-gray) darken(get-color(light-gray), 10%),
+    ),
+    white: (
+        'color': get-color(white),
+        'background-color': get-color(white) get-color(primary),
+    ),
+    black: (
+        'color': get-color(white),
+        'background-color': get-color(black) darken(get-color(black), 10%),
+    ),
+    primary: (
+        'color': get-color(white),
+        'background-color': get-color(primary) darken(get-color(primary), 10%),
+    ),
+    secondary: (
+        'color': get-color(white),
+        'background-color': get-color(secondary) darken(get-color(secondary), 10%),
+    ),
+    complementary: (
+        'color': get-color(white),
+        'background-color': get-color(complementary) darken(get-color(complementary), 10%),
+    ),
+    success: (
+        'color': get-color(white),
+        'background-color': get-color(success) darken(get-color(success), 10%),
+    ),
+    warning: (
+        'color': get-color(black),
+        'background-color': get-color(warning) darken(get-color(warning), 10%),
+    ),
+    info: (
+        'color': get-color(white),
+        'background-color': get-color(info) darken(get-color(info), 10%),
+    ),
+    error: (
+        'color': get-color(white),
+        'background-color': get-color(error) darken(get-color(error), 10%),
+    ),
+) !default;
+
+/// Collection of hollowed button variants.
+///
+/// @type {Map}
+/// @prop {Map} white
+/// @prop {Map} black
+/// @prop {Map} primary
+/// @prop {Map} secondary
+/// @prop {Map} complementary
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$button-hollow-variants: (
+    neutral: (
+        'color': get-color(black),
+        'border-color': get-color(light-gray) darken(get-color(light-gray), 10%),
+    ),
+    white: (
+        'color': get-color(white) get-color(white),
+        'border-color': get-color(white) get-color(primary),
+    ),
+    black: (
+        'color': get-color(black) get-color(white),
+        'border-color': get-color(black) darken(get-color(black), 10%),
+    ),
+    primary: (
+        'color': get-color(primary) get-color(white),
+        'border-color': get-color(primary) darken(get-color(primary), 10%),
+    ),
+    secondary: (
+        'color': get-color(secondary) get-color(white),
+        'border-color': get-color(secondary) darken(get-color(secondary), 10%),
+    ),
+    complementary: (
+        'color': get-color(complementary) get-color(white),
+        'border-color': get-color(complementary) darken(get-color(complementary), 10%),
+    ),
+    success: (
+        'color': get-color(success) get-color(white),
+        'border-color': get-color(success) darken(get-color(success), 10%),
+    ),
+    warning: (
+        'color': get-color(warning) get-color(black),
+        'border-color': get-color(warning) darken(get-color(warning), 10%),
+    ),
+    info: (
+        'color': get-color(info) get-color(white),
+        'border-color': get-color(info) darken(get-color(info), 10%),
+    ),
+    error: (
+        'color': get-color(error) get-color(white),
+        'border-color': get-color(error) darken(get-color(error), 10%),
+    ),
+) !default;
+
+/// Collection of button sizes.
+///
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} small
+/// @prop {Map} large
+/// @prop {Map} xlarge
+$button-sizes: (
+    xsmall: (
+        'font-size': em(12px)
+    ),
+    small: (
+        'font-size': em(14px)
+    ),
+    medium: (
+        'font-size': em(16px),
+        'padding': get-space(small) get-space(large)
+    ),
+    large: (
+        'font-size': em(18px)
+    ),
+    xlarge: (
+        'font-size': em(21px)
+    ),
+) !default;
+
+/// Default button size.
+///
+/// @type {Keyword}
+$button-size: medium !default;
+
+/// Default button variant.
+///
+/// @type {Keyword}
+$button-variant: neutral !default;
+
+/// Button text font weight.
+///
+/// @type {number|keyword}
+$button-weight: 400 !default;
+
+/// Button text align.
+///
+/// @type {Keyword}
+$button-align: center !default;
+
+/// Button border radius.
+///
+/// @type {Value}
+$button-radius: get-radius(xsmall) !default;
+
+/// Button transition settings.
+///
+/// @type {Values}
+$button-transition: border .2s ease, color .2s ease, background .2s ease, box-shadow .3s ease !default;
+
+/// Button box shadow.
+///
+/// @type {Value}
+$button-shadow: get-elevator(1) !default;
+
+/// Button box shadow on hover.
+///
+/// @type {Value}
+$button-hover-shadow: get-elevator(2) !default;
+
+/// Side paddings value for wide button.
+///
+/// @type {Value}
+$button-wide-padding: em(40px) !default;
+
+/// Opacity of the disabled button.
+///
+/// @type {Number}
+$button-disabled-opacity: 0.5 !default;
+
+/// Default hollowed button variant.
+///
+/// @type {Keyword}
+$button-hollow-variant: neutral !default;
+
+/// Outline width of the hollow button.
+///
+/// @type {Value}
+$button-hollow-border: 1px !default;
+
+/// Backgound color of the hollow button.
+///
+/// @type {Color}
+$button-hollow-background: transparent !default;
+
+/// Button's cover transition settings.
+///
+/// @type {Values}
+$button-cover-transition: all 300ms ease !default;
+
+// Button
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .button--disabled - Desc
+// .button--wide - Desc
+// .button--expanded - Desc
+// .button--xsmall - Desc
+// .button--small - Desc
+// .button--large - Desc
+// .button--xlarge - Desc
+// .button--white - Desc
+// .button--black - Desc
+// .button--primary - Desc
+// .button--secondary - Desc
+// .button--complementary - Desc
+// .button--success - Desc
+// .button--warning - Desc
+// .button--info - Desc
+// .button--error - Desc
+// .button--hollow - Desc
+// .button--hollow.button--white - Desc
+// .button--hollow.button--black - Desc
+// .button--hollow.button--primary - Desc
+// .button--hollow.button--secondary - Desc
+// .button--hollow.button--complementary - Desc
+// .button--hollow.button--success - Desc
+// .button--hollow.button--warning - Desc
+// .button--hollow.button--info - Desc
+// .button--hollow.button--error - Desc
+//
+// Markup: button.html
+//
+// Style guide: Components.Button
+.button {
+    $this: #{&};
+
+    $size: map-get($button-sizes, $button-size);
+    $variant: map-get($button-variants, $button-variant);
+
+    @include declarations($size);
+    @include declarations-amending($variant);
+
+    @if $button-shadow {
+        box-shadow: $button-shadow;
+    }
+
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+    text-decoration: none;
+    outline: 0;
+
+    font-weight: $button-weight;
+    text-align: $button-align;
+    border-radius: $button-radius;
+    border: $button-hollow-border solid transparent;
+    transition: $button-transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include declarations-amending($variant, true);
+
+        @if $button-hover-shadow {
+            box-shadow: $button-hover-shadow;
+        }
+    }
+
+    // Button Cover
+    //
+    // Desc
+    //
+    // Markup: button__cover.html
+    //
+    // Style guide: Components.Button.Cover
+    &__cover {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        color: map-get($variant, 'color');
+        transition: $button-cover-transition;
+    }
+
+    // Button Icon
+    //
+    // Desc
+    //
+    // Markup: button__icon.html
+    //
+    // Style guide: Components.Button.Icon
+    &__icon {
+        display: inline-block;
+    }
+
+    @each $size, $declarations in $button-sizes {
+        @if $size != $button-size {
+            &--#{$size} {
+                @include declarations($declarations);
+            }
+        }
+    }
+
+    @each $variant, $declarations in $button-variants {
+        @if $variant != $button-variant {
+            &--#{$variant} {
+                $color: map-get($declarations, 'color');
+
+                @include declarations-amending($declarations);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    @include declarations-amending($declarations, true);
+
+                    #{$this}__cover {
+                        color: nth($color, length($color));
+                    }
+                }
+
+                #{$this}__cover {
+                    color: nth($color, 1);
+                }
+            }
+        }
+    }
+
+    &--hollow {
+        $variant: map-get($button-hollow-variants, $button-hollow-variant);
+
+        @include declarations-amending($variant);
+
+        border-width: $button-hollow-border;
+        border-style: solid;
+        background-color: $button-hollow-background;
+
+        &:hover,
+        &:focus,
+        &:active {
+            @include declarations-amending($variant, true);
+        }
+
+        @each $variant, $declarations in $button-hollow-variants {
+            @if $variant != $button-hollow-variant {
+                &#{$this}--#{$variant} {
+                    $color: map-get($declarations, 'color');
+
+                    @include declarations-amending($declarations);
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        @include declarations-amending($declarations, true);
+
+                        #{$this}__cover {
+                            color: nth($color, length($color));
+                        }
+                    }
+
+                    #{$this}__cover {
+                        color: nth($color, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    &--wide {
+        padding-left: $button-wide-padding;
+        padding-right: $button-wide-padding;
+    }
+
+    &--expanded {
+        display: block;
+        width: 100%;
+    }
+
+    &--covered {
+        cursor: initial;
+        color: transparent !important;
+
+        #{$this}__cover {
+            opacity: 1;
+        }
+    }
+
+    &--curtained {
+        &:hover,
+        &:focus,
+        &:active {
+            color: transparent !important;
+
+            #{$this}__cover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &:disabled,
+    &--disabled {
+        cursor: default;
+        opacity: $button-disabled-opacity;
+        box-shadow: none;
+        pointer-events: none;
+        background-image: none;
+    }
+}

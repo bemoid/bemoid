@@ -1,0 +1,20 @@
+/// Outputs facing up media query for breakpoint.
+///
+/// @param {String} $name
+///
+/// @example scss - example
+///   @include breakpoint-up(large)
+/// @example css - output
+///   @media (min-width: 60em) { }
+@mixin breakpoint-up($name) {
+	@if not is-lowest-breakpoint($name) {
+        $width: get-breakpoint($name);
+
+        @media (min-width: #{$width}) {
+            @content;
+        }
+	}
+	@else {
+		@content;
+	}
+}

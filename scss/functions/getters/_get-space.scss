@@ -1,0 +1,11 @@
+/// Retrives space value.
+///
+/// @param {String} $name
+/// @require {Map} $spaces
+/// @return {Number} Space value
+///
+/// @example scss - example
+///   get-space(small);
+@function get-space($name) {
+    @return get($spaces, $name);
+}

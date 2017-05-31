@@ -1,0 +1,80 @@
+////
+/// @group Modal
+/// @require {variable} segments
+/// @require {variable} breakpoints
+/// @define modal
+////
+
+/// Space value around the modal.
+///
+/// @type {Value}
+$modal-space: 1rem !default;
+
+/// Style of the modal border.
+///
+/// @type {Values}
+$modal-border: 0 !default;
+
+/// Panel background color.
+///
+/// @type {Color}
+$modal-background: get-color(white) !default;
+
+/// Size of the modal border radius.
+///
+/// @type {Value}
+$modal-radius: get-radius(xsmall) !default;
+
+/// Style of the modal shadow.
+///
+/// @type {Values}
+$modal-shadow: get-elevator(27) !default;
+
+/// Style of the modal segments border.
+///
+/// @type {Values}
+$modal-segment-border: 1px solid get-color(light-gray) !default;
+
+// Modal
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .container--small    - Desc
+// .container--medium   - Desc
+// .container--large    - Desc
+// .container--xlarge   - Desc
+// .container--xxlarge  - Desc
+//
+// Markup: modal.html
+//
+// Style guide: Components.Modal
+.modal {
+    $this: #{&};
+
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $modal-space;
+
+    // Modal Body
+    //
+    // Grid system based on flexbox for building complex layouts.
+    //
+    // .panel--small - Desc
+    // .panel--large - Desc
+    // .panel--xlarge - Desc
+    //
+    // Markup: modal__body.html
+    //
+    // Style guide: Components.Modal.Body
+    &__body {
+        box-shadow: $modal-shadow;
+        background-color: $modal-background;
+        border-radius: $modal-radius;
+        border: $modal-border;
+
+        & > * + * {
+            border-top: $modal-segment-border;
+        }
+    }
+}

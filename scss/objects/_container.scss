@@ -1,0 +1,60 @@
+////
+/// @group Container
+/// @define container
+////
+
+/// Collection of container sizes.
+///
+/// @type {Keyword}
+$container-sizes: (
+	expanded: 100%,
+	small: get-breakpoint(small),
+	medium: get-breakpoint(medium),
+	large: get-breakpoint(large),
+	xlarge: get-breakpoint(xlarge),
+	xxlarge: get-breakpoint(xxlarge),
+) !default;
+
+/// Default container size.
+///
+/// @type {Keyword}
+$container-size: expanded !default;
+
+/// Container horizontal margins settings.
+///
+/// @type {keyword|value}
+$container-horizontal-margin: auto !default;
+
+// Container
+//
+// General element to be used as wrapper for other components. Its purpose is to limit the spreading of internal components to a certain width. By default, always expands to all available space (full width).
+//
+// .container--small    - Small width. Extends up to `small` breakpoint.
+// .container--medium   - Medium width. Extends up to `medium` breakpoint.
+// .container--large    - Large width. Extends up to `large` breakpoint.
+// .container--xlarge   - Xlarge width. Extends up to `xlarge` breakpoint.
+// .container--xxlarge  - Xxlarge width. Extends up to `xxlarge` breakpoint.
+//
+// Markup: container.html
+//
+// Style guide: Objects.Container
+.container {
+	$size: map-get($container-sizes, $container-size);
+
+	display: block;
+	width: 100%;
+	max-width: $size;
+
+	@if $container-horizontal-margin {
+		margin-left: $container-horizontal-margin;
+		margin-right: $container-horizontal-margin;
+	}
+
+	@each $size, $width in $container-sizes {
+		@if $size != $container-size {
+			&--#{$size} {
+				max-width: $width;
+			}
+		}
+	}
+}

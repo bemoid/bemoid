@@ -1,0 +1,68 @@
+////
+/// @group Image
+/// @define image
+////
+
+/// Radius size of the rounded image.
+///
+/// @type {Value}
+$image-radius-rounded: get-radius(xsmall) !default;
+
+/// Radius sieze of the circular image.
+///
+/// @type {Value}
+$image-radius-circular: get-radius(circle) !default;
+
+// Image
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .image--expanded - Desc
+// .image--rounded - Desc
+// .image--circular - Desc
+// .image--top - Desc
+// .image--middle - Desc
+// .image--bottom - Desc
+// .image--text-top - Desc
+// .image--text-bottom - Desc
+//
+// Markup: image.html
+//
+// Style guide: Objects.Image
+.image {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+
+    &--expanded {
+        width: 100%;
+    }
+
+    &--rounded {
+        border-radius: $image-radius-rounded;
+    }
+
+    &--circular {
+        border-radius: $image-radius-circular;
+    }
+
+    &--top {
+        vertical-align: top;
+    }
+
+    &--middle {
+        vertical-align: middle;
+    }
+
+    &--bottom {
+        vertical-align: bottom;
+    }
+
+    &--text-top {
+        vertical-align: text-top;
+    }
+
+    &--text-bottom {
+        vertical-align: text-bottom;
+    }
+}

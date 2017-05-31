@@ -1,0 +1,41 @@
+////
+/// @group Overlay
+/// @define overlay
+////
+
+/// Overlay background color.
+///
+/// @type {Color}
+$overlay-background: get-color(black) !default;
+
+/// Overlay opacity value.
+///
+/// @type {Number}
+$overlay-opacity: 0.66 !default;
+
+/// Blur value of overlay background.
+///
+/// @type {Value}
+$overlay-blur: 0.5rem !default;
+
+// Overlay
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .overlay--blured - Desc
+//
+// Markup: overlay.html
+//
+// Style guide: Components.Overlay
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: $overlay-opacity;
+    background-color: $overlay-background;
+
+    &--blured {
+        backdrop-filter: blur($overlay-blur);
+    }
+}

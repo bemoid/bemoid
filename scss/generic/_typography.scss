@@ -1,0 +1,31 @@
+////
+/// @group generic
+////
+
+html {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+body {
+    font-family: $font-family-primary;
+    color: $font-color;
+
+    @if $font-antialiasing {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: $font-family-monospace;
+}
+
+// Add the correct background and color in IE 9-.
+mark {
+    background-color: get-color(warning);
+    color: $font-color;
+}

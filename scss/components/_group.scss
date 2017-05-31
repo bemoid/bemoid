@@ -1,0 +1,222 @@
+////
+/// @group Group
+/// @define group
+////
+
+/// Overlap value of group items.
+///
+/// @type {Number|Value|Values}
+$group-overlap: -1px !default;
+
+/// Width of the group divider.
+///
+/// @type {Number|Value|Values}
+$group-divider-width: 6px !default;
+
+/// Radius value for inner corners of group items.
+///
+/// @type {Number|Value|Values}
+$group-inner-radius: 0 !default;
+
+/// Radius value for outer corners of group items.
+///
+/// @type {Number|Value|Values}
+$group-outer-radius: get-radius(xsmall) !default;
+
+/// Transition settings for group items.
+///
+/// @type {Values}
+$group-item-transition: border 0.2s ease-out, box-shadow, 0.2s ease-out !default;
+
+// Group
+//
+//
+//
+// .group--stacked  - Makes group items stacked on each other.
+// .group--expanded - Expands group items to all available space.
+//
+// Markup: group.html
+//
+// Style guide: Components.Group
+.group {
+    $this: #{&};
+
+    display: inline-flex;
+
+    & > * + * {
+        margin-left: $group-overlap;
+    }
+
+    // Group Item
+    //
+    // Element of the group block to determine components for grouping.
+    //
+    // Style guide: Components.Group.Item
+    &__item {
+        flex: 0 1 auto;
+        max-width: 100%;
+        transition: #{$group-item-transition}, z-index 0ms step-end;
+
+        &:hover,
+        &:focus,
+        & > *:hover,
+        & > *:focus, {
+            position: relative;
+            transition: #{$group-item-transition}, z-index 0.2s step-start;
+        }
+
+        &:focus,
+        & > *:focus {
+            z-index: 2;
+        }
+
+        &:first-child,
+        &:first-child > * {
+            border-radius:
+                $group-outer-radius
+                $group-inner-radius
+                $group-inner-radius
+                $group-outer-radius;
+
+            #{$this} {
+                #{$this}__item {
+                    &:last-child,
+                    &:last-child > * {
+                        border-radius: $group-inner-radius;
+                    }
+                }
+            }
+        }
+
+        &:last-child,
+        &:last-child > * {
+            border-radius:
+                $group-inner-radius
+                $group-outer-radius
+                $group-outer-radius
+                $group-inner-radius;
+
+            #{$this} {
+                #{$this}__item {
+                    &:first-child,
+                    &:first-child > * {
+                        border-radius: $group-inner-radius;
+                    }
+                }
+            }
+        }
+
+        &:not(:first-child):not(:last-child),
+        &:not(:first-child):not(:last-child) > * {
+            border-radius: $group-inner-radius;
+        }
+    }
+
+    // Group Divider
+    //
+    // Element of group component which separates group items. Espacially to use with Divider component.
+    //
+    // Style guide: Components.Group.Divider
+    &__divider {
+        flex: 0 0 $group-divider-width;
+        width: $group-divider-width;
+
+        &:after {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &--expanded {
+        width: 100%;
+
+        #{$this}__item {
+            flex: 1;
+        }
+    }
+
+    &--stacked {
+        flex-direction: column;
+
+        & > * + * {
+            margin-left: 0;
+            margin-top: $group-overlap;
+        }
+
+        #{$this}__item {
+            &:first-child,
+            &:first-child > * {
+                border-radius:
+                    $group-outer-radius
+                    $group-outer-radius
+                    $group-inner-radius
+                    $group-inner-radius;
+
+                #{$this} {
+                    #{$this}__item {
+                        &:first-child,
+                        &:first-child > * {
+                            border-radius:
+                                $group-outer-radius
+                                $group-inner-radius
+                                $group-inner-radius
+                                $group-inner-radius;
+                        }
+
+                        &:last-child,
+                        &:last-child > * {
+                            border-radius:
+                                $group-inner-radius
+                                $group-outer-radius
+                                $group-inner-radius
+                                $group-inner-radius;
+                        }
+                    }
+                }
+            }
+
+            &:last-child,
+            &:last-child > * {
+                border-radius:
+                    $group-inner-radius
+                    $group-inner-radius
+                    $group-outer-radius
+                    $group-outer-radius;
+
+                #{$this} {
+                    #{$this}__item {
+                        &:first-child,
+                        &:first-child > * {
+                            border-radius:
+                                $group-inner-radius
+                                $group-inner-radius
+                                $group-inner-radius
+                                $group-outer-radius;
+                        }
+
+                        &:last-child,
+                        &:last-child > * {
+                            border-radius:
+                                $group-inner-radius
+                                $group-inner-radius
+                                $group-outer-radius
+                                $group-inner-radius;
+                        }
+                    }
+                }
+            }
+
+            &:not(:last-child),
+            &:not(:last-child) > * {
+                box-shadow: none;
+            }
+        }
+
+        #{$this}__divider {
+            flex: 0 0 auto;
+            width: 100%;
+            height: $group-divider-width;
+        }
+    }
+}

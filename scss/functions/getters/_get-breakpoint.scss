@@ -1,0 +1,11 @@
+/// Gets breakpoint value.
+///
+/// @param {String} $name
+/// @require {Map} $breakpoints
+/// @return {Value}
+///
+/// @example scss - example
+///   get-breakpoint(large);
+@function get-breakpoint($name) {
+	@return get($breakpoints, $name);
+}

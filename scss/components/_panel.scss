@@ -1,0 +1,84 @@
+////
+/// @group Panel
+/// @define panel
+////
+
+/// Style of the panel border.
+///
+/// @type {Values}
+$panel-border: 1px solid get-color(light-gray) !default;
+
+/// Panel background color.
+///
+/// @type {Color}
+$panel-background: get-color(white) !default;
+
+/// Size of the panel border radius.
+///
+/// @type {Value}
+$panel-radius: get-radius(xsmall) !default;
+
+/// Style of the panel shadow.
+///
+/// @type {Values}
+$panel-shadow: get-elevator(2) !default;
+
+/// Style of the panel segments border.
+///
+/// @type {Values}
+$panel-segment-border: 1px solid get-color(light-gray) !default;
+
+/// Max height of the panel's scrollable segment.
+///
+/// @type {Value}
+$panel-scrollable-height: 300px !default;
+
+// Panel
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .panel--scrollable - Desc
+//
+// Markup: panel.html
+//
+// Style guide: Components.Panel
+.panel {
+    $this: #{&};
+
+    border: $panel-border;
+    border-radius: $panel-radius;
+    box-shadow: $panel-shadow;
+    background-color: $panel-background;
+
+    & > * + * {
+        border-top: $panel-segment-border;
+    }
+
+    // Panel Segment
+    //
+    // Grid system based on flexbox for building complex layouts.
+    //
+    // .segment--xsmall - Desc
+    // .segment--large - Desc
+    // .segment--xlarge - Desc
+    // .panel__segment--scrollable - Desc
+    //
+    // Markup: panel__segment.html
+    //
+    // Style guide: Components.Panel.Segment
+    &__segment {
+        position: relative;
+
+        &--scrollable {
+            max-height: $panel-scrollable-height;
+            overflow-y: auto;
+        }
+    }
+
+    &--scrollable {
+        #{$this}__segment {
+            max-height: $panel-scrollable-height;
+            overflow-y: auto;
+        }
+    }
+}

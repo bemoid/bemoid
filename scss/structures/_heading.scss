@@ -1,0 +1,20 @@
+////
+/// @group Heading
+/// @define heading
+////
+
+/// Base font size set on the root html element.
+///
+/// @type {Number|Value|Values}
+$heading-margins: 0 !default;
+
+// Heading
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// Markup: heading.html
+//
+// Style guide: Structures.Heading
+.heading {
+	margin: $heading-margins;
+}

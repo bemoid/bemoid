@@ -1,0 +1,143 @@
+////
+/// @group Radio
+/// @define radio
+////
+
+/// Radio input radius.
+///
+/// @type {Number|Value|Values}
+$radio-radius: get-radius(circle) !default;
+
+/// Radio input inner circle width.
+///
+/// @type {Number|Value}
+$radio-inner-width: 0.5em !default;
+
+/// Radio input inner circle background color.
+///
+/// @type {Color}
+$radio-inner-background: get-color(info) !default;
+
+/// Radio input inner circle transition.
+///
+/// @type {Values}
+$radio-inner-transition: transform 0.1s ease-out !default;
+
+/// Radio input inner circle transform.
+///
+/// @type {Values}
+$radio-inner-transform: scale(0) !default;
+
+/// Radio input inner circle width.
+///
+/// @type {Number|Value}
+$radio-outer-width: 1em !default;
+
+/// Radio input outer circle background color.
+///
+/// @type {Color}
+$radio-outer-background: transparent !default;
+
+/// Radio input outer circle border.
+///
+/// @type {Values}
+$radio-outer-border: 1px solid get-color(light-gray) !default;
+
+/// Radio input inner circle transform.
+///
+/// @type {Values}
+$radio-outer-shadow: get-elevator(1) !default;
+
+/// Radio input outer circle transition.
+///
+/// @type {Values}
+$radio-outer-transition: border 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out !default;
+
+/// Radio input inner circle transform in active state.
+///
+/// @type {Values}
+$radio-active-inner-transform: scale(1) !default;
+
+/// Radio input outer circle border in active state.
+///
+/// @type {Values}
+$radio-hover-outer-border: 1px solid get-color(info) !default;
+
+/// Radio input outer circle background in active state.
+///
+/// @type {Color}
+$radio-hover-outer-background: transparentize(get-color(info), 0.9) !default;
+
+/// Radio input outer circle box-shadow in active state.
+///
+/// @type {Values}
+$radio-hover-outer-shadow: get-elevator(2) !default;
+
+// Radio
+//
+// Desc
+//
+// Markup: radio.html
+//
+// Style guide: Components.Radio
+.radio {
+    $this: #{&};
+
+    &__input {
+        display: none;
+
+        &:checked {
+            & + #{$this}__label {
+                &:after {
+                    transform: $radio-active-inner-transform;
+                }
+            }
+        }
+    }
+
+    &__label {
+        position: relative;
+        padding-left: 1.5em;
+        vertical-align: middle;
+
+        &:active,
+        &:focus,
+        &:hover {
+            &:before {
+                background: $radio-hover-outer-background;
+                border: $radio-hover-outer-border;
+                box-shadow: $radio-hover-outer-shadow;
+            }
+        }
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+        }
+
+        &:before {
+            left: 0;
+            margin-top: -#{$radio-outer-width/2};
+            width: $radio-outer-width;
+            height: $radio-outer-width;
+            background: $radio-outer-background;
+            border: $radio-outer-border;
+            border-radius: $radio-radius;
+            box-shadow: $radio-outer-shadow;
+            transition: $radio-outer-transition;
+        }
+
+        &:after {
+            left: $radio-inner-width/2;
+            margin-top: -#{$radio-inner-width/2};
+            width: $radio-inner-width;
+            height: $radio-inner-width;
+            transition: $radio-inner-transition;
+            transform: $radio-inner-transform;
+            background: $radio-inner-background;
+            border-radius: $radio-radius;
+        }
+    }
+}

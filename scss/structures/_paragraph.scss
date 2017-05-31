@@ -1,0 +1,20 @@
+////
+/// @group Paragraph
+/// @define paragraph
+////
+
+/// Base font size set on the root html element.
+///
+/// @type {Number|Value|Values}
+$paragraph-margins: 0 !default;
+
+// Paragraph
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// Markup: paragraph.html
+//
+// Style guide: Structures.Paragraph
+.paragraph {
+	margin: $paragraph-margins;
+}

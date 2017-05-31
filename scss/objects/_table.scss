@@ -1,0 +1,137 @@
+////
+/// @group Table
+/// @define table
+////
+
+/// Padding size in each table cell.
+///
+/// @type {Value|Values}
+$table-padding: get-space(medium) get-space(large) !default;
+
+/// Border width on table cells.
+///
+/// @type {Value}
+$table-border-width: 1px !default;
+
+/// Style of table cells border.
+///
+/// @type {Keyword}
+$table-border-style: solid !default;
+
+/// Color of table cells border.
+///
+/// @type {Color}
+$table-border-color: get-color(light-gray) !default;
+
+/// Background of the table head and footer.
+///
+/// @type {Color}
+$table-heading-background: get-color(lighter-gray) !default;
+
+/// Padding size in each condensed table cell.
+///
+/// @type {Value|Values}
+$table-condensed-padding: get-space(small) get-space(medium) !default;
+
+/// Background of the striped table even rows.
+///
+/// @type {Color}
+$table-striped-background: lighten(get-color(lighter-gray), 1%) !default;
+
+/// Background of the hovered row in hoverable table.
+///
+/// @type {Color}
+$table-hoverable-background: get-color(lighter-gray) !default;
+
+// Table
+//
+// Desc
+//
+// .table--bordered - Desc
+// .table--scoreboard - Desc
+// .table--striped - Desc
+// .table--hoverable - Desc
+// .table--condensed - Desc
+//
+// Markup: table.html
+//
+// Style guide: Objects.Table
+.table {
+    $this: #{&};
+
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    border-top: $table-border-width $table-border-style $table-border-color;
+
+    &__head,
+    &__footer {
+        background-color: $table-heading-background;
+    }
+
+    &__cell {
+        vertical-align: top;
+        padding: $table-padding;
+        border: $table-border-width $table-border-style $table-border-color;
+        border-width: 0 0 $table-border-width;
+    }
+
+    &--condensed {
+        #{$this}__cell {
+            padding: $table-condensed-padding;
+        }
+    }
+
+    &--bordered {
+        border: $table-border-width $table-border-style $table-border-color;
+
+        #{$this}__cell {
+            border-width: $table-border-width;
+        }
+    }
+
+    &--hoverable {
+        #{$this}__row {
+            &:hover {
+                background-color: $table-hoverable-background;
+            }
+        }
+    }
+
+    &--scoreboard {
+        border-width: 0;
+
+        #{$this}__cell {
+            border-width: $table-border-width;
+
+            &:first-child {
+                border-left-width: 0;
+            }
+
+            &:last-child {
+                border-right-width: 0;
+            }
+        }
+
+        & > :first-child {
+            #{$this}__cell {
+                border-top: 0;
+            }
+        }
+
+        & > :last-child {
+            #{$this}__cell {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    &--striped {
+        #{$this}__row {
+            &:nth-child(even) {
+                background-color: $table-striped-background;
+            }
+        }
+    }
+}

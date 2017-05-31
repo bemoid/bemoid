@@ -1,0 +1,50 @@
+////
+/// @group generic
+////
+
+/// The default font family.
+/// @link http://type-scale.com/
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} medium
+$headings: (
+    xsmall: (
+        'h1': ('font-size': em(36px)),
+        'h2': ('font-size': em(27px)),
+        'h3': ('font-size': em(21px)),
+        'h4': ('font-size': em(18px)),
+        'h5': ('font-size': em(16px)),
+        'h6': ('font-size': em(14px)),
+    ),
+    medium: (
+        'h1': ('font-size': em(42px)),
+        'h2': ('font-size': em(36px)),
+        'h3': ('font-size': em(27px)),
+        'h4': ('font-size': em(21px)),
+        'h5': ('font-size': em(16px)),
+        'h6': ('font-size': em(14px)),
+    ),
+) !default;
+
+/// Container margins settings.
+/// @type {Color}
+$headings-color: get-color(black) !default;
+
+/// Base line height determines the basic unit of vertical rhythm.
+/// @type {Number|Value}
+$font-line-height: 1.25 !default;
+
+h1, h2, h3, h4, h5, h6 {
+    color: $headings-color;
+    line-height: $font-line-height;
+}
+
+@each $breakpoint, $heading in $headings {
+    @include breakpoint($breakpoint up) {
+        @each $h, $declarations in $heading {
+            #{$h} {
+                @include declarations($declarations);
+            }
+        }
+    }
+}

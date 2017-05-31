@@ -1,0 +1,32 @@
+////
+/// @group Label
+/// @define label
+////
+
+/// Label color.
+///
+/// @type {Color}
+$label-color: get-color(black) !default;
+
+/// Label font-size.
+///
+/// @type {Value}
+$label-font-size: em(14px) !default;
+
+/// Label font-size.
+///
+/// @type {keyword|number}
+$label-font-weight: bold !default;
+
+// Label
+//
+// Desc
+//
+// Markup: label.html
+//
+// Style guide: Components.Label
+.label {
+    color: $label-color;
+    font-size: $label-font-size;
+    font-weight: $label-font-weight;
+}

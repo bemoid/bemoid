@@ -1,0 +1,114 @@
+////
+/// @group Media
+/// @define media
+////
+
+// Media
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .media--reversed - Desc
+// .media--stacked - Desc
+// .media--stacked.media--reversed - Desc
+//
+// Markup: media.html
+//
+// Style guide: Objects.Media
+.media {
+    $this: #{&};
+
+    display: flex;
+
+    @each $breakpoint, $width in $grid-gutters {
+        @include breakpoint($breakpoint up) {
+            margin: -#{$width / 2};
+        }
+    }
+
+    &__side,
+    &__body {
+        @each $breakpoint, $width in $grid-gutters {
+            @include breakpoint($breakpoint up) {
+                padding: $width / 2;
+            }
+        }
+    }
+
+    // Media Side
+    //
+    // Grid system based on flexbox for building complex layouts.
+    //
+    // .media__side--middle - Desc
+    // .media__side--bottom - Desc
+    //
+    // Markup: media__side.html
+    //
+    // Style guide: Objects.Media.Side
+    &__side {
+        flex: 0 1 auto;
+        max-width: 100%;
+
+        &--middle {
+            align-self: center;
+
+            #{$this}__image {
+                vertical-align: middle;
+            }
+        }
+
+        &--bottom {
+            align-self: flex-end;
+
+            #{$this}__image {
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
+    // Media Body
+    //
+    // Grid system based on flexbox for building complex layouts.
+    //
+    // .media__body--middle - Desc
+    // .media__body--bottom - Desc
+    //
+    // Markup: media__body.html
+    //
+    // Style guide: Objects.Media.Body
+    &__body {
+        flex: 1;
+        max-width: 100%;
+
+        &--middle {
+            align-self: center;
+        }
+
+        &--bottom {
+            align-self: flex-end;
+        }
+    }
+
+    // Media Image
+    //
+    // Grid system based on flexbox for building complex layouts.
+    //
+    // Style guide: Objects.Media.Image
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        vertical-align: text-top;
+    }
+
+    &--stacked {
+        flex-direction: column;
+    }
+
+    &--reversed {
+        flex-direction: row-reverse;
+
+        &#{$this}--stacked {
+            flex-direction: column-reverse;
+        }
+    }
+}

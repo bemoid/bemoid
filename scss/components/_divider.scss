@@ -1,0 +1,91 @@
+////
+/// @group Divider
+/// @define divider
+////
+
+/// Collection of divider sizes.
+///
+/// @type {Map}
+/// @prop {Map} small
+/// @prop {Map} medium
+/// @prop {Map} large
+$divider-badge-sizes: (
+    small: (
+        'width': 1.1rem,
+        'height': 1.1rem,
+        'font-size': em(12px)
+    ),
+    medium: (
+        'width': 1.25rem,
+        'height': 1.25rem,
+        'font-size': em(14px)
+    ),
+    large: (
+        'width': 1.5rem,
+        'height': 1.5rem,
+        'font-size': em(16px)
+    ),
+) !default;
+
+/// Default divider size.
+///
+/// @type {Keyword}
+$divider-badge-size: medium !default;
+
+/// Divider background color.
+///
+/// @type {Color}
+$divider-badge-background: get-color(white) !default;
+
+/// Divider border radius.
+///
+/// @type {Number|Value|Values}
+$divider-badge-radius: get-radius(circle) !default;
+
+/// Divider box shadow.
+///
+/// @type {Value|Values}
+$divider-badge-shadow: get-elevator(2) !default;
+
+// Divider
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .divider--small - Desc
+// .divider--large - Desc
+//
+// Markup: divider.html
+//
+// Style guide: Components.Divider
+.divider {
+    $size: map-get($divider-badge-sizes, $divider-badge-size);
+
+    position: relative;
+    z-index: 3;
+
+    &:after {
+        @include declarations($size);
+
+        content: attr(data-text);
+        line-height: map-get($size, 'height');
+
+        box-sizing: content-box;
+        background-color: $divider-badge-background;
+        border-radius: $divider-badge-radius;
+        box-shadow: $divider-badge-shadow;
+
+        text-align: center;
+    }
+
+    @each $size, $declarations in $divider-badge-sizes {
+        @if $size != $divider-badge-size {
+            &--#{$size} {
+                &:after {
+                    @include declarations($declarations);
+
+                    line-height: map-get($declarations, 'height');
+                }
+            }
+        }
+    }
+}

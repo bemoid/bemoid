@@ -1,0 +1,201 @@
+////
+/// @group Field
+/// @define field
+////
+
+/// Collection of field sizes.
+///
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} small
+/// @prop {Map} medium
+/// @prop {Map} large
+/// @prop {Map} xlarge
+$field-sizes: (
+    xsmall: (
+        'font-size': em(12px)
+    ),
+    small: (
+        'font-size': em(14px)
+    ),
+    medium: (
+        'font-size': em(16px),
+        'padding': get-space(small) get-space(medium)
+    ),
+    large: (
+        'font-size': em(18px)
+    ),
+    xlarge: (
+        'font-size': em(21px)
+    ),
+) !default;
+
+/// Collection of field sizes.
+///
+/// @type {Map}
+/// @prop {Color} primary
+/// @prop {Color} success
+/// @prop {Color} warning
+/// @prop {Color} error
+/// @prop {Color} info
+$field-variants: (
+    success: (
+        'color': get-color(success),
+        'border-color': get-color(success),
+    ),
+    warning: (
+        'color': get-color(warning),
+        'border-color': get-color(warning),
+    ),
+    error: (
+        'color': get-color(error),
+        'border-color': get-color(error),
+    ),
+    info: (
+        'color': get-color(info),
+        'border-color': get-color(info),
+    ),
+) !default;
+
+/// Default field size. Should be size name from the `$field-sizes` collection.
+///
+/// @type {Keyword}
+$field-size: medium !default;
+
+/// Font size of the field caption.
+///
+/// @type {Number|Value}
+$field-caption-font-size: em(12px) !default;
+
+/// Space between elements of inline field.
+///
+/// @type {Number|Value}
+$field-inline-margin: 1em !default;
+
+
+// Field
+//
+// Desc
+//
+// .field--xsmall  - Desc
+// .field--small - Desc
+// .field--large - Desc
+// .field--xlarge - Desc
+// .field--expanded - Desc
+// .field--inline - Desc
+// .field--success - Desc
+// .field--warning - Desc
+// .field--error - Desc
+// .field--info - Desc
+//
+// Markup: field.html
+//
+// Style guide: Components.Field
+.field {
+    $this: #{&};
+
+    position: relative;
+
+    // Field Label
+    //
+    // Desc
+    //
+    // Markup: field__label.html
+    //
+    // Style guide: Components.Field.Label
+    &__label {
+        display: block;
+    }
+
+    &__input,
+    &__control {
+        display: block;
+        vertical-align: middle;
+    }
+
+    // Field Input
+    //
+    // Desc
+    //
+    // Markup: field__input.html
+    //
+    // Style guide: Components.Field.Input
+    &__input {
+        $size: map-get($field-sizes, $field-size);
+
+        @include declarations($size);
+    }
+
+    // Field Control
+    //
+    // Desc
+    //
+    // Markup: field__control.html
+    //
+    // Style guide: Components.Field.Control
+    &__control {
+        $size: map-get($field-sizes, $field-size);
+
+        @include declarations(map-remove($size, 'padding'));
+    }
+
+    // Field Caption
+    //
+    // Desc
+    //
+    // .field__caption--untouched - Desc
+    //
+    // Markup: field__caption.html
+    //
+    // Style guide: Components.Field.Caption
+    &__caption {
+        font-size: $field-caption-font-size;
+
+        &--untouched {
+            color: initial !important;
+        }
+    }
+
+    @each $size, $declarations in $field-sizes {
+        @if $size != $field-size {
+            &--#{$size} {
+                #{$this}__input {
+                    @include declarations($declarations);
+                }
+
+                #{$this}__control {
+                   font-size: map-get($declarations, 'font-size');
+                }
+            }
+        }
+    }
+
+    @each $variant, $declarations in $field-variants {
+        &--#{$variant} {
+            color: map-get($declarations, 'color');
+
+            #{$this}__input {
+                @include declarations(map-remove($declarations, 'color'));
+            }
+        }
+    }
+
+    &--expanded {
+        #{$this}__input,
+        #{$this}__control {
+            width: 100%;
+        }
+    }
+
+    &--inline {
+        & > * + * {
+            margin-left: $field-inline-margin;
+        }
+
+        #{$this}__label,
+        #{$this}__input,
+        #{$this}__control {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+////
+/// @group Form
+/// @define form
+////
+
+// Form
+//
+// Desc
+//
+// Markup: form.html
+//
+// Style guide: Structures.Form
+.form {
+	& > * + * {
+		margin-top: em(16px);
+	}
+
+	&__group {
+		margin-left: 0;
+		margin-right: 0;
+		border-radius: get-radius(xsmall);
+		background-color: get-color(lighter-gray);
+		border: 1px solid get-color(light-gray);
+	}
+
+	&__legend {
+		font-size: em(12px);
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
