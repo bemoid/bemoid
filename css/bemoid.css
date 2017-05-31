@@ -19,6 +19,10 @@ mark {
   background-color: #ffde66;
   color: #4d5e68; }
 
+a {
+  color: #4d5e68;
+  text-decoration: underline; }
+
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;

@@ -32,15 +32,15 @@ $colors: (
     black: #171C1F,
 ) !default;
 
-/// Base font size set on the root html element.
-///
-/// @type {Value}
-$font-size: 16px !default;
-
 /// Base line height determines the basic unit of vertical rhythm.
 ///
 /// @type {Number}
 $line-height: 1.5 !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Value}
+$font-size: 16px !default;
 
 /// Base font size set on the root html element.
 ///
@@ -66,6 +66,16 @@ $font-family-secondary: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgi
 ///
 /// @type {Value|Values}
 $font-family-monospace: 'Lucida Console', 'Monaco', monospace !default;
+
+/// Text color of anchors.
+///
+/// @type {Color}
+$link-color: $font-color !default;
+
+/// Text decoration of anchors.
+///
+/// @type {Keyword}
+$link-decoration: underline !default;
 
 /// Collection of breakpoints.
 ///
