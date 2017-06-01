@@ -6,13 +6,6 @@
 // Variables
 @import 'settings';
 
-// Utilities
-@import 'utilities/space';
-@import 'utilities/color';
-@import 'utilities/radius';
-@import 'utilities/elevator';
-@import 'utilities/breakpoint';
-
 // Generic
 @import 'generic/typography';
 @import 'generic/normalize';
@@ -47,3 +40,10 @@
 @import 'components/divider';
 @import 'components/checkbox';
 @import 'components/group';
+
+// Utilities
+@import 'utilities/space';
+@import 'utilities/color';
+@import 'utilities/radius';
+@import 'utilities/elevator';
+@import 'utilities/breakpoint';
