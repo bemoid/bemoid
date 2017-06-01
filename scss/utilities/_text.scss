@@ -1,0 +1,24 @@
+// Text
+//
+// Desc
+//
+// .text--right - Desc
+// .text--center - Desc
+// .text--upper - Desc
+//
+// Markup: text.html
+//
+// Style guide: Utilities.Text
+.text {
+    &--right {
+        text-align: right;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+}

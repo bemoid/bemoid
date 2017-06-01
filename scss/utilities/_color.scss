@@ -1,2 +1,29 @@
-// color--primary
-// background--primary
+// Color
+//
+// Desc
+//
+// .color--primary - Desc
+// .color--secondary - Desc
+// .color--complementary - Desc
+// .color--success - Desc
+// .color--warning - Desc
+// .color--error - Desc
+// .color--info - Desc
+// .color--white - Desc
+// .color--lighter-gray - Desc
+// .color--light-gray - Desc
+// .color--gray - Desc
+// .color--dark-gray - Desc
+// .color--darker-gray - Desc
+// .color--black - Desc
+//
+// Markup: color.html
+//
+// Style guide: Utilities.Color
+.color {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            color: $color;
+        }
+    }
+}

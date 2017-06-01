@@ -1,0 +1,29 @@
+// Background
+//
+// Desc
+//
+// .background--primary - Desc
+// .background--secondary - Desc
+// .background--complementary - Desc
+// .background--success - Desc
+// .background--warning - Desc
+// .background--error - Desc
+// .background--info - Desc
+// .background--white - Desc
+// .background--lighter-gray - Desc
+// .background--light-gray - Desc
+// .background--gray - Desc
+// .background--dark-gray - Desc
+// .background--darker-gray - Desc
+// .background--black - Desc
+//
+// Markup: background.html
+//
+// Style guide: Utilities.Background
+.background {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            background-color: $color;
+        }
+    }
+}
