@@ -1,2 +1,21 @@
-// elevator--1
-// elevator--27
+// Elevator
+//
+// Desc
+//
+// .elevator--1 - Desc
+// .elevator--2 - Desc
+// .elevator--3 - Desc
+// .elevator--6 - Desc
+// .elevator--18 - Desc
+// .elevator--27 - Desc
+//
+// Markup: elevator.html
+//
+// Style guide: Utilities.Elevator
+.elevator {
+    @each $level, $declaration in $elevators {
+        &--#{$level} {
+            box-shadow: $declaration;
+        }
+    }
+}
