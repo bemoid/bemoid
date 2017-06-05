@@ -273,6 +273,7 @@ h6 {
   h6 {
     font-size: 0.875em; } }
 
+/** @define container */
 .container {
   display: block;
   width: 100%;
@@ -290,6 +291,7 @@ h6 {
   .container--xxlarge {
     max-width: 90em; }
 
+/** @define grid */
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,7 +664,7 @@ h6 {
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
-  @media (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .grid--stackable {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -677,6 +679,7 @@ h6 {
     .grid--gapless > .grid__column {
       padding: 0; }
 
+/** @define list */
 .list {
   display: block;
   margin-top: 0;
@@ -714,6 +717,7 @@ h6 {
     counter-increment: o;
     content: counters(o, "."); }
 
+/** @define media */
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,6 +780,7 @@ h6 {
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
 
+/** @define table */
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -812,6 +817,7 @@ h6 {
   .table--striped .table__row:nth-child(even) {
     background-color: #f9f9f9; }
 
+/** @define image */
 .image {
   display: inline-block;
   max-width: 100%;
@@ -833,6 +839,7 @@ h6 {
   .image--text-bottom {
     vertical-align: text-bottom; }
 
+/** @define form */
 .form > * + * {
   margin-top: 1em; }
 
@@ -848,6 +855,7 @@ h6 {
   font-weight: bold;
   text-transform: uppercase; }
 
+/** @define segment */
 .segment {
   padding: 1.125em;
   width: 100%;
@@ -859,12 +867,15 @@ h6 {
   .segment--xlarge {
     padding: 2.25em; }
 
+/** @define heading */
 .heading {
   margin: 0; }
 
+/** @define paragraph */
 .paragraph {
   margin: 0; }
 
+/** @define panel */
 .panel {
   border: 1px solid #d7dfe6;
   border-radius: 0.25rem;
@@ -881,6 +892,7 @@ h6 {
     max-height: 300px;
     overflow-y: auto; }
 
+/** @define modal */
 .modal {
   position: fixed;
   top: 50%;
@@ -896,6 +908,7 @@ h6 {
     .modal__body > * + * {
       border-top: 1px solid #d7dfe6; }
 
+/** @define input */
 .input {
   line-height: inherit;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -911,6 +924,7 @@ h6 {
     box-shadow: 0 0.3125rem 0.25rem -0.1875rem rgba(0, 0, 0, 0.1);
     border-color: #3273dc; }
 
+/** @define field */
 .field {
   position: relative; }
   .field__label {
@@ -969,11 +983,13 @@ h6 {
   .field--inline .field__control {
     display: inline-block; }
 
+/** @define label */
 .label {
   color: #171C1F;
   font-size: 0.875em;
   font-weight: bold; }
 
+/** @define radio */
 .radio__input {
   display: none; }
   .radio__input:checked + .radio__label:after {
@@ -1015,6 +1031,7 @@ h6 {
     background: #3273dc;
     border-radius: 50%; }
 
+/** @define select */
 .select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1025,6 +1042,7 @@ h6 {
   background-position: center right 1em;
   background-repeat: no-repeat; }
 
+/** @define button */
 .button {
   font-size: 1em;
   padding: 0.375em 1.125em;
@@ -1288,6 +1306,7 @@ h6 {
     pointer-events: none;
     background-image: none; }
 
+/** @define overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -1300,6 +1319,7 @@ h6 {
     -webkit-backdrop-filter: blur(0.5rem);
             backdrop-filter: blur(0.5rem); }
 
+/** @define message */
 .message {
   background-color: #f6f6f6;
   border-color: #d7dfe6;
@@ -1344,6 +1364,7 @@ h6 {
       border-top-width: 0.3125em;
       border-top-color: #ec3953; }
 
+/** @define tag */
 .tag {
   display: inline-block;
   float: left;
@@ -1369,6 +1390,7 @@ h6 {
             align-items: center;
     padding: 0.5625em; }
 
+/** @define divider */
 .divider {
   position: relative;
   z-index: 3; }
@@ -1394,11 +1416,13 @@ h6 {
     font-size: 1em;
     line-height: 1.5rem; }
 
+/** @define checkbox */
 .checkbox {
   display: inline-block;
   vertical-align: baseline;
   box-shadow: none; }
 
+/** @define group */
 .group {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1499,6 +1523,7 @@ h6 {
       width: 100%;
       height: 6px; }
 
+/** @define text */
 .text--right {
   text-align: right; }
 
@@ -1508,6 +1533,7 @@ h6 {
 .text--upper {
   text-transform: uppercase; }
 
+/** @define color */
 .color--primary {
   color: #6c3fce; }
 
@@ -1550,6 +1576,191 @@ h6 {
 .color--black {
   color: #171C1F; }
 
+/** @define hidden */
+.hidden {
+  display: none; }
+  .hidden\@xsmall {
+    display: initial; }
+    @media (max-width: -0.0625em) {
+      .hidden\@xsmall {
+        display: none; } }
+    .hidden\@xsmall--up {
+      display: initial;
+      display: none; }
+    .hidden\@xsmall--down {
+      display: initial; }
+      @media (max-width: -0.0625em) {
+        .hidden\@xsmall--down {
+          display: none; } }
+  .hidden\@small {
+    display: initial; }
+    @media (min-width: 30em) and (max-width: 48em) {
+      .hidden\@small {
+        display: none; } }
+    .hidden\@small--up {
+      display: initial; }
+      @media (min-width: 30em) {
+        .hidden\@small--up {
+          display: none; } }
+    .hidden\@small--down {
+      display: initial; }
+      @media (max-width: 29.9375em) {
+        .hidden\@small--down {
+          display: none; } }
+  .hidden\@medium {
+    display: initial; }
+    @media (min-width: 48em) and (max-width: 60em) {
+      .hidden\@medium {
+        display: none; } }
+    .hidden\@medium--up {
+      display: initial; }
+      @media (min-width: 48em) {
+        .hidden\@medium--up {
+          display: none; } }
+    .hidden\@medium--down {
+      display: initial; }
+      @media (max-width: 47.9375em) {
+        .hidden\@medium--down {
+          display: none; } }
+  .hidden\@large {
+    display: initial; }
+    @media (min-width: 60em) and (max-width: 70em) {
+      .hidden\@large {
+        display: none; } }
+    .hidden\@large--up {
+      display: initial; }
+      @media (min-width: 60em) {
+        .hidden\@large--up {
+          display: none; } }
+    .hidden\@large--down {
+      display: initial; }
+      @media (max-width: 59.9375em) {
+        .hidden\@large--down {
+          display: none; } }
+  .hidden\@xlarge {
+    display: initial; }
+    @media (min-width: 70em) and (max-width: 90em) {
+      .hidden\@xlarge {
+        display: none; } }
+    .hidden\@xlarge--up {
+      display: initial; }
+      @media (min-width: 70em) {
+        .hidden\@xlarge--up {
+          display: none; } }
+    .hidden\@xlarge--down {
+      display: initial; }
+      @media (max-width: 69.9375em) {
+        .hidden\@xlarge--down {
+          display: none; } }
+  .hidden\@xxlarge {
+    display: initial; }
+    @media (min-width: 90em) {
+      .hidden\@xxlarge {
+        display: none; } }
+    .hidden\@xxlarge--up {
+      display: initial; }
+      @media (min-width: 90em) {
+        .hidden\@xxlarge--up {
+          display: none; } }
+    .hidden\@xxlarge--down {
+      display: initial; }
+      @media (max-width: 89.9375em) {
+        .hidden\@xxlarge--down {
+          display: none; } }
+
+/** @define visible */
+.visible {
+  display: initial; }
+  .visible\@xsmall {
+    display: none; }
+    @media (max-width: -0.0625em) {
+      .visible\@xsmall {
+        display: initial; } }
+    .visible\@xsmall--up {
+      display: none;
+      display: initial; }
+    .visible\@xsmall--down {
+      display: none; }
+      @media (max-width: -0.0625em) {
+        .visible\@xsmall--down {
+          display: initial; } }
+  .visible\@small {
+    display: none; }
+    @media (min-width: 30em) and (max-width: 48em) {
+      .visible\@small {
+        display: initial; } }
+    .visible\@small--up {
+      display: none; }
+      @media (min-width: 30em) {
+        .visible\@small--up {
+          display: initial; } }
+    .visible\@small--down {
+      display: none; }
+      @media (max-width: 29.9375em) {
+        .visible\@small--down {
+          display: initial; } }
+  .visible\@medium {
+    display: none; }
+    @media (min-width: 48em) and (max-width: 60em) {
+      .visible\@medium {
+        display: initial; } }
+    .visible\@medium--up {
+      display: none; }
+      @media (min-width: 48em) {
+        .visible\@medium--up {
+          display: initial; } }
+    .visible\@medium--down {
+      display: none; }
+      @media (max-width: 47.9375em) {
+        .visible\@medium--down {
+          display: initial; } }
+  .visible\@large {
+    display: none; }
+    @media (min-width: 60em) and (max-width: 70em) {
+      .visible\@large {
+        display: initial; } }
+    .visible\@large--up {
+      display: none; }
+      @media (min-width: 60em) {
+        .visible\@large--up {
+          display: initial; } }
+    .visible\@large--down {
+      display: none; }
+      @media (max-width: 59.9375em) {
+        .visible\@large--down {
+          display: initial; } }
+  .visible\@xlarge {
+    display: none; }
+    @media (min-width: 70em) and (max-width: 90em) {
+      .visible\@xlarge {
+        display: initial; } }
+    .visible\@xlarge--up {
+      display: none; }
+      @media (min-width: 70em) {
+        .visible\@xlarge--up {
+          display: initial; } }
+    .visible\@xlarge--down {
+      display: none; }
+      @media (max-width: 69.9375em) {
+        .visible\@xlarge--down {
+          display: initial; } }
+  .visible\@xxlarge {
+    display: none; }
+    @media (min-width: 90em) {
+      .visible\@xxlarge {
+        display: initial; } }
+    .visible\@xxlarge--up {
+      display: none; }
+      @media (min-width: 90em) {
+        .visible\@xxlarge--up {
+          display: initial; } }
+    .visible\@xxlarge--down {
+      display: none; }
+      @media (max-width: 89.9375em) {
+        .visible\@xxlarge--down {
+          display: initial; } }
+
+/** @define elevator */
 .elevator--1 {
   box-shadow: 0 0.25rem 0.1875rem -0.1875rem rgba(0, 0, 0, 0.05); }
 
@@ -1567,3 +1778,46 @@ h6 {
 
 .elevator--27 {
   box-shadow: 0 1.6875rem 2.25rem 0 rgba(0, 0, 0, 0.4); }
+
+/** @define background */
+.background--primary {
+  background-color: #6c3fce; }
+
+.background--secondary {
+  background-color: #543793; }
+
+.background--complementary {
+  background-color: #FF861D; }
+
+.background--success {
+  background-color: #26c65e; }
+
+.background--warning {
+  background-color: #ffde66; }
+
+.background--error {
+  background-color: #ec3953; }
+
+.background--info {
+  background-color: #3273dc; }
+
+.background--white {
+  background-color: #fff; }
+
+.background--lighter-gray {
+  background-color: #f6f6f6; }
+
+.background--light-gray {
+  background-color: #d7dfe6; }
+
+.background--gray {
+  background-color: #79858c; }
+
+.background--dark-gray {
+  background-color: #586973; }
+
+.background--darker-gray {
+  background-color: #425059; }
+
+.background--black {
+  background-color: #171C1F; }

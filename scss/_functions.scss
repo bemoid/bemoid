@@ -1,11 +1,3 @@
-// Type converters
-@import 'functions/converters/em';
-@import 'functions/converters/rem';
-@import 'functions/converters/list';
-
-// Conditions helper functions
-@import 'functions/conditions/is-lowest-breakpoint';
-
 // Map type variables getters
 @import 'functions/getters/get';
 @import 'functions/getters/get-color';
@@ -14,3 +6,11 @@
 @import 'functions/getters/get-segment';
 @import 'functions/getters/get-elevator';
 @import 'functions/getters/get-breakpoint';
+
+// Type converters
+@import 'functions/converters/em';
+@import 'functions/converters/rem';
+@import 'functions/converters/list';
+
+// Conditions helper functions
+@import 'functions/conditions/is-lowest-breakpoint';

@@ -1,0 +1,43 @@
+////
+/// @group Headings
+////
+
+/// The default font family.
+///
+/// @link http://type-scale.com/
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} medium
+$headings: (
+    xsmall: (
+        'h1': ('font-size': em(36px)),
+        'h2': ('font-size': em(27px)),
+        'h3': ('font-size': em(21px)),
+        'h4': ('font-size': em(18px)),
+        'h5': ('font-size': em(16px)),
+        'h6': ('font-size': em(14px)),
+    ),
+    medium: (
+        'h1': ('font-size': em(42px)),
+        'h2': ('font-size': em(36px)),
+        'h3': ('font-size': em(27px)),
+        'h4': ('font-size': em(21px)),
+        'h5': ('font-size': em(16px)),
+        'h6': ('font-size': em(14px)),
+    ),
+) !default;
+
+/// Font family of headings.
+///
+/// @type {Keyword|Values}
+$headings-font-family: inherit !default;
+
+/// Text color of headings.
+///
+/// @type {Color}
+$headings-color: get-color(black) !default;
+
+/// Line height of headings.
+///
+/// @type {Number|Value}
+$headings-line-height: 1.25 !default;

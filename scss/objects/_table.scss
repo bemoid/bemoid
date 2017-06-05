@@ -1,47 +1,4 @@
-////
-/// @group Table
-/// @define table
-////
-
-/// Padding size in each table cell.
-///
-/// @type {Value|Values}
-$table-padding: get-space(medium) get-space(large) !default;
-
-/// Border width on table cells.
-///
-/// @type {Value}
-$table-border-width: 1px !default;
-
-/// Style of table cells border.
-///
-/// @type {Keyword}
-$table-border-style: solid !default;
-
-/// Color of table cells border.
-///
-/// @type {Color}
-$table-border-color: get-color(light-gray) !default;
-
-/// Background of the table head and footer.
-///
-/// @type {Color}
-$table-heading-background: get-color(lighter-gray) !default;
-
-/// Padding size in each condensed table cell.
-///
-/// @type {Value|Values}
-$table-condensed-padding: get-space(small) get-space(medium) !default;
-
-/// Background of the striped table even rows.
-///
-/// @type {Color}
-$table-striped-background: lighten(get-color(lighter-gray), 1%) !default;
-
-/// Background of the hovered row in hoverable table.
-///
-/// @type {Color}
-$table-hoverable-background: get-color(lighter-gray) !default;
+/** @define table */
 
 // Table
 //

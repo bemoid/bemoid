@@ -1,0 +1,47 @@
+////
+/// @group Divider
+////
+
+/// Collection of divider sizes.
+///
+/// @type {Map}
+/// @prop {Map} small
+/// @prop {Map} medium
+/// @prop {Map} large
+$divider-badge-sizes: (
+    small: (
+        'width': 1.1rem,
+        'height': 1.1rem,
+        'font-size': em(12px)
+    ),
+    medium: (
+        'width': 1.25rem,
+        'height': 1.25rem,
+        'font-size': em(14px)
+    ),
+    large: (
+        'width': 1.5rem,
+        'height': 1.5rem,
+        'font-size': em(16px)
+    ),
+) !default;
+
+/// Default divider size.
+///
+/// @type {Keyword}
+$divider-badge-size: medium !default;
+
+/// Divider background color.
+///
+/// @type {Color}
+$divider-badge-background: get-color(white) !default;
+
+/// Divider border radius.
+///
+/// @type {Number|Value|Values}
+$divider-badge-radius: get-radius(circle) !default;
+
+/// Divider box shadow.
+///
+/// @type {Value|Values}
+$divider-badge-shadow: get-elevator(2) !default;

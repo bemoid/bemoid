@@ -1,0 +1,109 @@
+////
+/// @group Message
+////
+
+/// Collection of message variants.
+///
+/// @type {Map}
+/// @prop {Map} neutral
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$message-variants: (
+    neutral: (
+        'background-color': get-color(lighter-gray),
+        'border-color': get-color(light-gray),
+    ),
+    success: (
+        'color': get-color(white),
+        'background-color': get-color(success),
+    ),
+    warning: (
+        'color': get-color(black),
+        'background-color': get-color(warning),
+    ),
+    info: (
+        'color': get-color(white),
+        'background-color': get-color(info),
+    ),
+    error: (
+        'color': get-color(white),
+        'background-color': get-color(error),
+    ),
+) !default;
+
+/// Collection of message variants.
+///
+/// @type {Map}
+/// @prop {Map} neutral
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$message-hollow-variants: (
+    neutral: (
+        'border-top-width': em(5px),
+        'border-top-color': get-color(light-gray),
+    ),
+    success: (
+        'color': $font-color,
+        'border-top-width': em(5px),
+        'border-top-color': get-color(success),
+    ),
+    warning: (
+        'color': $font-color,
+        'border-top-width': em(5px),
+        'border-top-color': get-color(warning),
+    ),
+    info: (
+        'color': $font-color,
+        'border-top-width': em(5px),
+        'border-top-color': get-color(info),
+    ),
+    error: (
+        'color': $font-color,
+        'border-top-width': em(5px),
+        'border-top-color': get-color(error),
+    ),
+) !default;
+
+/// Default message variant.
+///
+/// @type {Keyword}
+$message-variant: neutral !default;
+
+/// Size of the message border radius.
+///
+/// @type {Value}
+$message-radius: get-radius(xsmall) !default;
+
+/// Style of the message shadow.
+///
+/// @type {Values}
+$message-shadow: get-elevator(1) !default;
+
+/// Color of the message title element.
+///
+/// @type {Color}
+$message-title-color: inherit !default;
+
+/// Font weight of the message title element.
+///
+/// @type {Number}
+$message-title-weight: 700 !default;
+
+/// Default hollowed message variant.
+///
+/// @type {Keyword}
+$message-hollow-variant: neutral !default;
+
+/// Hollowed message border width.
+///
+/// @type {Value}
+$message-hollow-border-width: 1px !default;
+
+/// Hollowed message border style.
+///
+/// @type {Keyword}
+$message-hollow-border-style: solid !default;

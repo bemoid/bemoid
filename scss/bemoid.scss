@@ -1,10 +1,10 @@
 @charset 'utf-8';
 
 // Mixins and functions
-@import 'utils';
+@import 'uses';
 
 // Variables
-@import 'settings';
+@import 'variables';
 
 // Generic
 @import 'generic/typography';
@@ -43,8 +43,8 @@
 
 // Utilities
 @import 'utilities/text';
-@import 'utilities/space';
 @import 'utilities/color';
-@import 'utilities/radius';
+@import 'utilities/hidden';
+@import 'utilities/visible';
 @import 'utilities/elevator';
-@import 'utilities/breakpoint';
+@import 'utilities/background';

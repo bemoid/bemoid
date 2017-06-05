@@ -1,0 +1,22 @@
+////
+/// @group Segment
+////
+
+/// Collection of the segments variants.
+///
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} medium
+/// @prop {Map} large
+/// @prop {Map} xlarge
+$segments-sizes: (
+    xsmall: ('padding': 0),
+    medium: ('padding': get-space(large)),
+    large: ('padding': get-space(large) get-space(xlarge)),
+    xlarge: ('padding': get-space(xxlarge)),
+) !default;
+
+/// Default segment size.
+///
+/// @type {Keyword}
+$segment-size: medium !default;

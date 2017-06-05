@@ -1,22 +1,4 @@
-////
-/// @group Overlay
-/// @define overlay
-////
-
-/// Overlay background color.
-///
-/// @type {Color}
-$overlay-background: get-color(black) !default;
-
-/// Overlay opacity value.
-///
-/// @type {Number}
-$overlay-opacity: 0.66 !default;
-
-/// Blur value of overlay background.
-///
-/// @type {Value}
-$overlay-blur: 0.5rem !default;
+/** @define overlay */
 
 // Overlay
 //

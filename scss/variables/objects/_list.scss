@@ -1,0 +1,28 @@
+////
+/// @group List
+////
+
+/// Size of space between list items.
+///
+/// @type {Value|Values}
+$list-spaces: get-space(xsmall) !default;
+
+/// Size of lis item left margin.
+///
+/// @type {Value|Values}
+$list-margins: get-space(small) !default;
+
+/// Size of list left padding.
+///
+/// @type {Value|Values}
+$list-paddings: get-space(medium) !default;
+
+/// Symbol for bulleted list.
+///
+/// @type {String}
+$list-symbol-bulleted: "•" !default;
+
+/// Symbol for ordered list.
+///
+/// @type {String}
+$list-symbol-ordered: "." !default;

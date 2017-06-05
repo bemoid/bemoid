@@ -1,0 +1,25 @@
+////
+/// @group Container
+////
+
+/// Collection of container sizes.
+///
+/// @type {Keyword}
+$container-sizes: (
+    expanded: 100%,
+    small: get-breakpoint(small),
+    medium: get-breakpoint(medium),
+    large: get-breakpoint(large),
+    xlarge: get-breakpoint(xlarge),
+    xxlarge: get-breakpoint(xxlarge),
+) !default;
+
+/// Default container size.
+///
+/// @type {Keyword}
+$container-size: expanded !default;
+
+/// Container horizontal margins settings.
+///
+/// @type {keyword|value}
+$container-horizontal-margin: auto !default;

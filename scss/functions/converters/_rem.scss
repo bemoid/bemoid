@@ -1,8 +1,18 @@
+////
+/// @group General
+////
+
 /// Converts pixel value into matching rem values.
 /// @require {Variable} font-size
 @function rem($pixels, $context: false) {
+    $rem-function-context: 16px !global;
+
     @if not ($context) {
-        $context: $font-size;
+        @if global-variable-exists('font-size') {
+            $context: $font-size;
+        } @else {
+            $context: $rem-function-context;
+        }
     }
 
     @if (unitless($pixels)) {

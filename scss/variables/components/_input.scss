@@ -1,0 +1,54 @@
+////
+/// @group Input
+////
+
+
+/// Field border radius size.
+///
+/// @type {Number|Value|Values}
+$input-radius: get-radius(xsmall) !default;
+
+/// Field background color.
+///
+/// @type {Number|Value|Values}
+$input-background: get-color(white) !default;
+
+/// Field box-shadow styles.
+///
+/// @type {Number|Value|Values}
+$input-shadow: get-elevator(1) !default;
+
+/// Field transition settings.
+///
+/// @type {Values}
+$input-transition: border 0.2s ease-out, box-shadow 0.3s ease-out !default;
+
+/// Field border style.
+///
+/// @type {Number|Value|Values}
+$input-border-width: 1px !default;
+
+/// Field border style.
+///
+/// @type {Keyword}
+$input-border-style: solid !default;
+
+/// Field border width.
+///
+/// @type {Color}
+$input-border-color: get-color(light-gray) !default;
+
+/// Field outline value.
+///
+/// @type {Values}
+$input-focus-outline: 0 !default;
+
+/// Focused input box-shadow styles.
+///
+/// @type {Values}
+$input-focus-shadow: get-elevator(2) !default;
+
+/// Focused input border styles.
+///
+/// @type {Color}
+$input-focus-border-color: get-color(info) !default;

@@ -1,0 +1,58 @@
+/** @define visible */
+
+// Visible
+//
+// Desc
+//
+// .visible@small - Desc
+// .visible@small--up - Desc
+// .visible@small--down - Desc
+// .visible@medium - Desc
+// .visible@medium--up - Desc
+// .visible@medium--down - Desc
+// .visible@large - Desc
+// .visible@large--up - Desc
+// .visible@large--down - Desc
+// .visible@xlarge - Desc
+// .visible@xlarge--up - Desc
+// .visible@xlarge--down - Desc
+// .visible@xxlarge - Desc
+// .visible@xxlarge--up - Desc
+// .visible@xxlarge--down - Desc
+//
+// Markup: visible.html
+//
+// Style guide: Utilities.Visible
+.visible {
+    $this: #{&};
+
+    display: initial;
+
+    @at-root {
+        @each $breakpoint, $width in $breakpoints {
+            #{$this}\@#{$breakpoint} {
+                display: none;
+
+                @include breakpoint($breakpoint) {
+                    display: initial;
+                }
+
+                &--up {
+                    display: none;
+
+                    @include breakpoint($breakpoint up) {
+                        display: initial;
+                    }
+                }
+
+                &--down {
+                    display: none;
+
+                    @include breakpoint($breakpoint down) {
+                        display: initial;
+                    }
+                }
+            }
+        }
+    }
+}

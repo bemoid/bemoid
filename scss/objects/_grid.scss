@@ -1,38 +1,4 @@
-////
-/// @group Grid
-/// @define grid
-////
-
-/// Number of columns per grid.
-///
-/// @type {Number}
-$grid-columns: 12 !default;
-
-/// Breakpoint name under which columns stacks in stackable grid.
-///
-/// @type {Keyword}
-$grid-stackable: medium !default;
-
-/// Collection of grid sizes by breakpoint.
-///
-/// @type {Map}
-$grid-sizes: (
-	small: get-breakpoint(small),
-	medium: get-breakpoint(medium),
-	large: get-breakpoint(large),
-	xlarge: get-breakpoint(xlarge),
-	xxlarge: get-breakpoint(xxlarge),
-) !default;
-
-/// Collection of gutters sizes by breakpoints.
-///
-/// @type {Map}
-/// @prop {Value|Values} xsmall
-/// @prop {Value|Values} large
-$grid-gutters: (
-	xsmall: get-space(medium),
-	large: get-space(large),
-) !default;
+/** @define grid */
 
 // Grid
 //

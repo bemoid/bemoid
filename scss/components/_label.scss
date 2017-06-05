@@ -1,22 +1,4 @@
-////
-/// @group Label
-/// @define label
-////
-
-/// Label color.
-///
-/// @type {Color}
-$label-color: get-color(black) !default;
-
-/// Label font-size.
-///
-/// @type {Value}
-$label-font-size: em(14px) !default;
-
-/// Label font-size.
-///
-/// @type {keyword|number}
-$label-font-weight: bold !default;
+/** @define label */
 
 // Label
 //

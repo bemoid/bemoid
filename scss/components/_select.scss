@@ -1,22 +1,4 @@
-////
-/// @group Select
-/// @define select
-////
-
-/// Select field icon background image.
-///
-/// @type {String}
-$select-icon: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path d="M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z"/></svg>' !default;
-
-/// Select field additional right space for icon.
-///
-/// @type {Value|Values}
-$select-icon-space: 2.5em !default;
-
-/// Select field icon right offset.
-///
-/// @type {Value}
-$select-icon-offset: 1em;
+/** @define select */
 
 // Select
 //

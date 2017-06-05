@@ -1,0 +1,28 @@
+////
+/// @group Group
+////
+
+/// Overlap value of group items.
+///
+/// @type {Number|Value|Values}
+$group-overlap: -1px !default;
+
+/// Width of the group divider.
+///
+/// @type {Number|Value|Values}
+$group-divider-width: 6px !default;
+
+/// Radius value for inner corners of group items.
+///
+/// @type {Number|Value|Values}
+$group-inner-radius: 0 !default;
+
+/// Radius value for outer corners of group items.
+///
+/// @type {Number|Value|Values}
+$group-outer-radius: get-radius(xsmall) !default;
+
+/// Transition settings for group items.
+///
+/// @type {Values}
+$group-item-transition: border 0.2s ease-out, box-shadow, 0.2s ease-out !default;

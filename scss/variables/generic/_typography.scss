@@ -1,0 +1,53 @@
+////
+/// @group Typography
+////
+
+/// Base line height determines the basic unit of vertical rhythm.
+///
+/// @type {Number}
+$line-height: 1.5 !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Value}
+$font-size: 16px !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Color}
+$font-color: lighten(get-color(black), 25%) !default;
+
+/// Antialiase fonts.
+///
+/// @type {Boolean}
+$font-antialiasing: true !default;
+
+/// Default font family.
+///
+/// @type {Value|Values}
+$font-family-primary: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Serif font family.
+///
+/// @type {Value|Values}
+$font-family-secondary: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif !default;
+
+/// Monospace font family.
+///
+/// @type {Value|Values}
+$font-family-monospace: 'Lucida Console', 'Monaco', monospace !default;
+
+/// Text color of anchors.
+///
+/// @type {Color}
+$link-color: $font-color !default;
+
+/// Text decoration of anchors.
+///
+/// @type {Keyword}
+$link-decoration: underline !default;
+
+/// Text color of anchors on hover.
+///
+/// @type {Color}
+$link-hover-color: darken($font-color, 10%) !default;

@@ -1,39 +1,4 @@
-////
-/// @group Modal
-/// @require {variable} segments
-/// @require {variable} breakpoints
-/// @define modal
-////
-
-/// Space value around the modal.
-///
-/// @type {Value}
-$modal-space: 1rem !default;
-
-/// Style of the modal border.
-///
-/// @type {Values}
-$modal-border: 0 !default;
-
-/// Panel background color.
-///
-/// @type {Color}
-$modal-background: get-color(white) !default;
-
-/// Size of the modal border radius.
-///
-/// @type {Value}
-$modal-radius: get-radius(xsmall) !default;
-
-/// Style of the modal shadow.
-///
-/// @type {Values}
-$modal-shadow: get-elevator(27) !default;
-
-/// Style of the modal segments border.
-///
-/// @type {Values}
-$modal-segment-border: 1px solid get-color(light-gray) !default;
+/** @define modal */
 
 // Modal
 //

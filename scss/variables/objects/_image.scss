@@ -1,0 +1,13 @@
+////
+/// @group Image
+////
+
+/// Radius size of the rounded image.
+///
+/// @type {Value}
+$image-radius-rounded: get-radius(xsmall) !default;
+
+/// Radius sieze of the circular image.
+///
+/// @type {Value}
+$image-radius-circular: get-radius(circle) !default;

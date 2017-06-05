@@ -1,0 +1,72 @@
+////
+/// @group Field
+////
+
+/// Collection of field sizes.
+///
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} small
+/// @prop {Map} medium
+/// @prop {Map} large
+/// @prop {Map} xlarge
+$field-sizes: (
+    xsmall: (
+        'font-size': em(12px)
+    ),
+    small: (
+        'font-size': em(14px)
+    ),
+    medium: (
+        'font-size': em(16px),
+        'padding': get-space(small) get-space(medium)
+    ),
+    large: (
+        'font-size': em(18px)
+    ),
+    xlarge: (
+        'font-size': em(21px)
+    ),
+) !default;
+
+/// Collection of field sizes.
+///
+/// @type {Map}
+/// @prop {Color} primary
+/// @prop {Color} success
+/// @prop {Color} warning
+/// @prop {Color} error
+/// @prop {Color} info
+$field-variants: (
+    success: (
+        'color': get-color(success),
+        'border-color': get-color(success),
+    ),
+    warning: (
+        'color': get-color(warning),
+        'border-color': get-color(warning),
+    ),
+    error: (
+        'color': get-color(error),
+        'border-color': get-color(error),
+    ),
+    info: (
+        'color': get-color(info),
+        'border-color': get-color(info),
+    ),
+) !default;
+
+/// Default field size. Should be size name from the `$field-sizes` collection.
+///
+/// @type {Keyword}
+$field-size: medium !default;
+
+/// Font size of the field caption.
+///
+/// @type {Number|Value}
+$field-caption-font-size: em(12px) !default;
+
+/// Space between elements of inline field.
+///
+/// @type {Number|Value}
+$field-inline-margin: 1em !default;
