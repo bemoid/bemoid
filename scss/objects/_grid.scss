@@ -58,7 +58,6 @@
 	// Style guide: Objects.Grid.Column
 	&__column {
 		flex: 1;
-		width: 100%;
 		max-width: 100%;
 
 		@each $breakpoint, $width in $grid-gutters {

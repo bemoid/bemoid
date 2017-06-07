@@ -306,7 +306,6 @@ h6 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    width: 100%;
     max-width: 100%;
     padding: 0.28125em; }
     @media (min-width: 60em) {
