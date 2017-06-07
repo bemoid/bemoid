@@ -16,7 +16,7 @@
 
 	$i: index($breakpoints, $name $width);
 
-	@if $i > 1 {
+	@if $i != null and $i > 1 {
 		$n: $i + 1;
 
 		@if $i < length($names) {
