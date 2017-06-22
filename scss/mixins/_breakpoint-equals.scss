@@ -24,7 +24,7 @@
 	    	$next-width: get-breakpoint($next);
 
 	    	@media (min-width: #{$width}) and (max-width: #{$next-width}) {
-		        @content;
+	        @content;
 		    }
 		}
 		@else {

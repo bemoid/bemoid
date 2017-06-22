@@ -23,9 +23,9 @@
 //
 // Style guide: Utilities.Background
 .background {
-    @each $name, $color in $colors {
-        &--#{$name} {
-            background-color: $color;
-        }
+  @each $name, $color in $colors {
+    &--#{$name} {
+      background-color: $color;
     }
+  }
 }

@@ -1,15 +1,15 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: $headings-font-family;
-    color: $headings-color;
-    line-height: $headings-line-height;
+  font-family: $headings-font-family;
+  color: $headings-color;
+  line-height: $headings-line-height;
 }
 
 @each $breakpoint, $heading in $headings {
-    @include breakpoint($breakpoint up) {
-        @each $h, $declarations in $heading {
-            #{$h} {
-                @include declarations($declarations);
-            }
-        }
+  @include breakpoint($breakpoint up) {
+    @each $h, $declarations in $heading {
+      #{$h} {
+        @include declarations($declarations);
+      }
     }
+  }
 }

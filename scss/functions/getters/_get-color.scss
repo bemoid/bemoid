@@ -11,5 +11,5 @@
 /// @example scss - example
 ///   get-color(gray);
 @function get-color($name) {
-    @return get($colors, $name);
+  @return get($colors, $name);
 }

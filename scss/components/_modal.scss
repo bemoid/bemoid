@@ -14,32 +14,32 @@
 //
 // Style guide: Components.Modal
 .modal {
-    $this: #{&};
+  $this: #{&};
 
-    position: fixed;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    padding: $modal-space;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  padding: $modal-space;
 
-    // Modal Body
-    //
-    // Grid system based on flexbox for building complex layouts.
-    //
-    // .panel--small - Desc
-    // .panel--large - Desc
-    // .panel--xlarge - Desc
-    //
-    // Markup: modal__body.html
-    //
-    // Style guide: Components.Modal.Body
-    &__body {
-        box-shadow: $modal-shadow;
-        background-color: $modal-background;
-        border-radius: $modal-radius;
-        border: $modal-border;
+  // Modal Body
+  //
+  // Grid system based on flexbox for building complex layouts.
+  //
+  // .panel--small - Desc
+  // .panel--large - Desc
+  // .panel--xlarge - Desc
+  //
+  // Markup: modal__body.html
+  //
+  // Style guide: Components.Modal.Body
+  &__body {
+    box-shadow: $modal-shadow;
+    background-color: $modal-background;
+    border-radius: $modal-radius;
+    border: $modal-border;
 
-        & > * + * {
-            border-top: $modal-segment-border;
-        }
+    & > * + * {
+      border-top: $modal-segment-border;
     }
+  }
 }

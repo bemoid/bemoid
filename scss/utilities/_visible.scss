@@ -24,35 +24,35 @@
 //
 // Style guide: Utilities.Visible
 .visible {
-    $this: #{&};
+	$this: #{&};
 
-    display: initial;
+	display: initial;
 
-    @at-root {
-        @each $breakpoint, $width in $breakpoints {
-            #{$this}\@#{$breakpoint} {
-                display: none;
+	@at-root {
+		@each $breakpoint, $width in $breakpoints {
+			#{$this}\@#{$breakpoint} {
+				display: none;
 
-                @include breakpoint($breakpoint) {
-                    display: initial;
-                }
+				@include breakpoint($breakpoint) {
+					display: initial;
+				}
 
-                &--up {
-                    display: none;
+				&--up {
+					display: none;
 
-                    @include breakpoint($breakpoint up) {
-                        display: initial;
-                    }
-                }
+					@include breakpoint($breakpoint up) {
+						display: initial;
+					}
+				}
 
-                &--down {
-                    display: none;
+				&--down {
+					display: none;
 
-                    @include breakpoint($breakpoint down) {
-                        display: initial;
-                    }
-                }
-            }
-        }
-    }
+					@include breakpoint($breakpoint down) {
+						display: initial;
+					}
+				}
+			}
+		}
+	}
 }

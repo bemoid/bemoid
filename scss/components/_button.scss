@@ -35,189 +35,189 @@
 //
 // Style guide: Components.Button
 .button {
-    $this: #{&};
+  $this: #{&};
 
-    $size: map-get($button-sizes, $button-size);
-    $variant: map-get($button-variants, $button-variant);
+  $size: map-get($button-sizes, $button-size);
+  $variant: map-get($button-variants, $button-variant);
 
-    @include declarations($size);
+  @include declarations($size);
+  @include declarations-amending($variant);
+
+  @if $button-shadow {
+    box-shadow: $button-shadow;
+  }
+
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+  text-decoration: none;
+  outline: 0;
+
+  font-weight: $button-weight;
+  text-align: $button-align;
+  border-radius: $button-radius;
+  border: $button-hollow-border solid transparent;
+  transition: $button-transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include declarations-amending($variant, true);
+
+    @if $button-hover-shadow {
+      box-shadow: $button-hover-shadow;
+    }
+  }
+
+  // Button Cover
+  //
+  // Desc
+  //
+  // Markup: button__cover.html
+  //
+  // Style guide: Components.Button.Cover
+  &__cover {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: map-get($variant, 'color');
+    transition: $button-cover-transition;
+  }
+
+  // Button Icon
+  //
+  // Desc
+  //
+  // Markup: button__icon.html
+  //
+  // Style guide: Components.Button.Icon
+  &__icon {
+    display: inline-block;
+
+    @at-root {
+      img#{$this}__icon,
+      svg#{$this}__icon {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  @each $size, $declarations in $button-sizes {
+    @if $size != $button-size {
+      &--#{$size} {
+        @include declarations($declarations);
+      }
+    }
+  }
+
+  @each $variant, $declarations in $button-variants {
+    @if $variant != $button-variant {
+      &--#{$variant} {
+        $color: map-get($declarations, 'color');
+
+        @include declarations-amending($declarations);
+
+        &:hover,
+        &:focus,
+        &:active {
+          @include declarations-amending($declarations, true);
+
+          #{$this}__cover {
+            color: nth($color, length($color));
+          }
+        }
+
+        #{$this}__cover {
+          color: nth($color, 1);
+        }
+      }
+    }
+  }
+
+  &--hollow {
+    $variant: map-get($button-hollow-variants, $button-hollow-variant);
+
     @include declarations-amending($variant);
 
-    @if $button-shadow {
-        box-shadow: $button-shadow;
-    }
-
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: inherit;
-    text-decoration: none;
-    outline: 0;
-
-    font-weight: $button-weight;
-    text-align: $button-align;
-    border-radius: $button-radius;
-    border: $button-hollow-border solid transparent;
-    transition: $button-transition;
+    border-width: $button-hollow-border;
+    border-style: solid;
+    background-color: $button-hollow-background;
 
     &:hover,
     &:focus,
     &:active {
-        @include declarations-amending($variant, true);
-
-        @if $button-hover-shadow {
-            box-shadow: $button-hover-shadow;
-        }
+      @include declarations-amending($variant, true);
     }
 
-    // Button Cover
-    //
-    // Desc
-    //
-    // Markup: button__cover.html
-    //
-    // Style guide: Components.Button.Cover
-    &__cover {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        color: map-get($variant, 'color');
-        transition: $button-cover-transition;
-    }
+    @each $variant, $declarations in $button-hollow-variants {
+      @if $variant != $button-hollow-variant {
+        &#{$this}--#{$variant} {
+          $color: map-get($declarations, 'color');
 
-    // Button Icon
-    //
-    // Desc
-    //
-    // Markup: button__icon.html
-    //
-    // Style guide: Components.Button.Icon
-    &__icon {
-        display: inline-block;
+          @include declarations-amending($declarations);
 
-        @at-root {
-            img#{$this}__icon,
-            svg#{$this}__icon {
-                vertical-align: sub;
-            }
-        }
-    }
-
-    @each $size, $declarations in $button-sizes {
-        @if $size != $button-size {
-            &--#{$size} {
-                @include declarations($declarations);
-            }
-        }
-    }
-
-    @each $variant, $declarations in $button-variants {
-        @if $variant != $button-variant {
-            &--#{$variant} {
-                $color: map-get($declarations, 'color');
-
-                @include declarations-amending($declarations);
-
-                &:hover,
-                &:focus,
-                &:active {
-                    @include declarations-amending($declarations, true);
-
-                    #{$this}__cover {
-                        color: nth($color, length($color));
-                    }
-                }
-
-                #{$this}__cover {
-                    color: nth($color, 1);
-                }
-            }
-        }
-    }
-
-    &--hollow {
-        $variant: map-get($button-hollow-variants, $button-hollow-variant);
-
-        @include declarations-amending($variant);
-
-        border-width: $button-hollow-border;
-        border-style: solid;
-        background-color: $button-hollow-background;
-
-        &:hover,
-        &:focus,
-        &:active {
-            @include declarations-amending($variant, true);
-        }
-
-        @each $variant, $declarations in $button-hollow-variants {
-            @if $variant != $button-hollow-variant {
-                &#{$this}--#{$variant} {
-                    $color: map-get($declarations, 'color');
-
-                    @include declarations-amending($declarations);
-
-                    &:hover,
-                    &:focus,
-                    &:active {
-                        @include declarations-amending($declarations, true);
-
-                        #{$this}__cover {
-                            color: nth($color, length($color));
-                        }
-                    }
-
-                    #{$this}__cover {
-                        color: nth($color, 1);
-                    }
-                }
-            }
-        }
-    }
-
-    &--wide {
-        padding-left: $button-wide-padding;
-        padding-right: $button-wide-padding;
-    }
-
-    &--expanded {
-        display: block;
-        width: 100%;
-    }
-
-    &--covered {
-        cursor: initial;
-        color: transparent !important;
-
-        #{$this}__cover {
-            opacity: 1;
-        }
-    }
-
-    &--curtained {
-        &:hover,
-        &:focus,
-        &:active {
-            color: transparent !important;
+          &:hover,
+          &:focus,
+          &:active {
+            @include declarations-amending($declarations, true);
 
             #{$this}__cover {
-                opacity: 1;
+              color: nth($color, length($color));
             }
-        }
-    }
+          }
 
-    &:disabled,
-    &--disabled {
-        cursor: default;
-        opacity: $button-disabled-opacity;
-        box-shadow: none;
-        pointer-events: none;
-        background-image: none;
+          #{$this}__cover {
+            color: nth($color, 1);
+          }
+        }
+      }
     }
+  }
+
+  &--wide {
+    padding-left: $button-wide-padding;
+    padding-right: $button-wide-padding;
+  }
+
+  &--expanded {
+    display: block;
+    width: 100%;
+  }
+
+  &--covered {
+    cursor: initial;
+    color: transparent !important;
+
+    #{$this}__cover {
+      opacity: 1;
+    }
+  }
+
+  &--curtained {
+    &:hover,
+    &:focus,
+    &:active {
+      color: transparent !important;
+
+      #{$this}__cover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    cursor: default;
+    opacity: $button-disabled-opacity;
+    box-shadow: none;
+    pointer-events: none;
+    background-image: none;
+  }
 }

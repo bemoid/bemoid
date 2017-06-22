@@ -14,13 +14,13 @@
 ///   color: 'red';
 ///   color: 'blue';
 @mixin declarations-amending($declarations, $amended: false) {
-    @each $property, $value in $declarations {
-        @if $amended {
-            #{$property}: #{nth($value, length($value))};
-        }
-        @else {
-            #{$property}: #{nth($value, 1)};
-        }
+  @each $property, $value in $declarations {
+    @if $amended {
+      #{$property}: #{nth($value, length($value))};
     }
+    @else {
+      #{$property}: #{nth($value, 1)};
+    }
+  }
 }
 

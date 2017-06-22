@@ -11,5 +11,5 @@
 /// @example scss - example
 ///   get-space(small);
 @function get-space($name) {
-    @return get($spaces, $name);
+  @return get($spaces, $name);
 }

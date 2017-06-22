@@ -19,110 +19,110 @@
 //
 // Style guide: Components.Field
 .field {
-    $this: #{&};
+  $this: #{&};
 
-    position: relative;
+  position: relative;
 
-    // Field Label
-    //
-    // Desc
-    //
-    // Markup: field__label.html
-    //
-    // Style guide: Components.Field.Label
-    &__label {
-        display: block;
+  // Field Label
+  //
+  // Desc
+  //
+  // Markup: field__label.html
+  //
+  // Style guide: Components.Field.Label
+  &__label {
+    display: block;
+  }
+
+  &__input,
+  &__control {
+    display: block;
+    vertical-align: middle;
+  }
+
+  // Field Input
+  //
+  // Desc
+  //
+  // Markup: field__input.html
+  //
+  // Style guide: Components.Field.Input
+  &__input {
+    $size: map-get($field-sizes, $field-size);
+
+    @include declarations($size);
+  }
+
+  // Field Control
+  //
+  // Desc
+  //
+  // Markup: field__control.html
+  //
+  // Style guide: Components.Field.Control
+  &__control {
+    $size: map-get($field-sizes, $field-size);
+
+    @include declarations(map-remove($size, 'padding'));
+  }
+
+  // Field Caption
+  //
+  // Desc
+  //
+  // .field__caption--untouched - Desc
+  //
+  // Markup: field__caption.html
+  //
+  // Style guide: Components.Field.Caption
+  &__caption {
+    font-size: $field-caption-font-size;
+
+    &--untouched {
+      color: initial !important;
     }
+  }
 
-    &__input,
-    &__control {
-        display: block;
-        vertical-align: middle;
-    }
-
-    // Field Input
-    //
-    // Desc
-    //
-    // Markup: field__input.html
-    //
-    // Style guide: Components.Field.Input
-    &__input {
-        $size: map-get($field-sizes, $field-size);
-
-        @include declarations($size);
-    }
-
-    // Field Control
-    //
-    // Desc
-    //
-    // Markup: field__control.html
-    //
-    // Style guide: Components.Field.Control
-    &__control {
-        $size: map-get($field-sizes, $field-size);
-
-        @include declarations(map-remove($size, 'padding'));
-    }
-
-    // Field Caption
-    //
-    // Desc
-    //
-    // .field__caption--untouched - Desc
-    //
-    // Markup: field__caption.html
-    //
-    // Style guide: Components.Field.Caption
-    &__caption {
-        font-size: $field-caption-font-size;
-
-        &--untouched {
-            color: initial !important;
+  @each $size, $declarations in $field-sizes {
+    @if $size != $field-size {
+      &--#{$size} {
+        #{$this}__input {
+          @include declarations($declarations);
         }
-    }
 
-    @each $size, $declarations in $field-sizes {
-        @if $size != $field-size {
-            &--#{$size} {
-                #{$this}__input {
-                    @include declarations($declarations);
-                }
-
-                #{$this}__control {
-                   font-size: map-get($declarations, 'font-size');
-                }
-            }
-        }
-    }
-
-    @each $variant, $declarations in $field-variants {
-        &--#{$variant} {
-            color: map-get($declarations, 'color');
-
-            #{$this}__input {
-                @include declarations(map-remove($declarations, 'color'));
-            }
-        }
-    }
-
-    &--expanded {
-        #{$this}__input,
         #{$this}__control {
-            width: 100%;
+         font-size: map-get($declarations, 'font-size');
         }
+      }
+    }
+  }
+
+  @each $variant, $declarations in $field-variants {
+    &--#{$variant} {
+      color: map-get($declarations, 'color');
+
+      #{$this}__input {
+        @include declarations(map-remove($declarations, 'color'));
+      }
+    }
+  }
+
+  &--expanded {
+    #{$this}__input,
+    #{$this}__control {
+      width: 100%;
+    }
+  }
+
+  &--inline {
+    & > * + * {
+      margin-left: $field-inline-margin;
     }
 
-    &--inline {
-        & > * + * {
-            margin-left: $field-inline-margin;
-        }
-
-        #{$this}__label,
-        #{$this}__input,
-        #{$this}__control {
-            display: inline-block;
-        }
+    #{$this}__label,
+    #{$this}__input,
+    #{$this}__control {
+      display: inline-block;
     }
+  }
 }

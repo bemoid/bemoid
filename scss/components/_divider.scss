@@ -11,34 +11,34 @@
 //
 // Style guide: Components.Divider
 .divider {
-    $size: map-get($divider-badge-sizes, $divider-badge-size);
+  $size: map-get($divider-badge-sizes, $divider-badge-size);
 
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 
-    &:after {
-        @include declarations($size);
+  &:after {
+    @include declarations($size);
 
-        content: attr(data-text);
-        line-height: map-get($size, 'height');
+    content: attr(data-text);
+    line-height: map-get($size, 'height');
 
-        box-sizing: content-box;
-        background-color: $divider-badge-background;
-        border-radius: $divider-badge-radius;
-        box-shadow: $divider-badge-shadow;
+    box-sizing: content-box;
+    background-color: $divider-badge-background;
+    border-radius: $divider-badge-radius;
+    box-shadow: $divider-badge-shadow;
 
-        text-align: center;
-    }
+    text-align: center;
+  }
 
-    @each $size, $declarations in $divider-badge-sizes {
-        @if $size != $divider-badge-size {
-            &--#{$size} {
-                &:after {
-                    @include declarations($declarations);
+  @each $size, $declarations in $divider-badge-sizes {
+    @if $size != $divider-badge-size {
+      &--#{$size} {
+        &:after {
+          @include declarations($declarations);
 
-                    line-height: map-get($declarations, 'height');
-                }
-            }
+          line-height: map-get($declarations, 'height');
         }
+      }
     }
+  }
 }

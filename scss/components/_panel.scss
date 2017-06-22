@@ -10,42 +10,42 @@
 //
 // Style guide: Components.Panel
 .panel {
-    $this: #{&};
+  $this: #{&};
 
-    border: $panel-border;
-    border-radius: $panel-radius;
-    box-shadow: $panel-shadow;
-    background-color: $panel-background;
+  border: $panel-border;
+  border-radius: $panel-radius;
+  box-shadow: $panel-shadow;
+  background-color: $panel-background;
 
-    & > * + * {
-        border-top: $panel-segment-border;
-    }
+  & > * + * {
+    border-top: $panel-segment-border;
+  }
 
-    // Panel Segment
-    //
-    // Grid system based on flexbox for building complex layouts.
-    //
-    // .segment--xsmall - Desc
-    // .segment--large - Desc
-    // .segment--xlarge - Desc
-    // .panel__segment--scrollable - Desc
-    //
-    // Markup: panel__segment.html
-    //
-    // Style guide: Components.Panel.Segment
-    &__segment {
-        position: relative;
-
-        &--scrollable {
-            max-height: $panel-scrollable-height;
-            overflow-y: auto;
-        }
-    }
+  // Panel Segment
+  //
+  // Grid system based on flexbox for building complex layouts.
+  //
+  // .segment--xsmall - Desc
+  // .segment--large - Desc
+  // .segment--xlarge - Desc
+  // .panel__segment--scrollable - Desc
+  //
+  // Markup: panel__segment.html
+  //
+  // Style guide: Components.Panel.Segment
+  &__segment {
+    position: relative;
 
     &--scrollable {
-        #{$this}__segment {
-            max-height: $panel-scrollable-height;
-            overflow-y: auto;
-        }
+      max-height: $panel-scrollable-height;
+      overflow-y: auto;
     }
+  }
+
+  &--scrollable {
+    #{$this}__segment {
+      max-height: $panel-scrollable-height;
+      overflow-y: auto;
+    }
+  }
 }

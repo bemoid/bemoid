@@ -21,45 +21,45 @@
 //
 // Style guide: Components.Message
 .message {
-    $this: #{&};
+  $this: #{&};
 
-    $variant: map-get($message-variants, $message-variant);
+  $variant: map-get($message-variants, $message-variant);
+
+  @include declarations($variant);
+
+  box-shadow: $message-shadow;
+  border-radius: $message-radius;
+
+  &__title {
+    display: block;
+    color: $message-title-color;
+    font-weight: $message-title-weight;
+  }
+
+  @each $variant, $declarations in $message-variants {
+    @if $variant != $message-variant {
+      &--#{$variant} {
+        @include declarations($declarations);
+      }
+    }
+  }
+
+  &--hollow {
+    $variant: map-get($message-hollow-variants, $message-hollow-variant);
+
+    border-width: $message-hollow-border-width;
+    border-style: $message-hollow-border-style;
 
     @include declarations($variant);
 
-    box-shadow: $message-shadow;
-    border-radius: $message-radius;
+    background-color: transparent;
 
-    &__title {
-        display: block;
-        color: $message-title-color;
-        font-weight: $message-title-weight;
-    }
-
-    @each $variant, $declarations in $message-variants {
-        @if $variant != $message-variant {
-            &--#{$variant} {
-                @include declarations($declarations);
-            }
+    @each $variant, $declarations in $message-hollow-variants {
+      @if $variant != $message-hollow-variant {
+        &#{$this}--#{$variant} {
+          @include declarations($declarations);
         }
+      }
     }
-
-    &--hollow {
-        $variant: map-get($message-hollow-variants, $message-hollow-variant);
-
-        border-width: $message-hollow-border-width;
-        border-style: $message-hollow-border-style;
-
-        @include declarations($variant);
-
-        background-color: transparent;
-
-        @each $variant, $declarations in $message-hollow-variants {
-            @if $variant != $message-hollow-variant {
-                &#{$this}--#{$variant} {
-                    @include declarations($declarations);
-                }
-            }
-        }
-    }
+  }
 }

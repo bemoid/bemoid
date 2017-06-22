@@ -8,20 +8,20 @@
 //
 // Style guide: Components.Input
 .input {
-    line-height: inherit;
+  line-height: inherit;
 
-    font-family: $font-family-primary;
-    border-width: $input-border-width;
-    border-style: $input-border-style;
-    border-color: $input-border-color;
-    border-radius: $input-radius;
-    background-color: $input-background;
-    box-shadow: $input-shadow;
-    transition: $input-transition;
+  font-family: $font-family-primary;
+  border-width: $input-border-width;
+  border-style: $input-border-style;
+  border-color: $input-border-color;
+  border-radius: $input-radius;
+  background-color: $input-background;
+  box-shadow: $input-shadow;
+  transition: $input-transition;
 
-    &:focus {
-        outline: $input-focus-outline;
-        box-shadow: $input-focus-shadow;
-        border-color: $input-focus-border-color;
-    }
+  &:focus {
+    outline: $input-focus-outline;
+    box-shadow: $input-focus-shadow;
+    border-color: $input-focus-border-color;
+  }
 }

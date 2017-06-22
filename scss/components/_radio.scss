@@ -8,63 +8,63 @@
 //
 // Style guide: Components.Radio
 .radio {
-    $this: #{&};
+  $this: #{&};
 
-    &__input {
-        display: none;
+  &__input {
+    display: none;
 
-        &:checked {
-            & + #{$this}__label {
-                &:after {
-                    transform: $radio-active-inner-transform;
-                }
-            }
-        }
-    }
-
-    &__label {
-        position: relative;
-        padding-left: 1.5em;
-        vertical-align: middle;
-
-        &:active,
-        &:focus,
-        &:hover {
-            &:before {
-                background: $radio-hover-outer-background;
-                border: $radio-hover-outer-border;
-                box-shadow: $radio-hover-outer-shadow;
-            }
-        }
-
-        &:after,
-        &:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-        }
-
-        &:before {
-            left: 0;
-            margin-top: -#{$radio-outer-width/2};
-            width: $radio-outer-width;
-            height: $radio-outer-width;
-            background: $radio-outer-background;
-            border: $radio-outer-border;
-            border-radius: $radio-radius;
-            box-shadow: $radio-outer-shadow;
-            transition: $radio-outer-transition;
-        }
-
+    &:checked {
+      & + #{$this}__label {
         &:after {
-            left: $radio-inner-width/2;
-            margin-top: -#{$radio-inner-width/2};
-            width: $radio-inner-width;
-            height: $radio-inner-width;
-            transition: $radio-inner-transition;
-            transform: $radio-inner-transform;
-            background: $radio-inner-background;
-            border-radius: $radio-radius;
+            transform: $radio-active-inner-transform;
+        }
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    padding-left: 1.5em;
+    vertical-align: middle;
+
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            background: $radio-hover-outer-background;
+            border: $radio-hover-outer-border;
+            box-shadow: $radio-hover-outer-shadow;
         }
     }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+    }
+
+    &:before {
+        left: 0;
+        margin-top: -#{$radio-outer-width/2};
+        width: $radio-outer-width;
+        height: $radio-outer-width;
+        background: $radio-outer-background;
+        border: $radio-outer-border;
+        border-radius: $radio-radius;
+        box-shadow: $radio-outer-shadow;
+        transition: $radio-outer-transition;
+    }
+
+    &:after {
+        left: $radio-inner-width/2;
+        margin-top: -#{$radio-inner-width/2};
+        width: $radio-inner-width;
+        height: $radio-inner-width;
+        transition: $radio-inner-transition;
+        transform: $radio-inner-transform;
+        background: $radio-inner-background;
+        border-radius: $radio-radius;
+    }
+  }
 }

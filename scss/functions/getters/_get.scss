@@ -15,11 +15,11 @@
 /// @example scss - example
 ///   get($colors, gray);
 @function get($collection, $key) {
-    @if type-of($collection) == 'map' {
-        @if map-has-key($collection, $key) {
-            @return map-get($collection, $key);
-        } @else {
-            @error "Key [`#{$key}`] do not exist in [`#{$collection}`] map";
-        }
+  @if type-of($collection) == 'map' {
+    @if map-has-key($collection, $key) {
+        @return map-get($collection, $key);
+    } @else {
+      @error "Key [`#{$key}`] do not exist in [`#{$collection}`] map";
     }
+  }
 }

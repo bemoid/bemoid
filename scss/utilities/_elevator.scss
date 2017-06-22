@@ -15,9 +15,9 @@
 //
 // Style guide: Utilities.Elevator
 .elevator {
-    @each $level, $declaration in $elevators {
-        &--#{$level} {
-            box-shadow: $declaration;
-        }
+  @each $level, $declaration in $elevators {
+    &--#{$level} {
+      box-shadow: $declaration;
     }
+  }
 }

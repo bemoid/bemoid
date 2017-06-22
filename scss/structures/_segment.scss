@@ -12,18 +12,18 @@
 //
 // Style guide: Structures.Segment
 .segment {
-    $size: map-get($segments-sizes, $segment-size);
+  $size: map-get($segments-sizes, $segment-size);
 
-    @include declarations($size);
+  @include declarations($size);
 
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 
-    @each $size, $declarations in $segments-sizes {
-        @if $size != $segment-size {
-            &--#{$size} {
-                @include declarations($declarations);
-            }
-        }
+  @each $size, $declarations in $segments-sizes {
+    @if $size != $segment-size {
+      &--#{$size} {
+          @include declarations($declarations);
+      }
     }
+  }
 }

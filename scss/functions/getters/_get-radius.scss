@@ -11,5 +11,5 @@
 /// @example scss - example
 ///   get-radius(large);
 @function get-radius($name) {
-    @return get($radiuses, $name);
+  @return get($radiuses, $name);
 }

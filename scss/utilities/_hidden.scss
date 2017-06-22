@@ -24,35 +24,35 @@
 //
 // Style guide: Utilities.Hidden
 .hidden {
-    $this: #{&};
+  $this: #{&};
 
-    display: none;
+  display: none;
 
-    @at-root {
-        @each $breakpoint, $width in $breakpoints {
-            #{$this}\@#{$breakpoint} {
-                display: initial;
+  @at-root {
+    @each $breakpoint, $width in $breakpoints {
+      #{$this}\@#{$breakpoint} {
+        display: initial;
 
-                @include breakpoint($breakpoint) {
-                    display: none;
-                }
-
-                &--up {
-                    display: initial;
-
-                    @include breakpoint($breakpoint up) {
-                        display: none;
-                    }
-                }
-
-                &--down {
-                    display: initial;
-
-                    @include breakpoint($breakpoint down) {
-                        display: none;
-                    }
-                }
-            }
+        @include breakpoint($breakpoint) {
+          display: none;
         }
+
+        &--up {
+          display: initial;
+
+          @include breakpoint($breakpoint up) {
+            display: none;
+          }
+        }
+
+        &--down {
+          display: initial;
+
+          @include breakpoint($breakpoint down) {
+            display: none;
+          }
+        }
+      }
     }
+  }
 }

@@ -11,8 +11,8 @@
 /// @example css - output
 ///   color: 'red';
 @mixin declarations($declarations) {
-    @each $property, $value in $declarations {
-        #{$property}: #{$value};
-    }
+  @each $property, $value in $declarations {
+    #{$property}: #{$value};
+  }
 }
 

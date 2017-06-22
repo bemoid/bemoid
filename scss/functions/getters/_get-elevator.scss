@@ -11,5 +11,5 @@
 /// @example scss - example
 ///   get-elevator(1dp);
 @function get-elevator($depth) {
-    @return get($elevators, $depth);
+  @return get($elevators, $depth);
 }

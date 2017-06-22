@@ -17,39 +17,39 @@
 //
 // Style guide: Objects.Image
 .image {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
 
-    &--expanded {
-        width: 100%;
-    }
+  &--expanded {
+    width: 100%;
+  }
 
-    &--rounded {
-        border-radius: $image-radius-rounded;
-    }
+  &--rounded {
+    border-radius: $image-radius-rounded;
+  }
 
-    &--circular {
-        border-radius: $image-radius-circular;
-    }
+  &--circular {
+    border-radius: $image-radius-circular;
+  }
 
-    &--top {
-        vertical-align: top;
-    }
+  &--top {
+    vertical-align: top;
+  }
 
-    &--middle {
-        vertical-align: middle;
-    }
+  &--middle {
+    vertical-align: middle;
+  }
 
-    &--bottom {
-        vertical-align: bottom;
-    }
+  &--bottom {
+    vertical-align: bottom;
+  }
 
-    &--text-top {
-        vertical-align: text-top;
-    }
+  &--text-top {
+    vertical-align: text-top;
+  }
 
-    &--text-bottom {
-        vertical-align: text-bottom;
-    }
+  &--text-bottom {
+    vertical-align: text-bottom;
+  }
 }
