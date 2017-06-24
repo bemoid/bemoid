@@ -11,26 +11,26 @@
 /// @prop {Map} info
 /// @prop {Map} error
 $message-variants: (
-    neutral: (
-        'background-color': get-color(lighter-gray),
-        'border-color': get-color(light-gray),
-    ),
-    success: (
-        'color': get-color(white),
-        'background-color': get-color(success),
-    ),
-    warning: (
-        'color': get-color(black),
-        'background-color': get-color(warning),
-    ),
-    info: (
-        'color': get-color(white),
-        'background-color': get-color(info),
-    ),
-    error: (
-        'color': get-color(white),
-        'background-color': get-color(error),
-    ),
+  neutral: (
+    'background-color': get-color(lighter-gray),
+    'border-color': get-color(light-gray),
+  ),
+  success: (
+    'color': get-color(white),
+    'background-color': get-color(success),
+  ),
+  warning: (
+    'color': get-color(black),
+    'background-color': get-color(warning),
+  ),
+  info: (
+    'color': get-color(white),
+    'background-color': get-color(info),
+  ),
+  error: (
+    'color': get-color(white),
+    'background-color': get-color(error),
+  ),
 ) !default;
 
 /// Collection of message variants.
@@ -42,30 +42,30 @@ $message-variants: (
 /// @prop {Map} info
 /// @prop {Map} error
 $message-hollow-variants: (
-    neutral: (
-        'border-top-width': em(5px),
-        'border-top-color': get-color(light-gray),
-    ),
-    success: (
-        'color': $font-color,
-        'border-top-width': em(5px),
-        'border-top-color': get-color(success),
-    ),
-    warning: (
-        'color': $font-color,
-        'border-top-width': em(5px),
-        'border-top-color': get-color(warning),
-    ),
-    info: (
-        'color': $font-color,
-        'border-top-width': em(5px),
-        'border-top-color': get-color(info),
-    ),
-    error: (
-        'color': $font-color,
-        'border-top-width': em(5px),
-        'border-top-color': get-color(error),
-    ),
+  neutral: (
+    'border-top-width': em(5px),
+    'border-top-color': get-color(light-gray),
+  ),
+  success: (
+    'color': $font-color,
+    'border-top-width': em(5px),
+    'border-top-color': get-color(success),
+  ),
+  warning: (
+    'color': $font-color,
+    'border-top-width': em(5px),
+    'border-top-color': get-color(warning),
+  ),
+  info: (
+    'color': $font-color,
+    'border-top-width': em(5px),
+    'border-top-color': get-color(info),
+  ),
+  error: (
+    'color': $font-color,
+    'border-top-width': em(5px),
+    'border-top-color': get-color(error),
+  ),
 ) !default;
 
 /// Default message variant.

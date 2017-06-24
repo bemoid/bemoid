@@ -9,21 +9,21 @@
 /// @prop {Map} medium
 /// @prop {Map} large
 $divider-badge-sizes: (
-    small: (
-        'width': 1.1rem,
-        'height': 1.1rem,
-        'font-size': em(12px)
-    ),
-    medium: (
-        'width': 1.25rem,
-        'height': 1.25rem,
-        'font-size': em(14px)
-    ),
-    large: (
-        'width': 1.5rem,
-        'height': 1.5rem,
-        'font-size': em(16px)
-    ),
+  small: (
+    'width': 1.1rem,
+    'height': 1.1rem,
+    'font-size': em(12px)
+  ),
+  medium: (
+    'width': 1.25rem,
+    'height': 1.25rem,
+    'font-size': em(14px)
+  ),
+  large: (
+    'width': 1.5rem,
+    'height': 1.5rem,
+    'font-size': em(16px)
+  ),
 ) !default;
 
 /// Default divider size.

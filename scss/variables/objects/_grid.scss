@@ -16,11 +16,11 @@ $grid-stackable: medium !default;
 ///
 /// @type {Map}
 $grid-sizes: (
-    small: get-breakpoint(small),
-    medium: get-breakpoint(medium),
-    large: get-breakpoint(large),
-    xlarge: get-breakpoint(xlarge),
-    xxlarge: get-breakpoint(xxlarge),
+  small: get-breakpoint(small),
+  medium: get-breakpoint(medium),
+  large: get-breakpoint(large),
+  xlarge: get-breakpoint(xlarge),
+  xxlarge: get-breakpoint(xxlarge),
 ) !default;
 
 /// Collection of gutters sizes by breakpoints.
@@ -29,6 +29,6 @@ $grid-sizes: (
 /// @prop {Value|Values} xsmall
 /// @prop {Value|Values} large
 $grid-gutters: (
-    xsmall: get-space(medium),
-    large: get-space(large),
+  xsmall: get-space(medium),
+  large: get-space(large),
 ) !default;

@@ -6,12 +6,12 @@
 ///
 /// @type {Keyword}
 $container-sizes: (
-    expanded: 100%,
-    small: get-breakpoint(small),
-    medium: get-breakpoint(medium),
-    large: get-breakpoint(large),
-    xlarge: get-breakpoint(xlarge),
-    xxlarge: get-breakpoint(xxlarge),
+  expanded: 100%,
+  small: get-breakpoint(small),
+  medium: get-breakpoint(medium),
+  large: get-breakpoint(large),
+  xlarge: get-breakpoint(xlarge),
+  xxlarge: get-breakpoint(xxlarge),
 ) !default;
 
 /// Default container size.

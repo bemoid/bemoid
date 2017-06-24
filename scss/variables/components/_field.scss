@@ -11,22 +11,22 @@
 /// @prop {Map} large
 /// @prop {Map} xlarge
 $field-sizes: (
-    xsmall: (
-        'font-size': em(12px)
-    ),
-    small: (
-        'font-size': em(14px)
-    ),
-    medium: (
-        'font-size': em(16px),
-        'padding': get-space(small) get-space(medium)
-    ),
-    large: (
-        'font-size': em(18px)
-    ),
-    xlarge: (
-        'font-size': em(21px)
-    ),
+  xsmall: (
+    'font-size': em(12px)
+  ),
+  small: (
+    'font-size': em(14px)
+  ),
+  medium: (
+    'font-size': em(16px),
+    'padding': get-space(small) get-space(medium)
+  ),
+  large: (
+    'font-size': em(18px)
+  ),
+  xlarge: (
+    'font-size': em(21px)
+  ),
 ) !default;
 
 /// Collection of field sizes.
@@ -38,22 +38,22 @@ $field-sizes: (
 /// @prop {Color} error
 /// @prop {Color} info
 $field-variants: (
-    success: (
-        'color': get-color(success),
-        'border-color': get-color(success),
-    ),
-    warning: (
-        'color': get-color(warning),
-        'border-color': get-color(warning),
-    ),
-    error: (
-        'color': get-color(error),
-        'border-color': get-color(error),
-    ),
-    info: (
-        'color': get-color(info),
-        'border-color': get-color(info),
-    ),
+  success: (
+    'color': get-color(success),
+    'border-color': get-color(success),
+  ),
+  warning: (
+    'color': get-color(warning),
+    'border-color': get-color(warning),
+  ),
+  error: (
+    'color': get-color(error),
+    'border-color': get-color(error),
+  ),
+  info: (
+    'color': get-color(info),
+    'border-color': get-color(info),
+  ),
 ) !default;
 
 /// Default field size. Should be size name from the `$field-sizes` collection.

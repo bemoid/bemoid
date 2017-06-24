@@ -12,10 +12,10 @@
 /// @prop {Values} 18
 /// @prop {Values} 27
 $elevators: (
-    1: 0 rem(4px) rem(3px) rem(-3px) transparentize(black, 0.95),
-    2: 0 rem(5px) rem(4px) rem(-3px) transparentize(black, 0.9),
-    3: 0 rem(6px) rem(5px) rem(-3px) transparentize(black, 0.9),
-    6: 0 rem(6px) rem(12px) 0 transparentize(black, 0.8),
-    18: 0 rem(18px) rem(36px) 0 transparentize(black, 0.75),
-    27: 0 rem(27px) rem(36px) 0 transparentize(black, 0.6),
+  1: 0 rem(4px) rem(3px) rem(-3px) transparentize(black, 0.95),
+  2: 0 rem(5px) rem(4px) rem(-3px) transparentize(black, 0.9),
+  3: 0 rem(6px) rem(5px) rem(-3px) transparentize(black, 0.9),
+  6: 0 rem(6px) rem(12px) 0 transparentize(black, 0.8),
+  18: 0 rem(18px) rem(36px) 0 transparentize(black, 0.75),
+  27: 0 rem(27px) rem(36px) 0 transparentize(black, 0.6),
 ) !default;
