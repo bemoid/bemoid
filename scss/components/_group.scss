@@ -2,7 +2,9 @@
 
 // Group
 //
-// .group--stacked  - Makes group items stacked on each other.
+// .group--overlaped - Makes group items overlap on each other.
+// .group--stacked - Makes group items stacked on each other.
+// .group--tabbed - Makes group items tabbed like bookmarks.
 // .group--expanded - Expands group items to all available space.
 //
 // Markup: group.html
@@ -12,10 +14,6 @@
   $this: #{&};
 
   display: inline-flex;
-
-  & > * + * {
-    margin-left: $group-overlap;
-  }
 
   // Group Item
   //
@@ -40,6 +38,11 @@
       z-index: 2;
     }
 
+    &,
+    & > * {
+      border-radius: $group-inner-radius;
+    }
+
     &:first-child,
     &:first-child > * {
       border-radius:
@@ -47,15 +50,6 @@
         $group-inner-radius
         $group-inner-radius
         $group-outer-radius;
-
-      #{$this} {
-        #{$this}__item {
-          &:last-child,
-          &:last-child > * {
-            border-radius: $group-inner-radius;
-          }
-        }
-      }
     }
 
     &:last-child,
@@ -65,20 +59,6 @@
         $group-outer-radius
         $group-outer-radius
         $group-inner-radius;
-
-      #{$this} {
-        #{$this}__item {
-          &:first-child,
-          &:first-child > * {
-            border-radius: $group-inner-radius;
-          }
-        }
-      }
-    }
-
-    &:not(:first-child):not(:last-child),
-    &:not(:first-child):not(:last-child) > * {
-      border-radius: $group-inner-radius;
     }
   }
 
@@ -98,6 +78,19 @@
     }
   }
 
+  &--overlaped {
+    & > * + * {
+      margin-left: $group-overlap;
+    }
+
+    &#{$this}--stacked {
+      & > * + * {
+        margin-left: 0;
+        margin-top: $group-overlap;
+      }
+    }
+  }
+
   &--expanded {
     width: 100%;
 
@@ -106,13 +99,21 @@
     }
   }
 
+  &--tabbed {
+    #{$this}__item {
+      &,
+      & > * {
+        border-radius:
+          $group-outer-radius
+          $group-outer-radius
+          $group-inner-radius
+          $group-inner-radius;
+      }
+    }
+  }
+
   &--stacked {
     flex-direction: column;
-
-    & > * + * {
-      margin-left: 0;
-      margin-top: $group-overlap;
-    }
 
     #{$this}__item {
       &:first-child,
@@ -122,28 +123,6 @@
           $group-outer-radius
           $group-inner-radius
           $group-inner-radius;
-
-        #{$this} {
-          #{$this}__item {
-            &:first-child,
-            &:first-child > * {
-              border-radius:
-                $group-outer-radius
-                $group-inner-radius
-                $group-inner-radius
-                $group-inner-radius;
-            }
-
-            &:last-child,
-            &:last-child > * {
-              border-radius:
-                $group-inner-radius
-                $group-outer-radius
-                $group-inner-radius
-                $group-inner-radius;
-            }
-          }
-        }
       }
 
       &:last-child,
@@ -153,28 +132,6 @@
           $group-inner-radius
           $group-outer-radius
           $group-outer-radius;
-
-        #{$this} {
-          #{$this}__item {
-            &:first-child,
-            &:first-child > * {
-                border-radius:
-                  $group-inner-radius
-                  $group-inner-radius
-                  $group-inner-radius
-                  $group-outer-radius;
-            }
-
-            &:last-child,
-            &:last-child > * {
-              border-radius:
-                $group-inner-radius
-                $group-inner-radius
-                $group-outer-radius
-                $group-inner-radius;
-            }
-          }
-        }
       }
 
       &:not(:last-child),

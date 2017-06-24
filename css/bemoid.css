@@ -1427,8 +1427,6 @@ h6 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex; }
-  .group > * + * {
-    margin-left: -1px; }
   .group__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -1443,25 +1441,15 @@ h6 {
     .group__item:focus,
     .group__item > *:focus {
       z-index: 2; }
+    .group__item,
+    .group__item > * {
+      border-radius: 0; }
     .group__item:first-child,
     .group__item:first-child > * {
       border-radius: 0.25rem 0 0 0.25rem; }
-      .group__item:first-child .group .group__item:last-child,
-      .group__item:first-child .group .group__item:last-child > *,
-      .group__item:first-child > * .group .group__item:last-child,
-      .group__item:first-child > * .group .group__item:last-child > * {
-        border-radius: 0; }
     .group__item:last-child,
     .group__item:last-child > * {
       border-radius: 0 0.25rem 0.25rem 0; }
-      .group__item:last-child .group .group__item:first-child,
-      .group__item:last-child .group .group__item:first-child > *,
-      .group__item:last-child > * .group .group__item:first-child,
-      .group__item:last-child > * .group .group__item:first-child > * {
-        border-radius: 0; }
-    .group__item:not(:first-child):not(:last-child),
-    .group__item:not(:first-child):not(:last-child) > * {
-      border-radius: 0; }
   .group__divider {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 6px;
@@ -1473,46 +1461,31 @@ h6 {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+  .group--overlaped > * + * {
+    margin-left: -1px; }
+  .group--overlaped.group--stacked > * + * {
+    margin-left: 0;
+    margin-top: -1px; }
   .group--expanded {
     width: 100%; }
     .group--expanded .group__item {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
+  .group--tabbed .group__item,
+  .group--tabbed .group__item > * {
+    border-radius: 0.25rem 0.25rem 0 0; }
   .group--stacked {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .group--stacked > * + * {
-      margin-left: 0;
-      margin-top: -1px; }
     .group--stacked .group__item:first-child,
     .group--stacked .group__item:first-child > * {
       border-radius: 0.25rem 0.25rem 0 0; }
-      .group--stacked .group__item:first-child .group .group__item:first-child,
-      .group--stacked .group__item:first-child .group .group__item:first-child > *,
-      .group--stacked .group__item:first-child > * .group .group__item:first-child,
-      .group--stacked .group__item:first-child > * .group .group__item:first-child > * {
-        border-radius: 0.25rem 0 0 0; }
-      .group--stacked .group__item:first-child .group .group__item:last-child,
-      .group--stacked .group__item:first-child .group .group__item:last-child > *,
-      .group--stacked .group__item:first-child > * .group .group__item:last-child,
-      .group--stacked .group__item:first-child > * .group .group__item:last-child > * {
-        border-radius: 0 0.25rem 0 0; }
     .group--stacked .group__item:last-child,
     .group--stacked .group__item:last-child > * {
       border-radius: 0 0 0.25rem 0.25rem; }
-      .group--stacked .group__item:last-child .group .group__item:first-child,
-      .group--stacked .group__item:last-child .group .group__item:first-child > *,
-      .group--stacked .group__item:last-child > * .group .group__item:first-child,
-      .group--stacked .group__item:last-child > * .group .group__item:first-child > * {
-        border-radius: 0 0 0 0.25rem; }
-      .group--stacked .group__item:last-child .group .group__item:last-child,
-      .group--stacked .group__item:last-child .group .group__item:last-child > *,
-      .group--stacked .group__item:last-child > * .group .group__item:last-child,
-      .group--stacked .group__item:last-child > * .group .group__item:last-child > * {
-        border-radius: 0 0 0.25rem 0; }
     .group--stacked .group__item:not(:last-child),
     .group--stacked .group__item:not(:last-child) > * {
       box-shadow: none; }
