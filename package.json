@@ -8,7 +8,7 @@
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
     "transform": "postcss css/bemoid.css -o css/bemoid.css",
     "test:accessibility": "a11y html/**/*.html",
-    "test": "npm start && npm run test:accessibility",
+    "test": "npm run test:accessibility",
     "build": "npm run compile && npm run transform",
     "build:production": "npm run build && npm run minify",
     "watch": "npm run compile -- --watch"

@@ -5,8 +5,8 @@
     </div>
 
     <div class="field field--expanded">
-        <label class="field__label label">Text</label>
-        <input class="field__input input" type="text" name="text" placeholder="Placeholder">
+        <label for="Text" class="field__label label">Text</label>
+        <input id="Text" class="field__input input" type="text" name="text">
     </div>
 
     <fieldset class="form__group segment">
@@ -15,15 +15,8 @@
         <div class="grid">
             <div class="grid__column">
                 <div class="field field--expanded">
-                    <label class="field__label label">Text</label>
-                    <input class="field__input input" type="text" name="text" placeholder="Placeholder">
-                </div>
-            </div>
-
-            <div class="grid__column">
-                <div class="field field--expanded">
-                    <label class="field__label label">Select</label>
-                    <select class="field__input input select" name="select">
+                    <label for="Select" class="field__label label">Select</label>
+                    <select id="Select" class="field__input input select" name="select">
                         <option>Option#1</option>
                         <option>Option#2</option>
                         <option>Option#3</option>
@@ -33,12 +26,12 @@
 
             <div class="grid__column grid__column--12">
                 <div class="field field--expanded">
-                    <label class="field__label label">Textarea</label>
-                    <textarea class="field__input input" placeholder="Placeholder" rows="10"></textarea>
+                    <label for="Textarea" class="field__label label">Textarea</label>
+                    <textarea id="Textarea" class="field__input input" rows="10"></textarea>
                 </div>
             </div>
         </div>
     </fieldset>
 
-    <input type="submit" class="button button--info">
+    <input type="submit" class="button button--info" aria-label="Submit">
 </div>
