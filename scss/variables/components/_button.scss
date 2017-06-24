@@ -20,7 +20,7 @@ $button-variants: (
     'background-color': get-color(light-gray) darken(get-color(light-gray), 10%),
   ),
   white: (
-    'color': get-color(white),
+    'color': get-color(black) get-color(white),
     'background-color': get-color(white) get-color(primary),
   ),
   black: (

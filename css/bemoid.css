@@ -1096,7 +1096,7 @@ h6 {
   .button--xlarge {
     font-size: 1.3125em; }
   .button--white {
-    color: #fff;
+    color: #171C1F;
     background-color: #fff; }
     .button--white:hover, .button--white:focus, .button--white:active {
       color: #fff;
@@ -1104,7 +1104,7 @@ h6 {
       .button--white:hover .button__cover, .button--white:focus .button__cover, .button--white:active .button__cover {
         color: #fff; }
     .button--white .button__cover {
-      color: #fff; }
+      color: #171C1F; }
   .button--black {
     color: #fff;
     background-color: #171C1F; }

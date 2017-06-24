@@ -17,19 +17,18 @@
 <section>
   <div class="group {{modifier_class}}">
     <div class="group__item field field--expanded">
-      <label for="Input" class="field__label label">Text</label>
-      <input id="Input" class="field__input input" type="text">
+      <input class="field__input input" type="text" aria-label="Text">
     </div>
     <div class="group__item field field--expanded">
-      <select class="field__input input select">
+      <select class="field__input input select" aria-label="Select">
         <option>Option #1</option>
         <option>Option #2</option>
       </select>
     </div>
     <div class="group__item">
       <div class="group group--expanded">
-        <input class="group__item button" type="submit" value="OK">
-        <input class="group__item button button--hollow" type="submit" value="Cancel">
+        <input class="group__item button" type="submit" value="Submit" aria-label="Submit">
+        <input class="group__item button button--hollow" type="submit" value="Cancel" aria-label="Cancel">
       </div>
     </div>
   </div>
