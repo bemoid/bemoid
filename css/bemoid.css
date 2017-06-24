@@ -1584,89 +1584,61 @@ h6 {
     @media (max-width: -0.0625em) {
       .hidden\@xsmall {
         display: none; } }
-    .hidden\@xsmall--up {
-      display: initial;
-      display: none; }
-    .hidden\@xsmall--down {
-      display: initial; }
-      @media (max-width: -0.0625em) {
-        .hidden\@xsmall--down {
-          display: none; } }
   .hidden\@small {
     display: initial; }
     @media (min-width: 30em) and (max-width: 48em) {
       .hidden\@small {
         display: none; } }
-    .hidden\@small--up {
-      display: initial; }
-      @media (min-width: 30em) {
-        .hidden\@small--up {
-          display: none; } }
-    .hidden\@small--down {
-      display: initial; }
-      @media (max-width: 29.9375em) {
-        .hidden\@small--down {
-          display: none; } }
+    @media (min-width: 30em) {
+      .hidden\@small--up {
+        display: none; } }
+    @media (max-width: 29.9375em) {
+      .hidden\@small--down {
+        display: none; } }
   .hidden\@medium {
     display: initial; }
     @media (min-width: 48em) and (max-width: 60em) {
       .hidden\@medium {
         display: none; } }
-    .hidden\@medium--up {
-      display: initial; }
-      @media (min-width: 48em) {
-        .hidden\@medium--up {
-          display: none; } }
-    .hidden\@medium--down {
-      display: initial; }
-      @media (max-width: 47.9375em) {
-        .hidden\@medium--down {
-          display: none; } }
+    @media (min-width: 48em) {
+      .hidden\@medium--up {
+        display: none; } }
+    @media (max-width: 47.9375em) {
+      .hidden\@medium--down {
+        display: none; } }
   .hidden\@large {
     display: initial; }
     @media (min-width: 60em) and (max-width: 70em) {
       .hidden\@large {
         display: none; } }
-    .hidden\@large--up {
-      display: initial; }
-      @media (min-width: 60em) {
-        .hidden\@large--up {
-          display: none; } }
-    .hidden\@large--down {
-      display: initial; }
-      @media (max-width: 59.9375em) {
-        .hidden\@large--down {
-          display: none; } }
+    @media (min-width: 60em) {
+      .hidden\@large--up {
+        display: none; } }
+    @media (max-width: 59.9375em) {
+      .hidden\@large--down {
+        display: none; } }
   .hidden\@xlarge {
     display: initial; }
     @media (min-width: 70em) and (max-width: 90em) {
       .hidden\@xlarge {
         display: none; } }
-    .hidden\@xlarge--up {
-      display: initial; }
-      @media (min-width: 70em) {
-        .hidden\@xlarge--up {
-          display: none; } }
-    .hidden\@xlarge--down {
-      display: initial; }
-      @media (max-width: 69.9375em) {
-        .hidden\@xlarge--down {
-          display: none; } }
+    @media (min-width: 70em) {
+      .hidden\@xlarge--up {
+        display: none; } }
+    @media (max-width: 69.9375em) {
+      .hidden\@xlarge--down {
+        display: none; } }
   .hidden\@xxlarge {
     display: initial; }
     @media (min-width: 90em) {
       .hidden\@xxlarge {
         display: none; } }
-    .hidden\@xxlarge--up {
-      display: initial; }
-      @media (min-width: 90em) {
-        .hidden\@xxlarge--up {
-          display: none; } }
-    .hidden\@xxlarge--down {
-      display: initial; }
-      @media (max-width: 89.9375em) {
-        .hidden\@xxlarge--down {
-          display: none; } }
+    @media (min-width: 90em) {
+      .hidden\@xxlarge--up {
+        display: none; } }
+    @media (max-width: 89.9375em) {
+      .hidden\@xxlarge--down {
+        display: none; } }
 
 /** @define visible */
 .visible {
@@ -1676,89 +1648,61 @@ h6 {
     @media (max-width: -0.0625em) {
       .visible\@xsmall {
         display: initial; } }
-    .visible\@xsmall--up {
-      display: none;
-      display: initial; }
-    .visible\@xsmall--down {
-      display: none; }
-      @media (max-width: -0.0625em) {
-        .visible\@xsmall--down {
-          display: initial; } }
   .visible\@small {
     display: none; }
     @media (min-width: 30em) and (max-width: 48em) {
       .visible\@small {
         display: initial; } }
-    .visible\@small--up {
-      display: none; }
-      @media (min-width: 30em) {
-        .visible\@small--up {
-          display: initial; } }
-    .visible\@small--down {
-      display: none; }
-      @media (max-width: 29.9375em) {
-        .visible\@small--down {
-          display: initial; } }
+    @media (min-width: 30em) {
+      .visible\@small--up {
+        display: initial; } }
+    @media (max-width: 29.9375em) {
+      .visible\@small--down {
+        display: initial; } }
   .visible\@medium {
     display: none; }
     @media (min-width: 48em) and (max-width: 60em) {
       .visible\@medium {
         display: initial; } }
-    .visible\@medium--up {
-      display: none; }
-      @media (min-width: 48em) {
-        .visible\@medium--up {
-          display: initial; } }
-    .visible\@medium--down {
-      display: none; }
-      @media (max-width: 47.9375em) {
-        .visible\@medium--down {
-          display: initial; } }
+    @media (min-width: 48em) {
+      .visible\@medium--up {
+        display: initial; } }
+    @media (max-width: 47.9375em) {
+      .visible\@medium--down {
+        display: initial; } }
   .visible\@large {
     display: none; }
     @media (min-width: 60em) and (max-width: 70em) {
       .visible\@large {
         display: initial; } }
-    .visible\@large--up {
-      display: none; }
-      @media (min-width: 60em) {
-        .visible\@large--up {
-          display: initial; } }
-    .visible\@large--down {
-      display: none; }
-      @media (max-width: 59.9375em) {
-        .visible\@large--down {
-          display: initial; } }
+    @media (min-width: 60em) {
+      .visible\@large--up {
+        display: initial; } }
+    @media (max-width: 59.9375em) {
+      .visible\@large--down {
+        display: initial; } }
   .visible\@xlarge {
     display: none; }
     @media (min-width: 70em) and (max-width: 90em) {
       .visible\@xlarge {
         display: initial; } }
-    .visible\@xlarge--up {
-      display: none; }
-      @media (min-width: 70em) {
-        .visible\@xlarge--up {
-          display: initial; } }
-    .visible\@xlarge--down {
-      display: none; }
-      @media (max-width: 69.9375em) {
-        .visible\@xlarge--down {
-          display: initial; } }
+    @media (min-width: 70em) {
+      .visible\@xlarge--up {
+        display: initial; } }
+    @media (max-width: 69.9375em) {
+      .visible\@xlarge--down {
+        display: initial; } }
   .visible\@xxlarge {
     display: none; }
     @media (min-width: 90em) {
       .visible\@xxlarge {
         display: initial; } }
-    .visible\@xxlarge--up {
-      display: none; }
-      @media (min-width: 90em) {
-        .visible\@xxlarge--up {
-          display: initial; } }
-    .visible\@xxlarge--down {
-      display: none; }
-      @media (max-width: 89.9375em) {
-        .visible\@xxlarge--down {
-          display: initial; } }
+    @media (min-width: 90em) {
+      .visible\@xxlarge--up {
+        display: initial; } }
+    @media (max-width: 89.9375em) {
+      .visible\@xxlarge--down {
+        display: initial; } }
 
 /** @define elevator */
 .elevator--1 {

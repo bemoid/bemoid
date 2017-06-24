@@ -5,20 +5,20 @@
 // Desc
 //
 // .hidden@small - Desc
-// .hidden@small--up - Desc
-// .hidden@small--down - Desc
+// .hidden@small.hidden@small--up - Desc
+// .hidden@small.hidden@small--down - Desc
 // .hidden@medium - Desc
-// .hidden@medium--up - Desc
-// .hidden@medium--down - Desc
+// .hidden@medium.hidden@medium--up - Desc
+// .hidden@medium.hidden@medium--down - Desc
 // .hidden@large - Desc
-// .hidden@large--up - Desc
-// .hidden@large--down - Desc
+// .hidden@large.hidden@large--up - Desc
+// .hidden@large.hidden@large--down - Desc
 // .hidden@xlarge - Desc
-// .hidden@xlarge--up - Desc
-// .hidden@xlarge--down - Desc
+// .hidden@xlarge.hidden@xlarge--up - Desc
+// .hidden@xlarge.hidden@xlarge--down - Desc
 // .hidden@xxlarge - Desc
-// .hidden@xxlarge--up - Desc
-// .hidden@xxlarge--down - Desc
+// .hidden@xxlarge.hidden@xxlarge--up - Desc
+// .hidden@xxlarge.hidden@xxlarge--down - Desc
 //
 // Markup: hidden.html
 //
@@ -28,26 +28,22 @@
 
   display: none;
 
-  @at-root {
-    @each $breakpoint, $width in $breakpoints {
-      #{$this}\@#{$breakpoint} {
-        display: initial;
+  @each $breakpoint, $width in $breakpoints {
+    &\@#{$breakpoint} {
+      display: initial;
 
-        @include breakpoint($breakpoint) {
-          display: none;
-        }
+      @include breakpoint($breakpoint) {
+        display: none;
+      }
 
+      @if not is-lowest-breakpoint($breakpoint) {
         &--up {
-          display: initial;
-
           @include breakpoint($breakpoint up) {
             display: none;
           }
         }
 
         &--down {
-          display: initial;
-
           @include breakpoint($breakpoint down) {
             display: none;
           }

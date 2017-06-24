@@ -5,20 +5,20 @@
 // Desc
 //
 // .visible@small - Desc
-// .visible@small--up - Desc
-// .visible@small--down - Desc
+// .visible@small.visible@small--up - Desc
+// .visible@small.visible@small--down - Desc
 // .visible@medium - Desc
-// .visible@medium--up - Desc
-// .visible@medium--down - Desc
+// .visible@medium.visible@medium--up - Desc
+// .visible@medium.visible@medium--down - Desc
 // .visible@large - Desc
-// .visible@large--up - Desc
-// .visible@large--down - Desc
+// .visible@large.visible@large--up - Desc
+// .visible@large.visible@large--down - Desc
 // .visible@xlarge - Desc
-// .visible@xlarge--up - Desc
-// .visible@xlarge--down - Desc
+// .visible@xlarge.visible@xlarge--up - Desc
+// .visible@xlarge.visible@xlarge--down - Desc
 // .visible@xxlarge - Desc
-// .visible@xxlarge--up - Desc
-// .visible@xxlarge--down - Desc
+// .visible@xxlarge.visible@xxlarge--up - Desc
+// .visible@xxlarge.visible@xxlarge--down - Desc
 //
 // Markup: visible.html
 //
@@ -28,31 +28,27 @@
 
 	display: initial;
 
-	@at-root {
-		@each $breakpoint, $width in $breakpoints {
-			#{$this}\@#{$breakpoint} {
-				display: none;
+  @each $breakpoint, $width in $breakpoints {
+    &\@#{$breakpoint} {
+      display: none;
 
-				@include breakpoint($breakpoint) {
-					display: initial;
-				}
+      @include breakpoint($breakpoint) {
+        display: initial;
+      }
 
-				&--up {
-					display: none;
+      @if not is-lowest-breakpoint($breakpoint) {
+        &--up {
+          @include breakpoint($breakpoint up) {
+            display: initial;
+          }
+        }
 
-					@include breakpoint($breakpoint up) {
-						display: initial;
-					}
-				}
-
-				&--down {
-					display: none;
-
-					@include breakpoint($breakpoint down) {
-						display: initial;
-					}
-				}
-			}
-		}
-	}
+        &--down {
+          @include breakpoint($breakpoint down) {
+            display: initial;
+          }
+        }
+      }
+    }
+  }
 }
