@@ -3,9 +3,9 @@
 // Group
 //
 // .group--overlaped - Makes group items overlap on each other.
-// .group--stacked - Makes group items stacked on each other.
 // .group--tabbed - Makes group items tabbed like bookmarks.
 // .group--expanded - Expands group items to all available space.
+// .group--stacked - Makes group items stacked on each other.
 //
 // Markup: group.html
 //
@@ -64,7 +64,7 @@
 
   // Group Divider
   //
-  // Element of group component which separates group items. Espacially to use with Divider component.
+  // Element of group component which separates group items. Espacially to use with `Divider` component.
   //
   // Style guide: Components.Group.Divider
   &__divider {
