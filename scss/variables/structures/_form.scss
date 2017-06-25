@@ -1,3 +1,38 @@
 ////
 /// @group Form
 ////
+
+/// Size of space between form elements.
+///
+/// @type {Value|Values}
+$form-spaces: em(16px) !default;
+
+/// Radius of form fieldset group.
+///
+/// @type {Value}
+$form-group-radius: get-radius(xsmall) !default;
+
+/// Background color of form fieldset group.
+///
+/// @type {Value}
+$form-group-background: get-color(lighter-gray) !default;
+
+/// Border styles of form fieldset group.
+///
+/// @type {Value}
+$form-group-border: 1px solid get-color(light-gray) !default;
+
+/// Font size of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-font-size: em(12px) !default;
+
+/// Font weight of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-weight: bold !default;
+
+/// Text transform of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-text-transform: uppercase !default;

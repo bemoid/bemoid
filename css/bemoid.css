@@ -849,6 +849,8 @@ h6 {
   border-radius: 0.25rem;
   background-color: #f6f6f6;
   border: 1px solid #d7dfe6; }
+  .form__group > *:not(legend) + * {
+    margin-top: 1em; }
 
 .form__legend {
   font-size: 0.75em;

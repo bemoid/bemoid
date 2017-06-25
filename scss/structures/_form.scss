@@ -8,21 +8,27 @@
 //
 // Style guide: Structures.Form
 .form {
+  $this: #{&};
+
 	& > * + * {
-		margin-top: em(16px);
+		margin-top: $form-spaces;
 	}
 
 	&__group {
 		margin-left: 0;
 		margin-right: 0;
-		border-radius: get-radius(xsmall);
-		background-color: get-color(lighter-gray);
-		border: 1px solid get-color(light-gray);
+		border-radius: $form-group-radius;
+		background-color: $form-group-background;
+		border: $form-group-border;
+
+    & > *:not(legend) + * {
+      margin-top: $form-spaces;
+    }
 	}
 
 	&__legend {
-		font-size: em(12px);
-		font-weight: bold;
-		text-transform: uppercase;
+		font-size: $form-legend-font-size;
+		font-weight: $form-legend-weight;
+		text-transform: $form-legend-text-transform;
 	}
 }
