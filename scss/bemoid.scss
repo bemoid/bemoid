@@ -11,6 +11,14 @@
 @import 'generic/normalize';
 @import 'generic/headings';
 
+// Utilities
+@import 'utilities/text';
+@import 'utilities/color';
+@import 'utilities/hidden';
+@import 'utilities/visible';
+@import 'utilities/elevator';
+@import 'utilities/background';
+
 // Objects
 @import 'objects/container';
 @import 'objects/grid';
@@ -40,11 +48,3 @@
 @import 'components/divider';
 @import 'components/checkbox';
 @import 'components/group';
-
-// Utilities
-@import 'utilities/text';
-@import 'utilities/color';
-@import 'utilities/hidden';
-@import 'utilities/visible';
-@import 'utilities/elevator';
-@import 'utilities/background';
