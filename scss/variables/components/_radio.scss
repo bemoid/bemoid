@@ -10,7 +10,7 @@ $radio-radius: get-radius(circle) !default;
 /// Radio input inner circle width.
 ///
 /// @type {Number|Value}
-$radio-inner-width: 0.5em !default;
+$radio-inner-width: em(6px) !default;
 
 /// Radio input inner circle background color.
 ///
@@ -30,7 +30,7 @@ $radio-inner-transform: scale(0) !default;
 /// Radio input inner circle width.
 ///
 /// @type {Number|Value}
-$radio-outer-width: 1em !default;
+$radio-outer-width: em(18px) !default;
 
 /// Radio input outer circle background color.
 ///

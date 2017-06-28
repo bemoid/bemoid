@@ -1,3 +1,73 @@
 ////
 /// @group Checkbox
 ////
+
+/// Checkbox input radius.
+///
+/// @type {Number|Value|Values}
+$checkbox-radius: get-radius(circle) !default;
+
+/// Checkbox input inner circle width.
+///
+/// @type {Number|Value}
+$checkbox-inner-width: em(14px) !default;
+
+/// Checkbox input inner circle background color.
+///
+/// @type {Color}
+$checkbox-inner-background: get-color(info) !default;
+
+/// Checkbox input inner circle transition.
+///
+/// @type {Values}
+$checkbox-inner-transition: get-transition(normal) !default;
+
+/// Checkbox input inner circle transform.
+///
+/// @type {Values}
+$checkbox-inner-transform: rotate(-45deg) scale(0) !default;
+
+/// Checkbox input inner circle width.
+///
+/// @type {Number|Value}
+$checkbox-outer-width: em(18px) !default;
+
+/// Checkbox input outer circle background color.
+///
+/// @type {Color}
+$checkbox-outer-background: transparent !default;
+
+/// Checkbox input outer circle border.
+///
+/// @type {Values}
+$checkbox-outer-border: 1px solid get-color(light-gray) !default;
+
+/// Checkbox input inner circle transform.
+///
+/// @type {Values}
+$checkbox-outer-shadow: get-elevator(1) !default;
+
+/// Checkbox input outer circle transition.
+///
+/// @type {Values}
+$checkbox-outer-transition: get-transition(normal) !default;
+
+/// Checkbox input inner circle transform in active state.
+///
+/// @type {Values}
+$checkbox-active-inner-transform: rotate(-45deg) scale(1) !default;
+
+/// Checkbox input outer circle border in active state.
+///
+/// @type {Values}
+$checkbox-hover-outer-border: 1px solid get-color(info) !default;
+
+/// Checkbox input outer circle background in active state.
+///
+/// @type {Color}
+$checkbox-hover-outer-background: transparentize(get-color(info), 0.9) !default;
+
+/// Checkbox input outer circle box-shadow in active state.
+///
+/// @type {Values}
+$checkbox-hover-outer-shadow: get-elevator(2) !default;

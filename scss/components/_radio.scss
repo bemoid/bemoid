@@ -16,7 +16,7 @@
     &:checked {
       & + #{$this}__label {
         &:after {
-            transform: $radio-active-inner-transform;
+            transform: translate(-50%, -50%) $radio-active-inner-transform;
         }
       }
     }
@@ -57,12 +57,11 @@
     }
 
     &:after {
-        left: $radio-inner-width/2;
-        margin-top: -#{$radio-inner-width/2};
+        left: $radio-outer-width/2;
         width: $radio-inner-width;
         height: $radio-inner-width;
         transition: $radio-inner-transition;
-        transform: $radio-inner-transform;
+        transform: translate(-50%, -50%) $radio-inner-transform;
         background: $radio-inner-background;
         border-radius: $radio-radius;
     }
