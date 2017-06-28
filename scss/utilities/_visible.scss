@@ -5,20 +5,10 @@
 // Desc
 //
 // .visible@small - Desc
-// .visible@small.visible@small--up - Desc
-// .visible@small.visible@small--down - Desc
 // .visible@medium - Desc
-// .visible@medium.visible@medium--up - Desc
-// .visible@medium.visible@medium--down - Desc
 // .visible@large - Desc
-// .visible@large.visible@large--up - Desc
-// .visible@large.visible@large--down - Desc
 // .visible@xlarge - Desc
-// .visible@xlarge.visible@xlarge--up - Desc
-// .visible@xlarge.visible@xlarge--down - Desc
 // .visible@xxlarge - Desc
-// .visible@xxlarge.visible@xxlarge--up - Desc
-// .visible@xxlarge.visible@xxlarge--down - Desc
 //
 // Markup: visible.html
 //
@@ -34,20 +24,6 @@
 
       @include breakpoint($breakpoint) {
         display: initial;
-      }
-
-      @if not is-lowest-breakpoint($breakpoint) {
-        &--up {
-          @include breakpoint($breakpoint up) {
-            display: initial;
-          }
-        }
-
-        &--down {
-          @include breakpoint($breakpoint down) {
-            display: initial;
-          }
-        }
       }
     }
   }

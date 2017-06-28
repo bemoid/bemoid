@@ -14,7 +14,6 @@
 @import 'variables/objects/container';
 @import 'variables/objects/grid';
 @import 'variables/objects/list';
-@import 'variables/objects/media';
 @import 'variables/objects/table';
 @import 'variables/objects/image';
 
@@ -39,3 +38,6 @@
 @import 'variables/components/divider';
 @import 'variables/components/checkbox';
 @import 'variables/components/group';
+
+// Components
+@import 'variables/utilities/text';
