@@ -166,7 +166,7 @@ $button-radius: get-radius(xsmall) !default;
 /// Button transition settings.
 ///
 /// @type {Values}
-$button-transition: border .2s ease, color .2s ease, background .2s ease, box-shadow .3s ease !default;
+$button-transition: get-transition(normal) !default;
 
 /// Button box shadow.
 ///
@@ -206,4 +206,4 @@ $button-hollow-background: transparent !default;
 /// Button's cover transition settings.
 ///
 /// @type {Values}
-$button-cover-transition: all 300ms ease !default;
+$button-cover-transition: get-transition(normal) !default;

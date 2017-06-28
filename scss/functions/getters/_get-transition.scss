@@ -1,0 +1,25 @@
+////
+/// @group General
+////
+
+/// Retrives transition.
+///
+/// @param {List} $name
+/// @require {Map} $transitions
+/// @return {Value} Transition value
+///
+/// @example scss - example
+///   get-transition(normal);
+///   get-transition(width slow);
+/// @example css - output
+///   all 0.3s ease
+///   width 0.6s ease
+@function get-transition($name) {
+  @if length($name) >= 2 {
+    $timing: nth($name, length($name));
+
+    @return nth($name, 1) get($transitions, $timing);
+  }
+
+  @return all get($transitions, $name);
+}

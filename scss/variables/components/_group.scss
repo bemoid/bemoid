@@ -25,4 +25,4 @@ $group-outer-radius: get-radius(xsmall) !default;
 /// Transition settings for group items.
 ///
 /// @type {Values}
-$group-item-transition: border 0.2s ease-out, box-shadow, 0.2s ease-out !default;
+$group-item-transition: get-transition(normal) !default;

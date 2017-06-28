@@ -20,7 +20,7 @@ $radio-inner-background: get-color(info) !default;
 /// Radio input inner circle transition.
 ///
 /// @type {Values}
-$radio-inner-transition: transform 0.1s ease-out !default;
+$radio-inner-transition: get-transition(normal) !default;
 
 /// Radio input inner circle transform.
 ///
@@ -50,7 +50,7 @@ $radio-outer-shadow: get-elevator(1) !default;
 /// Radio input outer circle transition.
 ///
 /// @type {Values}
-$radio-outer-transition: border 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out !default;
+$radio-outer-transition: get-transition(normal) !default;
 
 /// Radio input inner circle transform in active state.
 ///

@@ -21,7 +21,7 @@ $input-shadow: get-elevator(1) !default;
 /// Field transition settings.
 ///
 /// @type {Values}
-$input-transition: border 0.2s ease-out, box-shadow 0.3s ease-out !default;
+$input-transition: get-transition(normal) !default;
 
 /// Field border style.
 ///

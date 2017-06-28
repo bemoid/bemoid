@@ -30,7 +30,7 @@ $tag-radius: get-radius(xsmall) !default;
 /// Tag transition settings.
 ///
 /// @type {Values}
-$tag-transition: border .2s ease, color .2s ease, background .2s ease, box-shadow .3s ease !default;
+$tag-transition: get-transition(normal) !default;
 
 /// Tag box shadow.
 ///
