@@ -2,7 +2,7 @@
 
 // Checkbox
 //
-// Desc
+// Component for creating selectable input fields.
 //
 // Markup: checkbox.html
 //
@@ -10,18 +10,32 @@
 .checkbox {
   $this: #{&};
 
+  // Checkbox Input
+  //
+  // Input element of the checkbox component. Provides state for custom styled mark.
+  //
+  // Markup: checkbox__input.html
+  //
+  // Style guide: Components.Checkbox.Input
   &__input {
     display: none;
 
     &:checked {
       & + #{$this}__label {
         &:after {
-            transform: translate(-25%, -50%) $checkbox-active-mark-transform;
+            transform: translate(-25%, -50%) $checkbox-mark-active-transform;
         }
       }
     }
   }
 
+  // Checkbox Label
+  //
+  // Label element of the checkbox component. Gives customizable mark.
+  //
+  // Markup: checkbox__label.html
+  //
+  // Style guide: Components.Checkbox.Label
   &__label {
     position: relative;
     padding-left: 1.5em;
@@ -31,9 +45,9 @@
     &:focus,
     &:hover {
         &:before {
-            background: $checkbox-active-background;
-            border: $checkbox-active-border;
-            box-shadow: $checkbox-active-shadow;
+            background: $checkbox-hover-background;
+            border: $checkbox-hover-border;
+            box-shadow: $checkbox-hover-shadow;
         }
     }
 
