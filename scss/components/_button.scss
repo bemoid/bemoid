@@ -2,34 +2,34 @@
 
 // Button
 //
-// Grid system based on flexbox for building complex layouts.
+// Component for creating a standard clickable buttons.
 //
-// .button--disabled - Desc
-// .button--wide - Desc
-// .button--expanded - Desc
-// .button--xsmall - Desc
-// .button--small - Desc
-// .button--large - Desc
-// .button--xlarge - Desc
-// .button--white - Desc
-// .button--black - Desc
-// .button--primary - Desc
-// .button--secondary - Desc
-// .button--complementary - Desc
-// .button--success - Desc
-// .button--warning - Desc
-// .button--info - Desc
-// .button--error - Desc
-// .button--hollow - Desc
-// .button--hollow.button--white - Desc
-// .button--hollow.button--black - Desc
-// .button--hollow.button--primary - Desc
-// .button--hollow.button--secondary - Desc
-// .button--hollow.button--complementary - Desc
-// .button--hollow.button--success - Desc
-// .button--hollow.button--warning - Desc
-// .button--hollow.button--info - Desc
-// .button--hollow.button--error - Desc
+// .button--disabled - Turns on disable state on a button.
+// .button--wide - Gives button larger horizontal paddings.
+// .button--expanded - Expands button to fullwidth.
+// .button--xsmall - Xsmall variant of a button.
+// .button--small - Small variant of a button.
+// .button--large - Large variant of a button.
+// .button--xlarge - Xlarge variant of a button.
+// .button--white - White variant of a button.
+// .button--black - Black variant of a button.
+// .button--primary - Primary variant of a button.
+// .button--secondary - Secondary variant of a button.
+// .button--complementary - Complementary variant of a button.
+// .button--success - Success variant of a button.
+// .button--warning - Warning variant of a button.
+// .button--info - Info variant of a button.
+// .button--error - Error variant of a button.
+// .button--hollow - Hollowed variant of a button. Makes button background transparent.
+// .button--hollow.button--white - White variant of a hollowed button.
+// .button--hollow.button--black - Black variant of a hollowed button.
+// .button--hollow.button--primary - Primary variant of a hollowed button.
+// .button--hollow.button--secondary - Secondary variant of a hollowed button.
+// .button--hollow.button--complementary - Complementary variant of a hollowed button.
+// .button--hollow.button--success - Success variant of a hollowed button.
+// .button--hollow.button--warning - Warning variant of a hollowed button.
+// .button--hollow.button--info - Info variant of a hollowed button.
+// .button--hollow.button--error - Error variant of a hollowed button.
 //
 // Markup: button.html
 //
@@ -73,7 +73,7 @@
 
   // Button Cover
   //
-  // Desc
+  // Covers button with additional content. Useful for providing loading state or change button text.
   //
   // Markup: button__cover.html
   //
@@ -93,7 +93,7 @@
 
   // Button Icon
   //
-  // Desc
+  // Icon element which aligns icons inside button.
   //
   // Markup: button__icon.html
   //
