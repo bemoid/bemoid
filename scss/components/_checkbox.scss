@@ -16,7 +16,7 @@
     &:checked {
       & + #{$this}__label {
         &:after {
-            transform: translate(-25%, -50%) $checkbox-active-inner-transform;
+            transform: translate(-25%, -50%) $checkbox-active-mark-transform;
         }
       }
     }
@@ -31,9 +31,9 @@
     &:focus,
     &:hover {
         &:before {
-            background: $checkbox-hover-outer-background;
-            border: $checkbox-hover-outer-border;
-            box-shadow: $checkbox-hover-outer-shadow;
+            background: $checkbox-active-background;
+            border: $checkbox-active-border;
+            box-shadow: $checkbox-active-shadow;
         }
     }
 
@@ -46,31 +46,29 @@
 
     &:before {
         left: 0;
-        margin-top: -#{$checkbox-outer-width/2};
-        width: $checkbox-outer-width;
-        height: $checkbox-outer-width;
-        background: $checkbox-outer-background;
-        border: $checkbox-outer-border;
+        margin-top: -#{$checkbox-size/2};
+        width: $checkbox-size;
+        height: $checkbox-size;
+        background: $checkbox-background;
+        border: $checkbox-border;
         border-radius: $checkbox-radius;
-        box-shadow: $checkbox-outer-shadow;
-        transition: $checkbox-outer-transition;
+        box-shadow: $checkbox-shadow;
+        transition: $checkbox-transition;
     }
 
     &:after {
         content: '';
-        width: $checkbox-inner-width;
-        height: $checkbox-inner-width/2;
+        width: $checkbox-mark-size;
+        height: $checkbox-mark-size/2;
         position: absolute;
-        left: $checkbox-outer-width/2;
-        border: 2px solid get-color(info);
+        left: $checkbox-size/2;
+        border: $checkbox-mark-width solid $checkbox-mark-color;
         border-top: none;
         border-right: none;
         background: transparent;
         transform-origin: 20% 50%;
-        // left: $checkbox-inner-width/2;
-        // margin-top: -#{$checkbox-inner-width/2};
-        transition: $checkbox-inner-transition;
-        transform: translate(-25%, -50%) $checkbox-inner-transform;
+        transition: $checkbox-mark-transition;
+        transform: translate(-25%, -50%) $checkbox-mark-transform;
     }
   }
 }

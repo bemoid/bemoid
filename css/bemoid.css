@@ -1632,7 +1632,7 @@ h6 {
     height: 0.4375em;
     position: absolute;
     left: 0.5625em;
-    border: 2px solid #3273dc;
+    border: 0.125em solid #3273dc;
     border-top: none;
     border-right: none;
     background: transparent;
