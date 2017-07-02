@@ -61,6 +61,11 @@ $field-variants: (
 /// @type {Keyword}
 $field-size: medium !default;
 
+/// Color of the untouched caption.
+///
+/// @type {Color}
+$field-caption-untouched-color: $font-color !default;
+
 /// Font size of the field caption.
 ///
 /// @type {Number|Value}

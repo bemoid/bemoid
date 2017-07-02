@@ -79,7 +79,7 @@
     font-size: $field-caption-font-size;
 
     &--untouched {
-      color: initial !important;
+      color: $field-caption-untouched-color !important;
     }
   }
 

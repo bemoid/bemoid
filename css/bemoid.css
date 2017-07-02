@@ -1124,7 +1124,7 @@ h6 {
   .field__caption {
     font-size: 0.75em; }
     .field__caption--untouched {
-      color: initial !important; }
+      color: #4d5e68 !important; }
   .field--xsmall .field__input {
     font-size: 0.75em; }
   .field--xsmall .field__control {
