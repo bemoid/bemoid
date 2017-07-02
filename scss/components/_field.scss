@@ -2,18 +2,18 @@
 
 // Field
 //
-// Desc
+// General component for creating various form fields. Controls size, status and behaviour of inputs.
 //
-// .field--xsmall  - Desc
-// .field--small - Desc
-// .field--large - Desc
-// .field--xlarge - Desc
-// .field--expanded - Desc
-// .field--inline - Desc
-// .field--success - Desc
-// .field--warning - Desc
-// .field--error - Desc
-// .field--info - Desc
+// .field--xsmall - Xsmall variant of a field.
+// .field--small - Small variant of a field.
+// .field--large - Large variant of a field.
+// .field--xlarge - Xlarge variant of a field.
+// .field--expanded - Expands field to fullwidth.
+// .field--inline - Makes field behave as an inline element.
+// .field--success - Adds success status to the field.
+// .field--warning - Adds warning status to the field.
+// .field--error - Adds error status to the field.
+// .field--info - Adds info status to the field.
 //
 // Markup: field.html
 //
@@ -25,7 +25,7 @@
 
   // Field Label
   //
-  // Desc
+  // Element for providing the name of a field input.
   //
   // Markup: field__label.html
   //
@@ -42,7 +42,7 @@
 
   // Field Input
   //
-  // Desc
+  // Element for typed and selectable inputs (like <input type="text">, <textarea>, <select>).
   //
   // Markup: field__input.html
   //
@@ -55,7 +55,7 @@
 
   // Field Control
   //
-  // Desc
+  // Element for a checkable inputs (like <input type="checkbox">, <input type="radio">).
   //
   // Markup: field__control.html
   //
@@ -68,9 +68,9 @@
 
   // Field Caption
   //
-  // Desc
+  // Element for giving a description to the field.
   //
-  // .field__caption--untouched - Desc
+  // .field__caption--untouched - Makes caption insensitive to status changes of a field. Description will not change its color.
   //
   // Markup: field__caption.html
   //
