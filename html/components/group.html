@@ -1,44 +1,36 @@
-<section>
-  <div class="group {{modifier_class}}">
-    <button class="group__item button">Button</button>
-    <button class="group__item button">Button</button>
-    <button class="group__item button">Button</button>
+<div class="group {{modifier_class}}">
+  <button class="group__item button">Button</button>
+  <button class="group__item button">Button</button>
+  <button class="group__item button">Button</button>
+</div>
+
+<div class="group {{modifier_class}}">
+  <button class="group__item button button--hollow">Button</button>
+  <button class="group__item button button--hollow">Button</button>
+  <button class="group__item button button--hollow">Button</button>
+</div>
+
+<div class="group {{modifier_class}}">
+  <div class="group__item field field--expanded">
+    <input class="field__input input" type="text" aria-label="Text">
   </div>
-</section>
-<br>
-<section>
-  <div class="group {{modifier_class}}">
-    <button class="group__item button button--hollow">Button</button>
-    <button class="group__item button button--hollow">Button</button>
-    <button class="group__item button button--hollow">Button</button>
+  <div class="group__item field field--expanded">
+    <select class="field__input input select" aria-label="Select">
+      <option>Option #1</option>
+      <option>Option #2</option>
+    </select>
   </div>
-</section>
-<br>
-<section>
-  <div class="group {{modifier_class}}">
-    <div class="group__item field field--expanded">
-      <input class="field__input input" type="text" aria-label="Text">
-    </div>
-    <div class="group__item field field--expanded">
-      <select class="field__input input select" aria-label="Select">
-        <option>Option #1</option>
-        <option>Option #2</option>
-      </select>
-    </div>
-    <input class="group__item button" type="submit" value="Submit" aria-label="Submit">
+  <input class="group__item button" type="submit" value="Submit" aria-label="Submit">
+</div>
+
+<div class="group {{modifier_class}}">
+  <div class="group__item panel">
+    <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
   </div>
-</section>
-<br>
-<section>
-  <div class="group {{modifier_class}}">
-    <div class="group__item panel">
-      <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
-    </div>
-    <div class="group__item panel">
-      <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
-    </div>
-    <div class="group__item panel">
-      <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
-    </div>
+  <div class="group__item panel">
+    <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
   </div>
-</section>
+  <div class="group__item panel">
+    <div class="panel__segment segment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam inventore alias quos amet vel explicabo velit, cumque tempora eos. Sed cupiditate quaerat est fuga veritatis iste! Recusandae corporis, molestias a.</div>
+  </div>
+</div>

@@ -21,6 +21,8 @@
   //
   // Element of the group block to determine components for grouping.
   //
+  // Markup: group__item.html
+  //
   // Style guide: Components.Group.Item
   &__item {
     flex: 0 1 auto;
@@ -67,6 +69,8 @@
   // Group Divider
   //
   // Element of group component which separates group items. Espacially to use with `Divider` component.
+  //
+  // Markup: group__divider.html
   //
   // Style guide: Components.Group.Divider
   &__divider {
