@@ -2,13 +2,13 @@
 
 // Modal
 //
-// Grid system based on flexbox for building complex layouts.
+// Component for large dialog prompts which temporary covers entire viewport. Useful for displaying content whitch user should focus on.
 //
-// .container--small    - Desc
-// .container--medium   - Desc
-// .container--large    - Desc
-// .container--xlarge   - Desc
-// .container--xxlarge  - Desc
+// .container--small - Limits modal width to small size.
+// .container--medium - Limits modal width to medium size.
+// .container--large - Limits modal width to large size.
+// .container--xlarge - Limits modal width to xlarge size.
+// .container--xxlarge - Limits modal width to xxlarge size.
 //
 // Markup: modal.html
 //
@@ -23,11 +23,11 @@
 
   // Modal Body
   //
-  // Grid system based on flexbox for building complex layouts.
+  // Body of the modal. Element for its content.
   //
-  // .panel--small - Desc
-  // .panel--large - Desc
-  // .panel--xlarge - Desc
+  // .panel--small - Modal body element with small paddings.
+  // .panel--large - Modal body element with large paddings.
+  // .panel--xlarge - Modal body element with xlarge paddings.
   //
   // Markup: modal__body.html
   //
