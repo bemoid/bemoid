@@ -1095,6 +1095,7 @@ h6 {
 /** @define input */
 .input {
   line-height: inherit;
+  font-family: inherit;
   border-width: 1px;
   border-style: solid;
   border-color: #d7dfe6;

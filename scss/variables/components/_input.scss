@@ -2,43 +2,47 @@
 /// @group Input
 ////
 
+/// Input font family.
+///
+/// @type {Keyword}
+$input-font-family: inherit !default;
 
-/// Field border radius size.
+/// Input border radius size.
 ///
 /// @type {Number|Value|Values}
 $input-radius: get-radius(xsmall) !default;
 
-/// Field background color.
+/// Input background color.
 ///
 /// @type {Number|Value|Values}
 $input-background: get-color(white) !default;
 
-/// Field box-shadow styles.
+/// Input box-shadow styles.
 ///
 /// @type {Number|Value|Values}
 $input-shadow: get-elevator(1) !default;
 
-/// Field transition settings.
+/// Input transition settings.
 ///
 /// @type {Values}
 $input-transition: get-transition(normal) !default;
 
-/// Field border style.
+/// Input border style.
 ///
 /// @type {Number|Value|Values}
 $input-border-width: 1px !default;
 
-/// Field border style.
+/// Input border style.
 ///
 /// @type {Keyword}
 $input-border-style: solid !default;
 
-/// Field border width.
+/// Input border width.
 ///
 /// @type {Color}
 $input-border-color: get-color(light-gray) !default;
 
-/// Field outline value.
+/// Input outline value.
 ///
 /// @type {Values}
 $input-focus-outline: 0 !default;
