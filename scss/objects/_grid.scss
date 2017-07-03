@@ -150,7 +150,7 @@
 			flex-direction: column;
 
 			& > #{$this}__column {
-				flex-basis: 100%;
+				flex-basis: auto;
 				max-width: 100%;
 			}
 		}

@@ -853,8 +853,8 @@ h6 {
           -ms-flex-direction: column;
               flex-direction: column; }
       .grid--stackable > .grid__column {
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: 100%; } }
   .grid--gapless {
     margin: 0; }
