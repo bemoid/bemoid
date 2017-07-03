@@ -2,20 +2,20 @@
 
 // Message
 //
-// Grid system based on flexbox for building complex layouts.
+// Component for displaying emphasized text informations. Handy for catching user attention on important information.
 //
-// .segment--xsmall - Desc
-// .segment--large - Desc
-// .segment--xlarge - Desc
-// .message--success - Desc
-// .message--warning - Desc
-// .message--info - Desc
-// .message--error - Desc
-// .message--hollow - Desc
-// .message--hollow.message--success - Desc
-// .message--hollow.message--warning - Desc
-// .message--hollow.message--info - Desc
-// .message--hollow.message--error - Desc
+// .segment--xsmall - Xsmall variant of a message.
+// .segment--large - Large variant of a message.
+// .segment--xlarge - Xlarge variant of a message.
+// .message--success - Success variant of a message.
+// .message--warning - Warning variant of a message.
+// .message--info - Info variant of a message.
+// .message--error - Error variant of a message.
+// .message--hollow - Hollowed variant of a message. Makes message background transparent.
+// .message--hollow.message--success - Success variant of a hollowed button.
+// .message--hollow.message--warning - Warning variant of a hollowed button.
+// .message--hollow.message--info - Info variant of a hollowed button.
+// .message--hollow.message--error - Error variant of a hollowed button.
 //
 // Markup: message.html
 //
@@ -30,6 +30,13 @@
   box-shadow: $message-shadow;
   border-radius: $message-radius;
 
+  // Message Title
+  //
+  // Element for highlighted text inside message.
+  //
+  // Markup: group__item.html
+  //
+  // Style guide: Components.Group.Item
   &__title {
     display: block;
     color: $message-title-color;
