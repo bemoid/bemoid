@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #4d5e68;
+  color: #42515a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -17,13 +17,13 @@ samp {
 
 mark {
   background-color: #ffde66;
-  color: #4d5e68; }
+  color: #42515a; }
 
 a {
-  color: #4d5e68;
+  color: #42515a;
   text-decoration: underline; }
   a:hover {
-    color: #38444b; }
+    color: #2d363c; }
 
 html {
   box-sizing: border-box;
@@ -1021,6 +1021,30 @@ h6 {
   .image--text-bottom {
     vertical-align: text-bottom; }
 
+/** @define dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown__content {
+    display: none;
+    padding-top: 0.1875rem; }
+    .dropdown__content--gapless {
+      padding-top: 0; }
+  .dropdown__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    max-width: 18.75rem;
+    min-width: 12.5rem; }
+  .dropdown--active .dropdown__content {
+    display: block; }
+  .dropdown--right .dropdown__content {
+    left: auto;
+    right: 0; }
+  .dropdown--hoverable:hover .dropdown__content {
+    display: block; }
+
 /** @define form */
 .form > * + * {
   margin-top: 1em; }
@@ -1137,7 +1161,7 @@ h6 {
   .field__caption {
     font-size: 0.75em; }
     .field__caption--untouched {
-      color: #4d5e68 !important; }
+      color: #42515a !important; }
   .field--xsmall .field__input {
     font-size: 0.75em; }
   .field--xsmall .field__control {
@@ -1600,19 +1624,19 @@ h6 {
     border-top-color: #d7dfe6;
     background-color: transparent; }
     .message--hollow.message--success {
-      color: #4d5e68;
+      color: #42515a;
       border-top-width: 0.3125em;
       border-top-color: #26c65e; }
     .message--hollow.message--warning {
-      color: #4d5e68;
+      color: #42515a;
       border-top-width: 0.3125em;
       border-top-color: #ffde66; }
     .message--hollow.message--info {
-      color: #4d5e68;
+      color: #42515a;
       border-top-width: 0.3125em;
       border-top-color: #3273dc; }
     .message--hollow.message--error {
-      color: #4d5e68;
+      color: #42515a;
       border-top-width: 0.3125em;
       border-top-color: #ec3953; }
 
@@ -1641,42 +1665,6 @@ h6 {
     height: 1.5rem;
     font-size: 1em;
     line-height: 1.5rem; }
-
-/** @define dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block; }
-  .dropdown > * + * {
-    padding-top: 0.1875rem; }
-  .dropdown__content {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
-    opacity: 0;
-    transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
-  .dropdown__panel {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    font-size: 0.875em;
-    max-width: 18.75rem;
-    min-width: 12.5rem;
-    padding: 0.375em 0.5625em; }
-  .dropdown--active .dropdown__content {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
-  .dropdown--right .dropdown__content {
-    left: auto;
-    right: 0; }
-  .dropdown--hoverable:hover .dropdown__content {
-    opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
 
 /** @define group */
 .group {

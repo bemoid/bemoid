@@ -17,31 +17,27 @@
   position: relative;
   display: inline-block;
 
-  & > * + * {
-    padding-top: rem(3px);
-  }
-
-  // Dropdown Button
+  // Dropdown Content
   //
-  // Button element of the dropdown component. Triggers visibility of dropdown panel.
+  // Content element of the dropdown component. Holds togglable content.
   //
-  // Markup: dropdown__button.html
+  // .dropdown__content--gapless - Removes space between dropdown trigger and content.
   //
-  // Style guide: Components.Dropdown.Button
-  &__button {
-
-  }
-
+  // Markup: dropdown__content.html
+  //
+  // Style guide: Components.Dropdown.Content
   &__content {
-    transform: scaleY(0);
-    transform-origin: 50% 0;
-    opacity: 0;
-    transition: get-transition(opacity fast), get-transition(transform slow);
+    display: none;
+    padding-top: rem(3px);
+
+    &--gapless {
+      padding-top: 0;
+    }
   }
 
   // Dropdown Panel
   //
-  // Panel element of the dropdown component. Holds togglable content.
+  // Panel element of the dropdown component. Holds content of the dropdown.
   //
   // Markup: dropdown__panel.html
   //
@@ -51,16 +47,13 @@
     top: 100%;
     left: 0;
     z-index: 1;
-    font-size: em(14px);
     max-width: rem(300px);
     min-width: rem(200px);
-    padding: get-space(small) get-space(medium);
   }
 
   &--active {
     #{$this}__content {
-      opacity: 1;
-      transform: scaleY(1);
+      display: block;
     }
   }
 
@@ -74,8 +67,7 @@
   &--hoverable {
     &:hover {
       #{$this}__content {
-        opacity: 1;
-        transform: scaleY(1);
+        display: block;
       }
     }
   }
