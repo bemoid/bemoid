@@ -1,0 +1,13 @@
+////
+/// @group Figure
+////
+
+/// Text align inside figure structure.
+///
+/// @type {Keyword}
+$figure-text-align: center !default;
+
+/// Font style of figure caption.
+///
+/// @type {Keyword}
+$figure-font-style: italic !default;

@@ -4,6 +4,8 @@
 //
 // Desc
 //
+// .tag--pilled - Tag variant with large border radius.
+//
 // Markup: tag.html
 //
 // Style guide: Components.Tag
@@ -49,4 +51,8 @@
 		align-items: center;
 		padding: $tag-padding;
 	}
+
+  &--pilled {
+    border-radius: $tag-padding*2;
+  }
 }

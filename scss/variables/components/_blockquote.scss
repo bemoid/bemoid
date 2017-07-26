@@ -1,0 +1,33 @@
+////
+/// @group Blockquote
+////
+
+/// Margins on blockquote component.
+///
+/// @type {Number|Value|Values}
+$blockquote-margins: 0 !default;
+
+/// Padding of blockquote component.
+///
+/// @type {Number|Value|Values}
+$blockquote-margin: 0 !default;
+
+/// Color of blockquote background.
+///
+/// @type {Color}
+$blockquote-background: get-color(lighter-gray) !default;
+
+/// Color of blockquote border.
+///
+/// @type {Color}
+$blockquote-border-color: get-color(gray) !default;
+
+/// Width of blockquote border.
+///
+/// @type {Value|Values}
+$blockquote-border-width: 0 0 0 em(5px) !default;
+
+/// Style of blockquote border.
+///
+/// @type {keyqord}
+$blockquote-border-style: solid !default;

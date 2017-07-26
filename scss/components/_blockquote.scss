@@ -1,0 +1,17 @@
+/** @define blockquote */
+
+// Blockquote
+//
+// Defines a block of text that is a direct quotation.
+//
+// Markup: blockquote.html
+//
+// Style guide: Components.Blockquote
+.blockquote {
+  display: block;
+  margin: $blockquote-margins;
+  background-color: $blockquote-background;
+  border-width: $blockquote-border-width;
+  border-color: $blockquote-border-color;
+  border-style: $blockquote-border-style;
+}

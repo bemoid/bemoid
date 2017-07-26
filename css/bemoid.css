@@ -1023,7 +1023,7 @@ h6, .heading--h6 {
     background-color: #f9f9f9; }
 
 /** @define image */
-.image, .content figure img {
+.image {
   display: inline-block;
   max-width: 100%;
   height: auto; }
@@ -1086,8 +1086,17 @@ h6, .heading--h6 {
   font-weight: bold;
   text-transform: uppercase; }
 
+/** @define figure */
+.figure, .content figure {
+  margin: 0;
+  text-align: center; }
+  .figure__image, .content figure img {
+    display: inline-block; }
+  .figure__caption, .content figure figcaption {
+    font-style: italic; }
+
 /** @define segment */
-.segment {
+.segment, .content blockquote {
   padding: 1.125em;
   width: 100%;
   display: block; }
@@ -1099,11 +1108,11 @@ h6, .heading--h6 {
     padding: 2.25em; }
 
 /** @define heading */
-.heading {
+.heading, .content h1, .content .heading--h1, .content h2, .content .heading--h2, .content h3, .content .heading--h3, .content h4, .content .heading--h4, .content h5, .content .heading--h5, .content h6, .content .heading--h6 {
   margin: 0; }
 
 /** @define paragraph */
-.paragraph {
+.paragraph, .content p {
   margin: 0; }
 
 /** @define panel */
@@ -1353,6 +1362,8 @@ h6, .heading--h6 {
         -ms-flex-align: center;
             align-items: center;
     padding: 0.5625em; }
+  .tag--pilled {
+    border-radius: 1.125em; }
 
 /** @define button */
 .button {
@@ -1618,6 +1629,15 @@ h6, .heading--h6 {
     pointer-events: none;
     background-image: none; }
 
+/** @define blockquote */
+.blockquote, .content blockquote {
+  display: block;
+  margin: 0;
+  background-color: #f6f6f6;
+  border-width: 0 0 0 0.3125em;
+  border-color: #79858c;
+  border-style: solid; }
+
 /** @define message */
 .message {
   background-color: #f6f6f6;
@@ -1688,6 +1708,10 @@ h6, .heading--h6 {
     height: 1.5rem;
     font-size: 1em;
     line-height: 1.5rem; }
+
+/** @define content */
+.content > :not(:first-child) {
+  margin-top: 1em; }
 
 /** @define group */
 .group {
@@ -1762,5 +1786,3 @@ h6, .heading--h6 {
               flex: 0 0 auto;
       width: 100%;
       height: 6px; }
-
-/** @define content */

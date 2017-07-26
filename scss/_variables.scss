@@ -20,6 +20,7 @@
 
 // Structures
 @import 'variables/structures/form';
+@import 'variables/structures/figure';
 @import 'variables/structures/segment';
 @import 'variables/structures/heading';
 @import 'variables/structures/paragraph';
@@ -34,11 +35,13 @@
 @import 'variables/components/select';
 @import 'variables/components/button';
 @import 'variables/components/overlay';
+@import 'variables/components/blockquote';
 @import 'variables/components/message';
 @import 'variables/components/tag';
 @import 'variables/components/divider';
 @import 'variables/components/checkbox';
+@import 'variables/components/content';
 @import 'variables/components/group';
 
-// Components
+// Utilities
 @import 'variables/utilities/text';

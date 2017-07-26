@@ -8,6 +8,18 @@
 //
 // Style guide: Components.Content
 .content {
+  & > :not(:first-child) {
+    margin-top: $content-spacing;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .heading;
+  }
+
+  p {
+    @extend .paragraph;
+  }
+
   ul {
     @extend .list;
     @extend .list--bulleted;
@@ -56,9 +68,20 @@
     }
   }
 
+  blockquote {
+    @extend .blockquote;
+    @extend .segment;
+  }
+
   figure {
+    @extend .figure;
+
     img {
-      @extend .image;
+      @extend .figure__image;
+    }
+
+    figcaption {
+      @extend .figure__caption;
     }
   }
 }

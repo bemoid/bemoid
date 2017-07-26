@@ -1,0 +1,21 @@
+/** @define figure */
+
+// Figure
+//
+// Component for representing graphics, frequently with a caption.
+//
+// Markup: figure.html
+//
+// Style guide: Structures.Figure
+.figure {
+  margin: 0;
+  text-align: $figure-text-align;
+
+  &__image {
+    display: inline-block;
+  }
+
+  &__caption {
+    font-style: $figure-font-style;
+  }
+}
