@@ -236,41 +236,41 @@ template {
 [hidden] {
   display: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, .heading--h1, h2, .heading--h2, h3, .heading--h3, h4, .heading--h4, h5, .heading--h5, h6, .heading--h6 {
   font-family: inherit;
   color: #171C1F;
   line-height: 1.25; }
 
-h1 {
+h1, .heading--h1 {
   font-size: 2.25em; }
 
-h2 {
+h2, .heading--h2 {
   font-size: 1.6875em; }
 
-h3 {
+h3, .heading--h3 {
   font-size: 1.3125em; }
 
-h4 {
+h4, .heading--h4 {
   font-size: 1.125em; }
 
-h5 {
+h5, .heading--h5 {
   font-size: 1em; }
 
-h6 {
+h6, .heading--h6 {
   font-size: 0.875em; }
 
 @media (min-width: 48em) {
-  h1 {
+  h1, .heading--h1 {
     font-size: 2.625em; }
-  h2 {
+  h2, .heading--h2 {
     font-size: 2.25em; }
-  h3 {
+  h3, .heading--h3 {
     font-size: 1.6875em; }
-  h4 {
+  h4, .heading--h4 {
     font-size: 1.3125em; }
-  h5 {
+  h5, .heading--h5 {
     font-size: 1em; }
-  h6 {
+  h6, .heading--h6 {
     font-size: 0.875em; } }
 
 /** @define text */
@@ -862,18 +862,18 @@ h6 {
       padding: 0; }
 
 /** @define list */
-.list {
+.list, .content ul, .content ol, .content dl {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none; }
-  .list > * + * {
+  .list > * + *, .content ul > * + *, .content ol > * + *, .content dl > * + * {
     margin: 0.1875em 0 0 0; }
-  .list .list {
+  .list .list, .content ul .list, .content ol .list, .content dl .list, .list .content ul, .content .list ul, .content ul ul, .content ol ul, .content dl ul, .list .content ol, .content .list ol, .content ul ol, .content ol ol, .content dl ol, .list .content dl, .content .list dl, .content ul dl, .content ol dl, .content dl dl {
     margin-top: 0.1875em;
     padding-left: 0.5625em; }
-  .list__item {
+  .list__item, .content ul li, .content ol li, .content dl dd {
     display: list-item;
     list-style-type: none;
     list-style-position: outside; }
@@ -881,23 +881,31 @@ h6 {
     display: inline-block; }
     .list--inline > * + * {
       margin: 0 0 0 0.1875em; }
-    .list--inline .list__item {
+    .list--inline .list__item, .list--inline .content ul li, .content ul .list--inline li, .list--inline .content ol li, .content ol .list--inline li, .list--inline .content dl dd, .content dl .list--inline dd {
       display: inline-block; }
-  .list--bulleted .list__item:before, .list--ordered .list__item:before {
+  .list--bulleted .list__item:before, .content ul .list__item:before, .list--bulleted .content ul li:before, .content ul .list--bulleted li:before, .content ul li:before, .list--bulleted .content ol li:before, .content ol .list--bulleted li:before, .list--bulleted .content dl dd:before, .content dl .list--bulleted dd:before, .content ul dl dd:before, .content dl ul dd:before, .list--ordered .list__item:before, .content ol .list__item:before, .list--ordered .content ul li:before, .content ul .list--ordered li:before, .list--ordered .content ol li:before, .content ol .list--ordered li:before, .content ol li:before, .list--ordered .content dl dd:before, .content dl .list--ordered dd:before, .content ol dl dd:before, .content dl ol dd:before {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
     pointer-events: none;
     margin-right: 0.375em; }
-  .list--bulleted .list__item:before {
+  .list--bulleted .list__item:before, .content ul .list__item:before, .list--bulleted .content ul li:before, .content ul .list--bulleted li:before, .content ul li:before, .list--bulleted .content ol li:before, .content ol .list--bulleted li:before, .list--bulleted .content dl dd:before, .content dl .list--bulleted dd:before, .content ul dl dd:before, .content dl ul dd:before {
     content: "•"; }
-  .list--ordered,
-  .list--ordered .list {
+  .list--ordered, .content ol,
+  .list--ordered .list, .content ol .list,
+  .list--ordered .content ul, .content
+  .list--ordered ul, .content ol ul,
+  .list--ordered .content ol, .content
+  .list--ordered ol, .content ol ol,
+  .list--ordered .content dl, .content
+  .list--ordered dl, .content ol dl {
     counter-reset: o; }
-  .list--ordered .list__item:before {
+  .list--ordered .list__item:before, .content ol .list__item:before, .list--ordered .content ul li:before, .content ul .list--ordered li:before, .list--ordered .content ol li:before, .content ol .list--ordered li:before, .content ol li:before, .list--ordered .content dl dd:before, .content dl .list--ordered dd:before, .content ol dl dd:before, .content dl ol dd:before {
     counter-increment: o;
     content: counters(o, "."); }
+  .list--descriptioned .list__item, .content dl .list__item, .list--descriptioned .content ul li, .content ul .list--descriptioned li, .content dl ul li, .content ul dl li, .list--descriptioned .content ol li, .content ol .list--descriptioned li, .content dl ol li, .content ol dl li, .list--descriptioned .content dl dd, .content dl .list--descriptioned dd, .content dl dd {
+    margin-left: 1em; }
 
 /** @define media */
 .media {
@@ -963,44 +971,59 @@ h6 {
               flex-direction: column-reverse; }
 
 /** @define table */
-.table {
+.table, .content table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   text-align: left;
   border-top: 1px solid #d7dfe6; }
-  .table__head, .table__footer {
+  .table__head, .content table thead, .table__footer, .content table tfoot {
     background-color: #f6f6f6; }
-  .table__cell {
+  .table__cell, .content table th,
+  .content table td {
     vertical-align: top;
     padding: 0.5625em 1.125em;
     border: 1px solid #d7dfe6;
     border-width: 0 0 1px; }
-  .table--condensed .table__cell {
+  .table--condensed .table__cell, .table--condensed .content table th, .content table .table--condensed th, .table--condensed
+  .content table td,
+  .content table .table--condensed td {
     padding: 0.375em 0.5625em; }
   .table--bordered {
     border: 1px solid #d7dfe6; }
-    .table--bordered .table__cell {
+    .table--bordered .table__cell, .table--bordered .content table th, .content table .table--bordered th, .table--bordered
+    .content table td,
+    .content table .table--bordered td {
       border-width: 1px; }
-  .table--hoverable .table__row:hover {
+  .table--hoverable .table__row:hover, .table--hoverable .content table tr:hover, .content table .table--hoverable tr:hover {
     background-color: #f6f6f6; }
   .table--scoreboard {
     border-width: 0; }
-    .table--scoreboard .table__cell {
+    .table--scoreboard .table__cell, .table--scoreboard .content table th, .content table .table--scoreboard th, .table--scoreboard
+    .content table td,
+    .content table .table--scoreboard td {
       border-width: 1px; }
-      .table--scoreboard .table__cell:first-child {
+      .table--scoreboard .table__cell:first-child, .table--scoreboard .content table th:first-child, .content table .table--scoreboard th:first-child, .table--scoreboard
+      .content table td:first-child,
+      .content table .table--scoreboard td:first-child {
         border-left-width: 0; }
-      .table--scoreboard .table__cell:last-child {
+      .table--scoreboard .table__cell:last-child, .table--scoreboard .content table th:last-child, .content table .table--scoreboard th:last-child, .table--scoreboard
+      .content table td:last-child,
+      .content table .table--scoreboard td:last-child {
         border-right-width: 0; }
-    .table--scoreboard > :first-child .table__cell {
+    .table--scoreboard > :first-child .table__cell, .table--scoreboard > :first-child .content table th, .content table .table--scoreboard > :first-child th, .table--scoreboard > :first-child
+    .content table td,
+    .content table .table--scoreboard > :first-child td {
       border-top: 0; }
-    .table--scoreboard > :last-child .table__cell {
+    .table--scoreboard > :last-child .table__cell, .table--scoreboard > :last-child .content table th, .content table .table--scoreboard > :last-child th, .table--scoreboard > :last-child
+    .content table td,
+    .content table .table--scoreboard > :last-child td {
       border-bottom: 0; }
-  .table--striped .table__row:nth-child(even) {
+  .table--striped .table__row:nth-child(even), .table--striped .content table tr:nth-child(even), .content table .table--striped tr:nth-child(even) {
     background-color: #f9f9f9; }
 
 /** @define image */
-.image {
+.image, .content figure img {
   display: inline-block;
   max-width: 100%;
   height: auto; }
@@ -1739,3 +1762,5 @@ h6 {
               flex: 0 0 auto;
       width: 100%;
       height: 6px; }
+
+/** @define content */

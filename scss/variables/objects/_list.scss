@@ -20,9 +20,19 @@ $list-paddings: get-space(medium) !default;
 /// Symbol for bulleted list.
 ///
 /// @type {String}
-$list-symbol-bulleted: "•" !default;
+$list-bulleted-symbol: "•" !default;
 
 /// Symbol for ordered list.
 ///
 /// @type {String}
-$list-symbol-ordered: "." !default;
+$list-ordered-symbol: "." !default;
+
+/// Symbol for ordered list.
+///
+/// @type {String}
+$list-ordered-symbol: "." !default;
+
+/// Symbol for ordered list.
+///
+/// @type {Value}
+$list-descriptioned-offset: em(16px) !default;

@@ -1,0 +1,64 @@
+/** @define content */
+
+// Content
+//
+// Component for creating selectable input fields.
+//
+// Markup: content.html
+//
+// Style guide: Components.Content
+.content {
+  ul {
+    @extend .list;
+    @extend .list--bulleted;
+
+    li {
+      @extend .list__item;
+    }
+  }
+
+  ol {
+    @extend .list;
+    @extend .list--ordered;
+
+    li {
+      @extend .list__item;
+    }
+  }
+
+  dl {
+    @extend .list;
+    @extend .list--descriptioned;
+
+    dd {
+      @extend .list__item;
+    }
+  }
+
+  table {
+    @extend .table;
+
+    tr {
+      @extend .table__row;
+    }
+
+    th,
+    td {
+      @extend .table__cell;
+    }
+
+    thead {
+      @extend .table__head;
+    }
+
+    tfoot {
+      @extend .table__footer;
+    }
+  }
+
+  figure {
+    img {
+      @extend .image;
+    }
+  }
+}

@@ -7,6 +7,7 @@
 // .list--inline - Desc
 // .list--inline.list--bulleted - Desc
 // .list--inline.list--ordered - Desc
+// .list--descriptioned - Desc
 // .list--bulleted - Desc
 // .list--ordered - Desc
 //
@@ -68,7 +69,7 @@
   &--bulleted {
     #{$this}__item {
       &:before {
-        content: $list-symbol-bulleted;
+        content: $list-bulleted-symbol;
       }
     }
   }
@@ -82,8 +83,14 @@
     #{$this}__item {
       &:before {
         counter-increment: o;
-        content: counters(o, $list-symbol-ordered);
+        content: counters(o, $list-ordered-symbol);
       }
+    }
+  }
+
+  &--descriptioned {
+    #{$this}__item {
+      margin-left: $list-descriptioned-offset;
     }
   }
 }
