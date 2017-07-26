@@ -1,0 +1,18 @@
+////
+/// @group Dropdown
+////
+
+/// Size of the gap between dropdown trigger and content.
+///
+/// @type {Value}
+$dropdown-gap: rem(3px) !default;
+
+/// Maximum width of the dropdown content.
+///
+/// @type {Value}
+$dropdown-max-width: rem(300px) !default;
+
+/// Minimum width of the dropdown content.
+///
+/// @type {Value}
+$dropdown-min-width: rem(200px) !default;

@@ -28,7 +28,7 @@
   // Style guide: Components.Dropdown.Content
   &__content {
     display: none;
-    padding-top: rem(3px);
+    padding-top: $dropdown-gap;
 
     &--gapless {
       padding-top: 0;
@@ -47,8 +47,8 @@
     top: 100%;
     left: 0;
     z-index: 1;
-    max-width: rem(300px);
-    min-width: rem(200px);
+    max-width: $dropdown-max-width;
+    min-width: $dropdown-min-width;
   }
 
   &--active {
