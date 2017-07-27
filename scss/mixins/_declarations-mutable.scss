@@ -2,20 +2,22 @@
 /// @group General
 ////
 
-/// Outputs declarations defined in map.
+/// Outputs mutable declarations defined in map.
 ///
 /// @param {Map} $declarations
-/// @param {Boolean} $amended
+/// @param {Boolean} $mutate
 ///
 /// @example scss - example
-///   @include declarations-amending(('color': red blue))
-///   @include declarations-amending(('color': red blue), true)
+///   $map: ('color': red blue);
+///
+///   @include declarations-mutable($map)
+///   @include declarations-mutable($map, true)
 /// @example css - output
 ///   color: 'red';
 ///   color: 'blue';
-@mixin declarations-amending($declarations, $amended: false) {
+@mixin declarations-mutable($declarations, $mutate: false) {
   @each $property, $value in $declarations {
-    @if $amended {
+    @if $mutate {
       #{$property}: #{nth($value, length($value))};
     }
     @else {

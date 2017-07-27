@@ -1,4 +1,5 @@
-// 1. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+// 1. Prevent adjustments of font size after orientation
+// changes in IE on Windows Phone and in iOS.
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%; /* 1 */

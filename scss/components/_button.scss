@@ -41,7 +41,7 @@
   $variant: map-get($button-variants, $button-variant);
 
   @include declarations($size);
-  @include declarations-amending($variant);
+  @include declarations-mutable($variant);
 
   @if $button-shadow {
     box-shadow: $button-shadow;
@@ -64,7 +64,7 @@
   &:hover,
   &:focus,
   &:active {
-    @include declarations-amending($variant, true);
+    @include declarations-mutable($variant, true);
 
     @if $button-hover-shadow {
       box-shadow: $button-hover-shadow;
@@ -122,12 +122,12 @@
       &--#{$variant} {
         $color: map-get($declarations, 'color');
 
-        @include declarations-amending($declarations);
+        @include declarations-mutable($declarations);
 
         &:hover,
         &:focus,
         &:active {
-          @include declarations-amending($declarations, true);
+          @include declarations-mutable($declarations, true);
 
           #{$this}__cover {
             color: nth($color, length($color));
@@ -144,7 +144,7 @@
   &--hollow {
     $variant: map-get($button-hollow-variants, $button-hollow-variant);
 
-    @include declarations-amending($variant);
+    @include declarations-mutable($variant);
 
     border-width: $button-hollow-border;
     border-style: solid;
@@ -153,7 +153,7 @@
     &:hover,
     &:focus,
     &:active {
-      @include declarations-amending($variant, true);
+      @include declarations-mutable($variant, true);
     }
 
     @each $variant, $declarations in $button-hollow-variants {
@@ -161,12 +161,12 @@
         &#{$this}--#{$variant} {
           $color: map-get($declarations, 'color');
 
-          @include declarations-amending($declarations);
+          @include declarations-mutable($declarations);
 
           &:hover,
           &:focus,
           &:active {
-            @include declarations-amending($declarations, true);
+            @include declarations-mutable($declarations, true);
 
             #{$this}__cover {
               color: nth($color, length($color));
