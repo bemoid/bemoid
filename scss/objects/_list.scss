@@ -2,14 +2,14 @@
 
 // List
 //
-// Grid system based on flexbox for building complex layouts.
+// Component for representing a list of items.
 //
-// .list--inline - Desc
-// .list--inline.list--bulleted - Desc
-// .list--inline.list--ordered - Desc
-// .list--descriptioned - Desc
-// .list--bulleted - Desc
-// .list--ordered - Desc
+// .list--descriptioned - Render list as a definitions and descriptions.
+// .list--bulleted - Render list as a bulleted.
+// .list--ordered - Render list as a numeric ordered.
+// .list--inline - Render list without marks and in single line.
+// .list--inline.list--bulleted - Render list in single line with bullets.
+// .list--inline.list--ordered - Render list in single line with numbers.
 //
 // Markup: list.html
 //
@@ -34,7 +34,7 @@
 
   // List Item
   //
-  // Grid system based on flexbox for building complex layouts.
+  // Element for a item of the list.
   //
   // Style guide: Objects.List.Item
   &__item {

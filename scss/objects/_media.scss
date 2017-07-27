@@ -2,11 +2,11 @@
 
 // Media
 //
-// Grid system based on flexbox for building complex layouts.
+// Standard media object component for displaying a side element alongside with the content.
 //
-// .media--reversed - Desc
-// .media--stacked - Desc
-// .media--stacked.media--reversed - Desc
+// .media--reversed - Flip side element and content.
+// .media--stacked - Stack side element and content on top of each other.
+// .media--stacked.media--reversed - Stack and flip side element and content.
 //
 // Markup: media.html
 //
@@ -33,10 +33,10 @@
 
   // Media Side
   //
-  // Grid system based on flexbox for building complex layouts.
+  // Element for holding media item of the media object.
   //
-  // .media__side--middle - Desc
-  // .media__side--bottom - Desc
+  // .media__side--middle - Align side to the middle oth the media object.
+  // .media__side--bottom - Align side to the bottom oth the media object.
   //
   // Markup: media__side.html
   //
@@ -64,10 +64,10 @@
 
   // Media Body
   //
-  // Grid system based on flexbox for building complex layouts.
+  // Element for holding content of the media object.
   //
-  // .media__body--middle - Desc
-  // .media__body--bottom - Desc
+  // .media__body--middle - Align body to the middle oth the media object.
+  // .media__body--bottom - Align body to the bottom oth the media object.
   //
   // Markup: media__body.html
   //
@@ -87,7 +87,7 @@
 
   // Media Image
   //
-  // Grid system based on flexbox for building complex layouts.
+  // Image element of media object.
   //
   // Style guide: Objects.Media.Image
   &__image {
