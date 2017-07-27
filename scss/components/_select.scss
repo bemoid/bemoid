@@ -8,11 +8,6 @@
 //
 // Style guide: Components.Select
 .select {
-  // These declaration needs to be prefixed manually, because
-  // sometimes autoprefixer do not grab it propertly.
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
   appearance: none;
   padding-right: $select-icon-space !important;
   background-image: url($select-icon);

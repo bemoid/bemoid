@@ -2,7 +2,7 @@
 
 // Tag
 //
-// Desc
+// Small inline components for creating labelized markers.
 //
 // .tag--pilled - Tag variant with large border radius.
 //
@@ -10,47 +10,54 @@
 //
 // Style guide: Components.Tag
 .tag {
-	$this: #{&};
+  $this: #{&};
 
-	display: inline-block;
-	float: left;
-	text-decoration: none;
-	line-height: 1;
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 1;
 
-	color: $tag-color;
-	font-size: $tag-font-size;
-	box-shadow: $tag-shadow;
-	border-radius: $tag-radius;
-	background-color: $tag-background;
-	transition: $tag-transition;
+  color: $tag-color;
+  font-size: $tag-font-size;
+  box-shadow: $tag-shadow;
+  border-radius: $tag-radius;
+  background-color: $tag-background;
+  transition: $tag-transition;
 
-	@at-root {
-		a#{$this} {
-			&:hover {
-				background-color: $tag-hover-background;
-				box-shadow: $tag-hover-shadow;
-			}
-		}
-	}
+  @at-root {
+    a#{$this} {
+      &:hover {
+        background-color: $tag-hover-background;
+        box-shadow: $tag-hover-shadow;
+      }
+    }
+  }
 
-	// Tag Image
-	//
-	// Desc
-	//
-	// Markup: tag__image.html
-	//
-	// Style guide: Components.Tag.Image
-	&__image {
-		$offset: nth($tag-padding, length($tag-padding));
+  // Tag Image
+  //
+  // Image element of the tag component. Seamlessly adapts to the size of the marker.
+  //
+  // Markup: tag__image.html
+  //
+  // Style guide: Components.Tag.Image
+  &__image {
+    $offset: nth($tag-padding, length($tag-padding));
 
-		height: calc(1em + #{$offset * 2});
-	}
+    height: calc(1em + #{$offset * 2});
+  }
 
-	&__body {
-		display: inline-flex;
-		align-items: center;
-		padding: $tag-padding;
-	}
+  // Tag Body
+  //
+  // Body element of the tag component. Holds text of the marker.
+  //
+  // Markup: tag__body.html
+  //
+  // Style guide: Components.Tag.Body
+  &__body {
+    display: inline-flex;
+    align-items: center;
+    padding: $tag-padding;
+  }
 
   &--pilled {
     border-radius: $tag-padding*2;
