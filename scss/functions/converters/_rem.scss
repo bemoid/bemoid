@@ -3,7 +3,14 @@
 ////
 
 /// Converts pixel value into matching rem values.
+///
 /// @require {Variable} font-size
+/// @return {Value}
+///
+/// @example scss - example
+///   rem(16px);
+/// @example css - output
+///   1rem
 @function rem($pixels, $context: false) {
   $rem-function-context: 16px !global;
 

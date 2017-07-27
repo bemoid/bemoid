@@ -2,14 +2,14 @@
 /// @group General
 ////
 
-/// Gets properties of segment.
+/// Gets properties of specifed segment for $segments map.
 ///
 /// @param {String} $name
 /// @require {Map} $segments
 /// @return {Map} Segment properties
 ///
 /// @example scss - example
-///   get-segment(thin);
+///   get-segment(small);
 @function get-segment($name) {
   @return get($segments, $name);
 }

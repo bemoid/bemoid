@@ -3,7 +3,14 @@
 ////
 
 /// Converts pixel value into matching em values.
+///
 /// @require {Variable} font-size
+/// @return {Value}
+///
+/// @example scss - example
+///   em(16px);
+/// @example css - output
+///   1em
 @function em($pixels, $context: false) {
   $em-function-context: 16px !global;
 
