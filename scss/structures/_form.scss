@@ -2,7 +2,7 @@
 
 // Form
 //
-// Desc
+// Component which strctures interactive controls like fields, selects or checkboxes.
 //
 // Markup: form.html
 //
@@ -14,6 +14,13 @@
 		margin-top: $form-spaces;
 	}
 
+  // Form Group
+  //
+  // Element used to group several controls within a form block.
+  //
+  // Markup: form__group.html
+  //
+  // Style guide: Structures.Form.Group
 	&__group {
 		margin-left: 0;
 		margin-right: 0;
@@ -26,6 +33,13 @@
     }
 	}
 
+  // Form Legend
+  //
+  // Represents a caption for the content of group element.
+  //
+  // Markup: form__legend.html
+  //
+  // Style guide: Structures.Form.Legend
 	&__legend {
 		font-size: $form-legend-font-size;
 		font-weight: $form-legend-weight;
