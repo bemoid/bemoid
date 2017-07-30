@@ -5,11 +5,11 @@
 /// Gets properties of specifed segment for $segments map.
 ///
 /// @param {String} $name
-/// @require {Map} $segments
+/// @require {Map} $segments-sizes
 /// @return {Map} Segment properties
 ///
 /// @example scss - example
 ///   segment(small);
 @function segment($name) {
-  @return get($segments, $name);
+  @return get($segment-sizes, $name);
 }

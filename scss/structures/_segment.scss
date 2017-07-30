@@ -13,14 +13,14 @@
 //
 // Style guide: Structures.Segment
 .segment {
-  $size: map-get($segments, $segment);
+  $size: map-get($segment-sizes, $segment-size);
 
   width: 100%;
   display: block;
   padding: $size;
 
-  @each $name, $size in $segments {
-    @if $name != $segment {
+  @each $name, $size in $segment-sizes {
+    @if $name != $segment-size {
       &--#{$name} {
           padding: $size;
       }

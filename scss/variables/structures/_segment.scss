@@ -9,7 +9,7 @@
 /// @prop {Map} medium
 /// @prop {Map} large
 /// @prop {Map} xlarge
-$segments: (
+$segment-sizes: (
   'small': space(small),
   'medium': space(medium),
   'large': space(large),
@@ -19,4 +19,4 @@ $segments: (
 /// Default segment size.
 ///
 /// @type {Keyword}
-$segment: large !default;
+$segment-size: large !default;
