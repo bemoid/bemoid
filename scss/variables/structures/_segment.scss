@@ -9,14 +9,14 @@
 /// @prop {Map} medium
 /// @prop {Map} large
 /// @prop {Map} xlarge
-$segments-sizes: (
-  'small': ('padding': get-space(small)),
-  'medium': ('padding': get-space(medium)),
-  'large': ('padding': get-space(large)),
-  'xlarge': ('padding': get-space(xxlarge)),
+$segments: (
+  'small': get-space(small),
+  'medium': get-space(medium),
+  'large': get-space(large),
+  'xlarge': get-space(xxlarge),
 ) !default;
 
 /// Default segment size.
 ///
 /// @type {Keyword}
-$segment-size: large !default;
+$segment: large !default;

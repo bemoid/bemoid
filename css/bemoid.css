@@ -1097,9 +1097,9 @@ h6, .heading--h6 {
 
 /** @define segment */
 .segment, .content blockquote {
-  padding: 1.125em;
   width: 100%;
-  display: block; }
+  display: block;
+  padding: 1.125em; }
   .segment--small {
     padding: 0.375em; }
   .segment--medium {

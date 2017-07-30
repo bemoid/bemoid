@@ -6,23 +6,23 @@
 //
 // .segment--small - Small variant of the paddings.
 // .segment--medium - Medium variant of the paddings.
+// .segment--large - Large variant of the paddings.
 // .segment--xlarge - Xlarge variant of the paddings.
 //
 // Markup: segment.html
 //
 // Style guide: Structures.Segment
 .segment {
-  $size: map-get($segments-sizes, $segment-size);
-
-  @include declarations($size);
+  $size: map-get($segments, $segment);
 
   width: 100%;
   display: block;
+  padding: $size;
 
-  @each $size, $declarations in $segments-sizes {
-    @if $size != $segment-size {
-      &--#{$size} {
-          @include declarations($declarations);
+  @each $name, $size in $segments {
+    @if $name != $segment {
+      &--#{$name} {
+          padding: $size;
       }
     }
   }
