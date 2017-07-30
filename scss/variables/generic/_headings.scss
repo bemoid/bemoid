@@ -35,7 +35,7 @@ $headings-font-family: inherit !default;
 /// Text color of headings.
 ///
 /// @type {Color}
-$headings-color: get-color(black) !default;
+$headings-color: color(black) !default;
 
 /// Line height of headings.
 ///

@@ -15,12 +15,12 @@ $blockquote-margin: 0 !default;
 /// Color of blockquote background.
 ///
 /// @type {Color}
-$blockquote-background: get-color(lighter-gray) !default;
+$blockquote-background: color(lighter-gray) !default;
 
 /// Color of blockquote border.
 ///
 /// @type {Color}
-$blockquote-border-color: get-color(gray) !default;
+$blockquote-border-color: color(gray) !default;
 
 /// Width of blockquote border.
 ///

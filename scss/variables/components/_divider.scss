@@ -34,14 +34,14 @@ $divider-badge-size: medium !default;
 /// Divider background color.
 ///
 /// @type {Color}
-$divider-badge-background: get-color(white) !default;
+$divider-badge-background: color(white) !default;
 
 /// Divider border radius.
 ///
 /// @type {Number|Value|Values}
-$divider-badge-radius: get-radius(circle) !default;
+$divider-badge-radius: radius(circle) !default;
 
 /// Divider box shadow.
 ///
 /// @type {Value|Values}
-$divider-badge-shadow: get-elevator(2) !default;
+$divider-badge-shadow: elevator(2) !default;

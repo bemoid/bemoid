@@ -9,7 +9,7 @@
 /// @return {Value}
 ///
 /// @example scss - example
-///   get-breakpoint(large);
-@function get-breakpoint($name) {
+///   breakpoint(large);
+@function breakpoint($name) {
 	@return get($breakpoints, $name);
 }

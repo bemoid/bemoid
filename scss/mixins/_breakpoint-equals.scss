@@ -11,31 +11,31 @@
 /// @example css - output
 ///   @media (min-width: 45em) and (max-width: 60em) { }
 @mixin breakpoint-equals($name) {
-	$names: list($breakpoints, 'keys');
-	$width: get-breakpoint($name);
+    $names: list($breakpoints, 'keys');
+    $width: breakpoint($name);
 
-	$i: index($breakpoints, $name $width);
+    $i: index($breakpoints, $name $width);
 
-	@if $i != null and $i > 1 {
-		$n: $i + 1;
+    @if $i != null and $i > 1 {
+        $n: $i + 1;
 
-		@if $i < length($names) {
-			$next: nth($names, $n);
-	    	$next-width: get-breakpoint($next);
+        @if $i < length($names) {
+            $next: nth($names, $n);
+            $next-width: breakpoint($next);
 
-	    	@media (min-width: #{$width}) and (max-width: #{$next-width}) {
-	        @content;
-		    }
-		}
-		@else {
-			@include breakpoint-up($name) {
-				@content;
-			}
-		}
-	}
-	@else {
-		@include breakpoint-down($name) {
-			@content;
-		}
-	}
+            @media (min-width: #{$width}) and (max-width: #{$next-width}) {
+            @content;
+            }
+        }
+        @else {
+            @include breakpoint-up($name) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @include breakpoint-down($name) {
+            @content;
+        }
+    }
 }

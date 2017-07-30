@@ -9,7 +9,7 @@
 /// @return {Number} Space value
 ///
 /// @example scss - example
-///   get-space(small);
-@function get-space($name) {
+///   space(small);
+@function space($name) {
   @return get($spaces, $name);
 }

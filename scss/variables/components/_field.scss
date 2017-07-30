@@ -19,7 +19,7 @@ $field-sizes: (
   ),
   medium: (
     'font-size': em(16px),
-    'padding': get-space(small) get-space(medium)
+    'padding': space(small) space(medium)
   ),
   large: (
     'font-size': em(18px)
@@ -39,20 +39,20 @@ $field-sizes: (
 /// @prop {Color} info
 $field-variants: (
   success: (
-    'color': get-color(success),
-    'border-color': get-color(success),
+    'color': color(success),
+    'border-color': color(success),
   ),
   warning: (
-    'color': get-color(warning),
-    'border-color': get-color(warning),
+    'color': color(warning),
+    'border-color': color(warning),
   ),
   error: (
-    'color': get-color(error),
-    'border-color': get-color(error),
+    'color': color(error),
+    'border-color': color(error),
   ),
   info: (
-    'color': get-color(info),
-    'border-color': get-color(info),
+    'color': color(info),
+    'border-color': color(info),
   ),
 ) !default;
 

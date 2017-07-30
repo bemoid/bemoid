@@ -9,7 +9,7 @@
 /// @return {Number} Elevation value
 ///
 /// @example scss - example
-///   get-elevator(1dp);
-@function get-elevator($depth) {
+///   elevator(1);
+@function elevator($depth) {
   @return get($elevators, $depth);
 }

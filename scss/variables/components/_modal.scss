@@ -15,19 +15,19 @@ $modal-border: 0 !default;
 /// Panel background color.
 ///
 /// @type {Color}
-$modal-background: get-color(white) !default;
+$modal-background: color(white) !default;
 
 /// Size of the modal border radius.
 ///
 /// @type {Value}
-$modal-radius: get-radius(xsmall) !default;
+$modal-radius: radius(xsmall) !default;
 
 /// Style of the modal shadow.
 ///
 /// @type {Values}
-$modal-shadow: get-elevator(27) !default;
+$modal-shadow: elevator(27) !default;
 
 /// Style of the modal segments border.
 ///
 /// @type {Values}
-$modal-segment-border: 1px solid get-color(light-gray) !default;
+$modal-segment-border: 1px solid color(light-gray) !default;

@@ -9,7 +9,7 @@
 /// @return {Number} Radius value
 ///
 /// @example scss - example
-///   get-radius(large);
-@function get-radius($name) {
+///   radius(large);
+@function radius($name) {
   @return get($radiuses, $name);
 }

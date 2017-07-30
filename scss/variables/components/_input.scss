@@ -10,22 +10,22 @@ $input-font-family: inherit !default;
 /// Input border radius size.
 ///
 /// @type {Number|Value|Values}
-$input-radius: get-radius(xsmall) !default;
+$input-radius: radius(xsmall) !default;
 
 /// Input background color.
 ///
 /// @type {Number|Value|Values}
-$input-background: get-color(white) !default;
+$input-background: color(white) !default;
 
 /// Input box-shadow styles.
 ///
 /// @type {Number|Value|Values}
-$input-shadow: get-elevator(1) !default;
+$input-shadow: elevator(1) !default;
 
 /// Input transition settings.
 ///
 /// @type {Values}
-$input-transition: get-transition(normal) !default;
+$input-transition: transition(normal) !default;
 
 /// Input border style.
 ///
@@ -40,7 +40,7 @@ $input-border-style: solid !default;
 /// Input border width.
 ///
 /// @type {Color}
-$input-border-color: get-color(light-gray) !default;
+$input-border-color: color(light-gray) !default;
 
 /// Input outline value.
 ///
@@ -50,9 +50,9 @@ $input-focus-outline: 0 !default;
 /// Focused input box-shadow styles.
 ///
 /// @type {Values}
-$input-focus-shadow: get-elevator(2) !default;
+$input-focus-shadow: elevator(2) !default;
 
 /// Focused input border styles.
 ///
 /// @type {Color}
-$input-focus-border-color: get-color(info) !default;
+$input-focus-border-color: color(info) !default;

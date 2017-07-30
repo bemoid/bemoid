@@ -15,7 +15,7 @@ $font-size: 16px !default;
 /// Base font size set on the root html element.
 ///
 /// @type {Color}
-$font-color: lighten(get-color(black), 20%) !default;
+$font-color: lighten(color(black), 20%) !default;
 
 /// Antialiase fonts.
 ///

@@ -20,9 +20,9 @@ $group-inner-radius: 0 !default;
 /// Radius value for outer corners of group items.
 ///
 /// @type {Number|Value|Values}
-$group-outer-radius: get-radius(xsmall) !default;
+$group-outer-radius: radius(xsmall) !default;
 
 /// Transition settings for group items.
 ///
 /// @type {Values}
-$group-item-transition: get-transition(normal) !default;
+$group-item-transition: transition(normal) !default;

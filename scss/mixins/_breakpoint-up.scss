@@ -11,9 +11,9 @@
 /// @example css - output
 ///   @media (min-width: 60em) { }
 @mixin breakpoint-up($name) {
-	@if not is-lowest-breakpoint($name) {
-    $width: get-breakpoint($name);
+  $width: breakpoint($name);
 
+	@if $width != 0 {
     @media (min-width: #{$width}) {
       @content;
     }

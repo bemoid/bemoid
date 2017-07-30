@@ -11,7 +11,7 @@
 /// @example css - output
 ///   @media (max-width: 60em) { }
 @mixin breakpoint-down($name) {
-  $width: get-breakpoint($name);
+  $width: breakpoint($name);
 
   @media (max-width: #{$width - $breakpoints-offset}) {
     @content;

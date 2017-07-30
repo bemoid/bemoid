@@ -10,39 +10,39 @@ $tag-font-size: em(14px) !default;
 /// Tag text color.
 ///
 /// @type {Color}
-$tag-color: get-color(black) !default;
+$tag-color: color(black) !default;
 
 /// Tag background color.
 ///
 /// @type {Color}
-$tag-background: get-color(light-gray) !default;
+$tag-background: color(light-gray) !default;
 
 /// Tag padding size.
 ///
 /// @type {Value|Values}
-$tag-padding: get-space(medium) !default;
+$tag-padding: space(medium) !default;
 
 /// Tag border radius size.
 ///
 /// @type {Value|Values}
-$tag-radius: get-radius(xsmall) !default;
+$tag-radius: radius(xsmall) !default;
 
 /// Tag transition settings.
 ///
 /// @type {Values}
-$tag-transition: get-transition(normal) !default;
+$tag-transition: transition(normal) !default;
 
 /// Tag box shadow.
 ///
 /// @type {Value}
-$tag-shadow: get-elevator(1) !default;
+$tag-shadow: elevator(1) !default;
 
 /// Tag background color on hover.
 ///
 /// @type {Color}
-$tag-hover-background: darken(get-color(light-gray), 10%) !default;
+$tag-hover-background: darken(color(light-gray), 10%) !default;
 
 /// Tag box shadow on hover.
 ///
 /// @type {Value}
-$tag-hover-shadow: get-elevator(2) !default;
+$tag-hover-shadow: elevator(2) !default;

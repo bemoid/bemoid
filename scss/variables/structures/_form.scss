@@ -10,17 +10,17 @@ $form-spaces: em(16px) !default;
 /// Radius of form fieldset group.
 ///
 /// @type {Value}
-$form-group-radius: get-radius(xsmall) !default;
+$form-group-radius: radius(xsmall) !default;
 
 /// Background color of form fieldset group.
 ///
 /// @type {Value}
-$form-group-background: get-color(lighter-gray) !default;
+$form-group-background: color(lighter-gray) !default;
 
 /// Border styles of form fieldset group.
 ///
 /// @type {Value}
-$form-group-border: 1px solid get-color(light-gray) !default;
+$form-group-border: 1px solid color(light-gray) !default;
 
 /// Font size of legend in form fieldset group.
 ///

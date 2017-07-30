@@ -16,44 +16,44 @@
 /// @prop {Map} error
 $button-variants: (
   neutral: (
-    'color': get-color(black),
-    'background-color': get-color(light-gray) darken(get-color(light-gray), 10%),
+    'color': color(black),
+    'background-color': color(light-gray) darken(color(light-gray), 10%),
   ),
   white: (
-    'color': get-color(black) get-color(white),
-    'background-color': get-color(white) get-color(primary),
+    'color': color(black) color(white),
+    'background-color': color(white) color(primary),
   ),
   black: (
-    'color': get-color(white),
-    'background-color': get-color(black) darken(get-color(black), 10%),
+    'color': color(white),
+    'background-color': color(black) darken(color(black), 10%),
   ),
   primary: (
-    'color': get-color(white),
-    'background-color': get-color(primary) darken(get-color(primary), 10%),
+    'color': color(white),
+    'background-color': color(primary) darken(color(primary), 10%),
   ),
   secondary: (
-    'color': get-color(white),
-    'background-color': get-color(secondary) darken(get-color(secondary), 10%),
+    'color': color(white),
+    'background-color': color(secondary) darken(color(secondary), 10%),
   ),
   complementary: (
-    'color': get-color(white),
-    'background-color': get-color(complementary) darken(get-color(complementary), 10%),
+    'color': color(white),
+    'background-color': color(complementary) darken(color(complementary), 10%),
   ),
   success: (
-    'color': get-color(white),
-    'background-color': get-color(success) darken(get-color(success), 10%),
+    'color': color(white),
+    'background-color': color(success) darken(color(success), 10%),
   ),
   warning: (
-    'color': get-color(black),
-    'background-color': get-color(warning) darken(get-color(warning), 10%),
+    'color': color(black),
+    'background-color': color(warning) darken(color(warning), 10%),
   ),
   info: (
-    'color': get-color(white),
-    'background-color': get-color(info) darken(get-color(info), 10%),
+    'color': color(white),
+    'background-color': color(info) darken(color(info), 10%),
   ),
   error: (
-    'color': get-color(white),
-    'background-color': get-color(error) darken(get-color(error), 10%),
+    'color': color(white),
+    'background-color': color(error) darken(color(error), 10%),
   ),
 ) !default;
 
@@ -71,44 +71,44 @@ $button-variants: (
 /// @prop {Map} error
 $button-hollow-variants: (
   neutral: (
-    'color': get-color(black),
-    'border-color': get-color(light-gray) darken(get-color(light-gray), 10%),
+    'color': color(black),
+    'border-color': color(light-gray) darken(color(light-gray), 10%),
   ),
   white: (
-    'color': get-color(white) get-color(white),
-    'border-color': get-color(white) get-color(primary),
+    'color': color(white) color(white),
+    'border-color': color(white) color(primary),
   ),
   black: (
-    'color': get-color(black) get-color(white),
-    'border-color': get-color(black) darken(get-color(black), 10%),
+    'color': color(black) color(white),
+    'border-color': color(black) darken(color(black), 10%),
   ),
   primary: (
-    'color': get-color(primary) get-color(white),
-    'border-color': get-color(primary) darken(get-color(primary), 10%),
+    'color': color(primary) color(white),
+    'border-color': color(primary) darken(color(primary), 10%),
   ),
   secondary: (
-    'color': get-color(secondary) get-color(white),
-    'border-color': get-color(secondary) darken(get-color(secondary), 10%),
+    'color': color(secondary) color(white),
+    'border-color': color(secondary) darken(color(secondary), 10%),
   ),
   complementary: (
-    'color': get-color(complementary) get-color(white),
-    'border-color': get-color(complementary) darken(get-color(complementary), 10%),
+    'color': color(complementary) color(white),
+    'border-color': color(complementary) darken(color(complementary), 10%),
   ),
   success: (
-    'color': get-color(success) get-color(white),
-    'border-color': get-color(success) darken(get-color(success), 10%),
+    'color': color(success) color(white),
+    'border-color': color(success) darken(color(success), 10%),
   ),
   warning: (
-    'color': get-color(warning) get-color(black),
-    'border-color': get-color(warning) darken(get-color(warning), 10%),
+    'color': color(warning) color(black),
+    'border-color': color(warning) darken(color(warning), 10%),
   ),
   info: (
-    'color': get-color(info) get-color(white),
-    'border-color': get-color(info) darken(get-color(info), 10%),
+    'color': color(info) color(white),
+    'border-color': color(info) darken(color(info), 10%),
   ),
   error: (
-    'color': get-color(error) get-color(white),
-    'border-color': get-color(error) darken(get-color(error), 10%),
+    'color': color(error) color(white),
+    'border-color': color(error) darken(color(error), 10%),
   ),
 ) !default;
 
@@ -128,7 +128,7 @@ $button-sizes: (
   ),
   medium: (
     'font-size': em(16px),
-    'padding': get-space(small) get-space(large)
+    'padding': space(small) space(large)
   ),
   large: (
     'font-size': em(18px)
@@ -161,22 +161,22 @@ $button-align: center !default;
 /// Button border radius.
 ///
 /// @type {Value}
-$button-radius: get-radius(xsmall) !default;
+$button-radius: radius(xsmall) !default;
 
 /// Button transition settings.
 ///
 /// @type {Values}
-$button-transition: get-transition(normal) !default;
+$button-transition: transition(normal) !default;
 
 /// Button box shadow.
 ///
 /// @type {Value}
-$button-shadow: get-elevator(1) !default;
+$button-shadow: elevator(1) !default;
 
 /// Button box shadow on hover.
 ///
 /// @type {Value}
-$button-hover-shadow: get-elevator(2) !default;
+$button-hover-shadow: elevator(2) !default;
 
 /// Side paddings value for wide button.
 ///
@@ -206,4 +206,4 @@ $button-hollow-background: transparent !default;
 /// Button's cover transition settings.
 ///
 /// @type {Values}
-$button-cover-transition: get-transition(normal) !default;
+$button-cover-transition: transition(normal) !default;

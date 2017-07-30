@@ -5,7 +5,7 @@
 /// Radio input radius.
 ///
 /// @type {Number|Value|Values}
-$radio-radius: get-radius(circle) !default;
+$radio-radius: radius(circle) !default;
 
 /// Radio input inner circle width.
 ///
@@ -15,12 +15,12 @@ $radio-inner-width: em(6px) !default;
 /// Radio input inner circle background color.
 ///
 /// @type {Color}
-$radio-inner-background: get-color(info) !default;
+$radio-inner-background: color(info) !default;
 
 /// Radio input inner circle transition.
 ///
 /// @type {Values}
-$radio-inner-transition: get-transition(normal) !default;
+$radio-inner-transition: transition(normal) !default;
 
 /// Radio input inner circle transform.
 ///
@@ -40,17 +40,17 @@ $radio-outer-background: transparent !default;
 /// Radio input outer circle border.
 ///
 /// @type {Values}
-$radio-outer-border: 1px solid get-color(light-gray) !default;
+$radio-outer-border: 1px solid color(light-gray) !default;
 
 /// Radio input inner circle transform.
 ///
 /// @type {Values}
-$radio-outer-shadow: get-elevator(1) !default;
+$radio-outer-shadow: elevator(1) !default;
 
 /// Radio input outer circle transition.
 ///
 /// @type {Values}
-$radio-outer-transition: get-transition(normal) !default;
+$radio-outer-transition: transition(normal) !default;
 
 /// Radio input inner circle transform in active state.
 ///
@@ -60,14 +60,14 @@ $radio-active-inner-transform: scale(1) !default;
 /// Radio input outer circle border in active state.
 ///
 /// @type {Values}
-$radio-hover-outer-border: 1px solid get-color(info) !default;
+$radio-hover-outer-border: 1px solid color(info) !default;
 
 /// Radio input outer circle background in active state.
 ///
 /// @type {Color}
-$radio-hover-outer-background: transparentize(get-color(info), 0.9) !default;
+$radio-hover-outer-background: transparentize(color(info), 0.9) !default;
 
 /// Radio input outer circle box-shadow in active state.
 ///
 /// @type {Values}
-$radio-hover-outer-shadow: get-elevator(2) !default;
+$radio-hover-outer-shadow: elevator(2) !default;

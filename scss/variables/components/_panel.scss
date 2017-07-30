@@ -5,27 +5,27 @@
 /// Style of the panel border.
 ///
 /// @type {Values}
-$panel-border: 1px solid get-color(light-gray) !default;
+$panel-border: 1px solid color(light-gray) !default;
 
 /// Panel background color.
 ///
 /// @type {Color}
-$panel-background: get-color(white) !default;
+$panel-background: color(white) !default;
 
 /// Size of the panel border radius.
 ///
 /// @type {Value}
-$panel-radius: get-radius(xsmall) !default;
+$panel-radius: radius(xsmall) !default;
 
 /// Style of the panel shadow.
 ///
 /// @type {Values}
-$panel-shadow: get-elevator(2) !default;
+$panel-shadow: elevator(2) !default;
 
 /// Style of the panel segments border.
 ///
 /// @type {Values}
-$panel-segment-border: 1px solid get-color(light-gray) !default;
+$panel-segment-border: 1px solid color(light-gray) !default;
 
 /// Max height of the panel's scrollable segment.
 ///

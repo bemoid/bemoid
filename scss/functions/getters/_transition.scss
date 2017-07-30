@@ -9,12 +9,12 @@
 /// @return {Value} Transition value
 ///
 /// @example scss - example
-///   get-transition(normal);
-///   get-transition(width slow);
+///   transition(normal);
+///   transition(width slow);
 /// @example css - output
 ///   all 0.3s ease
 ///   width 0.6s ease
-@function get-transition($name) {
+@function transition($name) {
   @if length($name) >= 2 {
     $timing: nth($name, length($name));
 

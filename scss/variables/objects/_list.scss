@@ -5,17 +5,17 @@
 /// Size of space between list items.
 ///
 /// @type {Value|Values}
-$list-spaces: get-space(xsmall) !default;
+$list-spaces: space(xsmall) !default;
 
 /// Size of lis item left margin.
 ///
 /// @type {Value|Values}
-$list-margins: get-space(small) !default;
+$list-margins: space(small) !default;
 
 /// Size of list left padding.
 ///
 /// @type {Value|Values}
-$list-paddings: get-space(medium) !default;
+$list-paddings: space(medium) !default;
 
 /// Symbol for bulleted list.
 ///
