@@ -13,7 +13,6 @@
 ///
 /// @example scss - example
 ///   $map: (one: '1', two: '2');
-///
 ///   list($map);           // ('1' one, '2' two)
 ///   list($map, 'keys');   // (one two)
 ///   list($map, 'values'); // ('1' '2')
