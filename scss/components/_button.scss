@@ -43,10 +43,6 @@
   @include declarations($size);
   @include declarations-mutable($variant);
 
-  @if $button-shadow {
-    box-shadow: $button-shadow;
-  }
-
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -64,10 +60,6 @@
   &:focus,
   &:active {
     @include declarations-mutable($variant, true);
-
-    @if $button-hover-shadow {
-      box-shadow: $button-hover-shadow;
-    }
   }
 
   // Button Cover
@@ -214,7 +206,6 @@
   &--disabled {
     cursor: default;
     opacity: $button-disabled-opacity;
-    box-shadow: none;
     pointer-events: none;
     background-image: none;
   }

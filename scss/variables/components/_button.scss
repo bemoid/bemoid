@@ -17,7 +17,7 @@
 $button-variants: (
   neutral: (
     'color': color(black),
-    'background-color': color(lighter-gray) darken(color(lighter-gray), 5%),
+    'background-color': color(light-gray) darken(color(light-gray), 5%),
   ),
   white: (
     'color': color(black) color(white),
@@ -72,7 +72,7 @@ $button-variants: (
 $button-hollow-variants: (
   neutral: (
     'color': color(black),
-    'border-color': color(lighter-gray) darken(color(lighter-gray), 5%),
+    'border-color': color(light-gray) darken(color(light-gray), 5%),
   ),
   white: (
     'color': color(white) color(white),
@@ -162,16 +162,6 @@ $button-align: center !default;
 ///
 /// @type {Value}
 $button-radius: radius(xsmall) !default;
-
-/// Button box shadow.
-///
-/// @type {Value}
-$button-shadow: elevator(1) !default;
-
-/// Button box shadow on hover.
-///
-/// @type {Value}
-$button-hover-shadow: elevator(2) !default;
 
 /// Side paddings value for wide button.
 ///
