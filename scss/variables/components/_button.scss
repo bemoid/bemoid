@@ -17,7 +17,7 @@
 $button-variants: (
   neutral: (
     'color': color(black),
-    'background-color': color(light-gray) darken(color(light-gray), 10%),
+    'background-color': color(lighter-gray) darken(color(lighter-gray), 5%),
   ),
   white: (
     'color': color(black) color(white),
@@ -72,7 +72,7 @@ $button-variants: (
 $button-hollow-variants: (
   neutral: (
     'color': color(black),
-    'border-color': color(light-gray) darken(color(light-gray), 10%),
+    'border-color': color(lighter-gray) darken(color(lighter-gray), 5%),
   ),
   white: (
     'color': color(white) color(white),
@@ -163,11 +163,6 @@ $button-align: center !default;
 /// @type {Value}
 $button-radius: radius(xsmall) !default;
 
-/// Button transition settings.
-///
-/// @type {Values}
-$button-transition: transition(normal) !default;
-
 /// Button box shadow.
 ///
 /// @type {Value}
@@ -202,8 +197,3 @@ $button-hollow-border: 1px !default;
 ///
 /// @type {Color}
 $button-hollow-background: transparent !default;
-
-/// Button's cover transition settings.
-///
-/// @type {Values}
-$button-cover-transition: transition(normal) !default;
