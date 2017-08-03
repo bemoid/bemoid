@@ -1381,8 +1381,7 @@ h6, .heading--h6 {
   font-weight: 400;
   text-align: center;
   border-radius: 0.25rem;
-  border: 1px solid transparent;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  border: 1px solid transparent; }
   .button:hover, .button:focus, .button:active {
     color: #171C1F;
     background-color: #e9e9e9;
@@ -1403,8 +1402,7 @@ h6, .heading--h6 {
         -ms-flex-align: center;
             align-items: center;
     opacity: 0;
-    color: #171C1F;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    color: #171C1F; }
   .button__icon {
     display: inline-block; }
     img.button__icon, svg.button__icon {
