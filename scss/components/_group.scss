@@ -137,11 +137,6 @@
           $group-outer-radius
           $group-outer-radius;
       }
-
-      &:not(:last-child),
-      &:not(:last-child) > * {
-        box-shadow: none;
-      }
     }
 
     #{$this}__divider {
