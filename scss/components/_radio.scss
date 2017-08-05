@@ -67,14 +67,12 @@
         border: $radio-outer-border;
         border-radius: $radio-radius;
         box-shadow: $radio-outer-shadow;
-        transition: $radio-outer-transition;
     }
 
     &:after {
         left: $radio-outer-width/2;
         width: $radio-inner-width;
         height: $radio-inner-width;
-        transition: $radio-inner-transition;
         transform: translate(-50%, -50%) $radio-inner-transform;
         background: $radio-inner-background;
         border-radius: $radio-radius;

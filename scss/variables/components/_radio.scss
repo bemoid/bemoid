@@ -17,11 +17,6 @@ $radio-inner-width: em(6px) !default;
 /// @type {Color}
 $radio-inner-background: color(info) !default;
 
-/// Radio input inner circle transition.
-///
-/// @type {Values}
-$radio-inner-transition: transition(normal) !default;
-
 /// Radio input inner circle transform.
 ///
 /// @type {Values}
@@ -46,11 +41,6 @@ $radio-outer-border: 1px solid color(light-gray) !default;
 ///
 /// @type {Values}
 $radio-outer-shadow: elevator(1) !default;
-
-/// Radio input outer circle transition.
-///
-/// @type {Values}
-$radio-outer-transition: transition(normal) !default;
 
 /// Radio input inner circle transform in active state.
 ///
