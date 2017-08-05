@@ -47,7 +47,6 @@
         &:before {
             background: $radio-hover-outer-background;
             border: $radio-hover-outer-border;
-            box-shadow: $radio-hover-outer-shadow;
         }
     }
 
@@ -66,7 +65,6 @@
         background: $radio-outer-background;
         border: $radio-outer-border;
         border-radius: $radio-radius;
-        box-shadow: $radio-outer-shadow;
     }
 
     &:after {

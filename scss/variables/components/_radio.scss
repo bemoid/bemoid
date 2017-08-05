@@ -37,11 +37,6 @@ $radio-outer-background: transparent !default;
 /// @type {Values}
 $radio-outer-border: 1px solid color(light-gray) !default;
 
-/// Radio input inner circle transform.
-///
-/// @type {Values}
-$radio-outer-shadow: elevator(1) !default;
-
 /// Radio input inner circle transform in active state.
 ///
 /// @type {Values}
@@ -56,8 +51,3 @@ $radio-hover-outer-border: 1px solid color(info) !default;
 ///
 /// @type {Color}
 $radio-hover-outer-background: transparentize(color(info), 0.9) !default;
-
-/// Radio input outer circle box-shadow in active state.
-///
-/// @type {Values}
-$radio-hover-outer-shadow: elevator(2) !default;
