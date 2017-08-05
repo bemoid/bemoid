@@ -27,7 +27,6 @@
 
   @include declarations($variant);
 
-  box-shadow: $message-shadow;
   border-radius: $message-radius;
 
   // Message Title
