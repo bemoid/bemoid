@@ -47,7 +47,6 @@
         &:before {
             background: $checkbox-hover-background;
             border: $checkbox-hover-border;
-            box-shadow: $checkbox-hover-shadow;
         }
     }
 
@@ -66,7 +65,6 @@
         background: $checkbox-background;
         border: $checkbox-border;
         border-radius: $checkbox-radius;
-        box-shadow: $checkbox-shadow;
     }
 
     &:after {
