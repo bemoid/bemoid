@@ -17,11 +17,6 @@ $input-radius: radius(xsmall) !default;
 /// @type {Number|Value|Values}
 $input-background: color(white) !default;
 
-/// Input box-shadow styles.
-///
-/// @type {Number|Value|Values}
-$input-shadow: elevator(1) !default;
-
 /// Input border style.
 ///
 /// @type {Number|Value|Values}
@@ -41,11 +36,6 @@ $input-border-color: color(light-gray) !default;
 ///
 /// @type {Values}
 $input-focus-outline: 0 !default;
-
-/// Focused input box-shadow styles.
-///
-/// @type {Values}
-$input-focus-shadow: elevator(2) !default;
 
 /// Focused input border styles.
 ///

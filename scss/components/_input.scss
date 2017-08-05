@@ -16,11 +16,9 @@
   border-color: $input-border-color;
   border-radius: $input-radius;
   background-color: $input-background;
-  box-shadow: $input-shadow;
 
   &:focus {
     outline: $input-focus-outline;
-    box-shadow: $input-focus-shadow;
     border-color: $input-focus-border-color;
   }
 }
