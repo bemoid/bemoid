@@ -19,7 +19,6 @@
 
   color: $tag-color;
   font-size: $tag-font-size;
-  box-shadow: $tag-shadow;
   border-radius: $tag-radius;
   background-color: $tag-background;
 
@@ -27,7 +26,6 @@
     a#{$this} {
       &:hover {
         background-color: $tag-hover-background;
-        box-shadow: $tag-hover-shadow;
       }
     }
   }

@@ -27,17 +27,7 @@ $tag-padding: space(medium) !default;
 /// @type {Value|Values}
 $tag-radius: radius(xsmall) !default;
 
-/// Tag box shadow.
-///
-/// @type {Value}
-$tag-shadow: elevator(1) !default;
-
 /// Tag background color on hover.
 ///
 /// @type {Color}
 $tag-hover-background: darken(color(light-gray), 10%) !default;
-
-/// Tag box shadow on hover.
-///
-/// @type {Value}
-$tag-hover-shadow: elevator(2) !default;
