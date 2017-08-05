@@ -22,7 +22,6 @@
   box-shadow: $tag-shadow;
   border-radius: $tag-radius;
   background-color: $tag-background;
-  transition: $tag-transition;
 
   @at-root {
     a#{$this} {
