@@ -12,17 +12,17 @@ $modal-space: 1rem !default;
 /// @type {Values}
 $modal-border: 0 !default;
 
-/// Panel background color.
-///
-/// @type {Color}
-$modal-background: color(white) !default;
-
-/// Size of the modal border radius.
+/// Top position value of the modal.
 ///
 /// @type {Value}
-$modal-radius: radius(xsmall) !default;
+$modal-position-top: 50%;
 
-/// Style of the modal segments border.
+/// Left position value of the modal.
+///
+/// @type {Value}
+$modal-position-left: 50%;
+
+/// Value of modal transform.
 ///
 /// @type {Values}
-$modal-segment-border: 1px solid color(light-gray) !default;
+$modal-transform: translate(-50%, -50%);

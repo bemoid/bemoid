@@ -14,31 +14,26 @@
 //
 // Style guide: Components.Modal
 .modal {
-  $this: #{&};
+  $this: &;
 
   position: fixed;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  top: $modal-position-top;
+  left: $modal-position-left;
+  transform: $modal-transform;
   padding: $modal-space;
 
-  // Modal Body
+  // Modal Panel
   //
-  // Body of the modal. Element for its content.
+  // Panel of the modal. Holds modal content.
   //
-  // .panel--small - Modal body element with small paddings.
-  // .panel--large - Modal body element with large paddings.
-  // .panel--xlarge - Modal body element with xlarge paddings.
+  // .panel--small - Modal panel element with small paddings.
+  // .panel--large - Modal panel element with large paddings.
+  // .panel--xlarge - Modal panel element with xlarge paddings.
   //
-  // Markup: modal__body.html
+  // Markup: modal__panel.html
   //
-  // Style guide: Components.Modal.Body
-  &__body {
-    background-color: $modal-background;
-    border-radius: $modal-radius;
+  // Style guide: Components.Modal.Panel
+  &__panel {
     border: $modal-border;
-
-    & > * + * {
-      border-top: $modal-segment-border;
-    }
   }
 }
