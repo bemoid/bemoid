@@ -21,8 +21,3 @@ $group-inner-radius: 0 !default;
 ///
 /// @type {Number|Value|Values}
 $group-outer-radius: radius(xsmall) !default;
-
-/// Transition settings for group items.
-///
-/// @type {Values}
-$group-item-transition: transition(normal) !default;

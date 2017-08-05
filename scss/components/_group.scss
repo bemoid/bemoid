@@ -27,14 +27,12 @@
   &__item {
     flex: 0 1 auto;
     max-width: 100%;
-    transition: #{$group-item-transition}, z-index 0ms step-end;
 
     &:hover,
     &:focus,
     & > *:hover,
     & > *:focus, {
       position: relative;
-      transition: #{$group-item-transition}, z-index 0.2s step-start;
     }
 
     &:focus,
