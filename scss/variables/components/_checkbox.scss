@@ -27,11 +27,6 @@ $checkbox-border: 1px solid color(light-gray) !default;
 /// @type {Values}
 $checkbox-shadow: elevator(1) !default;
 
-/// Transition for the checkbox input.
-///
-/// @type {Values}
-$checkbox-transition: transition(normal) !default;
-
 /// Border styles for the checkbox input in hover state.
 ///
 /// @type {Values}
@@ -61,11 +56,6 @@ $checkbox-mark-width: em(2px) !default;
 ///
 /// @type {Color}
 $checkbox-mark-color: color(info) !default;
-
-/// Transition for the mark in checkbox input.
-///
-/// @type {Values}
-$checkbox-mark-transition: transition(normal) !default;
 
 /// Transform of the mark in checkbox input.
 ///

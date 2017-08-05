@@ -8,7 +8,7 @@
 //
 // Style guide: Components.Checkbox
 .checkbox {
-  $this: #{&};
+  $this: &;
 
   // Checkbox Input
   //
@@ -67,7 +67,6 @@
         border: $checkbox-border;
         border-radius: $checkbox-radius;
         box-shadow: $checkbox-shadow;
-        transition: $checkbox-transition;
     }
 
     &:after {
@@ -81,7 +80,6 @@
         border-right: none;
         background: transparent;
         transform-origin: 20% 50%;
-        transition: $checkbox-mark-transition;
         transform: translate(-25%, -50%) $checkbox-mark-transform;
     }
   }
