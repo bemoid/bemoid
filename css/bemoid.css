@@ -1143,11 +1143,7 @@ h6, .heading--h6 {
           transform: translate(-50%, -50%);
   padding: 1rem; }
   .modal__panel {
-    background-color: #fff;
-    border-radius: 0.25rem;
     border: 0; }
-    .modal__panel > * + * {
-      border-top: 1px solid #d7dfe6; }
 
 /** @define overlay */
 .overlay {
