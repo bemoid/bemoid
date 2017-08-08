@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*!
+ * Bemoid v1.0.0
+ * http://bemoid.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2017-present Jędrzej Chałubek
+ * http://jedrzejchalubek.com
+ */
 html {
   font-size: 16px;
   line-height: 1.5; }
