@@ -1,0 +1,55 @@
+{
+  "uses": [
+    "uses"
+  ],
+  "variables": [
+    "variables"
+  ],
+  "generic": [
+    "generic/typography",
+    "generic/normalize",
+    "generic/headings"
+  ],
+  "utilities": [
+    "utilities/text",
+    "utilities/color",
+    "utilities/hidden",
+    "utilities/visible",
+    "utilities/elevator",
+    "utilities/background"
+  ],
+  "objects": [
+    "objects/container",
+    "objects/grid",
+    "objects/list",
+    "objects/media",
+    "objects/table",
+    "objects/image",
+    "objects/dropdown"
+  ],
+  "structures": [
+    "structures/form",
+    "structures/figure",
+    "structures/segment",
+    "structures/heading",
+    "structures/paragraph"
+  ],
+  "components": [
+    "components/panel",
+    "components/modal",
+    "components/overlay",
+    "components/input",
+    "components/field",
+    "components/label",
+    "components/radio",
+    "components/select",
+    "components/checkbox",
+    "components/tag",
+    "components/button",
+    "components/blockquote",
+    "components/message",
+    "components/divider",
+    "components/content",
+    "components/group"
+  ]
+}

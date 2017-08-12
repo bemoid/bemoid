@@ -11,6 +11,8 @@ fs.readFile(argv.i, (err, css) => {
     .then((result) => {
         fs.writeFile(argv.o, result.css, (err) => {
           if (err) throw err;
+
+          console.log(`[${argv.o} sucessfully transformed]`)
         })
     })
 })

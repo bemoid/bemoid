@@ -47,6 +47,8 @@ fs.readFile(argv.i, (err, scss) => {
 
     fs.writeFile(argv.o, JSON.stringify(schema, null, 2), (err) => {
       if (err) throw err;
+
+      console.log(`[${argv.o} sucessfully generated]`)
     })
   })
 })

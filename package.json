@@ -4,14 +4,14 @@
   "description": "A component-oriented CSS framework based on BEM convention and OOCSS methodology",
   "main": "scss/bemoid.scss",
   "scripts": {
-    "extract": "node build/extract.variables.js -i scss/_variables.scss -o json/variables.json",
-    "compile": "node-sass scss/bemoid.scss > css/bemoid.css",
     "transform": "node build/apply.transformations.js -i css/bemoid.css -o css/bemoid.css",
+    "extract": "npm run extract:variables && npm run extract:imports",
+    "extract:variables": "node build/extract.variables.js -i scss/_variables.scss -o json/variables.json",
+    "extract:imports": "node build/extract.imports.js -i scss/bemoid.scss -o json/imports.json",
+    "compile": "node-sass scss/bemoid.scss > css/bemoid.css",
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
-
     "test:accessibility": "a11y html/**/*.html",
     "test": "npm run test:accessibility",
-
     "build": "npm run compile && npm run extract && npm run transform",
     "build:production": "npm run build && npm run minify",
     "watch": "npm run compile -- --watch"
