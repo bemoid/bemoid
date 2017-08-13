@@ -15,24 +15,4 @@ $list-margins: space(small) !default;
 /// Size of list left padding.
 ///
 /// @type {Value|Values}
-$list-paddings: space(medium) !default;
-
-/// Symbol for bulleted list.
-///
-/// @type {String}
-$list-bulleted-symbol: "•" !default;
-
-/// Symbol for ordered list.
-///
-/// @type {String}
-$list-ordered-symbol: "." !default;
-
-/// Symbol for ordered list.
-///
-/// @type {String}
-$list-ordered-symbol: "." !default;
-
-/// Symbol for ordered list.
-///
-/// @type {Value}
-$list-descriptioned-offset: em(16px) !default;
+$list-offset: 1em !default;

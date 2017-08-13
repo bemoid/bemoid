@@ -4,32 +4,20 @@
 //
 // Component for representing a list of items.
 //
-// .list--descriptioned - Render list as a definitions and descriptions.
-// .list--bulleted - Render list as a bulleted.
-// .list--ordered - Render list as a numeric ordered.
+// .list--unstyled - Render list without marks.
 // .list--inline - Render list without marks and in single line.
-// .list--inline.list--bulleted - Render list in single line with bullets.
-// .list--inline.list--ordered - Render list in single line with numbers.
 //
 // Markup: list.html
 //
 // Style guide: Objects.List
 .list {
-  $this: #{&};
+  $this: &;
 
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
+  padding-left: $list-offset;
 
   & > * + * {
     margin: $list-spaces 0 0 0;
-  }
-
-  #{$this} {
-    margin-top: $list-spaces;
-    padding-left: $list-paddings;
   }
 
   // List Item
@@ -39,8 +27,13 @@
   // Style guide: Objects.List.Item
   &__item {
     display: list-item;
+  }
+
+  &--unstyled {
     list-style-type: none;
-    list-style-position: outside;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
   }
 
   &--inline {
@@ -52,45 +45,6 @@
 
     #{$this}__item {
       display: inline-block;
-    }
-  }
-
-  &--bulleted,
-  &--ordered {
-    #{$this}__item {
-      &:before {
-        user-select: none;
-        pointer-events: none;
-        margin-right: $list-margins;
-      }
-    }
-  }
-
-  &--bulleted {
-    #{$this}__item {
-      &:before {
-        content: $list-bulleted-symbol;
-      }
-    }
-  }
-
-  &--ordered {
-    &,
-    #{$this} {
-      counter-reset: o;
-    }
-
-    #{$this}__item {
-      &:before {
-        counter-increment: o;
-        content: counters(o, $list-ordered-symbol);
-      }
-    }
-  }
-
-  &--descriptioned {
-    #{$this}__item {
-      margin-left: $list-descriptioned-offset;
     }
   }
 }

@@ -877,48 +877,22 @@ h6, .heading--h6 {
 /** @define list */
 .list, .content ul, .content ol, .content dl {
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none; }
+  padding-left: 1em; }
   .list > * + *, .content ul > * + *, .content ol > * + *, .content dl > * + * {
     margin: 0.1875em 0 0 0; }
-  .list .list, .content ul .list, .content ol .list, .content dl .list, .list .content ul, .content .list ul, .content ul ul, .content ol ul, .content dl ul, .list .content ol, .content .list ol, .content ul ol, .content ol ol, .content dl ol, .list .content dl, .content .list dl, .content ul dl, .content ol dl, .content dl dl {
-    margin-top: 0.1875em;
-    padding-left: 0.5625em; }
   .list__item, .content ul li, .content ol li, .content dl dd {
-    display: list-item;
+    display: list-item; }
+  .list--unstyled {
     list-style-type: none;
-    list-style-position: outside; }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; }
   .list--inline {
     display: inline-block; }
     .list--inline > * + * {
       margin: 0 0 0 0.1875em; }
     .list--inline .list__item, .list--inline .content ul li, .content ul .list--inline li, .list--inline .content ol li, .content ol .list--inline li, .list--inline .content dl dd, .content dl .list--inline dd {
       display: inline-block; }
-  .list--bulleted .list__item:before, .content ul .list__item:before, .list--bulleted .content ul li:before, .content ul .list--bulleted li:before, .content ul li:before, .list--bulleted .content ol li:before, .content ol .list--bulleted li:before, .list--bulleted .content dl dd:before, .content dl .list--bulleted dd:before, .content ul dl dd:before, .content dl ul dd:before, .list--ordered .list__item:before, .content ol .list__item:before, .list--ordered .content ul li:before, .content ul .list--ordered li:before, .list--ordered .content ol li:before, .content ol .list--ordered li:before, .content ol li:before, .list--ordered .content dl dd:before, .content dl .list--ordered dd:before, .content ol dl dd:before, .content dl ol dd:before {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    pointer-events: none;
-    margin-right: 0.375em; }
-  .list--bulleted .list__item:before, .content ul .list__item:before, .list--bulleted .content ul li:before, .content ul .list--bulleted li:before, .content ul li:before, .list--bulleted .content ol li:before, .content ol .list--bulleted li:before, .list--bulleted .content dl dd:before, .content dl .list--bulleted dd:before, .content ul dl dd:before, .content dl ul dd:before {
-    content: "•"; }
-  .list--ordered, .content ol,
-  .list--ordered .list, .content ol .list,
-  .list--ordered .content ul, .content
-  .list--ordered ul, .content ol ul,
-  .list--ordered .content ol, .content
-  .list--ordered ol, .content ol ol,
-  .list--ordered .content dl, .content
-  .list--ordered dl, .content ol dl {
-    counter-reset: o; }
-  .list--ordered .list__item:before, .content ol .list__item:before, .list--ordered .content ul li:before, .content ul .list--ordered li:before, .list--ordered .content ol li:before, .content ol .list--ordered li:before, .content ol li:before, .list--ordered .content dl dd:before, .content dl .list--ordered dd:before, .content ol dl dd:before, .content dl ol dd:before {
-    counter-increment: o;
-    content: counters(o, "."); }
-  .list--descriptioned .list__item, .content dl .list__item, .list--descriptioned .content ul li, .content ul .list--descriptioned li, .content dl ul li, .content ul dl li, .list--descriptioned .content ol li, .content ol .list--descriptioned li, .content dl ol li, .content ol dl li, .list--descriptioned .content dl dd, .content dl .list--descriptioned dd, .content dl dd {
-    margin-left: 1em; }
 
 /** @define media */
 .media {

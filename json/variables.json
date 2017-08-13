@@ -182,29 +182,9 @@
       "name": "list-margins"
     },
     {
-      "variable": "$list-paddings",
-      "value": "space(medium) !default",
-      "name": "list-paddings"
-    },
-    {
-      "variable": "$list-bulleted-symbol",
-      "value": "\"•\" !default",
-      "name": "list-bulleted-symbol"
-    },
-    {
-      "variable": "$list-ordered-symbol",
-      "value": "\".\" !default",
-      "name": "list-ordered-symbol"
-    },
-    {
-      "variable": "$list-ordered-symbol",
-      "value": "\".\" !default",
-      "name": "list-ordered-symbol"
-    },
-    {
-      "variable": "$list-descriptioned-offset",
-      "value": "em(16px) !default",
-      "name": "list-descriptioned-offset"
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
     }
   ],
   "table": [

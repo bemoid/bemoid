@@ -22,7 +22,6 @@
 
   ul {
     @extend .list;
-    @extend .list--bulleted;
 
     li {
       @extend .list__item;
@@ -31,7 +30,6 @@
 
   ol {
     @extend .list;
-    @extend .list--ordered;
 
     li {
       @extend .list__item;
@@ -40,7 +38,6 @@
 
   dl {
     @extend .list;
-    @extend .list--descriptioned;
 
     dd {
       @extend .list__item;
