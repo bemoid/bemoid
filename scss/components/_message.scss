@@ -21,7 +21,7 @@
 //
 // Style guide: Components.Message
 .message {
-  $this: #{&};
+  $this: &;
 
   $variant: map-get($message-variants, $message-variant);
 

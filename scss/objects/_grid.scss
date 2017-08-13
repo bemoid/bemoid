@@ -20,7 +20,7 @@
 //
 // Style guide: Objects.Grid
 .grid {
-	$this: #{&};
+	$this: &;
 
 	display: flex;
 	flex-wrap: wrap;

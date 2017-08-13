@@ -19,7 +19,7 @@
 //
 // Style guide: Components.Field
 .field {
-  $this: #{&};
+  $this: &;
 
   position: relative;
 

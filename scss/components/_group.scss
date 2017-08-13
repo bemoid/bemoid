@@ -13,7 +13,7 @@
 //
 // Style guide: Components.Group
 .group {
-  $this: #{&};
+  $this: &;
 
   display: inline-flex;
 

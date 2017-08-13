@@ -8,7 +8,7 @@
 //
 // Style guide: Components.Radio
 .radio {
-  $this: #{&};
+  $this: &;
 
   // Radio Input
   //

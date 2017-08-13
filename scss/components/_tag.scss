@@ -10,7 +10,7 @@
 //
 // Style guide: Components.Tag
 .tag {
-  $this: #{&};
+  $this: &;
 
   display: inline-block;
   float: left;

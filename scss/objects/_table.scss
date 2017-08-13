@@ -14,7 +14,7 @@
 //
 // Style guide: Objects.Table
 .table {
-  $this: #{&};
+  $this: &;
 
   width: 100%;
   border-collapse: collapse;

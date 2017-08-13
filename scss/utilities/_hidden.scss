@@ -14,8 +14,6 @@
 //
 // Style guide: Utilities.Hidden
 .hidden {
-  $this: #{&};
-
   display: none;
 
   @each $breakpoint, $width in $breakpoints {

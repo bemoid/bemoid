@@ -10,7 +10,7 @@
 //
 // Style guide: Components.Panel
 .panel {
-  $this: #{&};
+  $this: &;
 
   border: $panel-border;
   border-radius: $panel-radius;

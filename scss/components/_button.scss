@@ -35,7 +35,7 @@
 //
 // Style guide: Components.Button
 .button {
-  $this: #{&};
+  $this: &;
 
   $size: map-get($button-sizes, $button-size);
   $variant: map-get($button-variants, $button-variant);

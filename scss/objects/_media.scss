@@ -12,7 +12,7 @@
 //
 // Style guide: Objects.Media
 .media {
-  $this: #{&};
+  $this: &;
 
   display: flex;
 

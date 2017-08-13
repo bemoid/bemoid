@@ -8,7 +8,7 @@
 //
 // Style guide: Structures.Form
 .form {
-  $this: #{&};
+  $this: &;
 
 	& > * + * {
 		margin-top: $form-spaces;

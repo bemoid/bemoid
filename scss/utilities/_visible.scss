@@ -14,8 +14,6 @@
 //
 // Style guide: Utilities.Visible
 .visible {
-	$this: #{&};
-
 	display: initial;
 
   @each $breakpoint, $width in $breakpoints {
