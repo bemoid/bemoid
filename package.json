@@ -35,5 +35,12 @@
     "postcss-partial-import": "^4.1.0",
     "postcss-scss": "^1.0.2",
     "yargs": "^8.0.2"
+  },
+  "config": {
+    "paths": {
+      "schemas": "json",
+      "markups": "html"
+    },
+    "schemas": ["imports", "variables"]
   }
 }
