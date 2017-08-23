@@ -11,7 +11,5 @@
   display: block;
   margin: $blockquote-margins;
   background-color: $blockquote-background;
-  border-width: $blockquote-border-width;
-  border-color: $blockquote-border-color;
-  border-style: $blockquote-border-style;
+  border: $blockquote-border-width $blockquote-border-style $blockquote-border-color;
 }
