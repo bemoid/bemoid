@@ -1,0 +1,44 @@
+/** @define space */
+
+// Space
+//
+// Utility component for adding precised levels of shadow.
+//
+// .space--xsmall - Adds 1'th level of a space.
+// .space--small - Adds 2'nd level of a space.
+// .space--large - Adds 3'rd level of a space.
+// .space--xlarge - Adds 6'th level of a space.
+// .space--xxlarge - Adds 18'th level of a space.
+//
+// Markup: space.html
+//
+// Style guide: Utilities.Space
+.space {
+  $declaration: map-get($spaces, $space);
+
+  & > * + * {
+    margin-top: $declaration;
+  }
+
+  @each $size, $declaration in $spaces {
+    @if $size != $space {
+      &--#{$size} {
+        & > * + * {
+          margin-top: $declaration;
+        }
+      }
+    }
+  }
+
+  @each $breakpoint, $width in $grid-sizes {
+    @include breakpoint($breakpoint up) {
+      @each $size, $declaration in $spaces {
+        &--#{$size}\@#{$breakpoint} {
+          & > * + * {
+            margin-top: $declaration;
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,12 +11,12 @@
     "generic/headings"
   ],
   "utilities": [
-    "utilities/text",
-    "utilities/color",
+    "utilities/space",
+    "utilities/radius",
     "utilities/hidden",
     "utilities/visible",
     "utilities/elevator",
-    "utilities/background"
+    "utilities/transition"
   ],
   "objects": [
     "objects/container",

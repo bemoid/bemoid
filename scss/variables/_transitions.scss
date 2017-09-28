@@ -18,3 +18,8 @@ $transitions: (
   'normal': 0.4s $transition-easing,
   'fast': 0.2s $transition-easing,
 ) !default;
+
+/// Default transition speed.
+///
+/// @type {Keyword}
+$transition: normal !default;

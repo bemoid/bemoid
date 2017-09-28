@@ -19,3 +19,8 @@ $spaces: (
   xlarge: em(24px),
   xxlarge: em(36px),
 ) !default;
+
+/// Default of space value.
+///
+/// @type {Keyword}
+$space: medium !default;

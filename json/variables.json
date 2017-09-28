@@ -25,6 +25,13 @@
       "name": "spaces"
     }
   ],
+  "space": [
+    {
+      "variable": "$space",
+      "value": "medium !default",
+      "name": "space"
+    }
+  ],
   "radiuses": [
     {
       "variable": "$radiuses",
@@ -32,11 +39,25 @@
       "name": "radiuses"
     }
   ],
+  "radius": [
+    {
+      "variable": "$radius",
+      "value": "medium !default",
+      "name": "radius"
+    }
+  ],
   "elevators": [
     {
       "variable": "$elevators",
-      "value": "(\n  1: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  2: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  3: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  6: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  18: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  27: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
       "name": "elevators"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator",
+      "value": "medium !default",
+      "name": "elevator"
     }
   ],
   "transition": [
@@ -44,6 +65,11 @@
       "variable": "$transition-easing",
       "value": "cubic-bezier(0.165, 0.84, 0.44, 1)",
       "name": "transition-easing"
+    },
+    {
+      "variable": "$transition",
+      "value": "normal !default",
+      "name": "transition"
     }
   ],
   "transitions": [

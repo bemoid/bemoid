@@ -1,0 +1,25 @@
+/** @define transition */
+
+// Transition
+//
+// Utility component for adding precised levels of shadow.
+//
+// .transition--slow - Adds slow speed transition.
+// .transition--fast - Adds fast speed transition.
+//
+// Markup: transition.html
+//
+// Style guide: Utilities.Transition
+.transition {
+  $declaration: map-get($transitions, $transition);
+
+  transition: $declaration;
+
+  @each $speed, $declaration in $transitions {
+    @if $speed != $transition {
+      &--#{$speed} {
+        transition: $declaration;
+      }
+    }
+  }
+}

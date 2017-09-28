@@ -4,20 +4,25 @@
 //
 // Utility component for adding precised levels of shadow.
 //
-// .elevator--1 - Adds 1'th level of a shadow.
-// .elevator--2 - Adds 2'nd level of a shadow.
-// .elevator--3 - Adds 3'rd level of a shadow.
-// .elevator--6 - Adds 6'th level of a shadow.
-// .elevator--18 - Adds 18'th level of a shadow.
-// .elevator--27 - Adds 27'th level of a shadow.
+// .elevator--xsmall - Adds xsmall level of a shadow.
+// .elevator--small - Adds small level of a shadow.
+// .elevator--large - Adds large level of a shadow.
+// .elevator--xlarge - Adds xlarge level of a shadow.
+// .elevator--xxlarge - Adds xxlarge level of a shadow.
 //
 // Markup: elevator.html
 //
 // Style guide: Utilities.Elevator
 .elevator {
+  $declaration: map-get($elevators, $elevator);
+
+  box-shadow: $declaration;
+
   @each $level, $declaration in $elevators {
-    &--#{$level} {
-      box-shadow: $declaration;
+    @if $level != $elevator {
+      &--#{$level} {
+        box-shadow: $declaration;
+      }
     }
   }
 }

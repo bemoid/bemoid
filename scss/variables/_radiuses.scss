@@ -19,3 +19,8 @@ $radiuses: (
   xlarge: rem(18px),
   circle: 50%,
 ) !default;
+
+/// Default of radius value.
+///
+/// @type {Keyword}
+$radius: medium !default;
