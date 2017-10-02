@@ -10,14 +10,6 @@
     "generic/normalize",
     "generic/headings"
   ],
-  "utilities": [
-    "utilities/space",
-    "utilities/radius",
-    "utilities/hidden",
-    "utilities/visible",
-    "utilities/elevator",
-    "utilities/transition"
-  ],
   "objects": [
     "objects/container",
     "objects/grid",
@@ -51,5 +43,13 @@
     "components/divider",
     "components/content",
     "components/group"
+  ],
+  "utilities": [
+    "utilities/space",
+    "utilities/radius",
+    "utilities/hidden",
+    "utilities/visible",
+    "utilities/elevator",
+    "utilities/transition"
   ]
 }

@@ -22,14 +22,6 @@
 @import 'generic/normalize';
 @import 'generic/headings';
 
-// Utilities
-@import 'utilities/space';
-@import 'utilities/radius';
-@import 'utilities/hidden';
-@import 'utilities/visible';
-@import 'utilities/elevator';
-@import 'utilities/transition';
-
 // Objects
 @import 'objects/container';
 @import 'objects/grid';
@@ -63,3 +55,11 @@
 @import 'components/divider';
 @import 'components/content';
 @import 'components/group';
+
+// Utilities
+@import 'utilities/space';
+@import 'utilities/radius';
+@import 'utilities/hidden';
+@import 'utilities/visible';
+@import 'utilities/elevator';
+@import 'utilities/transition';
