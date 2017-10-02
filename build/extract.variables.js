@@ -1,10 +1,14 @@
 const fs = require('fs')
+const glob = require('glob-fs')({ gitignore: true })
 
 const postcss = require('postcss')
 const syntax = require('postcss-scss');
 const importer = require('postcss-partial-import')
 
 const argv = require('yargs').argv
+
+var schema = {}
+var promises = []
 
 function getVariableSchema(node) {
   return {
@@ -20,35 +24,46 @@ function getComponentName(variable) {
   return module[0];
 }
 
-fs.readFile(argv.i, (err, scss) => {
-  if (err) throw err;
+glob.readdirStream(argv.i)
+  .on('data', (file) => {
+    let promise = new Promise((resolve, reject) => {
+      fs.readFile(file.path, (err, scss) => {
+        if (err) { reject(error) }
 
-  postcss([
-    importer({
-      path: 'scss',
-      prefix: '_',
-      extension: '.scss'
+        postcss([
+          importer({
+            path: 'scss',
+            prefix: '_',
+            extension: '.scss'
+          })
+        ])
+        .process(scss, { parser: syntax })
+        .then((result) => {
+          result.root.walkDecls((node) => {
+            let variable = getVariableSchema(node)
+            let component = getComponentName(variable)
+
+            if (typeof schema[component] === 'undefined') {
+              schema[component] = []
+            }
+
+            schema[component].push(variable)
+          })
+
+          resolve()
+        })
+      })
     })
-  ])
-  .process(scss, { parser: syntax })
-  .then((result) => {
-    let schema = {}
 
-    result.root.walkDecls((node) => {
-      let variable = getVariableSchema(node)
-      let component = getComponentName(variable)
+    promises.push(promise)
+  })
+  .on('end', () => {
+    Promise.all(promises).then(() => {
+      fs.writeFile(argv.o, JSON.stringify(schema, null, 2), (err) => {
+        if (err) throw err;
 
-      if (typeof schema[component] === 'undefined') {
-        schema[component] = []
-      }
-
-      schema[component].push(variable)
-    })
-
-    fs.writeFile(argv.o, JSON.stringify(schema, null, 2), (err) => {
-      if (err) throw err;
-
-      console.log(`[${argv.o} sucessfully generated]`)
+        console.log(`[${argv.o} sucessfully generated]`)
+      })
     })
   })
-})
+

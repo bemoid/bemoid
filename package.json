@@ -6,7 +6,7 @@
   "scripts": {
     "transform": "node build/apply.transformations.js -i css/bemoid.css -o css/bemoid.css",
     "extract": "npm run extract:variables && npm run extract:imports",
-    "extract:variables": "node build/extract.variables.js -i scss/_variables.scss -o json/variables.json",
+    "extract:variables": "node build/extract.variables.js -i scss/**/_variables.scss -o json/variables.json",
     "extract:imports": "node build/extract.imports.js -i scss/bemoid.scss -o json/imports.json",
     "compile": "node-sass scss/bemoid.scss > css/bemoid.css",
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
@@ -27,8 +27,10 @@
   "license": "MIT",
   "devDependencies": {
     "a11y": "^0.5.0",
+    "async": "^2.5.0",
     "autoprefixer": "^6.7.7",
     "cssnano-cli": "^1.0.5",
+    "glob-fs": "^0.1.7",
     "lerna": "^2.2.0",
     "node-sass": "^4.5.2",
     "postcss-cli": "^3.1.1",
