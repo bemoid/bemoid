@@ -1,7 +1,14 @@
 {
   "lerna": "2.2.0",
   "packages": [
-    "scss/objects/*"
+    "scss/functions/*",
+    "scss/mixins/*",
+    "scss/variables",
+    "scss/generic",
+    "scss/objects/*",
+    "scss/structures/*",
+    "scss/components/*",
+    "scss/utilities/*"
   ],
   "version": "0.1.0"
 }
