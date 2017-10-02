@@ -1,0 +1,7 @@
+{
+  "lerna": "2.2.0",
+  "packages": [
+    "scss/objects/*"
+  ],
+  "version": "0.1.0"
+}

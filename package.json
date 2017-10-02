@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/bemoid",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A component-oriented CSS framework based on BEM convention and OOCSS methodology",
   "main": "scss/bemoid.scss",
   "scripts": {
@@ -14,7 +14,7 @@
     "test": "npm run test:accessibility",
     "build": "npm run compile && npm run extract && npm run transform",
     "build:production": "npm run build && npm run minify",
-    "watch": "npm run compile -- --watch"
+    "publish": "npm run build:production && lerna publish"
   },
   "keywords": [
     "framework",
@@ -29,6 +29,7 @@
     "a11y": "^0.5.0",
     "autoprefixer": "^6.7.7",
     "cssnano-cli": "^1.0.5",
+    "lerna": "^2.2.0",
     "node-sass": "^4.5.2",
     "postcss-cli": "^3.1.1",
     "postcss-import": "^10.0.0",
@@ -41,6 +42,9 @@
       "schemas": "json",
       "markups": "html"
     },
-    "schemas": ["imports", "variables"]
+    "schemas": [
+      "imports",
+      "variables"
+    ]
   }
 }

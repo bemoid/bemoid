@@ -1,5 +1,7 @@
 /** @define container */
 
+@import 'variables';
+
 // Container
 //
 // General element to be used as wrapper for other components. Its purpose is to limit the spreading of internal components to a certain width. By default, always expands to all available space (full width).
@@ -14,22 +16,22 @@
 //
 // Style guide: Objects.Container
 .container {
-	$size: map-get($container-sizes, $container-size);
+  $size: map-get($container-sizes, $container-size);
 
-	display: block;
-	width: 100%;
-	max-width: $size;
+  display: block;
+  width: 100%;
+  max-width: $size;
 
-	@if $container-horizontal-margin {
-		margin-left: $container-horizontal-margin;
-		margin-right: $container-horizontal-margin;
-	}
+  @if $container-horizontal-margin {
+    margin-left: $container-horizontal-margin;
+    margin-right: $container-horizontal-margin;
+  }
 
-	@each $size, $width in $container-sizes {
-		@if $size != $container-size {
-			&--#{$size} {
-				max-width: $width;
-			}
-		}
-	}
+  @each $size, $width in $container-sizes {
+    @if $size != $container-size {
+      &--#{$size} {
+        max-width: $width;
+      }
+    }
+  }
 }

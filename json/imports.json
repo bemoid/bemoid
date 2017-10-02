@@ -11,13 +11,13 @@
     "generic/headings"
   ],
   "objects": [
-    "objects/container",
-    "objects/grid",
-    "objects/list",
-    "objects/media",
-    "objects/table",
-    "objects/image",
-    "objects/dropdown"
+    "objects/container/container",
+    "objects/grid/grid",
+    "objects/list/list",
+    "objects/image/image",
+    "objects/media/media",
+    "objects/table/table",
+    "objects/dropdown/dropdown"
   ],
   "structures": [
     "structures/form",

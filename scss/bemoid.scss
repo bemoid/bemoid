@@ -23,13 +23,13 @@
 @import 'generic/headings';
 
 // Objects
-@import 'objects/container';
-@import 'objects/grid';
-@import 'objects/list';
-@import 'objects/media';
-@import 'objects/table';
-@import 'objects/image';
-@import 'objects/dropdown';
+@import 'objects/container/container';
+@import 'objects/grid/grid';
+@import 'objects/list/list';
+@import 'objects/image/image';
+@import 'objects/media/media';
+@import 'objects/table/table';
+@import 'objects/dropdown/dropdown';
 
 // Structures
 @import 'structures/form';
