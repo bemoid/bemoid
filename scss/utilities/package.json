@@ -1,0 +1,25 @@
+{
+  "name": "@bemoid/utilities",
+  "description": "The Bemoid general utilities.",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "utilities.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "utilities"
+  ],
+  "dependencies": {
+    "@bemoid/utilities-elevator": "^0.1.0",
+    "@bemoid/utilities-hidden": "^0.1.0",
+    "@bemoid/utilities-radius": "^0.1.0",
+    "@bemoid/utilities-transition": "^0.1.0",
+    "@bemoid/utilities-visible": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

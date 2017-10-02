@@ -1,0 +1,18 @@
+{
+  "name": "@bemoid/button",
+  "description": "The Bemoid Button component.",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "button.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "button"
+  ],
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

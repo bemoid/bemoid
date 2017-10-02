@@ -1,0 +1,73 @@
+/** @define message */
+
+@import 'variables';
+
+// Message
+//
+// Component for displaying emphasized text informations. Handy for catching user attention on important information.
+//
+// .segment--xsmall - Xsmall variant of a message.
+// .segment--large - Large variant of a message.
+// .segment--xlarge - Xlarge variant of a message.
+// .message--success - Success variant of a message.
+// .message--warning - Warning variant of a message.
+// .message--info - Info variant of a message.
+// .message--error - Error variant of a message.
+// .message--hollow - Hollowed variant of a message. Makes message background transparent.
+// .message--hollow.message--success - Success variant of a hollowed button.
+// .message--hollow.message--warning - Warning variant of a hollowed button.
+// .message--hollow.message--info - Info variant of a hollowed button.
+// .message--hollow.message--error - Error variant of a hollowed button.
+//
+// Markup: message.html
+//
+// Style guide: Components.Message
+.message {
+  $this: &;
+
+  $variant: map-get($message-variants, $message-variant);
+
+  @include declarations($variant);
+
+  border-radius: $message-radius;
+
+  // Message Title
+  //
+  // Element for highlighted text inside message.
+  //
+  // Markup: group__item.html
+  //
+  // Style guide: Components.Message.Title
+  &__title {
+    display: block;
+    color: $message-title-color;
+    font-weight: $message-title-weight;
+  }
+
+  @each $variant, $declarations in $message-variants {
+    @if $variant != $message-variant {
+      &--#{$variant} {
+        @include declarations($declarations);
+      }
+    }
+  }
+
+  &--hollow {
+    $variant: map-get($message-hollow-variants, $message-hollow-variant);
+
+    border-width: $message-hollow-border-width;
+    border-style: $message-hollow-border-style;
+
+    @include declarations($variant);
+
+    background-color: transparent;
+
+    @each $variant, $declarations in $message-hollow-variants {
+      @if $variant != $message-hollow-variant {
+        &#{$this}--#{$variant} {
+          @include declarations($declarations);
+        }
+      }
+    }
+  }
+}

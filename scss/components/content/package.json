@@ -1,0 +1,18 @@
+{
+  "name": "@bemoid/content",
+  "description": "The Bemoid Content component.",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "content.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "content"
+  ],
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

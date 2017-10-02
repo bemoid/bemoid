@@ -1,0 +1,214 @@
+/** @define button */
+
+@import 'variables';
+
+// Button
+//
+// Component for creating a standard clickable buttons.
+//
+// .button--disabled - Turns on disable state on a button.
+// .button--wide - Gives button larger horizontal paddings.
+// .button--expanded - Expands button to fullwidth.
+// .button--xsmall - Xsmall variant of a button.
+// .button--small - Small variant of a button.
+// .button--large - Large variant of a button.
+// .button--xlarge - Xlarge variant of a button.
+// .button--white - White variant of a button.
+// .button--black - Black variant of a button.
+// .button--primary - Primary variant of a button.
+// .button--secondary - Secondary variant of a button.
+// .button--complementary - Complementary variant of a button.
+// .button--success - Success variant of a button.
+// .button--warning - Warning variant of a button.
+// .button--info - Info variant of a button.
+// .button--error - Error variant of a button.
+// .button--hollow - Hollowed variant of a button. Makes button background transparent.
+// .button--hollow.button--white - White variant of a hollowed button.
+// .button--hollow.button--black - Black variant of a hollowed button.
+// .button--hollow.button--primary - Primary variant of a hollowed button.
+// .button--hollow.button--secondary - Secondary variant of a hollowed button.
+// .button--hollow.button--complementary - Complementary variant of a hollowed button.
+// .button--hollow.button--success - Success variant of a hollowed button.
+// .button--hollow.button--warning - Warning variant of a hollowed button.
+// .button--hollow.button--info - Info variant of a hollowed button.
+// .button--hollow.button--error - Error variant of a hollowed button.
+//
+// Markup: button.html
+//
+// Style guide: Components.Button
+.button {
+  $this: &;
+
+  $size: map-get($button-sizes, $button-size);
+  $variant: map-get($button-variants, $button-variant);
+
+  @include declarations($size);
+  @include declarations-mutable($variant);
+
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+  text-decoration: none;
+  outline: 0;
+
+  font-weight: $button-weight;
+  text-align: $button-align;
+  border-radius: $button-radius;
+  border: $button-hollow-border solid transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include declarations-mutable($variant, true);
+  }
+
+  // Button Cover
+  //
+  // Covers button with additional content. Useful for providing loading state or change button text.
+  //
+  // Markup: button__cover.html
+  //
+  // Style guide: Components.Button.Cover
+  &__cover {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: map-get($variant, 'color');
+  }
+
+  // Button Icon
+  //
+  // Icon element which aligns icons inside button.
+  //
+  // Markup: button__icon.html
+  //
+  // Style guide: Components.Button.Icon
+  &__icon {
+    display: inline-block;
+
+    @at-root {
+      img#{$this}__icon,
+      svg#{$this}__icon {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  @each $size, $declarations in $button-sizes {
+    @if $size != $button-size {
+      &--#{$size} {
+        @include declarations($declarations);
+      }
+    }
+  }
+
+  @each $variant, $declarations in $button-variants {
+    @if $variant != $button-variant {
+      &--#{$variant} {
+        $color: map-get($declarations, 'color');
+
+        @include declarations-mutable($declarations);
+
+        &:hover,
+        &:focus,
+        &:active {
+          @include declarations-mutable($declarations, true);
+
+          #{$this}__cover {
+            color: nth($color, length($color));
+          }
+        }
+
+        #{$this}__cover {
+          color: nth($color, 1);
+        }
+      }
+    }
+  }
+
+  &--hollow {
+    $variant: map-get($button-hollow-variants, $button-hollow-variant);
+
+    @include declarations-mutable($variant);
+
+    border-width: $button-hollow-border;
+    border-style: solid;
+    background-color: $button-hollow-background;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include declarations-mutable($variant, true);
+    }
+
+    @each $variant, $declarations in $button-hollow-variants {
+      @if $variant != $button-hollow-variant {
+        &#{$this}--#{$variant} {
+          $color: map-get($declarations, 'color');
+
+          @include declarations-mutable($declarations);
+
+          &:hover,
+          &:focus,
+          &:active {
+            @include declarations-mutable($declarations, true);
+
+            #{$this}__cover {
+              color: nth($color, length($color));
+            }
+          }
+
+          #{$this}__cover {
+            color: nth($color, 1);
+          }
+        }
+      }
+    }
+  }
+
+  &--wide {
+    padding-left: $button-wide-padding;
+    padding-right: $button-wide-padding;
+  }
+
+  &--expanded {
+    display: block;
+    width: 100%;
+  }
+
+  &--covered {
+    cursor: initial;
+    color: transparent !important;
+
+    #{$this}__cover {
+      opacity: 1;
+    }
+  }
+
+  &--curtained {
+    &:hover,
+    &:focus,
+    &:active {
+      color: transparent !important;
+
+      #{$this}__cover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    cursor: default;
+    opacity: $button-disabled-opacity;
+    pointer-events: none;
+    background-image: none;
+  }
+}

@@ -1,0 +1,37 @@
+/** @define figure */
+
+@import 'variables';
+
+// Figure
+//
+// Component for representing graphics, frequently with a caption.
+//
+// Markup: figure.html
+//
+// Style guide: Structures.Figure
+.figure {
+  margin: 0;
+  text-align: $figure-text-align;
+
+  // Figure Image
+  //
+  // Image element of the figure block. Holds a graphic of the figure.
+  //
+  // Markup: figure__image.html
+  //
+  // Style guide: Structures.Figure.Image
+  &__image {
+    display: inline-block;
+  }
+
+  // Figure Caption
+  //
+  // Caption element of the figure block. Represents a legend which describes the graphic.
+  //
+  // Markup: figure__image.html
+  //
+  // Style guide: Structures.Figure.Caption
+  &__caption {
+    font-style: $figure-font-style;
+  }
+}

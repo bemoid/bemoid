@@ -1,0 +1,86 @@
+/** @define checkbox */
+
+@import 'variables';
+
+// Checkbox
+//
+// Component for creating selectable input fields.
+//
+// Markup: checkbox.html
+//
+// Style guide: Components.Checkbox
+.checkbox {
+  $this: &;
+
+  // Checkbox Input
+  //
+  // Input element of the checkbox component. Provides state for custom styled mark.
+  //
+  // Markup: checkbox__input.html
+  //
+  // Style guide: Components.Checkbox.Input
+  &__input {
+    display: none;
+
+    &:checked {
+      & + #{$this}__label {
+        &:after {
+            transform: translate(-25%, -50%) $checkbox-mark-active-transform;
+        }
+      }
+    }
+  }
+
+  // Checkbox Label
+  //
+  // Label element of the checkbox component. Gives customizable mark.
+  //
+  // Markup: checkbox__label.html
+  //
+  // Style guide: Components.Checkbox.Label
+  &__label {
+    position: relative;
+    padding-left: 1.5em;
+    vertical-align: middle;
+
+    &:active,
+    &:focus,
+    &:hover {
+        &:before {
+            background: $checkbox-hover-background;
+            border: $checkbox-hover-border;
+        }
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+    }
+
+    &:before {
+        left: 0;
+        margin-top: -#{$checkbox-size/2};
+        width: $checkbox-size;
+        height: $checkbox-size;
+        background: $checkbox-background;
+        border: $checkbox-border;
+        border-radius: $checkbox-radius;
+    }
+
+    &:after {
+        content: '';
+        width: $checkbox-mark-size;
+        height: $checkbox-mark-size/2;
+        position: absolute;
+        left: $checkbox-size/2;
+        border: $checkbox-mark-width solid $checkbox-mark-color;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        transform-origin: 20% 50%;
+        transform: translate(-25%, -50%) $checkbox-mark-transform;
+    }
+  }
+}

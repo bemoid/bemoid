@@ -3,7 +3,7 @@
   "description": "The Bemoid Image component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "_dropdown.scss",
+  "main": "image.scss",
   "keywords": [
     "bem",
     "sass",

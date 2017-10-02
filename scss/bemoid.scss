@@ -11,18 +11,16 @@
  * http://jedrzejchalubek.com
  */
 
-// Mixins and functions
+// 1. Mixins and functions
 @import 'uses';
 
-// Variables
-@import 'variables';
+// 2. Variables
+@import 'variables/variables';
 
-// Generic
-@import 'generic/typography';
-@import 'generic/normalize';
-@import 'generic/headings';
+// 3. Generic
+@import 'generic/generic';
 
-// Objects
+// 4. Objects
 @import 'objects/container/container';
 @import 'objects/grid/grid';
 @import 'objects/list/list';
@@ -31,35 +29,35 @@
 @import 'objects/table/table';
 @import 'objects/dropdown/dropdown';
 
-// Structures
-@import 'structures/form';
-@import 'structures/figure';
-@import 'structures/segment';
-@import 'structures/heading';
-@import 'structures/paragraph';
+// 5. Structures
+@import 'structures/form/form';
+@import 'structures/figure/figure';
+@import 'structures/segment/segment';
+@import 'structures/heading/heading';
+@import 'structures/paragraph/paragraph';
 
-// Components
-@import 'components/panel';
-@import 'components/modal';
-@import 'components/overlay';
-@import 'components/input';
-@import 'components/field';
-@import 'components/label';
-@import 'components/radio';
-@import 'components/select';
-@import 'components/checkbox';
-@import 'components/tag';
-@import 'components/button';
-@import 'components/blockquote';
-@import 'components/message';
-@import 'components/divider';
-@import 'components/content';
-@import 'components/group';
+// 6. Components
+@import 'components/panel/panel';
+@import 'components/modal/modal';
+@import 'components/overlay/overlay';
+@import 'components/input/input';
+@import 'components/field/field';
+@import 'components/label/label';
+@import 'components/radio/radio';
+@import 'components/select/select';
+@import 'components/checkbox/checkbox';
+@import 'components/tag/tag';
+@import 'components/button/button';
+@import 'components/blockquote/blockquote';
+@import 'components/message/message';
+@import 'components/divider/divider';
+@import 'components/content/content';
+@import 'components/group/group';
 
-// Utilities
-@import 'utilities/space';
-@import 'utilities/radius';
-@import 'utilities/hidden';
-@import 'utilities/visible';
-@import 'utilities/elevator';
-@import 'utilities/transition';
+// 7. Utilities
+@import 'utilities/space/space';
+@import 'utilities/radius/radius';
+@import 'utilities/hidden/hidden';
+@import 'utilities/visible/visible';
+@import 'utilities/elevator/elevator';
+@import 'utilities/transition/transition';

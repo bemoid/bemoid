@@ -1,0 +1,51 @@
+html {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+body {
+  font-family: $font-family-primary;
+  color: $font-color;
+
+  @if $font-antialiasing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace;
+}
+
+mark {
+  background-color: color(warning);
+  color: $font-color;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  color: $headings-color;
+  line-height: $headings-line-height;
+}
+
+@each $breakpoint, $heading in $headings {
+  @include breakpoint($breakpoint up) {
+    @each $h, $declarations in $heading {
+      #{$h} {
+        @include declarations($declarations);
+      }
+    }
+  }
+}

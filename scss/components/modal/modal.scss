@@ -1,0 +1,37 @@
+/** @define modal */
+
+@import 'variables';
+
+// Modal
+//
+// Component for large dialog prompts which temporary covers entire viewport. Useful for displaying content whitch user should focus on.
+//
+// .container--small - Limits modal width to small size.
+// .container--medium - Limits modal width to medium size.
+// .container--large - Limits modal width to large size.
+// .container--xlarge - Limits modal width to xlarge size.
+// .container--xxlarge - Limits modal width to xxlarge size.
+//
+// Markup: modal.html
+//
+// Style guide: Components.Modal
+.modal {
+  $this: &;
+
+  position: fixed;
+  top: $modal-position-top;
+  left: $modal-position-left;
+  transform: $modal-transform;
+  padding: $modal-space;
+
+  // Modal Panel
+  //
+  // Panel of the modal. Holds modal content.
+  //
+  // Markup: modal__panel.html
+  //
+  // Style guide: Components.Modal.Panel
+  &__panel {
+    border: $modal-border;
+  }
+}

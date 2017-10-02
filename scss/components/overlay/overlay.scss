@@ -1,0 +1,25 @@
+/** @define overlay */
+
+@import 'variables';
+
+// Overlay
+//
+// Curtaining a view with semi-trasparent panel so users won't be distracted by content underneath.
+//
+// .overlay--blured - Blurs content underneath overlay.
+//
+// Markup: overlay.html
+//
+// Style guide: Components.Overlay
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: $overlay-opacity;
+  background-color: $overlay-background;
+
+  &--blured {
+    backdrop-filter: blur($overlay-blur);
+  }
+}

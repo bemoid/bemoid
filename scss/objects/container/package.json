@@ -3,7 +3,7 @@
   "description": "The Bemoid Container component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "_container.scss",
+  "main": "container.scss",
   "keywords": [
     "bem",
     "sass",

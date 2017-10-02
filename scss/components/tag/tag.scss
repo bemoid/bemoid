@@ -1,0 +1,64 @@
+/** @define tag */
+
+@import 'variables';
+
+// Tag
+//
+// Small inline components for creating labelized markers.
+//
+// .tag--pilled - Tag variant with large border radius.
+//
+// Markup: tag.html
+//
+// Style guide: Components.Tag
+.tag {
+  $this: &;
+
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 1;
+
+  color: $tag-color;
+  font-size: $tag-font-size;
+  border-radius: $tag-radius;
+  background-color: $tag-background;
+
+  @at-root {
+    a#{$this} {
+      &:hover {
+        background-color: $tag-hover-background;
+      }
+    }
+  }
+
+  // Tag Image
+  //
+  // Image element of the tag component. Seamlessly adapts to the size of the marker.
+  //
+  // Markup: tag__image.html
+  //
+  // Style guide: Components.Tag.Image
+  &__image {
+    $offset: nth($tag-padding, length($tag-padding));
+
+    height: calc(1em + #{$offset * 2});
+  }
+
+  // Tag Body
+  //
+  // Body element of the tag component. Holds text of the marker.
+  //
+  // Markup: tag__body.html
+  //
+  // Style guide: Components.Tag.Body
+  &__body {
+    display: inline-flex;
+    align-items: center;
+    padding: $tag-padding;
+  }
+
+  &--pilled {
+    border-radius: $tag-padding*2;
+  }
+}

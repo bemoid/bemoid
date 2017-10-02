@@ -1,0 +1,52 @@
+/** @define panel */
+
+@import 'variables';
+
+// Panel
+//
+// Encloses content in visualy separated panels. Helpful for drawing clearly separated blocks of content.
+//
+// .panel--scrollable - Desc
+//
+// Markup: panel.html
+//
+// Style guide: Components.Panel
+.panel {
+  $this: &;
+
+  border: $panel-border;
+  border-radius: $panel-radius;
+  background-color: $panel-background;
+
+  & > * + * {
+    border-top: $panel-segment-border;
+  }
+
+  // Panel Segment
+  //
+  // Allows you to divide the contents of the panel into separate sections.
+  //
+  // .panel__segment--scrollable - Limits height of the segment and makes content scrollable.
+  // .segment--small - Small variant of a segment.
+  // .segment--large - Large variant of a segment.
+  // .segment--xlarge - Xlarge variant of a segment.
+  //
+  // Markup: panel__segment.html
+  //
+  // Style guide: Components.Panel.Segment
+  &__segment {
+    position: relative;
+
+    &--scrollable {
+      max-height: $panel-scrollable-height;
+      overflow-y: auto;
+    }
+  }
+
+  &--scrollable {
+    #{$this}__segment {
+      max-height: $panel-scrollable-height;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/** @define paragraph */
+
+@import 'variables';
+
+// Paragraph
+//
+// Represents a block of text.
+//
+// Markup: paragraph.html
+//
+// Style guide: Structures.Paragraph
+.paragraph {
+	margin: $paragraph-margins;
+}
