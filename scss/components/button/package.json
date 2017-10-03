@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/button",
-  "description": "The Bemoid Button component.",
+  "description": "The Bemoid button component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "button.scss",

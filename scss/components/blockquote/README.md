@@ -2,7 +2,7 @@
 
 The Bemoid blockquote component defines a block of text that is a direct quotation.
 
-### Installation
+## Installation
 
 Install using NPM:
 
@@ -10,7 +10,7 @@ Install using NPM:
 $ npm install --save @bemoid/blockquote
 ```
 
-### Usage
+## Usage
 
 Import SASS files from the `node_modules` directory:
 
