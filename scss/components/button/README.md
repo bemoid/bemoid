@@ -43,3 +43,21 @@ Import files from the `node_modules` directory:
 ```scss
 @import '~@bemoid/button/button';
 ```
+
+## Variables
+
+|  Name  |  Type  |  Default  |
+|---|---|---|
+| `$button-variants` | Map | ••• |
+| `$button-hollow-variants` | Map | ••• |
+| `$button-sizes` | Map | ••• |
+| `$button-size` | Keyword | `medium` |
+| `$button-variant` | Keyword | `neutral` |
+| `$button-weight` | Keword/Number | `400` |
+| `$button-align` | Keyword | `center` |
+| `$button-radius` | Value | `radius(xsmall)` |
+| `$button-wide-padding` | Value | `em(40px)` |
+| `$button-disabled-opacity` | Number | `0.5` |
+| `$button-hollow-variant` | Keyword | `neutral` |
+| `$button-hollow-border` | Value | `1px` |
+| `$button-hollow-background` | Color | `transparent` |
