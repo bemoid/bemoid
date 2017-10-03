@@ -4,12 +4,6 @@ The Bemoid button component for creating standard clickable buttons.
 
 ## Usage
 
-Import SASS files from the `node_modules` directory:
-
-```scss
-@import '~@bemoid/button/button';
-```
-
 Use `button` class for a standard button.
 
 ```html
@@ -42,4 +36,10 @@ Install using NPM:
 
 ```bash
 $ npm install --save @bemoid/button
+```
+
+Import files from the `node_modules` directory:
+
+```scss
+@import '~@bemoid/button/button';
 ```

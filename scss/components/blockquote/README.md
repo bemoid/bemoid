@@ -4,14 +4,7 @@ The Bemoid blockquote component defines a block of text that is a direct quotati
 
 ## Usage
 
-Import SASS files from the `node_modules` directory:
-
-```scss
-@import '~@bemoid/segment/segment';
-@import '~@bemoid/blockqoute/blockqoute';
-```
-
-Use `blockquote` class along with `segment`:
+Use `blockquote` class along with `segment` component:
 
 ```html
 <blockquote class="blockquote segment">
@@ -25,6 +18,13 @@ Install using NPM:
 
 ```bash
 $ npm install --save @bemoid/blockquote
+```
+
+Import files from the `node_modules` directory:
+
+```scss
+@import '~@bemoid/segment/segment';
+@import '~@bemoid/blockqoute/blockqoute';
 ```
 
 ## Variables
