@@ -10,7 +10,7 @@
     "extract:imports": "node build/extract.imports.js -i 'scss/bemoid.scss' -o 'json/imports.json'",
     "compile": "node-sass scss/bemoid.scss > css/bemoid.css",
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
-    "test:accessibility": "a11y html/**/*.html",
+    "test:accessibility": "a11y scss/**/*.html",
     "test": "npm run test:accessibility",
     "build": "npm run compile && npm run extract && npm run transform",
     "build:production": "npm run build && npm run minify",
