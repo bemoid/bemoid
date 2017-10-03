@@ -2,14 +2,6 @@
 
 The Bemoid button component for creating standard clickable buttons.
 
-## Installation
-
-Install using NPM:
-
-```bash
-$ npm install --save @bemoid/button
-```
-
 ## Usage
 
 Import SASS files from the `node_modules` directory:
@@ -42,4 +34,12 @@ Want to achieve the same effect, but only on user `:hover` action? Switch to a `
 
   <span class="button__cover">Action</span>
 </button>
+```
+
+## Standalone installation
+
+Install using NPM:
+
+```bash
+$ npm install --save @bemoid/button
 ```
