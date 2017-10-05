@@ -1,6 +1,6 @@
 # Blockquote
 
-The Bemoid divider component for dividing group elements with space and centered and labeled badge. Especially useful in pair with group component.
+The Bemoid divider component for dividing group elements with space and centered, labeled badge.
 
 ## Usage
 
