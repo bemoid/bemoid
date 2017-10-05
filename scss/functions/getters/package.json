@@ -1,17 +1,14 @@
 {
-  "name": "@bemoid/checkbox",
-  "description": "The Bemoid Checkbox component.",
+  "name": "@bemoid/functions-getters",
+  "description": "The Bemoid getter functions.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "checkbox.scss",
+  "main": "getters.scss",
   "keywords": [
     "bem",
     "sass",
-    "checkbox"
+    "getters"
   ],
-  "dependencies": {
-    "@bemoid/field": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

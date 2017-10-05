@@ -1,17 +1,14 @@
 {
-  "name": "@bemoid/checkbox",
-  "description": "The Bemoid Checkbox component.",
+  "name": "@bemoid/functions-converters",
+  "description": "The Bemoid convert functions.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "checkbox.scss",
+  "main": "converters.scss",
   "keywords": [
     "bem",
     "sass",
-    "checkbox"
+    "converters"
   ],
-  "dependencies": {
-    "@bemoid/field": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

@@ -1,14 +1,2 @@
-// Map type variables getters
-@import 'includes/getters/get';
-@import 'includes/getters/color';
-@import 'includes/getters/space';
-@import 'includes/getters/radius';
-@import 'includes/getters/segment';
-@import 'includes/getters/elevator';
-@import 'includes/getters/breakpoint';
-@import 'includes/getters/transition';
-
-// Type converters
-@import 'includes/converters/em';
-@import 'includes/converters/rem';
-@import 'includes/converters/list';
+@import 'getters/getters';
+@import 'converters/converters';
