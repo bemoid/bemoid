@@ -31,7 +31,7 @@ Import required files from the `node_modules` directory:
 @import '~@bemoid/paragraph/paragraph';
 @import '~@bemoid/blockquote/blockquote';
 
-@import '~@bemoid/blockquote/content';
+@import '~@bemoid/content/content';
 ```
 
 ## Variables

@@ -674,6 +674,48 @@
       "name": "list-offset"
     }
   ],
+  "table": [
+    {
+      "variable": "$table-padding",
+      "value": "space(medium) space(large) !default",
+      "name": "table-padding"
+    },
+    {
+      "variable": "$table-border-width",
+      "value": "1px !default",
+      "name": "table-border-width"
+    },
+    {
+      "variable": "$table-border-style",
+      "value": "solid !default",
+      "name": "table-border-style"
+    },
+    {
+      "variable": "$table-border-color",
+      "value": "color(light-gray) !default",
+      "name": "table-border-color"
+    },
+    {
+      "variable": "$table-heading-background",
+      "value": "color(lighter-gray) !default",
+      "name": "table-heading-background"
+    },
+    {
+      "variable": "$table-condensed-padding",
+      "value": "space(small) space(medium) !default",
+      "name": "table-condensed-padding"
+    },
+    {
+      "variable": "$table-striped-background",
+      "value": "lighten(color(lighter-gray), 1%) !default",
+      "name": "table-striped-background"
+    },
+    {
+      "variable": "$table-hoverable-background",
+      "value": "color(lighter-gray) !default",
+      "name": "table-hoverable-background"
+    }
+  ],
   "figure": [
     {
       "variable": "$figure-text-align",
@@ -747,48 +789,6 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
-    }
-  ],
-  "table": [
-    {
-      "variable": "$table-padding",
-      "value": "space(medium) space(large) !default",
-      "name": "table-padding"
-    },
-    {
-      "variable": "$table-border-width",
-      "value": "1px !default",
-      "name": "table-border-width"
-    },
-    {
-      "variable": "$table-border-style",
-      "value": "solid !default",
-      "name": "table-border-style"
-    },
-    {
-      "variable": "$table-border-color",
-      "value": "color(light-gray) !default",
-      "name": "table-border-color"
-    },
-    {
-      "variable": "$table-heading-background",
-      "value": "color(lighter-gray) !default",
-      "name": "table-heading-background"
-    },
-    {
-      "variable": "$table-condensed-padding",
-      "value": "space(small) space(medium) !default",
-      "name": "table-condensed-padding"
-    },
-    {
-      "variable": "$table-striped-background",
-      "value": "lighten(color(lighter-gray), 1%) !default",
-      "name": "table-striped-background"
-    },
-    {
-      "variable": "$table-hoverable-background",
-      "value": "color(lighter-gray) !default",
-      "name": "table-hoverable-background"
     }
   ]
 }
