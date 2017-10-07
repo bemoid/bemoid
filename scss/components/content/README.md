@@ -33,9 +33,3 @@ Import required files from the `node_modules` directory:
 
 @import '~@bemoid/content/content';
 ```
-
-## Variables
-
-|  Name  |  Type  |  Default  |
-|---|---|---|
-| `$content-spacing` | Number/Value | `em(16px)` |

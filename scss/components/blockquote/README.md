@@ -26,13 +26,3 @@ Import files from the `node_modules` directory:
 @import '~@bemoid/segment/segment';
 @import '~@bemoid/blockqoute/blockqoute';
 ```
-
-## Variables
-
-|  Name  |  Type  |  Default  |
-|---|---|---|
-| `$blockquote-margins` | Number/Value | `0` |
-| `$blockquote-background` | Color | `color(lighter-gray)` |
-| `$blockquote-border-color` | Color | `color(gray)` |
-| `$blockquote-border-width` | Value | `0 0 0 em(5px)` |
-| `$blockquote-border-style` | Keyword | `solid` |

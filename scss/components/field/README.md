@@ -63,14 +63,3 @@ Import required files from the `node_modules` directory:
 ```scss
 @import '~@bemoid/field/field';
 ```
-
-## Variables
-
-|  Name  |  Type  |  Default  |
-|---|---|---|
-| `$field-sizes` | Map | `•••` |
-| `$field-variants` | Map | `•••` |
-| `$field-size` | Keyword | `medium` |
-| `$field-caption-untouched-color` | Color | `$font-color` |
-| `$field-caption-font-size` | Number/Value | `em(12px)` |
-| `$field-inline-margin` | Number/Value | `1em` |

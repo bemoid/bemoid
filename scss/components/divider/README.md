@@ -28,12 +28,3 @@ Import required files from the `node_modules` directory:
 @import '~@bemoid/group/group';
 @import '~@bemoid/divider/divider';
 ```
-
-## Variables
-
-|  Name  |  Type  |  Default  |
-|---|---|---|
-| `$divider-badge-sizes` | Map | `•••` |
-| `$divider-badge-size` | Keyword | `medium` |
-| `$divider-badge-background` | Color | `color(white)` |
-| `$divider-badge-radius` | Number/Value | `radius(circle)` |
