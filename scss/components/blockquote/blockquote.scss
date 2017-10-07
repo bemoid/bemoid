@@ -14,4 +14,19 @@
   margin: $blockquote-margins;
   background-color: $blockquote-background;
   border: $blockquote-border-width $blockquote-border-style $blockquote-border-color;
+
+  // Blockquote Footer
+  //
+  // Defines a block of text with a name of the quotation source.
+  //
+  // Markup: blockquote__footer.html
+  //
+  // Style guide: Components.Blockquote.Footer
+  &__footer {
+    color: $blockquote-footer-color;
+
+    &:before {
+      content: attr(data-before)
+    }
+  }
 }

@@ -26,3 +26,8 @@ $blockquote-border-width: 0 0 0 em(5px) !default;
 ///
 /// @type {Keyword}
 $blockquote-border-style: solid !default;
+
+/// Color of blockquote footer.
+///
+/// @type {Color}
+$blockquote-footer-color: color(gray) !default;
