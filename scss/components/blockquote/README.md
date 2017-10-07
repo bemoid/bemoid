@@ -1,18 +1,8 @@
 # Blockquote
 
-The Bemoid blockquote component defines a block of text that is a direct quotation.
+The Bemoid blockquote component for defining a block of text that is a direct quotation.
 
-## Usage
-
-Use `blockquote` class along with `segment` component:
-
-```html
-<blockquote class="blockquote segment">
-  Why is the rum always gone? <cite>— Captain Jack Sparrow</cite>
-</blockquote>
-```
-
-## Standalone installation
+## Installation
 
 Install using NPM:
 
@@ -20,9 +10,6 @@ Install using NPM:
 $ npm install --save @bemoid/blockquote
 ```
 
-Import files from the `node_modules` directory:
+## Documentation
 
-```scss
-@import '~@bemoid/segment/segment';
-@import '~@bemoid/blockqoute/blockqoute';
-```
+The component documentation can be found [here](blockquote.md) file.
