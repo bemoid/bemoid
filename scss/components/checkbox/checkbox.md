@@ -1,4 +1,7 @@
-# Checkbox
+---
+title: "Checkbox"
+group: "Components"
+---
 
 The Bemoid checkbox component for selectable input fields.
 

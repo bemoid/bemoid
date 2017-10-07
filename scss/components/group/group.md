@@ -1,4 +1,7 @@
-# Group
+---
+title: "Group"
+group: "Components"
+---
 
 The Bemoid group component for grouping together the other components into a single interface.
 

@@ -1,5 +1,6 @@
 ---
 title: "Blockqoute"
+group: "Components"
 ---
 
 <a name="introduction"></a>
@@ -12,26 +13,24 @@ The Bemoid blockquote component defines a block of text that is a direct quotati
 
 Warp your quoting content with `<blockquote>` HTML markup and `.blockquote` class. Leverage the [segment]() component to add paddings.
 
-```html
-<blockquote class="blockquote segment">
-  Why is the rum always gone?
-</blockquote>
-```
+[[example file="components/blockquote/html/blockquote.html"]]
 
 <a name="providing-a-source-of-the-quotation"></a>
 #### [Providing a source of the quotation](#providing-a-source-of-the-quotation)
 
 Use `<footer>` markup with the `.blockquote__footer` class for identifying the source. Don't forget to include name of the source in <cite> markup.
 
-```html
-<blockquote class="blockquote segment">
-  Why is the rum always gone?
+[[example file="components/blockquote/html/blockquote__footer.html"]]
 
-  <footer class="blockquote__footer">
-    Captain Jack Sparrow in <cite>Pirates of the Caribbean: At World's End</cite>
-  </footer>
-</blockquote>
-```
+<a name="styleguide"></a>
+## [Styleguide](#styleguide)
+
+[[styleguide file="components/blockquote/blockquote.scss"]]
+
+<a name="variables"></a>
+## [Variables](#variables)
+
+[[variables file="components/blockquote/blockquote.scss"]]
 
 <a name="standalone-installation"></a>
 ## [Standalone installation](#standalone-installation)

@@ -1,4 +1,7 @@
-# Field
+---
+title: "Field"
+group: "Components"
+---
 
 The Bemoid field component for creating various form fields.
 

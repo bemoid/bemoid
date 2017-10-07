@@ -1,4 +1,7 @@
-# Button
+---
+title: "Button"
+group: "Components"
+---
 
 The Bemoid button component for creating standard clickable buttons.
 
