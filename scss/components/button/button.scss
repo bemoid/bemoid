@@ -33,7 +33,7 @@
 // .button--hollow.button--info - Info variant of a hollowed button.
 // .button--hollow.button--error - Error variant of a hollowed button.
 //
-// Markup: button.html
+// Markup: components/button/html/button.html
 //
 // Styleguide: Components.Button
 .button {
@@ -68,7 +68,7 @@
   //
   // Covers button with additional content. Useful for providing loading state or change button text.
   //
-  // Markup: button__cover.html
+  // Markup: components/button/html/button__cover.html
   //
   // Style guide: Components.Button.Cover
   &__cover {
@@ -87,7 +87,7 @@
   //
   // Icon element which aligns icons inside button.
   //
-  // Markup: button__icon.html
+  // Markup: components/button/html/button__icon.html
   //
   // Style guide: Components.Button.Icon
   &__icon {

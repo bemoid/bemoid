@@ -33,6 +33,16 @@ Want to achieve the same effect, but only on user `:hover` action? Switch to a `
 </button>
 ```
 
+<a name="styleguide"></a>
+## [Styleguide](#styleguide)
+
+[[styleguide file=components/button/button.scss]]
+
+<a name="variables"></a>
+## [Variables](#variables)
+
+[[variables file=components/button/_variables.scss]]
+
 ## Standalone installation
 
 Install using NPM:
