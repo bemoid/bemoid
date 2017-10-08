@@ -2,6 +2,7 @@
 title: Blockqoute
 description: Defines a block of text that is a direct quotation
 group: Components
+layout: docs.html
 algolia: true
 ---
 
@@ -20,7 +21,7 @@ Warp your quoting content with `<blockquote>` HTML markup and `.blockquote` clas
 <a name="providing-a-source-of-the-quotation"></a>
 #### [Providing a source of the quotation](#providing-a-source-of-the-quotation)
 
-Use `<footer>` markup with the `.blockquote__footer` class for identifying the source. Don't forget to include name of the source in <cite> markup.
+Use `<footer>` markup with the `.blockquote__footer` class for identifying the source. Don't forget to include name of the source in `<cite>` markup.
 
 [[example file="components/blockquote/example/providing-a-source.html"]]
 
