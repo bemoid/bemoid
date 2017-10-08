@@ -1,6 +1,8 @@
 ---
-title: "Blockqoute"
-group: "Components"
+title: Blockqoute
+description: Defines a block of text that is a direct quotation
+group: Components
+algolia: true
 ---
 
 <a name="introduction"></a>
