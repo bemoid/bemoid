@@ -1,7 +1,12 @@
 ---
-title: "Button"
-group: "Components"
+title: Button
+description: Component for creating standard clickable buttons
+group: Components
+layout: docs.html
+algolia: true
 ---
+
+## Introduction
 
 The Bemoid button component for creating standard clickable buttons.
 
@@ -33,13 +38,11 @@ Want to achieve the same effect, but only on user `:hover` action? Switch to a `
 </button>
 ```
 
-<a name="styleguide"></a>
-## [Styleguide](#styleguide)
+## Styleguide
 
 [[styleguide file=components/button/button.scss]]
 
-<a name="variables"></a>
-## [Variables](#variables)
+## Variables
 
 [[variables file=components/button/_variables.scss]]
 
