@@ -6,7 +6,7 @@
 //
 // Defines a block of text that is a direct quotation.
 //
-// Markup: blockquote.html
+// Markup: components/blockquote/html/blockquote.html
 //
 // Style guide: Components.Blockquote
 .blockquote {
@@ -19,7 +19,7 @@
   //
   // Defines a block of text with a name of the quotation source.
   //
-  // Markup: blockquote__footer.html
+  // Markup: components/blockquote/html/blockquote__footer.html
   //
   // Style guide: Components.Blockquote.Footer
   &__footer {
