@@ -8,35 +8,37 @@ algolia: true
 
 ## Introduction
 
-The Bemoid button component for creating standard clickable buttons.
+The Bemoid button component for creating standard clickable buttons. It's designed to use mainly on `<a>`, `<button>` and `<input>` HTML elements.
 
 ## Usage
 
-Use `button` class for a standard button.
+Use `.button` class for a standard button.
 
-```html
-<button class="button">Button</button>
-```
+[[example file=components/button/example/basic.html]]
 
-Adding a `button__cover` element and the `button--covered` modifier will cover button's default text with an extra one. For example, it's useful to indicate a currently processing loading state.
+### Variants
 
-```html
-<button class="button button--covered">
-  <span>Button</span>
+[[example file=components/button/example/variants.html]]
 
-  <span class="button__cover">Loading...</span>
-</button>
-```
+### Sizes
+
+[[example file=components/button/example/sizes.html]]
+
+[[example file=components/button/example/behaviours.html]]
+
+### Covers
+
+Adding a `.button__cover` element and the `.button--covered` modifier will cover button's default text with an extra one. For example, it's useful to indicate a currently processing loading state.
+
+[[example file=components/button/example/covered.html]]
 
 Want to achieve the same effect, but only on user `:hover` action? Switch to a `button--covered` modifier.
 
-```html
-<button class="button button--curtained">
-  <span>Button</span>
+[[example file=components/button/example/curtained.html]]
 
-  <span class="button__cover">Action</span>
-</button>
-```
+### Icons
+
+[[example file=components/button/example/icon.html]]
 
 ## Styleguide
 

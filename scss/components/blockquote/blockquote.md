@@ -16,7 +16,7 @@ Warp your quoting content with `<blockquote>` HTML markup and `.blockquote` clas
 
 [[example file=components/blockquote/example/basic.html]]
 
-#### Providing a source of the quotation
+### Providing a source of the quotation
 
 Use `<footer>` markup with the `.blockquote__footer` class for identifying the source. Don't forget to include name of the source in `<cite>` markup.
 
