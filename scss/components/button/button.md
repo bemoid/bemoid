@@ -6,8 +6,6 @@ layout: docs.html
 algolia: true
 ---
 
-## Introduction
-
 The Bemoid button component for creating standard clickable buttons. It's designed to use mainly on `<a>`, `<button>` and `<input>` HTML elements.
 
 ## Usage

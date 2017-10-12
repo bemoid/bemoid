@@ -6,8 +6,6 @@ layout: docs.html
 algolia: true
 ---
 
-## Introduction
-
 The Bemoid blockquote component defines a block of text that is a direct quotation.
 
 ## Usage
