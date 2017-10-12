@@ -18,10 +18,6 @@
   display: block;
   padding-left: $list-offset;
 
-  & > * + * {
-    margin: $list-spaces 0 0 0;
-  }
-
   // List Item
   //
   // Element for a item of the list.
@@ -40,10 +36,6 @@
 
   &--inline {
     display: inline-block;
-
-    & > * + * {
-      margin: 0 0 0 $list-spaces;
-    }
 
     #{$this}__item {
       display: inline-block;

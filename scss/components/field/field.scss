@@ -117,10 +117,6 @@
   }
 
   &--inline {
-    & > * + * {
-      margin-left: $field-inline-margin;
-    }
-
     #{$this}__label,
     #{$this}__input,
     #{$this}__control {

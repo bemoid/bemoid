@@ -12,10 +12,6 @@
 .form {
   $this: &;
 
-	& > * + * {
-		margin-top: $form-spaces;
-	}
-
   // Form Group
   //
   // Element used to group several controls within a form block.

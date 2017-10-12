@@ -1,30 +1,30 @@
 /** @define space */
 
-// Space
+// Gutter
 //
 // Utility component for adding precised levels of shadow.
 //
-// .space--xsmall - Adds xsmall level of a vertical distance.
-// .space--small - Adds small level of a vertical distance.
-// .space--large - Adds large level of a vertical distance.
-// .space--xlarge - Adds xlarge level of a vertical distance.
-// .space--xxlarge - Adds xxlarge level of a vertical distance.
+// .gutter--xsmall - Adds xsmall level of a horizontal distance.
+// .gutter--small - Adds small level of a horizontal distance.
+// .gutter--large - Adds large level of a horizontal distance.
+// .gutter--xlarge - Adds xlarge level of a horizontal distance.
+// .gutter--xxlarge - Adds xxlarge level of a horizontal distance.
 //
-// Markup: space.html
+// Markup: gutter.html
 //
-// Style guide: Utilities.Space
-.space {
+// Style guide: Utilities.Gutter
+.gutter {
   $declaration: map-get($spaces, $space);
 
   & > * + * {
-    margin-top: $declaration;
+    margin-left: $declaration;
   }
 
   @each $size, $declaration in $spaces {
     @if $size != $space {
       &--#{$size} {
         & > * + * {
-          margin-top: $declaration;
+          margin-left: $declaration;
         }
       }
     }
@@ -35,7 +35,7 @@
       @each $size, $declaration in $spaces {
         &--#{$size}\@#{$breakpoint} {
           & > * + * {
-            margin-top: $declaration;
+            margin-left: $declaration;
           }
         }
       }
