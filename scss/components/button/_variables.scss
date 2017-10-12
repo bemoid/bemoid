@@ -5,11 +5,8 @@
 /// Collection of button variants.
 ///
 /// @type {Map}
-/// @prop {Map} white
-/// @prop {Map} black
 /// @prop {Map} primary
 /// @prop {Map} secondary
-/// @prop {Map} complementary
 /// @prop {Map} success
 /// @prop {Map} warning
 /// @prop {Map} info
@@ -19,14 +16,6 @@ $button-variants: (
     'color': color(black),
     'background-color': color(light-gray) darken(color(light-gray), 5%),
   ),
-  white: (
-    'color': color(black) color(white),
-    'background-color': color(white) color(primary),
-  ),
-  black: (
-    'color': color(white),
-    'background-color': color(black) darken(color(black), 10%),
-  ),
   primary: (
     'color': color(white),
     'background-color': color(primary) darken(color(primary), 10%),
@@ -34,10 +23,6 @@ $button-variants: (
   secondary: (
     'color': color(white),
     'background-color': color(secondary) darken(color(secondary), 10%),
-  ),
-  complementary: (
-    'color': color(white),
-    'background-color': color(complementary) darken(color(complementary), 10%),
   ),
   success: (
     'color': color(white),

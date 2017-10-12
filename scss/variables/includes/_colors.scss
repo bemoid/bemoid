@@ -7,7 +7,6 @@
 /// @type {Map}
 /// @prop {Color} primary
 /// @prop {Color} secondary
-/// @prop {Color} complementary
 /// @prop {Color} success
 /// @prop {Color} warning
 /// @prop {Color} error
@@ -22,7 +21,6 @@
 $colors: (
   primary: #6c3fce,
   secondary: #543793,
-  complementary: #FF861D,
   success: #26c65e,
   warning: #ffde66,
   error: #ec3953,
