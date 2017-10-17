@@ -1,22 +1,26 @@
 ---
-title: "Checkbox"
-group: "Components"
+title: Checkbox
+description: Component for stylizing selectable input fields
+group: Components
+layout: docs.html
+algolia: true
 ---
 
-The Bemoid checkbox component for selectable input fields.
+Component for stylizing selectable input fields, where user can select multiple choices from a list.
 
 ## Usage
 
-Use `checkbox` class along with general `field` component:
+The checkbox component was created to be used in tandem with a general field component. The `.checkbox` block should extend it's `.field__control` element.
 
-```html
-<div class="field">
-  <div class="field__control checkbox">
-    <input id="Checkbox" class="checkbox__input" type="checkbox">
-    <label for="Checkbox" class="checkbox__label">Checkbox</label>
-  </div>
-</div>
-```
+[[example file=components/checkbox/example/basic.html]]
+
+## Styleguide
+
+[[styleguide file=components/checkbox/checkbox.scss]]
+
+## Variables
+
+[[variables file=components/checkbox/_variables.scss]]
 
 ## Standalone installation
 
