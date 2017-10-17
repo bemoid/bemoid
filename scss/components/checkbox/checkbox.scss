@@ -6,7 +6,7 @@
 //
 // Component for creating selectable input fields.
 //
-// Markup: checkbox.html
+// Markup: components/checkbox/html/checkbox.html
 //
 // Style guide: Components.Checkbox
 .checkbox {
@@ -16,7 +16,7 @@
   //
   // Input element of the checkbox component. Provides state for custom styled mark.
   //
-  // Markup: checkbox__input.html
+  // Markup: components/checkbox/html/checkbox__input.html
   //
   // Style guide: Components.Checkbox.Input
   &__input {
@@ -35,7 +35,7 @@
   //
   // Label element of the checkbox component. Gives customizable mark.
   //
-  // Markup: checkbox__label.html
+  // Markup: components/checkbox/html/checkbox__label.html
   //
   // Style guide: Components.Checkbox.Label
   &__label {
