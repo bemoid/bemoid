@@ -14,18 +14,14 @@
 //
 // Style guide: Utilities.Gutter
 .gutter {
-  $declaration: map-get($spaces, $space);
-
   & > * + * {
-    margin-left: $declaration;
+    margin-left: 0;
   }
 
   @each $size, $declaration in $spaces {
-    @if $size != $space {
-      &--#{$size} {
-        & > * + * {
-          margin-left: $declaration;
-        }
+    &--#{$size} {
+      & > * + * {
+        margin-left: $declaration;
       }
     }
   }

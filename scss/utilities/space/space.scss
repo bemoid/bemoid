@@ -14,18 +14,14 @@
 //
 // Style guide: Utilities.Space
 .space {
-  $declaration: map-get($spaces, $space);
-
   & > * + * {
-    margin-top: $declaration;
+    margin-top: 0;
   }
 
   @each $size, $declaration in $spaces {
-    @if $size != $space {
-      &--#{$size} {
-        & > * + * {
-          margin-top: $declaration;
-        }
+    &--#{$size} {
+      & > * + * {
+        margin-top: $declaration;
       }
     }
   }
