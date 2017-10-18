@@ -25,10 +25,6 @@
 		border-radius: $form-group-radius;
 		background-color: $form-group-background;
 		border: $form-group-border;
-
-    & > *:not(legend) + * {
-      margin-top: $form-spaces;
-    }
 	}
 
   // Form Legend
@@ -39,6 +35,7 @@
   //
   // Style guide: Structures.Form.Legend
 	&__legend {
+    margin-top: 0;
 		font-size: $form-legend-font-size;
 		font-weight: $form-legend-weight;
 		text-transform: $form-legend-text-transform;

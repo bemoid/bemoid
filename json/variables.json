@@ -102,73 +102,11 @@
       "variable": "$blockquote-border-style",
       "value": "solid !default",
       "name": "blockquote-border-style"
-    }
-  ],
-  "button": [
-    {
-      "variable": "$button-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  white: (\n    'color': color(black) color(white),\n    'background-color': color(white) color(primary),\n  ),\n  black: (\n    'color': color(white),\n    'background-color': color(black) darken(color(black), 10%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  complementary: (\n    'color': color(white),\n    'background-color': color(complementary) darken(color(complementary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-variants"
     },
     {
-      "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  white: (\n    'color': color(white) color(white),\n    'border-color': color(white) color(primary),\n  ),\n  black: (\n    'color': color(black) color(white),\n    'border-color': color(black) darken(color(black), 10%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  complementary: (\n    'color': color(complementary) color(white),\n    'border-color': color(complementary) darken(color(complementary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-hollow-variants"
-    },
-    {
-      "variable": "$button-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "button-sizes"
-    },
-    {
-      "variable": "$button-size",
-      "value": "medium !default",
-      "name": "button-size"
-    },
-    {
-      "variable": "$button-variant",
-      "value": "neutral !default",
-      "name": "button-variant"
-    },
-    {
-      "variable": "$button-weight",
-      "value": "400 !default",
-      "name": "button-weight"
-    },
-    {
-      "variable": "$button-align",
-      "value": "center !default",
-      "name": "button-align"
-    },
-    {
-      "variable": "$button-radius",
-      "value": "radius(xsmall) !default",
-      "name": "button-radius"
-    },
-    {
-      "variable": "$button-wide-padding",
-      "value": "em(40px) !default",
-      "name": "button-wide-padding"
-    },
-    {
-      "variable": "$button-disabled-opacity",
-      "value": "0.5 !default",
-      "name": "button-disabled-opacity"
-    },
-    {
-      "variable": "$button-hollow-variant",
-      "value": "neutral !default",
-      "name": "button-hollow-variant"
-    },
-    {
-      "variable": "$button-hollow-border",
-      "value": "1px !default",
-      "name": "button-hollow-border"
-    },
-    {
-      "variable": "$button-hollow-background",
-      "value": "transparent !default",
-      "name": "button-hollow-background"
+      "variable": "$blockquote-footer-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-footer-color"
     }
   ],
   "checkbox": [
@@ -228,11 +166,71 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "content": [
+  "button": [
     {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
+      "variable": "$button-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-variants"
+    },
+    {
+      "variable": "$button-hollow-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-hollow-variants"
+    },
+    {
+      "variable": "$button-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "name": "button-sizes"
+    },
+    {
+      "variable": "$button-size",
+      "value": "medium !default",
+      "name": "button-size"
+    },
+    {
+      "variable": "$button-variant",
+      "value": "neutral !default",
+      "name": "button-variant"
+    },
+    {
+      "variable": "$button-weight",
+      "value": "400 !default",
+      "name": "button-weight"
+    },
+    {
+      "variable": "$button-align",
+      "value": "center !default",
+      "name": "button-align"
+    },
+    {
+      "variable": "$button-radius",
+      "value": "radius(xsmall) !default",
+      "name": "button-radius"
+    },
+    {
+      "variable": "$button-wide-padding",
+      "value": "em(40px) !default",
+      "name": "button-wide-padding"
+    },
+    {
+      "variable": "$button-disabled-opacity",
+      "value": "0.5 !default",
+      "name": "button-disabled-opacity"
+    },
+    {
+      "variable": "$button-hollow-variant",
+      "value": "neutral !default",
+      "name": "button-hollow-variant"
+    },
+    {
+      "variable": "$button-hollow-border",
+      "value": "1px !default",
+      "name": "button-hollow-border"
+    },
+    {
+      "variable": "$button-hollow-background",
+      "value": "transparent !default",
+      "name": "button-hollow-background"
     }
   ],
   "divider": [
@@ -255,6 +253,35 @@
       "variable": "$divider-badge-radius",
       "value": "radius(circle) !default",
       "name": "divider-badge-radius"
+    }
+  ],
+  "group": [
+    {
+      "variable": "$group-overlap",
+      "value": "-1px !default",
+      "name": "group-overlap"
+    },
+    {
+      "variable": "$group-divider-width",
+      "value": "6px !default",
+      "name": "group-divider-width"
+    },
+    {
+      "variable": "$group-inner-radius",
+      "value": "0 !default",
+      "name": "group-inner-radius"
+    },
+    {
+      "variable": "$group-outer-radius",
+      "value": "radius(xsmall) !default",
+      "name": "group-outer-radius"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
     }
   ],
   "field": [
@@ -282,33 +309,6 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
-    },
-    {
-      "variable": "$field-inline-margin",
-      "value": "1em !default",
-      "name": "field-inline-margin"
-    }
-  ],
-  "group": [
-    {
-      "variable": "$group-overlap",
-      "value": "-1px !default",
-      "name": "group-overlap"
-    },
-    {
-      "variable": "$group-divider-width",
-      "value": "6px !default",
-      "name": "group-divider-width"
-    },
-    {
-      "variable": "$group-inner-radius",
-      "value": "0 !default",
-      "name": "group-inner-radius"
-    },
-    {
-      "variable": "$group-outer-radius",
-      "value": "radius(xsmall) !default",
-      "name": "group-outer-radius"
     }
   ],
   "input": [
@@ -659,16 +659,6 @@
   ],
   "list": [
     {
-      "variable": "$list-spaces",
-      "value": "space(xsmall) !default",
-      "name": "list-spaces"
-    },
-    {
-      "variable": "$list-margins",
-      "value": "space(small) !default",
-      "name": "list-margins"
-    },
-    {
       "variable": "$list-offset",
       "value": "1em !default",
       "name": "list-offset"
@@ -729,11 +719,6 @@
     }
   ],
   "form": [
-    {
-      "variable": "$form-spaces",
-      "value": "em(16px) !default",
-      "name": "form-spaces"
-    },
     {
       "variable": "$form-group-radius",
       "value": "radius(xsmall) !default",

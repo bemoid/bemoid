@@ -26,7 +26,7 @@
     }
   }
 
-  @each $breakpoint, $width in $grid-sizes {
+  @each $breakpoint, $width in $breakpoints {
     @include breakpoint($breakpoint up) {
       @each $size, $declaration in $spaces {
         &--#{$size}\@#{$breakpoint} {

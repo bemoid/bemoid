@@ -59,14 +59,6 @@ $button-hollow-variants: (
     'color': color(black),
     'border-color': color(light-gray) darken(color(light-gray), 5%),
   ),
-  white: (
-    'color': color(white) color(white),
-    'border-color': color(white) color(primary),
-  ),
-  black: (
-    'color': color(black) color(white),
-    'border-color': color(black) darken(color(black), 10%),
-  ),
   primary: (
     'color': color(primary) color(white),
     'border-color': color(primary) darken(color(primary), 10%),
@@ -74,10 +66,6 @@ $button-hollow-variants: (
   secondary: (
     'color': color(secondary) color(white),
     'border-color': color(secondary) darken(color(secondary), 10%),
-  ),
-  complementary: (
-    'color': color(complementary) color(white),
-    'border-color': color(complementary) darken(color(complementary), 10%),
   ),
   success: (
     'color': color(success) color(white),

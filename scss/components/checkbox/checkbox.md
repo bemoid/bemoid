@@ -14,6 +14,14 @@ The checkbox component was created to be used in tandem with a general field com
 
 [[example file=components/checkbox/example/basic.html]]
 
+### Inline
+
+[[example file=components/checkbox/example/inline.html]]
+
+### Sizes
+
+[[example file=components/checkbox/example/sizes.html]]
+
 ## Styleguide
 
 [[styleguide file=components/checkbox/checkbox.scss]]
