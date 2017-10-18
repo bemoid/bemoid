@@ -6,7 +6,7 @@ layout: docs.html
 algolia: true
 ---
 
-Component for stylizing selectable input fields, where user can select multiple choices from a list.
+Component for stylizing selectable input fields, where the user can select multiple choices from a list.
 
 ## Usage
 
@@ -16,9 +16,13 @@ The checkbox component was created to be used in tandem with a general field com
 
 ### Inline
 
+Checkboxes can be presented horizontally by adding `.field--inline` modifier class.
+
 [[example file=components/checkbox/example/inline.html]]
 
 ### Sizes
+
+Checkboxes also respecting a standard sizing controlling with size modifiers.
 
 [[example file=components/checkbox/example/sizes.html]]
 
