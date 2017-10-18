@@ -6,7 +6,7 @@
 //
 // Component for creating choosable field inputs.
 //
-// Markup: radio.html
+// Markup: components/radio/html/radio.html
 //
 // Style guide: Components.Radio
 .radio {
@@ -16,7 +16,7 @@
   //
   // Core element which manages state for label element.
   //
-  // Markup: radio__input.html
+  // Markup: components/radio/html/radio__input.html
   //
   // Style guide: Components.Radio.Input
   &__input {
@@ -35,7 +35,7 @@
   //
   // Custom mark element of radio input.
   //
-  // Markup: radio__label.html
+  // Markup: components/radio/html/radio__label.html
   //
   // Style guide: Components.Radio.Label
   &__label {
