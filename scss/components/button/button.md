@@ -37,6 +37,8 @@ $button-variants: (
 
 Please, pay attention to the double value of a `color` and `background-color` declarations. A first value is applied to button's initial state when a second one to the `:hover` state.
 
+> A default variant of the `.button` can be set with `$button-variant` variable. Enter there keyword name of a variant from the `$button-variants` map (e.g. `$button-variant: colorful;`).
+
 ```scss
 (
   // Button's text will take a `black` color at
@@ -45,12 +47,6 @@ Please, pay attention to the double value of a `color` and `background-color` de
   // ----- :initial ↴  :hover ↴
   'color': color(black) color(white)
 )
-```
-
-A default variant can be set with `$button-variant` variable. Enter there keyword name of the variant from the `$button-variants` map.
-
-```scss
-$button-variant: colorful;
 ```
 
 #### Hollowed
@@ -68,11 +64,12 @@ Need smaller or larger buttons?
 [[example file=components/button/example/sizes.html]]
 
 As ealier, you are free to create as many size you need with map defined in `$button-sizes` variable.
-Don't forget to setup a default size in `$button-size` variable.
+
+> Don't forget to setup a default size in `$button-size` variable. Variant defined in this variable will be used as initial size for `.button` block (e.g. `$button-size: big;`).
 
 ```scss
 $button-sizes: (
-  xsmall: (
+  big: (
     'font-size': em(12px)
   )
 );

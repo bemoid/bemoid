@@ -20,6 +20,26 @@ Of course, dividers adjuses on stacked groups.
 
 [[example file=components/divider/example/stacked.html]]
 
+### Sizes
+
+You can output a various sizes of the badges by using the sizing modifiers.
+
+[[example file=components/divider/example/sizes.html]]
+
+Control produced sizes with a map in the `$divider-badge-sizes` variable.
+
+> Remember to setup a default size of the divider in `$divider-badge-size` variable. It will be used as initial size for `.divider` block (e.g. `$divider-badge-size: big;`).
+
+```scss
+$divider-badge-sizes: (
+  big: (
+    'width': 2rem,
+    'height': 2rem,
+    'font-size': em(16px)
+  )
+);
+```
+
 ## Styleguide
 
 [[styleguide file=components/divider/divider.scss]]
