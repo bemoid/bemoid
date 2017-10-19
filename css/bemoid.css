@@ -501,9 +501,7 @@ h6, .heading--h6 {
 .container {
   display: block;
   width: 100%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 100%; }
   .container--small {
     max-width: 30em; }
   .container--medium {
@@ -514,6 +512,9 @@ h6, .heading--h6 {
     max-width: 70em; }
   .container--xxlarge {
     max-width: 90em; }
+  .container--centered {
+    margin-left: auto;
+    margin-right: auto; }
 
 /** @define grid */
 .grid {
@@ -1701,3 +1702,21 @@ h6, .heading--h6 {
               flex: 0 0 auto;
       width: 100%;
       height: 6px; }
+  @media (max-width: 47.9375em) {
+    .group--stackable {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .group--stackable .group__item:first-child,
+      .group--stackable .group__item:first-child > * {
+        border-radius: 0.25rem 0.25rem 0 0; }
+      .group--stackable .group__item:last-child,
+      .group--stackable .group__item:last-child > * {
+        border-radius: 0 0 0.25rem 0.25rem; }
+      .group--stackable .group__divider {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        width: 100%;
+        height: 6px; } }

@@ -10,6 +10,7 @@
 // .group--tabbed - Makes group items tabbed like bookmarks.
 // .group--expanded - Expands group items to all available space.
 // .group--stacked - Makes group items stacked on each other.
+// .group--stackable - Makes group items stacked on each other on certain breapoint.
 //
 // Markup: group.html
 //
@@ -145,6 +146,38 @@
       flex: 0 0 auto;
       width: 100%;
       height: $group-divider-width;
+    }
+  }
+
+  &--stackable {
+    @include breakpoint($group-stackable down) {
+      flex-direction: column;
+
+      #{$this}__item {
+        &:first-child,
+        &:first-child > * {
+          border-radius:
+            $group-outer-radius
+            $group-outer-radius
+            $group-inner-radius
+            $group-inner-radius;
+        }
+
+        &:last-child,
+        &:last-child > * {
+          border-radius:
+            $group-inner-radius
+            $group-inner-radius
+            $group-outer-radius
+            $group-outer-radius;
+        }
+      }
+
+      #{$this}__divider {
+        flex: 0 0 auto;
+        width: 100%;
+        height: $group-divider-width;
+      }
     }
   }
 }

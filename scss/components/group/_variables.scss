@@ -7,11 +7,6 @@
 /// @type {Number|Value|Values}
 $group-overlap: -1px !default;
 
-/// Width of the group divider.
-///
-/// @type {Number|Value|Values}
-$group-divider-width: 6px !default;
-
 /// Radius value for inner corners of group items.
 ///
 /// @type {Number|Value|Values}
@@ -21,3 +16,13 @@ $group-inner-radius: 0 !default;
 ///
 /// @type {Number|Value|Values}
 $group-outer-radius: radius(xsmall) !default;
+
+/// Breakpoint name under which group items stacks in stackable group.
+///
+/// @type {Keyword}
+$group-stackable: medium !default;
+
+/// Width of the group divider.
+///
+/// @type {Number|Value|Values}
+$group-divider-width: 6px !default;
