@@ -77,6 +77,95 @@
       "name": "headings-line-height"
     }
   ],
+  "blockquote": [
+    {
+      "variable": "$blockquote-margins",
+      "value": "0 !default",
+      "name": "blockquote-margins"
+    },
+    {
+      "variable": "$blockquote-background",
+      "value": "color(lighter-gray) !default",
+      "name": "blockquote-background"
+    },
+    {
+      "variable": "$blockquote-border-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-border-color"
+    },
+    {
+      "variable": "$blockquote-border-width",
+      "value": "0 0 0 em(5px) !default",
+      "name": "blockquote-border-width"
+    },
+    {
+      "variable": "$blockquote-border-style",
+      "value": "solid !default",
+      "name": "blockquote-border-style"
+    },
+    {
+      "variable": "$blockquote-footer-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-footer-color"
+    }
+  ],
+  "checkbox": [
+    {
+      "variable": "$checkbox-radius",
+      "value": "radius(circle) !default",
+      "name": "checkbox-radius"
+    },
+    {
+      "variable": "$checkbox-size",
+      "value": "em(18px) !default",
+      "name": "checkbox-size"
+    },
+    {
+      "variable": "$checkbox-background",
+      "value": "transparent !default",
+      "name": "checkbox-background"
+    },
+    {
+      "variable": "$checkbox-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "checkbox-border"
+    },
+    {
+      "variable": "$checkbox-hover-border",
+      "value": "1px solid color(info) !default",
+      "name": "checkbox-hover-border"
+    },
+    {
+      "variable": "$checkbox-hover-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "checkbox-hover-background"
+    },
+    {
+      "variable": "$checkbox-mark-size",
+      "value": "em(14px) !default",
+      "name": "checkbox-mark-size"
+    },
+    {
+      "variable": "$checkbox-mark-width",
+      "value": "em(2px) !default",
+      "name": "checkbox-mark-width"
+    },
+    {
+      "variable": "$checkbox-mark-color",
+      "value": "color(info) !default",
+      "name": "checkbox-mark-color"
+    },
+    {
+      "variable": "$checkbox-mark-transform",
+      "value": "rotate(-45deg) scale(0) !default",
+      "name": "checkbox-mark-transform"
+    },
+    {
+      "variable": "$checkbox-mark-active-transform",
+      "value": "rotate(-45deg) scale(1) !default",
+      "name": "checkbox-mark-active-transform"
+    }
+  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -144,122 +233,11 @@
       "name": "button-hollow-background"
     }
   ],
-  "blockquote": [
-    {
-      "variable": "$blockquote-margins",
-      "value": "0 !default",
-      "name": "blockquote-margins"
-    },
-    {
-      "variable": "$blockquote-background",
-      "value": "color(lighter-gray) !default",
-      "name": "blockquote-background"
-    },
-    {
-      "variable": "$blockquote-border-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-border-color"
-    },
-    {
-      "variable": "$blockquote-border-width",
-      "value": "0 0 0 em(5px) !default",
-      "name": "blockquote-border-width"
-    },
-    {
-      "variable": "$blockquote-border-style",
-      "value": "solid !default",
-      "name": "blockquote-border-style"
-    },
-    {
-      "variable": "$blockquote-footer-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-footer-color"
-    }
-  ],
   "content": [
     {
       "variable": "$content-spacing",
       "value": "em(16px) !default",
       "name": "content-spacing"
-    }
-  ],
-  "checkbox": [
-    {
-      "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
-      "name": "checkbox-radius"
-    },
-    {
-      "variable": "$checkbox-size",
-      "value": "em(18px) !default",
-      "name": "checkbox-size"
-    },
-    {
-      "variable": "$checkbox-background",
-      "value": "transparent !default",
-      "name": "checkbox-background"
-    },
-    {
-      "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "checkbox-border"
-    },
-    {
-      "variable": "$checkbox-hover-border",
-      "value": "1px solid color(info) !default",
-      "name": "checkbox-hover-border"
-    },
-    {
-      "variable": "$checkbox-hover-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "checkbox-hover-background"
-    },
-    {
-      "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
-      "name": "checkbox-mark-size"
-    },
-    {
-      "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
-      "name": "checkbox-mark-width"
-    },
-    {
-      "variable": "$checkbox-mark-color",
-      "value": "color(info) !default",
-      "name": "checkbox-mark-color"
-    },
-    {
-      "variable": "$checkbox-mark-transform",
-      "value": "rotate(-45deg) scale(0) !default",
-      "name": "checkbox-mark-transform"
-    },
-    {
-      "variable": "$checkbox-mark-active-transform",
-      "value": "rotate(-45deg) scale(1) !default",
-      "name": "checkbox-mark-active-transform"
-    }
-  ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "radius(circle) !default",
-      "name": "divider-badge-radius"
     }
   ],
   "field": [
@@ -287,6 +265,28 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
+    }
+  ],
+  "divider": [
+    {
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
+      "name": "divider-badge-sizes"
+    },
+    {
+      "variable": "$divider-badge-size",
+      "value": "medium !default",
+      "name": "divider-badge-size"
+    },
+    {
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
+    },
+    {
+      "variable": "$divider-badge-radius",
+      "value": "radius(circle) !default",
+      "name": "divider-badge-radius"
     }
   ],
   "group": [
