@@ -22,16 +22,16 @@
   width: 100%;
   max-width: $size;
 
-  @if $container-horizontal-margin {
-    margin-left: $container-horizontal-margin;
-    margin-right: $container-horizontal-margin;
-  }
-
   @each $size, $width in $container-sizes {
     @if $size != $container-size {
       &--#{$size} {
         max-width: $width;
       }
     }
+  }
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
