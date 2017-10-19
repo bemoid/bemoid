@@ -1,21 +1,32 @@
 ---
-title: "Divider"
-group: "Components"
+title: Divider
+description: Component for dividing group elements with space and centered, labeled badge.
+group: Components
+layout: docs.html
+algolia: true
 ---
 
-The Bemoid divider component for dividing group elements with space and centered, labeled badge.
+Component for dividing group of elements with space and centered, labeled badge.
 
 ## Usage
 
-Use `divider` class along with `group__divider` element class. Content of the divider can be precised with `data-text` attribute.
+Use `.divider` class along with `.group__divider` element class.
 
-```html
-<div class="group">
-  <button class="group__item button button--large">Button</button>
-  <div class="group__divider divider" data-text="or"></div>
-  <button class="group__item button button--large">Button</button>
-</div>
-```
+> Note that the content of a divider can be simply precised with `data-text` attribute.
+
+[[example file=components/divider/example/basic.html]]
+
+Of course, dividers adjuses on stacked groups.
+
+[[example file=components/divider/example/stacked.html]]
+
+## Styleguide
+
+[[styleguide file=components/divider/divider.scss]]
+
+## Variables
+
+[[variables file=components/divider/_variables.scss]]
 
 ## Standalone installation
 
