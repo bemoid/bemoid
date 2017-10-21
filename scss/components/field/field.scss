@@ -17,7 +17,7 @@
 // .field--error - Adds error status to the field.
 // .field--info - Adds info status to the field.
 //
-// Markup: field.html
+// Markup: components/field/html/field.html
 //
 // Style guide: Components.Field
 .field {
@@ -29,7 +29,7 @@
   //
   // Element for providing the name of a field input.
   //
-  // Markup: field__label.html
+  // Markup: components/field/html/field__label.html
   //
   // Style guide: Components.Field.Label
   &__label {
@@ -46,7 +46,7 @@
   //
   // Element for typed and selectable inputs (like text, textarea, select).
   //
-  // Markup: field__input.html
+  // Markup: components/field/html/field__input.html
   //
   // Style guide: Components.Field.Input
   &__input {
@@ -59,7 +59,7 @@
   //
   // Element for a checkable inputs (like checkbox, radio).
   //
-  // Markup: field__control.html
+  // Markup: components/field/html/field__control.html
   //
   // Style guide: Components.Field.Control
   &__control {
@@ -74,7 +74,7 @@
   //
   // .field__caption--untouched - Makes caption insensitive to status changes of a field. Description will not change its color.
   //
-  // Markup: field__caption.html
+  // Markup: components/field/html/field__caption.html
   //
   // Style guide: Components.Field.Caption
   &__caption {
