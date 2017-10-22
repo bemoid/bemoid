@@ -30,7 +30,7 @@ Labels should receive a `.field__label` element class and extend the `.label` bl
 
 Use `field__caption` element class to stylize field captions.
 
-> `aria-describedby`
+> Remember about the accessibility of captions, mark you inputs with `aria-describedby` which targets an id attribute of the caption.
 
 [[example file=components/field/example/caption.html]]
 
@@ -50,7 +50,7 @@ Select field need also to include a `.select` block class except of standard `.f
 
 ### Sizing
 
-Fields can take a various sizes. You can control it the the sizing modifiers.
+Fields can take various sizes. You can control it with sizing modifiers.
 
 [[example file=components/field/example/sizes.html]]
 
@@ -100,13 +100,13 @@ Install using NPM:
 $ npm install --save @bemoid/field
 ```
 
-Import component files from the `node_modules` directory.
+Import component file from the `node_modules` directory.
 
 ```scss
 @import 'node_modules/@bemoid/field/field';
 ```
 
-Optionaly import a suggested components.
+Optionally import a suggested components.
 
 ```scss
 @import 'node_modules/@bemoid/input/input';
