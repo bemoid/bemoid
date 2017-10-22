@@ -12,6 +12,12 @@
   "dependencies": {
     "@bemoid/mixins-declarations": "^0.1.0"
   },
+  "optionalDependencies": {
+    "@bemoid/input": "^0.1.0",
+    "@bemoid/radio": "^0.1.0",
+    "@bemoid/select": "^0.1.0",
+    "@bemoid/checkbox": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {
