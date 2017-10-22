@@ -105,14 +105,14 @@ Button also has a special element for presenting a icons.
 
 ## Standalone installation
 
-Install using NPM:
+Install package using NPM.
 
 ```bash
-$ npm install --save @bemoid/button
+$ npm install @bemoid/button
 ```
 
-Import files from the `node_modules` directory:
+Import component file from the `node_modules` directory.
 
 ```scss
-@import '~@bemoid/button/button';
+@import 'node_modules/@bemoid/button/button';
 ```

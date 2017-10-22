@@ -10,7 +10,9 @@
     "divider"
   ],
   "dependencies": {
-    "@bemoid/mixins-declarations": "^0.1.0",
+    "@bemoid/mixins-declarations": "^0.1.0"
+  },
+  "optionalDependencies": {
     "@bemoid/group": "^0.1.0"
   },
   "version": "0.1.0",

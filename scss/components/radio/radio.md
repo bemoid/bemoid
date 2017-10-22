@@ -36,15 +36,20 @@ Radios also respecting a standard sizing controlling with size modifiers.
 
 ## Standalone installation
 
-Install using NPM:
+Install package using NPM.
 
 ```bash
-$ npm install --save @bemoid/radio
+$ npm install @bemoid/radio
 ```
 
-Import files from the `node_modules` directory:
+Import component file from the `node_modules` directory.
 
 ```scss
-@import '~@bemoid/field/field';
-@import '~@bemoid/radio/radio';
+@import 'node_modules/@bemoid/radio/radio';
+```
+
+Optionally, import a suggested components.
+
+```scss
+@import 'node_modules/@bemoid/field/field';
 ```

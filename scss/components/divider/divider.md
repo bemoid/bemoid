@@ -50,15 +50,20 @@ $divider-badge-sizes: (
 
 ## Standalone installation
 
-Install using NPM:
+Install package using NPM.
 
 ```bash
-$ npm install --save @bemoid/divider
+$ npm install @bemoid/divider
 ```
 
-Import required files from the `node_modules` directory:
+Import component file from the `node_modules` directory.
 
 ```scss
-@import '~@bemoid/group/group';
-@import '~@bemoid/divider/divider';
+@import 'node_modules/@bemoid/divider/divider';
+```
+
+Optionally, import a suggested components.
+
+```scss
+@import 'node_modules/@bemoid/group/group';
 ```

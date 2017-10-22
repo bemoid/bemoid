@@ -94,10 +94,10 @@ $field-variants: (
 
 ## Standalone installation
 
-Install using NPM:
+Install package using NPM.
 
 ```bash
-$ npm install --save @bemoid/field
+$ npm install @bemoid/field
 ```
 
 Import component file from the `node_modules` directory.
@@ -106,7 +106,7 @@ Import component file from the `node_modules` directory.
 @import 'node_modules/@bemoid/field/field';
 ```
 
-Optionally import a suggested components.
+Optionally, import a suggested components.
 
 ```scss
 @import 'node_modules/@bemoid/input/input';
