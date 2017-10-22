@@ -30,6 +30,8 @@ Labels should receive a `.field__label` element class and extend the `.label` bl
 
 Use `field__caption` element class to stylize field captions.
 
+> `aria-describedby`
+
 [[example file=components/field/example/caption.html]]
 
 #### Checkboxes and radios
@@ -67,6 +69,21 @@ $field-sizes: (
 
 ### Validation statuses
 
+Fields may also obtain a validation statuses with modifier classes. Use together with captions to provide valuable feedback messages about form's errors to your users.
+
+[[example file=components/field/example/statuses.html]]
+
+Statuses styles can be controlled with a map in the `$field-variants` variable.
+
+```scss
+$field-variants: (
+  success: (
+    'color': color(success),
+    'border-color': color(success),
+  )
+)
+```
+
 ## Styleguide
 
 [[styleguide file=components/field/field.scss]]
@@ -83,13 +100,17 @@ Install using NPM:
 $ npm install --save @bemoid/field
 ```
 
-Import required files from the `node_modules` directory:
+Import component files from the `node_modules` directory.
 
 ```scss
-@import '~@bemoid/input/input';
-@import '~@bemoid/radio/radio';
-@import '~@bemoid/select/select';
-@import '~@bemoid/checkbox/checkbox';
+@import 'node_modules/@bemoid/field/field';
+```
 
-@import '~@bemoid/field/field';
+Optionaly import a suggested components.
+
+```scss
+@import 'node_modules/@bemoid/input/input';
+@import 'node_modules/@bemoid/radio/radio';
+@import 'node_modules/@bemoid/select/select';
+@import 'node_modules/@bemoid/checkbox/checkbox';
 ```
