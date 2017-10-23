@@ -1460,74 +1460,74 @@ h6, .heading--h6 {
         color: #fff; }
     .button--error .button__cover {
       color: #fff; }
-  .button--hollow {
+  .button--hollowed {
     color: #171C1F;
     border-color: #d7dfe6;
     border-width: 1px;
     border-style: solid;
     background-color: transparent; }
-    .button--hollow:hover, .button--hollow:focus, .button--hollow:active {
+    .button--hollowed:hover, .button--hollowed:focus, .button--hollowed:active {
       color: #171C1F;
       border-color: #c7d2dc; }
-    .button--hollow.button--primary {
+    .button--hollowed.button--primary {
       color: #6c3fce;
       border-color: #6c3fce; }
-      .button--hollow.button--primary:hover, .button--hollow.button--primary:focus, .button--hollow.button--primary:active {
+      .button--hollowed.button--primary:hover, .button--hollowed.button--primary:focus, .button--hollowed.button--primary:active {
         color: #fff;
         border-color: #552cae; }
-        .button--hollow.button--primary:hover .button__cover, .button--hollow.button--primary:focus .button__cover, .button--hollow.button--primary:active .button__cover {
+        .button--hollowed.button--primary:hover .button__cover, .button--hollowed.button--primary:focus .button__cover, .button--hollowed.button--primary:active .button__cover {
           color: #fff; }
-      .button--hollow.button--primary .button__cover {
+      .button--hollowed.button--primary .button__cover {
         color: #6c3fce; }
-    .button--hollow.button--secondary {
+    .button--hollowed.button--secondary {
       color: #543793;
       border-color: #543793; }
-      .button--hollow.button--secondary:hover, .button--hollow.button--secondary:focus, .button--hollow.button--secondary:active {
+      .button--hollowed.button--secondary:hover, .button--hollowed.button--secondary:focus, .button--hollowed.button--secondary:active {
         color: #fff;
         border-color: #3f296e; }
-        .button--hollow.button--secondary:hover .button__cover, .button--hollow.button--secondary:focus .button__cover, .button--hollow.button--secondary:active .button__cover {
+        .button--hollowed.button--secondary:hover .button__cover, .button--hollowed.button--secondary:focus .button__cover, .button--hollowed.button--secondary:active .button__cover {
           color: #fff; }
-      .button--hollow.button--secondary .button__cover {
+      .button--hollowed.button--secondary .button__cover {
         color: #543793; }
-    .button--hollow.button--success {
+    .button--hollowed.button--success {
       color: #26c65e;
       border-color: #26c65e; }
-      .button--hollow.button--success:hover, .button--hollow.button--success:focus, .button--hollow.button--success:active {
+      .button--hollowed.button--success:hover, .button--hollowed.button--success:focus, .button--hollowed.button--success:active {
         color: #fff;
         border-color: #1e9b4a; }
-        .button--hollow.button--success:hover .button__cover, .button--hollow.button--success:focus .button__cover, .button--hollow.button--success:active .button__cover {
+        .button--hollowed.button--success:hover .button__cover, .button--hollowed.button--success:focus .button__cover, .button--hollowed.button--success:active .button__cover {
           color: #fff; }
-      .button--hollow.button--success .button__cover {
+      .button--hollowed.button--success .button__cover {
         color: #26c65e; }
-    .button--hollow.button--warning {
+    .button--hollowed.button--warning {
       color: #ffde66;
       border-color: #ffde66; }
-      .button--hollow.button--warning:hover, .button--hollow.button--warning:focus, .button--hollow.button--warning:active {
+      .button--hollowed.button--warning:hover, .button--hollowed.button--warning:focus, .button--hollowed.button--warning:active {
         color: #171C1F;
         border-color: #ffd333; }
-        .button--hollow.button--warning:hover .button__cover, .button--hollow.button--warning:focus .button__cover, .button--hollow.button--warning:active .button__cover {
+        .button--hollowed.button--warning:hover .button__cover, .button--hollowed.button--warning:focus .button__cover, .button--hollowed.button--warning:active .button__cover {
           color: #171C1F; }
-      .button--hollow.button--warning .button__cover {
+      .button--hollowed.button--warning .button__cover {
         color: #ffde66; }
-    .button--hollow.button--info {
+    .button--hollowed.button--info {
       color: #3273dc;
       border-color: #3273dc; }
-      .button--hollow.button--info:hover, .button--hollow.button--info:focus, .button--hollow.button--info:active {
+      .button--hollowed.button--info:hover, .button--hollowed.button--info:focus, .button--hollowed.button--info:active {
         color: #fff;
         border-color: #205bbb; }
-        .button--hollow.button--info:hover .button__cover, .button--hollow.button--info:focus .button__cover, .button--hollow.button--info:active .button__cover {
+        .button--hollowed.button--info:hover .button__cover, .button--hollowed.button--info:focus .button__cover, .button--hollowed.button--info:active .button__cover {
           color: #fff; }
-      .button--hollow.button--info .button__cover {
+      .button--hollowed.button--info .button__cover {
         color: #3273dc; }
-    .button--hollow.button--error {
+    .button--hollowed.button--error {
       color: #ec3953;
       border-color: #ec3953; }
-      .button--hollow.button--error:hover, .button--hollow.button--error:focus, .button--hollow.button--error:active {
+      .button--hollowed.button--error:hover, .button--hollowed.button--error:focus, .button--hollowed.button--error:active {
         color: #fff;
         border-color: #dd1532; }
-        .button--hollow.button--error:hover .button__cover, .button--hollow.button--error:focus .button__cover, .button--hollow.button--error:active .button__cover {
+        .button--hollowed.button--error:hover .button__cover, .button--hollowed.button--error:focus .button__cover, .button--hollowed.button--error:active .button__cover {
           color: #fff; }
-      .button--hollow.button--error .button__cover {
+      .button--hollowed.button--error .button__cover {
         color: #ec3953; }
   .button--wide {
     padding-left: 2.5em;

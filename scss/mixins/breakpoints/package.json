@@ -10,7 +10,8 @@
     "mixins"
   ],
   "dependencies": {
-    "@bemoid/variables": "^0.1.0"
+    "@bemoid/variables": "^0.1.0",
+    "@bemoid/functions-getters": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",

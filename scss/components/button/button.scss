@@ -19,13 +19,13 @@
 // .button--warning - Warning variant of a button.
 // .button--info - Info variant of a button.
 // .button--error - Error variant of a button.
-// .button--hollow - Hollowed variant of a button. Makes button background transparent.
-// .button--hollow.button--primary - Primary variant of a hollowed button.
-// .button--hollow.button--secondary - Secondary variant of a hollowed button.
-// .button--hollow.button--success - Success variant of a hollowed button.
-// .button--hollow.button--warning - Warning variant of a hollowed button.
-// .button--hollow.button--info - Info variant of a hollowed button.
-// .button--hollow.button--error - Error variant of a hollowed button.
+// .button--hollowed - Hollowed variant of a button. Makes button background transparent.
+// .button--hollowed.button--primary - Primary variant of a hollowed button.
+// .button--hollowed.button--secondary - Secondary variant of a hollowed button.
+// .button--hollowed.button--success - Success variant of a hollowed button.
+// .button--hollowed.button--warning - Warning variant of a hollowed button.
+// .button--hollowed.button--info - Info variant of a hollowed button.
+// .button--hollowed.button--error - Error variant of a hollowed button.
 //
 // Markup: components/button/html/button.html
 //
@@ -50,7 +50,7 @@
   font-weight: $button-weight;
   text-align: $button-align;
   border-radius: $button-radius;
-  border: $button-hollow-border solid transparent;
+  border: $button-hollowed-border solid transparent;
 
   &:hover,
   &:focus,
@@ -127,14 +127,14 @@
     }
   }
 
-  &--hollow {
-    $variant: map-get($button-hollow-variants, $button-hollow-variant);
+  &--hollowed {
+    $variant: map-get($button-hollowed-variants, $button-hollowed-variant);
 
     @include declarations-mutable($variant);
 
-    border-width: $button-hollow-border;
+    border-width: $button-hollowed-border;
     border-style: solid;
-    background-color: $button-hollow-background;
+    background-color: $button-hollowed-background;
 
     &:hover,
     &:focus,
@@ -142,8 +142,8 @@
       @include declarations-mutable($variant, true);
     }
 
-    @each $variant, $declarations in $button-hollow-variants {
-      @if $variant != $button-hollow-variant {
+    @each $variant, $declarations in $button-hollowed-variants {
+      @if $variant != $button-hollowed-variant {
         &#{$this}--#{$variant} {
           $color: map-get($declarations, 'color');
 

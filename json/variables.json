@@ -109,6 +109,73 @@
       "name": "blockquote-footer-color"
     }
   ],
+  "button": [
+    {
+      "variable": "$button-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-variants"
+    },
+    {
+      "variable": "$button-hollowed-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-hollowed-variants"
+    },
+    {
+      "variable": "$button-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "name": "button-sizes"
+    },
+    {
+      "variable": "$button-size",
+      "value": "medium !default",
+      "name": "button-size"
+    },
+    {
+      "variable": "$button-variant",
+      "value": "neutral !default",
+      "name": "button-variant"
+    },
+    {
+      "variable": "$button-weight",
+      "value": "400 !default",
+      "name": "button-weight"
+    },
+    {
+      "variable": "$button-align",
+      "value": "center !default",
+      "name": "button-align"
+    },
+    {
+      "variable": "$button-radius",
+      "value": "radius(xsmall) !default",
+      "name": "button-radius"
+    },
+    {
+      "variable": "$button-wide-padding",
+      "value": "em(40px) !default",
+      "name": "button-wide-padding"
+    },
+    {
+      "variable": "$button-disabled-opacity",
+      "value": "0.5 !default",
+      "name": "button-disabled-opacity"
+    },
+    {
+      "variable": "$button-hollowed-variant",
+      "value": "neutral !default",
+      "name": "button-hollowed-variant"
+    },
+    {
+      "variable": "$button-hollowed-border",
+      "value": "1px !default",
+      "name": "button-hollowed-border"
+    },
+    {
+      "variable": "$button-hollowed-background",
+      "value": "transparent !default",
+      "name": "button-hollowed-background"
+    }
+  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -166,78 +233,33 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "button": [
-    {
-      "variable": "$button-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-variants"
-    },
-    {
-      "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-hollow-variants"
-    },
-    {
-      "variable": "$button-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "button-sizes"
-    },
-    {
-      "variable": "$button-size",
-      "value": "medium !default",
-      "name": "button-size"
-    },
-    {
-      "variable": "$button-variant",
-      "value": "neutral !default",
-      "name": "button-variant"
-    },
-    {
-      "variable": "$button-weight",
-      "value": "400 !default",
-      "name": "button-weight"
-    },
-    {
-      "variable": "$button-align",
-      "value": "center !default",
-      "name": "button-align"
-    },
-    {
-      "variable": "$button-radius",
-      "value": "radius(xsmall) !default",
-      "name": "button-radius"
-    },
-    {
-      "variable": "$button-wide-padding",
-      "value": "em(40px) !default",
-      "name": "button-wide-padding"
-    },
-    {
-      "variable": "$button-disabled-opacity",
-      "value": "0.5 !default",
-      "name": "button-disabled-opacity"
-    },
-    {
-      "variable": "$button-hollow-variant",
-      "value": "neutral !default",
-      "name": "button-hollow-variant"
-    },
-    {
-      "variable": "$button-hollow-border",
-      "value": "1px !default",
-      "name": "button-hollow-border"
-    },
-    {
-      "variable": "$button-hollow-background",
-      "value": "transparent !default",
-      "name": "button-hollow-background"
-    }
-  ],
   "content": [
     {
       "variable": "$content-spacing",
       "value": "em(16px) !default",
       "name": "content-spacing"
+    }
+  ],
+  "divider": [
+    {
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
+      "name": "divider-badge-sizes"
+    },
+    {
+      "variable": "$divider-badge-size",
+      "value": "medium !default",
+      "name": "divider-badge-size"
+    },
+    {
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
+    },
+    {
+      "variable": "$divider-badge-radius",
+      "value": "radius(circle) !default",
+      "name": "divider-badge-radius"
     }
   ],
   "field": [
@@ -265,28 +287,6 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
-    }
-  ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "radius(circle) !default",
-      "name": "divider-badge-radius"
     }
   ],
   "group": [
@@ -657,13 +657,6 @@
       "name": "image-radius-circular"
     }
   ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
-    }
-  ],
   "table": [
     {
       "variable": "$table-padding",
@@ -704,6 +697,13 @@
       "variable": "$table-hoverable-background",
       "value": "color(lighter-gray) !default",
       "name": "table-hoverable-background"
+    }
+  ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
     }
   ],
   "figure": [

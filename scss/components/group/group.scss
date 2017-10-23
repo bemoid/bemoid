@@ -12,7 +12,7 @@
 // .group--stacked - Makes group items stacked on each other.
 // .group--stackable - Makes group items stacked on each other on certain breapoint.
 //
-// Markup: group.html
+// Markup: components/group/html/group.html
 //
 // Style guide: Components.Group
 .group {
@@ -24,7 +24,7 @@
   //
   // Element of the group block to determine components for grouping.
   //
-  // Markup: group__item.html
+  // Markup: components/group/html/group__item.html
   //
   // Style guide: Components.Group.Item
   &__item {
@@ -71,7 +71,7 @@
   //
   // Element of group component which separates group items. Espacially to use with `Divider` component.
   //
-  // Markup: group__divider.html
+  // Markup: components/group/html/group__divider.html
   //
   // Style guide: Components.Group.Divider
   &__divider {
