@@ -7,9 +7,9 @@ The Bemoid group component for grouping together the other components into a sin
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/group
+$ npm install @bemoid/group
 ```
 
 ## Documentation
 
-The component documentation can be found [here](group.md).
+The component documentation can be found [here](//bemoid.org/docs/group).

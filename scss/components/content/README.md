@@ -7,9 +7,9 @@ The Bemoid content component for styling generic HTML tags where you cannot use 
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/content
+$ npm install @bemoid/content
 ```
 
 ## Documentation
 
-The component documentation can be found [here](content.md).
+The component documentation can be found [here](//bemoid.org/docs/content).

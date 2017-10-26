@@ -7,9 +7,9 @@ The Bemoid blockquote component for defining a block of text that is a direct qu
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/blockquote
+$ npm install @bemoid/blockquote
 ```
 
 ## Documentation
 
-The component documentation can be found [here](blockquote.md) file.
+The component documentation can be found [here](//bemoid.org/docs/blockquote).

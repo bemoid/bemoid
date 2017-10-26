@@ -7,9 +7,9 @@ The Bemoid button component for creating standard clickable buttons.
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/button
+$ npm install @bemoid/button
 ```
 
 ## Documentation
 
-The component documentation can be found [here](button.md) file.
+The component documentation can be found [here](//bemoid.org/docs/button).

@@ -7,9 +7,9 @@ The Bemoid checkbox component for selectable input fields.
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/checkbox
+$ npm install @bemoid/checkbox
 ```
 
 ## Documentation
 
-The component documentation can be found [here](checkbox.md).
+The component documentation can be found [here](//bemoid.org/docs/checkbox).

@@ -7,9 +7,9 @@ The Bemoid field component for creating various form fields.
 Install using NPM:
 
 ```bash
-$ npm install --save @bemoid/field
+$ npm install @bemoid/field
 ```
 
 ## Documentation
 
-The component documentation can be found [here](field.md).
+The component documentation can be found [here](//bemoid.org/docs/field).
