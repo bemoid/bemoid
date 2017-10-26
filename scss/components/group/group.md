@@ -56,8 +56,10 @@ Install package using NPM.
 $ npm install @bemoid/group
 ```
 
-Import component file from the `node_modules` directory.
+Import required mixins along with a component file from the `node_modules` directory.
 
 ```scss
+@import 'node_modules/@bemoid/mixins-breakpoints/breakpoints';
+
 @import 'node_modules/@bemoid/group/group';
 ```

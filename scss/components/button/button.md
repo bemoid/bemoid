@@ -111,8 +111,10 @@ Install package using NPM.
 $ npm install @bemoid/button
 ```
 
-Import component file from the `node_modules` directory.
+Import required mixins along with a component file from the `node_modules` directory.
 
 ```scss
+@import 'node_modules/@bemoid/mixins-declarations/declarations';
+
 @import 'node_modules/@bemoid/button/button';
 ```
