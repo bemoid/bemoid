@@ -34,7 +34,7 @@ You can also tell a group to stack its items on top of each other with the `.gro
 
 [[example file=components/group/example/stacked.html]]
 
-There is also a `.group--stackable` modifier class with which the group's items may intrinsically move to stacked state on a specific breakpoint.
+There is also a `.group--stackable` modifier class with which the group's items intrinsically move to stacked state on a specific breakpoint.
 
 > The breakpoint behind which elements have to stack can be setup with `$group-stackable` variable.
 
