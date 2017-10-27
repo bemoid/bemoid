@@ -1,6 +1,6 @@
 # Checkbox
 
-The Bemoid checkbox component for selectable input fields.
+Component for selectable input fields.
 
 ## Installation
 

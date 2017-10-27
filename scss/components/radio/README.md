@@ -1,6 +1,6 @@
 # Input
 
-The Bemoid radio component for stylizing choosable field inputs, where the user can choose one of multiple choices from a list.
+Component for stylizing choosable field inputs, where the user can choose one of multiple choices from a list.
 
 ## Installation
 

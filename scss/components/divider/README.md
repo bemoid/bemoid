@@ -1,6 +1,6 @@
 # Divider
 
-The Bemoid divider component for dividing group elements with space and centered, labeled badge.
+Component for dividing group elements with space and centered, labeled badge.
 
 ## Installation
 

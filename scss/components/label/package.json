@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/label",
-  "description": "The Bemoid Label component.",
+  "description": "Label component for providing an appearance for field labels",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "label.scss",

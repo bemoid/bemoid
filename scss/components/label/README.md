@@ -1,6 +1,6 @@
 # Input
 
-The Bemoid label component for providing an appearance for field labels.
+Component for providing an appearance for field labels.
 
 ## Installation
 

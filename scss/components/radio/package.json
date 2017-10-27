@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/radio",
-  "description": "The Bemoid Radio component.",
+  "description": "Radio component for stylizing choosable field inputs, where the user can choose one of multiple choices from a list",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "radio.scss",

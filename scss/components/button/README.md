@@ -1,6 +1,6 @@
 # Button
 
-The Bemoid button component for creating standard clickable buttons.
+Component for creating standard clickable buttons.
 
 ## Installation
 

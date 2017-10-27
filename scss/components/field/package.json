@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/field",
-  "description": "The Bemoid Field component.",
+  "description": "Field component for creating various form fields",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "field.scss",

@@ -1,6 +1,6 @@
 # Input
 
-The Bemoid input component for providing a visual look to the field inputs.
+Component for providing a visual look to the field inputs.
 
 ## Installation
 

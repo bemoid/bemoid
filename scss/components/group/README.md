@@ -1,6 +1,6 @@
 # Group
 
-The Bemoid group component for grouping together the other components into a single interface.
+Component for grouping together the other components into a single interface.
 
 ## Installation
 

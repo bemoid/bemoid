@@ -1,6 +1,6 @@
 # Field
 
-The Bemoid field component for creating various form fields.
+Component for creating various form fields.
 
 ## Installation
 

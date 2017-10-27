@@ -1,6 +1,6 @@
 # Blockquote
 
-The Bemoid blockquote component for defining a block of text that is a direct quotation.
+Component for defining a block of text that is a direct quotation.
 
 ## Installation
 
