@@ -657,6 +657,13 @@
       "name": "image-radius-circular"
     }
   ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
   "table": [
     {
       "variable": "$table-padding",
@@ -697,13 +704,6 @@
       "variable": "$table-hoverable-background",
       "value": "color(lighter-gray) !default",
       "name": "table-hoverable-background"
-    }
-  ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
     }
   ],
   "figure": [

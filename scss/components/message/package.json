@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/message",
-  "description": "The Bemoid Message component.",
+  "description": "Component for displaying emphasized text informations.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "message.scss",
@@ -9,6 +9,12 @@
     "sass",
     "message"
   ],
+  "dependencies": {
+    "@bemoid/mixins-declarations": "^0.1.0"
+  },
+  "optionalDependencies": {
+    "@bemoid/segment": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {
