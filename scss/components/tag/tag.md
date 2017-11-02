@@ -1,12 +1,12 @@
 ---
 title: Tag
-description: Small inline components for creating labelized markers.
+description: Small inline components for creating labeled markers.
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Small inline components for creating labelized markers.
+Small inline components for creating labeled markers.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Use `.tag` block class and surround its text in a `.tag__body` element class.
 
 ### Image
 
-Tags can also hold images with `.tag__image` element class. It's recommended to additionaly extend a image component.
+Tags can also hold images with `.tag__image` element class. It's recommended to additionally extend an image component.
 
 [[example file=components/tag/example/image.html]]
 

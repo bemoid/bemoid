@@ -1,12 +1,12 @@
 ---
 title: Message
-description: Component for displaying emphasized text informations.
+description: Component for displaying emphasized text information.
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for displaying emphasized text informations. Handy for catching user attention on important information.
+Component for displaying emphasized text information. Handy for catching user attention on important information.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Enclose your message text in a `.message` block class.
 
 ### Title
 
-Messages may have alse a title. Use the `.message__title` element class.
+Messages may have also a title. Use the `.message__title` element class.
 
 [[example file=components/message/example/titled.html]]
 

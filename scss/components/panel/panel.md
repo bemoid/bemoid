@@ -1,16 +1,16 @@
 ---
 title: Panel
-description: Component for displaying emphasized text informations.
+description: Encloses content in visualy separated sections.
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for displaying emphasized text informations. Handy for catching user attention on important information.
+Encloses content in visualy separated sections. Helpful for drawing clearly separated blocks of content.
 
 ## Usage
 
-Panel content have to be divided into segments. Each section should receive `.panel__segment` element class.
+Panel content has to be divided into segments. Each section should receive `.panel__segment` element class.
 
 [[example file=components/panel/example/basic.html]]
 
@@ -18,13 +18,13 @@ If your you can make panel scrollable with `panel--scrollable` modifier class.
 
 [[example file=components/panel/example/scrollable.html]]
 
-Of course, there is equivalent of these modifier for a single panel's segment.
+Of course, there is equivalent of this modifier for a single panel's segment.
 
 [[example file=components/panel/example/scrollable-segment.html]]
 
 ### Sizes
 
-Control padding of a panel sections with the [segment]() component and its modifiers.
+Control padding of panel sections with the [segment]() component and its modifiers.
 
 [[example file=components/panel/example/sizes.html]]
 

@@ -6,23 +6,23 @@ layout: docs.html
 algolia: true
 ---
 
-Component for dividing group of elements with space and centered, labeled badge.
+Component for dividing a group of elements with space and centered labeled badge.
 
 ## Usage
 
 Use `.divider` class along with `.group__divider` element class.
 
-> Note that the content of a divider can be simply precised with `data-text` attribute.
+> Note that the content of a divider can be simply specified with `data-text` attribute.
 
 [[example file=components/divider/example/basic.html]]
 
-Of course, dividers adjuses on stacked groups.
+Of course, dividers adjust on stacked groups.
 
 [[example file=components/divider/example/stacked.html]]
 
 ### Sizes
 
-You can output a various sizes of the badges by using the sizing modifiers.
+You can output various sizes of the badges by using the sizing modifiers.
 
 [[example file=components/divider/example/sizes.html]]
 

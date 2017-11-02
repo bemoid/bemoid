@@ -63,7 +63,7 @@ Need smaller or larger buttons?
 
 [[example file=components/button/example/sizes.html]]
 
-As ealier, you are free to create as many size you need with map defined in `$button-sizes` variable.
+As earlier, you are free to create as many sizes you need with map defined in `$button-sizes` variable.
 
 > Don't forget to setup a default size in `$button-size` variable. Variant defined in this variable will be used as initial size for `.button` block (e.g. `$button-size: big;`).
 
@@ -75,7 +75,7 @@ $button-sizes: (
 );
 ```
 
-Additionaly there are two modifers to control horizontal expanding of button. Enlarge horizontal paddings with `.button--wider` modifier or add `.button--expanded` to make a button take full width of a parent.
+Additionally, there are two modifiers to control horizontal expanding of the button. Enlarge horizontal paddings with `.button--wider` modifier or add `.button--expanded` to make a button take the full width of a parent.
 
 [[example file=components/button/example/behaviours.html]]
 
@@ -91,7 +91,7 @@ Want to achieve the same effect, but only on user `:hover` action? Switch to a `
 
 ### Icons
 
-Button also has a special element for presenting a icons.
+Button also has a special element for presenting icons.
 
 [[example file=components/button/example/icon.html]]
 

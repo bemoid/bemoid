@@ -1,6 +1,6 @@
 ---
 title: Message
-description: Component for displaying emphasized text informations.
+description: Component for creating selectable field inputs.
 group: Components
 layout: docs.html
 algolia: true
