@@ -14,6 +14,7 @@
 // .grid--bottom    - Aligns grid columns verically to the bottom.
 // .grid--stretch   - Stretches grid columns to the euqal height.
 // .grid--gapless   - Removes grid gutters.
+// .grid--waffled   - Adds gutter on all sides of grid columns.
 // .grid--reversed  - Reverses order of grid columns.
 // .grid--stacked   - Changes grid columns direction from horizontal to vartical.
 // .grid--stackable - Makes grid columns to stack on specified breakpoint defined in `$grid-stackable` variable.
@@ -167,6 +168,22 @@
     & > #{$this}__column {
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+
+  &--waffled {
+    @each $breakpoint, $width in $grid-gutters {
+      @include breakpoint($breakpoint up) {
+        padding: $width / 2;
+      }
+    }
+
+    #{$this}__column {
+      @each $breakpoint, $width in $grid-gutters {
+        @include breakpoint($breakpoint up) {
+          padding: $width / 2;
+        }
+      }
     }
   }
 }
