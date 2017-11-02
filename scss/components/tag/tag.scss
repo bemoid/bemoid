@@ -8,7 +8,7 @@
 //
 // .tag--pilled - Tag variant with large border radius.
 //
-// Markup: tag.html
+// Markup: components/tag/html/tag.html
 //
 // Style guide: Components.Tag
 .tag {
@@ -36,7 +36,7 @@
   //
   // Image element of the tag component. Seamlessly adapts to the size of the marker.
   //
-  // Markup: tag__image.html
+  // Markup: components/tag/html/tag__image.html
   //
   // Style guide: Components.Tag.Image
   &__image {
@@ -49,7 +49,7 @@
   //
   // Body element of the tag component. Holds text of the marker.
   //
-  // Markup: tag__body.html
+  // Markup: components/tag/html/tag__body.html
   //
   // Style guide: Components.Tag.Body
   &__body {
