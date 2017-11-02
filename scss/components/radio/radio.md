@@ -10,7 +10,7 @@ Component for stylizing choosable field inputs, where the user can choose one of
 
 ## Usage
 
-The radio component was created to be used in tandem with a general field component. The `.radio` block should extend it's `.field__control` element.
+The radio component was created to be used in tandem with a general field component. The `.radio` block should extend its `.field__control` element.
 
 [[example file=components/radio/example/basic.html]]
 

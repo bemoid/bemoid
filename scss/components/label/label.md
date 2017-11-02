@@ -1,7 +1,7 @@
 ---
 title: Label
 description: Provides an appearance for field labels.
-label: Components
+group: Components
 layout: docs.html
 algolia: true
 ---

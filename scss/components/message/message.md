@@ -1,7 +1,7 @@
 ---
 title: Message
 description: Component for displaying emphasized text informations.
-message: Components
+group: Components
 layout: docs.html
 algolia: true
 ---

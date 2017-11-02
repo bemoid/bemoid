@@ -1,7 +1,7 @@
 ---
 title: Input
 description: Provides a visual look to the field inputs.
-input: Components
+group: Components
 layout: docs.html
 algolia: true
 ---
