@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/panel",
-  "description": "The Bemoid Dropdown component.",
+  "description": "The Bemoid Panel component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "panel.scss",
@@ -9,6 +9,9 @@
     "sass",
     "panel"
   ],
+  "optionalDependencies": {
+    "@bemoid/segment": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {
