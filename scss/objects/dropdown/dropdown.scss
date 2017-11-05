@@ -10,7 +10,7 @@
 // .dropdown--right     - Aligns dropdown content to the right.
 // .dropdown--hoverable - Triggers dropdown on mouse hover event.
 //
-// Markup: dropdown.html
+// Markup: components/dropdown/html/dropdown.html
 //
 // Style guide: Objects.Dropdown
 .dropdown {
@@ -25,7 +25,7 @@
   //
   // .dropdown__content--gapless - Removes space between dropdown trigger and content.
   //
-  // Markup: dropdown__content.html
+  // Markup: components/dropdown/html/dropdown__content.html
   //
   // Style guide: Components.Dropdown.Content
   &__content {
@@ -41,7 +41,7 @@
   //
   // Panel element of the dropdown component. Holds content of the dropdown.
   //
-  // Markup: dropdown__panel.html
+  // Markup: components/dropdown/html/dropdown__panel.html
   //
   // Style guide: Components.Dropdown.Panel
   &__panel {

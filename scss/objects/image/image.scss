@@ -12,10 +12,8 @@
 // .image--top         - Aligns image verticaly to the top.
 // .image--middle      - Aligns image verticaly to the middle.
 // .image--bottom      - Aligns image verticaly to the bottom.
-// .image--text-top    - Aligns image verticaly to the top of a text.
-// .image--text-bottom - Aligns image verticaly to the bottom of a text.
 //
-// Markup: image.html
+// Markup: components/image/html/image.html
 //
 // Style guide: Objects.Image
 .image {
@@ -45,13 +43,5 @@
 
   &--bottom {
     vertical-align: bottom;
-  }
-
-  &--text-top {
-    vertical-align: text-top;
-  }
-
-  &--text-bottom {
-    vertical-align: text-bottom;
   }
 }
