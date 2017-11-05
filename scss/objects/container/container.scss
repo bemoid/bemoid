@@ -4,7 +4,7 @@
 
 // Container
 //
-// General element to be used as wrapper for other components. Its purpose is to limit the spreading of internal components to a certain width. By default, always expands to all available space (full width).
+// General element to be used as wrapper for other components. Its purpose is to limit the spreading of internal components to a certain width.
 //
 // .container--small    - Small width. Extends up to `small` breakpoint.
 // .container--medium   - Medium width. Extends up to `medium` breakpoint.
@@ -13,7 +13,7 @@
 // .container--xxlarge  - Xxlarge width. Extends up to `xxlarge` breakpoint.
 // .container--centered - Centers container horizontally.
 //
-// Markup: container.html
+// Markup: components/container/html/container.html
 //
 // Style guide: Objects.Container
 .container {
