@@ -1,7 +1,7 @@
 ---
 title: Container
 description: Component for limiting spreading of the internal components to a certain width.
-group: Components
+group: Objects
 layout: docs.html
 algolia: true
 ---
