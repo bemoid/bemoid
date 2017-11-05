@@ -1687,9 +1687,9 @@ h6, .heading--h6 {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-  .group--overlaped > * + * {
+  .group--overlapped > * + * {
     margin-left: -1px; }
-  .group--overlaped.group--stacked > * + * {
+  .group--overlapped.group--stacked > * + * {
     margin-left: 0;
     margin-top: -1px; }
   .group--expanded {
