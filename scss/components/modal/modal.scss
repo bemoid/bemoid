@@ -4,7 +4,7 @@
 
 // Modal
 //
-// Component for large dialog prompts which temporary covers entire viewport. Useful for displaying content whitch user should focus on.
+// Component for large dialog prompts which temporary covers entire viewport. Useful for displaying content which user should focus on.
 //
 // .container--small   - Limits modal width to small size.
 // .container--medium  - Limits modal width to medium size.
@@ -12,7 +12,7 @@
 // .container--xlarge  - Limits modal width to xlarge size.
 // .container--xxlarge - Limits modal width to xxlarge size.
 //
-// Markup: modal.html
+// Markup: components/modal/html/modal.html
 //
 // Style guide: Components.Modal
 .modal {
@@ -28,10 +28,22 @@
   //
   // Panel of the modal. Holds modal content.
   //
-  // Markup: modal__panel.html
+  // Markup: components/modal/html/modal__panel.html
   //
   // Style guide: Components.Modal.Panel
   &__panel {
     border: $modal-border;
+    // TODO: z-indexing
+  }
+
+  // Modal Overlay
+  //
+  // Overlay underneath a modal. It cuts out modal panel from the contents below.
+  //
+  // Markup: components/modal/html/modal__overlay.html
+  //
+  // Style guide: Components.Modal.Overlay
+  &__overlay {
+    // TODO: z-indexing
   }
 }

@@ -9,6 +9,11 @@
     "sass",
     "modal"
   ],
+  "optionalDependencies": {
+    "@bemoid/panel": "^0.1.0",
+    "@bemoid/overlay": "^0.1.0",
+    "@bemoid/container": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {
