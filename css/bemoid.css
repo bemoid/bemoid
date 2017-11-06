@@ -953,10 +953,6 @@ h6, .heading--h6 {
     vertical-align: middle; }
   .image--bottom {
     vertical-align: bottom; }
-  .image--text-top {
-    vertical-align: text-top; }
-  .image--text-bottom {
-    vertical-align: text-bottom; }
 
 /** @define media */
 .media {
@@ -1176,9 +1172,6 @@ h6, .heading--h6 {
   height: 100%;
   opacity: 0.66;
   background-color: #171C1F; }
-  .overlay--blured {
-    -webkit-backdrop-filter: blur(0.5rem);
-            backdrop-filter: blur(0.5rem); }
 
 /** @define input */
 .input {

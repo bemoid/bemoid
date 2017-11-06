@@ -10,7 +10,7 @@
     "grid"
   ],
   "dependencies": {
-    "@bemoid/variables": "^0.1.0"
+    "@bemoid/mixins-breakpoints": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
