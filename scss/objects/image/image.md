@@ -14,13 +14,13 @@ Simply add `.image` block class to `<img>` HTML element.
 
 [[example file=components/image/example/basic.html]]
 
-The `.image--circular` modifier class may you help to achieve a avatar-like images.
+The `.image--circular` modifier class may you help to achieve avatar-like images.
 
 [[example file=components/image/example/circular.html]]
 
 ### Aligment
 
-A veritical aligment of the image may be controlled with a positioning modifier classes.
+A vertical alignment of the image may be controlled with a positioning modifier classes.
 
 [[example file=components/image/example/aligment.html]]
 

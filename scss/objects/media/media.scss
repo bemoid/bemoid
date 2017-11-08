@@ -1,12 +1,13 @@
 /** @define media */
 
+@import 'variables';
+
 // Media
 //
 // Standard media object component for displaying a side element alongside with the content.
 //
 // .media--reversed - Flip side element and content.
 // .media--stacked  - Stack side element and content on top of each other.
-// .media--stacked.media--reversed - Stack and flip side element and content.
 //
 // Markup: media.html
 //
@@ -16,7 +17,7 @@
 
   display: flex;
 
-  @each $breakpoint, $width in $grid-gutters {
+  @each $breakpoint, $width in $media-gutters {
     @include breakpoint($breakpoint up) {
       margin: -#{$width / 2};
     }
@@ -24,7 +25,7 @@
 
   &__side,
   &__body {
-    @each $breakpoint, $width in $grid-gutters {
+    @each $breakpoint, $width in $media-gutters {
       @include breakpoint($breakpoint up) {
         padding: $width / 2;
       }

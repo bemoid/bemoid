@@ -10,7 +10,8 @@
     "media"
   ],
   "dependencies": {
-    "@bemoid/grid": "^0.1.0"
+    "@bemoid/functions-getters": "^0.1.0",
+    "@bemoid/mixins-breakpoints": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",

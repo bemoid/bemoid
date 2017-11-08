@@ -7,9 +7,9 @@
 // Component for representing a list of items.
 //
 // .list--unstyled - Render list without marks.
-// .list--inline   - Render list without marks and in single line.
+// .list--inline   - Render list in a single line.
 //
-// Markup: list.html
+// Markup: components/list/html/list.html
 //
 // Style guide: Objects.List
 .list {
@@ -21,6 +21,8 @@
   // List Item
   //
   // Element for a item of the list.
+  //
+  // Markup: components/list/html/list__item.html
   //
   // Style guide: Objects.List.Item
   &__item {
@@ -35,8 +37,6 @@
   }
 
   &--inline {
-    display: inline-block;
-
     #{$this}__item {
       display: inline-block;
     }

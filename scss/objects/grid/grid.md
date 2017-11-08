@@ -18,9 +18,9 @@ You may also unlimitedly nest further grids.
 
 [[example file=components/grid/example/nested.html]]
 
-Of course, you can control width of the columns with a sizes modifiers. Each modifier class represents how many columns you want out of defined maximum.
+Of course, you can control the width of the columns with a sizes modifiers. Each modifier class represents how many columns you want out of defined maximum.
 
-> Maximum number of a columns in a single row can be defined in `$grid-columns` variable. By default, component ships with a 12-column grid system.
+> Maximum number of columns in a single row can be defined in `$grid-columns` variable. By default, component ships with a 12-column grid system.
 
 [[example file=components/grid/example/sizes.html]]
 
@@ -30,7 +30,7 @@ Columns width can also adjust to its content with a `.grid__column--shrink` modi
 
 ### Responsive
 
-Columns can also take specific sizes from a concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class. For example, if you want to have column to occupy 4 spaces from a medium breakpoint use `.grid__column--4@medium` modifier class.
+Columns can also take specific sizes from concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class. For example, if you want to have column to occupy 4 spaces from a medium breakpoint use `.grid__column--4@medium` modifier class.
 
 [[example file=components/grid/example/sizes-responsive.html]]
 
@@ -46,7 +46,7 @@ $grid-sizes: (
 
 ### Alignment
 
-Horizontal distribution of the grid columns can be adjusted with aligment modifier classes.
+Horizontal distribution of the grid columns can be adjusted with alignment modifier classes.
 
 [[example file=components/grid/example/alignment-horizontaly.html]]
 
@@ -60,7 +60,7 @@ Columns can evenly align vertically themselves.
 
 ### Reordering
 
-To avoid unsessecary bloat, grid component do not provide any ordering classes. You should maintain it with `order` property inside your custom stylesheets. However, there is a `.grid--reversed` modifer class to reverse an order of the columns within grid.
+To avoid unnecessary bloat, grid component does not provide any ordering classes. You should maintain it with `order` property inside your stylesheets. However, there is a `.grid--reversed` modifier class to reverse an order of the columns within the grid.
 
 [[example file=components/grid/example/reversed.html]]
 
@@ -78,9 +78,9 @@ There is also a `.grid--stackable` modifier class with which columns intrinsical
 
 ### Gutter
 
-Gaps between columns may be set up with a map in `$grid-gutters` variable. Gutters are responsive and can change its value on specifed breakpoints.
+Gaps between columns may be set up with a map in `$grid-gutters` variable. Gutters are responsive and can change its value on specified breakpoints.
 
-> Enter a key:value pairs, where a key is a name of the breakpoint from which the given value has to be active.
+> Enter a `key: value` pairs, where a key is a name of the breakpoint from which the given value has to be active.
 
 ```scss
 $grid-gutters: (
