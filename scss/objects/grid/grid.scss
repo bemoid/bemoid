@@ -142,14 +142,6 @@
     flex-direction: column;
   }
 
-  &--reversed {
-    flex-direction: row-reverse;
-
-    &#{$this}--stacked {
-      flex-direction: column-reverse;
-    }
-  }
-
   &--stackable {
     @include breakpoint($grid-stackable down) {
       flex-direction: column;
@@ -157,6 +149,20 @@
       & > #{$this}__column {
         flex-basis: auto;
         max-width: 100%;
+      }
+    }
+  }
+
+  &--reversed {
+    flex-direction: row-reverse;
+
+    &#{$this}--stacked {
+      flex-direction: column-reverse;
+    }
+
+    &#{$this}--stackable {
+      @include breakpoint($grid-stackable down) {
+        flex-direction: column-column;
       }
     }
   }

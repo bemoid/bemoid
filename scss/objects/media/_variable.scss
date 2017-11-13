@@ -2,6 +2,11 @@
 /// @group Media
 ////
 
+/// Breakpoint name under which side content stacks in stackable media.
+///
+/// @type {Keyword}
+$media-stackable: medium !default;
+
 /// Collection of gutters sizes by breakpoints.
 ///
 /// @type {Map}

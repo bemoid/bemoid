@@ -8,6 +8,7 @@
 //
 // .media--reversed - Flip side element and content.
 // .media--stacked  - Stack side element and content on top of each other.
+// .media--stackable - Makes side element and content to stack on specified breakpoint defined in `$media-stackable` variable.
 //
 // Markup: media.html
 //
@@ -102,11 +103,23 @@
     flex-direction: column;
   }
 
+  &--stackable {
+    @include breakpoint($grid-stackable down) {
+      flex-direction: column;
+    }
+  }
+
   &--reversed {
     flex-direction: row-reverse;
 
     &#{$this}--stacked {
       flex-direction: column-reverse;
+    }
+
+    &#{$this}--stackable {
+      @include breakpoint($grid-stackable down) {
+        flex-direction: column-column;
+      }
     }
   }
 }
