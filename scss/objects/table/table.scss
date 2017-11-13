@@ -12,7 +12,7 @@
 // .table--hoverable  - Rows are hightlighted on mouseover.
 // .table--condensed  - Renders a table with smaller paddings.
 //
-// Markup: table.html
+// Markup: components/table/html/table.html
 //
 // Style guide: Objects.Table
 .table {
@@ -33,7 +33,7 @@
   //
   // Element for single call unit of a table.
   //
-  // Markup: table__cell.html
+  // Markup: components/table/html/table__cell.html
   //
   // Style guide: Objects.Table.Cell
   &__cell {
