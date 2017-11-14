@@ -1,6 +1,11 @@
 <form class="form">
+  <div class="field field--expanded">
+    <label for="Text" class="field__label label">Text</label>
+    <input id="Text" class="field__input input" type="text" name="text">
+  </div>
+
   <fieldset class="form__group segment">
-    <legend class="form__legend {{modifier_class}}">Legend</legend>
+    <legend class="form__legend">Legend</legend>
 
     <div class="field field--expanded">
       <label for="Select" class="field__label label">Select</label>
@@ -16,4 +21,6 @@
       <textarea id="Textarea" class="field__input input" rows="10"></textarea>
     </div>
   </fieldset>
+
+  <input type="submit" class="button button--info" aria-label="Submit">
 </form>
