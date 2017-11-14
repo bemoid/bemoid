@@ -2,6 +2,28 @@
 /// @group General
 ////
 
+/// Default transition timing function.
+///
+/// @type {Value}
+$transition-easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+/// Collection of transitions.
+///
+/// @type {Map}
+/// @prop {Value} slow
+/// @prop {Value} normal
+/// @prop {Value} fast
+$transitions: (
+  'slow': 0.6s $transition-easing,
+  'normal': 0.4s $transition-easing,
+  'fast': 0.2s $transition-easing,
+) !default;
+
+/// Default transition speed.
+///
+/// @type {Keyword}
+$transition: normal !default;
+
 /// Retrives transition value of specifed transition from $transitions map.
 ///
 /// @param {List} $name

@@ -10,7 +10,7 @@
     "space"
   ],
   "dependencies": {
-    "@bemoid/variables": "^0.1.0",
+    "@bemoid/fuctions": "^0.1.0",
     "@bemoid/mixins": "^0.1.0"
   },
   "version": "0.1.0",

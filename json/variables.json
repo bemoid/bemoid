@@ -176,13 +176,6 @@
       "name": "button-hollowed-background"
     }
   ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -238,6 +231,13 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
     }
   ],
   "divider": [
@@ -422,23 +422,6 @@
       "name": "message-hollow-border-style"
     }
   ],
-  "overlay": [
-    {
-      "variable": "$overlay-background",
-      "value": "color(black) !default",
-      "name": "overlay-background"
-    },
-    {
-      "variable": "$overlay-opacity",
-      "value": "0.66 !default",
-      "name": "overlay-opacity"
-    },
-    {
-      "variable": "$overlay-blur",
-      "value": "0.5rem !default",
-      "name": "overlay-blur"
-    }
-  ],
   "modal": [
     {
       "variable": "$modal-space",
@@ -464,6 +447,23 @@
       "variable": "$modal-transform",
       "value": "translate(-50%, -50%)",
       "name": "modal-transform"
+    }
+  ],
+  "overlay": [
+    {
+      "variable": "$overlay-background",
+      "value": "color(black) !default",
+      "name": "overlay-background"
+    },
+    {
+      "variable": "$overlay-opacity",
+      "value": "0.66 !default",
+      "name": "overlay-opacity"
+    },
+    {
+      "variable": "$overlay-blur",
+      "value": "0.5rem !default",
+      "name": "overlay-blur"
     }
   ],
   "panel": [
@@ -662,6 +662,18 @@
       "variable": "$list-offset",
       "value": "1em !default",
       "name": "list-offset"
+    }
+  ],
+  "media": [
+    {
+      "variable": "$media-stackable",
+      "value": "medium !default",
+      "name": "media-stackable"
+    },
+    {
+      "variable": "$media-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "media-gutters"
     }
   ],
   "table": [

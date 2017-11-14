@@ -14,21 +14,10 @@
 // 1. Mixins and functions
 @import 'uses';
 
-// 2. Variables
-@import 'variables/variables';
-
 // 3. Generic
 @import 'generic/generic';
 
-// 4. Utilities
-@import 'utilities/space/space';
-@import 'utilities/radius/radius';
-@import 'utilities/hidden/hidden';
-@import 'utilities/visible/visible';
-@import 'utilities/elevator/elevator';
-@import 'utilities/transition/transition';
-
-// 5. Objects
+// 4. Objects
 @import 'objects/container/container';
 @import 'objects/grid/grid';
 @import 'objects/list/list';
@@ -37,14 +26,14 @@
 @import 'objects/table/table';
 @import 'objects/dropdown/dropdown';
 
-// 6. Structures
+// 5. Structures
 @import 'structures/form/form';
 @import 'structures/figure/figure';
 @import 'structures/segment/segment';
 @import 'structures/heading/heading';
 @import 'structures/paragraph/paragraph';
 
-// 7. Components
+// 6. Components
 @import 'components/panel/panel';
 @import 'components/modal/modal';
 @import 'components/overlay/overlay';
@@ -61,3 +50,11 @@
 @import 'components/divider/divider';
 @import 'components/content/content';
 @import 'components/group/group';
+
+// 7. Utilities
+@import 'utilities/space/space';
+@import 'utilities/radius/radius';
+@import 'utilities/hidden/hidden';
+@import 'utilities/visible/visible';
+@import 'utilities/elevator/elevator';
+@import 'utilities/transition/transition';

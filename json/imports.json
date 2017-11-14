@@ -2,19 +2,8 @@
   "uses": [
     "uses"
   ],
-  "variables": [
-    "variables/variables"
-  ],
   "generic": [
     "generic/generic"
-  ],
-  "utilities": [
-    "utilities/space/space",
-    "utilities/radius/radius",
-    "utilities/hidden/hidden",
-    "utilities/visible/visible",
-    "utilities/elevator/elevator",
-    "utilities/transition/transition"
   ],
   "objects": [
     "objects/container/container",
@@ -49,5 +38,13 @@
     "components/divider/divider",
     "components/content/content",
     "components/group/group"
+  ],
+  "utilities": [
+    "utilities/space/space",
+    "utilities/radius/radius",
+    "utilities/hidden/hidden",
+    "utilities/visible/visible",
+    "utilities/elevator/elevator",
+    "utilities/transition/transition"
   ]
 }
