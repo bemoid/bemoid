@@ -6,7 +6,7 @@
 //
 // Component for representing graphics, frequently with a caption.
 //
-// Markup: figure.html
+// Markup: components/figure/html/figure.html
 //
 // Style guide: Structures.Figure
 .figure {
@@ -17,7 +17,7 @@
   //
   // Image element of the figure block. Holds a graphic of the figure.
   //
-  // Markup: figure__image.html
+  // Markup: components/figure/html/figure__image.html
   //
   // Style guide: Structures.Figure.Image
   &__image {
@@ -28,7 +28,7 @@
   //
   // Caption element of the figure block. Represents a legend which describes the graphic.
   //
-  // Markup: figure__image.html
+  // Markup: components/figure/html/figure__image.html
   //
   // Style guide: Structures.Figure.Caption
   &__caption {
