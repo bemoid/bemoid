@@ -14,7 +14,7 @@ Component for providing visual inner space for the element.
 
 ## Variables
 
-[[variables file=components/functions/getters/includes/_elevator.scss]]
+[[variables file=components/functions/getters/elevator/_variables.scss]]
 
 ## Standalone installation
 

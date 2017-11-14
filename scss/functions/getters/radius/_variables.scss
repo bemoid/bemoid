@@ -24,15 +24,3 @@ $radiuses: (
 ///
 /// @type {Keyword}
 $radius: medium !default;
-
-/// Retrives radius value of specifed radius from $radiuses map.
-///
-/// @param {String} $name
-/// @require {Map} $radiuses
-/// @return {Number} Radius value
-///
-/// @example scss - example
-///   radius(large);
-@function radius($name) {
-  @return get($radiuses, $name);
-}

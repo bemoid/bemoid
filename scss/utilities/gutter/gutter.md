@@ -14,7 +14,7 @@ Utility component for adding horizontal spaces between elements.
 
 ## Variables
 
-[[variables file=components/functions/getters/includes/_space.scss]]
+[[variables file=components/functions/getters/space/_variables.scss]]
 
 ## Standalone installation
 

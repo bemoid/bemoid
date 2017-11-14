@@ -14,7 +14,7 @@ Utility component for adding precised sizes of radius.
 
 ## Variables
 
-[[variables file=components/functions/getters/includes/_radius.scss]]
+[[variables file=components/functions/getters/radius/_variables.scss]]
 
 ## Standalone installation
 

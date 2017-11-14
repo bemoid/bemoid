@@ -19,15 +19,3 @@ $spaces: (
   xlarge: em(24px),
   xxlarge: em(36px),
 ) !default;
-
-/// Retrives space value of specifed space for $spaces map.
-///
-/// @param {String} $name
-/// @require {Map} $spaces
-/// @return {Number} Space value
-///
-/// @example scss - example
-///   space(small);
-@function space($name) {
-  @return get($spaces, $name);
-}

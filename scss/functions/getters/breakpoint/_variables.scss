@@ -24,15 +24,3 @@ $breakpoints: (
 ///
 /// @type {Value}
 $breakpoints-offset: em(1px);
-
-/// Retrives width value of specifed breakpoint from $breakpoints map.
-///
-/// @param {String} $name
-/// @require {Map} $breakpoints
-/// @return {Value}
-///
-/// @example scss - example
-///   breakpoint(large);
-@function breakpoint($name) {
-	@return get($breakpoints, $name);
-}

@@ -14,7 +14,7 @@ Utility component for adding various speeds of transitions.
 
 ## Variables
 
-[[variables file=components/functions/getters/includes/_transition.scss]]
+[[variables file=components/functions/getters/transition/_variables.scss]]
 
 ## Standalone installation
 

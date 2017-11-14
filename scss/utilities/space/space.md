@@ -14,7 +14,7 @@ Utility component for adding vertical spaces between elements.
 
 ## Variables
 
-[[variables file=components/functions/getters/includes/_space.scss]]
+[[variables file=components/functions/getters/space/_variables.scss]]
 
 ## Standalone installation
 

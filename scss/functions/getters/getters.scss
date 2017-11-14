@@ -1,8 +1,8 @@
-@import 'includes/get';
+@import 'functions/get';
 
-@import 'includes/color';
-@import 'includes/space';
-@import 'includes/radius';
-@import 'includes/elevator';
-@import 'includes/breakpoint';
-@import 'includes/transition';
+@import 'color/color';
+@import 'space/space';
+@import 'radius/radius';
+@import 'elevator/elevator';
+@import 'breakpoint/breakpoint';
+@import 'transition/transition';
