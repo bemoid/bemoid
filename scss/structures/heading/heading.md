@@ -41,13 +41,3 @@ Import component file from the `node_modules` directory.
 ```scss
 @import 'node_modules/@bemoid/heading/heading';
 ```
-
-Optionally, import a suggested components.
-
-```scss
-@import 'node_modules/@bemoid/field/field';
-@import 'node_modules/@bemoid/input/input';
-@import 'node_modules/@bemoid/radio/radio';
-@import 'node_modules/@bemoid/select/select';
-@import 'node_modules/@bemoid/checkbox/checkbox';
-```

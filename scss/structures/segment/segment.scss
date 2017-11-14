@@ -4,13 +4,13 @@
 
 // Segment
 //
-// Provides visual inner space (paddings) for the element.
+// Component for providing visual inner space for the element.
 //
 // .segment--small  - Small variant of the paddings.
 // .segment--medium - Medium variant of the paddings.
 // .segment--xlarge - Xlarge variant of the paddings.
 //
-// Markup: segment.html
+// Markup: components/segment/html/segment.html
 //
 // Style guide: Structures.Segment
 .segment {
@@ -23,7 +23,7 @@
   @each $name, $size in $segment-sizes {
     @if $name != $segment-size {
       &--#{$name} {
-          padding: $size;
+        padding: $size;
       }
     }
   }
