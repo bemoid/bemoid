@@ -10,7 +10,7 @@ Component for representing six levels of headings.
 
 ## Usage
 
-The basic task of `.heading` block class is to remove basic margins from a `<h>` HTML tags. It is really helpful when using [spacing](/docs/spacing) or [Lobotomized Owl](//alistapart.com/article/axiomatic-css-and-lobotomized-owls) selector to control spacing bettwen siblings.
+The basic task of `.heading` block class is to remove basic margins from a `<h>` HTML tags. It is really helpful when using [spacing](/docs/spacing) utility classes or [Lobotomized Owl](//alistapart.com/article/axiomatic-css-and-lobotomized-owls) selector to control spacing bettwen siblings.
 
 [[example file=components/heading/example/basic.html]]
 
