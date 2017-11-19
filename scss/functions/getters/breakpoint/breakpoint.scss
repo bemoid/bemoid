@@ -13,5 +13,5 @@
 /// @example scss - example
 ///   breakpoint(large);
 @function breakpoint($name) {
-	@return get($breakpoints, $name);
+  @return get($breakpoints, $name);
 }

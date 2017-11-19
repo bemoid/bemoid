@@ -7,8 +7,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -245,7 +245,6 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
-
 
 // Add the correct display in IE 9-.
 // 1. Add the correct display in Edge, IE, and Firefox.

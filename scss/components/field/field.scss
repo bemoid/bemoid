@@ -93,7 +93,7 @@
         }
 
         #{$this}__control {
-         font-size: map-get($declarations, 'font-size');
+          font-size: map-get($declarations, 'font-size');
         }
       }
     }

@@ -78,9 +78,10 @@
     flex: 0 0 $group-divider-width;
     width: $group-divider-width;
 
-    &:after {
+    &::after {
       position: absolute;
-      top: 50%; left: 50%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
     }
   }

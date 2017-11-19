@@ -17,7 +17,9 @@
   @if not ($context) {
     @if global-variable-exists('font-size') {
       $context: $font-size;
-    } @else {
+    }
+
+    @else {
       $context: $rem-function-context;
     }
   }

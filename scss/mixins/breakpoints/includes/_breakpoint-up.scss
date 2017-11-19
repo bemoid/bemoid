@@ -13,12 +13,13 @@
 @mixin breakpoint-up($name) {
   $width: breakpoint($name);
 
-	@if $width != 0 {
+  @if $width != 0 {
     @media (min-width: #{$width}) {
       @content;
     }
-	}
-	@else {
-		@content;
-	}
+  }
+
+  @else {
+    @content;
+  }
 }

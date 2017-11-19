@@ -109,35 +109,6 @@
       "name": "blockquote-footer-color"
     }
   ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "radius(circle) !default",
-      "name": "divider-badge-radius"
-    }
-  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -205,33 +176,6 @@
       "name": "button-hollowed-background"
     }
   ],
-  "field": [
-    {
-      "variable": "$field-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(medium)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "field-sizes"
-    },
-    {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
-    },
-    {
-      "variable": "$field-size",
-      "value": "medium !default",
-      "name": "field-size"
-    },
-    {
-      "variable": "$field-caption-untouched-color",
-      "value": "$font-color !default",
-      "name": "field-caption-untouched-color"
-    },
-    {
-      "variable": "$field-caption-font-size",
-      "value": "em(12px) !default",
-      "name": "field-caption-font-size"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -287,6 +231,62 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
+  "divider": [
+    {
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
+      "name": "divider-badge-sizes"
+    },
+    {
+      "variable": "$divider-badge-size",
+      "value": "medium !default",
+      "name": "divider-badge-size"
+    },
+    {
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
+    },
+    {
+      "variable": "$divider-badge-radius",
+      "value": "radius(circle) !default",
+      "name": "divider-badge-radius"
+    }
+  ],
+  "field": [
+    {
+      "variable": "$field-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(medium)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "name": "field-sizes"
+    },
+    {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
+      "variable": "$field-size",
+      "value": "medium !default",
+      "name": "field-size"
+    },
+    {
+      "variable": "$field-caption-untouched-color",
+      "value": "$font-color !default",
+      "name": "field-caption-untouched-color"
+    },
+    {
+      "variable": "$field-caption-font-size",
+      "value": "em(12px) !default",
+      "name": "field-caption-font-size"
     }
   ],
   "group": [
@@ -800,13 +800,6 @@
       "name": "breakpoints-offset"
     }
   ],
-  "colors": [
-    {
-      "variable": "$colors",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171C1F,\n) !default",
-      "name": "colors"
-    }
-  ],
   "elevators": [
     {
       "variable": "$elevators",
@@ -819,6 +812,13 @@
       "variable": "$elevator",
       "value": "medium !default",
       "name": "elevator"
+    }
+  ],
+  "colors": [
+    {
+      "variable": "$colors",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "name": "colors"
     }
   ],
   "radiuses": [

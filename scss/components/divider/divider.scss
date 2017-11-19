@@ -18,23 +18,21 @@
   position: relative;
   z-index: 3;
 
-  &:after {
+  &::after {
     @include declarations($size);
 
     content: attr(data-text);
     line-height: map-get($size, 'height');
-
+    text-align: center;
     box-sizing: content-box;
     background-color: $divider-badge-background;
     border-radius: $divider-badge-radius;
-
-    text-align: center;
   }
 
   @each $size, $declarations in $divider-badge-sizes {
     @if $size != $divider-badge-size {
       &--#{$size} {
-        &:after {
+        &::after {
           @include declarations($declarations);
 
           line-height: map-get($declarations, 'height');

@@ -20,6 +20,7 @@
     @if $mutate {
       #{$property}: #{nth($value, length($value))};
     }
+
     @else {
       #{$property}: #{nth($value, 1)};
     }

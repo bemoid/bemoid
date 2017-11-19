@@ -24,8 +24,8 @@
 
     &:checked {
       & + #{$this}__label {
-        &:after {
-            transform: translate(-25%, -50%) $checkbox-mark-active-transform;
+        &::after {
+          transform: translate(-25%, -50%) $checkbox-mark-active-transform;
         }
       }
     }
@@ -46,41 +46,41 @@
     &:active,
     &:focus,
     &:hover {
-        &:before {
-            background: $checkbox-hover-background;
-            border: $checkbox-hover-border;
-        }
+      &::before {
+        background: $checkbox-hover-background;
+        border: $checkbox-hover-border;
+      }
     }
 
-    &:after,
-    &:before {
-        content: "";
-        position: absolute;
-        top: 50%;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
     }
 
-    &:before {
-        left: 0;
-        margin-top: -#{$checkbox-size/2};
-        width: $checkbox-size;
-        height: $checkbox-size;
-        background: $checkbox-background;
-        border: $checkbox-border;
-        border-radius: $checkbox-radius;
+    &::before {
+      left: 0;
+      margin-top: -#{$checkbox-size/2};
+      width: $checkbox-size;
+      height: $checkbox-size;
+      background: $checkbox-background;
+      border: $checkbox-border;
+      border-radius: $checkbox-radius;
     }
 
-    &:after {
-        content: '';
-        width: $checkbox-mark-size;
-        height: $checkbox-mark-size/2;
-        position: absolute;
-        left: $checkbox-size/2;
-        border: $checkbox-mark-width solid $checkbox-mark-color;
-        border-top: none;
-        border-right: none;
-        background: transparent;
-        transform-origin: 20% 50%;
-        transform: translate(-25%, -50%) $checkbox-mark-transform;
+    &::after {
+      content: '';
+      width: $checkbox-mark-size;
+      height: $checkbox-mark-size/2;
+      position: absolute;
+      left: $checkbox-size/2;
+      border: $checkbox-mark-width solid $checkbox-mark-color;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      transform-origin: 20% 50%;
+      transform: translate(-25%, -50%) $checkbox-mark-transform;
     }
   }
 }

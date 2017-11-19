@@ -17,7 +17,9 @@
   @if not ($context) {
     @if global-variable-exists('font-size') {
       $context: $font-size;
-    } @else {
+    }
+
+    @else {
       $context: $em-function-context;
     }
   }
@@ -34,5 +36,5 @@
     @error "Error while converting to EM unit. Value [#{$pixels}] must be in pixels";
   }
 
-  @return ($pixels / $context) * 1em
+  @return ($pixels / $context) * 1em;
 }

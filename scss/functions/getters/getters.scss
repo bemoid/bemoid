@@ -1,5 +1,7 @@
+// Import generic getter
 @import 'functions/get';
 
+// Import concrete getters
 @import 'color/color';
 @import 'space/space';
 @import 'radius/radius';

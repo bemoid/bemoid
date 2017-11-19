@@ -19,13 +19,13 @@
   // Markup: structures/form/html/form__group.html
   //
   // Style guide: Structures.Form.Group
-	&__group {
-		margin-left: 0;
-		margin-right: 0;
-		border-radius: $form-group-radius;
-		background-color: $form-group-background;
-		border: $form-group-border;
-	}
+  &__group {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: $form-group-radius;
+    background-color: $form-group-background;
+    border: $form-group-border;
+  }
 
   // Form Legend
   //
@@ -34,10 +34,10 @@
   // Markup: structures/form/html/form__legend.html
   //
   // Style guide: Structures.Form.Legend
-	&__legend {
+  &__legend {
     margin-top: 0;
-		font-size: $form-legend-font-size;
-		font-weight: $form-legend-weight;
-		text-transform: $form-legend-text-transform;
-	}
+    font-size: $form-legend-font-size;
+    font-weight: $form-legend-weight;
+    text-transform: $form-legend-text-transform;
+  }
 }

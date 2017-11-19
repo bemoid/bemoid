@@ -25,8 +25,8 @@
   &__footer {
     color: $blockquote-footer-color;
 
-    &:before {
-      content: attr(data-before)
+    &::before {
+      content: attr(data-before);
     }
   }
 }
