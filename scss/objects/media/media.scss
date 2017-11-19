@@ -10,7 +10,7 @@
 // .media--stacked  - Stack side element and content on top of each other.
 // .media--stackable - Makes side element and content to stack on specified breakpoint defined in `$media-stackable` variable.
 //
-// Markup: components/media/html/media.html
+// Markup: objects/media/html/media.html
 //
 // Style guide: Objects.Media
 .media {
@@ -40,7 +40,7 @@
   // .media__side--middle - Align side to the middle oth the media object.
   // .media__side--bottom - Align side to the bottom oth the media object.
   //
-  // Markup: components/media/html/media__side.html
+  // Markup: objects/media/html/media__side.html
   //
   // Style guide: Objects.Media.Side
   &__side {
@@ -71,7 +71,7 @@
   // .media__body--middle - Align body to the middle oth the media object.
   // .media__body--bottom - Align body to the bottom oth the media object.
   //
-  // Markup: components/media/html/media__body.html
+  // Markup: objects/media/html/media__body.html
   //
   // Style guide: Objects.Media.Body
   &__body {

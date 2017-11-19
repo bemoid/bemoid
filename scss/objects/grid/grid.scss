@@ -19,7 +19,7 @@
 // .grid--stacked   - Changes grid columns direction from horizontal to vartical.
 // .grid--stackable - Makes grid columns to stack on specified breakpoint defined in `$grid-stackable` variable.
 //
-// Markup: components/grid/html/grid.html
+// Markup: objects/grid/html/grid.html
 //
 // Style guide: Objects.Grid
 .grid {
@@ -57,7 +57,7 @@
   // .grid__column--baseline - Desc
   // .grid__column--stretch - Desc
   //
-  // Markup: components/grid/html/grid__column.html
+  // Markup: objects/grid/html/grid__column.html
   //
   // Style guide: Objects.Grid.Column
   &__column {

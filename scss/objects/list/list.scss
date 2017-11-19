@@ -9,7 +9,7 @@
 // .list--unstyled - Render list without marks.
 // .list--inline   - Render list in a single line.
 //
-// Markup: components/list/html/list.html
+// Markup: objects/list/html/list.html
 //
 // Style guide: Objects.List
 .list {
@@ -22,7 +22,7 @@
   //
   // Element for a item of the list.
   //
-  // Markup: components/list/html/list__item.html
+  // Markup: objects/list/html/list__item.html
   //
   // Style guide: Objects.List.Item
   &__item {
