@@ -12,17 +12,17 @@ Component for providing visual inner space for the element.
 
 Add `.segment` block class to give the element an internal padding.
 
-[[example file=components/segment/example/basic.html]]
+[[example file=structures/segment/example/basic.html]]
 
 ### Sizes
 
 Sizing modifers allow you to apply diffrent sizes of a padding.
 
-[[example file=components/segment/example/sizes.html]]
+[[example file=structures/segment/example/sizes.html]]
 
 ## Styleguide
 
-[[styleguide file=components/segment/segment.scss]]
+[[styleguide file=structures/segment/segment.scss]]
 
 ## Variables
 

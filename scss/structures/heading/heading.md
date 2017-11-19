@@ -12,21 +12,21 @@ Component for representing six levels of headings.
 
 The basic task of `.heading` block class is to remove basic margins from a `<h>` HTML tags. It is really helpful when using [spacing](/docs/spacing) utility classes or [Lobotomized Owl](//alistapart.com/article/axiomatic-css-and-lobotomized-owls) selector to control spacing bettwen siblings.
 
-[[example file=components/heading/example/basic.html]]
+[[example file=structures/heading/example/basic.html]]
 
 ### Sizes
 
 Sizing modifers allow you to apply `<h>` styles to no heading HTML elements.
 
-[[example file=components/heading/example/sizes.html]]
+[[example file=structures/heading/example/sizes.html]]
 
 ## Styleguide
 
-[[styleguide file=components/heading/heading.scss]]
+[[styleguide file=structures/heading/heading.scss]]
 
 ## Variables
 
-[[variables file=components/heading/_variables.scss]]
+[[variables file=structures/heading/_variables.scss]]
 
 ## Standalone installation
 

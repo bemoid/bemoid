@@ -12,23 +12,23 @@ Component for representing a list of items.
 
 Add `.list` block class to `<ul>` or `<ol>` markup and mark its items with `.list__item` element class.
 
-[[example file=components/list/example/basic.html]]
+[[example file=objects/list/example/basic.html]]
 
 List items can be displayed in one line with `.list--inline` modifier class.
 
-[[example file=components/list/example/inline.html]]
+[[example file=objects/list/example/inline.html]]
 
 There is also a `.list--unstyled` modifier class to remove default listing styles.
 
-[[example file=components/list/example/unstyled.html]]
+[[example file=objects/list/example/unstyled.html]]
 
 ## Styleguide
 
-[[styleguide file=components/list/list.scss]]
+[[styleguide file=objects/list/list.scss]]
 
 ## Variables
 
-[[variables file=components/list/_variables.scss]]
+[[variables file=objects/list/_variables.scss]]
 
 ## Standalone installation
 

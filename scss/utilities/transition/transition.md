@@ -10,11 +10,11 @@ Utility component for adding various speeds of transitions.
 
 ## Styleguide
 
-[[styleguide file=components/transition/transition.scss]]
+[[styleguide file=utilities/transition/transition.scss]]
 
 ## Variables
 
-[[variables file=components/functions/getters/transition/_variables.scss]]
+[[variables file=functions/getters/transition/_variables.scss]]
 
 ## Standalone installation
 

@@ -10,11 +10,11 @@ Utility component for adding precised sizes of radius.
 
 ## Styleguide
 
-[[styleguide file=components/radius/radius.scss]]
+[[styleguide file=utilities/radius/radius.scss]]
 
 ## Variables
 
-[[variables file=components/functions/getters/radius/_variables.scss]]
+[[variables file=functions/getters/radius/_variables.scss]]
 
 ## Standalone installation
 

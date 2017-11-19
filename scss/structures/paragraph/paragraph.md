@@ -12,15 +12,15 @@ Component for representing a block of text.
 
 The basic job of the `.paragraph` block class is to remove basic margins from a `<p>` HTML tags. It is really helpful when using [spacing](/docs/spacing) utility classes or [Lobotomized Owl](//alistapart.com/article/axiomatic-css-and-lobotomized-owls) selector to control spacing bettwen siblings.
 
-[[example file=components/paragraph/example/basic.html]]
+[[example file=structures/paragraph/example/basic.html]]
 
 ## Styleguide
 
-[[styleguide file=components/paragraph/paragraph.scss]]
+[[styleguide file=structures/paragraph/paragraph.scss]]
 
 ## Variables
 
-[[variables file=components/paragraph/_variables.scss]]
+[[variables file=structures/paragraph/_variables.scss]]
 
 ## Standalone installation
 

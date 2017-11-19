@@ -10,11 +10,11 @@ Component for providing visual inner space for the element.
 
 ## Styleguide
 
-[[styleguide file=components/elevator/elevator.scss]]
+[[styleguide file=utilities/elevator/elevator.scss]]
 
 ## Variables
 
-[[variables file=components/functions/getters/elevator/_variables.scss]]
+[[variables file=functions/getters/elevator/_variables.scss]]
 
 ## Standalone installation
 

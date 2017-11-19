@@ -10,11 +10,11 @@ Utility component for adding horizontal spaces between elements.
 
 ## Styleguide
 
-[[styleguide file=components/gutter/gutter.scss]]
+[[styleguide file=utilities/gutter/gutter.scss]]
 
 ## Variables
 
-[[variables file=components/functions/getters/space/_variables.scss]]
+[[variables file=functions/getters/space/_variables.scss]]
 
 ## Standalone installation
 

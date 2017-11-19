@@ -10,7 +10,7 @@ Component for providing visual inner space for the element.
 
 ## Styleguide
 
-[[styleguide file=components/hidden/hidden.scss]]
+[[styleguide file=utilities/hidden/hidden.scss]]
 
 ## Standalone installation
 

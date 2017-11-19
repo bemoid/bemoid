@@ -10,11 +10,11 @@ Utility component for adding vertical spaces between elements.
 
 ## Styleguide
 
-[[styleguide file=components/space/space.scss]]
+[[styleguide file=utilities/space/space.scss]]
 
 ## Variables
 
-[[variables file=components/functions/getters/space/_variables.scss]]
+[[variables file=functions/getters/space/_variables.scss]]
 
 ## Standalone installation
 
