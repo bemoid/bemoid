@@ -27,9 +27,9 @@
   }
 
   @each $breakpoint, $width in $breakpoints {
-    @include breakpoint($breakpoint up) {
-      @each $size, $declaration in $spaces {
-        &--#{$size}\@#{$breakpoint} {
+    @each $size, $declaration in $spaces {
+      &--#{$size}\@#{$breakpoint} {
+        @include breakpoint($breakpoint up) {
           & > * + * {
             margin-top: $declaration;
           }

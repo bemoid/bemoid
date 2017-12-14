@@ -1,4 +1,4 @@
-/** @define space */
+/** @define gutter */
 
 // Gutter
 //
@@ -27,10 +27,10 @@
   }
 
   @each $breakpoint, $width in $breakpoints {
-    @include breakpoint($breakpoint up) {
-      @each $size, $declaration in $spaces {
-        &--#{$size}\@#{$breakpoint} {
-          & > * + * {
+    @each $size, $declaration in $spaces {
+      &--#{$size}\@#{$breakpoint} {
+        & > * + * {
+          @include breakpoint($breakpoint up) {
             margin-left: $declaration;
           }
         }
