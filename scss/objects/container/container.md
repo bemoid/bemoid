@@ -32,7 +32,7 @@ $container-sizes: (
 
 ### Centering
 
-By default, container float to the left. Use a `.container--centered` modifier class to make it centered.
+By default, container float to the left. Use a `.container--center` modifier class to make it centered.
 
 [[example file=objects/container/example/centered.html]]
 

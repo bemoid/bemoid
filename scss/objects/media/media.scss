@@ -6,8 +6,8 @@
 //
 // Standard media object component for displaying a side element alongside with the content.
 //
-// .media--reversed - Flip side element and content.
-// .media--stacked  - Stack side element and content on top of each other.
+// .media--reverse - Flip side element and content.
+// .media--stack  - Stack side element and content on top of each other.
 // .media--stackable - Makes side element and content to stack on specified breakpoint defined in `$media-stackable` variable.
 //
 // Markup: objects/media/html/media.html
@@ -101,7 +101,7 @@
     vertical-align: text-top;
   }
 
-  &--stacked {
+  &--stack {
     flex-direction: column;
   }
 
@@ -111,10 +111,10 @@
     }
   }
 
-  &--reversed {
+  &--reverse {
     flex-direction: row-reverse;
 
-    &#{$this}--stacked {
+    &#{$this}--stack {
       flex-direction: column-reverse;
     }
 

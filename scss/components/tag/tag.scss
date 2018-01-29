@@ -6,7 +6,7 @@
 //
 // Small inline components for creating labelized markers.
 //
-// .tag--pilled - Tag variant with large border radius.
+// .tag--pill - Tag variant with large border radius.
 //
 // Markup: components/tag/html/tag.html
 //
@@ -57,7 +57,7 @@
     padding: $tag-padding;
   }
 
-  &--pilled {
+  &--pill {
     border-radius: $tag-padding*2;
   }
 }

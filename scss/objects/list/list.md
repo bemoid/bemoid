@@ -18,7 +18,7 @@ List items can be displayed in one line with `.list--inline` modifier class.
 
 [[example file=objects/list/example/inline.html]]
 
-There is also a `.list--unstyled` modifier class to remove default listing styles.
+There is also a `.list--unstyle` modifier class to remove default listing styles.
 
 [[example file=objects/list/example/unstyled.html]]
 

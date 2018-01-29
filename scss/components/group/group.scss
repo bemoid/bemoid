@@ -6,10 +6,10 @@
 //
 // Hight specificity component to group together the other components into a single interface. Mainly manages they border and radius.
 //
-// .group--overlapped - Makes group items overlap on each other.
+// .group--overlap - Makes group items overlap on each other.
 // .group--tabbed     - Makes group items tabbed like bookmarks.
-// .group--expanded   - Expands group items to all available space.
-// .group--stacked    - Makes group items stacked on each other.
+// .group--expand   - Expands group items to all available space.
+// .group--stack    - Makes group items stacked on each other.
 // .group--stackable  - Makes group items stacked on each other on certain breapoint.
 //
 // Markup: components/group/html/group.html
@@ -66,7 +66,7 @@
         $group-inner-radius;
     }
 
-    &--expanded {
+    &--expand {
       flex: 1 0 auto;
     }
   }
@@ -94,12 +94,12 @@
     display: inline-flex;
   }
 
-  &--overlapped {
+  &--overlap {
     & > * + * {
       margin-left: $group-overlap;
     }
 
-    &#{$this}--stacked {
+    &#{$this}--stack {
       & > * + * {
         margin-left: 0;
         margin-top: $group-overlap;
@@ -107,7 +107,7 @@
     }
   }
 
-  &--expanded {
+  &--expand {
     width: 100%;
 
     #{$this}__item {
@@ -128,7 +128,7 @@
     }
   }
 
-  &--stacked {
+  &--stack {
     flex-direction: column;
 
     #{$this}__item {

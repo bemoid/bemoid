@@ -75,17 +75,17 @@ $button-sizes: (
 );
 ```
 
-Additionally, there are two modifiers to control horizontal expanding of the button. Enlarge horizontal paddings with `.button--wider` modifier or add `.button--expanded` to make a button take the full width of a parent.
+Additionally, there are two modifiers to control horizontal expanding of the button. Enlarge horizontal paddings with `.button--wider` modifier or add `.button--expand` to make a button take the full width of a parent.
 
 [[example file=components/button/example/behaviours.html]]
 
 ### Covers
 
-Adding a `.button__cover` element and the `.button--covered` the modifier will cover button's default text with an extra one. For example, it's useful to indicate a currently processing loading state.
+Adding a `.button__cover` element and the `.button--cover` the modifier will cover button's default text with an extra one. For example, it's useful to indicate a currently processing loading state.
 
 [[example file=components/button/example/covered.html]]
 
-Want to achieve the same effect, but only on user `:hover` action? Switch to a `button--curtained` modifier.
+Want to achieve the same effect, but only on user `:hover` action? Switch to a `button--curtain` modifier.
 
 [[example file=components/button/example/curtained.html]]
 

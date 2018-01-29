@@ -6,7 +6,7 @@
 //
 // Component for representing a list of items.
 //
-// .list--unstyled - Render list without marks.
+// .list--unstyle - Render list without marks.
 // .list--inline   - Render list in a single line.
 //
 // Markup: objects/list/html/list.html
@@ -29,7 +29,7 @@
     display: list-item;
   }
 
-  &--unstyled {
+  &--unstyle {
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;

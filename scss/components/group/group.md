@@ -16,7 +16,7 @@ Wrap elements you want to group within a `.group` block class and add to its dir
 
 ### Overlapping items
 
-As you can see in the basic example, borders of the items stack next to each other and don't create a coherent interface. Use `.group--overlapped` modifier class to resolve this problem.
+As you can see in the basic example, borders of the items stack next to each other and don't create a coherent interface. Use `.group--overlap` modifier class to resolve this problem.
 
 > Your grouped items have a thicker border? You can control the size of the overlap with a `$group-overlap` variable.
 
@@ -24,13 +24,13 @@ As you can see in the basic example, borders of the items stack next to each oth
 
 ### Expanding items
 
-Do you want to expand items to all available width? Leverage the `.group--expanded` modifier class.
+Do you want to expand items to all available width? Leverage the `.group--expand` modifier class.
 
 [[example file=components/group/example/expanded.html]]
 
 ### Stacking items
 
-You can also tell a group to stack its items on top of each other with the `.group--stacked` modifier class.
+You can also tell a group to stack its items on top of each other with the `.group--stack` modifier class.
 
 [[example file=components/group/example/stacked.html]]
 

@@ -304,7 +304,7 @@ h6, .heading--h6 {
     max-width: 70em; }
   .container--xxlarge {
     max-width: 90em; }
-  .container--centered {
+  .container--center {
     margin-left: auto;
     margin-right: auto; }
 
@@ -670,7 +670,7 @@ h6, .heading--h6 {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
-  .grid--stacked {
+  .grid--stack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -685,18 +685,18 @@ h6, .heading--h6 {
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
         max-width: 100%; } }
-  .grid--reversed {
+  .grid--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
-    .grid--reversed.grid--stacked {
+    .grid--reverse.grid--stack {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
     @media (max-width: 47.9375em) {
-      .grid--reversed.grid--stackable {
+      .grid--reverse.grid--stackable {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
@@ -707,15 +707,15 @@ h6, .heading--h6 {
     .grid--gapless > .grid__column {
       padding-left: 0;
       padding-right: 0; }
-  .grid--waffled {
+  .grid--waffle {
     padding: 0.28125em; }
     @media (min-width: 60em) {
-      .grid--waffled {
+      .grid--waffle {
         padding: 0.5625em; } }
-    .grid--waffled .grid__column {
+    .grid--waffle .grid__column {
       padding: 0.28125em; }
       @media (min-width: 60em) {
-        .grid--waffled .grid__column {
+        .grid--waffle .grid__column {
           padding: 0.5625em; } }
 
 /** @define list */
@@ -724,7 +724,7 @@ h6, .heading--h6 {
   padding-left: 1em; }
   .list__item, .content ul li, .content ol li, .content dl dd {
     display: list-item; }
-  .list--unstyled {
+  .list--unstyle {
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -737,11 +737,11 @@ h6, .heading--h6 {
   display: inline-block;
   max-width: 100%;
   height: auto; }
-  .image--expanded {
+  .image--expand {
     width: 100%; }
-  .image--rounded {
+  .image--round {
     border-radius: 0.25rem; }
-  .image--circular {
+  .image--circle {
     border-radius: 50%; }
   .image--top {
     vertical-align: top; }
@@ -797,7 +797,7 @@ h6, .heading--h6 {
     max-width: 100%;
     height: auto;
     vertical-align: text-top; }
-  .media--stacked {
+  .media--stack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -808,18 +808,18 @@ h6, .heading--h6 {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  .media--reversed {
+  .media--reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
-    .media--reversed.media--stacked {
+    .media--reverse.media--stack {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; }
     @media (max-width: 47.9375em) {
-      .media--reversed.media--stackable {
+      .media--reverse.media--stackable {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column-column;
@@ -840,15 +840,15 @@ h6, .heading--h6 {
     padding: 0.5625em 1.125em;
     border: 1px solid #d7dfe6;
     border-width: 0 0 1px; }
-  .table--condensed .table__cell, .table--condensed .content table th, .content table .table--condensed th, .table--condensed
+  .table--condense .table__cell, .table--condense .content table th, .content table .table--condense th, .table--condense
   .content table td,
-  .content table .table--condensed td {
+  .content table .table--condense td {
     padding: 0.375em 0.5625em; }
-  .table--bordered {
+  .table--border {
     border: 1px solid #d7dfe6; }
-    .table--bordered .table__cell, .table--bordered .content table th, .content table .table--bordered th, .table--bordered
+    .table--border .table__cell, .table--border .content table th, .content table .table--border th, .table--border
     .content table td,
-    .content table .table--bordered td {
+    .content table .table--border td {
       border-width: 1px; }
   .table--hoverable .table__row:hover, .table--hoverable .content table tr:hover, .content table .table--hoverable tr:hover {
     background-color: #f6f6f6; }
@@ -874,7 +874,7 @@ h6, .heading--h6 {
     .content table td,
     .content table .table--scoreboard > :last-child td {
       border-bottom: 0; }
-  .table--striped .table__row:nth-child(even), .table--striped .content table tr:nth-child(even), .content table .table--striped tr:nth-child(even) {
+  .table--stripe .table__row:nth-child(even), .table--stripe .content table tr:nth-child(even), .content table .table--stripe tr:nth-child(even) {
     background-color: #f9f9f9; }
 
 /** @define dropdown */
@@ -1053,8 +1053,8 @@ h6, .heading--h6 {
     color: #3273dc; }
     .field--info .field__input {
       border-color: #3273dc; }
-  .field--expanded .field__input,
-  .field--expanded .field__control {
+  .field--expand .field__input,
+  .field--expand .field__control {
     width: 100%; }
   .field--inline .field__label,
   .field--inline .field__input,
@@ -1175,7 +1175,7 @@ h6, .heading--h6 {
         -ms-flex-align: center;
             align-items: center;
     padding: 0.5625em; }
-  .tag--pilled {
+  .tag--pill {
     border-radius: 1.125em; }
 
 /** @define button */
@@ -1287,91 +1287,91 @@ h6, .heading--h6 {
         color: #fff; }
     .button--error .button__cover {
       color: #fff; }
-  .button--hollowed {
+  .button--hollow {
     color: #171c1f;
     border-color: #d7dfe6;
     border-width: 1px;
     border-style: solid;
     background-color: transparent; }
-    .button--hollowed:hover, .button--hollowed:focus, .button--hollowed:active {
+    .button--hollow:hover, .button--hollow:focus, .button--hollow:active {
       color: #171c1f;
       border-color: #c7d2dc; }
-    .button--hollowed.button--primary {
+    .button--hollow.button--primary {
       color: #6c3fce;
       border-color: #6c3fce; }
-      .button--hollowed.button--primary:hover, .button--hollowed.button--primary:focus, .button--hollowed.button--primary:active {
+      .button--hollow.button--primary:hover, .button--hollow.button--primary:focus, .button--hollow.button--primary:active {
         color: #fff;
         border-color: #552cae; }
-        .button--hollowed.button--primary:hover .button__cover, .button--hollowed.button--primary:focus .button__cover, .button--hollowed.button--primary:active .button__cover {
+        .button--hollow.button--primary:hover .button__cover, .button--hollow.button--primary:focus .button__cover, .button--hollow.button--primary:active .button__cover {
           color: #fff; }
-      .button--hollowed.button--primary .button__cover {
+      .button--hollow.button--primary .button__cover {
         color: #6c3fce; }
-    .button--hollowed.button--secondary {
+    .button--hollow.button--secondary {
       color: #543793;
       border-color: #543793; }
-      .button--hollowed.button--secondary:hover, .button--hollowed.button--secondary:focus, .button--hollowed.button--secondary:active {
+      .button--hollow.button--secondary:hover, .button--hollow.button--secondary:focus, .button--hollow.button--secondary:active {
         color: #fff;
         border-color: #3f296e; }
-        .button--hollowed.button--secondary:hover .button__cover, .button--hollowed.button--secondary:focus .button__cover, .button--hollowed.button--secondary:active .button__cover {
+        .button--hollow.button--secondary:hover .button__cover, .button--hollow.button--secondary:focus .button__cover, .button--hollow.button--secondary:active .button__cover {
           color: #fff; }
-      .button--hollowed.button--secondary .button__cover {
+      .button--hollow.button--secondary .button__cover {
         color: #543793; }
-    .button--hollowed.button--success {
+    .button--hollow.button--success {
       color: #26c65e;
       border-color: #26c65e; }
-      .button--hollowed.button--success:hover, .button--hollowed.button--success:focus, .button--hollowed.button--success:active {
+      .button--hollow.button--success:hover, .button--hollow.button--success:focus, .button--hollow.button--success:active {
         color: #fff;
         border-color: #1e9b4a; }
-        .button--hollowed.button--success:hover .button__cover, .button--hollowed.button--success:focus .button__cover, .button--hollowed.button--success:active .button__cover {
+        .button--hollow.button--success:hover .button__cover, .button--hollow.button--success:focus .button__cover, .button--hollow.button--success:active .button__cover {
           color: #fff; }
-      .button--hollowed.button--success .button__cover {
+      .button--hollow.button--success .button__cover {
         color: #26c65e; }
-    .button--hollowed.button--warning {
+    .button--hollow.button--warning {
       color: #ffde66;
       border-color: #ffde66; }
-      .button--hollowed.button--warning:hover, .button--hollowed.button--warning:focus, .button--hollowed.button--warning:active {
+      .button--hollow.button--warning:hover, .button--hollow.button--warning:focus, .button--hollow.button--warning:active {
         color: #171c1f;
         border-color: #ffd333; }
-        .button--hollowed.button--warning:hover .button__cover, .button--hollowed.button--warning:focus .button__cover, .button--hollowed.button--warning:active .button__cover {
+        .button--hollow.button--warning:hover .button__cover, .button--hollow.button--warning:focus .button__cover, .button--hollow.button--warning:active .button__cover {
           color: #171c1f; }
-      .button--hollowed.button--warning .button__cover {
+      .button--hollow.button--warning .button__cover {
         color: #ffde66; }
-    .button--hollowed.button--info {
+    .button--hollow.button--info {
       color: #3273dc;
       border-color: #3273dc; }
-      .button--hollowed.button--info:hover, .button--hollowed.button--info:focus, .button--hollowed.button--info:active {
+      .button--hollow.button--info:hover, .button--hollow.button--info:focus, .button--hollow.button--info:active {
         color: #fff;
         border-color: #205bbb; }
-        .button--hollowed.button--info:hover .button__cover, .button--hollowed.button--info:focus .button__cover, .button--hollowed.button--info:active .button__cover {
+        .button--hollow.button--info:hover .button__cover, .button--hollow.button--info:focus .button__cover, .button--hollow.button--info:active .button__cover {
           color: #fff; }
-      .button--hollowed.button--info .button__cover {
+      .button--hollow.button--info .button__cover {
         color: #3273dc; }
-    .button--hollowed.button--error {
+    .button--hollow.button--error {
       color: #ec3953;
       border-color: #ec3953; }
-      .button--hollowed.button--error:hover, .button--hollowed.button--error:focus, .button--hollowed.button--error:active {
+      .button--hollow.button--error:hover, .button--hollow.button--error:focus, .button--hollow.button--error:active {
         color: #fff;
         border-color: #dd1532; }
-        .button--hollowed.button--error:hover .button__cover, .button--hollowed.button--error:focus .button__cover, .button--hollowed.button--error:active .button__cover {
+        .button--hollow.button--error:hover .button__cover, .button--hollow.button--error:focus .button__cover, .button--hollow.button--error:active .button__cover {
           color: #fff; }
-      .button--hollowed.button--error .button__cover {
+      .button--hollow.button--error .button__cover {
         color: #ec3953; }
   .button--wide {
     padding-left: 2.5em;
     padding-right: 2.5em; }
-  .button--expanded {
+  .button--expand {
     display: block;
     width: 100%; }
-  .button--covered {
+  .button--cover {
     cursor: initial;
     color: transparent !important; }
-    .button--covered .button__cover {
+    .button--cover .button__cover {
       opacity: 1; }
-  .button--curtained:hover, .button--curtained:focus, .button--curtained:active {
+  .button--curtain:hover, .button--curtain:focus, .button--curtain:active {
     color: transparent !important; }
-    .button--curtained:hover .button__cover, .button--curtained:focus .button__cover, .button--curtained:active .button__cover {
+    .button--curtain:hover .button__cover, .button--curtain:focus .button__cover, .button--curtain:active .button__cover {
       opacity: 1; }
-  .button:disabled, .button--disabled {
+  .button:disabled, .button--disable {
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
@@ -1487,7 +1487,7 @@ h6, .heading--h6 {
     .group__item:last-child,
     .group__item:last-child > * {
       border-radius: 0 0.25rem 0.25rem 0; }
-    .group__item--expanded {
+    .group__item--expand {
       -webkit-box-flex: 1;
           -ms-flex: 1 0 auto;
               flex: 1 0 auto; }
@@ -1506,32 +1506,32 @@ h6, .heading--h6 {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex; }
-  .group--overlapped > * + * {
+  .group--overlap > * + * {
     margin-left: -1px; }
-  .group--overlapped.group--stacked > * + * {
+  .group--overlap.group--stack > * + * {
     margin-left: 0;
     margin-top: -1px; }
-  .group--expanded {
+  .group--expand {
     width: 100%; }
-    .group--expanded .group__item {
+    .group--expand .group__item {
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
   .group--tabbed .group__item,
   .group--tabbed .group__item > * {
     border-radius: 0.25rem 0.25rem 0 0; }
-  .group--stacked {
+  .group--stack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .group--stacked .group__item:first-child,
-    .group--stacked .group__item:first-child > * {
+    .group--stack .group__item:first-child,
+    .group--stack .group__item:first-child > * {
       border-radius: 0.25rem 0.25rem 0 0; }
-    .group--stacked .group__item:last-child,
-    .group--stacked .group__item:last-child > * {
+    .group--stack .group__item:last-child,
+    .group--stack .group__item:last-child > * {
       border-radius: 0 0 0.25rem 0.25rem; }
-    .group--stacked .group__divider {
+    .group--stack .group__divider {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;

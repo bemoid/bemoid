@@ -14,7 +14,7 @@ Simply add `.image` block class to `<img>` HTML element.
 
 [[example file=objects/image/example/basic.html]]
 
-The `.image--circular` modifier class may you help to achieve avatar-like images.
+The `.image--circle` modifier class may you help to achieve avatar-like images.
 
 [[example file=objects/image/example/circular.html]]
 

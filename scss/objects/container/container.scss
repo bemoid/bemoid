@@ -11,7 +11,7 @@
 // .container--large    - Large width. Extends up to `large` breakpoint.
 // .container--xlarge   - Xlarge width. Extends up to `xlarge` breakpoint.
 // .container--xxlarge  - Xxlarge width. Extends up to `xxlarge` breakpoint.
-// .container--centered - Centers container horizontally.
+// .container--center - Centers container horizontally.
 //
 // Markup: objects/container/html/container.html
 //
@@ -31,7 +31,7 @@
     }
   }
 
-  &--centered {
+  &--center {
     margin-left: auto;
     margin-right: auto;
   }

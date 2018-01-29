@@ -36,7 +36,7 @@ On the other hand, a `.table--scoreboard` adds border only to internal cells.
 
 ### Hightlighting
 
-A `.table--striped` modifier class will add background to every even row of the table.
+A `.table--stripe` modifier class will add background to every even row of the table.
 
 [[example file=objects/table/example/bordered.html]]
 

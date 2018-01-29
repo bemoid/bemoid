@@ -6,12 +6,12 @@
 //
 // Component for controlling images.
 //
-// .image--expanded    - Image stretches to fill all width space of its container.
-// .image--rounded     - Rounds up corners of the image.
-// .image--circular    - Changes shape of image to circle.
-// .image--top         - Aligns image verticaly to the top.
-// .image--middle      - Aligns image verticaly to the middle.
-// .image--bottom      - Aligns image verticaly to the bottom.
+// .image--expand    - Image stretches to fill all width space of its container.
+// .image--round     - Rounds up corners of the image.
+// .image--circle    - Changes shape of image to circle.
+// .image--top       - Aligns image verticaly to the top.
+// .image--middle    - Aligns image verticaly to the middle.
+// .image--bottom    - Aligns image verticaly to the bottom.
 //
 // Markup: objects/image/html/image.html
 //
@@ -21,15 +21,15 @@
   max-width: 100%;
   height: auto;
 
-  &--expanded {
+  &--expand {
     width: 100%;
   }
 
-  &--rounded {
+  &--round {
     border-radius: $image-radius-rounded;
   }
 
-  &--circular {
+  &--circle {
     border-radius: $image-radius-circular;
   }
 

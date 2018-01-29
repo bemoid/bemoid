@@ -60,13 +60,13 @@ Columns can evenly align vertically themselves.
 
 ### Reordering
 
-To avoid unnecessary bloat, grid component does not provide any ordering classes. You should maintain it with `order` property inside your stylesheets. However, there is a `.grid--reversed` modifier class to reverse an order of the columns within the grid.
+To avoid unnecessary bloat, grid component does not provide any ordering classes. You should maintain it with `order` property inside your stylesheets. However, there is a `.grid--reverse` modifier class to reverse an order of the columns within the grid.
 
 [[example file=objects/grid/example/reversed.html]]
 
 #### Stacking
 
-You can also tell a grid to stack its columns on top of each other with the `.grid--stacked` modifier class.
+You can also tell a grid to stack its columns on top of each other with the `.grid--stack` modifier class.
 
 [[example file=objects/grid/example/stacked.html]]
 
@@ -89,7 +89,7 @@ $grid-gutters: (
 );
 ```
 
-By default, gutters are added only horizontally. However, there is a special `.grid--waffled` modifier which adds gutter on all sides of the columns, so you don't have to think about spacing between rows.
+By default, gutters are added only horizontally. However, there is a special `.grid--waffle` modifier which adds gutter on all sides of the columns, so you don't have to think about spacing between rows.
 
 [[example file=objects/grid/example/waffled.html]]
 

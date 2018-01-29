@@ -30,13 +30,13 @@ Vertical distribution of the `.media__side` element can be adjusted with a align
 
 ### Reordering
 
-There is a `.media--reversed` modifier class to reverse an order of the columns within the media.
+There is a `.media--reverse` modifier class to reverse an order of the columns within the media.
 
 [[example file=objects/media/example/reversed.html]]
 
 #### Stacking
 
-You can also tell side and content to stack on top of each other with the `.media--stacked` modifier class.
+You can also tell side and content to stack on top of each other with the `.media--stack` modifier class.
 
 [[example file=objects/media/example/stacked.html]]
 

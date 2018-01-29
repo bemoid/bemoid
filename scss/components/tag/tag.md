@@ -22,7 +22,7 @@ Tags can also hold images with `.tag__image` element class. It's recommended to 
 
 ### Variants
 
-YOu can make tags more rounded with the `.tag--pilled` modifier class.
+YOu can make tags more rounded with the `.tag--pill` modifier class.
 
 [[example file=components/tag/example/variants.html]]
 

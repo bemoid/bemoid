@@ -6,9 +6,9 @@
 //
 // Component for creating a standard clickable buttons.
 //
-// .button--disabled  - Turns on disable state on a button.
+// .button--disable  - Turns on disable state on a button.
 // .button--wide      - Gives button larger horizontal paddings.
-// .button--expanded  - Expands button to fullwidth.
+// .button--expand  - Expands button to fullwidth.
 // .button--xsmall    - Xsmall variant of a button.
 // .button--small     - Small variant of a button.
 // .button--large     - Large variant of a button.
@@ -19,13 +19,13 @@
 // .button--warning   - Warning variant of a button.
 // .button--info      - Info variant of a button.
 // .button--error     - Error variant of a button.
-// .button--hollowed  - Hollowed variant of a button. Makes button background transparent.
-// .button--hollowed.button--primary   - Primary variant of a hollowed button.
-// .button--hollowed.button--secondary - Secondary variant of a hollowed button.
-// .button--hollowed.button--success   - Success variant of a hollowed button.
-// .button--hollowed.button--warning   - Warning variant of a hollowed button.
-// .button--hollowed.button--info      - Info variant of a hollowed button.
-// .button--hollowed.button--error     - Error variant of a hollowed button.
+// .button--hollow  - Hollowed variant of a button. Makes button background transparent.
+// .button--hollow.button--primary   - Primary variant of a hollowed button.
+// .button--hollow.button--secondary - Secondary variant of a hollowed button.
+// .button--hollow.button--success   - Success variant of a hollowed button.
+// .button--hollow.button--warning   - Warning variant of a hollowed button.
+// .button--hollow.button--info      - Info variant of a hollowed button.
+// .button--hollow.button--error     - Error variant of a hollowed button.
 //
 // Markup: components/button/html/button.html
 //
@@ -127,7 +127,7 @@
     }
   }
 
-  &--hollowed {
+  &--hollow {
     $variant: map-get($button-hollowed-variants, $button-hollowed-variant);
 
     @include declarations-mutable($variant);
@@ -172,12 +172,12 @@
     padding-right: $button-wide-padding;
   }
 
-  &--expanded {
+  &--expand {
     display: block;
     width: 100%;
   }
 
-  &--covered {
+  &--cover {
     cursor: initial;
     color: transparent !important;
 
@@ -186,7 +186,7 @@
     }
   }
 
-  &--curtained {
+  &--curtain {
     &:hover,
     &:focus,
     &:active {
@@ -199,7 +199,7 @@
   }
 
   &:disabled,
-  &--disabled {
+  &--disable {
     cursor: default;
     opacity: $button-disabled-opacity;
     pointer-events: none;
