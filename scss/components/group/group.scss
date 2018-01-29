@@ -18,7 +18,7 @@
 .group {
   $this: &;
 
-  display: inline-flex;
+  display: flex;
 
   // Group Item
   //
@@ -84,6 +84,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &--inlined {
+    display: inline-flex;
   }
 
   &--overlapped {

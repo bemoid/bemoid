@@ -176,13 +176,6 @@
       "name": "button-hollowed-background"
     }
   ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -240,6 +233,13 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
   "divider": [
     {
       "variable": "$divider-badge-sizes",
@@ -260,33 +260,6 @@
       "variable": "$divider-badge-radius",
       "value": "radius(circle) !default",
       "name": "divider-badge-radius"
-    }
-  ],
-  "group": [
-    {
-      "variable": "$group-overlap",
-      "value": "-1px !default",
-      "name": "group-overlap"
-    },
-    {
-      "variable": "$group-inner-radius",
-      "value": "0 !default",
-      "name": "group-inner-radius"
-    },
-    {
-      "variable": "$group-outer-radius",
-      "value": "radius(xsmall) !default",
-      "name": "group-outer-radius"
-    },
-    {
-      "variable": "$group-stackable",
-      "value": "medium !default",
-      "name": "group-stackable"
-    },
-    {
-      "variable": "$group-divider-width",
-      "value": "6px !default",
-      "name": "group-divider-width"
     }
   ],
   "field": [
@@ -314,6 +287,33 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
+    }
+  ],
+  "group": [
+    {
+      "variable": "$group-overlap",
+      "value": "-1px !default",
+      "name": "group-overlap"
+    },
+    {
+      "variable": "$group-inner-radius",
+      "value": "0 !default",
+      "name": "group-inner-radius"
+    },
+    {
+      "variable": "$group-outer-radius",
+      "value": "radius(xsmall) !default",
+      "name": "group-outer-radius"
+    },
+    {
+      "variable": "$group-stackable",
+      "value": "medium !default",
+      "name": "group-stackable"
+    },
+    {
+      "variable": "$group-divider-width",
+      "value": "6px !default",
+      "name": "group-divider-width"
     }
   ],
   "input": [
@@ -821,13 +821,6 @@
       "name": "elevator"
     }
   ],
-  "spaces": [
-    {
-      "variable": "$spaces",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spaces"
-    }
-  ],
   "radiuses": [
     {
       "variable": "$radiuses",
@@ -840,6 +833,13 @@
       "variable": "$radius",
       "value": "medium !default",
       "name": "radius"
+    }
+  ],
+  "spaces": [
+    {
+      "variable": "$spaces",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "spaces"
     }
   ],
   "transition": [

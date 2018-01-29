@@ -1467,9 +1467,9 @@ h6, .heading--h6 {
 
 /** @define group */
 .group {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .group__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
@@ -1502,6 +1502,10 @@ h6, .heading--h6 {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+  .group--inlined {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .group--overlapped > * + * {
     margin-left: -1px; }
   .group--overlapped.group--stacked > * + * {
