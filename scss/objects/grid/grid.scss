@@ -162,7 +162,7 @@
 
     &#{$this}--stackable {
       @include breakpoint($grid-stackable down) {
-        flex-direction: column-column;
+        flex-direction: column-reverse;
       }
     }
   }
