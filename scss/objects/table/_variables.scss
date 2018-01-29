@@ -30,12 +30,12 @@ $table-heading-background: color(lighter-gray) !default;
 /// Padding size in each condensed table cell.
 ///
 /// @type {Value|Values}
-$table-condensed-padding: space(small) space(medium) !default;
+$table-condense-padding: space(small) space(medium) !default;
 
 /// Background of the striped table even rows.
 ///
 /// @type {Color}
-$table-striped-background: lighten(color(lighter-gray), 1%) !default;
+$table-stripe-background: lighten(color(lighter-gray), 1%) !default;
 
 /// Background of the hovered row in hoverable table.
 ///

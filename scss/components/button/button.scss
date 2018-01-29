@@ -49,7 +49,7 @@
   font-weight: $button-weight;
   text-align: $button-align;
   border-radius: $button-radius;
-  border: $button-hollowed-border solid transparent;
+  border: $button-hollow-border solid transparent;
 
   &:hover,
   &:focus,
@@ -128,13 +128,13 @@
   }
 
   &--hollow {
-    $variant: map-get($button-hollowed-variants, $button-hollowed-variant);
+    $variant: map-get($button-hollow-variants, $button-hollow-variant);
 
     @include declarations-mutable($variant);
 
-    border-width: $button-hollowed-border;
+    border-width: $button-hollow-border;
     border-style: solid;
-    background-color: $button-hollowed-background;
+    background-color: $button-hollow-background;
 
     &:hover,
     &:focus,
@@ -142,8 +142,8 @@
       @include declarations-mutable($variant, true);
     }
 
-    @each $variant, $declarations in $button-hollowed-variants {
-      @if $variant != $button-hollowed-variant {
+    @each $variant, $declarations in $button-hollow-variants {
+      @if $variant != $button-hollow-variant {
         &#{$this}--#{$variant} {
           $color: map-get($declarations, 'color');
 

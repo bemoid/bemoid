@@ -42,7 +42,7 @@ $button-variants: (
   ),
 ) !default;
 
-/// Collection of hollowed button variants.
+/// Collection of hollow button variants.
 ///
 /// @type {Map}
 /// @prop {Map} white
@@ -54,7 +54,7 @@ $button-variants: (
 /// @prop {Map} warning
 /// @prop {Map} info
 /// @prop {Map} error
-$button-hollowed-variants: (
+$button-hollow-variants: (
   neutral: (
     'color': color(black),
     'border-color': color(light-gray) darken(color(light-gray), 5%),
@@ -146,17 +146,17 @@ $button-wide-padding: em(40px) !default;
 /// @type {Number}
 $button-disabled-opacity: 0.5 !default;
 
-/// Default hollowed button variant.
+/// Default hollow button variant.
 ///
 /// @type {Keyword}
-$button-hollowed-variant: neutral !default;
+$button-hollow-variant: neutral !default;
 
 /// Outline width of the hollow button.
 ///
 /// @type {Value}
-$button-hollowed-border: 1px !default;
+$button-hollow-border: 1px !default;
 
 /// Backgound color of the hollow button.
 ///
 /// @type {Color}
-$button-hollowed-background: transparent !default;
+$button-hollow-background: transparent !default;
