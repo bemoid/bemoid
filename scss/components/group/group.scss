@@ -65,6 +65,10 @@
         $group-outer-radius
         $group-inner-radius;
     }
+
+    &--expanded {
+      flex: 1 0 auto;
+    }
   }
 
   // Group Divider
