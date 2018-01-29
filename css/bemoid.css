@@ -1,14 +1,10 @@
-@charset "UTF-8";
 /*!
- * Bemoid v1.0.0
- * http://bemoid.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Copyright 2017-present Jędrzej Chałubek
- * http://jedrzejchalubek.com
- */
+* Bemoid v0.1.0 (https://bemoid.com)
+* A component-oriented CSS framework based on BEM convention and OOCSS methodology
+*
+* Licensed under the MIT license.
+* Copyright 2017-present Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com).
+*/
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;

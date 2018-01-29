@@ -2,13 +2,14 @@
   "name": "@bemoid/bemoid",
   "version": "0.1.0",
   "description": "A component-oriented CSS framework based on BEM convention and OOCSS methodology",
+  "homepage": "https://bemoid.com",
   "main": "scss/bemoid.scss",
   "scripts": {
     "transform": "node build/apply.transformations.js -i css/bemoid.css -o css/bemoid.css",
     "extract": "npm run extract:variables && npm run extract:imports",
     "extract:variables": "node build/extract.variables.js -i 'scss/**/_variables.scss' -o 'json/variables.json'",
     "extract:imports": "node build/extract.imports.js -i 'scss/bemoid.scss' -o 'json/imports.json'",
-    "compile": "node-sass scss/bemoid.scss > css/bemoid.css",
+    "compile": "node-sass scss/bemoid.scss | node ./build/banner.js > css/bemoid.css",
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
     "test:accessibility": "a11y scss/**/*.html",
     "lint": "stylelint 'scss/**/*.scss'",
@@ -24,7 +25,7 @@
     "css",
     "sass"
   ],
-  "author": "Jędrzej Chałubek",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com)",
   "license": "MIT",
   "devDependencies": {
     "a11y": "^0.5.0",
