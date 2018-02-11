@@ -91,3 +91,8 @@ $headings-color: color(black) !default;
 ///
 /// @type {Number|Value}
 $headings-line-height: 1.25 !default;
+
+/// Font weight of headings.
+///
+/// @type {Number|Keyword}
+$headings-font-weight: 400 !default;
