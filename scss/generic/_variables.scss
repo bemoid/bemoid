@@ -1,6 +1,11 @@
 ////
-/// @group Typography
+/// @group Generic
 ////
+
+/// Background for body.
+///
+/// @type {Color}
+$body-background: color(white) !default;
 
 /// Base line height determines the basic unit of vertical rhythm.
 ///
