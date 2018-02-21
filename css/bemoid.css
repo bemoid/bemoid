@@ -5,6 +5,9 @@
 * Licensed under the MIT license.
 * Copyright 2017-present Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com).
 */
+body {
+  background: #fff; }
+
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
@@ -253,9 +256,10 @@ h5,
 .heading--h5,
 h6,
 .heading--h6 {
-  font-family: inherit;
   color: #171c1f;
-  line-height: 1.25; }
+  line-height: 1.25;
+  font-family: inherit;
+  font-weight: 400; }
 
 h1, .heading--h1 {
   font-size: 2.25em; }
@@ -708,10 +712,10 @@ h6, .heading--h6 {
       padding-left: 0;
       padding-right: 0; }
   .grid--waffle {
-    padding: 0.28125em; }
+    margin: -0.28125em; }
     @media (min-width: 60em) {
       .grid--waffle {
-        padding: 0.5625em; } }
+        margin: -0.5625em; } }
     .grid--waffle .grid__column {
       padding: 0.28125em; }
       @media (min-width: 60em) {

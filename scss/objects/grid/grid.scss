@@ -180,7 +180,7 @@
   &--waffle {
     @each $breakpoint, $width in $grid-gutters {
       @include breakpoint($breakpoint up) {
-        padding: $width / 2;
+        margin: -#{$width / 2};
       }
     }
 

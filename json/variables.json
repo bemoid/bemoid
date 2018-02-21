@@ -1,4 +1,11 @@
 {
+  "body": [
+    {
+      "variable": "$body-background",
+      "value": "color(white) !default",
+      "name": "body-background"
+    }
+  ],
   "line": [
     {
       "variable": "$line-height",
@@ -75,6 +82,11 @@
       "variable": "$headings-line-height",
       "value": "1.25 !default",
       "name": "headings-line-height"
+    },
+    {
+      "variable": "$headings-font-weight",
+      "value": "400 !default",
+      "name": "headings-font-weight"
     }
   ],
   "blockquote": [
@@ -730,6 +742,20 @@
       "name": "figure-font-style"
     }
   ],
+  "heading": [
+    {
+      "variable": "$heading-margins",
+      "value": "0 !default",
+      "name": "heading-margins"
+    }
+  ],
+  "paragraph": [
+    {
+      "variable": "$paragraph-margins",
+      "value": "0 !default",
+      "name": "paragraph-margins"
+    }
+  ],
   "form": [
     {
       "variable": "$form-group-radius",
@@ -762,20 +788,6 @@
       "name": "form-legend-text-transform"
     }
   ],
-  "heading": [
-    {
-      "variable": "$heading-margins",
-      "value": "0 !default",
-      "name": "heading-margins"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margins",
-      "value": "0 !default",
-      "name": "paragraph-margins"
-    }
-  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -800,6 +812,13 @@
       "name": "breakpoints-offset"
     }
   ],
+  "colors": [
+    {
+      "variable": "$colors",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "name": "colors"
+    }
+  ],
   "elevators": [
     {
       "variable": "$elevators",
@@ -814,13 +833,6 @@
       "name": "elevator"
     }
   ],
-  "colors": [
-    {
-      "variable": "$colors",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
-      "name": "colors"
-    }
-  ],
   "radiuses": [
     {
       "variable": "$radiuses",
@@ -833,13 +845,6 @@
       "variable": "$radius",
       "value": "medium !default",
       "name": "radius"
-    }
-  ],
-  "spaces": [
-    {
-      "variable": "$spaces",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spaces"
     }
   ],
   "transition": [
@@ -859,6 +864,13 @@
       "variable": "$transitions",
       "value": "(\n  'slow': 0.6s $transition-easing,\n  'normal': 0.4s $transition-easing,\n  'fast': 0.2s $transition-easing,\n) !default",
       "name": "transitions"
+    }
+  ],
+  "spaces": [
+    {
+      "variable": "$spaces",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "spaces"
     }
   ]
 }
