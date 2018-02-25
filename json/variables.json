@@ -121,6 +121,63 @@
       "name": "blockquote-footer-color"
     }
   ],
+  "checkbox": [
+    {
+      "variable": "$checkbox-radius",
+      "value": "radius(circle) !default",
+      "name": "checkbox-radius"
+    },
+    {
+      "variable": "$checkbox-size",
+      "value": "em(18px) !default",
+      "name": "checkbox-size"
+    },
+    {
+      "variable": "$checkbox-background",
+      "value": "transparent !default",
+      "name": "checkbox-background"
+    },
+    {
+      "variable": "$checkbox-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "checkbox-border"
+    },
+    {
+      "variable": "$checkbox-hover-border",
+      "value": "1px solid color(info) !default",
+      "name": "checkbox-hover-border"
+    },
+    {
+      "variable": "$checkbox-hover-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "checkbox-hover-background"
+    },
+    {
+      "variable": "$checkbox-mark-size",
+      "value": "em(14px) !default",
+      "name": "checkbox-mark-size"
+    },
+    {
+      "variable": "$checkbox-mark-width",
+      "value": "em(2px) !default",
+      "name": "checkbox-mark-width"
+    },
+    {
+      "variable": "$checkbox-mark-color",
+      "value": "color(info) !default",
+      "name": "checkbox-mark-color"
+    },
+    {
+      "variable": "$checkbox-mark-transform",
+      "value": "rotate(-45deg) scale(0) !default",
+      "name": "checkbox-mark-transform"
+    },
+    {
+      "variable": "$checkbox-mark-active-transform",
+      "value": "rotate(-45deg) scale(1) !default",
+      "name": "checkbox-mark-active-transform"
+    }
+  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -186,63 +243,6 @@
       "variable": "$button-hollow-background",
       "value": "transparent !default",
       "name": "button-hollow-background"
-    }
-  ],
-  "checkbox": [
-    {
-      "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
-      "name": "checkbox-radius"
-    },
-    {
-      "variable": "$checkbox-size",
-      "value": "em(18px) !default",
-      "name": "checkbox-size"
-    },
-    {
-      "variable": "$checkbox-background",
-      "value": "transparent !default",
-      "name": "checkbox-background"
-    },
-    {
-      "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "checkbox-border"
-    },
-    {
-      "variable": "$checkbox-hover-border",
-      "value": "1px solid color(info) !default",
-      "name": "checkbox-hover-border"
-    },
-    {
-      "variable": "$checkbox-hover-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "checkbox-hover-background"
-    },
-    {
-      "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
-      "name": "checkbox-mark-size"
-    },
-    {
-      "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
-      "name": "checkbox-mark-width"
-    },
-    {
-      "variable": "$checkbox-mark-color",
-      "value": "color(info) !default",
-      "name": "checkbox-mark-color"
-    },
-    {
-      "variable": "$checkbox-mark-transform",
-      "value": "rotate(-45deg) scale(0) !default",
-      "name": "checkbox-mark-transform"
-    },
-    {
-      "variable": "$checkbox-mark-active-transform",
-      "value": "rotate(-45deg) scale(1) !default",
-      "name": "checkbox-mark-active-transform"
     }
   ],
   "content": [
@@ -742,20 +742,6 @@
       "name": "figure-font-style"
     }
   ],
-  "heading": [
-    {
-      "variable": "$heading-margins",
-      "value": "0 !default",
-      "name": "heading-margins"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margins",
-      "value": "0 !default",
-      "name": "paragraph-margins"
-    }
-  ],
   "form": [
     {
       "variable": "$form-group-radius",
@@ -786,6 +772,20 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
+    }
+  ],
+  "heading": [
+    {
+      "variable": "$heading-margins",
+      "value": "0 !default",
+      "name": "heading-margins"
+    }
+  ],
+  "paragraph": [
+    {
+      "variable": "$paragraph-margins",
+      "value": "0 !default",
+      "name": "paragraph-margins"
     }
   ],
   "segment": [
@@ -847,6 +847,13 @@
       "name": "radius"
     }
   ],
+  "spaces": [
+    {
+      "variable": "$spaces",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "spaces"
+    }
+  ],
   "transition": [
     {
       "variable": "$transition-easing",
@@ -864,13 +871,6 @@
       "variable": "$transitions",
       "value": "(\n  'slow': 0.6s $transition-easing,\n  'normal': 0.4s $transition-easing,\n  'fast': 0.2s $transition-easing,\n) !default",
       "name": "transitions"
-    }
-  ],
-  "spaces": [
-    {
-      "variable": "$spaces",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spaces"
     }
   ]
 }

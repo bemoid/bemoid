@@ -130,15 +130,17 @@
   &--hollow {
     $variant: map-get($button-hollow-variants, $button-hollow-variant);
 
-    @include declarations-mutable($variant);
-
     border-width: $button-hollow-border;
     border-style: solid;
     background-color: $button-hollow-background;
 
+    @include declarations-mutable($variant);
+
     &:hover,
     &:focus,
     &:active {
+      background-color: $button-hollow-background;
+
       @include declarations-mutable($variant, true);
     }
 

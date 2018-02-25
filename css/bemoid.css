@@ -1292,12 +1292,13 @@ h6, .heading--h6 {
     .button--error .button__cover {
       color: #fff; }
   .button--hollow {
-    color: #171c1f;
-    border-color: #d7dfe6;
     border-width: 1px;
     border-style: solid;
-    background-color: transparent; }
+    background-color: transparent;
+    color: #171c1f;
+    border-color: #d7dfe6; }
     .button--hollow:hover, .button--hollow:focus, .button--hollow:active {
+      background-color: transparent;
       color: #171c1f;
       border-color: #c7d2dc; }
     .button--hollow.button--primary {
