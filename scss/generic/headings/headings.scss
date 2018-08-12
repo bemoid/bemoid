@@ -20,6 +20,7 @@ h6 {
       }
     }
   }
+
   @else {
     @include breakpoint($breakpoint up) {
       @each $h, $declarations in $heading {

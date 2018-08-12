@@ -22,6 +22,7 @@
     @if ($breakpoint == $media-gutter) {
       margin: -#{$width / 2};
     }
+
     @else {
       @include breakpoint($breakpoint up) {
         margin: -#{$width / 2};
@@ -35,6 +36,7 @@
       @if ($breakpoint == $media-gutter) {
         padding: $width / 2;
       }
+
       @else {
         @include breakpoint($breakpoint up) {
           padding: $width / 2;

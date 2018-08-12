@@ -35,6 +35,7 @@
       margin-left: -#{$width / 2};
       margin-right: -#{$width / 2};
     }
+
     @else {
       @include breakpoint($breakpoint up) {
         margin-left: -#{$width / 2};
@@ -77,6 +78,7 @@
         padding-left: $width / 2;
         padding-right: $width / 2;
       }
+
       @else {
         @include breakpoint($breakpoint up) {
           padding-left: $width / 2;
@@ -218,6 +220,7 @@
       @if ($breakpoint == $grid-gutter) {
         margin: -#{$width / 2};
       }
+
       @else {
         @include breakpoint($breakpoint up) {
           margin: -#{$width / 2};
@@ -230,6 +233,7 @@
         @if ($breakpoint == $grid-gutter) {
           padding: $width / 2;
         }
+
         @else {
           @include breakpoint($breakpoint up) {
             padding: $width / 2;
