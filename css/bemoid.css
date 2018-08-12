@@ -222,47 +222,72 @@ a {
   a:hover {
     color: #010202; }
 
-h1,
+h1, .heading--h1,
 h2,
+.heading--h2,
 h3,
+.heading--h3,
 h4,
+.heading--h4,
 h5,
-h6 {
+.heading--h5,
+h6,
+.heading--h6 {
   color: #171c1f;
   line-height: 1.25;
   font-family: inherit;
   font-weight: 400; }
 
-h1 {
+h1, .heading--h1 {
   font-size: 2.25em; }
 
-h2 {
+
+h2,
+.heading--h2 {
   font-size: 1.6875em; }
 
-h3 {
+
+h3,
+.heading--h3 {
   font-size: 1.3125em; }
 
-h4 {
+
+h4,
+.heading--h4 {
   font-size: 1.125em; }
 
-h5 {
+
+h5,
+.heading--h5 {
   font-size: 1em; }
 
-h6 {
+
+h6,
+.heading--h6 {
   font-size: 0.875em; }
 
 @media (min-width: 48em) {
-  h1 {
+  h1, .heading--h1 {
     font-size: 2.625em; }
-  h2 {
+  
+  h2,
+  .heading--h2 {
     font-size: 2.25em; }
-  h3 {
+  
+  h3,
+  .heading--h3 {
     font-size: 1.6875em; }
-  h4 {
+  
+  h4,
+  .heading--h4 {
     font-size: 1.3125em; }
-  h5 {
+  
+  h5,
+  .heading--h5 {
     font-size: 1em; }
-  h6 {
+  
+  h6,
+  .heading--h6 {
     font-size: 0.875em; } }
 
 html {
@@ -954,6 +979,29 @@ mark {
   .dropdown--hoverable:hover .dropdown__content {
     display: block; }
 
+/** @define form */
+.form__group {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0.25rem;
+  background-color: #f6f6f6;
+  border: 1px solid #d7dfe6; }
+
+.form__legend {
+  margin-top: 0;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/** @define figure */
+.figure {
+  margin: 0;
+  text-align: center; }
+  .figure__image {
+    display: inline-block; }
+  .figure__caption {
+    font-style: italic; }
+
 /** @define segment */
 .segment {
   width: 100%;
@@ -1019,3 +1067,11 @@ mark {
       padding: 1.125em; }
     .segment--xlarge\@xxlarge {
       padding: 2.25em; } }
+
+/** @define heading */
+.heading {
+  margin: 0; }
+
+/** @define paragraph */
+.paragraph {
+  margin: 0; }

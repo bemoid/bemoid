@@ -447,9 +447,9 @@
       "name": "heading-font-weight"
     },
     {
-      "variable": "$heading-margins",
+      "variable": "$heading-margin",
       "value": "0 !default",
-      "name": "heading-margins"
+      "name": "heading-margin"
     }
   ],
   "link": [
@@ -647,6 +647,69 @@
       "name": "table-hoverable-background"
     }
   ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
+    }
+  ],
+  "form": [
+    {
+      "variable": "$form-group-radius",
+      "value": "radius(xsmall) !default",
+      "name": "form-group-radius"
+    },
+    {
+      "variable": "$form-group-background",
+      "value": "color(lighter-gray) !default",
+      "name": "form-group-background"
+    },
+    {
+      "variable": "$form-group-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "form-group-border"
+    },
+    {
+      "variable": "$form-legend-font-size",
+      "value": "em(12px) !default",
+      "name": "form-legend-font-size"
+    },
+    {
+      "variable": "$form-legend-weight",
+      "value": "bold !default",
+      "name": "form-legend-weight"
+    },
+    {
+      "variable": "$form-legend-text-transform",
+      "value": "uppercase !default",
+      "name": "form-legend-text-transform"
+    }
+  ],
+  "paragraph": [
+    {
+      "variable": "$paragraph-margin",
+      "value": "0 !default",
+      "name": "paragraph-margin"
+    }
+  ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
+    }
+  ],
   "radio": [
     {
       "variable": "$radio-radius",
@@ -746,69 +809,6 @@
       "variable": "$tag-hover-background",
       "value": "darken(color(light-gray), 10%) !default",
       "name": "tag-hover-background"
-    }
-  ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
-  "form": [
-    {
-      "variable": "$form-group-radius",
-      "value": "radius(xsmall) !default",
-      "name": "form-group-radius"
-    },
-    {
-      "variable": "$form-group-background",
-      "value": "color(lighter-gray) !default",
-      "name": "form-group-background"
-    },
-    {
-      "variable": "$form-group-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "form-group-border"
-    },
-    {
-      "variable": "$form-legend-font-size",
-      "value": "em(12px) !default",
-      "name": "form-legend-font-size"
-    },
-    {
-      "variable": "$form-legend-weight",
-      "value": "bold !default",
-      "name": "form-legend-weight"
-    },
-    {
-      "variable": "$form-legend-text-transform",
-      "value": "uppercase !default",
-      "name": "form-legend-text-transform"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margins",
-      "value": "0 !default",
-      "name": "paragraph-margins"
     }
   ],
   "breakpoints": [

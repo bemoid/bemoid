@@ -15,6 +15,10 @@
     "objects/dropdown/dropdown"
   ],
   "structures": [
-    "structures/segment/segment"
+    "structures/form/form",
+    "structures/figure/figure",
+    "structures/segment/segment",
+    "structures/heading/heading",
+    "structures/paragraph/paragraph"
   ]
 }
