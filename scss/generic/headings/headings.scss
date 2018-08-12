@@ -1,0 +1,32 @@
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+  line-height: $headings-line-height;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+@each $breakpoint, $heading in $heading-sizes {
+  @if ($breakpoint == $heading-size) {
+    @each $h, $declarations in $heading {
+      #{$h} {
+        @include declarations($declarations);
+      }
+    }
+  }
+  @else {
+    @include breakpoint($breakpoint up) {
+      @each $h, $declarations in $heading {
+        #{$h} {
+          @include declarations($declarations);
+        }
+      }
+    }
+  }
+}

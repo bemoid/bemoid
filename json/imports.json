@@ -4,48 +4,5 @@
   ],
   "generic": [
     "generic/generic"
-  ],
-  "objects": [
-    "objects/container/container",
-    "objects/grid/grid",
-    "objects/list/list",
-    "objects/image/image",
-    "objects/media/media",
-    "objects/table/table",
-    "objects/dropdown/dropdown"
-  ],
-  "structures": [
-    "structures/form/form",
-    "structures/figure/figure",
-    "structures/segment/segment",
-    "structures/heading/heading",
-    "structures/paragraph/paragraph"
-  ],
-  "components": [
-    "components/panel/panel",
-    "components/modal/modal",
-    "components/overlay/overlay",
-    "components/input/input",
-    "components/field/field",
-    "components/label/label",
-    "components/radio/radio",
-    "components/select/select",
-    "components/checkbox/checkbox",
-    "components/tag/tag",
-    "components/button/button",
-    "components/blockquote/blockquote",
-    "components/message/message",
-    "components/divider/divider",
-    "components/content/content",
-    "components/group/group"
-  ],
-  "utilities": [
-    "utilities/space/space",
-    "utilities/gutter/gutter",
-    "utilities/radius/radius",
-    "utilities/hidden/hidden",
-    "utilities/visible/visible",
-    "utilities/elevator/elevator",
-    "utilities/transition/transition"
   ]
 }

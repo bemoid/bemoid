@@ -1,94 +1,4 @@
 {
-  "body": [
-    {
-      "variable": "$body-background",
-      "value": "color(white) !default",
-      "name": "body-background"
-    }
-  ],
-  "line": [
-    {
-      "variable": "$line-height",
-      "value": "1.5 !default",
-      "name": "line-height"
-    }
-  ],
-  "font": [
-    {
-      "variable": "$font-size",
-      "value": "16px !default",
-      "name": "font-size"
-    },
-    {
-      "variable": "$font-color",
-      "value": "lighten(color(black), 20%) !default",
-      "name": "font-color"
-    },
-    {
-      "variable": "$font-antialiasing",
-      "value": "true !default",
-      "name": "font-antialiasing"
-    },
-    {
-      "variable": "$font-family-primary",
-      "value": "BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default",
-      "name": "font-family-primary"
-    },
-    {
-      "variable": "$font-family-secondary",
-      "value": "'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif !default",
-      "name": "font-family-secondary"
-    },
-    {
-      "variable": "$font-family-monospace",
-      "value": "'Lucida Console', 'Monaco', monospace !default",
-      "name": "font-family-monospace"
-    }
-  ],
-  "link": [
-    {
-      "variable": "$link-color",
-      "value": "$font-color !default",
-      "name": "link-color"
-    },
-    {
-      "variable": "$link-decoration",
-      "value": "underline !default",
-      "name": "link-decoration"
-    },
-    {
-      "variable": "$link-hover-color",
-      "value": "darken($font-color, 10%) !default",
-      "name": "link-hover-color"
-    }
-  ],
-  "headings": [
-    {
-      "variable": "$headings",
-      "value": "(\n  xsmall: (\n    'h1': ('font-size': em(36px)),\n    'h2': ('font-size': em(27px)),\n    'h3': ('font-size': em(21px)),\n    'h4': ('font-size': em(18px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n  medium: (\n    'h1': ('font-size': em(42px)),\n    'h2': ('font-size': em(36px)),\n    'h3': ('font-size': em(27px)),\n    'h4': ('font-size': em(21px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n) !default",
-      "name": "headings"
-    },
-    {
-      "variable": "$headings-font-family",
-      "value": "inherit !default",
-      "name": "headings-font-family"
-    },
-    {
-      "variable": "$headings-color",
-      "value": "color(black) !default",
-      "name": "headings-color"
-    },
-    {
-      "variable": "$headings-line-height",
-      "value": "1.25 !default",
-      "name": "headings-line-height"
-    },
-    {
-      "variable": "$headings-font-weight",
-      "value": "400 !default",
-      "name": "headings-font-weight"
-    }
-  ],
   "blockquote": [
     {
       "variable": "$blockquote-margins",
@@ -505,6 +415,101 @@
       "name": "panel-scrollable-height"
     }
   ],
+  "heading": [
+    {
+      "variable": "$heading-sizes",
+      "value": "(\n  default: (\n    'h1': ('font-size': em(36px)),\n    'h2': ('font-size': em(27px)),\n    'h3': ('font-size': em(21px)),\n    'h4': ('font-size': em(18px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n  medium: (\n    'h1': ('font-size': em(42px)),\n    'h2': ('font-size': em(36px)),\n    'h3': ('font-size': em(27px)),\n    'h4': ('font-size': em(21px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n) !default",
+      "name": "heading-sizes"
+    },
+    {
+      "variable": "$heading-size",
+      "value": "default",
+      "name": "heading-size"
+    },
+    {
+      "variable": "$heading-margins",
+      "value": "0 !default",
+      "name": "heading-margins"
+    }
+  ],
+  "headings": [
+    {
+      "variable": "$headings-font-family",
+      "value": "inherit !default",
+      "name": "headings-font-family"
+    },
+    {
+      "variable": "$headings-color",
+      "value": "color(black) !default",
+      "name": "headings-color"
+    },
+    {
+      "variable": "$headings-line-height",
+      "value": "1.25 !default",
+      "name": "headings-line-height"
+    },
+    {
+      "variable": "$headings-font-weight",
+      "value": "400 !default",
+      "name": "headings-font-weight"
+    }
+  ],
+  "link": [
+    {
+      "variable": "$link-color",
+      "value": "lighten(color(black), 15%) !default",
+      "name": "link-color"
+    },
+    {
+      "variable": "$link-decoration",
+      "value": "underline !default",
+      "name": "link-decoration"
+    },
+    {
+      "variable": "$link-hover-color",
+      "value": "darken(color(black), 10%) !default",
+      "name": "link-hover-color"
+    }
+  ],
+  "line": [
+    {
+      "variable": "$line-height",
+      "value": "1.5 !default",
+      "name": "line-height"
+    }
+  ],
+  "font": [
+    {
+      "variable": "$font-size",
+      "value": "16px !default",
+      "name": "font-size"
+    },
+    {
+      "variable": "$font-color",
+      "value": "lighten(color(black), 20%) !default",
+      "name": "font-color"
+    },
+    {
+      "variable": "$font-antialiasing",
+      "value": "true !default",
+      "name": "font-antialiasing"
+    },
+    {
+      "variable": "$font-family-primary",
+      "value": "BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default",
+      "name": "font-family-primary"
+    },
+    {
+      "variable": "$font-family-secondary",
+      "value": "'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif !default",
+      "name": "font-family-secondary"
+    },
+    {
+      "variable": "$font-family-monospace",
+      "value": "'Lucida Console', 'Monaco', monospace !default",
+      "name": "font-family-monospace"
+    }
+  ],
   "radio": [
     {
       "variable": "$radio-radius",
@@ -779,18 +784,18 @@
       "name": "form-legend-text-transform"
     }
   ],
-  "heading": [
-    {
-      "variable": "$heading-margins",
-      "value": "0 !default",
-      "name": "heading-margins"
-    }
-  ],
   "paragraph": [
     {
       "variable": "$paragraph-margins",
       "value": "0 !default",
       "name": "paragraph-margins"
+    }
+  ],
+  "colors": [
+    {
+      "variable": "$colors",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "name": "colors"
     }
   ],
   "segment": [
@@ -805,11 +810,16 @@
       "name": "segment-size"
     }
   ],
-  "colors": [
+  "breakpoints": [
     {
-      "variable": "$colors",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
-      "name": "colors"
+      "variable": "$breakpoints",
+      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
+      "name": "breakpoints"
+    },
+    {
+      "variable": "$breakpoints-offset",
+      "value": "em(1px)",
+      "name": "breakpoints-offset"
     }
   ],
   "elevators": [
@@ -824,18 +834,6 @@
       "variable": "$elevator",
       "value": "medium !default",
       "name": "elevator"
-    }
-  ],
-  "breakpoints": [
-    {
-      "variable": "$breakpoints",
-      "value": "(\n  xsmall: 0,\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
-      "name": "breakpoints"
-    },
-    {
-      "variable": "$breakpoints-offset",
-      "value": "em(1px)",
-      "name": "breakpoints-offset"
     }
   ],
   "radiuses": [

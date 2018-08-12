@@ -1,0 +1,10 @@
+@import 'variables';
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}

@@ -20,7 +20,7 @@
     &\@#{$breakpoint} {
       display: none;
 
-      @include breakpoint($breakpoint) {
+      @include breakpoint($breakpoint up) {
         display: block;
       }
     }

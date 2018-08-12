@@ -12,7 +12,7 @@
 /// @prop {Value} xlarge
 /// @prop {Value} xxlarge
 $breakpoints: (
-  xsmall: 0,
+  xsmall: em(320px),
   small: em(480px),
   medium: em(768px),
   large: em(960px),
