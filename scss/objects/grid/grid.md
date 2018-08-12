@@ -60,9 +60,19 @@ Columns can evenly align vertically themselves.
 
 ### Reordering
 
-To avoid unnecessary bloat, grid component does not provide any ordering classes. You should maintain it with `order` property inside your stylesheets. However, there is a `.grid--reverse` modifier class to reverse an order of the columns within the grid.
+To avoid unnecessary bloat, grid component does not provide any ordering classes. You should maintain it with `order` property inside your stylesheets.
+
+#### Reversing
+
+Grid can reverse order of its columns with the `.grid--reverse` modifier class.
 
 [[example file=objects/grid/example/reversed.html]]
+
+There is also a `.grid--reversable` modifier class with which columns intrinsically move to the reverse order on a specific breakpoint.
+
+> The breakpoint behind which elements have to revese its order can be set up with `$grid-reversable` variable.
+
+[[example file=objects/grid/example/reversable.html]]
 
 #### Stacking
 
@@ -76,17 +86,9 @@ There is also a `.grid--stackable` modifier class with which columns intrinsical
 
 [[example file=objects/grid/example/stackable.html]]
 
-#### Reversing
+Additionaly, there is a `.grid--nowrap` modifier class for forcing columns to stay in single row. Even if thier width are larger than available space.
 
-Grid can reverse order of its columns with the `.grid--reverse` modifier class.
-
-[[example file=objects/grid/example/reversed.html]]
-
-There is also a `.grid--reversable` modifier class with which columns intrinsically move to the reverse order on a specific breakpoint.
-
-> The breakpoint behind which elements have to revese its order can be set up with `$grid-reversable` variable.
-
-[[example file=objects/grid/example/reversable.html]]
+[[example file=objects/grid/example/nowrap.html]]
 
 ### Gutter
 

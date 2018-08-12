@@ -188,13 +188,6 @@
       "name": "button-hollow-background"
     }
   ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -250,6 +243,13 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
     }
   ],
   "divider": [
@@ -838,6 +838,20 @@
       "name": "elevator"
     }
   ],
+  "radiuses": [
+    {
+      "variable": "$radiuses",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radiuses"
+    }
+  ],
+  "radius": [
+    {
+      "variable": "$radius",
+      "value": "medium !default",
+      "name": "radius"
+    }
+  ],
   "spaces": [
     {
       "variable": "$spaces",
@@ -862,20 +876,6 @@
       "variable": "$transitions",
       "value": "(\n  'slow': 0.6s $transition-easing,\n  'normal': 0.4s $transition-easing,\n  'fast': 0.2s $transition-easing,\n) !default",
       "name": "transitions"
-    }
-  ],
-  "radiuses": [
-    {
-      "variable": "$radiuses",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radiuses"
-    }
-  ],
-  "radius": [
-    {
-      "variable": "$radius",
-      "value": "medium !default",
-      "name": "radius"
     }
   ]
 }

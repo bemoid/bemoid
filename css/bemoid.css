@@ -694,6 +694,9 @@ h6,
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+  .grid--nowrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .grid--stack {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
