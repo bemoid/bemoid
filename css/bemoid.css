@@ -284,3 +284,24 @@ samp {
 mark {
   background-color: #ffde66;
   color: #42515a; }
+
+/** @define container */
+.container {
+  display: block;
+  width: 100%;
+  max-width: 100%; }
+  .container--xsmall {
+    max-width: 20em; }
+  .container--small {
+    max-width: 30em; }
+  .container--medium {
+    max-width: 48em; }
+  .container--large {
+    max-width: 60em; }
+  .container--xlarge {
+    max-width: 70em; }
+  .container--xxlarge {
+    max-width: 90em; }
+  .container--center {
+    margin-left: auto;
+    margin-right: auto; }

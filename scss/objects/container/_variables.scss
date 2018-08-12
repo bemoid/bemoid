@@ -6,7 +6,8 @@
 ///
 /// @type {Keyword}
 $container-sizes: (
-  expanded: 100%,
+  expand: 100%,
+  xsmall: breakpoint(xsmall),
   small: breakpoint(small),
   medium: breakpoint(medium),
   large: breakpoint(large),
@@ -17,4 +18,4 @@ $container-sizes: (
 /// Default container size.
 ///
 /// @type {Keyword}
-$container-size: expanded !default;
+$container-size: expand !default;

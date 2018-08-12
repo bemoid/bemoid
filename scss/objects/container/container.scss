@@ -6,12 +6,13 @@
 //
 // General element to be used as wrapper for other components. Its purpose is to limit the spreading of internal components to a certain width.
 //
+// .container--xsmall   - Xsmall width. Extends up to `xsmall` breakpoint.
 // .container--small    - Small width. Extends up to `small` breakpoint.
 // .container--medium   - Medium width. Extends up to `medium` breakpoint.
 // .container--large    - Large width. Extends up to `large` breakpoint.
 // .container--xlarge   - Xlarge width. Extends up to `xlarge` breakpoint.
 // .container--xxlarge  - Xxlarge width. Extends up to `xxlarge` breakpoint.
-// .container--center - Centers container horizontally.
+// .container--center   - Centers container horizontally.
 //
 // Markup: objects/container/html/container.html
 //

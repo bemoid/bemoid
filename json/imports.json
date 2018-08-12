@@ -4,5 +4,8 @@
   ],
   "generic": [
     "generic/generic"
+  ],
+  "objects": [
+    "objects/container/container"
   ]
 }
