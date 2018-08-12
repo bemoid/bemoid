@@ -6,10 +6,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headings-color;
-  line-height: $headings-line-height;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
+  color: $heading-color;
+  line-height: $heading-line-height;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
 }
 
 @each $breakpoint, $heading in $heading-sizes {

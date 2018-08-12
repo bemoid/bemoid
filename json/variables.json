@@ -427,31 +427,29 @@
       "name": "heading-size"
     },
     {
+      "variable": "$heading-font-family",
+      "value": "inherit !default",
+      "name": "heading-font-family"
+    },
+    {
+      "variable": "$heading-color",
+      "value": "color(black) !default",
+      "name": "heading-color"
+    },
+    {
+      "variable": "$heading-line-height",
+      "value": "1.25 !default",
+      "name": "heading-line-height"
+    },
+    {
+      "variable": "$heading-font-weight",
+      "value": "400 !default",
+      "name": "heading-font-weight"
+    },
+    {
       "variable": "$heading-margins",
       "value": "0 !default",
       "name": "heading-margins"
-    }
-  ],
-  "headings": [
-    {
-      "variable": "$headings-font-family",
-      "value": "inherit !default",
-      "name": "headings-font-family"
-    },
-    {
-      "variable": "$headings-color",
-      "value": "color(black) !default",
-      "name": "headings-color"
-    },
-    {
-      "variable": "$headings-line-height",
-      "value": "1.25 !default",
-      "name": "headings-line-height"
-    },
-    {
-      "variable": "$headings-font-weight",
-      "value": "400 !default",
-      "name": "headings-font-weight"
     }
   ],
   "link": [
@@ -784,6 +782,18 @@
       "name": "form-legend-text-transform"
     }
   ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
+    }
+  ],
   "paragraph": [
     {
       "variable": "$paragraph-margins",
@@ -798,18 +808,6 @@
       "name": "colors"
     }
   ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
   "breakpoints": [
     {
       "variable": "$breakpoints",
@@ -820,20 +818,6 @@
       "variable": "$breakpoints-offset",
       "value": "em(1px)",
       "name": "breakpoints-offset"
-    }
-  ],
-  "elevators": [
-    {
-      "variable": "$elevators",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevators"
-    }
-  ],
-  "elevator": [
-    {
-      "variable": "$elevator",
-      "value": "medium !default",
-      "name": "elevator"
     }
   ],
   "radiuses": [
@@ -848,6 +832,20 @@
       "variable": "$radius",
       "value": "medium !default",
       "name": "radius"
+    }
+  ],
+  "elevators": [
+    {
+      "variable": "$elevators",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevators"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator",
+      "value": "medium !default",
+      "name": "elevator"
     }
   ],
   "spaces": [

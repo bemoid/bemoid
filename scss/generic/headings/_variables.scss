@@ -35,19 +35,19 @@ $heading-size: default;
 /// Font family of headings.
 ///
 /// @type {Keyword|Values}
-$headings-font-family: inherit !default;
+$heading-font-family: inherit !default;
 
 /// Text color of headings.
 ///
 /// @type {Color}
-$headings-color: color(black) !default;
+$heading-color: color(black) !default;
 
 /// Line height of headings.
 ///
 /// @type {Number|Value}
-$headings-line-height: 1.25 !default;
+$heading-line-height: 1.25 !default;
 
 /// Font weight of headings.
 ///
 /// @type {Number|Keyword}
-$headings-font-weight: 400 !default;
+$heading-font-weight: 400 !default;
