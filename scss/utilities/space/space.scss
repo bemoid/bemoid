@@ -37,4 +37,14 @@
       }
     }
   }
+
+  @each $breakpoint, $width in $breakpoints {
+    &--none\@#{$breakpoint} {
+      @include breakpoint($breakpoint up) {
+        & > * + * {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
