@@ -27,4 +27,14 @@
       }
     }
   }
+
+  @each $breakpoint, $width in $breakpoints {
+    @include breakpoint($breakpoint up) {
+      @each $name, $size in $segment-sizes {
+        &--#{$name}\@#{$breakpoint} {
+          padding: $size;
+        }
+      }
+    }
+  }
 }

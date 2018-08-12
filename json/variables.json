@@ -508,6 +508,145 @@
       "name": "font-family-monospace"
     }
   ],
+  "container": [
+    {
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
+    },
+    {
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
+    }
+  ],
+  "dropdown": [
+    {
+      "variable": "$dropdown-gap",
+      "value": "rem(3px) !default",
+      "name": "dropdown-gap"
+    },
+    {
+      "variable": "$dropdown-max-width",
+      "value": "rem(300px) !default",
+      "name": "dropdown-max-width"
+    },
+    {
+      "variable": "$dropdown-min-width",
+      "value": "rem(200px) !default",
+      "name": "dropdown-min-width"
+    }
+  ],
+  "grid": [
+    {
+      "variable": "$grid-columns",
+      "value": "12 !default",
+      "name": "grid-columns"
+    },
+    {
+      "variable": "$grid-stackable",
+      "value": "medium !default",
+      "name": "grid-stackable"
+    },
+    {
+      "variable": "$grid-reversable",
+      "value": "medium !default",
+      "name": "grid-reversable"
+    },
+    {
+      "variable": "$grid-sizes",
+      "value": "(\n  xsmall: breakpoint(small),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "grid-sizes"
+    },
+    {
+      "variable": "$grid-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "grid-gutters"
+    },
+    {
+      "variable": "$grid-gutter",
+      "value": "xsmall !default",
+      "name": "grid-gutter"
+    }
+  ],
+  "image": [
+    {
+      "variable": "$image-radius-rounded",
+      "value": "radius(xsmall) !default",
+      "name": "image-radius-rounded"
+    },
+    {
+      "variable": "$image-radius-circular",
+      "value": "radius(circle) !default",
+      "name": "image-radius-circular"
+    }
+  ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
+  "media": [
+    {
+      "variable": "$media-stackable",
+      "value": "medium !default",
+      "name": "media-stackable"
+    },
+    {
+      "variable": "$media-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "media-gutters"
+    },
+    {
+      "variable": "$media-gutter",
+      "value": "xsmall !default",
+      "name": "media-gutter"
+    }
+  ],
+  "table": [
+    {
+      "variable": "$table-padding",
+      "value": "space(medium) space(large) !default",
+      "name": "table-padding"
+    },
+    {
+      "variable": "$table-border-width",
+      "value": "1px !default",
+      "name": "table-border-width"
+    },
+    {
+      "variable": "$table-border-style",
+      "value": "solid !default",
+      "name": "table-border-style"
+    },
+    {
+      "variable": "$table-border-color",
+      "value": "color(light-gray) !default",
+      "name": "table-border-color"
+    },
+    {
+      "variable": "$table-heading-background",
+      "value": "color(lighter-gray) !default",
+      "name": "table-heading-background"
+    },
+    {
+      "variable": "$table-condense-padding",
+      "value": "space(small) space(medium) !default",
+      "name": "table-condense-padding"
+    },
+    {
+      "variable": "$table-stripe-background",
+      "value": "lighten(color(lighter-gray), 1%) !default",
+      "name": "table-stripe-background"
+    },
+    {
+      "variable": "$table-hoverable-background",
+      "value": "color(lighter-gray) !default",
+      "name": "table-hoverable-background"
+    }
+  ],
   "radio": [
     {
       "variable": "$radio-radius",
@@ -560,86 +699,6 @@
       "name": "radio-hover-outer-background"
     }
   ],
-  "grid": [
-    {
-      "variable": "$grid-columns",
-      "value": "12 !default",
-      "name": "grid-columns"
-    },
-    {
-      "variable": "$grid-stackable",
-      "value": "medium !default",
-      "name": "grid-stackable"
-    },
-    {
-      "variable": "$grid-reversable",
-      "value": "medium !default",
-      "name": "grid-reversable"
-    },
-    {
-      "variable": "$grid-sizes",
-      "value": "(\n  xsmall: breakpoint(small),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "grid-sizes"
-    },
-    {
-      "variable": "$grid-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "grid-gutters"
-    },
-    {
-      "variable": "$grid-gutter",
-      "value": "xsmall !default",
-      "name": "grid-gutter"
-    }
-  ],
-  "container": [
-    {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
-    },
-    {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
-    }
-  ],
-  "image": [
-    {
-      "variable": "$image-radius-rounded",
-      "value": "radius(xsmall) !default",
-      "name": "image-radius-rounded"
-    },
-    {
-      "variable": "$image-radius-circular",
-      "value": "radius(circle) !default",
-      "name": "image-radius-circular"
-    }
-  ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
-    }
-  ],
-  "media": [
-    {
-      "variable": "$media-stackable",
-      "value": "medium !default",
-      "name": "media-stackable"
-    },
-    {
-      "variable": "$media-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "media-gutters"
-    },
-    {
-      "variable": "$media-gutter",
-      "value": "xsmall !default",
-      "name": "media-gutter"
-    }
-  ],
   "select": [
     {
       "variable": "$select-icon",
@@ -655,23 +714,6 @@
       "variable": "$select-icon-offset",
       "value": "1em",
       "name": "select-icon-offset"
-    }
-  ],
-  "dropdown": [
-    {
-      "variable": "$dropdown-gap",
-      "value": "rem(3px) !default",
-      "name": "dropdown-gap"
-    },
-    {
-      "variable": "$dropdown-max-width",
-      "value": "rem(300px) !default",
-      "name": "dropdown-max-width"
-    },
-    {
-      "variable": "$dropdown-min-width",
-      "value": "rem(200px) !default",
-      "name": "dropdown-min-width"
     }
   ],
   "tag": [
@@ -706,48 +748,6 @@
       "name": "tag-hover-background"
     }
   ],
-  "table": [
-    {
-      "variable": "$table-padding",
-      "value": "space(medium) space(large) !default",
-      "name": "table-padding"
-    },
-    {
-      "variable": "$table-border-width",
-      "value": "1px !default",
-      "name": "table-border-width"
-    },
-    {
-      "variable": "$table-border-style",
-      "value": "solid !default",
-      "name": "table-border-style"
-    },
-    {
-      "variable": "$table-border-color",
-      "value": "color(light-gray) !default",
-      "name": "table-border-color"
-    },
-    {
-      "variable": "$table-heading-background",
-      "value": "color(lighter-gray) !default",
-      "name": "table-heading-background"
-    },
-    {
-      "variable": "$table-condense-padding",
-      "value": "space(small) space(medium) !default",
-      "name": "table-condense-padding"
-    },
-    {
-      "variable": "$table-stripe-background",
-      "value": "lighten(color(lighter-gray), 1%) !default",
-      "name": "table-stripe-background"
-    },
-    {
-      "variable": "$table-hoverable-background",
-      "value": "color(lighter-gray) !default",
-      "name": "table-hoverable-background"
-    }
-  ],
   "figure": [
     {
       "variable": "$figure-text-align",
@@ -758,6 +758,18 @@
       "variable": "$figure-font-style",
       "value": "italic !default",
       "name": "figure-font-style"
+    }
+  ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
     }
   ],
   "form": [
@@ -797,18 +809,6 @@
       "variable": "$paragraph-margins",
       "value": "0 !default",
       "name": "paragraph-margins"
-    }
-  ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
     }
   ],
   "breakpoints": [

@@ -892,3 +892,130 @@ mark {
         -webkit-box-direction: normal;
             -ms-flex-direction: column-column;
                 flex-direction: column-column; } }
+
+/** @define table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  border-top: 1px solid #d7dfe6; }
+  .table__head, .table__footer {
+    background-color: #f6f6f6; }
+  .table__cell {
+    vertical-align: top;
+    padding: 0.5625em 1.125em;
+    border: 1px solid #d7dfe6;
+    border-width: 0 0 1px; }
+  .table--condense .table__cell {
+    padding: 0.375em 0.5625em; }
+  .table--border {
+    border: 1px solid #d7dfe6; }
+    .table--border .table__cell {
+      border-width: 1px; }
+  .table--hoverable .table__row:hover {
+    background-color: #f6f6f6; }
+  .table--scoreboard {
+    border-width: 0; }
+    .table--scoreboard .table__cell {
+      border-width: 1px; }
+      .table--scoreboard .table__cell:first-child {
+        border-left-width: 0; }
+      .table--scoreboard .table__cell:last-child {
+        border-right-width: 0; }
+    .table--scoreboard > :first-child .table__cell {
+      border-top: 0; }
+    .table--scoreboard > :last-child .table__cell {
+      border-bottom: 0; }
+  .table--stripe .table__row:nth-child(even) {
+    background-color: #f9f9f9; }
+
+/** @define dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown__content {
+    display: none;
+    padding-top: 0.1875rem; }
+    .dropdown__content--gapless {
+      padding-top: 0; }
+  .dropdown__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    max-width: 18.75rem;
+    min-width: 12.5rem; }
+  .dropdown--active .dropdown__content {
+    display: block; }
+  .dropdown--right .dropdown__content {
+    left: auto;
+    right: 0; }
+  .dropdown--hoverable:hover .dropdown__content {
+    display: block; }
+
+/** @define segment */
+.segment {
+  width: 100%;
+  display: block;
+  padding: 1.125em; }
+  .segment--small {
+    padding: 0.375em; }
+  .segment--medium {
+    padding: 0.5625em; }
+  .segment--xlarge {
+    padding: 2.25em; }
+  @media (min-width: 20em) {
+    .segment--small\@xsmall {
+      padding: 0.375em; }
+    .segment--medium\@xsmall {
+      padding: 0.5625em; }
+    .segment--large\@xsmall {
+      padding: 1.125em; }
+    .segment--xlarge\@xsmall {
+      padding: 2.25em; } }
+  @media (min-width: 30em) {
+    .segment--small\@small {
+      padding: 0.375em; }
+    .segment--medium\@small {
+      padding: 0.5625em; }
+    .segment--large\@small {
+      padding: 1.125em; }
+    .segment--xlarge\@small {
+      padding: 2.25em; } }
+  @media (min-width: 48em) {
+    .segment--small\@medium {
+      padding: 0.375em; }
+    .segment--medium\@medium {
+      padding: 0.5625em; }
+    .segment--large\@medium {
+      padding: 1.125em; }
+    .segment--xlarge\@medium {
+      padding: 2.25em; } }
+  @media (min-width: 60em) {
+    .segment--small\@large {
+      padding: 0.375em; }
+    .segment--medium\@large {
+      padding: 0.5625em; }
+    .segment--large\@large {
+      padding: 1.125em; }
+    .segment--xlarge\@large {
+      padding: 2.25em; } }
+  @media (min-width: 70em) {
+    .segment--small\@xlarge {
+      padding: 0.375em; }
+    .segment--medium\@xlarge {
+      padding: 0.5625em; }
+    .segment--large\@xlarge {
+      padding: 1.125em; }
+    .segment--xlarge\@xlarge {
+      padding: 2.25em; } }
+  @media (min-width: 90em) {
+    .segment--small\@xxlarge {
+      padding: 0.375em; }
+    .segment--medium\@xxlarge {
+      padding: 0.5625em; }
+    .segment--large\@xxlarge {
+      padding: 1.125em; }
+    .segment--xlarge\@xxlarge {
+      padding: 2.25em; } }
