@@ -21,6 +21,7 @@ $grid-reversable: medium !default;
 ///
 /// @type {Map}
 $grid-sizes: (
+  xsmall: breakpoint(small),
   small: breakpoint(small),
   medium: breakpoint(medium),
   large: breakpoint(large),
@@ -37,3 +38,8 @@ $grid-gutters: (
   xsmall: space(medium),
   large: space(large),
 ) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$grid-gutter: xsmall !default;

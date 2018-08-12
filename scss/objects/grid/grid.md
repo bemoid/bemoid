@@ -92,6 +92,8 @@ Additionaly, there is a `.grid--nowrap` modifier class for forcing columns to st
 
 ### Gutter
 
+> A default size of the gutter can can be set up with `$grid-gutter` variable.
+
 Gaps between columns may be set up with a map in `$grid-gutters` variable. Gutters are responsive and can change its value on specified breakpoints.
 
 > Enter a `key: value` pairs, where a key is a name of the breakpoint from which the given value has to be active.

@@ -6,6 +6,7 @@
     "generic/generic"
   ],
   "objects": [
-    "objects/container/container"
+    "objects/container/container",
+    "objects/grid/grid"
   ]
 }

@@ -572,21 +572,36 @@
       "name": "radio-hover-outer-background"
     }
   ],
-  "select": [
+  "grid": [
     {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
-      "name": "select-icon"
+      "variable": "$grid-columns",
+      "value": "12 !default",
+      "name": "grid-columns"
     },
     {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
+      "variable": "$grid-stackable",
+      "value": "medium !default",
+      "name": "grid-stackable"
     },
     {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
+      "variable": "$grid-reversable",
+      "value": "medium !default",
+      "name": "grid-reversable"
+    },
+    {
+      "variable": "$grid-sizes",
+      "value": "(\n  xsmall: breakpoint(small),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "grid-sizes"
+    },
+    {
+      "variable": "$grid-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "grid-gutters"
+    },
+    {
+      "variable": "$grid-gutter",
+      "value": "xsmall !default",
+      "name": "grid-gutter"
     }
   ],
   "tag": [
@@ -621,6 +636,23 @@
       "name": "tag-hover-background"
     }
   ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
+    }
+  ],
   "dropdown": [
     {
       "variable": "$dropdown-gap",
@@ -636,33 +668,6 @@
       "variable": "$dropdown-min-width",
       "value": "rem(200px) !default",
       "name": "dropdown-min-width"
-    }
-  ],
-  "grid": [
-    {
-      "variable": "$grid-columns",
-      "value": "12 !default",
-      "name": "grid-columns"
-    },
-    {
-      "variable": "$grid-stackable",
-      "value": "medium !default",
-      "name": "grid-stackable"
-    },
-    {
-      "variable": "$grid-reversable",
-      "value": "medium !default",
-      "name": "grid-reversable"
-    },
-    {
-      "variable": "$grid-sizes",
-      "value": "(\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "grid-sizes"
-    },
-    {
-      "variable": "$grid-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "grid-gutters"
     }
   ],
   "image": [
@@ -782,6 +787,13 @@
       "name": "form-legend-text-transform"
     }
   ],
+  "paragraph": [
+    {
+      "variable": "$paragraph-margins",
+      "value": "0 !default",
+      "name": "paragraph-margins"
+    }
+  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -792,13 +804,6 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margins",
-      "value": "0 !default",
-      "name": "paragraph-margins"
     }
   ],
   "breakpoints": [

@@ -6,19 +6,20 @@
 //
 // Grid system based on flexbox for building complex layouts.
 //
-// .grid--right     - Aligns grid columns horizontally to the right.
-// .grid--center    - Aligns grid columns horizontally to the center.
-// .grid--justify   - Distributes grid columns horizontally with equals inner spaces.
-// .grid--space     - Distributes grid columns horizontally with equals inner and outer spaces.
-// .grid--middle    - Aligns grid columns verically to the center.
-// .grid--bottom    - Aligns grid columns verically to the bottom.
-// .grid--stretch   - Stretches grid columns to the euqal height.
-// .grid--gapless   - Removes grid gutters.
-// .grid--waffle   - Adds gutter on all sides of grid columns.
-// .grid--nowrap    - Forces columns to stay in single row.
-// .grid--reverse  - Reverses order of grid columns.
-// .grid--stack   - Changes grid columns direction from horizontal to vartical.
-// .grid--stackable - Makes grid columns to stack on specified breakpoint defined in `$grid-stackable` variable.
+// .grid--right        - Aligns grid columns horizontally to the right.
+// .grid--center       - Aligns grid columns horizontally to the center.
+// .grid--justify      - Distributes grid columns horizontally with equals inner spaces.
+// .grid--space        - Distributes grid columns horizontally with equals inner and outer spaces.
+// .grid--middle       - Aligns grid columns verically to the center.
+// .grid--bottom       - Aligns grid columns verically to the bottom.
+// .grid--stretch      - Stretches grid columns to the euqal height.
+// .grid--gapless      - Removes grid gutters.
+// .grid--waffle       - Adds gutter on all sides of grid columns.
+// .grid--nowrap       - Forces columns to stay in single row.
+// .grid--reverse      - Reverses order of grid columns.
+// .grid--reverseable  - Reverses order of grid columns on specified breakpoint defined in `$grid-reversable` variable.
+// .grid--stack        - Changes grid columns direction from horizontal to vartical.
+// .grid--stackable    - Makes grid columns to stack on specified breakpoint defined in `$grid-stackable` variable.
 //
 // Markup: objects/grid/html/grid.html
 //
@@ -30,9 +31,15 @@
   flex-wrap: wrap;
 
   @each $breakpoint, $width in $grid-gutters {
-    @include breakpoint($breakpoint up) {
+    @if ($breakpoint == $grid-gutter) {
       margin-left: -#{$width / 2};
       margin-right: -#{$width / 2};
+    }
+    @else {
+      @include breakpoint($breakpoint up) {
+        margin-left: -#{$width / 2};
+        margin-right: -#{$width / 2};
+      }
     }
   }
 
@@ -66,9 +73,15 @@
     max-width: 100%;
 
     @each $breakpoint, $width in $grid-gutters {
-      @include breakpoint($breakpoint up) {
+      @if ($breakpoint == $grid-gutter) {
         padding-left: $width / 2;
         padding-right: $width / 2;
+      }
+      @else {
+        @include breakpoint($breakpoint up) {
+          padding-left: $width / 2;
+          padding-right: $width / 2;
+        }
       }
     }
 
@@ -202,15 +215,25 @@
 
   &--waffle {
     @each $breakpoint, $width in $grid-gutters {
-      @include breakpoint($breakpoint up) {
+      @if ($breakpoint == $grid-gutter) {
         margin: -#{$width / 2};
+      }
+      @else {
+        @include breakpoint($breakpoint up) {
+          margin: -#{$width / 2};
+        }
       }
     }
 
     #{$this}__column {
       @each $breakpoint, $width in $grid-gutters {
-        @include breakpoint($breakpoint up) {
+        @if ($breakpoint == $grid-gutter) {
           padding: $width / 2;
+        }
+        @else {
+          @include breakpoint($breakpoint up) {
+            padding: $width / 2;
+          }
         }
       }
     }
