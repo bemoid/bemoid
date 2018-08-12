@@ -1,5 +1,12 @@
 {
-  "lerna": "2.2.0",
+  "version": "0.1.0",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md"
+      ]
+    }
+  },
   "packages": [
     "scss/functions/*",
     "scss/mixins/*",
@@ -9,6 +16,5 @@
     "scss/structures/*",
     "scss/components/*",
     "scss/utilities/*"
-  ],
-  "version": "0.1.0"
+  ]
 }
