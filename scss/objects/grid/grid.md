@@ -76,6 +76,18 @@ There is also a `.grid--stackable` modifier class with which columns intrinsical
 
 [[example file=objects/grid/example/stackable.html]]
 
+#### Reversing
+
+Grid can reverse order of its columns with the `.grid--reverse` modifier class.
+
+[[example file=objects/grid/example/reversed.html]]
+
+There is also a `.grid--reversable` modifier class with which columns intrinsically move to the reverse order on a specific breakpoint.
+
+> The breakpoint behind which elements have to revese its order can be set up with `$grid-reversable` variable.
+
+[[example file=objects/grid/example/reversable.html]]
+
 ### Gutter
 
 Gaps between columns may be set up with a map in `$grid-gutters` variable. Gutters are responsive and can change its value on specified breakpoints.

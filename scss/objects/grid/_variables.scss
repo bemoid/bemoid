@@ -12,6 +12,11 @@ $grid-columns: 12 !default;
 /// @type {Keyword}
 $grid-stackable: medium !default;
 
+/// Breakpoint name under which columns reverse in reversable grid.
+///
+/// @type {Keyword}
+$grid-reversable: medium !default;
+
 /// Collection of grid sizes by breakpoint.
 ///
 /// @type {Map}

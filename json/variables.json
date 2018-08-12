@@ -121,63 +121,6 @@
       "name": "blockquote-footer-color"
     }
   ],
-  "checkbox": [
-    {
-      "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
-      "name": "checkbox-radius"
-    },
-    {
-      "variable": "$checkbox-size",
-      "value": "em(18px) !default",
-      "name": "checkbox-size"
-    },
-    {
-      "variable": "$checkbox-background",
-      "value": "transparent !default",
-      "name": "checkbox-background"
-    },
-    {
-      "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "checkbox-border"
-    },
-    {
-      "variable": "$checkbox-hover-border",
-      "value": "1px solid color(info) !default",
-      "name": "checkbox-hover-border"
-    },
-    {
-      "variable": "$checkbox-hover-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "checkbox-hover-background"
-    },
-    {
-      "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
-      "name": "checkbox-mark-size"
-    },
-    {
-      "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
-      "name": "checkbox-mark-width"
-    },
-    {
-      "variable": "$checkbox-mark-color",
-      "value": "color(info) !default",
-      "name": "checkbox-mark-color"
-    },
-    {
-      "variable": "$checkbox-mark-transform",
-      "value": "rotate(-45deg) scale(0) !default",
-      "name": "checkbox-mark-transform"
-    },
-    {
-      "variable": "$checkbox-mark-active-transform",
-      "value": "rotate(-45deg) scale(1) !default",
-      "name": "checkbox-mark-active-transform"
-    }
-  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -250,6 +193,63 @@
       "variable": "$content-spacing",
       "value": "em(16px) !default",
       "name": "content-spacing"
+    }
+  ],
+  "checkbox": [
+    {
+      "variable": "$checkbox-radius",
+      "value": "radius(circle) !default",
+      "name": "checkbox-radius"
+    },
+    {
+      "variable": "$checkbox-size",
+      "value": "em(18px) !default",
+      "name": "checkbox-size"
+    },
+    {
+      "variable": "$checkbox-background",
+      "value": "transparent !default",
+      "name": "checkbox-background"
+    },
+    {
+      "variable": "$checkbox-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "checkbox-border"
+    },
+    {
+      "variable": "$checkbox-hover-border",
+      "value": "1px solid color(info) !default",
+      "name": "checkbox-hover-border"
+    },
+    {
+      "variable": "$checkbox-hover-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "checkbox-hover-background"
+    },
+    {
+      "variable": "$checkbox-mark-size",
+      "value": "em(14px) !default",
+      "name": "checkbox-mark-size"
+    },
+    {
+      "variable": "$checkbox-mark-width",
+      "value": "em(2px) !default",
+      "name": "checkbox-mark-width"
+    },
+    {
+      "variable": "$checkbox-mark-color",
+      "value": "color(info) !default",
+      "name": "checkbox-mark-color"
+    },
+    {
+      "variable": "$checkbox-mark-transform",
+      "value": "rotate(-45deg) scale(0) !default",
+      "name": "checkbox-mark-transform"
+    },
+    {
+      "variable": "$checkbox-mark-active-transform",
+      "value": "rotate(-45deg) scale(1) !default",
+      "name": "checkbox-mark-active-transform"
     }
   ],
   "divider": [
@@ -647,6 +647,11 @@
       "name": "grid-stackable"
     },
     {
+      "variable": "$grid-reversable",
+      "value": "medium !default",
+      "name": "grid-reversable"
+    },
+    {
       "variable": "$grid-sizes",
       "value": "(\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
       "name": "grid-sizes"
@@ -833,20 +838,6 @@
       "name": "elevator"
     }
   ],
-  "radiuses": [
-    {
-      "variable": "$radiuses",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radiuses"
-    }
-  ],
-  "radius": [
-    {
-      "variable": "$radius",
-      "value": "medium !default",
-      "name": "radius"
-    }
-  ],
   "spaces": [
     {
       "variable": "$spaces",
@@ -871,6 +862,20 @@
       "variable": "$transitions",
       "value": "(\n  'slow': 0.6s $transition-easing,\n  'normal': 0.4s $transition-easing,\n  'fast': 0.2s $transition-easing,\n) !default",
       "name": "transitions"
+    }
+  ],
+  "radiuses": [
+    {
+      "variable": "$radiuses",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radiuses"
+    }
+  ],
+  "radius": [
+    {
+      "variable": "$radius",
+      "value": "medium !default",
+      "name": "radius"
     }
   ]
 }

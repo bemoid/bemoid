@@ -264,33 +264,53 @@ h6,
 h1, .heading--h1 {
   font-size: 2.25em; }
 
-h2, .heading--h2 {
+
+h2,
+.heading--h2 {
   font-size: 1.6875em; }
 
-h3, .heading--h3 {
+
+h3,
+.heading--h3 {
   font-size: 1.3125em; }
 
-h4, .heading--h4 {
+
+h4,
+.heading--h4 {
   font-size: 1.125em; }
 
-h5, .heading--h5 {
+
+h5,
+.heading--h5 {
   font-size: 1em; }
 
-h6, .heading--h6 {
+
+h6,
+.heading--h6 {
   font-size: 0.875em; }
 
 @media (min-width: 48em) {
   h1, .heading--h1 {
     font-size: 2.625em; }
-  h2, .heading--h2 {
+  
+  h2,
+  .heading--h2 {
     font-size: 2.25em; }
-  h3, .heading--h3 {
+  
+  h3,
+  .heading--h3 {
     font-size: 1.6875em; }
-  h4, .heading--h4 {
+  
+  h4,
+  .heading--h4 {
     font-size: 1.3125em; }
-  h5, .heading--h5 {
+  
+  h5,
+  .heading--h5 {
     font-size: 1em; }
-  h6, .heading--h6 {
+  
+  h6,
+  .heading--h6 {
     font-size: 0.875em; } }
 
 /** @define container */
@@ -705,6 +725,24 @@ h6, .heading--h6 {
         -webkit-box-direction: reverse;
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse; } }
+  @media (max-width: 47.9375em) {
+    .grid--reversable {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; } }
+  @media (max-width: 47.9375em) {
+    .grid--reversable.grid--stack {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
+  @media (max-width: 47.9375em) {
+    .grid--reversable.grid--stackable {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
   .grid--gapless {
     margin-left: 0;
     margin-right: 0; }
@@ -844,39 +882,32 @@ h6, .heading--h6 {
     padding: 0.5625em 1.125em;
     border: 1px solid #d7dfe6;
     border-width: 0 0 1px; }
-  .table--condense .table__cell, .table--condense .content table th, .content table .table--condense th, .table--condense
-  .content table td,
-  .content table .table--condense td {
+  .table--condense .table__cell, .table--condense .content table th, .content table .table--condense th,
+  .table--condense .content table td, .content table .table--condense td {
     padding: 0.375em 0.5625em; }
   .table--border {
     border: 1px solid #d7dfe6; }
-    .table--border .table__cell, .table--border .content table th, .content table .table--border th, .table--border
-    .content table td,
-    .content table .table--border td {
+    .table--border .table__cell, .table--border .content table th, .content table .table--border th,
+    .table--border .content table td, .content table .table--border td {
       border-width: 1px; }
   .table--hoverable .table__row:hover, .table--hoverable .content table tr:hover, .content table .table--hoverable tr:hover {
     background-color: #f6f6f6; }
   .table--scoreboard {
     border-width: 0; }
-    .table--scoreboard .table__cell, .table--scoreboard .content table th, .content table .table--scoreboard th, .table--scoreboard
-    .content table td,
-    .content table .table--scoreboard td {
+    .table--scoreboard .table__cell, .table--scoreboard .content table th, .content table .table--scoreboard th,
+    .table--scoreboard .content table td, .content table .table--scoreboard td {
       border-width: 1px; }
-      .table--scoreboard .table__cell:first-child, .table--scoreboard .content table th:first-child, .content table .table--scoreboard th:first-child, .table--scoreboard
-      .content table td:first-child,
-      .content table .table--scoreboard td:first-child {
+      .table--scoreboard .table__cell:first-child, .table--scoreboard .content table th:first-child, .content table .table--scoreboard th:first-child,
+      .table--scoreboard .content table td:first-child, .content table .table--scoreboard td:first-child {
         border-left-width: 0; }
-      .table--scoreboard .table__cell:last-child, .table--scoreboard .content table th:last-child, .content table .table--scoreboard th:last-child, .table--scoreboard
-      .content table td:last-child,
-      .content table .table--scoreboard td:last-child {
+      .table--scoreboard .table__cell:last-child, .table--scoreboard .content table th:last-child, .content table .table--scoreboard th:last-child,
+      .table--scoreboard .content table td:last-child, .content table .table--scoreboard td:last-child {
         border-right-width: 0; }
-    .table--scoreboard > :first-child .table__cell, .table--scoreboard > :first-child .content table th, .content table .table--scoreboard > :first-child th, .table--scoreboard > :first-child
-    .content table td,
-    .content table .table--scoreboard > :first-child td {
+    .table--scoreboard > :first-child .table__cell, .table--scoreboard > :first-child .content table th, .content table .table--scoreboard > :first-child th,
+    .table--scoreboard > :first-child .content table td, .content table .table--scoreboard > :first-child td {
       border-top: 0; }
-    .table--scoreboard > :last-child .table__cell, .table--scoreboard > :last-child .content table th, .content table .table--scoreboard > :last-child th, .table--scoreboard > :last-child
-    .content table td,
-    .content table .table--scoreboard > :last-child td {
+    .table--scoreboard > :last-child .table__cell, .table--scoreboard > :last-child .content table th, .content table .table--scoreboard > :last-child th,
+    .table--scoreboard > :last-child .content table td, .content table .table--scoreboard > :last-child td {
       border-bottom: 0; }
   .table--stripe .table__row:nth-child(even), .table--stripe .content table tr:nth-child(even), .content table .table--stripe tr:nth-child(even) {
     background-color: #f9f9f9; }
@@ -942,16 +973,11 @@ h6, .heading--h6 {
 
 /** @define heading */
 .heading, .content h1, .content .heading--h1,
-.content h2,
-.content .heading--h2,
-.content h3,
-.content .heading--h3,
-.content h4,
-.content .heading--h4,
-.content h5,
-.content .heading--h5,
-.content h6,
-.content .heading--h6 {
+.content h2, .content .heading--h2,
+.content h3, .content .heading--h3,
+.content h4, .content .heading--h4,
+.content h5, .content .heading--h5,
+.content h6, .content .heading--h6 {
   margin: 0; }
 
 /** @define paragraph */
@@ -1221,7 +1247,8 @@ h6, .heading--h6 {
     color: #171c1f; }
   .button__icon {
     display: inline-block; }
-    img.button__icon, svg.button__icon {
+    img.button__icon,
+    svg.button__icon {
       vertical-align: sub; }
   .button--xsmall {
     font-size: 0.75em; }

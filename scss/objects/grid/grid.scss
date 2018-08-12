@@ -167,6 +167,24 @@
     }
   }
 
+  &--reversable {
+    @include breakpoint($grid-reversable down) {
+      flex-direction: row-reverse;
+    }
+
+    &#{$this}--stack {
+      @include breakpoint($grid-reversable down) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &#{$this}--stackable {
+      @include breakpoint($grid-reversable down) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
   &--gapless {
     margin-left: 0;
     margin-right: 0;
