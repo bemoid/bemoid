@@ -7,6 +7,9 @@
   ],
   "objects": [
     "objects/container/container",
-    "objects/grid/grid"
+    "objects/grid/grid",
+    "objects/list/list",
+    "objects/image/image",
+    "objects/media/media"
   ]
 }

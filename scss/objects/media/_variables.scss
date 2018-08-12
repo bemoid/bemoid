@@ -16,3 +16,8 @@ $media-gutters: (
   xsmall: space(medium),
   large: space(large),
 ) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$media-gutter: xsmall !default;

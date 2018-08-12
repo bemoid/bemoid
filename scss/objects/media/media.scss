@@ -6,8 +6,8 @@
 //
 // Standard media object component for displaying a side element alongside with the content.
 //
-// .media--reverse - Flip side element and content.
-// .media--stack  - Stack side element and content on top of each other.
+// .media--reverse   - Flip side element and content.
+// .media--stack     - Stack side element and content on top of each other.
 // .media--stackable - Makes side element and content to stack on specified breakpoint defined in `$media-stackable` variable.
 //
 // Markup: objects/media/html/media.html
@@ -19,16 +19,26 @@
   display: flex;
 
   @each $breakpoint, $width in $media-gutters {
-    @include breakpoint($breakpoint up) {
+    @if ($breakpoint == $media-gutter) {
       margin: -#{$width / 2};
+    }
+    @else {
+      @include breakpoint($breakpoint up) {
+        margin: -#{$width / 2};
+      }
     }
   }
 
   &__side,
   &__body {
     @each $breakpoint, $width in $media-gutters {
-      @include breakpoint($breakpoint up) {
+      @if ($breakpoint == $media-gutter) {
         padding: $width / 2;
+      }
+      @else {
+        @include breakpoint($breakpoint up) {
+          padding: $width / 2;
+        }
       }
     }
   }

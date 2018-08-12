@@ -508,18 +508,6 @@
       "name": "font-family-monospace"
     }
   ],
-  "container": [
-    {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
-    },
-    {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
-    }
-  ],
   "radio": [
     {
       "variable": "$radio-radius",
@@ -604,36 +592,52 @@
       "name": "grid-gutter"
     }
   ],
-  "tag": [
+  "container": [
     {
-      "variable": "$tag-font-size",
-      "value": "em(14px) !default",
-      "name": "tag-font-size"
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
     },
     {
-      "variable": "$tag-color",
-      "value": "color(black) !default",
-      "name": "tag-color"
-    },
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
+    }
+  ],
+  "image": [
     {
-      "variable": "$tag-background",
-      "value": "color(light-gray) !default",
-      "name": "tag-background"
-    },
-    {
-      "variable": "$tag-padding",
-      "value": "space(medium) !default",
-      "name": "tag-padding"
-    },
-    {
-      "variable": "$tag-radius",
+      "variable": "$image-radius-rounded",
       "value": "radius(xsmall) !default",
-      "name": "tag-radius"
+      "name": "image-radius-rounded"
     },
     {
-      "variable": "$tag-hover-background",
-      "value": "darken(color(light-gray), 10%) !default",
-      "name": "tag-hover-background"
+      "variable": "$image-radius-circular",
+      "value": "radius(circle) !default",
+      "name": "image-radius-circular"
+    }
+  ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
+  "media": [
+    {
+      "variable": "$media-stackable",
+      "value": "medium !default",
+      "name": "media-stackable"
+    },
+    {
+      "variable": "$media-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "media-gutters"
+    },
+    {
+      "variable": "$media-gutter",
+      "value": "xsmall !default",
+      "name": "media-gutter"
     }
   ],
   "select": [
@@ -670,35 +674,36 @@
       "name": "dropdown-min-width"
     }
   ],
-  "image": [
+  "tag": [
     {
-      "variable": "$image-radius-rounded",
+      "variable": "$tag-font-size",
+      "value": "em(14px) !default",
+      "name": "tag-font-size"
+    },
+    {
+      "variable": "$tag-color",
+      "value": "color(black) !default",
+      "name": "tag-color"
+    },
+    {
+      "variable": "$tag-background",
+      "value": "color(light-gray) !default",
+      "name": "tag-background"
+    },
+    {
+      "variable": "$tag-padding",
+      "value": "space(medium) !default",
+      "name": "tag-padding"
+    },
+    {
+      "variable": "$tag-radius",
       "value": "radius(xsmall) !default",
-      "name": "image-radius-rounded"
+      "name": "tag-radius"
     },
     {
-      "variable": "$image-radius-circular",
-      "value": "radius(circle) !default",
-      "name": "image-radius-circular"
-    }
-  ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
-    }
-  ],
-  "media": [
-    {
-      "variable": "$media-stackable",
-      "value": "medium !default",
-      "name": "media-stackable"
-    },
-    {
-      "variable": "$media-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "media-gutters"
+      "variable": "$tag-hover-background",
+      "value": "darken(color(light-gray), 10%) !default",
+      "name": "tag-hover-background"
     }
   ],
   "table": [

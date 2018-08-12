@@ -48,6 +48,8 @@ There is also a `.media--stackable` modifier class with which columns intrinsica
 
 ### Gutter
 
+> A default size of the gutter can can be set up with `$media-gutter` variable.
+
 Gaps between side and content may be set up with a map in `$media-gutters` variable. Gutters are responsive and can change its value on specified breakpoints.
 
 > Enter a `key: value` pairs, where a key is a name of the breakpoint from which the given value has to be active.
