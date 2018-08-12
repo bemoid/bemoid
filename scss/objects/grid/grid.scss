@@ -6,6 +6,7 @@
 //
 // Grid system based on flexbox for building complex layouts.
 //
+// .grid--inline       - Enables inline flex diplay on grid container.
 // .grid--right        - Aligns grid columns horizontally to the right.
 // .grid--center       - Aligns grid columns horizontally to the center.
 // .grid--justify      - Distributes grid columns horizontally with equals inner spaces.
@@ -124,6 +125,10 @@
     &--stretch {
       align-self: stretch;
     }
+  }
+
+  &--inline {
+    display: inline-flex;
   }
 
   &--right {

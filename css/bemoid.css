@@ -715,6 +715,10 @@ mark {
       -ms-flex-item-align: stretch;
           -ms-grid-row-align: stretch;
           align-self: stretch; }
+  .grid--inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .grid--right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
