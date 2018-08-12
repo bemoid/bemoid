@@ -108,6 +108,14 @@
 
     &--shrink {
       flex: 0 1 auto;
+
+      @each $breakpoint, $width in $grid-sizes {
+        @include breakpoint($breakpoint up) {
+          &\@#{$breakpoint} {
+            flex: 0 1 auto;
+          }
+        }
+      }
     }
 
     &--middle {

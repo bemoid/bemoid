@@ -701,6 +701,36 @@ mark {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto; }
+      @media (min-width: 20em) {
+        .grid__column--shrink\@xsmall {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
+      @media (min-width: 30em) {
+        .grid__column--shrink\@small {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
+      @media (min-width: 48em) {
+        .grid__column--shrink\@medium {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
+      @media (min-width: 60em) {
+        .grid__column--shrink\@large {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
+      @media (min-width: 70em) {
+        .grid__column--shrink\@xlarge {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
+      @media (min-width: 90em) {
+        .grid__column--shrink\@xxlarge {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 auto;
+                  flex: 0 1 auto; } }
     .grid__column--middle {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;

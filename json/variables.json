@@ -823,6 +823,13 @@
       "name": "breakpoints-offset"
     }
   ],
+  "colors": [
+    {
+      "variable": "$colors",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "name": "colors"
+    }
+  ],
   "elevators": [
     {
       "variable": "$elevators",
@@ -835,13 +842,6 @@
       "variable": "$elevator",
       "value": "medium !default",
       "name": "elevator"
-    }
-  ],
-  "colors": [
-    {
-      "variable": "$colors",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
-      "name": "colors"
     }
   ],
   "radiuses": [
