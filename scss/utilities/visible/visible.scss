@@ -14,14 +14,14 @@
 //
 // Style guide: Utilities.Visible
 .visible {
-  display: initial;
+  display: block;
 
   @each $breakpoint, $width in $breakpoints {
     &\@#{$breakpoint} {
       display: none;
 
       @include breakpoint($breakpoint) {
-        display: initial;
+        display: block;
       }
     }
   }
