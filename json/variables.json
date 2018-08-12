@@ -98,6 +98,13 @@
       "name": "button-hollow-background"
     }
   ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -153,13 +160,6 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
-    }
-  ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
     }
   ],
   "divider": [
@@ -413,6 +413,107 @@
       "variable": "$panel-scrollable-height",
       "value": "300px !default",
       "name": "panel-scrollable-height"
+    }
+  ],
+  "radio": [
+    {
+      "variable": "$radio-radius",
+      "value": "radius(circle) !default",
+      "name": "radio-radius"
+    },
+    {
+      "variable": "$radio-inner-width",
+      "value": "em(6px) !default",
+      "name": "radio-inner-width"
+    },
+    {
+      "variable": "$radio-inner-background",
+      "value": "color(info) !default",
+      "name": "radio-inner-background"
+    },
+    {
+      "variable": "$radio-inner-transform",
+      "value": "scale(0) !default",
+      "name": "radio-inner-transform"
+    },
+    {
+      "variable": "$radio-outer-width",
+      "value": "em(18px) !default",
+      "name": "radio-outer-width"
+    },
+    {
+      "variable": "$radio-outer-background",
+      "value": "transparent !default",
+      "name": "radio-outer-background"
+    },
+    {
+      "variable": "$radio-outer-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "radio-outer-border"
+    },
+    {
+      "variable": "$radio-active-inner-transform",
+      "value": "scale(1) !default",
+      "name": "radio-active-inner-transform"
+    },
+    {
+      "variable": "$radio-hover-outer-border",
+      "value": "1px solid color(info) !default",
+      "name": "radio-hover-outer-border"
+    },
+    {
+      "variable": "$radio-hover-outer-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "radio-hover-outer-background"
+    }
+  ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
+    }
+  ],
+  "tag": [
+    {
+      "variable": "$tag-font-size",
+      "value": "em(14px) !default",
+      "name": "tag-font-size"
+    },
+    {
+      "variable": "$tag-color",
+      "value": "color(black) !default",
+      "name": "tag-color"
+    },
+    {
+      "variable": "$tag-background",
+      "value": "color(light-gray) !default",
+      "name": "tag-background"
+    },
+    {
+      "variable": "$tag-padding",
+      "value": "space(medium) !default",
+      "name": "tag-padding"
+    },
+    {
+      "variable": "$tag-radius",
+      "value": "radius(xsmall) !default",
+      "name": "tag-radius"
+    },
+    {
+      "variable": "$tag-hover-background",
+      "value": "darken(color(light-gray), 10%) !default",
+      "name": "tag-hover-background"
     }
   ],
   "heading": [
@@ -708,107 +809,6 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
-    }
-  ],
-  "radio": [
-    {
-      "variable": "$radio-radius",
-      "value": "radius(circle) !default",
-      "name": "radio-radius"
-    },
-    {
-      "variable": "$radio-inner-width",
-      "value": "em(6px) !default",
-      "name": "radio-inner-width"
-    },
-    {
-      "variable": "$radio-inner-background",
-      "value": "color(info) !default",
-      "name": "radio-inner-background"
-    },
-    {
-      "variable": "$radio-inner-transform",
-      "value": "scale(0) !default",
-      "name": "radio-inner-transform"
-    },
-    {
-      "variable": "$radio-outer-width",
-      "value": "em(18px) !default",
-      "name": "radio-outer-width"
-    },
-    {
-      "variable": "$radio-outer-background",
-      "value": "transparent !default",
-      "name": "radio-outer-background"
-    },
-    {
-      "variable": "$radio-outer-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "radio-outer-border"
-    },
-    {
-      "variable": "$radio-active-inner-transform",
-      "value": "scale(1) !default",
-      "name": "radio-active-inner-transform"
-    },
-    {
-      "variable": "$radio-hover-outer-border",
-      "value": "1px solid color(info) !default",
-      "name": "radio-hover-outer-border"
-    },
-    {
-      "variable": "$radio-hover-outer-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "radio-hover-outer-background"
-    }
-  ],
-  "select": [
-    {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
-      "name": "select-icon"
-    },
-    {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
-    },
-    {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
-    }
-  ],
-  "tag": [
-    {
-      "variable": "$tag-font-size",
-      "value": "em(14px) !default",
-      "name": "tag-font-size"
-    },
-    {
-      "variable": "$tag-color",
-      "value": "color(black) !default",
-      "name": "tag-color"
-    },
-    {
-      "variable": "$tag-background",
-      "value": "color(light-gray) !default",
-      "name": "tag-background"
-    },
-    {
-      "variable": "$tag-padding",
-      "value": "space(medium) !default",
-      "name": "tag-padding"
-    },
-    {
-      "variable": "$tag-radius",
-      "value": "radius(xsmall) !default",
-      "name": "tag-radius"
-    },
-    {
-      "variable": "$tag-hover-background",
-      "value": "darken(color(light-gray), 10%) !default",
-      "name": "tag-hover-background"
     }
   ],
   "breakpoints": [
