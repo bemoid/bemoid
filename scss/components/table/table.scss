@@ -12,9 +12,9 @@
 // .table--border     - Adds borders to the table.
 // .table--scoreboard - Adds "inside only" borders to a table.
 //
-// Markup: objects/table/html/table.html
+// Markup: components/table/html/table.html
 //
-// Style guide: Objects.Table
+// Style guide: Components.Table
 .table {
   $this: &;
 
@@ -33,9 +33,9 @@
   //
   // Element for single call unit of a table.
   //
-  // Markup: objects/table/html/table__cell.html
+  // Markup: components/table/html/table__cell.html
   //
-  // Style guide: Objects.Table.Cell
+  // Style guide: Components.Table.Cell
   &__cell {
     vertical-align: top;
     padding: $table-padding;

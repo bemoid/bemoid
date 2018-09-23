@@ -12,7 +12,6 @@
     "objects/list/list",
     "objects/image/image",
     "objects/media/media",
-    "objects/table/table",
     "objects/dropdown/dropdown",
     "objects/heading/heading",
     "objects/paragraph/paragraph"
@@ -22,6 +21,7 @@
   ],
   "components": [
     "components/figure/figure",
+    "components/table/table",
     "components/panel/panel",
     "components/modal/modal",
     "components/overlay/overlay",

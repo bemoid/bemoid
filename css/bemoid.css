@@ -853,51 +853,6 @@ mark {
       .media--reverse.media--stackable {
         flex-direction: column-column; } }
 
-/** @define table */
-.table, .content table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  text-align: left;
-  border-top: 1px solid #d7dfe6; }
-  .table__head, .content table thead, .table__footer, .content table tfoot {
-    background-color: #f6f6f6; }
-  .table__cell, .content table th,
-  .content table td {
-    vertical-align: top;
-    padding: 0.5625em 1.125em;
-    border: 1px solid #d7dfe6;
-    border-width: 0 0 1px; }
-  .table--condense .table__cell, .table--condense .content table th, .content table .table--condense th,
-  .table--condense .content table td, .content table .table--condense td {
-    padding: 0.375em 0.5625em; }
-  .table--border {
-    border: 1px solid #d7dfe6; }
-    .table--border .table__cell, .table--border .content table th, .content table .table--border th,
-    .table--border .content table td, .content table .table--border td {
-      border-width: 1px; }
-  .table--hoverable .table__row:hover, .table--hoverable .content table tr:hover, .content table .table--hoverable tr:hover {
-    background-color: #f6f6f6; }
-  .table--scoreboard {
-    border-width: 0; }
-    .table--scoreboard .table__cell, .table--scoreboard .content table th, .content table .table--scoreboard th,
-    .table--scoreboard .content table td, .content table .table--scoreboard td {
-      border-width: 1px; }
-      .table--scoreboard .table__cell:first-child, .table--scoreboard .content table th:first-child, .content table .table--scoreboard th:first-child,
-      .table--scoreboard .content table td:first-child, .content table .table--scoreboard td:first-child {
-        border-left-width: 0; }
-      .table--scoreboard .table__cell:last-child, .table--scoreboard .content table th:last-child, .content table .table--scoreboard th:last-child,
-      .table--scoreboard .content table td:last-child, .content table .table--scoreboard td:last-child {
-        border-right-width: 0; }
-    .table--scoreboard > :first-child .table__cell, .table--scoreboard > :first-child .content table th, .content table .table--scoreboard > :first-child th,
-    .table--scoreboard > :first-child .content table td, .content table .table--scoreboard > :first-child td {
-      border-top: 0; }
-    .table--scoreboard > :last-child .table__cell, .table--scoreboard > :last-child .content table th, .content table .table--scoreboard > :last-child th,
-    .table--scoreboard > :last-child .content table td, .content table .table--scoreboard > :last-child td {
-      border-bottom: 0; }
-  .table--stripe .table__row:nth-child(even), .table--stripe .content table tr:nth-child(even), .content table .table--stripe tr:nth-child(even) {
-    background-color: #f9f9f9; }
-
 /** @define dropdown */
 .dropdown {
   position: relative;
@@ -957,6 +912,51 @@ mark {
     display: inline-block; }
   .figure__caption, .content figure figcaption {
     font-style: italic; }
+
+/** @define table */
+.table, .content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  border-top: 1px solid #d7dfe6; }
+  .table__head, .content table thead, .table__footer, .content table tfoot {
+    background-color: #f6f6f6; }
+  .table__cell, .content table th,
+  .content table td {
+    vertical-align: top;
+    padding: 0.5625em 1.125em;
+    border: 1px solid #d7dfe6;
+    border-width: 0 0 1px; }
+  .table--condense .table__cell, .table--condense .content table th, .content table .table--condense th,
+  .table--condense .content table td, .content table .table--condense td {
+    padding: 0.375em 0.5625em; }
+  .table--border {
+    border: 1px solid #d7dfe6; }
+    .table--border .table__cell, .table--border .content table th, .content table .table--border th,
+    .table--border .content table td, .content table .table--border td {
+      border-width: 1px; }
+  .table--hoverable .table__row:hover, .table--hoverable .content table tr:hover, .content table .table--hoverable tr:hover {
+    background-color: #f6f6f6; }
+  .table--scoreboard {
+    border-width: 0; }
+    .table--scoreboard .table__cell, .table--scoreboard .content table th, .content table .table--scoreboard th,
+    .table--scoreboard .content table td, .content table .table--scoreboard td {
+      border-width: 1px; }
+      .table--scoreboard .table__cell:first-child, .table--scoreboard .content table th:first-child, .content table .table--scoreboard th:first-child,
+      .table--scoreboard .content table td:first-child, .content table .table--scoreboard td:first-child {
+        border-left-width: 0; }
+      .table--scoreboard .table__cell:last-child, .table--scoreboard .content table th:last-child, .content table .table--scoreboard th:last-child,
+      .table--scoreboard .content table td:last-child, .content table .table--scoreboard td:last-child {
+        border-right-width: 0; }
+    .table--scoreboard > :first-child .table__cell, .table--scoreboard > :first-child .content table th, .content table .table--scoreboard > :first-child th,
+    .table--scoreboard > :first-child .content table td, .content table .table--scoreboard > :first-child td {
+      border-top: 0; }
+    .table--scoreboard > :last-child .table__cell, .table--scoreboard > :last-child .content table th, .content table .table--scoreboard > :last-child th,
+    .table--scoreboard > :last-child .content table td, .content table .table--scoreboard > :last-child td {
+      border-bottom: 0; }
+  .table--stripe .table__row:nth-child(even), .table--stripe .content table tr:nth-child(even), .content table .table--stripe tr:nth-child(even) {
+    background-color: #f9f9f9; }
 
 /** @define panel */
 .panel {
