@@ -1,5 +1,5 @@
 const fs = require('fs')
-const glob = require('glob-fs')({ gitignore: true })
+const glob = require('glob')
 
 const postcss = require('postcss')
 const syntax = require('postcss-scss');
@@ -24,11 +24,13 @@ function getComponentName(variable) {
   return module[0];
 }
 
-glob.readdirStream(argv.i)
-  .on('data', (file) => {
+glob(argv.i, { dot: false }, function (err, files) {
+  if (err) throw err;
+
+  for (let i = 0; i < files.length; i++) {
     let promise = new Promise((resolve, reject) => {
-      fs.readFile(file.path, (err, scss) => {
-        if (err) { reject(error) }
+      fs.readFile(files[i], (err, scss) => {
+        if (err) throw err;
 
         postcss([
           importer({
@@ -60,7 +62,8 @@ glob.readdirStream(argv.i)
     })
 
     promises.push(promise)
-  })
+  }
+})
   .on('end', () => {
     Promise.all(promises).then(() => {
       fs.writeFile(argv.o, JSON.stringify(schema, null, 2), (err) => {
@@ -70,4 +73,3 @@ glob.readdirStream(argv.i)
       })
     })
   })
-
