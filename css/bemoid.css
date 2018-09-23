@@ -922,6 +922,15 @@ mark {
   .dropdown--hoverable:hover .dropdown__content {
     display: block; }
 
+/** @define heading */
+.heading, .content h1, .content .heading--h1,
+.content h2, .content .heading--h2,
+.content h3, .content .heading--h3,
+.content h4, .content .heading--h4,
+.content h5, .content .heading--h5,
+.content h6, .content .heading--h6 {
+  margin: 0; }
+
 /** @define form */
 .form__group {
   margin-left: 0;
@@ -935,15 +944,6 @@ mark {
   font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase; }
-
-/** @define heading */
-.heading, .content h1, .content .heading--h1,
-.content h2, .content .heading--h2,
-.content h3, .content .heading--h3,
-.content h4, .content .heading--h4,
-.content h5, .content .heading--h5,
-.content h6, .content .heading--h6 {
-  margin: 0; }
 
 /** @define paragraph */
 .paragraph, .content p {

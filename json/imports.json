@@ -13,11 +13,11 @@
     "objects/image/image",
     "objects/media/media",
     "objects/table/table",
-    "objects/dropdown/dropdown"
+    "objects/dropdown/dropdown",
+    "objects/heading/heading"
   ],
   "structures": [
     "structures/form/form",
-    "structures/heading/heading",
     "structures/paragraph/paragraph"
   ],
   "components": [

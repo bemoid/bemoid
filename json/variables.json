@@ -811,25 +811,23 @@
       "name": "paragraph-margin"
     }
   ],
+  "breakpoints": [
+    {
+      "variable": "$breakpoints",
+      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
+      "name": "breakpoints"
+    },
+    {
+      "variable": "$breakpoints-offset",
+      "value": "em(1px)",
+      "name": "breakpoints-offset"
+    }
+  ],
   "colors": [
     {
       "variable": "$colors",
       "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
       "name": "colors"
-    }
-  ],
-  "radiuses": [
-    {
-      "variable": "$radiuses",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radiuses"
-    }
-  ],
-  "radius": [
-    {
-      "variable": "$radius",
-      "value": "medium !default",
-      "name": "radius"
     }
   ],
   "elevators": [
@@ -846,23 +844,25 @@
       "name": "elevator"
     }
   ],
+  "radiuses": [
+    {
+      "variable": "$radiuses",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radiuses"
+    }
+  ],
+  "radius": [
+    {
+      "variable": "$radius",
+      "value": "medium !default",
+      "name": "radius"
+    }
+  ],
   "spaces": [
     {
       "variable": "$spaces",
       "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
       "name": "spaces"
-    }
-  ],
-  "breakpoints": [
-    {
-      "variable": "$breakpoints",
-      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
-      "name": "breakpoints"
-    },
-    {
-      "variable": "$breakpoints-offset",
-      "value": "em(1px)",
-      "name": "breakpoints-offset"
     }
   ],
   "transition": [
