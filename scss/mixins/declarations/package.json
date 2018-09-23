@@ -1,13 +1,13 @@
 {
-  "name": "@bemoid/mixins-declarations",
-  "description": "The Bemoid Declarations mixin.",
+  "name": "@bemoid/mixin-declarations",
+  "description": "A mixin for outputting map-based declarations.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "mixins.scss",
+  "main": "declarations.scss",
   "keywords": [
     "bem",
     "sass",
-    "mixins"
+    "declarations"
   ],
   "version": "0.1.0",
   "repository": "bemoid/bemoid",

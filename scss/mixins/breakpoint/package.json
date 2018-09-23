@@ -1,17 +1,16 @@
 {
-  "name": "@bemoid/mixins-breakpoints",
-  "description": "The Bemoid Declarations mixin.",
+  "name": "@bemoid/mixin-breakpoint",
+  "description": "A mixin for outputting @media queries.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "mixins.scss",
+  "main": "breakpoint.scss",
   "keywords": [
     "bem",
     "sass",
-    "mixins"
+    "breakpoint"
   ],
   "dependencies": {
-    "@bemoid/variables": "^0.1.0",
-    "@bemoid/functions-getters": "^0.1.0"
+    "@bemoid/function-breakpoint": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
