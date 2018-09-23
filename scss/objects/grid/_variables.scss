@@ -21,7 +21,7 @@ $grid-reversable: medium !default;
 ///
 /// @type {Map}
 $grid-sizes: (
-  xsmall: breakpoint(small),
+  xsmall: breakpoint(xsmall),
   small: breakpoint(small),
   medium: breakpoint(medium),
   large: breakpoint(large),
