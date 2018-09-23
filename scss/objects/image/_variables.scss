@@ -5,9 +5,9 @@
 /// Radius size of the rounded image.
 ///
 /// @type {Value}
-$image-radius-rounded: radius(xsmall) !default;
+$image-radius-rounded: rem(4px) !default;
 
 /// Radius sieze of the circular image.
 ///
 /// @type {Value}
-$image-radius-circular: radius(circle) !default;
+$image-radius-circular: 50% !default;

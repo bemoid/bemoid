@@ -134,7 +134,7 @@ $button-align: center !default;
 /// Button border radius.
 ///
 /// @type {Value}
-$button-radius: radius(xsmall) !default;
+$button-radius: rem(4px) !default;
 
 /// Side paddings value for wide button.
 ///

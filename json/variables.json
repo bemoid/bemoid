@@ -69,7 +69,7 @@
     },
     {
       "variable": "$button-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "button-radius"
     },
     {
@@ -101,7 +101,7 @@
   "checkbox": [
     {
       "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
+      "value": "50% !default",
       "name": "checkbox-radius"
     },
     {
@@ -180,7 +180,7 @@
     },
     {
       "variable": "$divider-badge-radius",
-      "value": "radius(circle) !default",
+      "value": "50% !default",
       "name": "divider-badge-radius"
     }
   ],
@@ -226,7 +226,7 @@
   "form": [
     {
       "variable": "$form-group-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "form-group-radius"
     },
     {
@@ -268,7 +268,7 @@
     },
     {
       "variable": "$group-outer-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "group-outer-radius"
     },
     {
@@ -290,7 +290,7 @@
     },
     {
       "variable": "$input-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "input-radius"
     },
     {
@@ -359,7 +359,7 @@
     },
     {
       "variable": "$message-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "message-radius"
     },
     {
@@ -445,7 +445,7 @@
     },
     {
       "variable": "$panel-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "panel-radius"
     },
     {
@@ -462,7 +462,7 @@
   "radio": [
     {
       "variable": "$radio-radius",
-      "value": "radius(circle) !default",
+      "value": "50% !default",
       "name": "radio-radius"
     },
     {
@@ -593,7 +593,7 @@
     },
     {
       "variable": "$tag-radius",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "tag-radius"
     },
     {
@@ -621,20 +621,6 @@
       "name": "colors"
     }
   ],
-  "elevators": [
-    {
-      "variable": "$elevators",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevators"
-    }
-  ],
-  "elevator": [
-    {
-      "variable": "$elevator",
-      "value": "medium !default",
-      "name": "elevator"
-    }
-  ],
   "radiuses": [
     {
       "variable": "$radiuses",
@@ -647,6 +633,20 @@
       "variable": "$radius",
       "value": "medium !default",
       "name": "radius"
+    }
+  ],
+  "elevators": [
+    {
+      "variable": "$elevators",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevators"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator",
+      "value": "medium !default",
+      "name": "elevator"
     }
   ],
   "spaces": [
@@ -815,7 +815,7 @@
     },
     {
       "variable": "$grid-sizes",
-      "value": "(\n  xsmall: breakpoint(small),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
       "name": "grid-sizes"
     },
     {
@@ -832,12 +832,12 @@
   "image": [
     {
       "variable": "$image-radius-rounded",
-      "value": "radius(xsmall) !default",
+      "value": "rem(4px) !default",
       "name": "image-radius-rounded"
     },
     {
       "variable": "$image-radius-circular",
-      "value": "radius(circle) !default",
+      "value": "50% !default",
       "name": "image-radius-circular"
     }
   ],

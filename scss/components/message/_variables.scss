@@ -76,7 +76,7 @@ $message-variant: neutral !default;
 /// Size of the message border radius.
 ///
 /// @type {Value}
-$message-radius: radius(xsmall) !default;
+$message-radius: rem(4px) !default;
 
 /// Color of the message title element.
 ///

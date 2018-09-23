@@ -15,7 +15,7 @@ $group-inner-radius: 0 !default;
 /// Radius value for outer corners of group items.
 ///
 /// @type {Number|Value|Values}
-$group-outer-radius: radius(xsmall) !default;
+$group-outer-radius: rem(4px) !default;
 
 /// Breakpoint name under which group items stacks in stackable group.
 ///

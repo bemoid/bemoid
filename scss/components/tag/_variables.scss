@@ -25,7 +25,7 @@ $tag-padding: space(medium) !default;
 /// Tag border radius size.
 ///
 /// @type {Value|Values}
-$tag-radius: radius(xsmall) !default;
+$tag-radius: rem(4px) !default;
 
 /// Tag background color on hover.
 ///

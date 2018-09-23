@@ -10,7 +10,6 @@
     "group"
   ],
   "dependencies": {
-    "@bemoid/function-radius": "^0.1.0",
     "@bemoid/mixin-breakpoint": "^0.1.0"
   },
   "version": "0.1.0",
