@@ -141,6 +141,8 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
   /* 2 */ }
 
 button::-moz-focus-inner,
@@ -192,16 +194,20 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */ }
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+          appearance: none; }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+          appearance: button;
   /* 1 */
   font: inherit;
   /* 2 */ }
@@ -703,6 +709,72 @@ mark {
         .grid--waffle .grid__column {
           padding: 0.5625em; } }
 
+/** @define segment */
+.segment, .content blockquote {
+  width: 100%;
+  display: block;
+  padding: 1.125em; }
+  .segment--small {
+    padding: 0.375em; }
+  .segment--medium {
+    padding: 0.5625em; }
+  .segment--xlarge {
+    padding: 2.25em; }
+  @media (min-width: 20em) {
+    .segment--small\@xsmall {
+      padding: 0.375em; }
+    .segment--medium\@xsmall {
+      padding: 0.5625em; }
+    .segment--large\@xsmall {
+      padding: 1.125em; }
+    .segment--xlarge\@xsmall {
+      padding: 2.25em; } }
+  @media (min-width: 30em) {
+    .segment--small\@small {
+      padding: 0.375em; }
+    .segment--medium\@small {
+      padding: 0.5625em; }
+    .segment--large\@small {
+      padding: 1.125em; }
+    .segment--xlarge\@small {
+      padding: 2.25em; } }
+  @media (min-width: 48em) {
+    .segment--small\@medium {
+      padding: 0.375em; }
+    .segment--medium\@medium {
+      padding: 0.5625em; }
+    .segment--large\@medium {
+      padding: 1.125em; }
+    .segment--xlarge\@medium {
+      padding: 2.25em; } }
+  @media (min-width: 60em) {
+    .segment--small\@large {
+      padding: 0.375em; }
+    .segment--medium\@large {
+      padding: 0.5625em; }
+    .segment--large\@large {
+      padding: 1.125em; }
+    .segment--xlarge\@large {
+      padding: 2.25em; } }
+  @media (min-width: 70em) {
+    .segment--small\@xlarge {
+      padding: 0.375em; }
+    .segment--medium\@xlarge {
+      padding: 0.5625em; }
+    .segment--large\@xlarge {
+      padding: 1.125em; }
+    .segment--xlarge\@xlarge {
+      padding: 2.25em; } }
+  @media (min-width: 90em) {
+    .segment--small\@xxlarge {
+      padding: 0.375em; }
+    .segment--medium\@xxlarge {
+      padding: 0.5625em; }
+    .segment--large\@xxlarge {
+      padding: 1.125em; }
+    .segment--xlarge\@xxlarge {
+      padding: 2.25em; } }
+
 /** @define list */
 .list, .content ul, .content ol, .content dl {
   display: block;
@@ -864,81 +936,6 @@ mark {
   font-weight: bold;
   text-transform: uppercase; }
 
-/** @define figure */
-.figure, .content figure {
-  margin: 0;
-  text-align: center; }
-  .figure__image, .content figure img {
-    display: inline-block; }
-  .figure__caption, .content figure figcaption {
-    font-style: italic; }
-
-/** @define segment */
-.segment, .content blockquote {
-  width: 100%;
-  display: block;
-  padding: 1.125em; }
-  .segment--small {
-    padding: 0.375em; }
-  .segment--medium {
-    padding: 0.5625em; }
-  .segment--xlarge {
-    padding: 2.25em; }
-  @media (min-width: 20em) {
-    .segment--small\@xsmall {
-      padding: 0.375em; }
-    .segment--medium\@xsmall {
-      padding: 0.5625em; }
-    .segment--large\@xsmall {
-      padding: 1.125em; }
-    .segment--xlarge\@xsmall {
-      padding: 2.25em; } }
-  @media (min-width: 30em) {
-    .segment--small\@small {
-      padding: 0.375em; }
-    .segment--medium\@small {
-      padding: 0.5625em; }
-    .segment--large\@small {
-      padding: 1.125em; }
-    .segment--xlarge\@small {
-      padding: 2.25em; } }
-  @media (min-width: 48em) {
-    .segment--small\@medium {
-      padding: 0.375em; }
-    .segment--medium\@medium {
-      padding: 0.5625em; }
-    .segment--large\@medium {
-      padding: 1.125em; }
-    .segment--xlarge\@medium {
-      padding: 2.25em; } }
-  @media (min-width: 60em) {
-    .segment--small\@large {
-      padding: 0.375em; }
-    .segment--medium\@large {
-      padding: 0.5625em; }
-    .segment--large\@large {
-      padding: 1.125em; }
-    .segment--xlarge\@large {
-      padding: 2.25em; } }
-  @media (min-width: 70em) {
-    .segment--small\@xlarge {
-      padding: 0.375em; }
-    .segment--medium\@xlarge {
-      padding: 0.5625em; }
-    .segment--large\@xlarge {
-      padding: 1.125em; }
-    .segment--xlarge\@xlarge {
-      padding: 2.25em; } }
-  @media (min-width: 90em) {
-    .segment--small\@xxlarge {
-      padding: 0.375em; }
-    .segment--medium\@xxlarge {
-      padding: 0.5625em; }
-    .segment--large\@xxlarge {
-      padding: 1.125em; }
-    .segment--xlarge\@xxlarge {
-      padding: 2.25em; } }
-
 /** @define heading */
 .heading, .content h1, .content .heading--h1,
 .content h2, .content .heading--h2,
@@ -951,6 +948,15 @@ mark {
 /** @define paragraph */
 .paragraph, .content p {
   margin: 0; }
+
+/** @define figure */
+.figure, .content figure {
+  margin: 0;
+  text-align: center; }
+  .figure__image, .content figure img {
+    display: inline-block; }
+  .figure__caption, .content figure figcaption {
+    font-style: italic; }
 
 /** @define panel */
 .panel {
@@ -1174,10 +1180,6 @@ mark {
 
 /** @define button */
 .button {
-  font-size: 1em;
-  padding: 0.375em 1.125em;
-  color: #171c1f;
-  background-color: #d7dfe6;
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -1188,7 +1190,11 @@ mark {
   font-weight: 400;
   text-align: center;
   border-radius: 0.25rem;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  font-size: 1em;
+  padding: 0.375em 1.125em;
+  color: #171c1f;
+  background-color: #d7dfe6; }
   .button:hover, .button:focus, .button:active {
     color: #171c1f;
     background-color: #c7d2dc; }
@@ -1380,9 +1386,9 @@ mark {
 
 /** @define message */
 .message {
+  border-radius: 0.25rem;
   background-color: #f6f6f6;
-  border-color: #d7dfe6;
-  border-radius: 0.25rem; }
+  border-color: #d7dfe6; }
   .message__title {
     display: block;
     color: inherit;
@@ -1402,9 +1408,9 @@ mark {
   .message--hollow {
     border-width: 1px;
     border-style: solid;
+    background-color: transparent;
     border-top-width: 0.3125em;
-    border-top-color: #d7dfe6;
-    background-color: transparent; }
+    border-top-color: #d7dfe6; }
     .message--hollow.message--success {
       color: #42515a;
       border-top-width: 0.3125em;
@@ -1427,25 +1433,25 @@ mark {
   position: relative;
   z-index: 3; }
   .divider::after {
-    width: 1.25rem;
-    height: 1.25rem;
-    font-size: 0.875em;
     content: attr(data-text);
     line-height: 1.25rem;
     text-align: center;
     box-sizing: content-box;
     background-color: #fff;
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 0.875em; }
   .divider--small::after {
+    line-height: 1.1rem;
     width: 1.1rem;
     height: 1.1rem;
-    font-size: 0.75em;
-    line-height: 1.1rem; }
+    font-size: 0.75em; }
   .divider--large::after {
+    line-height: 1.5rem;
     width: 1.5rem;
     height: 1.5rem;
-    font-size: 1em;
-    line-height: 1.5rem; }
+    font-size: 1em; }
 
 /** @define content */
 .content > :not(:first-child) {

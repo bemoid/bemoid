@@ -1,7 +1,7 @@
 ---
 title: Figure
 description: Component for representing graphics, frequently with a caption.
-group: Structures
+group: Components
 layout: docs.html
 algolia: true
 ---
@@ -12,19 +12,19 @@ Component for representing graphics, frequently with a caption.
 
 Add `.figure` block class to the `<figure>` HTML tag. Mark images with a `.figure__image` and caption with `.figure__caption` element class.
 
-[[example file=structures/figure/example/basic.html]]
+[[example file=components/figure/example/basic.html]]
 
 Of course, one figure can contain multiple images.
 
-[[example file=structures/figure/example/multiple.html]]
+[[example file=components/figure/example/multiple.html]]
 
 ## Styleguide
 
-[[styleguide file=structures/figure/figure.scss]]
+[[styleguide file=components/figure/figure.scss]]
 
 ## Variables
 
-[[variables file=structures/figure/_variables.scss]]
+[[variables file=components/figure/_variables.scss]]
 
 ## Standalone installation
 

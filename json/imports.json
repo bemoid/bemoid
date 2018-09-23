@@ -8,6 +8,7 @@
   "objects": [
     "objects/container/container",
     "objects/grid/grid",
+    "objects/segment/segment",
     "objects/list/list",
     "objects/image/image",
     "objects/media/media",
@@ -16,12 +17,11 @@
   ],
   "structures": [
     "structures/form/form",
-    "structures/figure/figure",
-    "structures/segment/segment",
     "structures/heading/heading",
     "structures/paragraph/paragraph"
   ],
   "components": [
+    "components/figure/figure",
     "components/panel/panel",
     "components/modal/modal",
     "components/overlay/overlay",

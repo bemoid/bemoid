@@ -31,6 +31,63 @@
       "name": "blockquote-footer-color"
     }
   ],
+  "checkbox": [
+    {
+      "variable": "$checkbox-radius",
+      "value": "radius(circle) !default",
+      "name": "checkbox-radius"
+    },
+    {
+      "variable": "$checkbox-size",
+      "value": "em(18px) !default",
+      "name": "checkbox-size"
+    },
+    {
+      "variable": "$checkbox-background",
+      "value": "transparent !default",
+      "name": "checkbox-background"
+    },
+    {
+      "variable": "$checkbox-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "checkbox-border"
+    },
+    {
+      "variable": "$checkbox-hover-border",
+      "value": "1px solid color(info) !default",
+      "name": "checkbox-hover-border"
+    },
+    {
+      "variable": "$checkbox-hover-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "checkbox-hover-background"
+    },
+    {
+      "variable": "$checkbox-mark-size",
+      "value": "em(14px) !default",
+      "name": "checkbox-mark-size"
+    },
+    {
+      "variable": "$checkbox-mark-width",
+      "value": "em(2px) !default",
+      "name": "checkbox-mark-width"
+    },
+    {
+      "variable": "$checkbox-mark-color",
+      "value": "color(info) !default",
+      "name": "checkbox-mark-color"
+    },
+    {
+      "variable": "$checkbox-mark-transform",
+      "value": "rotate(-45deg) scale(0) !default",
+      "name": "checkbox-mark-transform"
+    },
+    {
+      "variable": "$checkbox-mark-active-transform",
+      "value": "rotate(-45deg) scale(1) !default",
+      "name": "checkbox-mark-active-transform"
+    }
+  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -98,63 +155,6 @@
       "name": "button-hollow-background"
     }
   ],
-  "checkbox": [
-    {
-      "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
-      "name": "checkbox-radius"
-    },
-    {
-      "variable": "$checkbox-size",
-      "value": "em(18px) !default",
-      "name": "checkbox-size"
-    },
-    {
-      "variable": "$checkbox-background",
-      "value": "transparent !default",
-      "name": "checkbox-background"
-    },
-    {
-      "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "checkbox-border"
-    },
-    {
-      "variable": "$checkbox-hover-border",
-      "value": "1px solid color(info) !default",
-      "name": "checkbox-hover-border"
-    },
-    {
-      "variable": "$checkbox-hover-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "checkbox-hover-background"
-    },
-    {
-      "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
-      "name": "checkbox-mark-size"
-    },
-    {
-      "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
-      "name": "checkbox-mark-width"
-    },
-    {
-      "variable": "$checkbox-mark-color",
-      "value": "color(info) !default",
-      "name": "checkbox-mark-color"
-    },
-    {
-      "variable": "$checkbox-mark-transform",
-      "value": "rotate(-45deg) scale(0) !default",
-      "name": "checkbox-mark-transform"
-    },
-    {
-      "variable": "$checkbox-mark-active-transform",
-      "value": "rotate(-45deg) scale(1) !default",
-      "name": "checkbox-mark-active-transform"
-    }
-  ],
   "content": [
     {
       "variable": "$content-spacing",
@@ -209,6 +209,18 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
+    }
+  ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
     }
   ],
   "group": [
@@ -706,6 +718,18 @@
       "name": "media-gutter"
     }
   ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
+    }
+  ],
   "table": [
     {
       "variable": "$table-padding",
@@ -748,18 +772,6 @@
       "name": "table-hoverable-background"
     }
   ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
   "form": [
     {
       "variable": "$form-group-radius",
@@ -799,49 +811,11 @@
       "name": "paragraph-margin"
     }
   ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
-  "breakpoints": [
-    {
-      "variable": "$breakpoints",
-      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
-      "name": "breakpoints"
-    },
-    {
-      "variable": "$breakpoints-offset",
-      "value": "em(1px)",
-      "name": "breakpoints-offset"
-    }
-  ],
   "colors": [
     {
       "variable": "$colors",
       "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
       "name": "colors"
-    }
-  ],
-  "elevators": [
-    {
-      "variable": "$elevators",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevators"
-    }
-  ],
-  "elevator": [
-    {
-      "variable": "$elevator",
-      "value": "medium !default",
-      "name": "elevator"
     }
   ],
   "radiuses": [
@@ -858,11 +832,37 @@
       "name": "radius"
     }
   ],
+  "elevators": [
+    {
+      "variable": "$elevators",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevators"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator",
+      "value": "medium !default",
+      "name": "elevator"
+    }
+  ],
   "spaces": [
     {
       "variable": "$spaces",
       "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
       "name": "spaces"
+    }
+  ],
+  "breakpoints": [
+    {
+      "variable": "$breakpoints",
+      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
+      "name": "breakpoints"
+    },
+    {
+      "variable": "$breakpoints-offset",
+      "value": "em(1px)",
+      "name": "breakpoints-offset"
     }
   ],
   "transition": [
