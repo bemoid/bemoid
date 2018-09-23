@@ -14,11 +14,11 @@
     "objects/media/media",
     "objects/table/table",
     "objects/dropdown/dropdown",
-    "objects/heading/heading"
+    "objects/heading/heading",
+    "objects/paragraph/paragraph"
   ],
   "structures": [
-    "structures/form/form",
-    "structures/paragraph/paragraph"
+    "structures/form/form"
   ],
   "components": [
     "components/figure/figure",

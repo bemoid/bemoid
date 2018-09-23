@@ -931,6 +931,10 @@ mark {
 .content h6, .content .heading--h6 {
   margin: 0; }
 
+/** @define paragraph */
+.paragraph, .content p {
+  margin: 0; }
+
 /** @define form */
 .form__group {
   margin-left: 0;
@@ -944,10 +948,6 @@ mark {
   font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase; }
-
-/** @define paragraph */
-.paragraph, .content p {
-  margin: 0; }
 
 /** @define figure */
 .figure, .content figure {

@@ -31,63 +31,6 @@
       "name": "blockquote-footer-color"
     }
   ],
-  "checkbox": [
-    {
-      "variable": "$checkbox-radius",
-      "value": "radius(circle) !default",
-      "name": "checkbox-radius"
-    },
-    {
-      "variable": "$checkbox-size",
-      "value": "em(18px) !default",
-      "name": "checkbox-size"
-    },
-    {
-      "variable": "$checkbox-background",
-      "value": "transparent !default",
-      "name": "checkbox-background"
-    },
-    {
-      "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "checkbox-border"
-    },
-    {
-      "variable": "$checkbox-hover-border",
-      "value": "1px solid color(info) !default",
-      "name": "checkbox-hover-border"
-    },
-    {
-      "variable": "$checkbox-hover-background",
-      "value": "transparentize(color(info), 0.9) !default",
-      "name": "checkbox-hover-background"
-    },
-    {
-      "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
-      "name": "checkbox-mark-size"
-    },
-    {
-      "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
-      "name": "checkbox-mark-width"
-    },
-    {
-      "variable": "$checkbox-mark-color",
-      "value": "color(info) !default",
-      "name": "checkbox-mark-color"
-    },
-    {
-      "variable": "$checkbox-mark-transform",
-      "value": "rotate(-45deg) scale(0) !default",
-      "name": "checkbox-mark-transform"
-    },
-    {
-      "variable": "$checkbox-mark-active-transform",
-      "value": "rotate(-45deg) scale(1) !default",
-      "name": "checkbox-mark-active-transform"
-    }
-  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -155,11 +98,61 @@
       "name": "button-hollow-background"
     }
   ],
-  "content": [
+  "checkbox": [
     {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
+      "variable": "$checkbox-radius",
+      "value": "radius(circle) !default",
+      "name": "checkbox-radius"
+    },
+    {
+      "variable": "$checkbox-size",
+      "value": "em(18px) !default",
+      "name": "checkbox-size"
+    },
+    {
+      "variable": "$checkbox-background",
+      "value": "transparent !default",
+      "name": "checkbox-background"
+    },
+    {
+      "variable": "$checkbox-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "checkbox-border"
+    },
+    {
+      "variable": "$checkbox-hover-border",
+      "value": "1px solid color(info) !default",
+      "name": "checkbox-hover-border"
+    },
+    {
+      "variable": "$checkbox-hover-background",
+      "value": "transparentize(color(info), 0.9) !default",
+      "name": "checkbox-hover-background"
+    },
+    {
+      "variable": "$checkbox-mark-size",
+      "value": "em(14px) !default",
+      "name": "checkbox-mark-size"
+    },
+    {
+      "variable": "$checkbox-mark-width",
+      "value": "em(2px) !default",
+      "name": "checkbox-mark-width"
+    },
+    {
+      "variable": "$checkbox-mark-color",
+      "value": "color(info) !default",
+      "name": "checkbox-mark-color"
+    },
+    {
+      "variable": "$checkbox-mark-transform",
+      "value": "rotate(-45deg) scale(0) !default",
+      "name": "checkbox-mark-transform"
+    },
+    {
+      "variable": "$checkbox-mark-active-transform",
+      "value": "rotate(-45deg) scale(1) !default",
+      "name": "checkbox-mark-active-transform"
     }
   ],
   "divider": [
@@ -182,6 +175,13 @@
       "variable": "$divider-badge-radius",
       "value": "radius(circle) !default",
       "name": "divider-badge-radius"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
     }
   ],
   "field": [
@@ -211,18 +211,6 @@
       "name": "field-caption-font-size"
     }
   ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
   "group": [
     {
       "variable": "$group-overlap",
@@ -248,6 +236,18 @@
       "variable": "$group-divider-width",
       "value": "6px !default",
       "name": "group-divider-width"
+    }
+  ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
     }
   ],
   "input": [
@@ -718,6 +718,13 @@
       "name": "media-gutter"
     }
   ],
+  "paragraph": [
+    {
+      "variable": "$paragraph-margin",
+      "value": "0 !default",
+      "name": "paragraph-margin"
+    }
+  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -802,13 +809,6 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margin",
-      "value": "0 !default",
-      "name": "paragraph-margin"
     }
   ],
   "breakpoints": [
