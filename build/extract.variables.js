@@ -37,7 +37,11 @@ glob.readdirStream(argv.i)
             extension: '.scss'
           })
         ])
-        .process(scss, { parser: syntax })
+        .process(scss, {
+          from: argv.i,
+          to: argv.o,
+          parser: syntax
+        })
         .then((result) => {
           result.root.walkDecls((node) => {
             let variable = getVariableSchema(node)

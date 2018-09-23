@@ -23,7 +23,11 @@ fs.readFile(argv.i, (err, scss) => {
   if (err) throw err;
 
   postcss()
-    .process(scss, { parser: syntax })
+    .process(scss, {
+      from: argv.i,
+      to: argv.o,
+      parser: syntax
+    })
     .then((result) => {
       let schema = {}
 
