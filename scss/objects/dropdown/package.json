@@ -9,6 +9,9 @@
     "sass",
     "dropdown"
   ],
+  "dependencies": {
+    "@bemoid/function-unit": "^0.1.0"
+  },
   "optionalDependencies": {
     "@bemoid/panel": "^0.1.0"
   },

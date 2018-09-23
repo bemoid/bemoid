@@ -9,6 +9,10 @@
     "sass",
     "input"
   ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0",
+    "@bemoid/function-radius": "^0.1.0"
+  },
   "optionalDependencies": {
     "@bemoid/field": "^0.1.0"
   },

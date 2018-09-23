@@ -9,9 +9,6 @@
     "sass",
     "elevator"
   ],
-  "dependencies": {
-    "@bemoid/functions": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

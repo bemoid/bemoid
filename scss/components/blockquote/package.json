@@ -9,6 +9,10 @@
     "sass",
     "blockqoute"
   ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0",
+    "@bemoid/function-unit": "^0.1.0",
+  },
   "optionalDependencies": {
     "@bemoid/segment": "^0.1.0"
   },

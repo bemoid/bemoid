@@ -9,6 +9,10 @@
     "sass",
     "label"
   ],
+  "dependencies": {
+    "@bemoid/function-unit": "^0.1.0",
+    "@bemoid/function-color": "^0.1.0"
+  },
   "optionalDependencies": {
     "@bemoid/field": "^0.1.0"
   },

@@ -10,11 +10,11 @@
     "utilities"
   ],
   "dependencies": {
-    "@bemoid/utilities-elevator": "^0.1.0",
-    "@bemoid/utilities-hidden": "^0.1.0",
-    "@bemoid/utilities-radius": "^0.1.0",
-    "@bemoid/utilities-transition": "^0.1.0",
-    "@bemoid/utilities-visible": "^0.1.0"
+    "@bemoid/hidden": "^0.1.0",
+    "@bemoid/radius": "^0.1.0",
+    "@bemoid/visible": "^0.1.0",
+    "@bemoid/elevator": "^0.1.0",
+    "@bemoid/transition": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
