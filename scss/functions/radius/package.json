@@ -1,14 +1,17 @@
 {
-  "name": "@bemoid/functions",
-  "description": "The Bemoid functions.",
+  "name": "@bemoid/function-radius",
+  "description": "A getter function for radius values.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "functions.scss",
+  "main": "radius.scss",
   "keywords": [
     "bem",
     "sass",
-    "functions"
+    "radius"
   ],
+  "dependencies": {
+    "@bemoid/function-get": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

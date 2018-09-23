@@ -1,0 +1,26 @@
+////
+/// @group Functions
+////
+
+/// Collection of breakpoints.
+///
+/// @type {Map}
+/// @prop {Value} xsmall
+/// @prop {Value} small
+/// @prop {Value} medium
+/// @prop {Value} large
+/// @prop {Value} xlarge
+/// @prop {Value} xxlarge
+$breakpoints: (
+  xsmall: em(320px),
+  small: em(480px),
+  medium: em(768px),
+  large: em(960px),
+  xlarge: em(1120px),
+  xxlarge: em(1440px)
+) !default;
+
+/// Offset value between breakpoints ranges.
+///
+/// @type {Value}
+$breakpoints-offset: em(1px);

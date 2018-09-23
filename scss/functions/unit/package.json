@@ -1,13 +1,13 @@
 {
-  "name": "@bemoid/functions",
-  "description": "The Bemoid functions.",
+  "name": "@bemoid/function-unit",
+  "description": "Collection of the unit conversion functions.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "functions.scss",
+  "main": "unit.scss",
   "keywords": [
     "bem",
     "sass",
-    "functions"
+    "unit"
   ],
   "version": "0.1.0",
   "repository": "bemoid/bemoid",

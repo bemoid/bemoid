@@ -1,0 +1,26 @@
+////
+/// @group Functions
+////
+
+/// Collection of radius values.
+///
+/// @type {Map}
+/// @prop {Value} xsmall
+/// @prop {Value} small
+/// @prop {Value} medium
+/// @prop {Value} large
+/// @prop {Value} xlarge
+/// @prop {Value} circle
+$radiuses: (
+  xsmall: rem(4px),
+  small: rem(6px),
+  medium: rem(8px),
+  large: rem(12px),
+  xlarge: rem(18px),
+  circle: 50%,
+) !default;
+
+/// Default radius value.
+///
+/// @type {Keyword}
+$radius: medium !default;

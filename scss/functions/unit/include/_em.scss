@@ -1,0 +1,40 @@
+////
+/// @group Functions
+////
+
+/// Converts pixel value into matching em values.
+///
+/// @require {Variable} $font-size
+/// @return {Value}
+///
+/// @example scss - example
+///   em(16px);
+/// @example css - output
+///   1em
+@function em($pixels, $context: false) {
+  $em-function-context: 16px !global;
+
+  @if not ($context) {
+    @if global-variable-exists('font-size') {
+      $context: $font-size;
+    }
+
+    @else {
+      $context: $em-function-context;
+    }
+  }
+
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @if (unit($pixels) != 'px') {
+    @error "Error while converting to EM unit. Value [#{$pixels}] must be in pixels";
+  }
+
+  @return ($pixels / $context) * 1em;
+}

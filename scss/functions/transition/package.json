@@ -1,14 +1,17 @@
 {
-  "name": "@bemoid/functions",
-  "description": "The Bemoid functions.",
+  "name": "@bemoid/function-transition",
+  "description": "A getter function for transition values.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "functions.scss",
+  "main": "transition.scss",
   "keywords": [
     "bem",
     "sass",
-    "functions"
+    "transition"
   ],
+  "dependencies": {
+    "@bemoid/function-get": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

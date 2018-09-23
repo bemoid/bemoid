@@ -1,2 +1,10 @@
-@import 'converters/converters';
-@import 'getters/getters';
+@import 'get/get';
+@import 'unit/unit';
+
+@import 'color/color';
+@import 'space/space';
+@import 'radius/radius';
+@import 'elevator/elevator';
+@import 'transition/transition';
+@import 'breakpoint/breakpoint';
+
