@@ -1,10 +1,10 @@
-// 1. Mixins and functions
+// Mixins and functions
 @import 'uses';
 
-// 3. Generic
+// Generic
 @import 'generic/generic';
 
-// 4. Objects
+// Objects
 @import 'objects/container/container';
 @import 'objects/grid/grid';
 @import 'objects/segment/segment';
@@ -15,15 +15,13 @@
 @import 'objects/heading/heading';
 @import 'objects/paragraph/paragraph';
 
-// 5. Structures
-@import 'structures/form/form';
-
-// 6. Components
+// Components
 @import 'components/figure/figure';
 @import 'components/table/table';
 @import 'components/panel/panel';
 @import 'components/modal/modal';
 @import 'components/overlay/overlay';
+@import 'components/form/form';
 @import 'components/input/input';
 @import 'components/field/field';
 @import 'components/label/label';
@@ -38,7 +36,7 @@
 @import 'components/content/content';
 @import 'components/group/group';
 
-// 7. Utilities
+// Utilities
 @import 'utilities/space/space';
 @import 'utilities/gutter/gutter';
 @import 'utilities/radius/radius';

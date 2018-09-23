@@ -184,6 +184,33 @@
       "name": "divider-badge-radius"
     }
   ],
+  "field": [
+    {
+      "variable": "$field-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(medium)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "name": "field-sizes"
+    },
+    {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
+      "variable": "$field-size",
+      "value": "medium !default",
+      "name": "field-size"
+    },
+    {
+      "variable": "$field-caption-untouched-color",
+      "value": "$font-color !default",
+      "name": "field-caption-untouched-color"
+    },
+    {
+      "variable": "$field-caption-font-size",
+      "value": "em(12px) !default",
+      "name": "field-caption-font-size"
+    }
+  ],
   "figure": [
     {
       "variable": "$figure-text-align",
@@ -194,6 +221,38 @@
       "variable": "$figure-font-style",
       "value": "italic !default",
       "name": "figure-font-style"
+    }
+  ],
+  "form": [
+    {
+      "variable": "$form-group-radius",
+      "value": "radius(xsmall) !default",
+      "name": "form-group-radius"
+    },
+    {
+      "variable": "$form-group-background",
+      "value": "color(lighter-gray) !default",
+      "name": "form-group-background"
+    },
+    {
+      "variable": "$form-group-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "form-group-border"
+    },
+    {
+      "variable": "$form-legend-font-size",
+      "value": "em(12px) !default",
+      "name": "form-legend-font-size"
+    },
+    {
+      "variable": "$form-legend-weight",
+      "value": "bold !default",
+      "name": "form-legend-weight"
+    },
+    {
+      "variable": "$form-legend-text-transform",
+      "value": "uppercase !default",
+      "name": "form-legend-text-transform"
     }
   ],
   "group": [
@@ -221,33 +280,6 @@
       "variable": "$group-divider-width",
       "value": "6px !default",
       "name": "group-divider-width"
-    }
-  ],
-  "field": [
-    {
-      "variable": "$field-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(medium)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "field-sizes"
-    },
-    {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
-    },
-    {
-      "variable": "$field-size",
-      "value": "medium !default",
-      "name": "field-size"
-    },
-    {
-      "variable": "$field-caption-untouched-color",
-      "value": "$font-color !default",
-      "name": "field-caption-untouched-color"
-    },
-    {
-      "variable": "$field-caption-font-size",
-      "value": "em(12px) !default",
-      "name": "field-caption-font-size"
     }
   ],
   "input": [
@@ -777,38 +809,6 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
-    }
-  ],
-  "form": [
-    {
-      "variable": "$form-group-radius",
-      "value": "radius(xsmall) !default",
-      "name": "form-group-radius"
-    },
-    {
-      "variable": "$form-group-background",
-      "value": "color(lighter-gray) !default",
-      "name": "form-group-background"
-    },
-    {
-      "variable": "$form-group-border",
-      "value": "1px solid color(light-gray) !default",
-      "name": "form-group-border"
-    },
-    {
-      "variable": "$form-legend-font-size",
-      "value": "em(12px) !default",
-      "name": "form-legend-font-size"
-    },
-    {
-      "variable": "$form-legend-weight",
-      "value": "bold !default",
-      "name": "form-legend-weight"
-    },
-    {
-      "variable": "$form-legend-text-transform",
-      "value": "uppercase !default",
-      "name": "form-legend-text-transform"
     }
   ],
   "breakpoints": [

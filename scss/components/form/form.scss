@@ -6,9 +6,9 @@
 //
 // Component which structures form interactive controls like fields, selects or checkboxes.
 //
-// Markup: structures/form/html/form.html
+// Markup: components/form/html/form.html
 //
-// Style guide: Structures.Form
+// Style guide: Components.Form
 .form {
   $this: &;
 
@@ -16,9 +16,9 @@
   //
   // Element used to group several controls within a form block.
   //
-  // Markup: structures/form/html/form__group.html
+  // Markup: components/form/html/form__group.html
   //
-  // Style guide: Structures.Form.Group
+  // Style guide: Components.Form.Group
   &__group {
     margin-left: 0;
     margin-right: 0;
@@ -31,9 +31,9 @@
   //
   // Represents a caption for the content of group element.
   //
-  // Markup: structures/form/html/form__legend.html
+  // Markup: components/form/html/form__legend.html
   //
-  // Style guide: Structures.Form.Legend
+  // Style guide: Components.Form.Legend
   &__legend {
     margin-top: 0;
     font-size: $form-legend-font-size;

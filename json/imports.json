@@ -16,15 +16,13 @@
     "objects/heading/heading",
     "objects/paragraph/paragraph"
   ],
-  "structures": [
-    "structures/form/form"
-  ],
   "components": [
     "components/figure/figure",
     "components/table/table",
     "components/panel/panel",
     "components/modal/modal",
     "components/overlay/overlay",
+    "components/form/form",
     "components/input/input",
     "components/field/field",
     "components/label/label",

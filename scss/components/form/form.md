@@ -1,7 +1,7 @@
 ---
 title: Form
 description: Component which structures form interactive controls like fields, selects or checkboxes.
-group: Structures
+group: Components
 layout: docs.html
 algolia: true
 ---
@@ -12,19 +12,19 @@ Component which structures form interactive controls like fields, selects or che
 
 Allow for controlling fields structure of a form. Simply, add `.form` block class to the `<form>` HTML tag.
 
-[[example file=structures/form/example/basic.html]]
+[[example file=components/form/example/basic.html]]
 
 You can also group related field with a `.form__group` element class and `<fieldset>` HTML tag. Use in pair with `.form__legend` to provide a description of the particular group.
 
-[[example file=structures/form/example/group.html]]
+[[example file=components/form/example/group.html]]
 
 ## Styleguide
 
-[[styleguide file=structures/form/form.scss]]
+[[styleguide file=components/form/form.scss]]
 
 ## Variables
 
-[[variables file=structures/form/_variables.scss]]
+[[variables file=components/form/_variables.scss]]
 
 ## Standalone installation
 

@@ -890,20 +890,6 @@ mark {
 .paragraph, .content p {
   margin: 0; }
 
-/** @define form */
-.form__group {
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: 0.25rem;
-  background-color: #f6f6f6;
-  border: 1px solid #d7dfe6; }
-
-.form__legend {
-  margin-top: 0;
-  font-size: 0.75em;
-  font-weight: bold;
-  text-transform: uppercase; }
-
 /** @define figure */
 .figure, .content figure {
   margin: 0;
@@ -994,6 +980,20 @@ mark {
   height: 100%;
   opacity: 0.66;
   background-color: #171c1f; }
+
+/** @define form */
+.form__group {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0.25rem;
+  background-color: #f6f6f6;
+  border: 1px solid #d7dfe6; }
+
+.form__legend {
+  margin-top: 0;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /** @define input */
 .input {
