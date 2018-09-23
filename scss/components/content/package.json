@@ -16,7 +16,7 @@
     "@bemoid/table": "^0.1.0",
     "@bemoid/blockquote": "^0.1.0",
     "@bemoid/figure": "^0.1.0",
-    "@bemoid/function-unit": "^0.1.0",
+    "@bemoid/function-unit": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
