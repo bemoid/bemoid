@@ -30,6 +30,10 @@ $container-sizes: (
 )
 ```
 
+Container can also expands to take up all available width and height space with a `--stretch` modifier class.
+
+[[example file=objects/container/example/stretch.html]]
+
 ### Centering
 
 By default, container float to the left. Use a `.container--center` modifier class to make it centered.
