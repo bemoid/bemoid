@@ -24,7 +24,7 @@ You may also unlimitedly nest further media objects. It's really helpfull when c
 
 ### Alignment
 
-Vertical distribution of the `.media__side` element can be adjusted with a alignment modifier classes.
+Vertical distribution of the `.media__side` and `.media__body` elements can be adjusted separetly with a alignment modifier classes.
 
 [[example file=objects/media/example/alignment.html]]
 
