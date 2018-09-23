@@ -10,9 +10,9 @@
 // .segment--medium - Medium variant of the paddings.
 // .segment--xlarge - Xlarge variant of the paddings.
 //
-// Markup: structures/segment/html/segment.html
+// Markup: objects/segment/html/segment.html
 //
-// Style guide: Structures.Segment
+// Style guide: Objects.Segment
 .segment {
   $size: map-get($segment-sizes, $segment-size);
 

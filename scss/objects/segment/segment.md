@@ -1,7 +1,7 @@
 ---
 title: Segment
 description: Component for providing visual inner space for the element.
-group: Structures
+group: Objects
 layout: docs.html
 algolia: true
 ---
@@ -12,17 +12,17 @@ Component for providing visual inner space for the element.
 
 Add `.segment` block class to give the element an internal padding.
 
-[[example file=structures/segment/example/basic.html]]
+[[example file=objects/segment/example/basic.html]]
 
 ### Sizes
 
 Sizing modifers allow you to apply diffrent sizes of a padding.
 
-[[example file=structures/segment/example/sizes.html]]
+[[example file=objects/segment/example/sizes.html]]
 
 ## Styleguide
 
-[[styleguide file=structures/segment/segment.scss]]
+[[styleguide file=objects/segment/segment.scss]]
 
 ## Variables
 
