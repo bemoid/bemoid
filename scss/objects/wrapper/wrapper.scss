@@ -1,0 +1,41 @@
+/** @define wrapper */
+
+@import 'variables';
+
+// Wrapper
+//
+// Component for providing a horizontal visual inner space for the element.
+//
+// .wrapper--small  - Small variant of the paddings.
+// .wrapper--large - Medium variant of the paddings.
+// .wrapper--xlarge - Xlarge variant of the paddings.
+//
+// Markup: objects/wrapper/html/wrapper.html
+//
+// Style guide: Objects.Wrapper
+.wrapper {
+  $size: map-get($wrapper-sizes, $wrapper-size);
+
+  padding-left: $size;
+  padding-right: $size;
+
+  @each $name, $size in $wrapper-sizes {
+    @if $name != $wrapper-size {
+      &--#{$name} {
+        padding-left: $size;
+        padding-right: $size;
+      }
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoints {
+    @include breakpoint($breakpoint up) {
+      @each $name, $size in $wrapper-sizes {
+        &--#{$name}\@#{$breakpoint} {
+          padding-left: $size;
+          padding-right: $size;
+        }
+      }
+    }
+  }
+}

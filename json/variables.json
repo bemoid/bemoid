@@ -883,5 +883,17 @@
       "value": "large !default",
       "name": "segment-size"
     }
+  ],
+  "wrapper": [
+    {
+      "variable": "$wrapper-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xlarge),\n) !default",
+      "name": "wrapper-sizes"
+    },
+    {
+      "variable": "$wrapper-size",
+      "value": "medium !default",
+      "name": "wrapper-size"
+    }
   ]
 }
