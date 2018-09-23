@@ -31,18 +31,6 @@
     flex: 0 1 auto;
     max-width: 100%;
 
-    &:hover,
-    &:focus,
-    & > *:hover,
-    & > *:focus, {
-      position: relative;
-    }
-
-    &:focus,
-    & > *:focus {
-      z-index: 2;
-    }
-
     &,
     & > * {
       border-radius: $group-inner-radius;
@@ -64,6 +52,18 @@
         $group-outer-radius
         $group-outer-radius
         $group-inner-radius;
+    }
+
+    &:hover,
+    &:focus,
+    & > *:hover,
+    & > *:focus, {
+      position: relative;
+    }
+
+    &:focus,
+    & > *:focus {
+      z-index: 2;
     }
 
     &--expand {

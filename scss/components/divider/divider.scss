@@ -19,23 +19,23 @@
   z-index: 3;
 
   &::after {
-    @include declarations($size);
-
     content: attr(data-text);
     line-height: map-get($size, 'height');
     text-align: center;
     box-sizing: content-box;
     background-color: $divider-badge-background;
     border-radius: $divider-badge-radius;
+
+    @include declarations($size);
   }
 
   @each $size, $declarations in $divider-badge-sizes {
     @if $size != $divider-badge-size {
       &--#{$size} {
         &::after {
-          @include declarations($declarations);
-
           line-height: map-get($declarations, 'height');
+
+          @include declarations($declarations);
         }
       }
     }

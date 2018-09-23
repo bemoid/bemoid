@@ -36,9 +36,6 @@
   $size: map-get($button-sizes, $button-size);
   $variant: map-get($button-variants, $button-variant);
 
-  @include declarations($size);
-  @include declarations-mutable($variant);
-
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -50,6 +47,9 @@
   text-align: $button-align;
   border-radius: $button-radius;
   border: $button-hollow-border solid transparent;
+
+  @include declarations($size);
+  @include declarations-mutable($variant);
 
   &:hover,
   &:focus,

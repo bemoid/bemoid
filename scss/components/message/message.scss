@@ -27,9 +27,9 @@
 
   $variant: map-get($message-variants, $message-variant);
 
-  @include declarations($variant);
-
   border-radius: $message-radius;
+
+  @include declarations($variant);
 
   // Message Title
   //
@@ -57,10 +57,9 @@
 
     border-width: $message-hollow-border-width;
     border-style: $message-hollow-border-style;
+    background-color: transparent;
 
     @include declarations($variant);
-
-    background-color: transparent;
 
     @each $variant, $declarations in $message-hollow-variants {
       @if $variant != $message-hollow-variant {

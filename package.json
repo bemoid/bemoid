@@ -29,7 +29,7 @@
   "devDependencies": {
     "a11y": "^0.5.1",
     "async": "^2.6.1",
-    "autoprefixer": "^6.7.7",
+    "autoprefixer": "^9.1.5",
     "cssnano-cli": "^1.0.5",
     "glob-fs": "^0.1.7",
     "lerna": "^3.4.0",
@@ -39,8 +39,8 @@
     "postcss-partial-import": "^4.1.0",
     "postcss-scss": "^1.0.6",
     "stylelint": "^9.5.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.3.0",
+    "@bemoid/stylelint-config": "git+ssh://git@github.com/bemoid/stylelint-config.git",
+    "@bemoid/stylelint-config-scss": "git+ssh://git@github.com/bemoid/stylelint-config-scss.git",
     "yargs": "^8.0.2"
   },
   "config": {

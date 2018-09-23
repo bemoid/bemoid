@@ -43,15 +43,6 @@
     padding-left: 1.5em;
     vertical-align: middle;
 
-    &:active,
-    &:focus,
-    &:hover {
-      &::before {
-        background: $radio-hover-outer-background;
-        border: $radio-hover-outer-border;
-      }
-    }
-
     &::after,
     &::before {
       content: "";
@@ -76,6 +67,15 @@
       transform: translate(-50%, -50%) $radio-inner-transform;
       background: $radio-inner-background;
       border-radius: $radio-radius;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      &::before {
+        background: $radio-hover-outer-background;
+        border: $radio-hover-outer-border;
+      }
     }
   }
 }
