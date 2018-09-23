@@ -20,6 +20,10 @@ Sizing modifers allow you to apply diffrent sizes of a padding.
 
 [[example file=objects/segment/example/sizes.html]]
 
+Segment can also take specific sizes from concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class.
+
+[[example file=objects/segment/example/sizes-responsive.html]]
+
 ## Styleguide
 
 [[styleguide file=objects/segment/segment.scss]]
