@@ -11,8 +11,9 @@
 // .grid--center       - Aligns grid columns horizontally to the center.
 // .grid--justify      - Distributes grid columns horizontally with equals inner spaces.
 // .grid--space        - Distributes grid columns horizontally with equals inner and outer spaces.
+// .grid--start        - Aligns grid columns verically to the start.
 // .grid--middle       - Aligns grid columns verically to the center.
-// .grid--bottom       - Aligns grid columns verically to the bottom.
+// .grid--end          - Aligns grid columns verically to the end.
 // .grid--stretch      - Stretches grid columns to the euqal height.
 // .grid--gapless      - Removes grid gutters.
 // .grid--waffle       - Adds gutter on all sides of grid columns.
@@ -49,23 +50,24 @@
   //
   // Column element of grid block. Divides space into cells called "columns".
   //
-  // .grid__column--1 - Desc
-  // .grid__column--2 - Desc
-  // .grid__column--3 - Desc
-  // .grid__column--4 - Desc
-  // .grid__column--5 - Desc
-  // .grid__column--6 - Desc
-  // .grid__column--7 - Desc
-  // .grid__column--8 - Desc
-  // .grid__column--9 - Desc
-  // .grid__column--10 - Desc
-  // .grid__column--11 - Desc
-  // .grid__column--12 - Desc
-  // .grid__column--shrink - Desc
-  // .grid__column--middle - Desc
-  // .grid__column--bottom - Desc
-  // .grid__column--baseline - Desc
-  // .grid__column--stretch - Desc
+  // .grid__column--1        - Makes column a size of 1 by 12 of available space.
+  // .grid__column--2        - Makes column a size of 2 by 12 of available space.
+  // .grid__column--3        - Makes column a size of 3 by 12 of available space.
+  // .grid__column--4        - Makes column a size of 4 by 12 of available space.
+  // .grid__column--5        - Makes column a size of 5 by 12 of available space.
+  // .grid__column--6        - Makes column a size of 6 by 12 of available space.
+  // .grid__column--7        - Makes column a size of 7 by 12 of available space.
+  // .grid__column--8        - Makes column a size of 8 by 12 of available space.
+  // .grid__column--9        - Makes column a size of 9 by 12 of available space.
+  // .grid__column--10       - Makes column a size of 10 by 12 of available space.
+  // .grid__column--11       - Makes column a size of 11 by 12 of available space.
+  // .grid__column--12       - Makes column a size of 12 by 12 of available space.
+  // .grid__column--shrink   - Column adjust to the size of its content.
+  // .grid__column--start    - Aligns specific column to the start of the flex.
+  // .grid__column--center   - Aligns specific column to the center of the flex.
+  // .grid__column--end      - Aligns specific column to the end of the flex.
+  // .grid__column--baseline - Aligns specific column to the baseline.
+  // .grid__column--stretch  - Force column to expand verticali to the size of other columns.
   //
   // Markup: objects/grid/html/grid__column.html
   //
@@ -118,11 +120,15 @@
       }
     }
 
-    &--middle {
+    &--start {
+      align-self: flex-end;
+    }
+
+    &--center {
       align-self: center;
     }
 
-    &--bottom {
+    &--end {
       align-self: flex-end;
     }
 
@@ -139,12 +145,16 @@
     display: inline-flex;
   }
 
-  &--right {
-    justify-content: flex-end;
+  &--start {
+    justify-content: flex-start;
   }
 
   &--center {
     justify-content: center;
+  }
+
+  &--end {
+    justify-content: flex-end;
   }
 
   &--justify {
