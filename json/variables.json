@@ -621,20 +621,6 @@
       "name": "colors"
     }
   ],
-  "radiuses": [
-    {
-      "variable": "$radiuses",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radiuses"
-    }
-  ],
-  "radius": [
-    {
-      "variable": "$radius",
-      "value": "medium !default",
-      "name": "radius"
-    }
-  ],
   "elevators": [
     {
       "variable": "$elevators",
@@ -647,6 +633,20 @@
       "variable": "$elevator",
       "value": "medium !default",
       "name": "elevator"
+    }
+  ],
+  "radiuses": [
+    {
+      "variable": "$radiuses",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radiuses"
+    }
+  ],
+  "radius": [
+    {
+      "variable": "$radius",
+      "value": "medium !default",
+      "name": "radius"
     }
   ],
   "spaces": [
@@ -882,6 +882,18 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
+    }
+  ],
+  "waffle": [
+    {
+      "variable": "$waffle-sizes",
+      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "waffle-sizes"
+    },
+    {
+      "variable": "$waffle-size",
+      "value": "xsmall !default",
+      "name": "waffle-size"
     }
   ],
   "wrapper": [

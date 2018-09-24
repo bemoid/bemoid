@@ -1,0 +1,17 @@
+////
+/// @group Grid
+////
+
+/// Collection of waffle sizes.
+///
+/// @type {Map}
+$waffle-sizes: (
+  xsmall: space(xsmall),
+  small: space(small),
+  medium: space(medium),
+) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$waffle-size: xsmall !default;
