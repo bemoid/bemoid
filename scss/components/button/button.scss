@@ -45,7 +45,6 @@
   outline: 0;
   font-weight: $button-weight;
   text-align: $button-align;
-  border-radius: $button-radius;
   border: $button-hollow-border solid transparent;
 
   @include declarations($size);

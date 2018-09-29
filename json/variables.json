@@ -58,11 +58,6 @@
       "name": "button-align"
     },
     {
-      "variable": "$button-radius",
-      "value": "rem(4px) !default",
-      "name": "button-radius"
-    },
-    {
       "variable": "$button-wide-padding",
       "value": "em(40px) !default",
       "name": "button-wide-padding"
@@ -201,6 +196,18 @@
       "name": "field-caption-font-size"
     }
   ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
+    }
+  ],
   "form": [
     {
       "variable": "$form-group-radius",
@@ -231,18 +238,6 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
-    }
-  ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
     }
   ],
   "group": [
@@ -518,38 +513,6 @@
       "name": "select-icon-offset"
     }
   ],
-  "tag": [
-    {
-      "variable": "$tag-font-size",
-      "value": "em(14px) !default",
-      "name": "tag-font-size"
-    },
-    {
-      "variable": "$tag-color",
-      "value": "color(black) !default",
-      "name": "tag-color"
-    },
-    {
-      "variable": "$tag-background",
-      "value": "color(light-gray) !default",
-      "name": "tag-background"
-    },
-    {
-      "variable": "$tag-padding",
-      "value": "space(medium) !default",
-      "name": "tag-padding"
-    },
-    {
-      "variable": "$tag-radius",
-      "value": "rem(4px) !default",
-      "name": "tag-radius"
-    },
-    {
-      "variable": "$tag-hover-background",
-      "value": "darken(color(light-gray), 10%) !default",
-      "name": "tag-hover-background"
-    }
-  ],
   "table": [
     {
       "variable": "$table-padding",
@@ -590,6 +553,38 @@
       "variable": "$table-hoverable-background",
       "value": "color(lighter-gray) !default",
       "name": "table-hoverable-background"
+    }
+  ],
+  "tag": [
+    {
+      "variable": "$tag-font-size",
+      "value": "em(14px) !default",
+      "name": "tag-font-size"
+    },
+    {
+      "variable": "$tag-color",
+      "value": "color(black) !default",
+      "name": "tag-color"
+    },
+    {
+      "variable": "$tag-background",
+      "value": "color(light-gray) !default",
+      "name": "tag-background"
+    },
+    {
+      "variable": "$tag-padding",
+      "value": "space(medium) !default",
+      "name": "tag-padding"
+    },
+    {
+      "variable": "$tag-radius",
+      "value": "rem(4px) !default",
+      "name": "tag-radius"
+    },
+    {
+      "variable": "$tag-hover-background",
+      "value": "darken(color(light-gray), 10%) !default",
+      "name": "tag-hover-background"
     }
   ],
   "breakpoints": [
@@ -862,18 +857,6 @@
       "name": "paragraph-margin"
     }
   ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -884,6 +867,18 @@
       "variable": "$waffle-size",
       "value": "xsmall !default",
       "name": "waffle-size"
+    }
+  ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
     }
   ],
   "wrapper": [
