@@ -7,20 +7,10 @@
 /// @type {Value|Values}
 $table-padding: space(medium) space(large) !default;
 
-/// Border width on table cells.
+/// Border of table's cells.
 ///
 /// @type {Value}
-$table-border-width: 1px !default;
-
-/// Style of table cells border.
-///
-/// @type {Keyword}
-$table-border-style: solid !default;
-
-/// Color of table cells border.
-///
-/// @type {Color}
-$table-border-color: color(light-gray) !default;
+$table-border: 1px solid color(light-gray) !default;
 
 /// Background of the table head and footer.
 ///

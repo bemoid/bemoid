@@ -22,7 +22,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   text-align: left;
-  border-top: $table-border-width $table-border-style $table-border-color;
+  border-top: $table-border;
 
   &__head,
   &__footer {
@@ -39,7 +39,7 @@
   &__cell {
     vertical-align: top;
     padding: $table-padding;
-    border: $table-border-width $table-border-style $table-border-color;
+    border: $table-border;
     border-width: 0 0 $table-border-width;
   }
 
@@ -50,7 +50,7 @@
   }
 
   &--border {
-    border: $table-border-width $table-border-style $table-border-color;
+    border: $table-border;
 
     #{$this}__cell {
       border-width: $table-border-width;

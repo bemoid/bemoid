@@ -140,6 +140,13 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
   "divider": [
     {
       "variable": "$divider-badge-sizes",
@@ -160,13 +167,6 @@
       "variable": "$divider-badge-radius",
       "value": "50% !default",
       "name": "divider-badge-radius"
-    }
-  ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
     }
   ],
   "field": [
@@ -321,6 +321,33 @@
       "name": "label-font-weight"
     }
   ],
+  "modal": [
+    {
+      "variable": "$modal-space",
+      "value": "1rem !default",
+      "name": "modal-space"
+    },
+    {
+      "variable": "$modal-border",
+      "value": "0 !default",
+      "name": "modal-border"
+    },
+    {
+      "variable": "$modal-position-top",
+      "value": "50%",
+      "name": "modal-position-top"
+    },
+    {
+      "variable": "$modal-position-left",
+      "value": "50%",
+      "name": "modal-position-left"
+    },
+    {
+      "variable": "$modal-transform",
+      "value": "translate(-50%, -50%)",
+      "name": "modal-transform"
+    }
+  ],
   "message": [
     {
       "variable": "$message-variants",
@@ -361,33 +388,6 @@
       "variable": "$message-hollow-border-style",
       "value": "solid !default",
       "name": "message-hollow-border-style"
-    }
-  ],
-  "modal": [
-    {
-      "variable": "$modal-space",
-      "value": "1rem !default",
-      "name": "modal-space"
-    },
-    {
-      "variable": "$modal-border",
-      "value": "0 !default",
-      "name": "modal-border"
-    },
-    {
-      "variable": "$modal-position-top",
-      "value": "50%",
-      "name": "modal-position-top"
-    },
-    {
-      "variable": "$modal-position-left",
-      "value": "50%",
-      "name": "modal-position-left"
-    },
-    {
-      "variable": "$modal-transform",
-      "value": "translate(-50%, -50%)",
-      "name": "modal-transform"
     }
   ],
   "overlay": [
@@ -500,19 +500,9 @@
       "name": "table-padding"
     },
     {
-      "variable": "$table-border-width",
-      "value": "1px !default",
-      "name": "table-border-width"
-    },
-    {
-      "variable": "$table-border-style",
-      "value": "solid !default",
-      "name": "table-border-style"
-    },
-    {
-      "variable": "$table-border-color",
-      "value": "color(light-gray) !default",
-      "name": "table-border-color"
+      "variable": "$table-border",
+      "value": "1px solid color(light-gray) !default",
+      "name": "table-border"
     },
     {
       "variable": "$table-heading-background",
