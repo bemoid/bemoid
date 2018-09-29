@@ -150,6 +150,13 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
   "divider": [
     {
       "variable": "$divider-badge-sizes",
@@ -170,13 +177,6 @@
       "variable": "$divider-badge-radius",
       "value": "50% !default",
       "name": "divider-badge-radius"
-    }
-  ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
     }
   ],
   "field": [
