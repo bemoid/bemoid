@@ -11,9 +11,19 @@
       "name": "blockquote-background"
     },
     {
-      "variable": "$blockquote-border",
-      "value": "0 0 0 em(5px) solid color(gray) !default",
-      "name": "blockquote-border"
+      "variable": "$blockquote-border-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-border-color"
+    },
+    {
+      "variable": "$blockquote-border-width",
+      "value": "0 0 0 em(5px) !default",
+      "name": "blockquote-border-width"
+    },
+    {
+      "variable": "$blockquote-border-style",
+      "value": "solid !default",
+      "name": "blockquote-border-style"
     },
     {
       "variable": "$blockquote-footer-color",
@@ -779,13 +789,6 @@
       "name": "grid-gutter"
     }
   ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
-    }
-  ],
   "image": [
     {
       "variable": "$image-radius-rounded",
@@ -796,6 +799,13 @@
       "variable": "$image-radius-circular",
       "value": "50% !default",
       "name": "image-radius-circular"
+    }
+  ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
     }
   ],
   "media": [

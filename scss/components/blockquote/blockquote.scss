@@ -12,8 +12,8 @@
 .blockquote {
   display: block;
   margin: $blockquote-margins;
-  border: $blockquote-border;
   background-color: $blockquote-background;
+  border: $blockquote-border-width $blockquote-border-style $blockquote-border-color;
 
   // Blockquote Footer
   //
