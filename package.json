@@ -43,12 +43,12 @@
     "@bemoid/stylelint-config-scss": "^0.1.0",
     "yargs": "^8.0.2"
   },
-  "config": {
+  "bemoid": {
     "paths": {
-      "schemas": "json",
-      "markups": "html"
+      "schema": "json",
+      "markup": "html"
     },
-    "schemas": [
+    "schema": [
       "imports",
       "variables"
     ]
