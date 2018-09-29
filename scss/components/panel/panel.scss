@@ -15,7 +15,6 @@
   $this: &;
 
   border: $panel-border;
-  border-radius: $panel-radius;
   background-color: $panel-background;
 
   & > * + * {
