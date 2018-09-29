@@ -274,11 +274,6 @@
       "name": "input-font-family"
     },
     {
-      "variable": "$input-radius",
-      "value": "rem(4px) !default",
-      "name": "input-radius"
-    },
-    {
       "variable": "$input-background",
       "value": "color(white) !default",
       "name": "input-background"
@@ -857,18 +852,6 @@
       "name": "paragraph-margin"
     }
   ],
-  "waffle": [
-    {
-      "variable": "$waffle-sizes",
-      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "waffle-sizes"
-    },
-    {
-      "variable": "$waffle-size",
-      "value": "xsmall !default",
-      "name": "waffle-size"
-    }
-  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -879,6 +862,18 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
+    }
+  ],
+  "waffle": [
+    {
+      "variable": "$waffle-sizes",
+      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "waffle-sizes"
+    },
+    {
+      "variable": "$waffle-size",
+      "value": "xsmall !default",
+      "name": "waffle-size"
     }
   ],
   "wrapper": [
