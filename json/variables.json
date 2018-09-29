@@ -304,23 +304,6 @@
       "name": "input-focus-border-color"
     }
   ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "em(14px) !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
-    }
-  ],
   "message": [
     {
       "variable": "$message-variants",
@@ -363,6 +346,23 @@
       "name": "message-hollow-border-style"
     }
   ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "em(14px) !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
+    }
+  ],
   "modal": [
     {
       "variable": "$modal-space",
@@ -400,11 +400,6 @@
       "variable": "$overlay-opacity",
       "value": "0.66 !default",
       "name": "overlay-opacity"
-    },
-    {
-      "variable": "$overlay-blur",
-      "value": "0.5rem !default",
-      "name": "overlay-blur"
     }
   ],
   "panel": [
