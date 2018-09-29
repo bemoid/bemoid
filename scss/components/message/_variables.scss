@@ -33,50 +33,10 @@ $message-variants: (
   ),
 ) !default;
 
-/// Collection of message variants.
-///
-/// @type {Map}
-/// @prop {Map} neutral
-/// @prop {Map} success
-/// @prop {Map} warning
-/// @prop {Map} info
-/// @prop {Map} error
-$message-hollow-variants: (
-  neutral: (
-    'border-top-width': em(5px),
-    'border-top-color': color(light-gray),
-  ),
-  success: (
-    'color': $font-color,
-    'border-top-width': em(5px),
-    'border-top-color': color(success),
-  ),
-  warning: (
-    'color': $font-color,
-    'border-top-width': em(5px),
-    'border-top-color': color(warning),
-  ),
-  info: (
-    'color': $font-color,
-    'border-top-width': em(5px),
-    'border-top-color': color(info),
-  ),
-  error: (
-    'color': $font-color,
-    'border-top-width': em(5px),
-    'border-top-color': color(error),
-  ),
-) !default;
-
 /// Default message variant.
 ///
 /// @type {Keyword}
 $message-variant: neutral !default;
-
-/// Size of the message border radius.
-///
-/// @type {Value}
-$message-radius: rem(4px) !default;
 
 /// Color of the message title element.
 ///
@@ -88,6 +48,36 @@ $message-title-color: inherit !default;
 /// @type {Number}
 $message-title-weight: 700 !default;
 
+/// Collection of message variants.
+///
+/// @type {Map}
+/// @prop {Map} neutral
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$message-hollow-variants: (
+  neutral: (
+    'border-color': color(light-gray),
+  ),
+  success: (
+    'color': $font-color,
+    'border-color': color(success),
+  ),
+  warning: (
+    'color': $font-color,
+    'border-color': color(warning),
+  ),
+  info: (
+    'color': $font-color,
+    'border-color': color(info),
+  ),
+  error: (
+    'color': $font-color,
+    'border-color': color(error),
+  ),
+) !default;
+
 /// Default hollowed message variant.
 ///
 /// @type {Keyword}
@@ -96,7 +86,7 @@ $message-hollow-variant: neutral !default;
 /// Hollowed message border width.
 ///
 /// @type {Value}
-$message-hollow-border-width: 1px !default;
+$message-hollow-border-width: 5px 1px 1px 1px !default;
 
 /// Hollowed message border style.
 ///

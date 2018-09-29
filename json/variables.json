@@ -328,19 +328,9 @@
       "name": "message-variants"
     },
     {
-      "variable": "$message-hollow-variants",
-      "value": "(\n  neutral: (\n    'border-top-width': em(5px),\n    'border-top-color': color(light-gray),\n  ),\n  success: (\n    'color': $font-color,\n    'border-top-width': em(5px),\n    'border-top-color': color(success),\n  ),\n  warning: (\n    'color': $font-color,\n    'border-top-width': em(5px),\n    'border-top-color': color(warning),\n  ),\n  info: (\n    'color': $font-color,\n    'border-top-width': em(5px),\n    'border-top-color': color(info),\n  ),\n  error: (\n    'color': $font-color,\n    'border-top-width': em(5px),\n    'border-top-color': color(error),\n  ),\n) !default",
-      "name": "message-hollow-variants"
-    },
-    {
       "variable": "$message-variant",
       "value": "neutral !default",
       "name": "message-variant"
-    },
-    {
-      "variable": "$message-radius",
-      "value": "rem(4px) !default",
-      "name": "message-radius"
     },
     {
       "variable": "$message-title-color",
@@ -353,13 +343,18 @@
       "name": "message-title-weight"
     },
     {
+      "variable": "$message-hollow-variants",
+      "value": "(\n  neutral: (\n    'border-color': color(light-gray),\n  ),\n  success: (\n    'color': $font-color,\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': $font-color,\n    'border-color': color(warning),\n  ),\n  info: (\n    'color': $font-color,\n    'border-color': color(info),\n  ),\n  error: (\n    'color': $font-color,\n    'border-color': color(error),\n  ),\n) !default",
+      "name": "message-hollow-variants"
+    },
+    {
       "variable": "$message-hollow-variant",
       "value": "neutral !default",
       "name": "message-hollow-variant"
     },
     {
       "variable": "$message-hollow-border-width",
-      "value": "1px !default",
+      "value": "5px 1px 1px 1px !default",
       "name": "message-hollow-border-width"
     },
     {
