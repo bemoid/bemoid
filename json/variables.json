@@ -842,18 +842,6 @@
       "name": "paragraph-margin"
     }
   ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -864,6 +852,18 @@
       "variable": "$waffle-size",
       "value": "xsmall !default",
       "name": "waffle-size"
+    }
+  ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
     }
   ],
   "wrapper": [

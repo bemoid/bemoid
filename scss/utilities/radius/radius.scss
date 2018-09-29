@@ -15,14 +15,14 @@
 //
 // Style guide: Utilities.Radius
 .radius {
-  $declaration: map-get($radiuses, $radius);
+  $size: map-get($radiuses, $radius);
 
-  box-shadow: $declaration;
+  border-radius: $size;
 
-  @each $size, $declaration in $radiuses {
-    @if $size != $radius {
-      &--#{$size} {
-        box-shadow: $declaration;
+  @each $name, $size in $radiuses {
+    @if $name != $radius {
+      &--#{$name} {
+        border-radius: $size;
       }
     }
   }
