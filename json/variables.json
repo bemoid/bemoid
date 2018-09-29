@@ -11,19 +11,9 @@
       "name": "blockquote-background"
     },
     {
-      "variable": "$blockquote-border-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-border-color"
-    },
-    {
-      "variable": "$blockquote-border-width",
-      "value": "0 0 0 em(5px) !default",
-      "name": "blockquote-border-width"
-    },
-    {
-      "variable": "$blockquote-border-style",
-      "value": "solid !default",
-      "name": "blockquote-border-style"
+      "variable": "$blockquote-border",
+      "value": "0 0 0 em(5px) solid color(gray) !default",
+      "name": "blockquote-border"
     },
     {
       "variable": "$blockquote-footer-color",
@@ -211,18 +201,6 @@
       "name": "field-caption-font-size"
     }
   ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
   "form": [
     {
       "variable": "$form-group-radius",
@@ -253,6 +231,18 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
+    }
+  ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
     }
   ],
   "group": [
@@ -528,6 +518,38 @@
       "name": "select-icon-offset"
     }
   ],
+  "tag": [
+    {
+      "variable": "$tag-font-size",
+      "value": "em(14px) !default",
+      "name": "tag-font-size"
+    },
+    {
+      "variable": "$tag-color",
+      "value": "color(black) !default",
+      "name": "tag-color"
+    },
+    {
+      "variable": "$tag-background",
+      "value": "color(light-gray) !default",
+      "name": "tag-background"
+    },
+    {
+      "variable": "$tag-padding",
+      "value": "space(medium) !default",
+      "name": "tag-padding"
+    },
+    {
+      "variable": "$tag-radius",
+      "value": "rem(4px) !default",
+      "name": "tag-radius"
+    },
+    {
+      "variable": "$tag-hover-background",
+      "value": "darken(color(light-gray), 10%) !default",
+      "name": "tag-hover-background"
+    }
+  ],
   "table": [
     {
       "variable": "$table-padding",
@@ -568,38 +590,6 @@
       "variable": "$table-hoverable-background",
       "value": "color(lighter-gray) !default",
       "name": "table-hoverable-background"
-    }
-  ],
-  "tag": [
-    {
-      "variable": "$tag-font-size",
-      "value": "em(14px) !default",
-      "name": "tag-font-size"
-    },
-    {
-      "variable": "$tag-color",
-      "value": "color(black) !default",
-      "name": "tag-color"
-    },
-    {
-      "variable": "$tag-background",
-      "value": "color(light-gray) !default",
-      "name": "tag-background"
-    },
-    {
-      "variable": "$tag-padding",
-      "value": "space(medium) !default",
-      "name": "tag-padding"
-    },
-    {
-      "variable": "$tag-radius",
-      "value": "rem(4px) !default",
-      "name": "tag-radius"
-    },
-    {
-      "variable": "$tag-hover-background",
-      "value": "darken(color(light-gray), 10%) !default",
-      "name": "tag-hover-background"
     }
   ],
   "breakpoints": [

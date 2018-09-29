@@ -12,20 +12,10 @@ $blockquote-margins: 0 !default;
 /// @type {Color}
 $blockquote-background: color(lighter-gray) !default;
 
-/// Color of blockquote border.
-///
-/// @type {Color}
-$blockquote-border-color: color(gray) !default;
-
-/// Width of blockquote border.
-///
-/// @type {Value}
-$blockquote-border-width: 0 0 0 em(5px) !default;
-
 /// Style of blockquote border.
 ///
-/// @type {Keyword}
-$blockquote-border-style: solid !default;
+/// @type {Value}
+$blockquote-border: 0 0 0 em(5px) solid color(gray) !default;
 
 /// Color of blockquote footer.
 ///
