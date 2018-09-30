@@ -9,10 +9,6 @@
     "sass",
     "select"
   ],
-  "optionalDependencies": {
-    "@bemoid/field": "^0.1.0",
-    "@bemoid/input": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {
