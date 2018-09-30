@@ -11,6 +11,7 @@
 // Style guide: Components.Select
 .select {
   appearance: none;
+  border-radius: 0;
   padding-right: $select-icon-space !important;
   background-image: url($select-icon);
   background-position: center right $select-icon-offset;

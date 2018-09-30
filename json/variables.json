@@ -93,13 +93,6 @@
       "name": "button-hollow-background"
     }
   ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -155,6 +148,13 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
+    }
+  ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
     }
   ],
   "divider": [
