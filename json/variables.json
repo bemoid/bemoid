@@ -93,6 +93,13 @@
       "name": "button-hollow-background"
     }
   ],
+  "content": [
+    {
+      "variable": "$content-spacing",
+      "value": "em(16px) !default",
+      "name": "content-spacing"
+    }
+  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -148,13 +155,6 @@
       "variable": "$checkbox-mark-active-transform",
       "value": "rotate(-45deg) scale(1) !default",
       "name": "checkbox-mark-active-transform"
-    }
-  ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
     }
   ],
   "divider": [
@@ -375,29 +375,29 @@
   ],
   "modal": [
     {
-      "variable": "$modal-space",
-      "value": "1rem !default",
-      "name": "modal-space"
-    },
-    {
-      "variable": "$modal-border",
-      "value": "0 !default",
-      "name": "modal-border"
+      "variable": "$modal-padding",
+      "value": "1.5rem !default",
+      "name": "modal-padding"
     },
     {
       "variable": "$modal-position-top",
-      "value": "50%",
+      "value": "0",
       "name": "modal-position-top"
     },
     {
       "variable": "$modal-position-left",
-      "value": "50%",
+      "value": "0",
       "name": "modal-position-left"
     },
     {
-      "variable": "$modal-transform",
-      "value": "translate(-50%, -50%)",
-      "name": "modal-transform"
+      "variable": "$modal-zindex",
+      "value": "-1 !default",
+      "name": "modal-zindex"
+    },
+    {
+      "variable": "$modal-active-zindex",
+      "value": "100 !default",
+      "name": "modal-active-zindex"
     }
   ],
   "overlay": [
@@ -842,18 +842,6 @@
       "name": "paragraph-margin"
     }
   ],
-  "waffle": [
-    {
-      "variable": "$waffle-sizes",
-      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "waffle-sizes"
-    },
-    {
-      "variable": "$waffle-size",
-      "value": "xsmall !default",
-      "name": "waffle-size"
-    }
-  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -864,6 +852,18 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
+    }
+  ],
+  "waffle": [
+    {
+      "variable": "$waffle-sizes",
+      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "waffle-sizes"
+    },
+    {
+      "variable": "$waffle-size",
+      "value": "xsmall !default",
+      "name": "waffle-size"
     }
   ],
   "wrapper": [

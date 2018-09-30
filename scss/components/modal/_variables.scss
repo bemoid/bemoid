@@ -5,24 +5,24 @@
 /// Space value around the modal.
 ///
 /// @type {Value}
-$modal-space: 1rem !default;
-
-/// Style of the modal border.
-///
-/// @type {Values}
-$modal-border: 0 !default;
+$modal-padding: 1.5rem !default;
 
 /// Top position value of the modal.
 ///
 /// @type {Value}
-$modal-position-top: 50%;
+$modal-position-top: 0;
 
 /// Left position value of the modal.
 ///
 /// @type {Value}
-$modal-position-left: 50%;
+$modal-position-left: 0;
 
-/// Value of modal transform.
+/// Space value around the modal.
 ///
-/// @type {Values}
-$modal-transform: translate(-50%, -50%);
+/// @type {Value}
+$modal-zindex: -1 !default;
+
+/// Space value around the modal.
+///
+/// @type {Value}
+$modal-active-zindex: 100 !default;
