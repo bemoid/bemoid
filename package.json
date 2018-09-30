@@ -27,6 +27,8 @@
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com)",
   "license": "MIT",
   "devDependencies": {
+    "@bemoid/stylelint-config": "^0.1.0",
+    "@bemoid/stylelint-config-scss": "^0.1.0",
     "a11y": "^0.5.1",
     "async": "^2.6.1",
     "autoprefixer": "^9.1.5",
@@ -39,8 +41,6 @@
     "postcss-partial-import": "^4.1.0",
     "postcss-scss": "^1.0.6",
     "stylelint": "^9.5.0",
-    "@bemoid/stylelint-config": "^0.1.0",
-    "@bemoid/stylelint-config-scss": "^0.1.0",
     "yargs": "^8.0.2"
   },
   "bemoid": {
