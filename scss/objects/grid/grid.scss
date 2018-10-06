@@ -185,17 +185,6 @@
     flex-direction: column;
   }
 
-  &--stackable {
-    @include breakpoint($grid-stackable down) {
-      flex-direction: column;
-
-      & > #{$this}__column {
-        flex-basis: auto;
-        max-width: 100%;
-      }
-    }
-  }
-
   &--reverse {
     flex-direction: row-reverse;
 
@@ -203,27 +192,15 @@
       flex-direction: column-reverse;
     }
 
-    &#{$this}--stackable {
-      @include breakpoint($grid-stackable down) {
-        flex-direction: column-reverse;
-      }
-    }
-  }
+    @each $breakpoint, $width in $breakpoints {
+      @include breakpoint($breakpoint up) {
+        &\@#{$breakpoint} {
+          flex-direction: row-reverse;
 
-  &--reversable {
-    @include breakpoint($grid-reversable down) {
-      flex-direction: row-reverse;
-    }
-
-    &#{$this}--stack {
-      @include breakpoint($grid-reversable down) {
-        flex-direction: column-reverse;
-      }
-    }
-
-    &#{$this}--stackable {
-      @include breakpoint($grid-reversable down) {
-        flex-direction: column-reverse;
+          &#{$this}--stack {
+            flex-direction: column-reverse;
+          }
+        }
       }
     }
   }
