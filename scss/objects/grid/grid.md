@@ -66,25 +66,17 @@ To avoid unnecessary bloat, grid component does not provide any ordering classes
 
 Grid can reverse order of its columns with the `.grid--reverse` modifier class.
 
-[[example file=objects/grid/example/reversed.html]]
+[[example file=objects/grid/example/reverse.html]]
 
-There is also a `.grid--reversable` modifier class with which columns intrinsically move to the reverse order on a specific breakpoint.
+The `.grid--reverse` modifier class also accepts breakpoints behind which columns have to revese its order.
 
-> The breakpoint behind which elements have to revese its order can be set up with `$grid-reversable` variable.
-
-[[example file=objects/grid/example/reversable.html]]
+[[example file=objects/grid/example/reverse-responsive.html]]
 
 #### Stacking
 
 You can also tell a grid to stack its columns on top of each other with the `.grid--stack` modifier class.
 
 [[example file=objects/grid/example/stacked.html]]
-
-There is also a `.grid--stackable` modifier class with which columns intrinsically move to the stacked state on a specific breakpoint.
-
-> The breakpoint behind which elements have to stack can be set up with `$grid-stackable` variable.
-
-[[example file=objects/grid/example/stackable.html]]
 
 Additionaly, there is a `.grid--nowrap` modifier class for forcing columns to stay in single row. Even if thier width are larger than available space.
 

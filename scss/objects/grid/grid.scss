@@ -192,7 +192,7 @@
       flex-direction: column-reverse;
     }
 
-    @each $breakpoint, $width in $breakpoints {
+    @each $breakpoint, $width in $grid-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: row-reverse;
