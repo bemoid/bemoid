@@ -27,6 +27,19 @@ function getComponentName(variable) {
 glob(argv.i, { dot: false }, function (err, files) {
   if (err) throw err;
 
+  const sortingArr = [
+    'functions',
+    'mixins',
+    'generic',
+    'objects',
+    'components',
+    'utilities'
+  ]
+
+  files = files.sort(function(a, b){
+    return sortingArr.indexOf(a.split('/')[1]) - sortingArr.indexOf(b.split('/')[1]);
+  })
+
   for (let i = 0; i < files.length; i++) {
     let promise = new Promise((resolve, reject) => {
       fs.readFile(files[i], (err, scss) => {
