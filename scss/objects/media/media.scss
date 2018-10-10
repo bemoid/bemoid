@@ -114,23 +114,11 @@
     flex-direction: column;
   }
 
-  &--stackable {
-    @include breakpoint($grid-stackable down) {
-      flex-direction: column;
-    }
-  }
-
   &--reverse {
     flex-direction: row-reverse;
 
     &#{$this}--stack {
       flex-direction: column-reverse;
-    }
-
-    &#{$this}--stackable {
-      @include breakpoint($grid-stackable down) {
-        flex-direction: column-column;
-      }
     }
   }
 }

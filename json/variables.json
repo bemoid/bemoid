@@ -72,28 +72,6 @@
       "name": "colors"
     }
   ],
-  "grid": [
-    {
-      "variable": "$grid-columns",
-      "value": "12 !default",
-      "name": "grid-columns"
-    },
-    {
-      "variable": "$grid-sizes",
-      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "grid-sizes"
-    },
-    {
-      "variable": "$grid-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "grid-gutters"
-    },
-    {
-      "variable": "$grid-gutter",
-      "value": "xsmall !default",
-      "name": "grid-gutter"
-    }
-  ],
   "line": [
     {
       "variable": "$line-height",
@@ -185,6 +163,28 @@
       "variable": "$heading-margin",
       "value": "0 !default",
       "name": "heading-margin"
+    }
+  ],
+  "grid": [
+    {
+      "variable": "$grid-columns",
+      "value": "12 !default",
+      "name": "grid-columns"
+    },
+    {
+      "variable": "$grid-sizes",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "grid-sizes"
+    },
+    {
+      "variable": "$grid-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "grid-gutters"
+    },
+    {
+      "variable": "$grid-gutter",
+      "value": "xsmall !default",
+      "name": "grid-gutter"
     }
   ],
   "dropdown": [
