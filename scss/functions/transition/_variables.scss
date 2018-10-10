@@ -13,7 +13,7 @@ $transition-easing: cubic-bezier(0.165, 0.84, 0.44, 1);
 /// @prop {Value} slow
 /// @prop {Value} normal
 /// @prop {Value} fast
-$transitions: (
+$transition-values: (
   'slow': 0.6s $transition-easing,
   'normal': 0.4s $transition-easing,
   'fast': 0.2s $transition-easing,
@@ -22,4 +22,4 @@ $transitions: (
 /// Default transition speed.
 ///
 /// @type {Keyword}
-$transition: normal !default;
+$transition-value: normal !default;

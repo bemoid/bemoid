@@ -11,12 +11,12 @@
 //
 // Style guide: Utilities.Transition
 .transition {
-  $declaration: map-get($transitions, $transition);
+  $declaration: map-get($transition-values, $transition-value);
 
   transition: $declaration;
 
-  @each $speed, $declaration in $transitions {
-    @if $speed != $transition {
+  @each $speed, $declaration in $transition-values {
+    @if $speed != $transition-value {
       &--#{$speed} {
         transition: $declaration;
       }

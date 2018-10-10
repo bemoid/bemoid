@@ -18,16 +18,14 @@
       "name": "transition-easing"
     },
     {
-      "variable": "$transition",
-      "value": "normal !default",
-      "name": "transition"
-    }
-  ],
-  "transitions": [
-    {
-      "variable": "$transitions",
+      "variable": "$transition-values",
       "value": "(\n  'slow': 0.6s $transition-easing,\n  'normal': 0.4s $transition-easing,\n  'fast': 0.2s $transition-easing,\n) !default",
-      "name": "transitions"
+      "name": "transition-values"
+    },
+    {
+      "variable": "$transition-value",
+      "value": "normal !default",
+      "name": "transition-value"
     }
   ],
   "spaces": [

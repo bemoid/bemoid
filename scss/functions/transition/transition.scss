@@ -4,10 +4,10 @@
 
 @import 'variables';
 
-/// Retrives transition value of specifed transition from $transitions map.
+/// Retrives transition value of specifed transition from $transition-values map.
 ///
 /// @param {List} $name
-/// @require {Map} $transitions
+/// @require {Map} $transition-values
 /// @return {Value} Transition value
 ///
 /// @example scss - example
@@ -20,8 +20,8 @@
   @if length($name) >= 2 {
     $timing: nth($name, length($name));
 
-    @return nth($name, 1) get($transitions, $timing);
+    @return nth($name, 1) get($transition-values, $timing);
   }
 
-  @return all get($transitions, $name);
+  @return all get($transition-values, $name);
 }
