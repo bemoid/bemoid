@@ -605,6 +605,13 @@
       "name": "elevator"
     }
   ],
+  "spaces": [
+    {
+      "variable": "$spaces",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "spaces"
+    }
+  ],
   "radiuses": [
     {
       "variable": "$radiuses",
@@ -617,13 +624,6 @@
       "variable": "$radius",
       "value": "medium !default",
       "name": "radius"
-    }
-  ],
-  "spaces": [
-    {
-      "variable": "$spaces",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spaces"
     }
   ],
   "transition": [
