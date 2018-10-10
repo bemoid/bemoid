@@ -7,8 +7,26 @@ const importer = require('postcss-partial-import')
 
 const argv = require('yargs').argv
 
+const sortingOrder = [
+  'functions',
+  'mixins',
+  'generic',
+  'objects',
+  'components',
+  'utilities'
+]
+
 var schema = {}
 var promises = []
+
+function sortFiles(files) {
+  return files.sort(function(a, b){
+    a = a.split('/')[1]
+    b = b.split('/')[1]
+
+    return sortingOrder.indexOf(a) - sortingOrder.indexOf(b);
+  })
+}
 
 function getVariableSchema(node) {
   return {
@@ -27,18 +45,7 @@ function getComponentName(variable) {
 glob(argv.i, { dot: false }, function (err, files) {
   if (err) throw err;
 
-  const sortingArr = [
-    'functions',
-    'mixins',
-    'generic',
-    'objects',
-    'components',
-    'utilities'
-  ]
-
-  files = files.sort(function(a, b){
-    return sortingArr.indexOf(a.split('/')[1]) - sortingArr.indexOf(b.split('/')[1]);
-  })
+  files = sortFiles(files)
 
   for (let i = 0; i < files.length; i++) {
     let promise = new Promise((resolve, reject) => {
