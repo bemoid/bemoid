@@ -14,12 +14,12 @@
 //
 // Style guide: Utilities.Elevator
 .elevator {
-  $declaration: map-get($elevators, $elevator);
+  $declaration: map-get($elevator-values, $elevator-value);
 
   box-shadow: $declaration;
 
-  @each $level, $declaration in $elevators {
-    @if $level != $elevator {
+  @each $level, $declaration in $elevator-values {
+    @if $level != $elevator-value {
       &--#{$level} {
         box-shadow: $declaration;
       }

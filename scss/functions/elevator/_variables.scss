@@ -11,7 +11,7 @@
 /// @prop {Values} 6
 /// @prop {Values} 18
 /// @prop {Values} 27
-$elevators: (
+$elevator-values: (
   xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),
   small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),
   medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),
@@ -23,4 +23,4 @@ $elevators: (
 /// Default elevation level.
 ///
 /// @type {Keyword}
-$elevator: medium !default;
+$elevator-value: medium !default;

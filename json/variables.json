@@ -49,18 +49,16 @@
       "name": "radius"
     }
   ],
-  "elevators": [
-    {
-      "variable": "$elevators",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevators"
-    }
-  ],
   "elevator": [
     {
-      "variable": "$elevator",
+      "variable": "$elevator-values",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevator-values"
+    },
+    {
+      "variable": "$elevator-value",
       "value": "medium !default",
-      "name": "elevator"
+      "name": "elevator-value"
     }
   ],
   "colors": [
