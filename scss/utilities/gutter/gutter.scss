@@ -26,7 +26,7 @@
     }
   }
 
-  @each $breakpoint, $width in $breakpoints {
+  @each $breakpoint, $width in $breakpoint-sizes {
     @each $size, $declaration in $space-values {
       &--#{$size}\@#{$breakpoint} {
         & > * + * {
@@ -38,7 +38,7 @@
     }
   }
 
-  @each $breakpoint, $width in $breakpoints {
+  @each $breakpoint, $width in $breakpoint-sizes {
     &--none\@#{$breakpoint} {
       @include breakpoint($breakpoint up) {
         & > * + * {

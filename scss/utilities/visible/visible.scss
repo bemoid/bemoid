@@ -16,7 +16,7 @@
 .visible {
   display: block;
 
-  @each $breakpoint, $width in $breakpoints {
+  @each $breakpoint, $width in $breakpoint-sizes {
     &\@#{$breakpoint} {
       display: none;
 

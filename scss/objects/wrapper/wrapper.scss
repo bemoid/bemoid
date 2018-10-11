@@ -28,7 +28,7 @@
     }
   }
 
-  @each $breakpoint, $width in $breakpoints {
+  @each $breakpoint, $width in $breakpoint-sizes {
     @include breakpoint($breakpoint up) {
       @each $name, $size in $wrapper-sizes {
         &--#{$name}\@#{$breakpoint} {

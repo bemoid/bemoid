@@ -11,7 +11,7 @@
 /// @prop {Value} large
 /// @prop {Value} xlarge
 /// @prop {Value} xxlarge
-$breakpoints: (
+$breakpoint-sizes: (
   xsmall: em(320px),
   small: em(480px),
   medium: em(768px),
@@ -23,4 +23,4 @@ $breakpoints: (
 /// Offset value between breakpoints ranges.
 ///
 /// @type {Value}
-$breakpoints-offset: em(1px);
+$breakpoint-offset: em(1px);

@@ -4,14 +4,14 @@
 
 @import 'variables';
 
-/// Retrives width value of specifed breakpoint from $breakpoints map.
+/// Retrives width value of specifed breakpoint from $breakpoint-sizes map.
 ///
 /// @param {String} $name
-/// @require {Map} $breakpoints
+/// @require {Map} $breakpoint-sizes
 /// @return {Value}
 ///
 /// @example scss - example
 ///   breakpoint(large);
 @function breakpoint($name) {
-  @return get($breakpoints, $name);
+  @return get($breakpoint-sizes, $name);
 }

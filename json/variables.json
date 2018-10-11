@@ -1,14 +1,14 @@
 {
-  "breakpoints": [
+  "breakpoint": [
     {
-      "variable": "$breakpoints",
+      "variable": "$breakpoint-sizes",
       "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
-      "name": "breakpoints"
+      "name": "breakpoint-sizes"
     },
     {
-      "variable": "$breakpoints-offset",
+      "variable": "$breakpoint-offset",
       "value": "em(1px)",
-      "name": "breakpoints-offset"
+      "name": "breakpoint-offset"
     }
   ],
   "transition": [
