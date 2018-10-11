@@ -28,25 +28,23 @@
       "name": "transition-value"
     }
   ],
-  "spaces": [
+  "space": [
     {
-      "variable": "$spaces",
+      "variable": "$space-values",
       "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spaces"
-    }
-  ],
-  "radiuses": [
-    {
-      "variable": "$radiuses",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radiuses"
+      "name": "space-values"
     }
   ],
   "radius": [
     {
-      "variable": "$radius",
+      "variable": "$radius-values",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radius-values"
+    },
+    {
+      "variable": "$radius-value",
       "value": "medium !default",
-      "name": "radius"
+      "name": "radius-value"
     }
   ],
   "elevator": [

@@ -4,14 +4,14 @@
 
 @import 'variables';
 
-/// Retrives space value of specifed space for $spaces map.
+/// Retrives space value of specifed space for $space-values map.
 ///
 /// @param {String} $name
-/// @require {Map} $spaces
+/// @require {Map} $space-values
 /// @return {Number} Space value
 ///
 /// @example scss - example
 ///   space(small);
 @function space($name) {
-  @return get($spaces, $name);
+  @return get($space-values, $name);
 }
