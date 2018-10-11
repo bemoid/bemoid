@@ -15,12 +15,12 @@
 //
 // Style guide: Utilities.Radius
 .radius {
-  $size: map-get($radiuses, $radius);
+  $size: map-get($radius-values, $radius-value);
 
   border-radius: $size;
 
-  @each $name, $size in $radiuses {
-    @if $name != $radius {
+  @each $name, $size in $radius-values {
+    @if $name != $radius-value {
       &--#{$name} {
         border-radius: $size;
       }
