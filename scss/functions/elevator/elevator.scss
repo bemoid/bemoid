@@ -4,14 +4,14 @@
 
 @import 'variables';
 
-/// Retrives shadow value of specifed elevator from $elevators map.
+/// Retrives shadow value of specifed elevator from $elevator-values map.
 ///
 /// @param {String} $depth
-/// @require {Map} $elevators
+/// @require {Map} $elevator-values
 /// @return {Number} Elevation value
 ///
 /// @example scss - example
 ///   elevator(1);
 @function elevator($depth) {
-  @return get($elevators, $depth);
+  @return get($elevator-values, $depth);
 }

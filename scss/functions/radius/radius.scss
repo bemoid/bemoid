@@ -4,14 +4,14 @@
 
 @import 'variables';
 
-/// Retrives radius value of specifed radius from $radiuses map.
+/// Retrives radius value of specifed radius from $radius-values map.
 ///
 /// @param {String} $name
-/// @require {Map} $radiuses
+/// @require {Map} $radius-values
 /// @return {Number} Radius value
 ///
 /// @example scss - example
 ///   radius(large);
 @function radius($name) {
-  @return get($radiuses, $name);
+  @return get($radius-values, $name);
 }
