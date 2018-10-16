@@ -1,12 +1,12 @@
 ---
 title: Waffle
-description: Component for providing gutter around collection of elements.
+description: Component for providing all-directional gutter around collection of elements..
 group: Objects
 layout: docs.html
 algolia: true
 ---
 
-Component for providing gutter around collection of elements.
+Component for providing all-directional gutter around collection of elements.
 
 ## Usage
 

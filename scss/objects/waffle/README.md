@@ -1,6 +1,6 @@
 # Waffle
 
-Component for providing gutter around collection of elements.
+Component for providing all-directional gutter around collection of elements.
 
 ## Installation
 
