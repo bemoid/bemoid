@@ -7,7 +7,7 @@
   ],
   "objects": [
     "objects/container/container",
-    "objects/grid/grid",
+    "objects/flex/flex",
     "objects/wrapper/wrapper",
     "objects/segment/segment",
     "objects/waffle/waffle",

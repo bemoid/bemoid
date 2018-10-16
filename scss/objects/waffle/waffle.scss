@@ -4,20 +4,19 @@
 
 // Waffle
 //
-// Grid system based on flexbox for building complex layouts.
+// Component for providing gutter around collection of elements.
 //
 // Markup: objects/waffle/html/waffle.html
 //
 // Style guide: Objects.Waffle
 .waffle {
   $this: &;
+
   $size: map-get($waffle-sizes, $waffle-size);
 
-  display: flex;
-  flex-wrap: wrap;
   margin: -#{$size / 2};
 
-  &__cell {
+  & > * {
     padding: $size / 2;
   }
 
@@ -26,7 +25,7 @@
       &--#{$name} {
         margin: -#{$size / 2};
 
-        #{$this}__cell {
+        & > * {
           padding: $size / 2;
         }
       }
@@ -39,15 +38,11 @@
         &--#{$name}\@#{$breakpoint} {
           margin: -#{$size / 2};
 
-          #{$this}__cell {
+          & > * {
             padding: $size / 2;
           }
         }
       }
     }
-  }
-
-  &--inline {
-    display: inline-flex;
   }
 }

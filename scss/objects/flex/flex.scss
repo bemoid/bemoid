@@ -1,0 +1,175 @@
+/** @define flex */
+
+@import 'variables';
+
+// Flex
+//
+// Grid system based on flexbox for building complex layouts.
+//
+// .flex--inline  - Enables inline flex diplay on flex container.
+// .flex--right   - Aligns flex columns horizontally to the right.
+// .flex--center  - Aligns flex columns horizontally to the center.
+// .flex--justify - Distributes flex columns horizontally with equals inner spaces.
+// .flex--space   - Distributes flex columns horizontally with equals inner and outer spaces.
+// .flex--start   - Aligns flex columns verically to the start.
+// .flex--middle  - Aligns flex columns verically to the center.
+// .flex--end     - Aligns flex columns verically to the end.
+// .flex--stretch - Stretches flex columns to the euqal height.
+// .flex--nowrap  - Forces columns to stay in single row.
+// .flex--reverse - Reverses order of flex columns.
+// .flex--stack   - Changes flex columns direction from horizontal to vartical.
+//
+// Markup: objects/flex/html/flex.html
+//
+// Style guide: Objects.Flex
+.flex {
+  $this: &;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  // Flex Column
+  //
+  // Column element of flex block. Divides space into cells called "columns".
+  //
+  // .flex__column--1        - Makes column a size of 1 by 12 of available space.
+  // .flex__column--2        - Makes column a size of 2 by 12 of available space.
+  // .flex__column--3        - Makes column a size of 3 by 12 of available space.
+  // .flex__column--4        - Makes column a size of 4 by 12 of available space.
+  // .flex__column--5        - Makes column a size of 5 by 12 of available space.
+  // .flex__column--6        - Makes column a size of 6 by 12 of available space.
+  // .flex__column--7        - Makes column a size of 7 by 12 of available space.
+  // .flex__column--8        - Makes column a size of 8 by 12 of available space.
+  // .flex__column--9        - Makes column a size of 9 by 12 of available space.
+  // .flex__column--10       - Makes column a size of 10 by 12 of available space.
+  // .flex__column--11       - Makes column a size of 11 by 12 of available space.
+  // .flex__column--12       - Makes column a size of 12 by 12 of available space.
+  // .flex__column--shrink   - Column adjust to the size of its content.
+  // .flex__column--start    - Aligns specific column to the start of the flex.
+  // .flex__column--center   - Aligns specific column to the center of the flex.
+  // .flex__column--end      - Aligns specific column to the end of the flex.
+  // .flex__column--baseline - Aligns specific column to the baseline.
+  // .flex__column--stretch  - Force column to expand verticali to the size of other columns.
+  //
+  // Markup: objects/flex/html/flex__column.html
+  //
+  // Style guide: Objects.Flex.Column
+  &__column {
+    flex: 1;
+    max-width: 100%;
+
+    @for $i from 1 through $flex-columns {
+      &--#{$i} {
+        flex-basis: percentage($i / $flex-columns);
+        max-width: percentage($i / $flex-columns);
+      }
+    }
+
+    @each $breakpoint, $width in $flex-sizes {
+      @include breakpoint($breakpoint up) {
+        @for $i from 1 through $flex-columns {
+          &--#{$i}\@#{$breakpoint} {
+            flex-basis: percentage($i / $flex-columns);
+            max-width: percentage($i / $flex-columns);
+          }
+        }
+      }
+    }
+
+    &--shrink {
+      flex: 0 1 auto;
+
+      @each $breakpoint, $width in $flex-sizes {
+        @include breakpoint($breakpoint up) {
+          &\@#{$breakpoint} {
+            flex: 0 1 auto;
+          }
+        }
+      }
+    }
+
+    &--start {
+      align-self: flex-end;
+    }
+
+    &--center {
+      align-self: center;
+    }
+
+    &--end {
+      align-self: flex-end;
+    }
+
+    &--baseline {
+      align-self: baseline;
+    }
+
+    &--stretch {
+      align-self: stretch;
+    }
+  }
+
+  &--inline {
+    display: inline-flex;
+  }
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--justify {
+    justify-content: space-between;
+  }
+
+  &--space {
+    justify-content: space-around;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+
+  &--stretch {
+    align-items: stretch;
+  }
+
+  &--nowrap {
+    flex-wrap: wrap;
+  }
+
+  &--stack {
+    flex-direction: column;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    &#{$this}--stack {
+      flex-direction: column-reverse;
+    }
+
+    @each $breakpoint, $width in $flex-sizes {
+      @include breakpoint($breakpoint up) {
+        &\@#{$breakpoint} {
+          flex-direction: row-reverse;
+
+          &#{$this}--stack {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}

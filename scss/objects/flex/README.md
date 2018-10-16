@@ -1,4 +1,4 @@
-# Grid
+# Flex
 
 Grid system based on flexbox for building complex layouts.
 
@@ -7,9 +7,9 @@ Grid system based on flexbox for building complex layouts.
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/grid
+$ npm install @bemoid/flex
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/grid).
+The component documentation can be found [here](//bemoid.org/docs/flex).

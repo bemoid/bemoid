@@ -1,11 +1,11 @@
 ////
-/// @group Waffle
+/// @group Gutter
 ////
 
-/// Collection of waffle sizes.
+/// Collection of gutter sizes.
 ///
 /// @type {Map}
-$waffle-sizes: (
+$gutter-sizes: (
   small: space(small),
   medium: space(medium),
 ) !default;
@@ -13,4 +13,4 @@ $waffle-sizes: (
 /// Default gutter size.
 ///
 /// @type {Keyword}
-$waffle-size: small !default;
+$gutter-size: medium !default;

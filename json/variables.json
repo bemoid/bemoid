@@ -37,18 +37,6 @@
       "name": "space-values"
     }
   ],
-  "radius": [
-    {
-      "variable": "$radius-values",
-      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
-      "name": "radius-values"
-    },
-    {
-      "variable": "$radius-value",
-      "value": "medium !default",
-      "name": "radius-value"
-    }
-  ],
   "breakpoint": [
     {
       "variable": "$breakpoint-sizes",
@@ -59,6 +47,18 @@
       "variable": "$breakpoint-offset",
       "value": "em(1px)",
       "name": "breakpoint-offset"
+    }
+  ],
+  "radius": [
+    {
+      "variable": "$radius-values",
+      "value": "(\n  xsmall: rem(4px),\n  small: rem(6px),\n  medium: rem(8px),\n  large: rem(12px),\n  xlarge: rem(18px),\n  circle: 50%,\n) !default",
+      "name": "radius-values"
+    },
+    {
+      "variable": "$radius-value",
+      "value": "medium !default",
+      "name": "radius-value"
     }
   ],
   "elevator": [
@@ -166,6 +166,18 @@
       "name": "heading-margin"
     }
   ],
+  "flex": [
+    {
+      "variable": "$flex-columns",
+      "value": "12 !default",
+      "name": "flex-columns"
+    },
+    {
+      "variable": "$flex-sizes",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "flex-sizes"
+    }
+  ],
   "dropdown": [
     {
       "variable": "$dropdown-gap",
@@ -207,18 +219,6 @@
       "name": "wrapper-size"
     }
   ],
-  "waffle": [
-    {
-      "variable": "$waffle-sizes",
-      "value": "(\n  xsmall: space(xsmall),\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "waffle-sizes"
-    },
-    {
-      "variable": "$waffle-size",
-      "value": "xsmall !default",
-      "name": "waffle-size"
-    }
-  ],
   "segment": [
     {
       "variable": "$segment-sizes",
@@ -229,6 +229,18 @@
       "variable": "$segment-size",
       "value": "large !default",
       "name": "segment-size"
+    }
+  ],
+  "waffle": [
+    {
+      "variable": "$waffle-sizes",
+      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "waffle-sizes"
+    },
+    {
+      "variable": "$waffle-size",
+      "value": "small !default",
+      "name": "waffle-size"
     }
   ],
   "paragraph": [
@@ -274,26 +286,16 @@
       "name": "image-radius-circular"
     }
   ],
-  "grid": [
+  "gutter": [
     {
-      "variable": "$grid-columns",
-      "value": "12 !default",
-      "name": "grid-columns"
+      "variable": "$gutter-sizes",
+      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "gutter-sizes"
     },
     {
-      "variable": "$grid-sizes",
-      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "grid-sizes"
-    },
-    {
-      "variable": "$grid-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "grid-gutters"
-    },
-    {
-      "variable": "$grid-gutter",
-      "value": "xsmall !default",
-      "name": "grid-gutter"
+      "variable": "$gutter-size",
+      "value": "medium !default",
+      "name": "gutter-size"
     }
   ],
   "label": [

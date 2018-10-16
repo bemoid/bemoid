@@ -1,0 +1,54 @@
+/** @define gutter */
+
+@import 'variables';
+
+// Gutter
+//
+// Provides horizontal gutter around collection of elements.
+//
+// Markup: objects/gutter/html/gutter.html
+//
+// Style guide: Objects.Gutter
+.gutter {
+  $this: &;
+
+  $size: map-get($gutter-sizes, $gutter-size);
+
+  margin-left: -#{$size / 2};
+  margin-right: -#{$size / 2};
+
+  & > * {
+    padding-left: $size / 2;
+    padding-right: $size / 2;
+  }
+
+  @each $name, $size in $gutter-sizes {
+    @if $name != $gutter-size {
+      &--#{$name} {
+        margin-left: -#{$size / 2};
+        margin-right: -#{$size / 2};
+
+        & > * {
+          padding-left: $size / 2;
+          padding-right: $size / 2;
+        }
+      }
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    @include breakpoint($breakpoint up) {
+      @each $name, $size in $gutter-sizes {
+        &--#{$name}\@#{$breakpoint} {
+          margin-left: -#{$size / 2};
+          margin-right: -#{$size / 2};
+
+          & > * {
+            padding-left: $size / 2;
+            padding-right: $size / 2;
+          }
+        }
+      }
+    }
+  }
+}

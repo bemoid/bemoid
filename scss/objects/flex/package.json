@@ -1,13 +1,13 @@
 {
-  "name": "@bemoid/grid",
-  "description": "The Bemoid Grid component.",
+  "name": "@bemoid/flex",
+  "description": "The Bemoid Flex component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "grid.scss",
+  "main": "flex.scss",
   "keywords": [
     "bem",
     "sass",
-    "grid"
+    "flex"
   ],
   "dependencies": {
     "@bemoid/function-space": "^0.1.0",
