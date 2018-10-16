@@ -41,7 +41,7 @@
   ],
   "utilities": [
     "utilities/space/space",
-    "utilities/gutter/gutter",
+    "utilities/spread/spread",
     "utilities/radius/radius",
     "utilities/hidden/hidden",
     "utilities/visible/visible",

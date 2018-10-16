@@ -1,16 +1,16 @@
 {
-  "name": "@bemoid/gutter",
-  "description": "The Bemoid Gutter utility.",
+  "name": "@bemoid/function-spread",
+  "description": "A getter function for spread values.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "gutter.scss",
+  "main": "spread.scss",
   "keywords": [
     "bem",
     "sass",
-    "gutter"
+    "spread"
   ],
   "dependencies": {
-    "@bemoid/mixin-breakpoint": "^0.1.0"
+    "@bemoid/function-get": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",

@@ -1,14 +1,9 @@
 {
-  "breakpoint": [
+  "color": [
     {
-      "variable": "$breakpoint-sizes",
-      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
-      "name": "breakpoint-sizes"
-    },
-    {
-      "variable": "$breakpoint-offset",
-      "value": "em(1px)",
-      "name": "breakpoint-offset"
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
     }
   ],
   "transition": [
@@ -26,6 +21,13 @@
       "variable": "$transition-value",
       "value": "normal !default",
       "name": "transition-value"
+    }
+  ],
+  "spread": [
+    {
+      "variable": "$spread-values",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "spread-values"
     }
   ],
   "space": [
@@ -47,6 +49,18 @@
       "name": "radius-value"
     }
   ],
+  "breakpoint": [
+    {
+      "variable": "$breakpoint-sizes",
+      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
+      "name": "breakpoint-sizes"
+    },
+    {
+      "variable": "$breakpoint-offset",
+      "value": "em(1px)",
+      "name": "breakpoint-offset"
+    }
+  ],
   "elevator": [
     {
       "variable": "$elevator-values",
@@ -57,13 +71,6 @@
       "variable": "$elevator-value",
       "value": "medium !default",
       "name": "elevator-value"
-    }
-  ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
     }
   ],
   "line": [
@@ -157,28 +164,6 @@
       "variable": "$heading-margin",
       "value": "0 !default",
       "name": "heading-margin"
-    }
-  ],
-  "grid": [
-    {
-      "variable": "$grid-columns",
-      "value": "12 !default",
-      "name": "grid-columns"
-    },
-    {
-      "variable": "$grid-sizes",
-      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "grid-sizes"
-    },
-    {
-      "variable": "$grid-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
-      "name": "grid-gutters"
-    },
-    {
-      "variable": "$grid-gutter",
-      "value": "xsmall !default",
-      "name": "grid-gutter"
     }
   ],
   "dropdown": [
@@ -287,6 +272,28 @@
       "variable": "$image-radius-circular",
       "value": "50% !default",
       "name": "image-radius-circular"
+    }
+  ],
+  "grid": [
+    {
+      "variable": "$grid-columns",
+      "value": "12 !default",
+      "name": "grid-columns"
+    },
+    {
+      "variable": "$grid-sizes",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "grid-sizes"
+    },
+    {
+      "variable": "$grid-gutters",
+      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "name": "grid-gutters"
+    },
+    {
+      "variable": "$grid-gutter",
+      "value": "xsmall !default",
+      "name": "grid-gutter"
     }
   ],
   "label": [

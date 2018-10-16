@@ -1,24 +1,24 @@
-/** @define gutter */
+/** @define spread */
 
 // Gutter
 //
-// Utility component for adding horizontal spaces between elements.
+// Utility component for adding horizontal space between elements.
 //
-// .gutter--xsmall  - Adds xsmall level of a horizontal distance.
-// .gutter--small   - Adds small level of a horizontal distance.
-// .gutter--large   - Adds large level of a horizontal distance.
-// .gutter--xlarge  - Adds xlarge level of a horizontal distance.
-// .gutter--xxlarge - Adds xxlarge level of a horizontal distance.
+// .spread--xsmall  - Adds xsmall level of a horizontal distance.
+// .spread--small   - Adds small level of a horizontal distance.
+// .spread--large   - Adds large level of a horizontal distance.
+// .spread--xlarge  - Adds xlarge level of a horizontal distance.
+// .spread--xxlarge - Adds xxlarge level of a horizontal distance.
 //
-// Markup: utilities/gutter/html/gutter.html
+// Markup: utilities/spread/html/spread.html
 //
 // Style guide: Utilities.Gutter
-.gutter {
+.spread {
   & > * + * {
     margin-left: 0;
   }
 
-  @each $size, $declaration in $space-values {
+  @each $size, $declaration in $spread-values {
     &--#{$size} {
       & > * + * {
         margin-left: $declaration;
@@ -27,7 +27,7 @@
   }
 
   @each $breakpoint, $width in $breakpoint-sizes {
-    @each $size, $declaration in $space-values {
+    @each $size, $declaration in $spread-values {
       &--#{$size}\@#{$breakpoint} {
         & > * + * {
           @include breakpoint($breakpoint up) {

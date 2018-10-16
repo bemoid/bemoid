@@ -1,0 +1,17 @@
+////
+/// @group Functions
+////
+
+@import 'variables';
+
+/// Retrives spread value of specifed spread for $spread-values map.
+///
+/// @param {String} $name
+/// @require {Map} $spread-values
+/// @return {Number} Space value
+///
+/// @example scss - example
+///   spread(small);
+@function spread($name) {
+  @return get($spread-values, $name);
+}
