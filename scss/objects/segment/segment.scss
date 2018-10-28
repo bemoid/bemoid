@@ -16,8 +16,6 @@
 .segment {
   $size: map-get($segment-sizes, $segment-size);
 
-  width: 100%;
-  display: block;
   padding: $size;
 
   @each $name, $size in $segment-sizes {
