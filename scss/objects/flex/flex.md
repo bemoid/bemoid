@@ -84,26 +84,13 @@ Additionaly, there is a `.flex--nowrap` modifier class for forcing columns to st
 
 ### Gutter
 
-> A default size of the gutter can can be set up with `$flex-gutter` variable.
+In order to add gaps between columns you have to use an additional module - the [gutter](/docs/gutter).
 
-Gaps between columns may be set up with a map in `$flex-gutters` variable. Gutters are responsive and can change its value on specified breakpoints.
+[[example file=objects/flex/example/guttered.html]]
 
-> Enter a `key: value` pairs, where a key is a name of the breakpoint from which the given value has to be active.
-
-```scss
-$flex-gutters: (
-  xsmall: space(medium),
-  large: space(large),
-);
-```
-
-By default, gutters are added only horizontally. However, there is a special `.flex--waffle` modifier which adds gutter on all sides of the columns, so you don't have to think about spacing between rows.
+By default, gutters are added only horizontally. However, there is an [`waffle`](/docs/waffle) module which adds gutter on all sides of the columns, so you don't have to think about spacing between rows when columns stacks.
 
 [[example file=objects/flex/example/waffled.html]]
-
-You may also remove spacing between columns entirely with `.flex--gapless` modifier class.
-
-[[example file=objects/flex/example/gapless.html]]
 
 ## Styleguide
 
