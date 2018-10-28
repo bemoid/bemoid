@@ -2,7 +2,7 @@
   "color": [
     {
       "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #543793,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  lighter-gray: #f6f6f6,\n  light-gray: #d7dfe6,\n  gray: #79858c,\n  dark-gray: #586973,\n  darker-gray: #425059,\n  black: #171c1f,\n) !default",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
       "name": "color-values"
     }
   ],
@@ -219,18 +219,6 @@
       "name": "wrapper-size"
     }
   ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -241,6 +229,18 @@
       "variable": "$waffle-size",
       "value": "small !default",
       "name": "waffle-size"
+    }
+  ],
+  "segment": [
+    {
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
     }
   ],
   "paragraph": [
@@ -286,18 +286,6 @@
       "name": "image-radius-circular"
     }
   ],
-  "gutter": [
-    {
-      "variable": "$gutter-sizes",
-      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "gutter-sizes"
-    },
-    {
-      "variable": "$gutter-size",
-      "value": "medium !default",
-      "name": "gutter-size"
-    }
-  ],
   "label": [
     {
       "variable": "$label-color",
@@ -318,12 +306,12 @@
   "button": [
     {
       "variable": "$button-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
       "name": "button-variants"
     },
     {
       "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(light-gray) darken(color(light-gray), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
       "name": "button-hollow-variants"
     },
     {
@@ -395,12 +383,12 @@
     },
     {
       "variable": "$table-border-color",
-      "value": "color(light-gray) !default",
+      "value": "color(gray-light) !default",
       "name": "table-border-color"
     },
     {
       "variable": "$table-heading-background",
-      "value": "color(lighter-gray) !default",
+      "value": "color(gray-lighter) !default",
       "name": "table-heading-background"
     },
     {
@@ -410,12 +398,12 @@
     },
     {
       "variable": "$table-stripe-background",
-      "value": "lighten(color(lighter-gray), 1%) !default",
+      "value": "lighten(color(gray-lighter), 1%) !default",
       "name": "table-stripe-background"
     },
     {
       "variable": "$table-hoverable-background",
-      "value": "color(lighter-gray) !default",
+      "value": "color(gray-lighter) !default",
       "name": "table-hoverable-background"
     }
   ],
@@ -469,7 +457,7 @@
     },
     {
       "variable": "$radio-outer-border",
-      "value": "1px solid color(light-gray) !default",
+      "value": "1px solid color(gray-light) !default",
       "name": "radio-outer-border"
     },
     {
@@ -491,7 +479,7 @@
   "panel": [
     {
       "variable": "$panel-border",
-      "value": "1px solid color(light-gray) !default",
+      "value": "1px solid color(gray-light) !default",
       "name": "panel-border"
     },
     {
@@ -501,7 +489,7 @@
     },
     {
       "variable": "$panel-segment-border",
-      "value": "1px solid color(light-gray) !default",
+      "value": "1px solid color(gray-light) !default",
       "name": "panel-segment-border"
     },
     {
@@ -552,7 +540,7 @@
   "message": [
     {
       "variable": "$message-variants",
-      "value": "(\n  neutral: (\n    'background-color': color(lighter-gray),\n    'border-color': color(light-gray),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error),\n  ),\n) !default",
+      "value": "(\n  neutral: (\n    'background-color': color(gray-lighter),\n    'border-color': color(gray-light),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error),\n  ),\n) !default",
       "name": "message-variants"
     },
     {
@@ -572,7 +560,7 @@
     },
     {
       "variable": "$message-hollow-variants",
-      "value": "(\n  neutral: (\n    'border-color': color(light-gray),\n  ),\n  success: (\n    'color': $font-color,\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': $font-color,\n    'border-color': color(warning),\n  ),\n  info: (\n    'color': $font-color,\n    'border-color': color(info),\n  ),\n  error: (\n    'color': $font-color,\n    'border-color': color(error),\n  ),\n) !default",
+      "value": "(\n  neutral: (\n    'border-color': color(gray-light),\n  ),\n  success: (\n    'color': $font-color,\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': $font-color,\n    'border-color': color(warning),\n  ),\n  info: (\n    'color': $font-color,\n    'border-color': color(info),\n  ),\n  error: (\n    'color': $font-color,\n    'border-color': color(error),\n  ),\n) !default",
       "name": "message-hollow-variants"
     },
     {
@@ -604,7 +592,7 @@
     },
     {
       "variable": "$tag-background",
-      "value": "color(light-gray) !default",
+      "value": "color(gray-light) !default",
       "name": "tag-background"
     },
     {
@@ -614,7 +602,7 @@
     },
     {
       "variable": "$tag-hover-background",
-      "value": "darken(color(light-gray), 10%) !default",
+      "value": "darken(color(gray-light), 10%) !default",
       "name": "tag-hover-background"
     }
   ],
@@ -641,7 +629,7 @@
     },
     {
       "variable": "$input-border-color",
-      "value": "color(light-gray) !default",
+      "value": "color(gray-light) !default",
       "name": "input-border-color"
     },
     {
@@ -690,12 +678,12 @@
     },
     {
       "variable": "$form-group-background",
-      "value": "color(lighter-gray) !default",
+      "value": "color(gray-lighter) !default",
       "name": "form-group-background"
     },
     {
       "variable": "$form-group-border",
-      "value": "1px solid color(light-gray) !default",
+      "value": "1px solid color(gray-light) !default",
       "name": "form-group-border"
     },
     {
@@ -733,18 +721,18 @@
       "name": "field-sizes"
     },
     {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
-    },
-    {
       "variable": "$field-size",
       "value": "medium !default",
       "name": "field-size"
     },
     {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
       "variable": "$field-caption-untouched-color",
-      "value": "$font-color !default",
+      "value": "color(black) !default",
       "name": "field-caption-untouched-color"
     },
     {
@@ -800,7 +788,7 @@
     },
     {
       "variable": "$checkbox-border",
-      "value": "1px solid color(light-gray) !default",
+      "value": "1px solid color(gray-light) !default",
       "name": "checkbox-border"
     },
     {
@@ -847,7 +835,7 @@
     },
     {
       "variable": "$blockquote-background",
-      "value": "color(lighter-gray) !default",
+      "value": "color(gray-lighter) !default",
       "name": "blockquote-background"
     },
     {
@@ -869,6 +857,18 @@
       "variable": "$blockquote-footer-color",
       "value": "color(gray) !default",
       "name": "blockquote-footer-color"
+    }
+  ],
+  "gutter": [
+    {
+      "variable": "$gutter-sizes",
+      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "gutter-sizes"
+    },
+    {
+      "variable": "$gutter-size",
+      "value": "medium !default",
+      "name": "gutter-size"
     }
   ]
 }

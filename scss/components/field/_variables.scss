@@ -29,6 +29,11 @@ $field-sizes: (
   ),
 ) !default;
 
+/// Default field size. Should be size name from the `$field-sizes` collection.
+///
+/// @type {Keyword}
+$field-size: medium !default;
+
 /// Collection of field sizes.
 ///
 /// @type {Map}
@@ -56,15 +61,10 @@ $field-variants: (
   ),
 ) !default;
 
-/// Default field size. Should be size name from the `$field-sizes` collection.
-///
-/// @type {Keyword}
-$field-size: medium !default;
-
 /// Color of the untouched caption.
 ///
 /// @type {Color}
-$field-caption-untouched-color: $font-color !default;
+$field-caption-untouched-color: color(black) !default;
 
 /// Font size of the field caption.
 ///
