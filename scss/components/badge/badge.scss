@@ -1,0 +1,62 @@
+/** @define badge */
+
+@import 'variables';
+
+// Badge
+//
+// Small inline components for creating labelized markers.
+//
+// .badge--pill - Badge variant with large border radius.
+//
+// Markup: components/badge/html/badge.html
+//
+// Style guide: Components.Badge
+.badge {
+  $this: &;
+
+  display: inline-block;
+  float: left;
+  text-decoration: none;
+  line-height: 1;
+  color: $badge-color;
+  font-size: $badge-font-size;
+  background-color: $badge-background;
+
+  @at-root {
+    a#{$this} {
+      &:hover {
+        background-color: $badge-hover-background;
+      }
+    }
+  }
+
+  // Badge Image
+  //
+  // Image element of the badge component. Seamlessly adapts to the size of the marker.
+  //
+  // Markup: components/badge/html/badge__image.html
+  //
+  // Style guide: Components.Badge.Image
+  &__image {
+    $offset: nth($badge-padding, length($badge-padding));
+
+    height: calc(1em + #{$offset * 2});
+  }
+
+  // Badge Body
+  //
+  // Body element of the badge component. Holds text of the marker.
+  //
+  // Markup: components/badge/html/badge__body.html
+  //
+  // Style guide: Components.Badge.Body
+  &__body {
+    display: inline-flex;
+    align-items: center;
+    padding: $badge-padding;
+  }
+
+  &--pill {
+    border-radius: $badge-padding*2;
+  }
+}

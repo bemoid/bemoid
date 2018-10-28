@@ -1,4 +1,4 @@
-# Tag
+# Badge
 
 Small inline components for creating labelized markers.
 
@@ -7,9 +7,9 @@ Small inline components for creating labelized markers.
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/tag
+$ npm install @bemoid/badge
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/tag).
+The component documentation can be found [here](//bemoid.org/docs/badge).

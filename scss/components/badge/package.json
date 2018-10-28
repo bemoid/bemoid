@@ -1,13 +1,13 @@
 {
-  "name": "@bemoid/tag",
-  "description": "The Bemoid Tag component.",
+  "name": "@bemoid/badge",
+  "description": "The Bemoid Badge component.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "tag.scss",
+  "main": "badge.scss",
   "keywords": [
     "bem",
     "sass",
-    "tag"
+    "badge"
   ],
   "dependencies": {
     "@bemoid/function-unit": "^0.1.0",

@@ -1,0 +1,28 @@
+////
+/// @group Badge
+////
+
+/// Badge font size.
+///
+/// @type {Value|Values}
+$badge-font-size: em(14px) !default;
+
+/// Badge text color.
+///
+/// @type {Color}
+$badge-color: color(black) !default;
+
+/// Badge background color.
+///
+/// @type {Color}
+$badge-background: color(gray-light) !default;
+
+/// Badge padding size.
+///
+/// @type {Value|Values}
+$badge-padding: space(medium) !default;
+
+/// Badge background color on hover.
+///
+/// @type {Color}
+$badge-hover-background: darken(color(gray-light), 10%) !default;

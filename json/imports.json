@@ -31,7 +31,7 @@
     "components/radio/radio",
     "components/select/select",
     "components/checkbox/checkbox",
-    "components/tag/tag",
+    "components/badge/badge",
     "components/button/button",
     "components/blockquote/blockquote",
     "components/message/message",
