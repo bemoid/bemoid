@@ -77,7 +77,9 @@ $button-sizes: (
 
 Additionally, there are two modifiers to control horizontal expanding of the button. Enlarge horizontal paddings with `.button--wider` modifier or add `.button--expand` to make a button take the full width of a parent.
 
-[[example file=components/button/example/behaviours.html]]
+[[example file=components/button/example/wider.html]]
+
+[[example file=components/button/example/expanded.html]]
 
 ### Covers
 
