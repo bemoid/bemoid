@@ -12,8 +12,8 @@
 /// @prop {Map} error
 $message-variants: (
   neutral: (
-    'background-color': color(lighter-gray),
-    'border-color': color(light-gray),
+    'background-color': color(gray-lighter),
+    'border-color': color(gray-light),
   ),
   success: (
     'color': color(white),
@@ -58,7 +58,7 @@ $message-title-weight: 700 !default;
 /// @prop {Map} error
 $message-hollow-variants: (
   neutral: (
-    'border-color': color(light-gray),
+    'border-color': color(gray-light),
   ),
   success: (
     'color': $font-color,

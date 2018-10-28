@@ -15,7 +15,7 @@ $tag-color: color(black) !default;
 /// Tag background color.
 ///
 /// @type {Color}
-$tag-background: color(light-gray) !default;
+$tag-background: color(gray-light) !default;
 
 /// Tag padding size.
 ///
@@ -25,4 +25,4 @@ $tag-padding: space(medium) !default;
 /// Tag background color on hover.
 ///
 /// @type {Color}
-$tag-hover-background: darken(color(light-gray), 10%) !default;
+$tag-hover-background: darken(color(gray-light), 10%) !default;

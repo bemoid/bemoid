@@ -30,7 +30,7 @@ Of course, you can customize this set by adding or removing entries from the map
 $button-variants: (
   colorful: (
     'color': color(black) color(white),
-    'background-color': color(light-gray) color(primary),
+    'background-color': color(gray-light) color(primary),
   )
 );
 ```

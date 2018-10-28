@@ -10,12 +10,12 @@ $form-group-radius: rem(4px) !default;
 /// Background color of form fieldset group.
 ///
 /// @type {Value}
-$form-group-background: color(lighter-gray) !default;
+$form-group-background: color(gray-lighter) !default;
 
 /// Border styles of form fieldset group.
 ///
 /// @type {Value}
-$form-group-border: 1px solid color(light-gray) !default;
+$form-group-border: 1px solid color(gray-light) !default;
 
 /// Font size of legend in form fieldset group.
 ///

@@ -35,8 +35,8 @@ Of course, you can customize this set by adding or removing entries from the map
 ```scss
 $message-variants: (
   neutral: (
-    'background-color': color(lighter-gray),
-    'border-color': color(light-gray),
+    'background-color': color(gray-lighter),
+    'border-color': color(gray-light),
   ),
 );
 ```

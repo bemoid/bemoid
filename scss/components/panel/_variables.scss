@@ -5,7 +5,7 @@
 /// Style of the panel border.
 ///
 /// @type {Values}
-$panel-border: 1px solid color(light-gray) !default;
+$panel-border: 1px solid color(gray-light) !default;
 
 /// Panel background color.
 ///
@@ -15,7 +15,7 @@ $panel-background: color(white) !default;
 /// Style of the panel segments border.
 ///
 /// @type {Values}
-$panel-segment-border: 1px solid color(light-gray) !default;
+$panel-segment-border: 1px solid color(gray-light) !default;
 
 /// Max height of the panel's scrollable segment.
 ///

@@ -14,7 +14,7 @@
 $button-variants: (
   neutral: (
     'color': color(black),
-    'background-color': color(light-gray) darken(color(light-gray), 5%),
+    'background-color': color(gray-light) darken(color(gray-light), 5%),
   ),
   primary: (
     'color': color(white),
@@ -57,7 +57,7 @@ $button-variants: (
 $button-hollow-variants: (
   neutral: (
     'color': color(black),
-    'border-color': color(light-gray) darken(color(light-gray), 5%),
+    'border-color': color(gray-light) darken(color(gray-light), 5%),
   ),
   primary: (
     'color': color(primary) color(white),

@@ -12,24 +12,24 @@
 /// @prop {Color} error
 /// @prop {Color} info
 /// @prop {Color} white
-/// @prop {Color} lighter-gray
-/// @prop {Color} light-gray
+/// @prop {Color} gray-lighter
+/// @prop {Color} gray-light
 /// @prop {Color} gray
-/// @prop {Color} dark-gray
-/// @prop {Color} darker-gray
+/// @prop {Color} gray-dark
+/// @prop {Color} gray-darker
 /// @prop {Color} black
 $color-values: (
   primary: #6c3fce,
-  secondary: #543793,
+  secondary: #14c1bf,
   success: #26c65e,
   warning: #ffde66,
   error: #ec3953,
   info: #3273dc,
   white: #fff,
-  lighter-gray: #f6f6f6,
-  light-gray: #d7dfe6,
+  gray-lighter: #f6f6f6,
+  gray-light: #d7dfe6,
   gray: #79858c,
-  dark-gray: #586973,
-  darker-gray: #425059,
+  gray-dark: #586973,
+  gray-darker: #425059,
   black: #171c1f,
 ) !default;

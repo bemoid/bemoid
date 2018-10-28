@@ -20,12 +20,12 @@ $table-border-style: solid !default;
 /// Color of table cells border.
 ///
 /// @type {Color}
-$table-border-color: color(light-gray) !default;
+$table-border-color: color(gray-light) !default;
 
 /// Background of the table head and footer.
 ///
 /// @type {Color}
-$table-heading-background: color(lighter-gray) !default;
+$table-heading-background: color(gray-lighter) !default;
 
 /// Padding size in each condensed table cell.
 ///
@@ -35,9 +35,9 @@ $table-condense-padding: space(small) space(medium) !default;
 /// Background of the striped table even rows.
 ///
 /// @type {Color}
-$table-stripe-background: lighten(color(lighter-gray), 1%) !default;
+$table-stripe-background: lighten(color(gray-lighter), 1%) !default;
 
 /// Background of the hovered row in hoverable table.
 ///
 /// @type {Color}
-$table-hoverable-background: color(lighter-gray) !default;
+$table-hoverable-background: color(gray-lighter) !default;
