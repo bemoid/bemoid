@@ -770,33 +770,6 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "badge": [
-    {
-      "variable": "$badge-font-size",
-      "value": "em(14px) !default",
-      "name": "badge-font-size"
-    },
-    {
-      "variable": "$badge-color",
-      "value": "color(black) !default",
-      "name": "badge-color"
-    },
-    {
-      "variable": "$badge-background",
-      "value": "color(gray-light) !default",
-      "name": "badge-background"
-    },
-    {
-      "variable": "$badge-padding",
-      "value": "space(medium) !default",
-      "name": "badge-padding"
-    },
-    {
-      "variable": "$badge-hover-background",
-      "value": "darken(color(gray-light), 10%) !default",
-      "name": "badge-hover-background"
-    }
-  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -850,13 +823,40 @@
     },
     {
       "variable": "$button-hollow-border",
-      "value": "1px !default",
+      "value": "2px !default",
       "name": "button-hollow-border"
     },
     {
       "variable": "$button-hollow-background",
       "value": "transparent !default",
       "name": "button-hollow-background"
+    }
+  ],
+  "badge": [
+    {
+      "variable": "$badge-font-size",
+      "value": "em(14px) !default",
+      "name": "badge-font-size"
+    },
+    {
+      "variable": "$badge-color",
+      "value": "color(black) !default",
+      "name": "badge-color"
+    },
+    {
+      "variable": "$badge-background",
+      "value": "color(gray-light) !default",
+      "name": "badge-background"
+    },
+    {
+      "variable": "$badge-padding",
+      "value": "space(medium) !default",
+      "name": "badge-padding"
+    },
+    {
+      "variable": "$badge-hover-background",
+      "value": "darken(color(gray-light), 10%) !default",
+      "name": "badge-hover-background"
     }
   ],
   "gutter": [
