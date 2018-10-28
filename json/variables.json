@@ -61,18 +61,6 @@
       "name": "radius-value"
     }
   ],
-  "elevator": [
-    {
-      "variable": "$elevator-values",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevator-values"
-    },
-    {
-      "variable": "$elevator-value",
-      "value": "medium !default",
-      "name": "elevator-value"
-    }
-  ],
   "line": [
     {
       "variable": "$line-height",
@@ -110,6 +98,18 @@
       "variable": "$font-family-monospace",
       "value": "'Lucida Console', 'Monaco', monospace !default",
       "name": "font-family-monospace"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator-values",
+      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevator-values"
+    },
+    {
+      "variable": "$elevator-value",
+      "value": "medium !default",
+      "name": "elevator-value"
     }
   ],
   "link": [
@@ -286,18 +286,6 @@
       "name": "image-radius-circular"
     }
   ],
-  "gutter": [
-    {
-      "variable": "$gutter-sizes",
-      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "gutter-sizes"
-    },
-    {
-      "variable": "$gutter-size",
-      "value": "medium !default",
-      "name": "gutter-size"
-    }
-  ],
   "input": [
     {
       "variable": "$input-font-family",
@@ -333,55 +321,6 @@
       "variable": "$input-focus-border-color",
       "value": "color(info) !default",
       "name": "input-focus-border-color"
-    }
-  ],
-  "blockquote": [
-    {
-      "variable": "$blockquote-margins",
-      "value": "0 !default",
-      "name": "blockquote-margins"
-    },
-    {
-      "variable": "$blockquote-background",
-      "value": "color(gray-lighter) !default",
-      "name": "blockquote-background"
-    },
-    {
-      "variable": "$blockquote-border-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-border-color"
-    },
-    {
-      "variable": "$blockquote-border-width",
-      "value": "0 0 0 em(5px) !default",
-      "name": "blockquote-border-width"
-    },
-    {
-      "variable": "$blockquote-border-style",
-      "value": "solid !default",
-      "name": "blockquote-border-style"
-    },
-    {
-      "variable": "$blockquote-footer-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-footer-color"
-    }
-  ],
-  "select": [
-    {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
-      "name": "select-icon"
-    },
-    {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
-    },
-    {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
     }
   ],
   "radio": [
@@ -436,6 +375,23 @@
       "name": "radio-hover-outer-background"
     }
   ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"7\"><path d=\"M11.826.164c-.164-.164-.43-.164-.595 0L6 5.404.76.164C.594 0 .327 0 .163.164 0 .33 0 .594.163.76l5.53 5.527c.08.082.184.123.297.123.102 0 .215-.04.297-.123L11.815.76c.175-.165.175-.432.01-.596z\"/></svg>' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
+    }
+  ],
   "panel": [
     {
       "variable": "$panel-border",
@@ -456,6 +412,38 @@
       "variable": "$panel-scrollable-height",
       "value": "300px !default",
       "name": "panel-scrollable-height"
+    }
+  ],
+  "blockquote": [
+    {
+      "variable": "$blockquote-margins",
+      "value": "0 !default",
+      "name": "blockquote-margins"
+    },
+    {
+      "variable": "$blockquote-background",
+      "value": "color(gray-lighter) !default",
+      "name": "blockquote-background"
+    },
+    {
+      "variable": "$blockquote-border-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-border-color"
+    },
+    {
+      "variable": "$blockquote-border-width",
+      "value": "0 0 0 em(5px) !default",
+      "name": "blockquote-border-width"
+    },
+    {
+      "variable": "$blockquote-border-style",
+      "value": "solid !default",
+      "name": "blockquote-border-style"
+    },
+    {
+      "variable": "$blockquote-footer-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-footer-color"
     }
   ],
   "overlay": [
@@ -613,11 +601,6 @@
       "variable": "$group-outer-radius",
       "value": "rem(4px) !default",
       "name": "group-outer-radius"
-    },
-    {
-      "variable": "$group-stackable",
-      "value": "medium !default",
-      "name": "group-stackable"
     },
     {
       "variable": "$group-divider-width",
@@ -869,6 +852,18 @@
       "variable": "$badge-hover-background",
       "value": "darken(color(gray-light), 10%) !default",
       "name": "badge-hover-background"
+    }
+  ],
+  "gutter": [
+    {
+      "variable": "$gutter-sizes",
+      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "gutter-sizes"
+    },
+    {
+      "variable": "$gutter-size",
+      "value": "medium !default",
+      "name": "gutter-size"
     }
   ]
 }

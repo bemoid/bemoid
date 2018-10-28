@@ -17,11 +17,6 @@ $group-inner-radius: 0 !default;
 /// @type {Number|Value|Values}
 $group-outer-radius: rem(4px) !default;
 
-/// Breakpoint name under which group items stacks in stackable group.
-///
-/// @type {Keyword}
-$group-stackable: medium !default;
-
 /// Width of the group divider.
 ///
 /// @type {Number|Value|Values}
