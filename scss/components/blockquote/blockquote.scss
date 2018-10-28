@@ -13,7 +13,9 @@
   display: block;
   margin: $blockquote-margins;
   background-color: $blockquote-background;
-  border: $blockquote-border-width $blockquote-border-style $blockquote-border-color;
+  border-width: $blockquote-border-width;
+  border-style: $blockquote-border-style;
+  border-color: $blockquote-border-color;
 
   // Blockquote Footer
   //
