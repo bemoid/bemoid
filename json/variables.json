@@ -286,6 +286,18 @@
       "name": "image-radius-circular"
     }
   ],
+  "gutter": [
+    {
+      "variable": "$gutter-sizes",
+      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "name": "gutter-sizes"
+    },
+    {
+      "variable": "$gutter-size",
+      "value": "medium !default",
+      "name": "gutter-size"
+    }
+  ],
   "input": [
     {
       "variable": "$input-font-family",
@@ -778,7 +790,7 @@
     },
     {
       "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'border-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
       "name": "button-hollow-variants"
     },
     {
@@ -857,18 +869,6 @@
       "variable": "$badge-hover-background",
       "value": "darken(color(gray-light), 10%) !default",
       "name": "badge-hover-background"
-    }
-  ],
-  "gutter": [
-    {
-      "variable": "$gutter-sizes",
-      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
-      "name": "gutter-sizes"
-    },
-    {
-      "variable": "$gutter-size",
-      "value": "medium !default",
-      "name": "gutter-size"
     }
   ]
 }

@@ -56,32 +56,39 @@ $button-variants: (
 /// @prop {Map} error
 $button-hollow-variants: (
   neutral: (
-    'color': color(black),
-    'border-color': color(gray-light) darken(color(gray-light), 5%),
+    'color': color(black) color(black),
+    'border-color': color(gray-light),
+    'background-color': transparent color(gray-light),
   ),
   primary: (
     'color': color(primary) color(white),
-    'border-color': color(primary) darken(color(primary), 10%),
+    'border-color': color(primary),
+    'background-color': transparent color(primary),
   ),
   secondary: (
     'color': color(secondary) color(white),
-    'border-color': color(secondary) darken(color(secondary), 10%),
+    'border-color': color(secondary),
+    'background-color': transparent color(secondary),
   ),
   success: (
     'color': color(success) color(white),
-    'border-color': color(success) darken(color(success), 10%),
+    'border-color': color(success),
+    'background-color': transparent color(success),
   ),
   warning: (
     'color': color(warning) color(black),
-    'border-color': color(warning) darken(color(warning), 10%),
+    'border-color': color(warning),
+    'background-color': transparent color(warning),
   ),
   info: (
     'color': color(info) color(white),
-    'border-color': color(info) darken(color(info), 10%),
+    'border-color': color(info),
+    'background-color': transparent color(info),
   ),
   error: (
     'color': color(error) color(white),
-    'border-color': color(error) darken(color(error), 10%),
+    'border-color': color(error),
+    'background-color': transparent color(error),
   ),
 ) !default;
 
