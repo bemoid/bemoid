@@ -27,26 +27,12 @@
     @extend .paragraph;
   }
 
-  ul {
-    @extend .list;
-
-    li {
-      @extend .list__item;
-    }
-  }
-
-  ol {
-    @extend .list;
-
-    li {
-      @extend .list__item;
-    }
-  }
-
+  ul,
+  ol,
   dl {
     @extend .list;
 
-    dd {
+    li {
       @extend .list__item;
     }
   }
