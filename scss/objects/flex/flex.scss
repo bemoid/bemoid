@@ -151,6 +151,14 @@
 
   &--stack {
     flex-direction: column;
+
+    @each $breakpoint, $width in $flex-sizes {
+      @include breakpoint($breakpoint up) {
+        &\@#{$breakpoint} {
+          flex-direction: column;
+        }
+      }
+    }
   }
 
   &--reverse {
