@@ -150,13 +150,33 @@
     flex-wrap: wrap;
   }
 
+  &--reverse {
+    flex-direction: row-reverse;
+
+    @each $breakpoint, $width in $flex-sizes {
+      @include breakpoint($breakpoint up) {
+        &\@#{$breakpoint} {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
   &--stack {
     flex-direction: column;
+
+    &#{$this}--reverse {
+      flex-direction: column-reverse;
+    }
 
     @each $breakpoint, $width in $flex-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: column;
+
+          &[class*="flex--reverse"] {
+            flex-direction: column-reverse;
+          }
         }
       }
     }
@@ -165,29 +185,17 @@
   &--queue {
     flex-direction: row;
 
+    &#{$this}--reverse {
+      flex-direction: row-reverse;
+    }
+
     @each $breakpoint, $width in $flex-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: row;
-        }
-      }
-    }
-  }
 
-  &--reverse {
-    flex-direction: row-reverse;
-
-    &#{$this}--stack {
-      flex-direction: column-reverse;
-    }
-
-    @each $breakpoint, $width in $flex-sizes {
-      @include breakpoint($breakpoint up) {
-        &\@#{$breakpoint} {
-          flex-direction: row-reverse;
-
-          &#{$this}--stack {
-            flex-direction: column-reverse;
+          &[class*="flex--reverse"] {
+            flex-direction: row-reverse;
           }
         }
       }
