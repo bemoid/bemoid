@@ -37,10 +37,10 @@
     "components/message/message",
     "components/divider/divider",
     "components/content/content",
-    "components/group/group"
+    "components/group/group",
+    "components/space/space"
   ],
   "utilities": [
-    "utilities/space/space",
     "utilities/spread/spread",
     "utilities/radius/radius",
     "utilities/hidden/hidden",

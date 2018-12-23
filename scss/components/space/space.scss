@@ -14,14 +14,28 @@
 //
 // Style guide: Utilities.Space
 .space {
+  $space: get($space-values, $space-value);
+
   & > * + * {
-    margin-top: 0;
+    margin-top: $space;
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    &\@#{$breakpoint} {
+      @include breakpoint($breakpoint up) {
+        & > * + * {
+          margin-top: $space;
+        }
+      }
+    }
   }
 
   @each $size, $declaration in $space-values {
-    &--#{$size} {
-      & > * + * {
-        margin-top: $declaration;
+    @if $size != $space-value {
+      &--#{$size} {
+        & > * + * {
+          margin-top: $declaration;
+        }
       }
     }
   }

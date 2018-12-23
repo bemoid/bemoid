@@ -19,3 +19,8 @@ $space-values: (
   xlarge: em(24px),
   xxlarge: em(36px),
 ) !default;
+
+/// Default value of space.
+///
+/// @type {Keyword}
+$space-value: medium !default;
