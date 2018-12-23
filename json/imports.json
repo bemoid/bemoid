@@ -45,7 +45,6 @@
     "utilities/radius/radius",
     "utilities/hidden/hidden",
     "utilities/visible/visible",
-    "utilities/elevator/elevator",
-    "utilities/transition/transition"
+    "utilities/elevator/elevator"
   ]
 }
