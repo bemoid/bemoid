@@ -8,6 +8,7 @@
   "objects": [
     "objects/container/container",
     "objects/flex/flex",
+    "objects/gutter/gutter",
     "objects/waffle/waffle",
     "objects/list/list",
     "objects/image/image",

@@ -18,6 +18,35 @@
       "name": "color-values"
     }
   ],
+  "dropdown": [
+    {
+      "variable": "$dropdown-gap",
+      "value": "0.15rem !default",
+      "name": "dropdown-gap"
+    },
+    {
+      "variable": "$dropdown-max-width",
+      "value": "300px !default",
+      "name": "dropdown-max-width"
+    },
+    {
+      "variable": "$dropdown-min-width",
+      "value": "200px !default",
+      "name": "dropdown-min-width"
+    }
+  ],
+  "container": [
+    {
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
+    },
+    {
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
+    }
+  ],
   "font": [
     {
       "variable": "$font-size",
@@ -104,35 +133,6 @@
       "name": "link-hover-color"
     }
   ],
-  "container": [
-    {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
-    },
-    {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
-    }
-  ],
-  "dropdown": [
-    {
-      "variable": "$dropdown-gap",
-      "value": "0.15rem !default",
-      "name": "dropdown-gap"
-    },
-    {
-      "variable": "$dropdown-max-width",
-      "value": "300px !default",
-      "name": "dropdown-max-width"
-    },
-    {
-      "variable": "$dropdown-min-width",
-      "value": "200px !default",
-      "name": "dropdown-min-width"
-    }
-  ],
   "gutter": [
     {
       "variable": "$gutter-sizes",
@@ -157,18 +157,6 @@
       "name": "flex-sizes"
     }
   ],
-  "image": [
-    {
-      "variable": "$image-radius-rounded",
-      "value": "0.3rem !default",
-      "name": "image-radius-rounded"
-    },
-    {
-      "variable": "$image-radius-circular",
-      "value": "50% !default",
-      "name": "image-radius-circular"
-    }
-  ],
   "media": [
     {
       "variable": "$media-gutters",
@@ -188,6 +176,18 @@
       "name": "list-offset"
     }
   ],
+  "image": [
+    {
+      "variable": "$image-radius-rounded",
+      "value": "0.3rem !default",
+      "name": "image-radius-rounded"
+    },
+    {
+      "variable": "$image-radius-circular",
+      "value": "50% !default",
+      "name": "image-radius-circular"
+    }
+  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -198,6 +198,55 @@
       "variable": "$waffle-size",
       "value": "medium !default",
       "name": "waffle-size"
+    }
+  ],
+  "badge": [
+    {
+      "variable": "$badge-font-size",
+      "value": "0.8em !default",
+      "name": "badge-font-size"
+    },
+    {
+      "variable": "$badge-color",
+      "value": "color(black) !default",
+      "name": "badge-color"
+    },
+    {
+      "variable": "$badge-background",
+      "value": "color(gray-light) !default",
+      "name": "badge-background"
+    },
+    {
+      "variable": "$badge-padding",
+      "value": "0.5em !default",
+      "name": "badge-padding"
+    },
+    {
+      "variable": "$badge-hover-background",
+      "value": "darken(color(gray-light), 10%) !default",
+      "name": "badge-hover-background"
+    }
+  ],
+  "divider": [
+    {
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': 0.8em\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': 1em\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "divider-badge-sizes"
+    },
+    {
+      "variable": "$divider-badge-size",
+      "value": "medium !default",
+      "name": "divider-badge-size"
+    },
+    {
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
+    },
+    {
+      "variable": "$divider-badge-radius",
+      "value": "50% !default",
+      "name": "divider-badge-radius"
     }
   ],
   "blockquote": [
@@ -232,31 +281,16 @@
       "name": "blockquote-footer-color"
     }
   ],
-  "badge": [
+  "elevator": [
     {
-      "variable": "$badge-font-size",
-      "value": "0.8em !default",
-      "name": "badge-font-size"
+      "variable": "$elevator-values",
+      "value": "(\n  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),\n  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),\n  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),\n  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),\n  xlarge: 0 1em 2em 0 transparentize(black, 0.75),\n  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevator-values"
     },
     {
-      "variable": "$badge-color",
-      "value": "color(black) !default",
-      "name": "badge-color"
-    },
-    {
-      "variable": "$badge-background",
-      "value": "color(gray-light) !default",
-      "name": "badge-background"
-    },
-    {
-      "variable": "$badge-padding",
-      "value": "0.5em !default",
-      "name": "badge-padding"
-    },
-    {
-      "variable": "$badge-hover-background",
-      "value": "darken(color(gray-light), 10%) !default",
-      "name": "badge-hover-background"
+      "variable": "$elevator-value",
+      "value": "medium !default",
+      "name": "elevator-value"
     }
   ],
   "button": [
@@ -321,28 +355,6 @@
       "name": "button-hollow-background"
     }
   ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': 0.8em\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': 1em\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': 1.5em\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "50% !default",
-      "name": "divider-badge-radius"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -400,18 +412,6 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "elevator": [
-    {
-      "variable": "$elevator-values",
-      "value": "(\n  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),\n  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),\n  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),\n  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),\n  xlarge: 0 1em 2em 0 transparentize(black, 0.75),\n  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevator-values"
-    },
-    {
-      "variable": "$elevator-value",
-      "value": "medium !default",
-      "name": "elevator-value"
-    }
-  ],
   "field": [
     {
       "variable": "$field-sizes",
@@ -449,28 +449,6 @@
       "variable": "$figure-font-style",
       "value": "italic !default",
       "name": "figure-font-style"
-    }
-  ],
-  "group": [
-    {
-      "variable": "$group-overlap",
-      "value": "-1px !default",
-      "name": "group-overlap"
-    },
-    {
-      "variable": "$group-inner-radius",
-      "value": "0 !default",
-      "name": "group-inner-radius"
-    },
-    {
-      "variable": "$group-outer-radius",
-      "value": "0.15rem !default",
-      "name": "group-outer-radius"
-    },
-    {
-      "variable": "$group-divider-width",
-      "value": "6px !default",
-      "name": "group-divider-width"
     }
   ],
   "form": [
@@ -537,6 +515,45 @@
       "name": "input-focus-border-color"
     }
   ],
+  "group": [
+    {
+      "variable": "$group-overlap",
+      "value": "-1px !default",
+      "name": "group-overlap"
+    },
+    {
+      "variable": "$group-inner-radius",
+      "value": "0 !default",
+      "name": "group-inner-radius"
+    },
+    {
+      "variable": "$group-outer-radius",
+      "value": "0.15rem !default",
+      "name": "group-outer-radius"
+    },
+    {
+      "variable": "$group-divider-width",
+      "value": "6px !default",
+      "name": "group-divider-width"
+    }
+  ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "0.8em !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
+    }
+  ],
   "modal": [
     {
       "variable": "$modal-padding",
@@ -562,23 +579,6 @@
       "variable": "$modal-active-zindex",
       "value": "100 !default",
       "name": "modal-active-zindex"
-    }
-  ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "0.8em !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
     }
   ],
   "message": [
@@ -635,21 +635,38 @@
       "name": "overlay-opacity"
     }
   ],
-  "select": [
+  "panel": [
     {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
-      "name": "select-icon"
+      "variable": "$panel-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-border"
     },
     {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
+      "variable": "$panel-background",
+      "value": "color(white) !default",
+      "name": "panel-background"
     },
     {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
+      "variable": "$panel-segment-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-segment-border"
+    },
+    {
+      "variable": "$panel-scrollable-height",
+      "value": "300px !default",
+      "name": "panel-scrollable-height"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
     }
   ],
   "radio": [
@@ -704,40 +721,6 @@
       "name": "radio-hover-outer-background"
     }
   ],
-  "panel": [
-    {
-      "variable": "$panel-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-border"
-    },
-    {
-      "variable": "$panel-background",
-      "value": "color(white) !default",
-      "name": "panel-background"
-    },
-    {
-      "variable": "$panel-segment-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-segment-border"
-    },
-    {
-      "variable": "$panel-scrollable-height",
-      "value": "300px !default",
-      "name": "panel-scrollable-height"
-    }
-  ],
-  "space": [
-    {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
-    }
-  ],
   "spread": [
     {
       "variable": "$spread-values",
@@ -748,6 +731,23 @@
       "variable": "$spread-value",
       "value": "medium !default",
       "name": "spread-value"
+    }
+  ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
     }
   ],
   "table": [
