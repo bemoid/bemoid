@@ -42,7 +42,6 @@
     "components/spread/spread"
   ],
   "utilities": [
-    "utilities/radius/radius",
     "utilities/hidden/hidden",
     "utilities/visible/visible",
     "utilities/elevator/elevator"
