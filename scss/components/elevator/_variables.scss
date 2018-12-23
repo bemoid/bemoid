@@ -1,0 +1,26 @@
+////
+/// @group Components
+////
+
+/// Collection of elevation levels.
+///
+/// @type {Map}
+/// @prop {Values} 1
+/// @prop {Values} 2
+/// @prop {Values} 3
+/// @prop {Values} 6
+/// @prop {Values} 18
+/// @prop {Values} 27
+$elevator-values: (
+  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),
+  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),
+  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),
+  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),
+  xlarge: 0 1em 2em 0 transparentize(black, 0.75),
+  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),
+) !default;
+
+/// Default elevation level.
+///
+/// @type {Keyword}
+$elevator-value: medium !default;

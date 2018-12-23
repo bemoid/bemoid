@@ -1,8 +1,10 @@
 /** @define spread */
 
-// Gutter
+@import 'variables';
+
+// Spread
 //
-// Utility component for adding horizontal space between elements.
+// Component for adding horizontal space between elements.
 //
 // .spread--xsmall  - Adds xsmall level of a horizontal distance.
 // .spread--small   - Adds small level of a horizontal distance.
@@ -10,9 +12,9 @@
 // .spread--xlarge  - Adds xlarge level of a horizontal distance.
 // .spread--xxlarge - Adds xxlarge level of a horizontal distance.
 //
-// Markup: utilities/spread/html/spread.html
+// Markup: components/spread/html/spread.html
 //
-// Style guide: Utilities.Gutter
+// Style guide: Components.Gutter
 .spread {
   $spread: get($spread-values, $spread-value);
 

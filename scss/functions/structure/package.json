@@ -1,17 +1,14 @@
 {
-  "name": "@bemoid/function-spread",
-  "description": "A getter function for spread values.",
+  "name": "@bemoid/function-structure",
+  "description": "Collection of helper functions for various data structures",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "spread.scss",
+  "main": "structure.scss",
   "keywords": [
     "bem",
     "sass",
-    "spread"
+    "structure"
   ],
-  "dependencies": {
-    "@bemoid/function-get": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

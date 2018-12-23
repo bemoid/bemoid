@@ -2,12 +2,12 @@
   "breakpoint": [
     {
       "variable": "$breakpoint-sizes",
-      "value": "(\n  xsmall: em(320px),\n  small: em(480px),\n  medium: em(768px),\n  large: em(960px),\n  xlarge: em(1120px),\n  xxlarge: em(1440px)\n) !default",
+      "value": "(\n  xsmall: 320px,\n  small: 480px,\n  medium: 768px,\n  large: 960px,\n  xlarge: 1120px,\n  xxlarge: 1440px\n) !default",
       "name": "breakpoint-sizes"
     },
     {
       "variable": "$breakpoint-offset",
-      "value": "em(1px)",
+      "value": "1px",
       "name": "breakpoint-offset"
     }
   ],
@@ -16,96 +16,6 @@
       "variable": "$color-values",
       "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
       "name": "color-values"
-    }
-  ],
-  "spread": [
-    {
-      "variable": "$spread-values",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "spread-values"
-    },
-    {
-      "variable": "$spread-value",
-      "value": "medium !default",
-      "name": "spread-value"
-    }
-  ],
-  "elevator": [
-    {
-      "variable": "$elevator-values",
-      "value": "(\n  xsmall: 0 em(4px) em(3px) em(-3px) transparentize(black, 0.95),\n  small: 0 em(5px) em(4px) em(-3px) transparentize(black, 0.9),\n  medium: 0 em(6px) em(5px) em(-3px) transparentize(black, 0.9),\n  large: 0 em(6px) em(12px) 0 transparentize(black, 0.8),\n  xlarge: 0 em(18px) em(36px) 0 transparentize(black, 0.75),\n  xxlarge: 0 em(27px) em(36px) 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevator-values"
-    },
-    {
-      "variable": "$elevator-value",
-      "value": "medium !default",
-      "name": "elevator-value"
-    }
-  ],
-  "heading": [
-    {
-      "variable": "$heading-sizes",
-      "value": "(\n  default: (\n    'h1': ('font-size': em(36px)),\n    'h2': ('font-size': em(27px)),\n    'h3': ('font-size': em(21px)),\n    'h4': ('font-size': em(18px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n  medium: (\n    'h1': ('font-size': em(42px)),\n    'h2': ('font-size': em(36px)),\n    'h3': ('font-size': em(27px)),\n    'h4': ('font-size': em(21px)),\n    'h5': ('font-size': em(16px)),\n    'h6': ('font-size': em(14px)),\n  ),\n) !default",
-      "name": "heading-sizes"
-    },
-    {
-      "variable": "$heading-size",
-      "value": "default",
-      "name": "heading-size"
-    },
-    {
-      "variable": "$heading-font-family",
-      "value": "inherit !default",
-      "name": "heading-font-family"
-    },
-    {
-      "variable": "$heading-color",
-      "value": "color(black) !default",
-      "name": "heading-color"
-    },
-    {
-      "variable": "$heading-line-height",
-      "value": "1.25 !default",
-      "name": "heading-line-height"
-    },
-    {
-      "variable": "$heading-font-weight",
-      "value": "400 !default",
-      "name": "heading-font-weight"
-    },
-    {
-      "variable": "$heading-margin",
-      "value": "0 !default",
-      "name": "heading-margin"
-    }
-  ],
-  "space": [
-    {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
-    }
-  ],
-  "link": [
-    {
-      "variable": "$link-color",
-      "value": "lighten(color(black), 15%) !default",
-      "name": "link-color"
-    },
-    {
-      "variable": "$link-decoration",
-      "value": "underline !default",
-      "name": "link-decoration"
-    },
-    {
-      "variable": "$link-hover-color",
-      "value": "darken(color(black), 10%) !default",
-      "name": "link-hover-color"
     }
   ],
   "line": [
@@ -147,6 +57,55 @@
       "name": "font-family-monospace"
     }
   ],
+  "heading": [
+    {
+      "variable": "$heading-sizes",
+      "value": "(\n  default: (\n    'h1': ('font-size': 2em),\n    'h2': ('font-size': 1.5em),\n    'h3': ('font-size': 1.25em),\n    'h4': ('font-size': 1em),\n    'h5': ('font-size': 0.8em),\n    'h6': ('font-size': 0.6em),\n  ),\n  medium: (\n    'h1': ('font-size': 2.5em),\n    'h2': ('font-size': 2em),\n    'h3': ('font-size': 1.5em),\n    'h4': ('font-size': 1.25em),\n    'h5': ('font-size': 0.8em),\n    'h6': ('font-size': 0.6em),\n  ),\n) !default",
+      "name": "heading-sizes"
+    },
+    {
+      "variable": "$heading-size",
+      "value": "default",
+      "name": "heading-size"
+    },
+    {
+      "variable": "$heading-font-family",
+      "value": "inherit !default",
+      "name": "heading-font-family"
+    },
+    {
+      "variable": "$heading-color",
+      "value": "color(black) !default",
+      "name": "heading-color"
+    },
+    {
+      "variable": "$heading-line-height",
+      "value": "1.25 !default",
+      "name": "heading-line-height"
+    },
+    {
+      "variable": "$heading-font-weight",
+      "value": "400 !default",
+      "name": "heading-font-weight"
+    }
+  ],
+  "link": [
+    {
+      "variable": "$link-color",
+      "value": "lighten(color(black), 15%) !default",
+      "name": "link-color"
+    },
+    {
+      "variable": "$link-decoration",
+      "value": "underline !default",
+      "name": "link-decoration"
+    },
+    {
+      "variable": "$link-hover-color",
+      "value": "darken(color(black), 10%) !default",
+      "name": "link-hover-color"
+    }
+  ],
   "container": [
     {
       "variable": "$container-sizes",
@@ -171,27 +130,34 @@
       "name": "flex-sizes"
     }
   ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
   "dropdown": [
     {
       "variable": "$dropdown-gap",
-      "value": "rem(3px) !default",
+      "value": "0.15rem !default",
       "name": "dropdown-gap"
     },
     {
       "variable": "$dropdown-max-width",
-      "value": "rem(300px) !default",
+      "value": "300px !default",
       "name": "dropdown-max-width"
     },
     {
       "variable": "$dropdown-min-width",
-      "value": "rem(200px) !default",
+      "value": "200px !default",
       "name": "dropdown-min-width"
     }
   ],
   "gutter": [
     {
       "variable": "$gutter-sizes",
-      "value": "(\n  small: space(small),\n  medium: space(medium),\n) !default",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
       "name": "gutter-sizes"
     },
     {
@@ -203,7 +169,7 @@
   "image": [
     {
       "variable": "$image-radius-rounded",
-      "value": "rem(4px) !default",
+      "value": "0.3rem !default",
       "name": "image-radius-rounded"
     },
     {
@@ -214,63 +180,32 @@
   ],
   "media": [
     {
-      "variable": "$media-stackable",
-      "value": "medium !default",
-      "name": "media-stackable"
-    },
-    {
       "variable": "$media-gutters",
-      "value": "(\n  xsmall: space(medium),\n  large: space(large),\n) !default",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
       "name": "media-gutters"
     },
     {
       "variable": "$media-gutter",
-      "value": "xsmall !default",
+      "value": "medium !default",
       "name": "media-gutter"
-    }
-  ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
     }
   ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
-      "value": "(\n  small: space(small),\n  medium: space(medium),\n  xlarge: space(xlarge),\n) !default",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
       "name": "waffle-sizes"
     },
     {
       "variable": "$waffle-size",
-      "value": "small !default",
+      "value": "medium !default",
       "name": "waffle-size"
-    }
-  ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
-    }
-  ],
-  "paragraph": [
-    {
-      "variable": "$paragraph-margin",
-      "value": "0 !default",
-      "name": "paragraph-margin"
     }
   ],
   "badge": [
     {
       "variable": "$badge-font-size",
-      "value": "em(14px) !default",
+      "value": "0.8em !default",
       "name": "badge-font-size"
     },
     {
@@ -285,7 +220,7 @@
     },
     {
       "variable": "$badge-padding",
-      "value": "space(medium) !default",
+      "value": "0.5em !default",
       "name": "badge-padding"
     },
     {
@@ -312,7 +247,7 @@
     },
     {
       "variable": "$blockquote-border-width",
-      "value": "0 0 0 em(5px) !default",
+      "value": "0 0 0 0.3em !default",
       "name": "blockquote-border-width"
     },
     {
@@ -326,6 +261,33 @@
       "name": "blockquote-footer-color"
     }
   ],
+  "field": [
+    {
+      "variable": "$field-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': 0.5em\n  ),\n  small: (\n    'font-size': 0.6em\n  ),\n  medium: (\n    'font-size': 0.8em,\n    'padding': 0.3em 0.5em\n  ),\n  large: (\n    'font-size': 1em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "field-sizes"
+    },
+    {
+      "variable": "$field-size",
+      "value": "medium !default",
+      "name": "field-size"
+    },
+    {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
+      "variable": "$field-caption-untouched-color",
+      "value": "color(black) !default",
+      "name": "field-caption-untouched-color"
+    },
+    {
+      "variable": "$field-caption-font-size",
+      "value": "0.8em !default",
+      "name": "field-caption-font-size"
+    }
+  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -334,7 +296,7 @@
     },
     {
       "variable": "$checkbox-size",
-      "value": "em(18px) !default",
+      "value": "1em !default",
       "name": "checkbox-size"
     },
     {
@@ -359,12 +321,12 @@
     },
     {
       "variable": "$checkbox-mark-size",
-      "value": "em(14px) !default",
+      "value": "0.6em !default",
       "name": "checkbox-mark-size"
     },
     {
       "variable": "$checkbox-mark-width",
-      "value": "em(2px) !default",
+      "value": "0.1em !default",
       "name": "checkbox-mark-width"
     },
     {
@@ -383,25 +345,6 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "wrapper": [
-    {
-      "variable": "$wrapper-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xlarge),\n) !default",
-      "name": "wrapper-sizes"
-    },
-    {
-      "variable": "$wrapper-size",
-      "value": "medium !default",
-      "name": "wrapper-size"
-    }
-  ],
-  "content": [
-    {
-      "variable": "$content-spacing",
-      "value": "em(16px) !default",
-      "name": "content-spacing"
-    }
-  ],
   "button": [
     {
       "variable": "$button-variants",
@@ -415,7 +358,7 @@
     },
     {
       "variable": "$button-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(medium) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "value": "(\n  xsmall: (\n    'font-size': 0.6em\n  ),\n  small: (\n    'font-size': 0.8em\n  ),\n  medium: (\n    'font-size': 1em,\n    'padding': 0.5em 1em\n  ),\n  large: (\n    'font-size': 1.25em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
       "name": "button-sizes"
     },
     {
@@ -440,7 +383,7 @@
     },
     {
       "variable": "$button-wide-padding",
-      "value": "em(40px) !default",
+      "value": "2em !default",
       "name": "button-wide-padding"
     },
     {
@@ -467,7 +410,7 @@
   "divider": [
     {
       "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': 0.8em\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': 1em\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': 1.5em\n  ),\n) !default",
       "name": "divider-badge-sizes"
     },
     {
@@ -486,33 +429,6 @@
       "name": "divider-badge-radius"
     }
   ],
-  "field": [
-    {
-      "variable": "$field-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(small) space(medium)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "field-sizes"
-    },
-    {
-      "variable": "$field-size",
-      "value": "medium !default",
-      "name": "field-size"
-    },
-    {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
-    },
-    {
-      "variable": "$field-caption-untouched-color",
-      "value": "color(black) !default",
-      "name": "field-caption-untouched-color"
-    },
-    {
-      "variable": "$field-caption-font-size",
-      "value": "em(12px) !default",
-      "name": "field-caption-font-size"
-    }
-  ],
   "figure": [
     {
       "variable": "$figure-text-align",
@@ -525,12 +441,19 @@
       "name": "figure-font-style"
     }
   ],
-  "form": [
+  "elevator": [
     {
-      "variable": "$form-group-radius",
-      "value": "rem(4px) !default",
-      "name": "form-group-radius"
+      "variable": "$elevator-values",
+      "value": "(\n  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),\n  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),\n  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),\n  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),\n  xlarge: 0 1em 2em 0 transparentize(black, 0.75),\n  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevator-values"
     },
+    {
+      "variable": "$elevator-value",
+      "value": "medium !default",
+      "name": "elevator-value"
+    }
+  ],
+  "form": [
     {
       "variable": "$form-group-background",
       "value": "color(gray-lighter) !default",
@@ -543,7 +466,7 @@
     },
     {
       "variable": "$form-legend-font-size",
-      "value": "em(12px) !default",
+      "value": "0.8em !default",
       "name": "form-legend-font-size"
     },
     {
@@ -570,30 +493,13 @@
     },
     {
       "variable": "$group-outer-radius",
-      "value": "rem(4px) !default",
+      "value": "0.15rem !default",
       "name": "group-outer-radius"
     },
     {
       "variable": "$group-divider-width",
       "value": "6px !default",
       "name": "group-divider-width"
-    }
-  ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "em(14px) !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
     }
   ],
   "input": [
@@ -675,10 +581,27 @@
       "name": "message-hollow-border-style"
     }
   ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "0.8em !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
+    }
+  ],
   "modal": [
     {
       "variable": "$modal-padding",
-      "value": "1.5rem !default",
+      "value": "1.5em !default",
       "name": "modal-padding"
     },
     {
@@ -700,18 +623,6 @@
       "variable": "$modal-active-zindex",
       "value": "100 !default",
       "name": "modal-active-zindex"
-    }
-  ],
-  "overlay": [
-    {
-      "variable": "$overlay-background",
-      "value": "color(black) !default",
-      "name": "overlay-background"
-    },
-    {
-      "variable": "$overlay-opacity",
-      "value": "0.66 !default",
-      "name": "overlay-opacity"
     }
   ],
   "panel": [
@@ -736,6 +647,89 @@
       "name": "panel-scrollable-height"
     }
   ],
+  "overlay": [
+    {
+      "variable": "$overlay-background",
+      "value": "color(black) !default",
+      "name": "overlay-background"
+    },
+    {
+      "variable": "$overlay-opacity",
+      "value": "0.66 !default",
+      "name": "overlay-opacity"
+    }
+  ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
+    }
+  ],
+  "table": [
+    {
+      "variable": "$table-padding",
+      "value": "0.5em 1em !default",
+      "name": "table-padding"
+    },
+    {
+      "variable": "$table-border-width",
+      "value": "1px !default",
+      "name": "table-border-width"
+    },
+    {
+      "variable": "$table-border-style",
+      "value": "solid !default",
+      "name": "table-border-style"
+    },
+    {
+      "variable": "$table-border-color",
+      "value": "color(gray-light) !default",
+      "name": "table-border-color"
+    },
+    {
+      "variable": "$table-heading-background",
+      "value": "color(gray-lighter) !default",
+      "name": "table-heading-background"
+    },
+    {
+      "variable": "$table-condense-padding",
+      "value": "0.3em 0.5em !default",
+      "name": "table-condense-padding"
+    },
+    {
+      "variable": "$table-stripe-background",
+      "value": "lighten(color(gray-lighter), 1%) !default",
+      "name": "table-stripe-background"
+    },
+    {
+      "variable": "$table-hoverable-background",
+      "value": "color(gray-lighter) !default",
+      "name": "table-hoverable-background"
+    }
+  ],
   "radio": [
     {
       "variable": "$radio-radius",
@@ -744,7 +738,7 @@
     },
     {
       "variable": "$radio-inner-width",
-      "value": "em(6px) !default",
+      "value": "0.3em !default",
       "name": "radio-inner-width"
     },
     {
@@ -759,7 +753,7 @@
     },
     {
       "variable": "$radio-outer-width",
-      "value": "em(18px) !default",
+      "value": "1em !default",
       "name": "radio-outer-width"
     },
     {
@@ -788,63 +782,16 @@
       "name": "radio-hover-outer-background"
     }
   ],
-  "table": [
+  "spread": [
     {
-      "variable": "$table-padding",
-      "value": "space(medium) space(large) !default",
-      "name": "table-padding"
+      "variable": "$spread-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "spread-values"
     },
     {
-      "variable": "$table-border-width",
-      "value": "1px !default",
-      "name": "table-border-width"
-    },
-    {
-      "variable": "$table-border-style",
-      "value": "solid !default",
-      "name": "table-border-style"
-    },
-    {
-      "variable": "$table-border-color",
-      "value": "color(gray-light) !default",
-      "name": "table-border-color"
-    },
-    {
-      "variable": "$table-heading-background",
-      "value": "color(gray-lighter) !default",
-      "name": "table-heading-background"
-    },
-    {
-      "variable": "$table-condense-padding",
-      "value": "space(small) space(medium) !default",
-      "name": "table-condense-padding"
-    },
-    {
-      "variable": "$table-stripe-background",
-      "value": "lighten(color(gray-lighter), 1%) !default",
-      "name": "table-stripe-background"
-    },
-    {
-      "variable": "$table-hoverable-background",
-      "value": "color(gray-lighter) !default",
-      "name": "table-hoverable-background"
-    }
-  ],
-  "select": [
-    {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
-      "name": "select-icon"
-    },
-    {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
-    },
-    {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
+      "variable": "$spread-value",
+      "value": "medium !default",
+      "name": "spread-value"
     }
   ]
 }

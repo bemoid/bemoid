@@ -12,15 +12,15 @@
 /// @prop {Value} xlarge
 /// @prop {Value} xxlarge
 $breakpoint-sizes: (
-  xsmall: em(320px),
-  small: em(480px),
-  medium: em(768px),
-  large: em(960px),
-  xlarge: em(1120px),
-  xxlarge: em(1440px)
+  xsmall: 320px,
+  small: 480px,
+  medium: 768px,
+  large: 960px,
+  xlarge: 1120px,
+  xxlarge: 1440px
 ) !default;
 
 /// Offset value between breakpoints ranges.
 ///
 /// @type {Value}
-$breakpoint-offset: em(1px);
+$breakpoint-offset: 1px;

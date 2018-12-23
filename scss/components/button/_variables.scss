@@ -101,20 +101,20 @@ $button-hollow-variants: (
 /// @prop {Map} xlarge
 $button-sizes: (
   xsmall: (
-    'font-size': em(12px)
+    'font-size': 0.6em
   ),
   small: (
-    'font-size': em(14px)
+    'font-size': 0.8em
   ),
   medium: (
-    'font-size': em(16px),
-    'padding': space(medium) space(large)
+    'font-size': 1em,
+    'padding': 0.5em 1em
   ),
   large: (
-    'font-size': em(18px)
+    'font-size': 1.25em
   ),
   xlarge: (
-    'font-size': em(21px)
+    'font-size': 1.5em
   ),
 ) !default;
 
@@ -141,7 +141,7 @@ $button-align: center !default;
 /// Side paddings value for wide button.
 ///
 /// @type {Value}
-$button-wide-padding: em(40px) !default;
+$button-wide-padding: 2em !default;
 
 /// Opacity of the disabled button.
 ///

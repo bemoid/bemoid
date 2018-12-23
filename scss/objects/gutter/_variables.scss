@@ -6,8 +6,8 @@
 ///
 /// @type {Map}
 $gutter-sizes: (
-  small: space(small),
-  medium: space(medium),
+  small: 0.3rem,
+  medium: 0.5rem,
 ) !default;
 
 /// Default gutter size.

@@ -12,20 +12,20 @@
 /// @prop {Map} xlarge
 $field-sizes: (
   xsmall: (
-    'font-size': em(12px)
+    'font-size': 0.5em
   ),
   small: (
-    'font-size': em(14px)
+    'font-size': 0.6em
   ),
   medium: (
-    'font-size': em(16px),
-    'padding': space(small) space(medium)
+    'font-size': 0.8em,
+    'padding': 0.3em 0.5em
   ),
   large: (
-    'font-size': em(18px)
+    'font-size': 1em
   ),
   xlarge: (
-    'font-size': em(21px)
+    'font-size': 1.5em
   ),
 ) !default;
 
@@ -69,4 +69,4 @@ $field-caption-untouched-color: color(black) !default;
 /// Font size of the field caption.
 ///
 /// @type {Number|Value}
-$field-caption-font-size: em(12px) !default;
+$field-caption-font-size: 0.8em !default;

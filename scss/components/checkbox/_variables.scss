@@ -10,7 +10,7 @@ $checkbox-radius: 50% !default;
 /// Size of the checkbox input.
 ///
 /// @type {Number|Value}
-$checkbox-size: em(18px) !default;
+$checkbox-size: 1em !default;
 
 /// Background color of the checkbox input.
 ///
@@ -35,12 +35,12 @@ $checkbox-hover-background: transparentize(color(info), 0.9) !default;
 /// Size of the mark in checkbox input.
 ///
 /// @type {Number|Value}
-$checkbox-mark-size: em(14px) !default;
+$checkbox-mark-size: 0.6em !default;
 
 /// Width of the mark in checkbox input.
 ///
 /// @type {Number|Value}
-$checkbox-mark-width: em(2px) !default;
+$checkbox-mark-width: 0.1em !default;
 
 /// Color of the mark in checkbox input.
 ///

@@ -2,22 +2,17 @@
 /// @group Media
 ////
 
-/// Breakpoint name under which side content stacks in stackable media.
-///
-/// @type {Keyword}
-$media-stackable: medium !default;
-
 /// Collection of gutters sizes by breakpoints.
 ///
 /// @type {Map}
 /// @prop {Value|Values} xsmall
 /// @prop {Value|Values} large
 $media-gutters: (
-  xsmall: space(medium),
-  large: space(large),
+  small: 0.3rem,
+  medium: 0.5rem,
 ) !default;
 
 /// Default gutter size.
 ///
 /// @type {Keyword}
-$media-gutter: xsmall !default;
+$media-gutter: medium !default;

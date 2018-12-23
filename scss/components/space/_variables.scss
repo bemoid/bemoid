@@ -1,5 +1,5 @@
 ////
-/// @group Functions
+/// @group Components
 ////
 
 /// Collection of space values.
@@ -12,12 +12,12 @@
 /// @prop {Value} xlarge
 /// @prop {Value} xxlarge
 $space-values: (
-  xsmall: em(3px),
-  small: em(6px),
-  medium: em(9px),
-  large: em(18px),
-  xlarge: em(24px),
-  xxlarge: em(36px),
+  xsmall: 0.15em,
+  small: 0.3em,
+  medium: 0.5em,
+  large: 1em,
+  xlarge: 1.5em,
+  xxlarge: 2em,
 ) !default;
 
 /// Default value of space.

@@ -1,13 +1,13 @@
-# Elevator function
+# Structure functions
 
-A getter function for elevator values.
+Collection of helper functions for various data structures.
 
 ## Installation
 
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/function-elevator
+$ npm install @bemoid/function-structure
 ```
 
 ## Documentation

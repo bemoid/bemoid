@@ -10,7 +10,6 @@
     "button"
   ],
   "dependencies": {
-    "@bemoid/function-unit": "^0.1.0",
     "@bemoid/function-color": "^0.1.0",
     "@bemoid/mixin-declarations": "^0.1.0"
   },

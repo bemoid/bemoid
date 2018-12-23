@@ -4,26 +4,13 @@
 
 /// Converts pixel value into matching em values.
 ///
-/// @require {Variable} $font-size
 /// @return {Value}
 ///
 /// @example scss - example
-///   em(16px);
+///   em(16px, 16px);
 /// @example css - output
 ///   1em
-@function em($pixels, $context: false) {
-  $em-function-context: 16px !global;
-
-  @if not ($context) {
-    @if global-variable-exists('font-size') {
-      $context: $font-size;
-    }
-
-    @else {
-      $context: $em-function-context;
-    }
-  }
-
+@function em($pixels, $context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

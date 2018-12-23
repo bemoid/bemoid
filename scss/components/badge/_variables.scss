@@ -5,7 +5,7 @@
 /// Badge font size.
 ///
 /// @type {Value|Values}
-$badge-font-size: em(14px) !default;
+$badge-font-size: 0.8em !default;
 
 /// Badge text color.
 ///
@@ -20,7 +20,7 @@ $badge-background: color(gray-light) !default;
 /// Badge padding size.
 ///
 /// @type {Value|Values}
-$badge-padding: space(medium) !default;
+$badge-padding: 0.5em !default;
 
 /// Badge background color on hover.
 ///

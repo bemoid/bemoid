@@ -1,8 +1,10 @@
 /** @define space */
 
+@import 'variables';
+
 // Space
 //
-// Utility component for adding vertical spaces between elements.
+// Component for adding vertical spaces between elements.
 //
 // .space--xsmall  - Adds xsmall level of a vertical distance.
 // .space--small   - Adds small level of a vertical distance.
@@ -10,9 +12,9 @@
 // .space--xlarge  - Adds xlarge level of a vertical distance.
 // .space--xxlarge - Adds xxlarge level of a vertical distance.
 //
-// Markup: utilities/space/html/space.html
+// Markup: components/space/html/space.html
 //
-// Style guide: Utilities.Space
+// Style guide: Components.Space
 .space {
   $space: get($space-values, $space-value);
 

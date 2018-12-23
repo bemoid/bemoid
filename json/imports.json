@@ -8,17 +8,16 @@
   "objects": [
     "objects/container/container",
     "objects/flex/flex",
-    "objects/wrapper/wrapper",
-    "objects/segment/segment",
     "objects/waffle/waffle",
     "objects/list/list",
     "objects/image/image",
     "objects/media/media",
-    "objects/dropdown/dropdown",
-    "objects/heading/heading",
-    "objects/paragraph/paragraph"
+    "objects/dropdown/dropdown"
   ],
   "components": [
+    "components/space/space",
+    "components/spread/spread",
+    "components/elevator/elevator",
     "components/figure/figure",
     "components/table/table",
     "components/panel/panel",
@@ -36,14 +35,6 @@
     "components/blockquote/blockquote",
     "components/message/message",
     "components/divider/divider",
-    "components/content/content",
-    "components/group/group",
-    "components/space/space",
-    "components/spread/spread"
-  ],
-  "utilities": [
-    "utilities/hidden/hidden",
-    "utilities/visible/visible",
-    "utilities/elevator/elevator"
+    "components/group/group"
   ]
 }

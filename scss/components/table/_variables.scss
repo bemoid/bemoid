@@ -5,7 +5,7 @@
 /// Padding size in each table cell.
 ///
 /// @type {Value|Values}
-$table-padding: space(medium) space(large) !default;
+$table-padding: 0.5em 1em !default;
 
 /// Border width on table cells.
 ///
@@ -30,7 +30,7 @@ $table-heading-background: color(gray-lighter) !default;
 /// Padding size in each condensed table cell.
 ///
 /// @type {Value|Values}
-$table-condense-padding: space(small) space(medium) !default;
+$table-condense-padding: 0.3em 0.5em !default;
 
 /// Background of the striped table even rows.
 ///

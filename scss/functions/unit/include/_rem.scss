@@ -4,26 +4,13 @@
 
 /// Converts pixel value into matching rem values.
 ///
-/// @require {Variable} $font-size
 /// @return {Value}
 ///
 /// @example scss - example
-///   rem(16px);
+///   rem(16px, 16px);
 /// @example css - output
 ///   1rem
-@function rem($pixels, $context: false) {
-  $rem-function-context: 16px !global;
-
-  @if not ($context) {
-    @if global-variable-exists('font-size') {
-      $context: $font-size;
-    }
-
-    @else {
-      $context: $rem-function-context;
-    }
-  }
-
+@function rem($pixels, $context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

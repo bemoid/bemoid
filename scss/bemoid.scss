@@ -7,17 +7,16 @@
 // Objects
 @import 'objects/container/container';
 @import 'objects/flex/flex';
-@import 'objects/wrapper/wrapper';
-@import 'objects/segment/segment';
 @import 'objects/waffle/waffle';
 @import 'objects/list/list';
 @import 'objects/image/image';
 @import 'objects/media/media';
 @import 'objects/dropdown/dropdown';
-@import 'objects/heading/heading';
-@import 'objects/paragraph/paragraph';
 
 // Components
+@import 'components/space/space';
+@import 'components/spread/spread';
+@import 'components/elevator/elevator';
 @import 'components/figure/figure';
 @import 'components/table/table';
 @import 'components/panel/panel';
@@ -35,12 +34,4 @@
 @import 'components/blockquote/blockquote';
 @import 'components/message/message';
 @import 'components/divider/divider';
-@import 'components/content/content';
 @import 'components/group/group';
-@import 'components/space/space';
-@import 'components/spread/spread';
-
-// Utilities
-@import 'utilities/hidden/hidden';
-@import 'utilities/visible/visible';
-@import 'utilities/elevator/elevator';

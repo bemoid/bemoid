@@ -10,8 +10,6 @@
     "flex"
   ],
   "dependencies": {
-    "@bemoid/function-space": "^0.1.0",
-    "@bemoid/function-breakpoint": "^0.1.0",
     "@bemoid/mixin-breakpoint": "^0.1.0"
   },
   "version": "0.1.0",

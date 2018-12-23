@@ -12,17 +12,17 @@ $divider-badge-sizes: (
   small: (
     'width': 1.1rem,
     'height': 1.1rem,
-    'font-size': em(12px)
+    'font-size': 0.8em
   ),
   medium: (
     'width': 1.25rem,
     'height': 1.25rem,
-    'font-size': em(14px)
+    'font-size': 1em
   ),
   large: (
     'width': 1.5rem,
     'height': 1.5rem,
-    'font-size': em(16px)
+    'font-size': 1.5em
   ),
 ) !default;
 
