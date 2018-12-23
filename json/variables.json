@@ -11,13 +11,6 @@
       "name": "breakpoint-offset"
     }
   ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
-    }
-  ],
   "elevator": [
     {
       "variable": "$elevator-values",
@@ -30,16 +23,11 @@
       "name": "elevator-value"
     }
   ],
-  "space": [
+  "color": [
     {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
     }
   ],
   "radius": [
@@ -59,6 +47,23 @@
       "variable": "$spread-values",
       "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
       "name": "spread-values"
+    },
+    {
+      "variable": "$spread-value",
+      "value": "medium !default",
+      "name": "spread-value"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: em(3px),\n  small: em(6px),\n  medium: em(9px),\n  large: em(18px),\n  xlarge: em(24px),\n  xxlarge: em(36px),\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
     }
   ],
   "transition": [
@@ -76,23 +81,6 @@
       "variable": "$transition-value",
       "value": "normal !default",
       "name": "transition-value"
-    }
-  ],
-  "link": [
-    {
-      "variable": "$link-color",
-      "value": "lighten(color(black), 15%) !default",
-      "name": "link-color"
-    },
-    {
-      "variable": "$link-decoration",
-      "value": "underline !default",
-      "name": "link-decoration"
-    },
-    {
-      "variable": "$link-hover-color",
-      "value": "darken(color(black), 10%) !default",
-      "name": "link-hover-color"
     }
   ],
   "heading": [
@@ -132,16 +120,21 @@
       "name": "heading-margin"
     }
   ],
-  "container": [
+  "link": [
     {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
+      "variable": "$link-color",
+      "value": "lighten(color(black), 15%) !default",
+      "name": "link-color"
     },
     {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
+      "variable": "$link-decoration",
+      "value": "underline !default",
+      "name": "link-decoration"
+    },
+    {
+      "variable": "$link-hover-color",
+      "value": "darken(color(black), 10%) !default",
+      "name": "link-hover-color"
     }
   ],
   "line": [
@@ -181,6 +174,18 @@
       "variable": "$font-family-monospace",
       "value": "'Lucida Console', 'Monaco', monospace !default",
       "name": "font-family-monospace"
+    }
+  ],
+  "container": [
+    {
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
+    },
+    {
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
     }
   ],
   "flex": [
@@ -236,23 +241,18 @@
       "name": "image-radius-circular"
     }
   ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
   "paragraph": [
     {
       "variable": "$paragraph-margin",
       "value": "0 !default",
       "name": "paragraph-margin"
-    }
-  ],
-  "segment": [
-    {
-      "variable": "$segment-sizes",
-      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
-      "name": "segment-sizes"
-    },
-    {
-      "variable": "$segment-size",
-      "value": "large !default",
-      "name": "segment-size"
     }
   ],
   "media": [
@@ -272,11 +272,16 @@
       "name": "media-gutter"
     }
   ],
-  "list": [
+  "segment": [
     {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
+      "variable": "$segment-sizes",
+      "value": "(\n  'small': space(small),\n  'medium': space(medium),\n  'large': space(large),\n  'xlarge': space(xxlarge),\n) !default",
+      "name": "segment-sizes"
+    },
+    {
+      "variable": "$segment-size",
+      "value": "large !default",
+      "name": "segment-size"
     }
   ],
   "waffle": [
@@ -301,6 +306,95 @@
       "variable": "$wrapper-size",
       "value": "medium !default",
       "name": "wrapper-size"
+    }
+  ],
+  "badge": [
+    {
+      "variable": "$badge-font-size",
+      "value": "em(14px) !default",
+      "name": "badge-font-size"
+    },
+    {
+      "variable": "$badge-color",
+      "value": "color(black) !default",
+      "name": "badge-color"
+    },
+    {
+      "variable": "$badge-background",
+      "value": "color(gray-light) !default",
+      "name": "badge-background"
+    },
+    {
+      "variable": "$badge-padding",
+      "value": "space(medium) !default",
+      "name": "badge-padding"
+    },
+    {
+      "variable": "$badge-hover-background",
+      "value": "darken(color(gray-light), 10%) !default",
+      "name": "badge-hover-background"
+    }
+  ],
+  "button": [
+    {
+      "variable": "$button-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-variants"
+    },
+    {
+      "variable": "$button-hollow-variants",
+      "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
+      "name": "button-hollow-variants"
+    },
+    {
+      "variable": "$button-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(medium) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
+      "name": "button-sizes"
+    },
+    {
+      "variable": "$button-size",
+      "value": "medium !default",
+      "name": "button-size"
+    },
+    {
+      "variable": "$button-variant",
+      "value": "neutral !default",
+      "name": "button-variant"
+    },
+    {
+      "variable": "$button-weight",
+      "value": "400 !default",
+      "name": "button-weight"
+    },
+    {
+      "variable": "$button-align",
+      "value": "center !default",
+      "name": "button-align"
+    },
+    {
+      "variable": "$button-wide-padding",
+      "value": "em(40px) !default",
+      "name": "button-wide-padding"
+    },
+    {
+      "variable": "$button-disabled-opacity",
+      "value": "0.5 !default",
+      "name": "button-disabled-opacity"
+    },
+    {
+      "variable": "$button-hollow-variant",
+      "value": "neutral !default",
+      "name": "button-hollow-variant"
+    },
+    {
+      "variable": "$button-hollow-border",
+      "value": "2px !default",
+      "name": "button-hollow-border"
+    },
+    {
+      "variable": "$button-hollow-background",
+      "value": "transparent !default",
+      "name": "button-hollow-background"
     }
   ],
   "blockquote": [
@@ -392,144 +486,11 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "button": [
-    {
-      "variable": "$button-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-variants"
-    },
-    {
-      "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
-      "name": "button-hollow-variants"
-    },
-    {
-      "variable": "$button-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': em(12px)\n  ),\n  small: (\n    'font-size': em(14px)\n  ),\n  medium: (\n    'font-size': em(16px),\n    'padding': space(medium) space(large)\n  ),\n  large: (\n    'font-size': em(18px)\n  ),\n  xlarge: (\n    'font-size': em(21px)\n  ),\n) !default",
-      "name": "button-sizes"
-    },
-    {
-      "variable": "$button-size",
-      "value": "medium !default",
-      "name": "button-size"
-    },
-    {
-      "variable": "$button-variant",
-      "value": "neutral !default",
-      "name": "button-variant"
-    },
-    {
-      "variable": "$button-weight",
-      "value": "400 !default",
-      "name": "button-weight"
-    },
-    {
-      "variable": "$button-align",
-      "value": "center !default",
-      "name": "button-align"
-    },
-    {
-      "variable": "$button-wide-padding",
-      "value": "em(40px) !default",
-      "name": "button-wide-padding"
-    },
-    {
-      "variable": "$button-disabled-opacity",
-      "value": "0.5 !default",
-      "name": "button-disabled-opacity"
-    },
-    {
-      "variable": "$button-hollow-variant",
-      "value": "neutral !default",
-      "name": "button-hollow-variant"
-    },
-    {
-      "variable": "$button-hollow-border",
-      "value": "2px !default",
-      "name": "button-hollow-border"
-    },
-    {
-      "variable": "$button-hollow-background",
-      "value": "transparent !default",
-      "name": "button-hollow-background"
-    }
-  ],
-  "badge": [
-    {
-      "variable": "$badge-font-size",
-      "value": "em(14px) !default",
-      "name": "badge-font-size"
-    },
-    {
-      "variable": "$badge-color",
-      "value": "color(black) !default",
-      "name": "badge-color"
-    },
-    {
-      "variable": "$badge-background",
-      "value": "color(gray-light) !default",
-      "name": "badge-background"
-    },
-    {
-      "variable": "$badge-padding",
-      "value": "space(medium) !default",
-      "name": "badge-padding"
-    },
-    {
-      "variable": "$badge-hover-background",
-      "value": "darken(color(gray-light), 10%) !default",
-      "name": "badge-hover-background"
-    }
-  ],
   "content": [
     {
       "variable": "$content-spacing",
       "value": "em(16px) !default",
       "name": "content-spacing"
-    }
-  ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "50% !default",
-      "name": "divider-badge-radius"
-    }
-  ],
-  "group": [
-    {
-      "variable": "$group-overlap",
-      "value": "-1px !default",
-      "name": "group-overlap"
-    },
-    {
-      "variable": "$group-inner-radius",
-      "value": "0 !default",
-      "name": "group-inner-radius"
-    },
-    {
-      "variable": "$group-outer-radius",
-      "value": "rem(4px) !default",
-      "name": "group-outer-radius"
-    },
-    {
-      "variable": "$group-divider-width",
-      "value": "6px !default",
-      "name": "group-divider-width"
     }
   ],
   "field": [
@@ -557,6 +518,40 @@
       "variable": "$field-caption-font-size",
       "value": "em(12px) !default",
       "name": "field-caption-font-size"
+    }
+  ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
+    }
+  ],
+  "divider": [
+    {
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': em(12px)\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': em(14px)\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': em(16px)\n  ),\n) !default",
+      "name": "divider-badge-sizes"
+    },
+    {
+      "variable": "$divider-badge-size",
+      "value": "medium !default",
+      "name": "divider-badge-size"
+    },
+    {
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
+    },
+    {
+      "variable": "$divider-badge-radius",
+      "value": "50% !default",
+      "name": "divider-badge-radius"
     }
   ],
   "form": [
@@ -589,6 +584,28 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
+    }
+  ],
+  "group": [
+    {
+      "variable": "$group-overlap",
+      "value": "-1px !default",
+      "name": "group-overlap"
+    },
+    {
+      "variable": "$group-inner-radius",
+      "value": "0 !default",
+      "name": "group-inner-radius"
+    },
+    {
+      "variable": "$group-outer-radius",
+      "value": "rem(4px) !default",
+      "name": "group-outer-radius"
+    },
+    {
+      "variable": "$group-divider-width",
+      "value": "6px !default",
+      "name": "group-divider-width"
     }
   ],
   "input": [
@@ -626,62 +643,6 @@
       "variable": "$input-focus-border-color",
       "value": "color(info) !default",
       "name": "input-focus-border-color"
-    }
-  ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
-  "modal": [
-    {
-      "variable": "$modal-padding",
-      "value": "1.5rem !default",
-      "name": "modal-padding"
-    },
-    {
-      "variable": "$modal-position-top",
-      "value": "0",
-      "name": "modal-position-top"
-    },
-    {
-      "variable": "$modal-position-left",
-      "value": "0",
-      "name": "modal-position-left"
-    },
-    {
-      "variable": "$modal-zindex",
-      "value": "-1 !default",
-      "name": "modal-zindex"
-    },
-    {
-      "variable": "$modal-active-zindex",
-      "value": "100 !default",
-      "name": "modal-active-zindex"
-    }
-  ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "em(14px) !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
     }
   ],
   "message": [
@@ -726,6 +687,62 @@
       "name": "message-hollow-border-style"
     }
   ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "em(14px) !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
+    }
+  ],
+  "modal": [
+    {
+      "variable": "$modal-padding",
+      "value": "1.5rem !default",
+      "name": "modal-padding"
+    },
+    {
+      "variable": "$modal-position-top",
+      "value": "0",
+      "name": "modal-position-top"
+    },
+    {
+      "variable": "$modal-position-left",
+      "value": "0",
+      "name": "modal-position-left"
+    },
+    {
+      "variable": "$modal-zindex",
+      "value": "-1 !default",
+      "name": "modal-zindex"
+    },
+    {
+      "variable": "$modal-active-zindex",
+      "value": "100 !default",
+      "name": "modal-active-zindex"
+    }
+  ],
+  "overlay": [
+    {
+      "variable": "$overlay-background",
+      "value": "color(black) !default",
+      "name": "overlay-background"
+    },
+    {
+      "variable": "$overlay-opacity",
+      "value": "0.66 !default",
+      "name": "overlay-opacity"
+    }
+  ],
   "panel": [
     {
       "variable": "$panel-border",
@@ -746,77 +763,6 @@
       "variable": "$panel-scrollable-height",
       "value": "300px !default",
       "name": "panel-scrollable-height"
-    }
-  ],
-  "table": [
-    {
-      "variable": "$table-padding",
-      "value": "space(medium) space(large) !default",
-      "name": "table-padding"
-    },
-    {
-      "variable": "$table-border-width",
-      "value": "1px !default",
-      "name": "table-border-width"
-    },
-    {
-      "variable": "$table-border-style",
-      "value": "solid !default",
-      "name": "table-border-style"
-    },
-    {
-      "variable": "$table-border-color",
-      "value": "color(gray-light) !default",
-      "name": "table-border-color"
-    },
-    {
-      "variable": "$table-heading-background",
-      "value": "color(gray-lighter) !default",
-      "name": "table-heading-background"
-    },
-    {
-      "variable": "$table-condense-padding",
-      "value": "space(small) space(medium) !default",
-      "name": "table-condense-padding"
-    },
-    {
-      "variable": "$table-stripe-background",
-      "value": "lighten(color(gray-lighter), 1%) !default",
-      "name": "table-stripe-background"
-    },
-    {
-      "variable": "$table-hoverable-background",
-      "value": "color(gray-lighter) !default",
-      "name": "table-hoverable-background"
-    }
-  ],
-  "overlay": [
-    {
-      "variable": "$overlay-background",
-      "value": "color(black) !default",
-      "name": "overlay-background"
-    },
-    {
-      "variable": "$overlay-opacity",
-      "value": "0.66 !default",
-      "name": "overlay-opacity"
-    }
-  ],
-  "select": [
-    {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
-      "name": "select-icon"
-    },
-    {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
-    },
-    {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
     }
   ],
   "radio": [
@@ -869,6 +815,65 @@
       "variable": "$radio-hover-outer-background",
       "value": "transparentize(color(info), 0.9) !default",
       "name": "radio-hover-outer-background"
+    }
+  ],
+  "select": [
+    {
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
+      "name": "select-icon"
+    },
+    {
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
+    },
+    {
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
+    }
+  ],
+  "table": [
+    {
+      "variable": "$table-padding",
+      "value": "space(medium) space(large) !default",
+      "name": "table-padding"
+    },
+    {
+      "variable": "$table-border-width",
+      "value": "1px !default",
+      "name": "table-border-width"
+    },
+    {
+      "variable": "$table-border-style",
+      "value": "solid !default",
+      "name": "table-border-style"
+    },
+    {
+      "variable": "$table-border-color",
+      "value": "color(gray-light) !default",
+      "name": "table-border-color"
+    },
+    {
+      "variable": "$table-heading-background",
+      "value": "color(gray-lighter) !default",
+      "name": "table-heading-background"
+    },
+    {
+      "variable": "$table-condense-padding",
+      "value": "space(small) space(medium) !default",
+      "name": "table-condense-padding"
+    },
+    {
+      "variable": "$table-stripe-background",
+      "value": "lighten(color(gray-lighter), 1%) !default",
+      "name": "table-stripe-background"
+    },
+    {
+      "variable": "$table-hoverable-background",
+      "value": "color(gray-lighter) !default",
+      "name": "table-hoverable-background"
     }
   ]
 }

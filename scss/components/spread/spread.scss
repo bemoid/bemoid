@@ -14,14 +14,28 @@
 //
 // Style guide: Utilities.Gutter
 .spread {
+  $spread: get($spread-values, $spread-value);
+
   & > * + * {
-    margin-left: 0;
+    margin-left: $spread;
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    &\@#{$breakpoint} {
+      @include breakpoint($breakpoint up) {
+        & > * + * {
+          margin-left: $spread;
+        }
+      }
+    }
   }
 
   @each $size, $declaration in $spread-values {
-    &--#{$size} {
-      & > * + * {
-        margin-left: $declaration;
+    @if $size != $space-value {
+      &--#{$size} {
+        & > * + * {
+          margin-left: $declaration;
+        }
       }
     }
   }

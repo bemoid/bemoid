@@ -38,10 +38,10 @@
     "components/divider/divider",
     "components/content/content",
     "components/group/group",
-    "components/space/space"
+    "components/space/space",
+    "components/spread/spread"
   ],
   "utilities": [
-    "utilities/spread/spread",
     "utilities/radius/radius",
     "utilities/hidden/hidden",
     "utilities/visible/visible",

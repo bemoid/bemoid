@@ -19,3 +19,8 @@ $spread-values: (
   xlarge: em(24px),
   xxlarge: em(36px),
 ) !default;
+
+/// Default value of spread.
+///
+/// @type {Keyword}
+$spread-value: medium !default;
