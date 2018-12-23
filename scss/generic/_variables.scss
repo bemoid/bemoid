@@ -2,15 +2,15 @@
 /// @group Generic
 ////
 
-/// Base line height determines the basic unit of vertical rhythm.
-///
-/// @type {Number}
-$line-height: 1.5 !default;
-
 /// Base font size set on the root html element.
 ///
 /// @type {Value}
 $font-size: 16px !default;
+
+/// Base line height determines the basic unit of vertical rhythm.
+///
+/// @type {Number}
+$font-line-height: 1.5 !default;
 
 /// Base font size set on the root html element.
 ///
