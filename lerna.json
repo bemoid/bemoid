@@ -1,20 +1,17 @@
 {
-  "version": "independent",
   "command": {
     "publish": {
       "ignoreChanges": [
-        "*.md"
+        "*.md",
+        "*.txt"
       ]
     }
   },
   "packages": [
     "scss/functions/*",
     "scss/mixins/*",
-    "scss/variables",
     "scss/generic",
     "scss/objects/*",
-    "scss/structures/*",
-    "scss/components/*",
-    "scss/utilities/*"
+    "scss/components/*"
   ]
 }
