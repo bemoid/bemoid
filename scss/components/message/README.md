@@ -1,6 +1,6 @@
 # Message
 
-Component for displaying emphasized text informations. Handy for catching user attention on important information.
+Component for displaying emphasized text information. Handy for catching user attention on important information.
 
 ## Installation
 

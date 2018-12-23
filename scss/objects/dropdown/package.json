@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/dropdown",
-  "description": "The Bemoid Dropdown component.",
+  "description": "Component for creating interactive hidden panels",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "dropdown.scss",

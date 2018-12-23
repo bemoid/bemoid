@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/blockqoute",
-  "description": "Blockqoute component for defining a block of text that is a direct quotation",
+  "description": "Component for defining a block of text that is a direct quotation",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "blockqoute.scss",

@@ -1,12 +1,12 @@
 ---
 title: Figure
-description: Component for representing graphics, frequently with a caption.
+description: Component for representing images, frequently with a caption
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for representing graphics, frequently with a caption.
+Component for representing images, frequently with a caption.
 
 ## Usage
 

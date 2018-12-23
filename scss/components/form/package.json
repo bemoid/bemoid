@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/form",
-  "description": "The Bemoid Form component.",
+  "description": "Component which structures form interactive controls like fields, selects or checkboxes",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "form.scss",

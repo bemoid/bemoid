@@ -1,6 +1,6 @@
 ---
 title: Waffle
-description: Component for providing all-directional gutter around collection of elements..
+description: Component for providing all-directional gutter around collection of elements
 group: Objects
 layout: docs.html
 algolia: true

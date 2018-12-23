@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/divider",
-  "description": "Divider component for dividing group elements with space and centered, labeled badge",
+  "description": "Component for dividing group elements with space and labeled badge",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "divider.scss",

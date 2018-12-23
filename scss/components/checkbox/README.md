@@ -1,6 +1,6 @@
 # Checkbox
 
-Component for selectable input fields.
+Component for creating selectable input fields.
 
 ## Installation
 

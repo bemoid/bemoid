@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/checkbox",
-  "description": "Checkbox component for selectable input fields",
+  "description": "Component for creating selectable input fields",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "checkbox.scss",

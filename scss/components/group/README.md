@@ -1,6 +1,6 @@
 # Group
 
-Component for grouping together the other components into a single interface.
+Component for grouping together other components into a single interface.
 
 ## Installation
 

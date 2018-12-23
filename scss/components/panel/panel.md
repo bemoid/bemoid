@@ -1,6 +1,6 @@
 ---
 title: Panel
-description: Encloses content in visualy separated sections.
+description: Encloses content in visualy separated sections
 group: Components
 layout: docs.html
 algolia: true

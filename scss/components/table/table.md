@@ -1,6 +1,6 @@
 ---
 title: Table
-description: Component for representing a tabular data.
+description: Component for representing a tabular data
 group: Components
 layout: docs.html
 algolia: true

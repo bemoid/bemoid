@@ -1,6 +1,6 @@
 # Overlay
 
-Component for large dialog prompts which temporary covers entire viewport.
+Component for curtaining a view with semi-trasparent panel.
 
 ## Installation
 

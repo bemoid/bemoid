@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/input",
-  "description": "Input component for providing a visual look to the field inputs",
+  "description": "Component for providing a visual look to the field inputs",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "input.scss",

@@ -1,6 +1,6 @@
 # Elevator
 
-Utility component for adding various levels of a shadow.
+Component for adding various levels of a shadow.
 
 ## Installation
 

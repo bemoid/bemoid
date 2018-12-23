@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/list",
-  "description": "The Bemoid List component.",
+  "description": "Component for representing a list of items",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "list.scss",

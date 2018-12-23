@@ -1,6 +1,6 @@
 ---
 title: Blockquote
-description: Defines a block of text that is a direct quotation
+description: Component for defining a block of text that is a direct quotation
 group: Components
 layout: docs.html
 algolia: true

@@ -1,6 +1,6 @@
 # Container
 
-Component for limiting spreading of the internal components to a certain width.
+Component for limiting spreading of the internal objects to a certain width.
 
 ## Installation
 

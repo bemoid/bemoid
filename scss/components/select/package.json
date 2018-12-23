@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/select",
-  "description": "The Bemoid Select component.",
+  "description": "Component for creating selectable field inputs",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "select.scss",

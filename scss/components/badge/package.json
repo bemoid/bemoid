@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/badge",
-  "description": "The Bemoid Badge component.",
+  "description": "Component for creating labelized markers",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "badge.scss",

@@ -1,6 +1,6 @@
 # Input
 
-Component for stylizing choosable field inputs, where the user can choose one of multiple choices from a list.
+Component for creating choosable field inputs.
 
 ## Installation
 

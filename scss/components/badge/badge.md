@@ -1,12 +1,12 @@
 ---
 title: Badge
-description: Small inline components for creating labeled markers.
+description: Component for creating labelized markers
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Small inline components for creating labeled markers.
+Component for creating labelized markers.
 
 ## Usage
 

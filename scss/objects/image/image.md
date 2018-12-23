@@ -1,6 +1,6 @@
 ---
 title: Image
-description: Component for controlling images.
+description: Component for controlling images
 group: Objects
 layout: docs.html
 algolia: true

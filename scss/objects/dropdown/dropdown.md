@@ -1,6 +1,6 @@
 ---
 title: Dropdown
-description: Component for creating interacive hidden panels.
+description: Component for creating interactive hidden panels
 group: Objects
 layout: docs.html
 algolia: true

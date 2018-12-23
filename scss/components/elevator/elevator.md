@@ -1,12 +1,12 @@
 ---
 title: Elevator
-description: Component for providing visual inner space for the element.
-group: Utilities
+description: Component for adding various levels of a shadow
+group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for providing visual inner space for the element.
+Component for adding various levels of a shadow.
 
 ## Styleguide
 

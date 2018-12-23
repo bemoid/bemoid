@@ -1,12 +1,12 @@
 ---
 title: Space
-description: Utility component for adding vertical spaces between elements.
-group: Utilities
+description: Component for adding vertical spaces between elements
+group: Component
 layout: docs.html
 algolia: true
 ---
 
-Utility component for adding vertical spaces between elements.
+Component for adding vertical spaces between elements.
 
 ## Styleguide
 

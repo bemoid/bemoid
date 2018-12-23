@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/panel",
-  "description": "The Bemoid Panel component.",
+  "description": "Encloses content in visualy separated sections",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "panel.scss",

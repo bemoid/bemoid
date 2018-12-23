@@ -1,6 +1,6 @@
 # Space
 
-Utility component for adding vertical spaces between elements.
+Component for adding vertical spaces between elements.
 
 ## Installation
 

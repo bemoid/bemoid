@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/elevator",
-  "description": "The Bemoid Elevation utility.",
+  "description": "Component for adding various levels of a shadow",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "elevator.scss",

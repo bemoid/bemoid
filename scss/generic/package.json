@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/generic",
-  "description": "The Bemoid generic styles.",
+  "description": "Module for providing normalization and basic generic styles",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "generic.scss",

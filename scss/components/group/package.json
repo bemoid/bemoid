@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/group",
-  "description": "Group component for grouping together the other components into a single interface",
+  "description": "Component for grouping together other components into a single interface",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "group.scss",

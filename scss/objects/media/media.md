@@ -1,6 +1,6 @@
 ---
 title: Media
-description: Component for displaying a side element alongside with the content.
+description: Component for displaying a side element alongside with the content
 group: Objects
 layout: docs.html
 algolia: true

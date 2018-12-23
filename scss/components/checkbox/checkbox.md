@@ -1,12 +1,12 @@
 ---
 title: Checkbox
-description: Component for stylizing selectable input fields
+description: Component for creating selectable input fields
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for stylizing selectable input fields, where the user can select multiple choices from a list.
+Component for creating selectable input fields, where the user can select multiple choices from a list.
 
 ## Usage
 

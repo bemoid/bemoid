@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/space",
-  "description": "The Bemoid Spacing utility.",
+  "description": "Component for adding vertical spaces between elements",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "space.scss",

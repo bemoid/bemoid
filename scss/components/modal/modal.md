@@ -1,6 +1,6 @@
 ---
 title: Modal
-description: Component for large dialog prompts which temporary covers entire viewport.
+description: Component for large dialog prompts which temporary covers entire viewport
 group: Components
 layout: docs.html
 algolia: true

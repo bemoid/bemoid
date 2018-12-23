@@ -1,12 +1,12 @@
 ---
 title: Input
-description: Provides a visual look to the field inputs.
+description: Component for providing a visual look to the field inputs
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Provides a visual look to the field inputs.
+Component for providing a visual look to the field inputs.
 
 ## Usage
 

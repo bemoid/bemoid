@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/container",
-  "description": "The Bemoid Container component.",
+  "description": "Component for limiting spreading of the internal objects to a certain width",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "container.scss",

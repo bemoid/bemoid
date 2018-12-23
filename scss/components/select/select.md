@@ -1,6 +1,6 @@
 ---
 title: Message
-description: Component for creating selectable field inputs.
+description: Component for creating selectable field inputs
 group: Components
 layout: docs.html
 algolia: true

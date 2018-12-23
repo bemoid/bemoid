@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/modal",
-  "description": "The Bemoid Modal component.",
+  "description": "Component for large dialog prompts which temporary covers entire viewport",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "modal.scss",

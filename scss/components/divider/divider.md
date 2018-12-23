@@ -1,12 +1,12 @@
 ---
 title: Divider
-description: Component for dividing group elements with space and centered, labeled badge.
+description: Component for dividing group elements with space and labeled badge
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for dividing a group of elements with space and centered labeled badge.
+Component for dividing group elements with space and labeled badge. Especially useful in pair with group component.
 
 ## Usage
 

@@ -1,12 +1,12 @@
 ---
 title: Label
-description: Provides an appearance for field labels.
+description: Component for providing an appearance for field labels
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Simple component for providing an appearance for field labels.
+Component for providing an appearance for field labels.
 
 ## Usage
 

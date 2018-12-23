@@ -1,6 +1,6 @@
 ---
 title: List
-description: Component for representing a list of items.
+description: Component for representing a list of items
 group: Objects
 layout: docs.html
 algolia: true

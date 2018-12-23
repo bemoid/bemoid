@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/functions",
-  "description": "The Bemoid functions.",
+  "description": "Collection of various helper functions",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "functions.scss",

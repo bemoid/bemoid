@@ -1,6 +1,6 @@
 # Divider
 
-Component for dividing group elements with space and centered, labeled badge.
+Component for dividing group elements with space and labeled badge.
 
 ## Installation
 

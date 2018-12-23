@@ -1,12 +1,12 @@
 ---
 title: Field
-description: Component for creating various form fields.
+description: Component for creating various form fields
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for creating various form fields.
+Component for creating various form fields. Controls size, status and behaviour of inputs.
 
 ## Usage
 

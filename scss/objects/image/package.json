@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/image",
-  "description": "The Bemoid Image component.",
+  "description": "Component for controlling images",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "image.scss",

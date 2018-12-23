@@ -1,6 +1,6 @@
 ---
 title: Gutter
-description: Component for providing horizontal gutter around collection of elements.
+description: Component for providing horizontal gutter around collection of elements
 group: Objects
 layout: docs.html
 algolia: true

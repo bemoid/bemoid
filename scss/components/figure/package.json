@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/figure",
-  "description": "The Bemoid Figure component.",
+  "description": "Component for representing images, frequently with a caption",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "figure.scss",

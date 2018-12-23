@@ -1,6 +1,6 @@
 ---
 title: Form
-description: Component which structures form interactive controls like fields, selects or checkboxes.
+description: Component which structures form interactive controls like fields, selects or checkboxes
 group: Components
 layout: docs.html
 algolia: true

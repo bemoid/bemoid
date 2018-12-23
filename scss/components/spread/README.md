@@ -1,6 +1,6 @@
 # Gutter
 
-Utility component for adding horizontal spaces between elements.
+Component for adding horizontal spaces between elements.
 
 ## Installation
 

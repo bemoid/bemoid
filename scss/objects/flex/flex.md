@@ -1,12 +1,12 @@
 ---
 title: Flex
-description: Grid system based on flexbox for building complex layouts.
+description: Grid system based on flexbox for building complex layouts
 group: Objects
 layout: docs.html
 algolia: true
 ---
 
-Flex system based on flexbox for building complex layouts.
+Grid system based on flexbox for building complex layouts.
 
 ## Usage
 

@@ -1,12 +1,12 @@
 ---
 title: Radio
-description: Component for stylizing choosable field inputs.
+description: Component for creating choosable field inputs
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for stylizing choosable field inputs, where the user can choose one of multiple choices from a list.
+Component for creating choosable field inputs, where the user can choose one of multiple choices from a list.
 
 ## Usage
 

@@ -1,12 +1,12 @@
 ---
 title: Gutter
-description: Utility component for adding horizontal spaces between elements.
-group: Utilities
+description: Component for adding horizontal spaces between elements
+group: Component
 layout: docs.html
 algolia: true
 ---
 
-Utility component for adding horizontal spaces between elements.
+Component for adding horizontal spaces between elements.
 
 ## Styleguide
 

@@ -1,6 +1,6 @@
 # List
 
-Component for controlling images.
+Component for representing a list of items.
 
 ## Installation
 

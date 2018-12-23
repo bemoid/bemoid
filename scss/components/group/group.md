@@ -1,6 +1,6 @@
 ---
 title: Group
-description: Component for grouping together other components into a single interface.
+description: Component for grouping together other components into a single interface
 group: Components
 layout: docs.html
 algolia: true

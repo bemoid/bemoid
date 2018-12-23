@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/overlay",
-  "description": "The Bemoid Overlay component.",
+  "description": "Component for curtaining a view with semi-trasparent panel",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "overlay.scss",

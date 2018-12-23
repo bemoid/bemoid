@@ -1,12 +1,12 @@
 ---
 title: Overlay
-description: Curtaining a view with semi-trasparent panel so users won't be distracted by content underneath.
+description: Component for curtaining a view with semi-trasparent panel
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Curtaining a view with semi-trasparent panel so users won't be distracted by content underneath.
+Component for curtaining a view with semi-trasparent panel so users won't be distracted by content underneath.
 
 ## Usage
 

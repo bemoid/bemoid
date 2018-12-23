@@ -1,6 +1,6 @@
 # Badge
 
-Small inline components for creating labelized markers.
+Component for creating labelized markers.
 
 ## Installation
 

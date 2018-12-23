@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/button",
-  "description": "Button component for creating standard clickable buttons",
+  "description": "Component for creating standard clickable buttons",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
   "main": "button.scss",

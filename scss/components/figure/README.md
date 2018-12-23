@@ -1,6 +1,6 @@
 # Figure
 
-Component for representing graphics, frequently with a caption.
+Component for representing images, frequently with a caption.
 
 ## Installation
 
