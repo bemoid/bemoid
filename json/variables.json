@@ -11,6 +11,13 @@
       "name": "breakpoint-offset"
     }
   ],
+  "color": [
+    {
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
+    }
+  ],
   "font": [
     {
       "variable": "$font-size",
@@ -97,13 +104,6 @@
       "name": "link-hover-color"
     }
   ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
-    }
-  ],
   "container": [
     {
       "variable": "$container-sizes",
@@ -114,18 +114,6 @@
       "variable": "$container-size",
       "value": "expand !default",
       "name": "container-size"
-    }
-  ],
-  "flex": [
-    {
-      "variable": "$flex-columns",
-      "value": "12 !default",
-      "name": "flex-columns"
-    },
-    {
-      "variable": "$flex-sizes",
-      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "flex-sizes"
     }
   ],
   "dropdown": [
@@ -157,11 +145,28 @@
       "name": "gutter-size"
     }
   ],
-  "list": [
+  "flex": [
     {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
+      "variable": "$flex-columns",
+      "value": "12 !default",
+      "name": "flex-columns"
+    },
+    {
+      "variable": "$flex-sizes",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "flex-sizes"
+    }
+  ],
+  "image": [
+    {
+      "variable": "$image-radius-rounded",
+      "value": "0.3rem !default",
+      "name": "image-radius-rounded"
+    },
+    {
+      "variable": "$image-radius-circular",
+      "value": "50% !default",
+      "name": "image-radius-circular"
     }
   ],
   "media": [
@@ -176,6 +181,13 @@
       "name": "media-gutter"
     }
   ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -188,16 +200,36 @@
       "name": "waffle-size"
     }
   ],
-  "image": [
+  "blockquote": [
     {
-      "variable": "$image-radius-rounded",
-      "value": "0.3rem !default",
-      "name": "image-radius-rounded"
+      "variable": "$blockquote-margins",
+      "value": "0 !default",
+      "name": "blockquote-margins"
     },
     {
-      "variable": "$image-radius-circular",
-      "value": "50% !default",
-      "name": "image-radius-circular"
+      "variable": "$blockquote-background",
+      "value": "color(gray-lighter) !default",
+      "name": "blockquote-background"
+    },
+    {
+      "variable": "$blockquote-border-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-border-color"
+    },
+    {
+      "variable": "$blockquote-border-width",
+      "value": "0 0 0 0.3em !default",
+      "name": "blockquote-border-width"
+    },
+    {
+      "variable": "$blockquote-border-style",
+      "value": "solid !default",
+      "name": "blockquote-border-style"
+    },
+    {
+      "variable": "$blockquote-footer-color",
+      "value": "color(gray) !default",
+      "name": "blockquote-footer-color"
     }
   ],
   "badge": [
@@ -289,38 +321,6 @@
       "name": "button-hollow-background"
     }
   ],
-  "blockquote": [
-    {
-      "variable": "$blockquote-margins",
-      "value": "0 !default",
-      "name": "blockquote-margins"
-    },
-    {
-      "variable": "$blockquote-background",
-      "value": "color(gray-lighter) !default",
-      "name": "blockquote-background"
-    },
-    {
-      "variable": "$blockquote-border-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-border-color"
-    },
-    {
-      "variable": "$blockquote-border-width",
-      "value": "0 0 0 0.3em !default",
-      "name": "blockquote-border-width"
-    },
-    {
-      "variable": "$blockquote-border-style",
-      "value": "solid !default",
-      "name": "blockquote-border-style"
-    },
-    {
-      "variable": "$blockquote-footer-color",
-      "value": "color(gray) !default",
-      "name": "blockquote-footer-color"
-    }
-  ],
   "divider": [
     {
       "variable": "$divider-badge-sizes",
@@ -400,18 +400,6 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "figure": [
-    {
-      "variable": "$figure-text-align",
-      "value": "center !default",
-      "name": "figure-text-align"
-    },
-    {
-      "variable": "$figure-font-style",
-      "value": "italic !default",
-      "name": "figure-font-style"
-    }
-  ],
   "elevator": [
     {
       "variable": "$elevator-values",
@@ -449,6 +437,18 @@
       "variable": "$field-caption-font-size",
       "value": "0.8em !default",
       "name": "field-caption-font-size"
+    }
+  ],
+  "figure": [
+    {
+      "variable": "$figure-text-align",
+      "value": "center !default",
+      "name": "figure-text-align"
+    },
+    {
+      "variable": "$figure-font-style",
+      "value": "italic !default",
+      "name": "figure-font-style"
     }
   ],
   "group": [
@@ -537,23 +537,6 @@
       "name": "input-focus-border-color"
     }
   ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "0.8em !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
-    }
-  ],
   "modal": [
     {
       "variable": "$modal-padding",
@@ -579,6 +562,23 @@
       "variable": "$modal-active-zindex",
       "value": "100 !default",
       "name": "modal-active-zindex"
+    }
+  ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "0.8em !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
     }
   ],
   "message": [
@@ -635,50 +635,21 @@
       "name": "overlay-opacity"
     }
   ],
-  "panel": [
+  "select": [
     {
-      "variable": "$panel-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-border"
+      "variable": "$select-icon",
+      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
+      "name": "select-icon"
     },
     {
-      "variable": "$panel-background",
-      "value": "color(white) !default",
-      "name": "panel-background"
+      "variable": "$select-icon-space",
+      "value": "2.5em !default",
+      "name": "select-icon-space"
     },
     {
-      "variable": "$panel-segment-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-segment-border"
-    },
-    {
-      "variable": "$panel-scrollable-height",
-      "value": "300px !default",
-      "name": "panel-scrollable-height"
-    }
-  ],
-  "space": [
-    {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
-    }
-  ],
-  "spread": [
-    {
-      "variable": "$spread-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "spread-values"
-    },
-    {
-      "variable": "$spread-value",
-      "value": "medium !default",
-      "name": "spread-value"
+      "variable": "$select-icon-offset",
+      "value": "1em",
+      "name": "select-icon-offset"
     }
   ],
   "radio": [
@@ -733,21 +704,50 @@
       "name": "radio-hover-outer-background"
     }
   ],
-  "select": [
+  "panel": [
     {
-      "variable": "$select-icon",
-      "value": "'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSI3IiBzdHlsZT0iZmlsbDogY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTEuODI2LjE2NGMtLjE2NC0uMTY0LS40My0uMTY0LS41OTUgMEw2IDUuNDA0Ljc2LjE2NEMuNTk0IDAgLjMyNyAwIC4xNjMuMTY0IDAgLjMzIDAgLjU5NC4xNjMuNzZsNS41MyA1LjUyN2MuMDguMDgyLjE4NC4xMjMuMjk3LjEyMy4xMDIgMCAuMjE1LS4wNC4yOTctLjEyM0wxMS44MTUuNzZjLjE3NS0uMTY1LjE3NS0uNDMyLjAxLS41OTZ6Ii8+PC9zdmc+' !default",
-      "name": "select-icon"
+      "variable": "$panel-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-border"
     },
     {
-      "variable": "$select-icon-space",
-      "value": "2.5em !default",
-      "name": "select-icon-space"
+      "variable": "$panel-background",
+      "value": "color(white) !default",
+      "name": "panel-background"
     },
     {
-      "variable": "$select-icon-offset",
-      "value": "1em",
-      "name": "select-icon-offset"
+      "variable": "$panel-segment-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-segment-border"
+    },
+    {
+      "variable": "$panel-scrollable-height",
+      "value": "300px !default",
+      "name": "panel-scrollable-height"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
+    }
+  ],
+  "spread": [
+    {
+      "variable": "$spread-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "spread-values"
+    },
+    {
+      "variable": "$spread-value",
+      "value": "medium !default",
+      "name": "spread-value"
     }
   ],
   "table": [
