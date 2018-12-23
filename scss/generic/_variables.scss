@@ -1,0 +1,103 @@
+////
+/// @group Generic
+////
+
+/// Base line height determines the basic unit of vertical rhythm.
+///
+/// @type {Number}
+$line-height: 1.5 !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Value}
+$font-size: 16px !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Color}
+$font-color: lighten(color(black), 20%) !default;
+
+/// Antialiase fonts.
+///
+/// @type {Boolean}
+$font-antialiasing: true !default;
+
+/// Default font family.
+///
+/// @type {Value|Values}
+$font-family-primary: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Serif font family.
+///
+/// @type {Value|Values}
+$font-family-secondary: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif !default;
+
+/// Monospace font family.
+///
+/// @type {Value|Values}
+$font-family-monospace: 'Lucida Console', 'Monaco', monospace !default;
+
+/// Collection of heading sizes.
+///
+/// @link http://type-scale.com/
+/// @type {Map}
+/// @prop {Map} default
+/// @prop {Map} medium
+$heading-sizes: (
+  default: (
+    'h1': ('font-size': 2em),
+    'h2': ('font-size': 1.5em),
+    'h3': ('font-size': 1.25em),
+    'h4': ('font-size': 1em),
+    'h5': ('font-size': 0.8em),
+    'h6': ('font-size': 0.6em),
+  ),
+  medium: (
+    'h1': ('font-size': 2.5em),
+    'h2': ('font-size': 2em),
+    'h3': ('font-size': 1.5em),
+    'h4': ('font-size': 1.25em),
+    'h5': ('font-size': 0.8em),
+    'h6': ('font-size': 0.6em),
+  ),
+) !default;
+
+/// Default heading size.
+///
+/// @type {Keyword}
+$heading-size: default;
+
+/// Font family of headings.
+///
+/// @type {Keyword|Values}
+$heading-font-family: inherit !default;
+
+/// Text color of headings.
+///
+/// @type {Color}
+$heading-color: color(black) !default;
+
+/// Line height of headings.
+///
+/// @type {Number|Value}
+$heading-line-height: 1.25 !default;
+
+/// Font weight of headings.
+///
+/// @type {Number|Keyword}
+$heading-font-weight: 400 !default;
+
+/// Text color of anchors.
+///
+/// @type {Color}
+$link-color: lighten(color(black), 15%) !default;
+
+/// Text decoration of anchors.
+///
+/// @type {Keyword}
+$link-decoration: underline !default;
+
+/// Text color of anchors on hover.
+///
+/// @type {Color}
+$link-hover-color: darken(color(black), 10%) !default;

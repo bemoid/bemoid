@@ -1,4 +1,3 @@
-@import 'normalize';
-@import 'links/links';
-@import 'headings/headings';
-@import 'typography/typography';
+@import 'variables';
+@import 'include/normalize';
+@import 'include/typography';
