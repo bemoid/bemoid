@@ -11,11 +11,9 @@
     "extract:imports": "node build/extract.imports.js -i 'scss/bemoid.scss' -o 'json/imports.json'",
     "compile": "node-sass scss/bemoid.scss | node ./build/banner.js > css/bemoid.css",
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
-    "accessibility": "a11y scss/**/*.html",
     "lint": "stylelint 'scss/**/*.scss'",
-    "test": "npm run lint && npm run accessibility",
     "build": "npm run compile && npm run extract && npm run transform && npm run minify",
-    "publish": "npm run test && npm run build && lerna publish"
+    "publish": "npm run lint && npm run build && lerna publish"
   },
   "keywords": [
     "framework",
@@ -29,7 +27,6 @@
   "devDependencies": {
     "@bemoid/stylelint-config": "^0.1.0",
     "@bemoid/stylelint-config-scss": "^0.1.0",
-    "a11y": "^0.5.1",
     "async": "^2.6.1",
     "autoprefixer": "^9.1.5",
     "cssnano-cli": "^1.0.5",

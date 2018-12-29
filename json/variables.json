@@ -11,6 +11,54 @@
       "name": "breakpoint-offset"
     }
   ],
+  "color": [
+    {
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
+    }
+  ],
+  "container": [
+    {
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
+    },
+    {
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
+    }
+  ],
+  "flex": [
+    {
+      "variable": "$flex-columns",
+      "value": "12 !default",
+      "name": "flex-columns"
+    },
+    {
+      "variable": "$flex-sizes",
+      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "flex-sizes"
+    }
+  ],
+  "dropdown": [
+    {
+      "variable": "$dropdown-gap",
+      "value": "0.15rem !default",
+      "name": "dropdown-gap"
+    },
+    {
+      "variable": "$dropdown-max-width",
+      "value": "300px !default",
+      "name": "dropdown-max-width"
+    },
+    {
+      "variable": "$dropdown-min-width",
+      "value": "200px !default",
+      "name": "dropdown-min-width"
+    }
+  ],
   "font": [
     {
       "variable": "$font-size",
@@ -97,54 +145,6 @@
       "name": "link-hover-color"
     }
   ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
-    }
-  ],
-  "flex": [
-    {
-      "variable": "$flex-columns",
-      "value": "12 !default",
-      "name": "flex-columns"
-    },
-    {
-      "variable": "$flex-sizes",
-      "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "flex-sizes"
-    }
-  ],
-  "container": [
-    {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
-    },
-    {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
-    }
-  ],
-  "dropdown": [
-    {
-      "variable": "$dropdown-gap",
-      "value": "0.15rem !default",
-      "name": "dropdown-gap"
-    },
-    {
-      "variable": "$dropdown-max-width",
-      "value": "300px !default",
-      "name": "dropdown-max-width"
-    },
-    {
-      "variable": "$dropdown-min-width",
-      "value": "200px !default",
-      "name": "dropdown-min-width"
-    }
-  ],
   "gutter": [
     {
       "variable": "$gutter-sizes",
@@ -169,13 +169,6 @@
       "name": "image-radius-circular"
     }
   ],
-  "list": [
-    {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
-    }
-  ],
   "media": [
     {
       "variable": "$media-gutters",
@@ -186,6 +179,40 @@
       "variable": "$media-gutter",
       "value": "medium !default",
       "name": "media-gutter"
+    }
+  ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
+  "badge": [
+    {
+      "variable": "$badge-font-size",
+      "value": "0.8em !default",
+      "name": "badge-font-size"
+    },
+    {
+      "variable": "$badge-color",
+      "value": "color(black) !default",
+      "name": "badge-color"
+    },
+    {
+      "variable": "$badge-background",
+      "value": "color(gray-light) !default",
+      "name": "badge-background"
+    },
+    {
+      "variable": "$badge-padding",
+      "value": "0.5em !default",
+      "name": "badge-padding"
+    },
+    {
+      "variable": "$badge-hover-background",
+      "value": "darken(color(gray-light), 10%) !default",
+      "name": "badge-hover-background"
     }
   ],
   "waffle": [
@@ -289,33 +316,6 @@
       "name": "button-disabled-opacity"
     }
   ],
-  "badge": [
-    {
-      "variable": "$badge-font-size",
-      "value": "0.8em !default",
-      "name": "badge-font-size"
-    },
-    {
-      "variable": "$badge-color",
-      "value": "color(black) !default",
-      "name": "badge-color"
-    },
-    {
-      "variable": "$badge-background",
-      "value": "color(gray-light) !default",
-      "name": "badge-background"
-    },
-    {
-      "variable": "$badge-padding",
-      "value": "0.5em !default",
-      "name": "badge-padding"
-    },
-    {
-      "variable": "$badge-hover-background",
-      "value": "darken(color(gray-light), 10%) !default",
-      "name": "badge-hover-background"
-    }
-  ],
   "checkbox": [
     {
       "variable": "$checkbox-radius",
@@ -407,6 +407,33 @@
       "name": "elevator-value"
     }
   ],
+  "field": [
+    {
+      "variable": "$field-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': 0.5em\n  ),\n  small: (\n    'font-size': 0.6em\n  ),\n  medium: (\n    'font-size': 0.8em,\n    'padding': 0.3em 0.5em\n  ),\n  large: (\n    'font-size': 1em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "field-sizes"
+    },
+    {
+      "variable": "$field-size",
+      "value": "medium !default",
+      "name": "field-size"
+    },
+    {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
+      "variable": "$field-caption-untouched-color",
+      "value": "color(black) !default",
+      "name": "field-caption-untouched-color"
+    },
+    {
+      "variable": "$field-caption-font-size",
+      "value": "0.8em !default",
+      "name": "field-caption-font-size"
+    }
+  ],
   "figure": [
     {
       "variable": "$figure-text-align",
@@ -444,33 +471,6 @@
       "variable": "$form-legend-text-transform",
       "value": "uppercase !default",
       "name": "form-legend-text-transform"
-    }
-  ],
-  "field": [
-    {
-      "variable": "$field-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': 0.5em\n  ),\n  small: (\n    'font-size': 0.6em\n  ),\n  medium: (\n    'font-size': 0.8em,\n    'padding': 0.3em 0.5em\n  ),\n  large: (\n    'font-size': 1em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
-      "name": "field-sizes"
-    },
-    {
-      "variable": "$field-size",
-      "value": "medium !default",
-      "name": "field-size"
-    },
-    {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
-    },
-    {
-      "variable": "$field-caption-untouched-color",
-      "value": "color(black) !default",
-      "name": "field-caption-untouched-color"
-    },
-    {
-      "variable": "$field-caption-font-size",
-      "value": "0.8em !default",
-      "name": "field-caption-font-size"
     }
   ],
   "group": [
@@ -532,6 +532,33 @@
       "name": "input-focus-border-color"
     }
   ],
+  "modal": [
+    {
+      "variable": "$modal-padding",
+      "value": "1.5em !default",
+      "name": "modal-padding"
+    },
+    {
+      "variable": "$modal-position-top",
+      "value": "0",
+      "name": "modal-position-top"
+    },
+    {
+      "variable": "$modal-position-left",
+      "value": "0",
+      "name": "modal-position-left"
+    },
+    {
+      "variable": "$modal-zindex",
+      "value": "-1 !default",
+      "name": "modal-zindex"
+    },
+    {
+      "variable": "$modal-active-zindex",
+      "value": "100 !default",
+      "name": "modal-active-zindex"
+    }
+  ],
   "label": [
     {
       "variable": "$label-color",
@@ -591,31 +618,26 @@
       "name": "message-hollow-border-style"
     }
   ],
-  "modal": [
+  "panel": [
     {
-      "variable": "$modal-padding",
-      "value": "1.5em !default",
-      "name": "modal-padding"
+      "variable": "$panel-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-border"
     },
     {
-      "variable": "$modal-position-top",
-      "value": "0",
-      "name": "modal-position-top"
+      "variable": "$panel-background",
+      "value": "color(white) !default",
+      "name": "panel-background"
     },
     {
-      "variable": "$modal-position-left",
-      "value": "0",
-      "name": "modal-position-left"
+      "variable": "$panel-segment-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-segment-border"
     },
     {
-      "variable": "$modal-zindex",
-      "value": "-1 !default",
-      "name": "modal-zindex"
-    },
-    {
-      "variable": "$modal-active-zindex",
-      "value": "100 !default",
-      "name": "modal-active-zindex"
+      "variable": "$panel-scrollable-height",
+      "value": "300px !default",
+      "name": "panel-scrollable-height"
     }
   ],
   "radio": [
@@ -682,52 +704,6 @@
       "name": "overlay-opacity"
     }
   ],
-  "panel": [
-    {
-      "variable": "$panel-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-border"
-    },
-    {
-      "variable": "$panel-background",
-      "value": "color(white) !default",
-      "name": "panel-background"
-    },
-    {
-      "variable": "$panel-segment-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-segment-border"
-    },
-    {
-      "variable": "$panel-scrollable-height",
-      "value": "300px !default",
-      "name": "panel-scrollable-height"
-    }
-  ],
-  "space": [
-    {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
-    }
-  ],
-  "spread": [
-    {
-      "variable": "$spread-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "spread-values"
-    },
-    {
-      "variable": "$spread-value",
-      "value": "medium !default",
-      "name": "spread-value"
-    }
-  ],
   "select": [
     {
       "variable": "$select-icon",
@@ -743,6 +719,30 @@
       "variable": "$select-icon-offset",
       "value": "1em",
       "name": "select-icon-offset"
+    }
+  ],
+  "spread": [
+    {
+      "variable": "$spread-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "spread-values"
+    },
+    {
+      "variable": "$spread-value",
+      "value": "medium !default",
+      "name": "spread-value"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
     }
   ],
   "table": [
