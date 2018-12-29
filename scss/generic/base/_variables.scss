@@ -1,0 +1,38 @@
+////
+/// @group Generic
+////
+
+/// Base font size set on the root html element.
+///
+/// @type {Value}
+$font-size: 16px !default;
+
+/// Base line height determines the basic unit of vertical rhythm.
+///
+/// @type {Number}
+$font-line-height: 1.5 !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Color}
+$font-color: lighten(color(black), 20%) !default;
+
+/// Antialiase fonts.
+///
+/// @type {Boolean}
+$font-antialiasing: true !default;
+
+/// Default font family.
+///
+/// @type {Value|Values}
+$font-family-primary: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Serif font family.
+///
+/// @type {Value|Values}
+$font-family-secondary: 'Palatino Linotype', 'Book Antiqua', 'Palatino', 'Georgia', serif !default;
+
+/// Monospace font family.
+///
+/// @type {Value|Values}
+$font-family-monospace: 'Lucida Console', 'Monaco', monospace !default;

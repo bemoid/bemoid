@@ -1,0 +1,49 @@
+/// Collection of heading sizes.
+///
+/// @link http://type-scale.com/
+/// @type {Map}
+/// @prop {Map} default
+/// @prop {Map} medium
+$heading-sizes: (
+  default: (
+    'h1': ('font-size': 2em),
+    'h2': ('font-size': 1.5em),
+    'h3': ('font-size': 1.25em),
+    'h4': ('font-size': 1em),
+    'h5': ('font-size': 0.8em),
+    'h6': ('font-size': 0.6em),
+  ),
+  medium: (
+    'h1': ('font-size': 2.5em),
+    'h2': ('font-size': 2em),
+    'h3': ('font-size': 1.5em),
+    'h4': ('font-size': 1.25em),
+    'h5': ('font-size': 0.8em),
+    'h6': ('font-size': 0.6em),
+  ),
+) !default;
+
+/// Default heading size.
+///
+/// @type {Keyword}
+$heading-size: default;
+
+/// Font family of headings.
+///
+/// @type {Keyword|Values}
+$heading-font-family: inherit !default;
+
+/// Text color of headings.
+///
+/// @type {Color}
+$heading-color: color(black) !default;
+
+/// Line height of headings.
+///
+/// @type {Number|Value}
+$heading-line-height: 1.25 !default;
+
+/// Font weight of headings.
+///
+/// @type {Number|Keyword}
+$heading-font-weight: 400 !default;
