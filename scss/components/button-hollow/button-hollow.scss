@@ -1,0 +1,70 @@
+/** @define button */
+
+@import 'variables';
+
+// Button Hollow
+//
+// Component for creating hollowed variant of clickable buttons.
+//
+// .button-hollow--primary   - Primary variant of a button.
+// .button-hollow--secondary - Secondary variant of a button.
+// .button-hollow--success   - Success variant of a button.
+// .button-hollow--warning   - Warning variant of a button.
+// .button-hollow--info      - Info variant of a button.
+// .button-hollow--error     - Error variant of a button.
+//
+// Markup: components/button-hollow/html/button-hollow.html
+//
+// Styleguide: Components.Button
+.button-hollow {
+  $this: &;
+  $button: '.button';
+
+  $variant: map-get($button-hollow-variants, $button-hollow-variant);
+
+  border-width: $button-hollow-border;
+  border-style: solid;
+  background-color: $button-hollow-background;
+
+  @each $property, $value in $variant {
+    #{$property}: #{nth($value, 1)};
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-hollow-background;
+
+    @each $property, $value in $variant {
+      #{$property}: #{nth($value, length($value))};
+    }
+  }
+
+  @each $variant, $declarations in $button-hollow-variants {
+    @if $variant != $button-hollow-variant {
+      &#{$this}--#{$variant} {
+        $color: map-get($declarations, 'color');
+
+        @each $property, $value in $declarations {
+          #{$property}: #{nth($value, 1)};
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          @each $property, $value in $declarations {
+            #{$property}: #{nth($value, length($value))};
+          }
+
+          #{$button}__cover {
+            color: nth($color, length($color));
+          }
+        }
+
+        #{$button}__cover {
+          color: nth($color, 1);
+        }
+      }
+    }
+  }
+}

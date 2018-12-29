@@ -1,0 +1,64 @@
+/** @define button */
+
+@import 'variables';
+
+// Button Fill
+//
+// Component for creating a standard clickable buttons.
+//
+// .button-fill--primary   - Primary variant of a button.
+// .button-fill--secondary - Secondary variant of a button.
+// .button-fill--success   - Success variant of a button.
+// .button-fill--warning   - Warning variant of a button.
+// .button-fill--info      - Info variant of a button.
+// .button-fill--error     - Error variant of a button.
+//
+// Markup: components/button-fill/html/button-fill.html
+//
+// Styleguide: Components.Button
+.button-fill {
+  $this: &;
+  $button: '.button';
+
+  $variant: map-get($button-fill-variants, $button-fill-variant);
+
+  @each $property, $value in $variant {
+    #{$property}: #{nth($value, 1)};
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @each $property, $value in $variant {
+      #{$property}: #{nth($value, length($value))};
+    }
+  }
+
+  @each $variant, $declarations in $button-fill-variants {
+    @if $variant != $button-fill-variant {
+      &--#{$variant} {
+        $color: map-get($declarations, 'color');
+
+        @each $property, $value in $declarations {
+          #{$property}: #{nth($value, 1)};
+        }
+
+        #{$button}__cover {
+          color: nth($color, 1);
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          @each $property, $value in $declarations {
+            #{$property}: #{nth($value, length($value))};
+          }
+
+          #{$button}__cover {
+            color: nth($color, length($color));
+          }
+        }
+      }
+    }
+  }
+}

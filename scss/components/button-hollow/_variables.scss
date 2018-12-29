@@ -1,0 +1,65 @@
+////
+/// @group Button
+////
+
+/// Collection of hollowed button variants.
+///
+/// @type {Map}
+/// @prop {Map} primary
+/// @prop {Map} secondary
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$button-hollow-variants: (
+  neutral: (
+    'color': color(black) color(black),
+    'border-color': color(gray-light),
+    'background-color': transparent color(gray-light),
+  ),
+  primary: (
+    'color': color(primary) color(white),
+    'border-color': color(primary),
+    'background-color': transparent color(primary),
+  ),
+  secondary: (
+    'color': color(secondary) color(white),
+    'border-color': color(secondary),
+    'background-color': transparent color(secondary),
+  ),
+  success: (
+    'color': color(success) color(white),
+    'border-color': color(success),
+    'background-color': transparent color(success),
+  ),
+  warning: (
+    'color': color(warning) color(black),
+    'border-color': color(warning),
+    'background-color': transparent color(warning),
+  ),
+  info: (
+    'color': color(info) color(white),
+    'border-color': color(info),
+    'background-color': transparent color(info),
+  ),
+  error: (
+    'color': color(error) color(white),
+    'border-color': color(error),
+    'background-color': transparent color(error),
+  ),
+) !default;
+
+/// Default variant of the hollowed button.
+///
+/// @type {Keyword}
+$button-hollow-variant: neutral !default;
+
+/// Outline width of the hollow button.
+///
+/// @type {Value}
+$button-hollow-border: 2px !default;
+
+/// Backgound color of the hollow button.
+///
+/// @type {Color}
+$button-hollow-background: transparent !default;

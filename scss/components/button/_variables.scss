@@ -2,96 +2,6 @@
 /// @group Button
 ////
 
-/// Collection of button variants.
-///
-/// @type {Map}
-/// @prop {Map} primary
-/// @prop {Map} secondary
-/// @prop {Map} success
-/// @prop {Map} warning
-/// @prop {Map} info
-/// @prop {Map} error
-$button-variants: (
-  neutral: (
-    'color': color(black),
-    'background-color': color(gray-light) darken(color(gray-light), 5%),
-  ),
-  primary: (
-    'color': color(white),
-    'background-color': color(primary) darken(color(primary), 10%),
-  ),
-  secondary: (
-    'color': color(white),
-    'background-color': color(secondary) darken(color(secondary), 10%),
-  ),
-  success: (
-    'color': color(white),
-    'background-color': color(success) darken(color(success), 10%),
-  ),
-  warning: (
-    'color': color(black),
-    'background-color': color(warning) darken(color(warning), 10%),
-  ),
-  info: (
-    'color': color(white),
-    'background-color': color(info) darken(color(info), 10%),
-  ),
-  error: (
-    'color': color(white),
-    'background-color': color(error) darken(color(error), 10%),
-  ),
-) !default;
-
-/// Collection of hollow button variants.
-///
-/// @type {Map}
-/// @prop {Map} white
-/// @prop {Map} black
-/// @prop {Map} primary
-/// @prop {Map} secondary
-/// @prop {Map} complementary
-/// @prop {Map} success
-/// @prop {Map} warning
-/// @prop {Map} info
-/// @prop {Map} error
-$button-hollow-variants: (
-  neutral: (
-    'color': color(black) color(black),
-    'border-color': color(gray-light),
-    'background-color': transparent color(gray-light),
-  ),
-  primary: (
-    'color': color(primary) color(white),
-    'border-color': color(primary),
-    'background-color': transparent color(primary),
-  ),
-  secondary: (
-    'color': color(secondary) color(white),
-    'border-color': color(secondary),
-    'background-color': transparent color(secondary),
-  ),
-  success: (
-    'color': color(success) color(white),
-    'border-color': color(success),
-    'background-color': transparent color(success),
-  ),
-  warning: (
-    'color': color(warning) color(black),
-    'border-color': color(warning),
-    'background-color': transparent color(warning),
-  ),
-  info: (
-    'color': color(info) color(white),
-    'border-color': color(info),
-    'background-color': transparent color(info),
-  ),
-  error: (
-    'color': color(error) color(white),
-    'border-color': color(error),
-    'background-color': transparent color(error),
-  ),
-) !default;
-
 /// Collection of button sizes.
 ///
 /// @type {Map}
@@ -123,16 +33,6 @@ $button-sizes: (
 /// @type {Keyword}
 $button-size: medium !default;
 
-/// Default button variant.
-///
-/// @type {Keyword}
-$button-variant: neutral !default;
-
-/// Button text font weight.
-///
-/// @type {Keyword|Number}
-$button-weight: 400 !default;
-
 /// Button text align.
 ///
 /// @type {Keyword}
@@ -147,18 +47,3 @@ $button-wide-padding: 2em !default;
 ///
 /// @type {Number}
 $button-disabled-opacity: 0.5 !default;
-
-/// Default hollow button variant.
-///
-/// @type {Keyword}
-$button-hollow-variant: neutral !default;
-
-/// Outline width of the hollow button.
-///
-/// @type {Value}
-$button-hollow-border: 2px !default;
-
-/// Backgound color of the hollow button.
-///
-/// @type {Color}
-$button-hollow-background: transparent !default;

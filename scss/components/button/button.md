@@ -1,61 +1,18 @@
 ---
 title: Button
-description: Component for creating standard clickable buttons
+description: Extendable component for creating clickable buttons
 group: Components
 layout: docs.html
 algolia: true
 ---
 
-Component for creating standard clickable buttons. It's designed to use mainly on `<a>`, `<button>` and `<input>` HTML elements.
+Extendable component for creating clickable buttons.
 
 ## Usage
 
 Use `.button` class for a standard button.
 
 [[example file=components/button/example/basic.html]]
-
-### Variants
-
-Buttons can take different variants by applying various modifiers. They allow you to control button's colors, dimensions, and sizes.
-
-#### Colors
-
-By default, there is a built-in set of 6 color variants.
-
-[[example file=components/button/example/variants.html]]
-
-Of course, you can customize this set by adding or removing entries from the map in `$button-variants` variable. Each variant should be entered as a map of declarations in variant's name key.
-
-```scss
-$button-variants: (
-  colorful: (
-    'color': color(black) color(white),
-    'background-color': color(gray-light) color(primary),
-  )
-);
-```
-
-Please, pay attention to the double value of a `color` and `background-color` declarations. A first value is applied to button's initial state when a second one to the `:hover` state.
-
-> A default variant of the `.button` can be set with `$button-variant` variable. Enter there keyword name of a variant from the `$button-variants` map (e.g. `$button-variant: colorful;`).
-
-```scss
-(
-  // Button's text will take a `black` color at
-  // initial state and `white` color when hovered.
-  //
-  // ----- :initial ↴  :hover ↴
-  'color': color(black) color(white)
-)
-```
-
-#### Hollowed
-
-Buttons can be also presented in a hollowed version with transparent background.
-
-[[example file=components/button/example/variants-hollowed.html]]
-
-This set of variants is controlled in the same manner as standard variants but with a map defined in the `$button-hollow-variants` variable.
 
 ### Sizes
 
@@ -116,7 +73,5 @@ $ npm install @bemoid/button
 Import required mixins along with a component file from the `node_modules` directory.
 
 ```scss
-@import 'node_modules/@bemoid/mixins-declarations/declarations';
-
 @import 'node_modules/@bemoid/button/button';
 ```

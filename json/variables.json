@@ -11,42 +11,6 @@
       "name": "breakpoint-offset"
     }
   ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
-    }
-  ],
-  "dropdown": [
-    {
-      "variable": "$dropdown-gap",
-      "value": "0.15rem !default",
-      "name": "dropdown-gap"
-    },
-    {
-      "variable": "$dropdown-max-width",
-      "value": "300px !default",
-      "name": "dropdown-max-width"
-    },
-    {
-      "variable": "$dropdown-min-width",
-      "value": "200px !default",
-      "name": "dropdown-min-width"
-    }
-  ],
-  "container": [
-    {
-      "variable": "$container-sizes",
-      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
-      "name": "container-sizes"
-    },
-    {
-      "variable": "$container-size",
-      "value": "expand !default",
-      "name": "container-size"
-    }
-  ],
   "font": [
     {
       "variable": "$font-size",
@@ -133,16 +97,11 @@
       "name": "link-hover-color"
     }
   ],
-  "gutter": [
+  "color": [
     {
-      "variable": "$gutter-sizes",
-      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
-      "name": "gutter-sizes"
-    },
-    {
-      "variable": "$gutter-size",
-      "value": "medium !default",
-      "name": "gutter-size"
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
     }
   ],
   "flex": [
@@ -157,23 +116,45 @@
       "name": "flex-sizes"
     }
   ],
-  "media": [
+  "container": [
     {
-      "variable": "$media-gutters",
-      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
-      "name": "media-gutters"
+      "variable": "$container-sizes",
+      "value": "(\n  expand: 100%,\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
+      "name": "container-sizes"
     },
     {
-      "variable": "$media-gutter",
-      "value": "medium !default",
-      "name": "media-gutter"
+      "variable": "$container-size",
+      "value": "expand !default",
+      "name": "container-size"
     }
   ],
-  "list": [
+  "dropdown": [
     {
-      "variable": "$list-offset",
-      "value": "1em !default",
-      "name": "list-offset"
+      "variable": "$dropdown-gap",
+      "value": "0.15rem !default",
+      "name": "dropdown-gap"
+    },
+    {
+      "variable": "$dropdown-max-width",
+      "value": "300px !default",
+      "name": "dropdown-max-width"
+    },
+    {
+      "variable": "$dropdown-min-width",
+      "value": "200px !default",
+      "name": "dropdown-min-width"
+    }
+  ],
+  "gutter": [
+    {
+      "variable": "$gutter-sizes",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
+      "name": "gutter-sizes"
+    },
+    {
+      "variable": "$gutter-size",
+      "value": "medium !default",
+      "name": "gutter-size"
     }
   ],
   "image": [
@@ -188,6 +169,25 @@
       "name": "image-radius-circular"
     }
   ],
+  "list": [
+    {
+      "variable": "$list-offset",
+      "value": "1em !default",
+      "name": "list-offset"
+    }
+  ],
+  "media": [
+    {
+      "variable": "$media-gutters",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
+      "name": "media-gutters"
+    },
+    {
+      "variable": "$media-gutter",
+      "value": "medium !default",
+      "name": "media-gutter"
+    }
+  ],
   "waffle": [
     {
       "variable": "$waffle-sizes",
@@ -198,55 +198,6 @@
       "variable": "$waffle-size",
       "value": "medium !default",
       "name": "waffle-size"
-    }
-  ],
-  "badge": [
-    {
-      "variable": "$badge-font-size",
-      "value": "0.8em !default",
-      "name": "badge-font-size"
-    },
-    {
-      "variable": "$badge-color",
-      "value": "color(black) !default",
-      "name": "badge-color"
-    },
-    {
-      "variable": "$badge-background",
-      "value": "color(gray-light) !default",
-      "name": "badge-background"
-    },
-    {
-      "variable": "$badge-padding",
-      "value": "0.5em !default",
-      "name": "badge-padding"
-    },
-    {
-      "variable": "$badge-hover-background",
-      "value": "darken(color(gray-light), 10%) !default",
-      "name": "badge-hover-background"
-    }
-  ],
-  "divider": [
-    {
-      "variable": "$divider-badge-sizes",
-      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': 0.8em\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': 1em\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': 1.5em\n  ),\n) !default",
-      "name": "divider-badge-sizes"
-    },
-    {
-      "variable": "$divider-badge-size",
-      "value": "medium !default",
-      "name": "divider-badge-size"
-    },
-    {
-      "variable": "$divider-badge-background",
-      "value": "color(white) !default",
-      "name": "divider-badge-background"
-    },
-    {
-      "variable": "$divider-badge-radius",
-      "value": "50% !default",
-      "name": "divider-badge-radius"
     }
   ],
   "blockquote": [
@@ -281,63 +232,21 @@
       "name": "blockquote-footer-color"
     }
   ],
-  "elevator": [
-    {
-      "variable": "$elevator-values",
-      "value": "(\n  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),\n  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),\n  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),\n  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),\n  xlarge: 0 1em 2em 0 transparentize(black, 0.75),\n  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),\n) !default",
-      "name": "elevator-values"
-    },
-    {
-      "variable": "$elevator-value",
-      "value": "medium !default",
-      "name": "elevator-value"
-    }
-  ],
   "button": [
     {
-      "variable": "$button-variants",
+      "variable": "$button-fill-variants",
       "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-variants"
+      "name": "button-fill-variants"
+    },
+    {
+      "variable": "$button-fill-variant",
+      "value": "neutral !default",
+      "name": "button-fill-variant"
     },
     {
       "variable": "$button-hollow-variants",
       "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
       "name": "button-hollow-variants"
-    },
-    {
-      "variable": "$button-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': 0.6em\n  ),\n  small: (\n    'font-size': 0.8em\n  ),\n  medium: (\n    'font-size': 1em,\n    'padding': 0.5em 1em\n  ),\n  large: (\n    'font-size': 1.25em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
-      "name": "button-sizes"
-    },
-    {
-      "variable": "$button-size",
-      "value": "medium !default",
-      "name": "button-size"
-    },
-    {
-      "variable": "$button-variant",
-      "value": "neutral !default",
-      "name": "button-variant"
-    },
-    {
-      "variable": "$button-weight",
-      "value": "400 !default",
-      "name": "button-weight"
-    },
-    {
-      "variable": "$button-align",
-      "value": "center !default",
-      "name": "button-align"
-    },
-    {
-      "variable": "$button-wide-padding",
-      "value": "2em !default",
-      "name": "button-wide-padding"
-    },
-    {
-      "variable": "$button-disabled-opacity",
-      "value": "0.5 !default",
-      "name": "button-disabled-opacity"
     },
     {
       "variable": "$button-hollow-variant",
@@ -353,6 +262,58 @@
       "variable": "$button-hollow-background",
       "value": "transparent !default",
       "name": "button-hollow-background"
+    },
+    {
+      "variable": "$button-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': 0.6em\n  ),\n  small: (\n    'font-size': 0.8em\n  ),\n  medium: (\n    'font-size': 1em,\n    'padding': 0.5em 1em\n  ),\n  large: (\n    'font-size': 1.25em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "button-sizes"
+    },
+    {
+      "variable": "$button-size",
+      "value": "medium !default",
+      "name": "button-size"
+    },
+    {
+      "variable": "$button-align",
+      "value": "center !default",
+      "name": "button-align"
+    },
+    {
+      "variable": "$button-wide-padding",
+      "value": "2em !default",
+      "name": "button-wide-padding"
+    },
+    {
+      "variable": "$button-disabled-opacity",
+      "value": "0.5 !default",
+      "name": "button-disabled-opacity"
+    }
+  ],
+  "badge": [
+    {
+      "variable": "$badge-font-size",
+      "value": "0.8em !default",
+      "name": "badge-font-size"
+    },
+    {
+      "variable": "$badge-color",
+      "value": "color(black) !default",
+      "name": "badge-color"
+    },
+    {
+      "variable": "$badge-background",
+      "value": "color(gray-light) !default",
+      "name": "badge-background"
+    },
+    {
+      "variable": "$badge-padding",
+      "value": "0.5em !default",
+      "name": "badge-padding"
+    },
+    {
+      "variable": "$badge-hover-background",
+      "value": "darken(color(gray-light), 10%) !default",
+      "name": "badge-hover-background"
     }
   ],
   "checkbox": [
@@ -412,31 +373,38 @@
       "name": "checkbox-mark-active-transform"
     }
   ],
-  "field": [
+  "divider": [
     {
-      "variable": "$field-sizes",
-      "value": "(\n  xsmall: (\n    'font-size': 0.5em\n  ),\n  small: (\n    'font-size': 0.6em\n  ),\n  medium: (\n    'font-size': 0.8em,\n    'padding': 0.3em 0.5em\n  ),\n  large: (\n    'font-size': 1em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
-      "name": "field-sizes"
+      "variable": "$divider-badge-sizes",
+      "value": "(\n  small: (\n    'width': 1.1rem,\n    'height': 1.1rem,\n    'font-size': 0.8em\n  ),\n  medium: (\n    'width': 1.25rem,\n    'height': 1.25rem,\n    'font-size': 1em\n  ),\n  large: (\n    'width': 1.5rem,\n    'height': 1.5rem,\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "divider-badge-sizes"
     },
     {
-      "variable": "$field-size",
+      "variable": "$divider-badge-size",
       "value": "medium !default",
-      "name": "field-size"
+      "name": "divider-badge-size"
     },
     {
-      "variable": "$field-variants",
-      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
-      "name": "field-variants"
+      "variable": "$divider-badge-background",
+      "value": "color(white) !default",
+      "name": "divider-badge-background"
     },
     {
-      "variable": "$field-caption-untouched-color",
-      "value": "color(black) !default",
-      "name": "field-caption-untouched-color"
+      "variable": "$divider-badge-radius",
+      "value": "50% !default",
+      "name": "divider-badge-radius"
+    }
+  ],
+  "elevator": [
+    {
+      "variable": "$elevator-values",
+      "value": "(\n  xsmall: 0 0.15em 0.1em -0.1em transparentize(black, 0.95),\n  small: 0 0.3em 0.15em -0.1em transparentize(black, 0.9),\n  medium: 0 0.3em 0.3em -0.1em transparentize(black, 0.9),\n  large: 0 0.3em 0.8em 0 transparentize(black, 0.8),\n  xlarge: 0 1em 2em 0 transparentize(black, 0.75),\n  xxlarge: 0 1.5em 2em 0 transparentize(black, 0.6),\n) !default",
+      "name": "elevator-values"
     },
     {
-      "variable": "$field-caption-font-size",
-      "value": "0.8em !default",
-      "name": "field-caption-font-size"
+      "variable": "$elevator-value",
+      "value": "medium !default",
+      "name": "elevator-value"
     }
   ],
   "figure": [
@@ -478,6 +446,55 @@
       "name": "form-legend-text-transform"
     }
   ],
+  "field": [
+    {
+      "variable": "$field-sizes",
+      "value": "(\n  xsmall: (\n    'font-size': 0.5em\n  ),\n  small: (\n    'font-size': 0.6em\n  ),\n  medium: (\n    'font-size': 0.8em,\n    'padding': 0.3em 0.5em\n  ),\n  large: (\n    'font-size': 1em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
+      "name": "field-sizes"
+    },
+    {
+      "variable": "$field-size",
+      "value": "medium !default",
+      "name": "field-size"
+    },
+    {
+      "variable": "$field-variants",
+      "value": "(\n  success: (\n    'color': color(success),\n    'border-color': color(success),\n  ),\n  warning: (\n    'color': color(warning),\n    'border-color': color(warning),\n  ),\n  error: (\n    'color': color(error),\n    'border-color': color(error),\n  ),\n  info: (\n    'color': color(info),\n    'border-color': color(info),\n  ),\n) !default",
+      "name": "field-variants"
+    },
+    {
+      "variable": "$field-caption-untouched-color",
+      "value": "color(black) !default",
+      "name": "field-caption-untouched-color"
+    },
+    {
+      "variable": "$field-caption-font-size",
+      "value": "0.8em !default",
+      "name": "field-caption-font-size"
+    }
+  ],
+  "group": [
+    {
+      "variable": "$group-overlap",
+      "value": "-1px !default",
+      "name": "group-overlap"
+    },
+    {
+      "variable": "$group-inner-radius",
+      "value": "0 !default",
+      "name": "group-inner-radius"
+    },
+    {
+      "variable": "$group-outer-radius",
+      "value": "0.15rem !default",
+      "name": "group-outer-radius"
+    },
+    {
+      "variable": "$group-divider-width",
+      "value": "6px !default",
+      "name": "group-divider-width"
+    }
+  ],
   "input": [
     {
       "variable": "$input-font-family",
@@ -515,28 +532,6 @@
       "name": "input-focus-border-color"
     }
   ],
-  "group": [
-    {
-      "variable": "$group-overlap",
-      "value": "-1px !default",
-      "name": "group-overlap"
-    },
-    {
-      "variable": "$group-inner-radius",
-      "value": "0 !default",
-      "name": "group-inner-radius"
-    },
-    {
-      "variable": "$group-outer-radius",
-      "value": "0.15rem !default",
-      "name": "group-outer-radius"
-    },
-    {
-      "variable": "$group-divider-width",
-      "value": "6px !default",
-      "name": "group-divider-width"
-    }
-  ],
   "label": [
     {
       "variable": "$label-color",
@@ -552,33 +547,6 @@
       "variable": "$label-font-weight",
       "value": "bold !default",
       "name": "label-font-weight"
-    }
-  ],
-  "modal": [
-    {
-      "variable": "$modal-padding",
-      "value": "1.5em !default",
-      "name": "modal-padding"
-    },
-    {
-      "variable": "$modal-position-top",
-      "value": "0",
-      "name": "modal-position-top"
-    },
-    {
-      "variable": "$modal-position-left",
-      "value": "0",
-      "name": "modal-position-left"
-    },
-    {
-      "variable": "$modal-zindex",
-      "value": "-1 !default",
-      "name": "modal-zindex"
-    },
-    {
-      "variable": "$modal-active-zindex",
-      "value": "100 !default",
-      "name": "modal-active-zindex"
     }
   ],
   "message": [
@@ -623,50 +591,31 @@
       "name": "message-hollow-border-style"
     }
   ],
-  "overlay": [
+  "modal": [
     {
-      "variable": "$overlay-background",
-      "value": "color(black) !default",
-      "name": "overlay-background"
+      "variable": "$modal-padding",
+      "value": "1.5em !default",
+      "name": "modal-padding"
     },
     {
-      "variable": "$overlay-opacity",
-      "value": "0.66 !default",
-      "name": "overlay-opacity"
-    }
-  ],
-  "panel": [
-    {
-      "variable": "$panel-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-border"
+      "variable": "$modal-position-top",
+      "value": "0",
+      "name": "modal-position-top"
     },
     {
-      "variable": "$panel-background",
-      "value": "color(white) !default",
-      "name": "panel-background"
+      "variable": "$modal-position-left",
+      "value": "0",
+      "name": "modal-position-left"
     },
     {
-      "variable": "$panel-segment-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-segment-border"
+      "variable": "$modal-zindex",
+      "value": "-1 !default",
+      "name": "modal-zindex"
     },
     {
-      "variable": "$panel-scrollable-height",
-      "value": "300px !default",
-      "name": "panel-scrollable-height"
-    }
-  ],
-  "space": [
-    {
-      "variable": "$space-values",
-      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "space-values"
-    },
-    {
-      "variable": "$space-value",
-      "value": "medium !default",
-      "name": "space-value"
+      "variable": "$modal-active-zindex",
+      "value": "100 !default",
+      "name": "modal-active-zindex"
     }
   ],
   "radio": [
@@ -719,6 +668,52 @@
       "variable": "$radio-hover-outer-background",
       "value": "transparentize(color(info), 0.9) !default",
       "name": "radio-hover-outer-background"
+    }
+  ],
+  "overlay": [
+    {
+      "variable": "$overlay-background",
+      "value": "color(black) !default",
+      "name": "overlay-background"
+    },
+    {
+      "variable": "$overlay-opacity",
+      "value": "0.66 !default",
+      "name": "overlay-opacity"
+    }
+  ],
+  "panel": [
+    {
+      "variable": "$panel-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-border"
+    },
+    {
+      "variable": "$panel-background",
+      "value": "color(white) !default",
+      "name": "panel-background"
+    },
+    {
+      "variable": "$panel-segment-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-segment-border"
+    },
+    {
+      "variable": "$panel-scrollable-height",
+      "value": "300px !default",
+      "name": "panel-scrollable-height"
+    }
+  ],
+  "space": [
+    {
+      "variable": "$space-values",
+      "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
+      "name": "space-values"
+    },
+    {
+      "variable": "$space-value",
+      "value": "medium !default",
+      "name": "space-value"
     }
   ],
   "spread": [

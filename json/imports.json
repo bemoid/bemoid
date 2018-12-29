@@ -33,6 +33,8 @@
     "components/checkbox/checkbox",
     "components/badge/badge",
     "components/button/button",
+    "components/button-fill/button-fill",
+    "components/button-hollow/button-hollow",
     "components/blockquote/blockquote",
     "components/message/message",
     "components/divider/divider",

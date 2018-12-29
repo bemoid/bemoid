@@ -1,6 +1,6 @@
 # Button
 
-Component for creating standard clickable buttons.
+Extendable component for creating clickable buttons.
 
 ## Installation
 

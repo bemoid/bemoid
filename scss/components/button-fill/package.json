@@ -1,9 +1,9 @@
 {
-  "name": "@bemoid/button",
-  "description": "Extendable component for creating clickable buttons",
+  "name": "@bemoid/button-fill",
+  "description": "Component for creating standard clickable buttons",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "button.scss",
+  "main": "button-fill.scss",
   "keywords": [
     "bem",
     "sass",
@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@bemoid/function-color": "^0.1.0",
-    "@bemoid/mixin-declarations": "^0.1.0"
+    "@bemoid/button": "^0.1.0"
   },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
