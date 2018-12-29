@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  line-height: $heading-line-height;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+@each $breakpoint, $heading in $heading-sizes {
+  @if ($breakpoint == $heading-size) {
+    @each $h, $size in $heading {
+      #{$h} {
+        font-size: $size;
+      }
+    }
+  }
+
+  @else {
+    @include breakpoint($breakpoint up) {
+      @each $h, $size in $heading {
+        #{$h} {
+          font-size: $size;
+        }
+      }
+    }
+  }
+}

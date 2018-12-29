@@ -5,7 +5,12 @@
 /// Base font size set on the root html element.
 ///
 /// @type {Value}
-$font-size: 16px !default;
+$font-size: 1rem !default;
+
+/// Base font size set on the root html element.
+///
+/// @type {Value}
+$font-size-small: 0.707rem !default;
 
 /// Base line height determines the basic unit of vertical rhythm.
 ///
