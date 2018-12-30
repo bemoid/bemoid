@@ -1,4 +1,4 @@
-// Reboot
+// Standardize
 //
 // A opinionated fork of normalize.css that provides a more suitable starting
 // point for creating web applications. Modified in order to play
@@ -9,12 +9,13 @@
 // Document
 // ==========================================================================
 
-// 1. Correct the line height in all browsers.
-// 2. Prevent adjustments of font size after orientation changes in iOS.
+// 1. Change box sizing to `border-box` so borders are taken into account when calculating width.
+// 2. Correct the line height in all browsers.
+// 3. Prevent adjustments of font size after orientation changes in iOS.
 html {
-  box-sizing: border-box;
-  line-height: 1.15; /* 1 */
-  text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box; /* 1 */
+  line-height: 1.15; /* 2 */
+  text-size-adjust: 100%; /* 3 */
 }
 
 *,
@@ -45,6 +46,11 @@ h1 {
 // Grouping content
 // ==========================================================================
 
+// 1. Table have to fill up as much space as possible.
+table {
+  width: 100%; /* 1 */
+}
+
 // 1. Add the correct box sizing in Firefox.
 // 2. Show the overflow in Edge and IE.
 hr {
@@ -56,7 +62,7 @@ hr {
 // 1. Correct the inheritance and scaling of font size in all browsers.
 // 2. Correct the odd `em` font sizing in all browsers.
 pre {
-  /* stylelint-disable-next-line font-family-no-duplicate-names */
+  // stylelint-disable-next-line font-family-no-duplicate-names
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
@@ -106,7 +112,7 @@ strong {
 code,
 kbd,
 samp {
-  /* stylelint-disable-next-line font-family-no-duplicate-names */
+  // stylelint-disable-next-line font-family-no-duplicate-names
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
@@ -137,9 +143,18 @@ sup {
 // Embedded content
 // ==========================================================================
 
-// Remove the border on images inside links in IE 10.
+// 1. Remove the border on images inside links in IE 10.
+// 2. Make images fluid for responsive purposes.
+// 3. Distinguish `alt` text from surrounding copy.
 img {
-  border-style: none;
+  border-style: none; /* 1 */
+  max-width: 100%; /* 2 */
+  font-style: italic; /* 3 */
+}
+
+// Fill SVGs with color of the text by default.
+svg {
+  fill: currentColor;
 }
 
 // Remove the border on iframe.

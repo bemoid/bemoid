@@ -1,14 +1,17 @@
 {
-  "name": "@bemoid/typography",
-  "description": "Module for providing typography styles for basic HTML elements",
+  "name": "@bemoid/anchor",
+  "description": "Component for styling <a> HTML elements",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "typography.scss",
+  "main": "anchor.scss",
   "keywords": [
     "bem",
     "sass",
-    "typography"
+    "anchor"
   ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

@@ -1,14 +1,17 @@
 {
-  "name": "@bemoid/typography",
-  "description": "Module for providing typography styles for basic HTML elements",
+  "name": "@bemoid/heading",
+  "description": "Component for styling <h> HTML elements",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "typography.scss",
+  "main": "heading.scss",
   "keywords": [
     "bem",
     "sass",
-    "typography"
+    "heading"
   ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0"
+  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

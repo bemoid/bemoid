@@ -1,4 +1,12 @@
 {
+  "packages": [
+    "scss/functions/*",
+    "scss/mixins/*",
+    "scss/generic/*",
+    "scss/elements/*",
+    "scss/objects/*",
+    "scss/components/*"
+  ],
   "command": {
     "publish": {
       "ignoreChanges": [
@@ -6,12 +14,5 @@
         "*.txt"
       ]
     }
-  },
-  "packages": [
-    "scss/functions/*",
-    "scss/mixins/*",
-    "scss/generic",
-    "scss/objects/*",
-    "scss/components/*"
-  ]
+  }
 }
