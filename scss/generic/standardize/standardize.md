@@ -8,7 +8,7 @@ algolia: true
 
 Module for providing normalization of default browser styles.
 
-[[example file=objects/standardize/example/document.html]]
+[[example file=generic/standardize/example/document.html]]
 
 ## Variables
 

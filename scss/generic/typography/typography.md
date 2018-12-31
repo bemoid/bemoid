@@ -8,7 +8,7 @@ algolia: true
 
 Module for providing typography styles for basic HTML elements.
 
-[[example file=objects/typography/example/document.html]]
+[[example file=generic/typography/example/document.html]]
 
 ## Variables
 

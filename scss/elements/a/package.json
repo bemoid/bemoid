@@ -1,13 +1,13 @@
 {
-  "name": "@bemoid/heading",
-  "description": "Component for styling <h> HTML elements",
+  "name": "@bemoid/a",
+  "description": "Component for styling <a> HTML elements",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "heading.scss",
+  "main": "a.scss",
   "keywords": [
     "bem",
     "sass",
-    "heading"
+    "anchor"
   ],
   "dependencies": {
     "@bemoid/function-color": "^0.1.0"

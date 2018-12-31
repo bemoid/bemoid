@@ -7,9 +7,9 @@ Component for styling `<h>` HTML elements.
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/heading
+$ npm install @bemoid/h
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/heading).
+The component documentation can be found [here](//bemoid.org/docs/h).

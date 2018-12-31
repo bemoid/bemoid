@@ -7,9 +7,9 @@ Component for styling `<a>` HTML elements.
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/anchor
+$ npm install @bemoid/a
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/anchor).
+The component documentation can be found [here](//bemoid.org/docs/a).
