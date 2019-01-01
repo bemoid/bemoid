@@ -1,17 +1,14 @@
 {
-  "name": "@bemoid/generic",
-  "description": "Module for providing normalization and basic generic styles",
+  "name": "@bemoid/standardize",
+  "description": "Module for providing normalization of default browser styles",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
-  "main": "generic.scss",
+  "main": "standardize.scss",
   "keywords": [
     "bem",
     "sass",
-    "generic"
+    "standardize"
   ],
-  "dependencies": {
-    "@bemoid/function-color": "^0.1.0"
-  },
   "version": "0.1.0",
   "repository": "bemoid/bemoid",
   "bugs": {

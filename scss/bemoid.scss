@@ -2,7 +2,12 @@
 @import 'uses';
 
 // Generic
-@import 'generic/generic';
+@import 'generic/standardize/standardize';
+@import 'generic/typography/typography';
+
+// Elements
+@import 'elements/a/a';
+@import 'elements/h/h';
 
 // Objects
 @import 'objects/container/container';
