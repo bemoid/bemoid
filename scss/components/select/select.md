@@ -1,5 +1,5 @@
 ---
-title: Message
+title: Select
 description: Component for creating selectable field inputs
 group: Components
 layout: docs.html
