@@ -1,0 +1,20 @@
+////
+/// @group Callout
+////
+
+/// Collection of callout sizes.
+///
+/// @type {Map}
+/// @prop {Map} small
+/// @prop {Map} medium
+/// @prop {Map} large
+$callout-sizes: (
+  small: 1em,
+  medium: 1.5em,
+  large: 2em,
+) !default;
+
+/// Default callout size.
+///
+/// @type {Keyword}
+$callout-size: medium !default;

@@ -1,4 +1,4 @@
-# Message
+# Callout Hollow
 
 Component for displaying emphasized text information. Handy for catching user attention on important information.
 
@@ -7,9 +7,9 @@ Component for displaying emphasized text information. Handy for catching user at
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/message
+$ npm install @bemoid/callout-hollow
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/message).
+The component documentation can be found [here](//bemoid.org/docs/callout-hollow).

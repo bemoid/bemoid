@@ -1,0 +1,29 @@
+/** @define callout */
+
+@import 'variables';
+
+// Callout
+//
+// Component for displaying emphasized content.
+//
+// .callout--small  - Small size of a callout.
+// .callout--medium - Medium size of a callout.
+// .callout--large  - Large size of a callout.
+//
+// Markup: components/callout/html/callout.html
+//
+// Style guide: Components.Callout
+.callout {
+  $size: map-get($callout-sizes, $callout-size);
+
+  display: block;
+  padding: $size;
+
+  @each $size, $value in $callout-sizes {
+    @if $size != $callout-size {
+      &--#{$size} {
+        padding: #{$value};
+      }
+    }
+  }
+}

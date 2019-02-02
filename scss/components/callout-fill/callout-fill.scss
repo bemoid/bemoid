@@ -1,0 +1,35 @@
+/** @define callout-fill */
+
+@import 'variables';
+
+// Callout Fill
+//
+// Component for creating standard content with a filled background. Handy for catching user attention on important information.
+//
+// .callout-fill--success - Success variant of a callout.
+// .callout-fill--warning - Warning variant of a callout.
+// .callout-fill--info    - Info variant of a callout.
+// .callout-fill--error   - Error variant of a callout.
+//
+// Markup: components/callout-fill/html/callout-fill.html
+//
+// Style guide: Components.Callout.Fill
+.callout-fill {
+  $this: &;
+
+  $variant: map-get($callout-fill-variants, $callout-fill-variant);
+
+  @each $property, $value in $variant {
+    #{$property}: #{$value};
+  }
+
+  @each $variant, $declarations in $callout-fill-variants {
+    @if $variant != $callout-fill-variant {
+      &--#{$variant} {
+        @each $property, $value in $declarations {
+          #{$property}: #{$value};
+        }
+      }
+    }
+  }
+}

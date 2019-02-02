@@ -3,7 +3,12 @@
     "uses"
   ],
   "generic": [
-    "generic/generic"
+    "generic/standardize/standardize",
+    "generic/typography/typography"
+  ],
+  "elements": [
+    "elements/a/a",
+    "elements/h/h"
   ],
   "objects": [
     "objects/container/container",
@@ -36,7 +41,9 @@
     "components/button-fill/button-fill",
     "components/button-hollow/button-hollow",
     "components/blockquote/blockquote",
-    "components/message/message",
+    "components/callout/callout",
+    "components/callout-fill/callout-fill",
+    "components/callout-hollow/callout-hollow",
     "components/divider/divider",
     "components/group/group"
   ]

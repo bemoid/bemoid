@@ -1,0 +1,48 @@
+////
+/// @group Callout Hollow
+////
+
+/// Collection of callout hollow variants.
+///
+/// @type {Map}
+/// @prop {Map} neutral
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$callout-hollow-variants: (
+  neutral: (
+    'border-color': color(gray-light),
+  ),
+  success: (
+    'color': $font-color,
+    'border-color': color(success),
+  ),
+  warning: (
+    'color': $font-color,
+    'border-color': color(warning),
+  ),
+  info: (
+    'color': $font-color,
+    'border-color': color(info),
+  ),
+  error: (
+    'color': $font-color,
+    'border-color': color(error),
+  ),
+) !default;
+
+/// Default hollowed callout variant.
+///
+/// @type {Keyword}
+$callout-hollow-variant: neutral !default;
+
+/// Hollowed callout border width.
+///
+/// @type {Value}
+$callout-hollow-border-width: 5px 1px 1px 1px !default;
+
+/// Hollowed callout border style.
+///
+/// @type {Keyword}
+$callout-hollow-border-style: solid !default;

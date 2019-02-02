@@ -61,7 +61,7 @@ Install package using NPM.
 $ npm install @bemoid/button-fill
 ```
 
-Import required mixins along with a component file from the `node_modules` directory.
+Import required components files from the `node_modules` directory.
 
 ```scss
 @import 'node_modules/@bemoid/button/button';

@@ -1,0 +1,37 @@
+/** @define callout */
+
+@import 'variables';
+
+// Callout Hollow
+//
+// Component for creating emphasized content with a hollowed background.
+//
+// .callout-hollow--success - Success variant of a callout.
+// .callout-hollow--warning - Warning variant of a callout.
+// .callout-hollow--info    - Info variant of a callout.
+// .callout-hollow--error   - Error variant of a callout.
+//
+// Markup: components/callout/html/callout.html
+//
+// Style guide: Components.Callout.Hollow
+.callout {
+  $variant: map-get($callout-hollow-variants, $callout-hollow-variant);
+
+  background-color: transparent;
+  border-width: $callout-hollow-border-width;
+  border-style: $callout-hollow-border-style;
+
+  @each $property, $value in $variant {
+    #{$property}: #{$value};
+  }
+
+  @each $variant, $declarations in $callout-hollow-variants {
+    @if $variant != $callout-hollow-variant {
+      &--#{$variant} {
+        @each $property, $value in $declarations {
+          #{$property}: #{$value};
+        }
+      }
+    }
+  }
+}

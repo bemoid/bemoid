@@ -1,0 +1,39 @@
+////
+/// @group Callout Fill
+////
+
+/// Collection of callout fill variants.
+///
+/// @type {Map}
+/// @prop {Map} neutral
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$callout-fill-variants: (
+  neutral: (
+    'background-color': color(gray-lighter),
+    'border-color': color(gray-light),
+  ),
+  success: (
+    'color': color(white),
+    'background-color': color(success),
+  ),
+  warning: (
+    'color': color(black),
+    'background-color': color(warning),
+  ),
+  info: (
+    'color': color(white),
+    'background-color': color(info),
+  ),
+  error: (
+    'color': color(white),
+    'background-color': color(error),
+  ),
+) !default;
+
+/// Default callout variant.
+///
+/// @type {Keyword}
+$callout-fill-variant: neutral !default;

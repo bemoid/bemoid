@@ -1,0 +1,22 @@
+{
+  "name": "@bemoid/callout-fill",
+  "description": "Component for creating standard content with a filled background",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "callout-fill.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "callout",
+    "callout-fill"
+  ],
+  "dependencies": {
+    "@bemoid/callout": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}
