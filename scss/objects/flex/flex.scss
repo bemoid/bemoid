@@ -153,7 +153,25 @@
 
   &--reverse {
     flex-direction: row-reverse;
+  }
 
+  &--stack {
+    flex-direction: column;
+
+    &#{$this}--reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &--queue {
+    flex-direction: row;
+
+    &#{$this}--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--reverse {
     @each $breakpoint, $width in $flex-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
@@ -164,12 +182,6 @@
   }
 
   &--stack {
-    flex-direction: column;
-
-    &#{$this}--reverse {
-      flex-direction: column-reverse;
-    }
-
     @each $breakpoint, $width in $flex-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
@@ -184,12 +196,6 @@
   }
 
   &--queue {
-    flex-direction: row;
-
-    &#{$this}--reverse {
-      flex-direction: row-reverse;
-    }
-
     @each $breakpoint, $width in $flex-sizes {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
