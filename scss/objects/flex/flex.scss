@@ -15,7 +15,7 @@
 // .flex--middle  - Aligns flex columns verically to the center.
 // .flex--end     - Aligns flex columns verically to the end.
 // .flex--stretch - Stretches flex columns to the euqal height.
-// .flex--nowrap  - Forces columns to stay in single row.
+// .flex--wrap    - Forces columns to move into multiple rows.
 // .flex--stack   - Changes flex columns direction from horizontal to vertical.
 // .flex--queue   - Changes flex columns direction from vertical to horizontal.
 // .flex--reverse - Reverses order of flex columns.
@@ -27,7 +27,6 @@
   $this: &;
 
   display: flex;
-  flex-wrap: wrap;
 
   // Flex Column
   //
@@ -148,7 +147,7 @@
     align-items: stretch;
   }
 
-  &--nowrap {
+  &--wrap {
     flex-wrap: wrap;
   }
 
