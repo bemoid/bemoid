@@ -59,36 +59,6 @@
     flex: 1;
     max-width: 100%;
 
-    @for $i from 1 through $flex-columns {
-      &--#{$i} {
-        flex-basis: percentage($i / $flex-columns);
-        max-width: percentage($i / $flex-columns);
-      }
-    }
-
-    @each $breakpoint, $width in $flex-sizes {
-      @include breakpoint($breakpoint up) {
-        @for $i from 1 through $flex-columns {
-          &--#{$i}\@#{$breakpoint} {
-            flex-basis: percentage($i / $flex-columns);
-            max-width: percentage($i / $flex-columns);
-          }
-        }
-      }
-    }
-
-    &--shrink {
-      flex: 0 1 auto;
-
-      @each $breakpoint, $width in $flex-sizes {
-        @include breakpoint($breakpoint up) {
-          &\@#{$breakpoint} {
-            flex: 0 1 auto;
-          }
-        }
-      }
-    }
-
     &--start {
       align-self: flex-end;
     }
@@ -107,6 +77,38 @@
 
     &--stretch {
       align-self: stretch;
+    }
+
+    @for $i from 1 through $flex-columns {
+      &--#{$i} {
+        flex-basis: percentage($i / $flex-columns);
+        max-width: percentage($i / $flex-columns);
+      }
+    }
+
+    &--shrink {
+      flex: 0 1 auto;
+    }
+
+    @each $breakpoint, $width in $flex-sizes {
+      @include breakpoint($breakpoint up) {
+        @for $i from 1 through $flex-columns {
+          &--#{$i}\@#{$breakpoint} {
+            flex-basis: percentage($i / $flex-columns);
+            max-width: percentage($i / $flex-columns);
+          }
+        }
+      }
+    }
+
+    &--shrink {
+      @each $breakpoint, $width in $flex-sizes {
+        @include breakpoint($breakpoint up) {
+          &\@#{$breakpoint} {
+            flex: 0 1 auto;
+          }
+        }
+      }
     }
   }
 
