@@ -1,4 +1,4 @@
-# Waffle
+# Gutter
 
 Component for providing horizontal gutter around collection of elements.
 
@@ -7,9 +7,9 @@ Component for providing horizontal gutter around collection of elements.
 Install using NPM:
 
 ```bash
-$ npm install @bemoid/waffle
+$ npm install @bemoid/gutter
 ```
 
 ## Documentation
 
-The component documentation can be found [here](//bemoid.org/docs/waffle).
+The component documentation can be found [here](//bemoid.org/docs/gutter).
