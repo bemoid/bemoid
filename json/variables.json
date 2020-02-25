@@ -31,6 +31,18 @@
       "name": "heading-font-weight"
     }
   ],
+  "breakpoint": [
+    {
+      "variable": "$breakpoint-sizes",
+      "value": "(\n  xsmall: 320px,\n  small: 576px,\n  medium: 768px,\n  large: 992px,\n  xlarge: 1200px,\n  xxlarge: 1440px\n) !default",
+      "name": "breakpoint-sizes"
+    },
+    {
+      "variable": "$breakpoint-offset",
+      "value": "1px",
+      "name": "breakpoint-offset"
+    }
+  ],
   "anchor": [
     {
       "variable": "$anchor-color",
@@ -46,18 +58,6 @@
       "variable": "$anchor-hover-color",
       "value": "darken(color(black), 10%) !default",
       "name": "anchor-hover-color"
-    }
-  ],
-  "breakpoint": [
-    {
-      "variable": "$breakpoint-sizes",
-      "value": "(\n  xsmall: 320px,\n  small: 576px,\n  medium: 768px,\n  large: 992px,\n  xlarge: 1200px,\n  xxlarge: 1440px\n) !default",
-      "name": "breakpoint-sizes"
-    },
-    {
-      "variable": "$breakpoint-offset",
-      "value": "1px",
-      "name": "breakpoint-offset"
     }
   ],
   "font": [
@@ -102,6 +102,13 @@
       "name": "font-family-monospace"
     }
   ],
+  "color": [
+    {
+      "variable": "$color-values",
+      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
+      "name": "color-values"
+    }
+  ],
   "container": [
     {
       "variable": "$container-sizes",
@@ -112,18 +119,6 @@
       "variable": "$container-size",
       "value": "expand !default",
       "name": "container-size"
-    }
-  ],
-  "waffle": [
-    {
-      "variable": "$waffle-sizes",
-      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
-      "name": "waffle-sizes"
-    },
-    {
-      "variable": "$waffle-size",
-      "value": "medium !default",
-      "name": "waffle-size"
     }
   ],
   "dropdown": [
@@ -143,25 +138,6 @@
       "name": "dropdown-min-width"
     }
   ],
-  "color": [
-    {
-      "variable": "$color-values",
-      "value": "(\n  primary: #6c3fce,\n  secondary: #14c1bf,\n  success: #26c65e,\n  warning: #ffde66,\n  error: #ec3953,\n  info: #3273dc,\n  white: #fff,\n  gray-lighter: #f6f6f6,\n  gray-light: #d7dfe6,\n  gray: #79858c,\n  gray-dark: #586973,\n  gray-darker: #425059,\n  black: #171c1f,\n) !default",
-      "name": "color-values"
-    }
-  ],
-  "image": [
-    {
-      "variable": "$image-radius-rounded",
-      "value": "0.3rem !default",
-      "name": "image-radius-rounded"
-    },
-    {
-      "variable": "$image-radius-circular",
-      "value": "50% !default",
-      "name": "image-radius-circular"
-    }
-  ],
   "flex": [
     {
       "variable": "$flex-columns",
@@ -172,6 +148,18 @@
       "variable": "$flex-sizes",
       "value": "(\n  xsmall: breakpoint(xsmall),\n  small: breakpoint(small),\n  medium: breakpoint(medium),\n  large: breakpoint(large),\n  xlarge: breakpoint(xlarge),\n  xxlarge: breakpoint(xxlarge),\n) !default",
       "name": "flex-sizes"
+    }
+  ],
+  "waffle": [
+    {
+      "variable": "$waffle-sizes",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
+      "name": "waffle-sizes"
+    },
+    {
+      "variable": "$waffle-size",
+      "value": "medium !default",
+      "name": "waffle-size"
     }
   ],
   "gutter": [
@@ -193,72 +181,16 @@
       "name": "list-offset"
     }
   ],
-  "media": [
+  "image": [
     {
-      "variable": "$media-gutters",
-      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
-      "name": "media-gutters"
+      "variable": "$image-radius-rounded",
+      "value": "0.3rem !default",
+      "name": "image-radius-rounded"
     },
     {
-      "variable": "$media-gutter",
-      "value": "medium !default",
-      "name": "media-gutter"
-    }
-  ],
-  "label": [
-    {
-      "variable": "$label-color",
-      "value": "color(black) !default",
-      "name": "label-color"
-    },
-    {
-      "variable": "$label-font-size",
-      "value": "0.8em !default",
-      "name": "label-font-size"
-    },
-    {
-      "variable": "$label-font-weight",
-      "value": "bold !default",
-      "name": "label-font-weight"
-    }
-  ],
-  "modal": [
-    {
-      "variable": "$modal-padding",
-      "value": "1.5em !default",
-      "name": "modal-padding"
-    },
-    {
-      "variable": "$modal-position-top",
-      "value": "0",
-      "name": "modal-position-top"
-    },
-    {
-      "variable": "$modal-position-left",
-      "value": "0",
-      "name": "modal-position-left"
-    },
-    {
-      "variable": "$modal-zindex",
-      "value": "-1 !default",
-      "name": "modal-zindex"
-    },
-    {
-      "variable": "$modal-active-zindex",
-      "value": "100 !default",
-      "name": "modal-active-zindex"
-    }
-  ],
-  "overlay": [
-    {
-      "variable": "$overlay-background",
-      "value": "color(black) !default",
-      "name": "overlay-background"
-    },
-    {
-      "variable": "$overlay-opacity",
-      "value": "0.66 !default",
-      "name": "overlay-opacity"
+      "variable": "$image-radius-circular",
+      "value": "50% !default",
+      "name": "image-radius-circular"
     }
   ],
   "message": [
@@ -301,6 +233,96 @@
       "variable": "$message-hollow-border-style",
       "value": "solid !default",
       "name": "message-hollow-border-style"
+    }
+  ],
+  "label": [
+    {
+      "variable": "$label-color",
+      "value": "color(black) !default",
+      "name": "label-color"
+    },
+    {
+      "variable": "$label-font-size",
+      "value": "0.8em !default",
+      "name": "label-font-size"
+    },
+    {
+      "variable": "$label-font-weight",
+      "value": "bold !default",
+      "name": "label-font-weight"
+    }
+  ],
+  "media": [
+    {
+      "variable": "$media-gutters",
+      "value": "(\n  small: 0.3rem,\n  medium: 0.5rem,\n) !default",
+      "name": "media-gutters"
+    },
+    {
+      "variable": "$media-gutter",
+      "value": "medium !default",
+      "name": "media-gutter"
+    }
+  ],
+  "modal": [
+    {
+      "variable": "$modal-padding",
+      "value": "1.5em !default",
+      "name": "modal-padding"
+    },
+    {
+      "variable": "$modal-position-top",
+      "value": "0",
+      "name": "modal-position-top"
+    },
+    {
+      "variable": "$modal-position-left",
+      "value": "0",
+      "name": "modal-position-left"
+    },
+    {
+      "variable": "$modal-zindex",
+      "value": "-1 !default",
+      "name": "modal-zindex"
+    },
+    {
+      "variable": "$modal-active-zindex",
+      "value": "100 !default",
+      "name": "modal-active-zindex"
+    }
+  ],
+  "overlay": [
+    {
+      "variable": "$overlay-background",
+      "value": "color(black) !default",
+      "name": "overlay-background"
+    },
+    {
+      "variable": "$overlay-opacity",
+      "value": "0.66 !default",
+      "name": "overlay-opacity"
+    }
+  ],
+  "panel": [
+    {
+      "variable": "$panel-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-border"
+    },
+    {
+      "variable": "$panel-background",
+      "value": "color(white) !default",
+      "name": "panel-background"
+    },
+    {
+      "variable": "$panel-segment-border",
+      "value": "1px solid color(gray-light) !default",
+      "name": "panel-segment-border"
+    },
+    {
+      "variable": "$panel-scrollable-height",
+      "value": "300px !default",
+      "name": "panel-scrollable-height"
     }
   ],
   "blockquote": [
@@ -352,38 +374,16 @@
       "name": "select-icon-offset"
     }
   ],
-  "panel": [
+  "space": [
     {
-      "variable": "$panel-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-border"
-    },
-    {
-      "variable": "$panel-background",
-      "value": "color(white) !default",
-      "name": "panel-background"
-    },
-    {
-      "variable": "$panel-segment-border",
-      "value": "1px solid color(gray-light) !default",
-      "name": "panel-segment-border"
-    },
-    {
-      "variable": "$panel-scrollable-height",
-      "value": "300px !default",
-      "name": "panel-scrollable-height"
-    }
-  ],
-  "spread": [
-    {
-      "variable": "$spread-values",
+      "variable": "$space-values",
       "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "spread-values"
+      "name": "space-values"
     },
     {
-      "variable": "$spread-value",
+      "variable": "$space-value",
       "value": "medium !default",
-      "name": "spread-value"
+      "name": "space-value"
     }
   ],
   "table": [
@@ -455,49 +455,19 @@
       "name": "badge-hover-background"
     }
   ],
-  "space": [
+  "spread": [
     {
-      "variable": "$space-values",
+      "variable": "$spread-values",
       "value": "(\n  xsmall: 0.15em,\n  small: 0.3em,\n  medium: 0.5em,\n  large: 1em,\n  xlarge: 1.5em,\n  xxlarge: 2em,\n) !default",
-      "name": "space-values"
+      "name": "spread-values"
     },
     {
-      "variable": "$space-value",
+      "variable": "$spread-value",
       "value": "medium !default",
-      "name": "space-value"
+      "name": "spread-value"
     }
   ],
   "button": [
-    {
-      "variable": "$button-fill-variants",
-      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
-      "name": "button-fill-variants"
-    },
-    {
-      "variable": "$button-fill-variant",
-      "value": "neutral !default",
-      "name": "button-fill-variant"
-    },
-    {
-      "variable": "$button-hollow-variants",
-      "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
-      "name": "button-hollow-variants"
-    },
-    {
-      "variable": "$button-hollow-variant",
-      "value": "neutral !default",
-      "name": "button-hollow-variant"
-    },
-    {
-      "variable": "$button-hollow-border",
-      "value": "2px !default",
-      "name": "button-hollow-border"
-    },
-    {
-      "variable": "$button-hollow-background",
-      "value": "transparent !default",
-      "name": "button-hollow-background"
-    },
     {
       "variable": "$button-sizes",
       "value": "(\n  xsmall: (\n    'font-size': 0.6em\n  ),\n  small: (\n    'font-size': 0.8em\n  ),\n  medium: (\n    'font-size': 1em,\n    'padding': 0.5em 1em\n  ),\n  large: (\n    'font-size': 1.25em\n  ),\n  xlarge: (\n    'font-size': 1.5em\n  ),\n) !default",
@@ -522,6 +492,36 @@
       "variable": "$button-disabled-opacity",
       "value": "0.5 !default",
       "name": "button-disabled-opacity"
+    },
+    {
+      "variable": "$button-hollow-variants",
+      "value": "(\n  neutral: (\n    'color': color(black) color(black),\n    'border-color': color(gray-light),\n    'background-color': transparent color(gray-light),\n  ),\n  primary: (\n    'color': color(primary) color(white),\n    'border-color': color(primary),\n    'background-color': transparent color(primary),\n  ),\n  secondary: (\n    'color': color(secondary) color(white),\n    'border-color': color(secondary),\n    'background-color': transparent color(secondary),\n  ),\n  success: (\n    'color': color(success) color(white),\n    'border-color': color(success),\n    'background-color': transparent color(success),\n  ),\n  warning: (\n    'color': color(warning) color(black),\n    'border-color': color(warning),\n    'background-color': transparent color(warning),\n  ),\n  info: (\n    'color': color(info) color(white),\n    'border-color': color(info),\n    'background-color': transparent color(info),\n  ),\n  error: (\n    'color': color(error) color(white),\n    'border-color': color(error),\n    'background-color': transparent color(error),\n  ),\n) !default",
+      "name": "button-hollow-variants"
+    },
+    {
+      "variable": "$button-hollow-variant",
+      "value": "neutral !default",
+      "name": "button-hollow-variant"
+    },
+    {
+      "variable": "$button-hollow-border",
+      "value": "2px !default",
+      "name": "button-hollow-border"
+    },
+    {
+      "variable": "$button-hollow-background",
+      "value": "transparent !default",
+      "name": "button-hollow-background"
+    },
+    {
+      "variable": "$button-fill-variants",
+      "value": "(\n  neutral: (\n    'color': color(black),\n    'background-color': color(gray-light) darken(color(gray-light), 5%),\n  ),\n  primary: (\n    'color': color(white),\n    'background-color': color(primary) darken(color(primary), 10%),\n  ),\n  secondary: (\n    'color': color(white),\n    'background-color': color(secondary) darken(color(secondary), 10%),\n  ),\n  success: (\n    'color': color(white),\n    'background-color': color(success) darken(color(success), 10%),\n  ),\n  warning: (\n    'color': color(black),\n    'background-color': color(warning) darken(color(warning), 10%),\n  ),\n  info: (\n    'color': color(white),\n    'background-color': color(info) darken(color(info), 10%),\n  ),\n  error: (\n    'color': color(white),\n    'background-color': color(error) darken(color(error), 10%),\n  ),\n) !default",
+      "name": "button-fill-variants"
+    },
+    {
+      "variable": "$button-fill-variant",
+      "value": "neutral !default",
+      "name": "button-fill-variant"
     }
   ],
   "checkbox": [
