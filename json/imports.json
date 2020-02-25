@@ -3,7 +3,12 @@
     "uses"
   ],
   "generic": [
-    "generic/generic"
+    "generic/standardize/standardize",
+    "generic/typography/typography"
+  ],
+  "elements": [
+    "elements/a/a",
+    "elements/h/h"
   ],
   "objects": [
     "objects/container/container",
