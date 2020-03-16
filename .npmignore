@@ -1,2 +1,5 @@
 .editorconfig
 .travis.yml
+
+!json/imports.json
+!json/variables.json
