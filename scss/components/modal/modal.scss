@@ -1,0 +1,73 @@
+/** @define modal */
+
+@import 'variables';
+
+// Modal
+//
+// Component for large dialog prompts which temporary covers entire viewport.
+//
+// .modal--active - Makes modal visible.
+//
+// Markup: components/modal/html/modal.html
+//
+// Style guide: Components.Modal
+.modal {
+  $this: &;
+
+  // 1. The `display: grid` makes panel centered in the middle of a view while allowing for standard scrolling an overflow of the modal. This trick is backward compatible, on non-supported browsers modal will work as expected - it will only won't be centered.
+  display: grid; /* 1 */
+  position: fixed;
+  top: $modal-position-top;
+  left: $modal-position-left;
+  z-index: $modal-zindex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  // Modal Wrapper
+  //
+  // Adds gap around modal's panel.
+  //
+  // Markup: components/modal/html/modal__wrapper.html
+  //
+  // Style guide: Components.Modal.Wrapper
+  &__wrapper {
+    padding: $modal-padding;
+    margin: auto;
+    width: 100%;
+  }
+
+  // Modal Panel
+  //
+  // Panel of the modal. Holds modal content.
+  //
+  // Markup: components/modal/html/modal__panel.html
+  //
+  // Style guide: Components.Modal.Panel
+  &__panel {
+    position: relative;
+    z-index: 2;
+  }
+
+  // Modal Overlay
+  //
+  // Overlay underneath a modal. It cuts out modal panel from the contents below.
+  //
+  // Markup: components/modal/html/modal__overlay.html
+  //
+  // Style guide: Components.Modal.Overlay
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &--active {
+    z-index: $modal-active-zindex;
+  }
+}

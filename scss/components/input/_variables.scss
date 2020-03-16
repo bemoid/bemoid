@@ -1,0 +1,38 @@
+////
+/// @group Input
+////
+
+/// Input font family.
+///
+/// @type {Keyword}
+$input-font-family: inherit !default;
+
+/// Input background color.
+///
+/// @type {Number|Value|Values}
+$input-background: color(white) !default;
+
+/// Input border style.
+///
+/// @type {Number|Value|Values}
+$input-border-width: 1px !default;
+
+/// Input border style.
+///
+/// @type {Keyword}
+$input-border-style: solid !default;
+
+/// Input border width.
+///
+/// @type {Color}
+$input-border-color: color(gray-light) !default;
+
+/// Input outline value.
+///
+/// @type {Values}
+$input-focus-outline: 0 !default;
+
+/// Focused input border styles.
+///
+/// @type {Color}
+$input-focus-border-color: color(info) !default;

@@ -1,0 +1,66 @@
+/** @define spread */
+
+@import 'variables';
+
+// Spread
+//
+// Component for adding horizontal space between elements.
+//
+// .spread--xsmall  - Adds xsmall level of a horizontal distance.
+// .spread--small   - Adds small level of a horizontal distance.
+// .spread--large   - Adds large level of a horizontal distance.
+// .spread--xlarge  - Adds xlarge level of a horizontal distance.
+// .spread--xxlarge - Adds xxlarge level of a horizontal distance.
+//
+// Markup: components/spread/html/spread.html
+//
+// Style guide: Components.Gutter
+.spread {
+  $spread: get($spread-values, $spread-value);
+
+  & > * + * {
+    margin-left: $spread;
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    &\@#{$breakpoint} {
+      @include breakpoint($breakpoint up) {
+        & > * + * {
+          margin-left: $spread;
+        }
+      }
+    }
+  }
+
+  @each $size, $declaration in $spread-values {
+    @if $size != $space-value {
+      &--#{$size} {
+        & > * + * {
+          margin-left: $declaration;
+        }
+      }
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    @each $size, $declaration in $spread-values {
+      &--#{$size}\@#{$breakpoint} {
+        & > * + * {
+          @include breakpoint($breakpoint up) {
+            margin-left: $declaration;
+          }
+        }
+      }
+    }
+  }
+
+  @each $breakpoint, $width in $breakpoint-sizes {
+    &--none\@#{$breakpoint} {
+      @include breakpoint($breakpoint up) {
+        & > * + * {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

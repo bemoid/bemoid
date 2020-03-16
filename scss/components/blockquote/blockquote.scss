@@ -1,0 +1,34 @@
+/** @define blockquote */
+
+@import 'variables';
+
+// Blockquote
+//
+// Component for defining a block of text that is a direct quotation.
+//
+// Markup: components/blockquote/html/blockquote.html
+//
+// Style guide: Components.Blockquote
+.blockquote {
+  display: block;
+  margin: $blockquote-margins;
+  background-color: $blockquote-background;
+  border-width: $blockquote-border-width;
+  border-style: $blockquote-border-style;
+  border-color: $blockquote-border-color;
+
+  // Blockquote Footer
+  //
+  // Defines a block of text with a name of the quotation source.
+  //
+  // Markup: components/blockquote/html/blockquote__footer.html
+  //
+  // Style guide: Components.Blockquote.Footer
+  &__footer {
+    color: $blockquote-footer-color;
+
+    &::before {
+      content: attr(data-before);
+    }
+  }
+}

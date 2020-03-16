@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/label",
+  "description": "Component for providing an appearance for field labels",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "label.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "label"
+  ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

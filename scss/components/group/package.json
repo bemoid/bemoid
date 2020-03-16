@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/group",
+  "description": "Component for grouping together other components into a single interface",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "group.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "group"
+  ],
+  "dependencies": {
+    "@bemoid/mixin-breakpoint": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

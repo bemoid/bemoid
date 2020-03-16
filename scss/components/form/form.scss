@@ -1,0 +1,42 @@
+/** @define form */
+
+@import 'variables';
+
+// Form
+//
+// Component which structures form interactive controls like fields, selects or checkboxes.
+//
+// Markup: components/form/html/form.html
+//
+// Style guide: Components.Form
+.form {
+  $this: &;
+
+  // Form Group
+  //
+  // Element used to group several controls within a form block.
+  //
+  // Markup: components/form/html/form__group.html
+  //
+  // Style guide: Components.Form.Group
+  &__group {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $form-group-background;
+    border: $form-group-border;
+  }
+
+  // Form Legend
+  //
+  // Represents a caption for the content of group element.
+  //
+  // Markup: components/form/html/form__legend.html
+  //
+  // Style guide: Components.Form.Legend
+  &__legend {
+    margin-top: 0;
+    font-size: $form-legend-font-size;
+    font-weight: $form-legend-weight;
+    text-transform: $form-legend-text-transform;
+  }
+}

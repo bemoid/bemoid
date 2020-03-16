@@ -1,0 +1,18 @@
+////
+/// @group Media
+////
+
+/// Collection of gutters sizes by breakpoints.
+///
+/// @type {Map}
+/// @prop {Value|Values} xsmall
+/// @prop {Value|Values} large
+$media-gutters: (
+  small: 0.3rem,
+  medium: 0.5rem,
+) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$media-gutter: medium !default;

@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/container",
+  "description": "Component for limiting spreading of the internal objects to a certain width",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "container.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "container"
+  ],
+  "dependencies": {
+    "@bemoid/function-breakpoint": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

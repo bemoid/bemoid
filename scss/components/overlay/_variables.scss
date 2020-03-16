@@ -1,0 +1,13 @@
+////
+/// @group Overlay
+////
+
+/// Overlay background color.
+///
+/// @type {Color}
+$overlay-background: color(black) !default;
+
+/// Overlay opacity value.
+///
+/// @type {Number}
+$overlay-opacity: 0.66 !default;

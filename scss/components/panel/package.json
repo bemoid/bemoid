@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/panel",
+  "description": "Encloses content in visualy separated sections",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "panel.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "panel"
+  ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

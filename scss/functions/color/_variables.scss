@@ -1,0 +1,35 @@
+////
+/// @group Functions
+////
+
+/// Collection of colors.
+///
+/// @type {Map}
+/// @prop {Color} primary
+/// @prop {Color} secondary
+/// @prop {Color} success
+/// @prop {Color} warning
+/// @prop {Color} error
+/// @prop {Color} info
+/// @prop {Color} white
+/// @prop {Color} gray-lighter
+/// @prop {Color} gray-light
+/// @prop {Color} gray
+/// @prop {Color} gray-dark
+/// @prop {Color} gray-darker
+/// @prop {Color} black
+$color-values: (
+  primary: #6c3fce,
+  secondary: #14c1bf,
+  success: #26c65e,
+  warning: #ffde66,
+  error: #ec3953,
+  info: #3273dc,
+  white: #fff,
+  gray-lighter: #f6f6f6,
+  gray-light: #d7dfe6,
+  gray: #79858c,
+  gray-dark: #586973,
+  gray-darker: #425059,
+  black: #171c1f,
+) !default;

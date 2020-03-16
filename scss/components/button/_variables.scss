@@ -1,0 +1,49 @@
+////
+/// @group Button
+////
+
+/// Collection of button sizes.
+///
+/// @type {Map}
+/// @prop {Map} xsmall
+/// @prop {Map} small
+/// @prop {Map} large
+/// @prop {Map} xlarge
+$button-sizes: (
+  xsmall: (
+    'font-size': 0.6em
+  ),
+  small: (
+    'font-size': 0.8em
+  ),
+  medium: (
+    'font-size': 1em,
+    'padding': 0.5em 1em
+  ),
+  large: (
+    'font-size': 1.25em
+  ),
+  xlarge: (
+    'font-size': 1.5em
+  ),
+) !default;
+
+/// Default button size.
+///
+/// @type {Keyword}
+$button-size: medium !default;
+
+/// Button text align.
+///
+/// @type {Keyword}
+$button-align: center !default;
+
+/// Side paddings value for wide button.
+///
+/// @type {Value}
+$button-wide-padding: 2em !default;
+
+/// Opacity of the disabled button.
+///
+/// @type {Number}
+$button-disabled-opacity: 0.5 !default;

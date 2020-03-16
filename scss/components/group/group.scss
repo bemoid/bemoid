@@ -1,0 +1,159 @@
+/** @define group */
+
+@import 'variables';
+
+// Group
+//
+// Component for grouping together other components into a single interface.
+//
+// .group--overlap  - Makes group items overlap on each other.
+// .group--tabbed   - Makes group items tabbed like bookmarks.
+// .group--expand   - Expands group items to all available space.
+// .group--stack    - Makes group items stacked on each other.
+//
+// Markup: components/group/html/group.html
+//
+// Style guide: Components.Group
+.group {
+  $this: &;
+
+  display: flex;
+
+  // Group Item
+  //
+  // Element of the group block to determine components for grouping.
+  //
+  // Markup: components/group/html/group__item.html
+  //
+  // Style guide: Components.Group.Item
+  &__item {
+    flex: 0 1 auto;
+    max-width: 100%;
+
+    &,
+    & > * {
+      border-radius: $group-inner-radius;
+    }
+
+    &:first-child,
+    &:first-child > * {
+      border-radius:
+        $group-outer-radius
+        $group-inner-radius
+        $group-inner-radius
+        $group-outer-radius;
+    }
+
+    &:last-child,
+    &:last-child > * {
+      border-radius:
+        $group-inner-radius
+        $group-outer-radius
+        $group-outer-radius
+        $group-inner-radius;
+    }
+
+    &:hover,
+    &:focus,
+    & > *:hover,
+    & > *:focus, {
+      position: relative;
+    }
+
+    &:focus,
+    & > *:focus {
+      z-index: 2;
+    }
+
+    &--expand {
+      flex: 1 0 auto;
+    }
+  }
+
+  // Group Divider
+  //
+  // Element of group component which separates group items. Espacially to use with `Divider` component.
+  //
+  // Markup: components/group/html/group__divider.html
+  //
+  // Style guide: Components.Group.Divider
+  &__divider {
+    flex: 0 0 $group-divider-width;
+    width: $group-divider-width;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--inlined {
+    display: inline-flex;
+  }
+
+  &--overlap {
+    & > * + * {
+      margin-left: $group-overlap;
+    }
+
+    &#{$this}--stack {
+      & > * + * {
+        margin-left: 0;
+        margin-top: $group-overlap;
+      }
+    }
+  }
+
+  &--expand {
+    width: 100%;
+
+    #{$this}__item {
+      flex: 1;
+    }
+  }
+
+  &--tabbed {
+    #{$this}__item {
+      &,
+      & > * {
+        border-radius:
+          $group-outer-radius
+          $group-outer-radius
+          $group-inner-radius
+          $group-inner-radius;
+      }
+    }
+  }
+
+  &--stack {
+    flex-direction: column;
+
+    #{$this}__item {
+      &:first-child,
+      &:first-child > * {
+        border-radius:
+          $group-outer-radius
+          $group-outer-radius
+          $group-inner-radius
+          $group-inner-radius;
+      }
+
+      &:last-child,
+      &:last-child > * {
+        border-radius:
+          $group-inner-radius
+          $group-inner-radius
+          $group-outer-radius
+          $group-outer-radius;
+      }
+    }
+
+    #{$this}__divider {
+      flex: 0 0 auto;
+      width: 100%;
+      height: $group-divider-width;
+    }
+  }
+}

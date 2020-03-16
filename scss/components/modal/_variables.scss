@@ -1,0 +1,28 @@
+////
+/// @group Modal
+////
+
+/// Space value around the panel of a modal.
+///
+/// @type {Value}
+$modal-padding: 1.5em !default;
+
+/// Top position value of the modal.
+///
+/// @type {Value}
+$modal-position-top: 0;
+
+/// Left position value of the modal.
+///
+/// @type {Value}
+$modal-position-left: 0;
+
+/// Space value around the modal.
+///
+/// @type {Value}
+$modal-zindex: -1 !default;
+
+/// Space value around the modal.
+///
+/// @type {Value}
+$modal-active-zindex: 100 !default;

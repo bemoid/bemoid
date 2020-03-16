@@ -1,0 +1,28 @@
+////
+/// @group Form
+////
+
+/// Background color of form fieldset group.
+///
+/// @type {Value}
+$form-group-background: color(gray-lighter) !default;
+
+/// Border styles of form fieldset group.
+///
+/// @type {Value}
+$form-group-border: 1px solid color(gray-light) !default;
+
+/// Font size of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-font-size: 0.8em !default;
+
+/// Font weight of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-weight: bold !default;
+
+/// Text transform of legend in form fieldset group.
+///
+/// @type {Value}
+$form-legend-text-transform: uppercase !default;

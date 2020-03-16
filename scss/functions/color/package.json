@@ -1,0 +1,21 @@
+{
+  "name": "@bemoid/function-color",
+  "description": "A getter function for color values",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "color.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "color"
+  ],
+  "dependencies": {
+    "@bemoid/function-get": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

@@ -1,0 +1,76 @@
+/** @define dropdown */
+
+@import 'variables';
+
+// Dropdown
+//
+// Component for creating interactive hidden panels.
+//
+// .dropdown--active    - Indicates visible state of dropdown.
+// .dropdown--right     - Aligns dropdown content to the right.
+// .dropdown--hoverable - Triggers dropdown on mouse hover event.
+//
+// Markup: objects/dropdown/html/dropdown.html
+//
+// Style guide: Objects.Dropdown
+.dropdown {
+  $this: &;
+
+  position: relative;
+  display: inline-block;
+
+  // Dropdown Content
+  //
+  // Content element of the dropdown component. Holds togglable content.
+  //
+  // .dropdown__content--gapless - Removes space between dropdown trigger and content.
+  //
+  // Markup: objects/dropdown/html/dropdown__content.html
+  //
+  // Style guide: Objects.Dropdown.Content
+  &__content {
+    display: none;
+    padding-top: $dropdown-gap;
+
+    &--gapless {
+      padding-top: 0;
+    }
+  }
+
+  // Dropdown Panel
+  //
+  // Panel element of the dropdown component. Holds content of the dropdown.
+  //
+  // Markup: objects/dropdown/html/dropdown__panel.html
+  //
+  // Style guide: Objects.Dropdown.Panel
+  &__panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    max-width: $dropdown-max-width;
+    min-width: $dropdown-min-width;
+  }
+
+  &--active {
+    #{$this}__content {
+      display: block;
+    }
+  }
+
+  &--right {
+    #{$this}__content {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &--hoverable {
+    &:hover {
+      #{$this}__content {
+        display: block;
+      }
+    }
+  }
+}

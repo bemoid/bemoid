@@ -1,0 +1,21 @@
+////
+/// @group Container
+////
+
+/// Collection of container sizes.
+///
+/// @type {Keyword}
+$container-sizes: (
+  expand: 100%,
+  xsmall: breakpoint(xsmall),
+  small: breakpoint(small),
+  medium: breakpoint(medium),
+  large: breakpoint(large),
+  xlarge: breakpoint(xlarge),
+  xxlarge: breakpoint(xxlarge),
+) !default;
+
+/// Default container size.
+///
+/// @type {Keyword}
+$container-size: expand !default;

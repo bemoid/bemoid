@@ -1,0 +1,22 @@
+{
+  "name": "@bemoid/divider",
+  "description": "Component for dividing group elements with space and labeled badge",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "divider.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "divider"
+  ],
+  "dependencies": {
+    "@bemoid/function-color": "^0.1.0",
+    "@bemoid/mixin-declarations": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

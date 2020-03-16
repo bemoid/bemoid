@@ -1,0 +1,81 @@
+/** @define radio */
+
+@import 'variables';
+
+// Radio
+//
+// Component for creating choosable field inputs.
+//
+// Markup: components/radio/html/radio.html
+//
+// Style guide: Components.Radio
+.radio {
+  $this: &;
+
+  // Radio Input
+  //
+  // Core element which manages state for label element.
+  //
+  // Markup: components/radio/html/radio__input.html
+  //
+  // Style guide: Components.Radio.Input
+  &__input {
+    display: none;
+
+    &:checked {
+      & + #{$this}__label {
+        &::after {
+          transform: translate(-50%, -50%) $radio-active-inner-transform;
+        }
+      }
+    }
+  }
+
+  // Radio Label
+  //
+  // Custom mark element of radio input.
+  //
+  // Markup: components/radio/html/radio__label.html
+  //
+  // Style guide: Components.Radio.Label
+  &__label {
+    position: relative;
+    padding-left: 1.5em;
+    vertical-align: middle;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+    }
+
+    &::before {
+      left: 0;
+      margin-top: -#{$radio-outer-width/2};
+      width: $radio-outer-width;
+      height: $radio-outer-width;
+      background: $radio-outer-background;
+      border: $radio-outer-border;
+      border-radius: $radio-radius;
+    }
+
+    &::after {
+      left: $radio-outer-width/2;
+      width: $radio-inner-width;
+      height: $radio-inner-width;
+      transform: translate(-50%, -50%) $radio-inner-transform;
+      background: $radio-inner-background;
+      border-radius: $radio-radius;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      &::before {
+        background: $radio-hover-outer-background;
+        border: $radio-hover-outer-border;
+      }
+    }
+  }
+}

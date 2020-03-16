@@ -1,0 +1,19 @@
+/** @define select */
+
+@import 'variables';
+
+// Select
+//
+// Component for creating selectable field inputs.
+//
+// Markup: components/select/html/select.html
+//
+// Style guide: Components.Select
+.select {
+  appearance: none;
+  border-radius: 0;
+  padding-right: $select-icon-space !important;
+  background-image: url($select-icon);
+  background-position: center right $select-icon-offset;
+  background-repeat: no-repeat;
+}

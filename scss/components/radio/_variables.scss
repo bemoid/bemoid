@@ -1,0 +1,53 @@
+////
+/// @group Radio
+////
+
+/// Radio input radius.
+///
+/// @type {Number|Value|Values}
+$radio-radius: 50% !default;
+
+/// Radio input inner circle width.
+///
+/// @type {Number|Value}
+$radio-inner-width: 0.3em !default;
+
+/// Radio input inner circle background color.
+///
+/// @type {Color}
+$radio-inner-background: color(info) !default;
+
+/// Radio input inner circle transform.
+///
+/// @type {Values}
+$radio-inner-transform: scale(0) !default;
+
+/// Radio input inner circle width.
+///
+/// @type {Number|Value}
+$radio-outer-width: 1em !default;
+
+/// Radio input outer circle background color.
+///
+/// @type {Color}
+$radio-outer-background: transparent !default;
+
+/// Radio input outer circle border.
+///
+/// @type {Values}
+$radio-outer-border: 1px solid color(gray-light) !default;
+
+/// Radio input inner circle transform in active state.
+///
+/// @type {Values}
+$radio-active-inner-transform: scale(1) !default;
+
+/// Radio input outer circle border in active state.
+///
+/// @type {Values}
+$radio-hover-outer-border: 1px solid color(info) !default;
+
+/// Radio input outer circle background in active state.
+///
+/// @type {Color}
+$radio-hover-outer-background: transparentize(color(info), 0.9) !default;

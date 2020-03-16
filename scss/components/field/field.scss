@@ -1,0 +1,126 @@
+/** @define field */
+
+@import 'variables';
+
+// Field
+//
+// Component for creating various form fields. Controls size, status and behaviour of inputs.
+//
+// .field--xsmall   - Xsmall variant of a field.
+// .field--small    - Small variant of a field.
+// .field--large    - Large variant of a field.
+// .field--xlarge   - Xlarge variant of a field.
+// .field--expand - Expands field to fullwidth.
+// .field--inline   - Makes field behave as an inline element.
+// .field--success  - Adds success status to the field.
+// .field--warning  - Adds warning status to the field.
+// .field--error    - Adds error status to the field.
+// .field--info     - Adds info status to the field.
+//
+// Markup: components/field/html/field.html
+//
+// Style guide: Components.Field
+.field {
+  $this: &;
+
+  position: relative;
+
+  // Field Label
+  //
+  // Element for providing the name of a field input.
+  //
+  // Markup: components/field/html/field__label.html
+  //
+  // Style guide: Components.Field.Label
+  &__label {
+    display: block;
+  }
+
+  &__input,
+  &__control {
+    display: block;
+    vertical-align: middle;
+  }
+
+  // Field Input
+  //
+  // Element for typed and selectable inputs (like text, textarea, select).
+  //
+  // Markup: components/field/html/field__input.html
+  //
+  // Style guide: Components.Field.Input
+  &__input {
+    $size: map-get($field-sizes, $field-size);
+
+    @include declarations($size);
+  }
+
+  // Field Control
+  //
+  // Element for a checkable inputs (like checkbox, radio).
+  //
+  // Markup: components/field/html/field__control.html
+  //
+  // Style guide: Components.Field.Control
+  &__control {
+    $size: map-get($field-sizes, $field-size);
+
+    @include declarations(map-remove($size, 'padding'));
+  }
+
+  // Field Caption
+  //
+  // Element for giving a description to the field.
+  //
+  // .field__caption--untouched - Makes caption insensitive to status changes of a field. Description will not change its color.
+  //
+  // Markup: components/field/html/field__caption.html
+  //
+  // Style guide: Components.Field.Caption
+  &__caption {
+    font-size: $field-caption-font-size;
+
+    &--untouched {
+      color: $field-caption-untouched-color !important;
+    }
+  }
+
+  @each $size, $declarations in $field-sizes {
+    @if $size != $field-size {
+      &--#{$size} {
+        #{$this}__input {
+          @include declarations($declarations);
+        }
+
+        #{$this}__control {
+          font-size: map-get($declarations, 'font-size');
+        }
+      }
+    }
+  }
+
+  @each $variant, $declarations in $field-variants {
+    &--#{$variant} {
+      color: map-get($declarations, 'color');
+
+      #{$this}__input {
+        @include declarations(map-remove($declarations, 'color'));
+      }
+    }
+  }
+
+  &--expand {
+    #{$this}__input,
+    #{$this}__control {
+      width: 100%;
+    }
+  }
+
+  &--inline {
+    #{$this}__label,
+    #{$this}__input,
+    #{$this}__control {
+      display: inline-block;
+    }
+  }
+}

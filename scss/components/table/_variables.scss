@@ -1,0 +1,43 @@
+////
+/// @group Table
+////
+
+/// Padding size in each table cell.
+///
+/// @type {Value|Values}
+$table-padding: 0.5em 1em !default;
+
+/// Border width on table cells.
+///
+/// @type {Value}
+$table-border-width: 1px !default;
+
+/// Style of table cells border.
+///
+/// @type {Keyword}
+$table-border-style: solid !default;
+
+/// Color of table cells border.
+///
+/// @type {Color}
+$table-border-color: color(gray-light) !default;
+
+/// Background of the table head and footer.
+///
+/// @type {Color}
+$table-heading-background: color(gray-lighter) !default;
+
+/// Padding size in each condensed table cell.
+///
+/// @type {Value|Values}
+$table-condense-padding: 0.3em 0.5em !default;
+
+/// Background of the striped table even rows.
+///
+/// @type {Color}
+$table-stripe-background: lighten(color(gray-lighter), 1%) !default;
+
+/// Background of the hovered row in hoverable table.
+///
+/// @type {Color}
+$table-hoverable-background: color(gray-lighter) !default;

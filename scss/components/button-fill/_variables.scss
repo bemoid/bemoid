@@ -1,0 +1,48 @@
+////
+/// @group Button
+////
+
+/// Collection of filled button variants.
+///
+/// @type {Map}
+/// @prop {Map} primary
+/// @prop {Map} secondary
+/// @prop {Map} success
+/// @prop {Map} warning
+/// @prop {Map} info
+/// @prop {Map} error
+$button-fill-variants: (
+  neutral: (
+    'color': color(black),
+    'background-color': color(gray-light) darken(color(gray-light), 5%),
+  ),
+  primary: (
+    'color': color(white),
+    'background-color': color(primary) darken(color(primary), 10%),
+  ),
+  secondary: (
+    'color': color(white),
+    'background-color': color(secondary) darken(color(secondary), 10%),
+  ),
+  success: (
+    'color': color(white),
+    'background-color': color(success) darken(color(success), 10%),
+  ),
+  warning: (
+    'color': color(black),
+    'background-color': color(warning) darken(color(warning), 10%),
+  ),
+  info: (
+    'color': color(white),
+    'background-color': color(info) darken(color(info), 10%),
+  ),
+  error: (
+    'color': color(white),
+    'background-color': color(error) darken(color(error), 10%),
+  ),
+) !default;
+
+/// Default variant of the filled button.
+///
+/// @type {Keyword}
+$button-fill-variant: neutral !default;

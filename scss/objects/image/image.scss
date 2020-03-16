@@ -1,0 +1,47 @@
+/** @define image */
+
+@import 'variables';
+
+// Image
+//
+// Component for controlling images.
+//
+// .image--expand    - Image stretches to fill all width space of its container.
+// .image--round     - Rounds up corners of the image.
+// .image--circle    - Changes shape of image to circle.
+// .image--top       - Aligns image verticaly to the top.
+// .image--middle    - Aligns image verticaly to the middle.
+// .image--bottom    - Aligns image verticaly to the bottom.
+//
+// Markup: objects/image/html/image.html
+//
+// Style guide: Objects.Image
+.image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+
+  &--expand {
+    width: 100%;
+  }
+
+  &--round {
+    border-radius: $image-radius-rounded;
+  }
+
+  &--circle {
+    border-radius: $image-radius-circular;
+  }
+
+  &--top {
+    vertical-align: top;
+  }
+
+  &--middle {
+    vertical-align: middle;
+  }
+
+  &--bottom {
+    vertical-align: bottom;
+  }
+}

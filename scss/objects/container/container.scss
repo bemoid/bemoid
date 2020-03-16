@@ -1,0 +1,44 @@
+/** @define container */
+
+@import 'variables';
+
+// Container
+//
+// Component for limiting spreading of the internal objects to a certain width.
+//
+// .container--xsmall   - Xsmall width. Extends up to `xsmall` breakpoint.
+// .container--small    - Small width. Extends up to `small` breakpoint.
+// .container--medium   - Medium width. Extends up to `medium` breakpoint.
+// .container--large    - Large width. Extends up to `large` breakpoint.
+// .container--xlarge   - Xlarge width. Extends up to `xlarge` breakpoint.
+// .container--xxlarge  - Xxlarge width. Extends up to `xxlarge` breakpoint.
+// .container--stretch  - Expands container to take up all available width and height space.
+// .container--center   - Centers container horizontally.
+//
+// Markup: objects/container/html/container.html
+//
+// Style guide: Objects.Container
+.container {
+  $size: map-get($container-sizes, $container-size);
+
+  display: block;
+  width: 100%;
+  max-width: $size;
+
+  @each $size, $width in $container-sizes {
+    @if $size != $container-size {
+      &--#{$size} {
+        max-width: $width;
+      }
+    }
+  }
+
+  &--stretch {
+    height: 100%;
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

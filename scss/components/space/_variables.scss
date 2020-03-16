@@ -1,0 +1,26 @@
+////
+/// @group Components
+////
+
+/// Collection of space values.
+///
+/// @type {Map}
+/// @prop {Value} xsmall
+/// @prop {Value} small
+/// @prop {Value} medium
+/// @prop {Value} large
+/// @prop {Value} xlarge
+/// @prop {Value} xxlarge
+$space-values: (
+  xsmall: 0.15em,
+  small: 0.3em,
+  medium: 0.5em,
+  large: 1em,
+  xlarge: 1.5em,
+  xxlarge: 2em,
+) !default;
+
+/// Default value of space.
+///
+/// @type {Keyword}
+$space-value: medium !default;

@@ -1,0 +1,122 @@
+/** @define button */
+
+@import 'variables';
+
+// Button
+//
+// Extendable component for creating clickable buttons.
+//
+// .button--disable  - Turns on disable state on a button.
+// .button--wide     - Gives button larger horizontal paddings.
+// .button--expand   - Expands button to fullwidth.
+// .button--xsmall   - Xsmall size of a button.
+// .button--small    - Small size of a button.
+// .button--large    - Large size of a button.
+// .button--xlarge   - Xlarge size of a button.
+//
+// Markup: components/button/html/button.html
+//
+// Styleguide: Components.Button
+.button {
+  $this: &;
+
+  $size: map-get($button-sizes, $button-size);
+
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
+  text-decoration: none;
+  outline: 0;
+  text-align: $button-align;
+
+  @each $property, $value in $size {
+    #{$property}: #{$value};
+  }
+
+  // Button Cover
+  //
+  // Covers button with additional content. Useful for providing loading state or change button text.
+  //
+  // Markup: components/button/html/button__cover.html
+  //
+  // Style guide: Components.Button.Cover
+  &__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  // Button Icon
+  //
+  // Icon element which aligns icons inside button.
+  //
+  // Markup: components/button/html/button__icon.html
+  //
+  // Style guide: Components.Button.Icon
+  &__icon {
+    display: inline-block;
+
+    @at-root {
+      img#{$this}__icon,
+      svg#{$this}__icon {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  @each $size, $declarations in $button-sizes {
+    @if $size != $button-size {
+      &--#{$size} {
+        @each $property, $value in $declarations {
+          #{$property}: #{$value};
+        }
+      }
+    }
+  }
+
+  &--wide {
+    padding-left: $button-wide-padding;
+    padding-right: $button-wide-padding;
+  }
+
+  &--expand {
+    display: block;
+    width: 100%;
+  }
+
+  &--cover {
+    cursor: initial;
+    color: transparent !important;
+
+    #{$this}__cover {
+      opacity: 1;
+    }
+  }
+
+  &--curtain {
+    &:hover,
+    &:focus,
+    &:active {
+      color: transparent !important;
+
+      #{$this}__cover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &:disabled,
+  &--disable {
+    cursor: default;
+    pointer-events: none;
+    opacity: $button-disabled-opacity;
+  }
+}
