@@ -1,6 +1,9 @@
 css/*
 !css/.gitkeep
 
+json/*
+!json/.gitkeep
+
 node_modules/
 
 npm-debug.log
