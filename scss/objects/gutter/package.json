@@ -1,0 +1,24 @@
+{
+  "name": "@bemoid/gutter",
+  "description": "Component for providing horizontal gutter around collection of elements",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "gutter.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "gutter"
+  ],
+  "dependencies": {
+    "@bemoid/mixin-breakpoint": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com",
+  "publishConfig": {
+    "access": "public"
+  }
+}

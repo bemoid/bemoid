@@ -1,0 +1,16 @@
+////
+/// @group Gutter
+////
+
+/// Collection of gutter sizes.
+///
+/// @type {Map}
+$gutter-sizes: (
+  small: 0.3rem,
+  medium: 0.5rem,
+) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$gutter-size: medium !default;

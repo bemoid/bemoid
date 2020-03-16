@@ -1,0 +1,24 @@
+{
+  "name": "@bemoid/flex",
+  "description": "Grid system based on flexbox for building complex layouts",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "flex.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "flex"
+  ],
+  "dependencies": {
+    "@bemoid/mixin-breakpoint": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com",
+  "publishConfig": {
+    "access": "public"
+  }
+}

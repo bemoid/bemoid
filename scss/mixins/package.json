@@ -1,0 +1,22 @@
+{
+  "name": "@bemoid/mixins",
+  "description": "Collection of the Bemoid mixins.",
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
+  "license": "MIT",
+  "main": "mixins.scss",
+  "keywords": [
+    "bem",
+    "sass",
+    "mixins"
+  ],
+  "dependencies": {
+    "@bemoid/mixin-breakpoint": "^0.1.0",
+    "@bemoid/mixin-declarations": "^0.1.0"
+  },
+  "version": "0.1.0",
+  "repository": "bemoid/bemoid",
+  "bugs": {
+    "url": "https://github.com/bemoid/bemoid/issues"
+  },
+  "homepage": "https://bemoid.com"
+}

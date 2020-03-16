@@ -1,0 +1,53 @@
+{
+  "name": "@bemoid/bemoid",
+  "version": "0.1.0",
+  "description": "A component-oriented SASS framework based on BEM convention and OOCSS methodology",
+  "homepage": "https://bemoid.com",
+  "main": "scss/bemoid.scss",
+  "scripts": {
+    "transform": "node build/apply.transformations.js -i css/bemoid.css -o css/bemoid.css",
+    "extract": "npm run extract:variables && npm run extract:imports",
+    "extract:variables": "node build/extract.variables.js -i 'scss/**/_variables.scss' -o 'json/variables.json'",
+    "extract:imports": "node build/extract.imports.js -i 'scss/bemoid.scss' -o 'json/imports.json'",
+    "compile": "node-sass scss/bemoid.scss | node ./build/banner.js > css/bemoid.css",
+    "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
+    "lint": "stylelint 'scss/**/*.scss'",
+    "build": "npm run compile && npm run extract && npm run transform && npm run minify",
+    "publish": "lerna publish"
+  },
+  "keywords": [
+    "framework",
+    "bem",
+    "oocss",
+    "css",
+    "sass"
+  ],
+  "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@bemoid/stylelint-config": "^0.1.0",
+    "@bemoid/stylelint-config-scss": "^0.2.1",
+    "async": "^2.6.3",
+    "autoprefixer": "^9.7.4",
+    "cssnano-cli": "^1.0.5",
+    "glob": "^7.1.6",
+    "lerna": "^3.20.2",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^3.1.1",
+    "postcss-import": "^10.0.0",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-scss": "^1.0.6",
+    "stylelint": "^9.10.1",
+    "yargs": "^8.0.2"
+  },
+  "bemoid": {
+    "paths": {
+      "schema": "json",
+      "markup": "html"
+    },
+    "schema": [
+      "imports",
+      "variables"
+    ]
+  }
+}

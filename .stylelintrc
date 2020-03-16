@@ -1,0 +1,3 @@
+{
+  "extends": "@bemoid/stylelint-config-scss"
+}

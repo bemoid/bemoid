@@ -1,0 +1,20 @@
+////
+/// @group Flex
+////
+
+/// Number of columns per flex.
+///
+/// @type {Number}
+$flex-columns: 12 !default;
+
+/// Collection of flex sizes by breakpoint.
+///
+/// @type {Map}
+$flex-sizes: (
+  xsmall: breakpoint(xsmall),
+  small: breakpoint(small),
+  medium: breakpoint(medium),
+  large: breakpoint(large),
+  xlarge: breakpoint(xlarge),
+  xxlarge: breakpoint(xxlarge),
+) !default;

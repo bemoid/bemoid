@@ -1,0 +1,16 @@
+////
+/// @group Waffle
+////
+
+/// Collection of waffle sizes.
+///
+/// @type {Map}
+$waffle-sizes: (
+  small: 0.3rem,
+  medium: 0.5rem,
+) !default;
+
+/// Default gutter size.
+///
+/// @type {Keyword}
+$waffle-size: medium !default;
