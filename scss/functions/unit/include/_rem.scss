@@ -1,0 +1,27 @@
+////
+/// @group Functions
+////
+
+/// Converts pixel value into matching rem values.
+///
+/// @return {Value}
+///
+/// @example scss - example
+///   rem(16px, 16px);
+/// @example css - output
+///   1rem
+@function rem($pixels, $context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @if unit($pixels) != 'px' {
+    @error "Error while converting to REM unit. Value [#{$pixels}] must be in pixels";
+  }
+
+  @return ($pixels / $context) * 1rem;
+}

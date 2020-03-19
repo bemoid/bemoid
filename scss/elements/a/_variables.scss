@@ -1,0 +1,14 @@
+/// Text color of anchors.
+///
+/// @type {Color}
+$anchor-color: lighten(color(black), 15%) !default;
+
+/// Text decoration of anchors.
+///
+/// @type {Keyword}
+$anchor-decoration: underline !default;
+
+/// Text color of anchors on hover.
+///
+/// @type {Color}
+$anchor-hover-color: darken(color(black), 10%) !default;
