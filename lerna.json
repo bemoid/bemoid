@@ -1,12 +1,12 @@
 {
   "version": "0.1.0",
   "packages": [
-    "scss/functions/breakpoint",
-    "scss/functions/get",
-    "scss/mixins/breakpoint",
-    "scss/objects/flex",
-    "scss/objects/gutter",
-    "scss/objects/waffle"
+    "scss/functions/*",
+    "scss/mixins/*",
+    "scss/generics/*",
+    "scss/components/*",
+    "scss/elements/*",
+    "scss/objects/*"
   ],
   "command": {
     "publish": {
