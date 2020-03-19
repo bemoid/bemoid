@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/bemoid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A component-oriented SASS framework based on BEM convention and OOCSS methodology",
   "homepage": "https://bemoid.com",
   "main": "scss/bemoid.scss",
