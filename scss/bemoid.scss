@@ -2,8 +2,12 @@
 @import 'uses';
 
 // Generic
+@import 'generics/standardize/standardize';
+@import 'generics/typography/typography';
 
 // Elements
+@import 'elements/h/h';
+@import 'elements/a/a';
 
 // Objects
 @import 'objects/flex/flex';
