@@ -10,9 +10,9 @@
     "heading"
   ],
   "dependencies": {
-    "@bemoid/function-color": "^0.1.0"
+    "@bemoid/function-color": "^0.2.0"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": "bemoid/bemoid",
   "bugs": {
     "url": "https://github.com/bemoid/bemoid/issues"

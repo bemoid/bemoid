@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packages": [
-    "scss/functions/*",
-    "scss/mixins/*",
-    "scss/generics/*",
     "scss/components/*",
     "scss/elements/*",
+    "scss/functions/*",
+    "scss/generics/*",
+    "scss/mixins/*",
     "scss/objects/*"
   ],
   "command": {
