@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/bemoid/bemoid/issues"
   },
-  "homepage": "https://bemoid.com"
+  "homepage": "https://bemoid.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "753b8d8a2a7924801a59ce725eebba0e9084c4f7"
 }
