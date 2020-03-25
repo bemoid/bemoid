@@ -13,7 +13,7 @@
     "minify": "cssnano < css/bemoid.css > css/bemoid.min.css",
     "lint": "stylelint 'scss/**/*.scss'",
     "build": "npm run compile && npm run extract && npm run transform && npm run minify",
-    "publish": "lerna publish --skip-git"
+    "publish": "lerna publish --no-git-tag-version --no-push"
   },
   "keywords": [
     "framework",
