@@ -2,17 +2,13 @@
 title: Typography
 description: Module for providing typography styles for basic HTML elements
 group: Generic
-layout: docs.html
-algolia: true
 ---
 
-Module for providing typography styles for basic HTML elements.
-
-[[example file=generic/typography/example/document.html]]
+[[example file=scss/generic/typography/example/document.html]]
 
 ## Variables
 
-[[variables file=generic/typography/_variables.scss]]
+[[variables file=scss/generic/typography/_variables.scss]]
 
 ## Standalone installation
 

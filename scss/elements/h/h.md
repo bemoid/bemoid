@@ -2,17 +2,15 @@
 title: Heading
 description: Component for styling `<h>` HTML elements
 group: Elements
-layout: docs.html
-algolia: true
 ---
 
 Component for styling `<h>` HTML elements.
 
-[[example file=elements/h/example/basic.html]]
+[[example file=scss/elements/h/example/basic.html]]
 
 ## Variables
 
-[[variables file=elements/h/_variables.scss]]
+[[variables file=scss/elements/h/_variables.scss]]
 
 ## Standalone installation
 

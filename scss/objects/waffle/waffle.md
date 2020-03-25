@@ -2,8 +2,6 @@
 title: Waffle
 description: Component for providing all-directional gutter around collection of elements
 group: Objects
-layout: docs.html
-algolia: true
 ---
 
 Component for providing all-directional gutter around collection of elements.
@@ -12,25 +10,21 @@ Component for providing all-directional gutter around collection of elements.
 
 Add `.waffle` block class and `.waffle__cell` to give the elements a gutter.
 
-[[example file=objects/waffle/example/basic.html]]
+[[example file=scss/objects/waffle/example/basic.html]]
 
 ### Sizes
 
 Sizing modifers allow you to apply diffrent sizes of a gutter.
 
-[[example file=objects/waffle/example/sizes.html]]
+[[example file=scss/objects/waffle/example/sizes.html]]
 
 Gutters can also take specific sizes from concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class.
 
-[[example file=objects/waffle/example/sizes-responsive.html]]
-
-## Styleguide
-
-[[styleguide file=objects/waffle/waffle.scss]]
+[[example file=scss/objects/waffle/example/sizes-responsive.html]]
 
 ## Variables
 
-[[variables file=components/waffle/_variables.scss]]
+[[variables file=scss/components/waffle/_variables.scss]]
 
 ## Standalone installation
 

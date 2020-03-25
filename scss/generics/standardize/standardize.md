@@ -2,17 +2,15 @@
 title: Standardize
 description: Module for providing normalization of default browser styles
 group: Generic
-layout: docs.html
-algolia: true
 ---
 
 Module for providing normalization of default browser styles.
 
-[[example file=generic/standardize/example/document.html]]
+[[example file=scss/generic/standardize/example/document.html]]
 
 ## Variables
 
-[[variables file=generic/standardize/_variables.scss]]
+[[variables file=scss/generic/standardize/_variables.scss]]
 
 ## Standalone installation
 

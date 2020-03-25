@@ -10,9 +10,9 @@
     "gutter"
   ],
   "dependencies": {
-    "@bemoid/mixin-breakpoint": "^0.2.1"
+    "@bemoid/mixin-breakpoint": "^0.2.2"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "repository": "bemoid/bemoid",
   "bugs": {
     "url": "https://github.com/bemoid/bemoid/issues"
