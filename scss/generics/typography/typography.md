@@ -4,11 +4,11 @@ description: Module for providing typography styles for basic HTML elements
 group: Generic
 ---
 
-[[example file=scss/generic/typography/example/document.html]]
+[[example file=scss/generics/typography/example/document.html]]
 
 ## Variables
 
-[[variables file=scss/generic/typography/_variables.scss]]
+[[variables file=scss/generics/typography/_variables.scss]]
 
 ## Standalone installation
 
