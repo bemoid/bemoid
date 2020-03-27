@@ -68,15 +68,17 @@ The `.flex--reverse` modifier class also accepts breakpoints behind which column
 
 [[example file=scss/objects/flex/example/reverse-responsive.html]]
 
+#### Wrapping
+
+By default, columns will stay in single row even if thier width are larger than available space. To change that, there is a `.flex--wrap` modifier class for forcing columns to wrap in the multiple rows.
+
+[[example file=scss/objects/flex/example/wrap.html]]
+
 #### Stacking
 
 You can also tell a flex to stack its columns on top of each other with the `.flex--stack` modifier class.
 
 [[example file=scss/objects/flex/example/stacked.html]]
-
-Additionaly, there is a `.flex--nowrap` modifier class for forcing columns to stay in single row. Even if thier width are larger than available space.
-
-[[example file=scss/objects/flex/example/nowrap.html]]
 
 ### Gutter
 

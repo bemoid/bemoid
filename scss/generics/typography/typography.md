@@ -1,7 +1,7 @@
 ---
 title: Typography
 description: Module for providing typography styles for basic HTML elements
-group: Generic
+group: Generics
 ---
 
 [[example file=scss/generics/typography/example/document.html]]
