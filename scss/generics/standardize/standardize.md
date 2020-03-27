@@ -1,7 +1,7 @@
 ---
 title: Standardize
 description: Module for providing normalization of default browser styles
-group: Generic
+group: Generics
 ---
 
 Module for providing normalization of default browser styles.
