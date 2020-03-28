@@ -17,7 +17,7 @@
   margin: -#{$size / 2};
 
   & > * {
-    padding: $size / 2;
+    margin: $size / 2;
   }
 
   @each $name, $size in $waffle-sizes {
@@ -26,7 +26,7 @@
         margin: -#{$size / 2};
 
         & > * {
-          padding: $size / 2;
+          margin: $size / 2;
         }
       }
     }
@@ -39,7 +39,7 @@
           margin: -#{$size / 2};
 
           & > * {
-            padding: $size / 2;
+            margin: $size / 2;
           }
         }
       }

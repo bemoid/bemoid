@@ -18,8 +18,8 @@
   margin-right: -#{$size / 2};
 
   & > * {
-    padding-left: $size / 2;
-    padding-right: $size / 2;
+    margin-left: $size / 2;
+    margin-right: $size / 2;
   }
 
   @each $name, $size in $gutter-sizes {
@@ -29,8 +29,8 @@
         margin-right: -#{$size / 2};
 
         & > * {
-          padding-left: $size / 2;
-          padding-right: $size / 2;
+          margin-left: $size / 2;
+          margin-right: $size / 2;
         }
       }
     }
@@ -44,8 +44,8 @@
           margin-right: -#{$size / 2};
 
           & > * {
-            padding-left: $size / 2;
-            padding-right: $size / 2;
+            margin-left: $size / 2;
+            margin-right: $size / 2;
           }
         }
       }
