@@ -14,3 +14,8 @@ $gutter-sizes: (
 ///
 /// @type {Keyword}
 $gutter-size: medium !default;
+
+/// Collection of gutter breakpoints.
+///
+/// @type {Map}
+$gutter-breakpoints: $breakpoint-sizes !default;

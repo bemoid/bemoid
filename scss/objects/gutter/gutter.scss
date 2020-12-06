@@ -36,7 +36,7 @@
     }
   }
 
-  @each $breakpoint, $width in $breakpoint-sizes {
+  @each $breakpoint, $width in $gutter-breakpoints {
     @include breakpoint($breakpoint up) {
       @each $name, $size in $gutter-sizes {
         &--#{$name}\@#{$breakpoint} {
