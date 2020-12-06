@@ -1,13 +1,26 @@
+# Project compiled files
 css/*
 !css/.gitkeep
-
 json/*
 !json/.gitkeep
 
+# We are using Yarn in version 2 as a tool to manage monorepo
+# structure, this requires us to ignore some yarn's
+# specific files and folders
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
 node_modules/
 
-npm-debug.log
-lerna-debug.log
+# Avoid commiting debug files of package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
+# Avoid commiting package-lock.json file
+package-lock.json
+
+# Avoid commiting miscellaneous OS related files
 .DS_Store
 Thumbs.db

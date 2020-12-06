@@ -1,5 +1,6 @@
 {
   "name": "@bemoid/h",
+  "version": "0.4.0",
   "description": "Component for styling <h> HTML elements",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
@@ -10,9 +11,8 @@
     "heading"
   ],
   "dependencies": {
-    "@bemoid/function-color": "^0.2.2"
+    "@bemoid/function-color": "^0.4.0"
   },
-  "version": "0.2.2",
   "repository": "bemoid/bemoid",
   "bugs": {
     "url": "https://github.com/bemoid/bemoid/issues"

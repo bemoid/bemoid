@@ -1,6 +1,7 @@
 {
+  "private": true,
   "name": "@bemoid/bemoid",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A component-oriented SASS framework based on BEM convention and OOCSS methodology",
   "homepage": "https://bemoid.com",
   "main": "scss/bemoid.scss",
@@ -24,9 +25,7 @@
   "devDependencies": {
     "@bemoid/stylelint-config": "^0.1.0",
     "@bemoid/stylelint-config-scss": "^0.2.1",
-    "async": "^3.2.0",
     "glob": "^7.1.6",
-    "lerna": "^3.22.1",
     "node-sass": "^5.0.0",
     "postcss-cli": "^8.3.0",
     "postcss-import": "^13.0.0",
@@ -35,6 +34,14 @@
     "stylelint": "^13.8.0",
     "yargs": "^16.2.0"
   },
+  "workspaces": [
+    "scss/components/*",
+    "scss/elements/*",
+    "scss/functions/*",
+    "scss/generics/*",
+    "scss/mixins/*",
+    "scss/objects/*"
+  ],
   "bemoid": {
     "paths": {
       "schema": "json",
