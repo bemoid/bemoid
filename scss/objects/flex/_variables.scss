@@ -10,11 +10,4 @@ $flex-columns: 12 !default;
 /// Collection of flex breakpoints.
 ///
 /// @type {Map}
-$flex-breakpoints: (
-  xsmall: breakpoint(xsmall),
-  small: breakpoint(small),
-  medium: breakpoint(medium),
-  large: breakpoint(large),
-  xlarge: breakpoint(xlarge),
-  xxlarge: breakpoint(xxlarge),
-) !default;
+$flex-breakpoints: $breakpoint-sizes !default;
