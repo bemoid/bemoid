@@ -32,7 +32,7 @@
     }
   }
 
-  @each $breakpoint, $width in $breakpoint-sizes {
+  @each $breakpoint, $width in $waffle-breakpoints {
     @include breakpoint($breakpoint up) {
       @each $name, $size in $waffle-sizes {
         &--#{$name}\@#{$breakpoint} {
