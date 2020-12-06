@@ -14,3 +14,8 @@ $waffle-sizes: (
 ///
 /// @type {Keyword}
 $waffle-size: medium !default;
+
+/// Collection of waffle breakpoints.
+///
+/// @type {Map}
+$waffle-breakpoints: $breakpoint-sizes !default;

@@ -89,7 +89,7 @@
       flex: 0 1 auto;
     }
 
-    @each $breakpoint, $width in $flex-sizes {
+    @each $breakpoint, $width in $flex-breakpoints {
       @include breakpoint($breakpoint up) {
         @for $i from 1 through $flex-columns {
           &--#{$i}\@#{$breakpoint} {
@@ -101,7 +101,7 @@
     }
 
     &--shrink {
-      @each $breakpoint, $width in $flex-sizes {
+      @each $breakpoint, $width in $flex-breakpoints {
         @include breakpoint($breakpoint up) {
           &\@#{$breakpoint} {
             flex: 0 1 auto;
@@ -172,7 +172,7 @@
   }
 
   &--reverse {
-    @each $breakpoint, $width in $flex-sizes {
+    @each $breakpoint, $width in $flex-breakpoints {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: row-reverse;
@@ -182,7 +182,7 @@
   }
 
   &--stack {
-    @each $breakpoint, $width in $flex-sizes {
+    @each $breakpoint, $width in $flex-breakpoints {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: column;
@@ -196,7 +196,7 @@
   }
 
   &--queue {
-    @each $breakpoint, $width in $flex-sizes {
+    @each $breakpoint, $width in $flex-breakpoints {
       @include breakpoint($breakpoint up) {
         &\@#{$breakpoint} {
           flex-direction: row;
