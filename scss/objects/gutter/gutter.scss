@@ -18,19 +18,19 @@
   margin-right: -#{$size / 2};
 
   & > * {
-    margin-left: $size / 2;
-    margin-right: $size / 2;
+    padding-left: $size / 2;
+    padding-right: $size / 2;
   }
 
   @each $name, $size in $gutter-sizes {
     @if $name != $gutter-size {
       &--#{$name} {
-        margin-left: -#{$size / 2};
-        margin-right: -#{$size / 2};
+        padding-left: -#{$size / 2};
+        padding-right: -#{$size / 2};
 
         & > * {
-          margin-left: $size / 2;
-          margin-right: $size / 2;
+          padding-left: $size / 2;
+          padding-right: $size / 2;
         }
       }
     }
@@ -40,12 +40,12 @@
     @include breakpoint($breakpoint up) {
       @each $name, $size in $gutter-sizes {
         &--#{$name}\@#{$breakpoint} {
-          margin-left: -#{$size / 2};
-          margin-right: -#{$size / 2};
+          padding-left: -#{$size / 2};
+          padding-right: -#{$size / 2};
 
           & > * {
-            margin-left: $size / 2;
-            margin-right: $size / 2;
+            padding-left: $size / 2;
+            padding-right: $size / 2;
           }
         }
       }
