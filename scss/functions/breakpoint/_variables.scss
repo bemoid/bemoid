@@ -5,19 +5,19 @@
 /// Collection of breakpoints.
 ///
 /// @type {Map}
-/// @prop {Value} xsmall
-/// @prop {Value} small
-/// @prop {Value} medium
-/// @prop {Value} large
-/// @prop {Value} xlarge
-/// @prop {Value} xxlarge
+/// @prop {Value} xs
+/// @prop {Value} sm
+/// @prop {Value} md
+/// @prop {Value} lg
+/// @prop {Value} xl
+/// @prop {Value} xxl
 $breakpoint-sizes: (
-  xsmall: 320px,
-  small: 576px,
-  medium: 768px,
-  large: 992px,
-  xlarge: 1200px,
-  xxlarge: 1440px
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
 ) !default;
 
 /// Offset value between breakpoints ranges.

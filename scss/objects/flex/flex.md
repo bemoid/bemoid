@@ -26,17 +26,17 @@ Columns width can also adjust to its content with a `.flex__column--shrink` modi
 
 ### Responsive
 
-Columns can also take specific sizes from concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class. For example, if you want to have column to occupy 4 spaces from a medium breakpoint use `.flex__column--4@medium` modifier class.
+Columns can also take specific sizes from concrete breakpoints. Simply add the `@<breakpoint>` suffix to the standard size modifier class. For example, if you want to have column to occupy 4 spaces from a medium breakpoint use `.flex__column--4@md` modifier class.
 
 [[example file=scss/objects/flex/example/sizes-responsive.html]]
 
-You can control responsive points of the flex with a map in the `$flex-sizes` variable.
+You can control responsive points of the flex with a map in the `$flex-breakpoints` variable.
 
 > It's recommended to define sizes based on breakpoints to coincide with the points where layout changes take place.
 
 ```scss
-$flex-sizes: (
-  medium: breakpoint(medium)
+$flex-breakpoints: (
+  md: breakpoint(md)
 )
 ```
 
