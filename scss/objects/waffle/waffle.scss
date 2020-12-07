@@ -23,7 +23,7 @@
   @each $name, $size in $waffle-sizes {
     @if $name != $waffle-size {
       &--#{$name} {
-        padding: -#{$size / 2};
+        margin: -#{$size / 2};
 
         & > * {
           padding: $size / 2;
@@ -36,7 +36,7 @@
     @include breakpoint($breakpoint up) {
       @each $name, $size in $waffle-sizes {
         &--#{$name}\@#{$breakpoint} {
-          padding: -#{$size / 2};
+          margin: -#{$size / 2};
 
           & > * {
             padding: $size / 2;
