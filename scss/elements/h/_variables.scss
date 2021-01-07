@@ -4,9 +4,9 @@
 ///
 /// @type {Map}
 /// @prop {Map} default
-/// @prop {Map} medium
+/// @prop {Map} md
 $heading-sizes: (
-  default: (
+  base: (
     'h1': 2.488rem,
     'h2': 2.074rem,
     'h3': 1.728rem,
@@ -14,7 +14,7 @@ $heading-sizes: (
     'h5': 1.2rem,
     'h6': 1rem,
   ),
-  medium: (
+  md: (
     'h1': 4.209rem,
     'h2': 3.157rem,
     'h3': 2.369rem,
@@ -27,7 +27,7 @@ $heading-sizes: (
 /// Default heading size.
 ///
 /// @type {Keyword}
-$heading-size: default !default;
+$heading-size: base !default;
 
 /// Font family of headings.
 ///
