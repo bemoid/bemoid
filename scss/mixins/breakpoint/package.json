@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/mixin-breakpoint",
-  "version": "0.4.0",
+  "version": "0.4.5",
   "description": "A mixin for outputting @media queries.",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",

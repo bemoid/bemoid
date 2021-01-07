@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/standardize",
-  "version": "0.4.0",
+  "version": "0.4.5",
   "description": "Module for providing normalization of default browser styles",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",

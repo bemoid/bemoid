@@ -1,6 +1,6 @@
 {
   "name": "@bemoid/function-breakpoint",
-  "version": "0.4.0",
+  "version": "0.4.5",
   "description": "A getter function for breakpoint values",
   "author": "Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com)",
   "license": "MIT",
