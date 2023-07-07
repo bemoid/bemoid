@@ -31,7 +31,7 @@
     "postcss-import": "^13.0.0",
     "postcss-partial-import": "^4.1.0",
     "postcss-scss": "^3.0.4",
-    "stylelint": "^13.8.0",
+    "stylelint": "^15.10.1",
     "yargs": "^16.2.0"
   },
   "workspaces": [
